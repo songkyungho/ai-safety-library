@@ -1,0 +1,9 @@
+{
+  "count": 1084,
+  "board": "AI GOvernance and Regulatory Archive",
+  "list_url": "https://agora.eto.tech/",
+  "dataset": "https://doi.org/10.5281/zenodo.20714047",
+  "version": "1.30.0 (2026-06-16)",
+  "license": "CC BY-NC 4.0",
+  "note": "CSET/ETO 문서 아카이브. 전문 파일은 넣지 않고 메타데이터·요약·공식 URL만 보관. 인용: Emerging Technology Observatory AGORA dataset, https://eto.tech/dataset-docs/agora-dataset/"
+}
