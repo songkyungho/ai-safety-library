@@ -32,6 +32,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from enrich_ko import ensure_openrouter_key, llm_json  # noqa: E402
+from issuer_levels import ISSUER_IDS, ISSUER_LEVELS, migrate_legacy_lab_kind  # noqa: E402
 from library_common import write_json  # noqa: E402
 from parse_meta import DOC_KINDS  # noqa: E402
 from topics import TOPIC_COLORS, TOPIC_ORDER, topic_icon, topic_label  # noqa: E402
@@ -53,6 +54,63 @@ REJECT_REASONS = {
     "other",
 }
 
+# 제목·출처만 반복하고 실질 내용이 없는 LLM 요약 (카드는 유지, summary만 비움)
+# 예: 「제목」입니다 / 제목은 ～가이드라인임을 나타냅니다 (따옴표 없음)
+_HOLLOW_TITLE = re.compile(
+    r"문서\s*제목은\s*"
+    r"(?:"
+    r"[「『\"“‘'][^」』\"”’']+[」』\"”’']\s*입니다|"
+    r"[^\n]{6,100}?(?:입니다|임을\s*나타냅니다|[을를]\s*나타냅니다)"
+    r")"
+)
+_HOLLOW_NO_DETAIL = re.compile(
+    r"(제공된|주어진|원문)\s*(메타(데이터)?|정보|본문).{0,64}"
+    r"(없|부족|포함되어\s*있지\s*않|확인\s*할\s*수\s*없)|"
+    r"(메타|정보)\s*만으로는.{0,64}(없|부족|확인\s*할\s*수\s*없)|"
+    r"세부\s*(내용|조항|책무|원칙|권고|기준|적용\s*(범위|대상)).{0,64}"
+    r"(없|포함되어\s*있지\s*않|확인\s*할\s*수\s*없)|"
+    r"상세\s*내용(은|이|을).{0,24}(첨부|다운로드|웹\s*페이지|원문)|"
+    r"첨부\s*자료.{0,24}(다운로드|확인)|"
+    r"메타데이터만으로는"
+)
+_HOLLOW_SOURCE_ONLY = re.compile(
+    r"원문\s*메타|"
+    r"출처로\s*제시|"
+    r"자료로\s*제시|"
+    r"홈페이지.{0,40}첨부|"
+    r"첨부\s*자료.{0,40}출처|"
+    r"홈페이지의\s*게시물"
+)
+_HOLLOW_SIBLING_LIST = re.compile(
+    r"(자료\s*목록|같은\s*(게시물|목록)).{0,100}함께\s*(언급|제시|안내)|"
+    r"함께\s*(언급|제시|안내).{0,48}(가이드라인|관련)|"
+    r"관련\s*가이드라인도|"
+    r"별도\s*가이드라인도"
+)
+
+
+def is_hollow_summary(text: str) -> bool:
+    """제목·출처 안내만 있고 규범 내용이 없는 빈 요약 → summary만 삭제 대상."""
+    s = (text or "").strip()
+    if not s:
+        return False
+    no_detail = bool(_HOLLOW_NO_DETAIL.search(s))
+    title_only = bool(_HOLLOW_TITLE.search(s))
+    source_only = bool(_HOLLOW_SOURCE_ONLY.search(s))
+    sibling_list = bool(_HOLLOW_SIBLING_LIST.search(s))
+    if title_only and no_detail:
+        return True
+    if title_only and source_only:
+        return True
+    if title_only and sibling_list:
+        return True
+    if no_detail and (source_only or sibling_list):
+        return True
+    if no_detail and re.search(r"(홈페이지|자료로\s*제시|출처로\s*제시|원문\s*메타)", s):
+        return True
+    return False
+
+
 SYSTEM = f"""당신은 AI 안전·거버넌스 라이브러리의 수석 큐레이터입니다.
 입력 메타만으로 문서를 분류·검증하고, UI용 한국어 표기를 작성합니다.
 
@@ -64,6 +122,10 @@ SYSTEM = f"""당신은 AI 안전·거버넌스 라이브러리의 수석 큐레�
    - AI가 부수 언급이면 핵심 주제가 AI 안전·거버넌스인지 구분
 3) 불확실하면 confidence를 낮추고 topics는 비우세요.
 4) JSON만 출력하세요.
+5) 제목·출처 URL·첨부 안내만 있고 규범·책무·조항의 실질 내용이 없으면
+   summary="" 로 두세요. 문서를 범위 밖(in_scope=false)으로 빼지 마세요.
+   "문서 제목은 ～입니다 / 메타에 세부 내용이 없다 / 첨부 다운로드" 식의
+   빈 요약은 쓰지 마세요.
 
 허용 enum
 - doc_kind: {" | ".join(CURATED_KINDS)}
@@ -81,6 +143,16 @@ SYSTEM = f"""당신은 AI 안전·거버넌스 라이브러리의 수석 큐레�
   계류·제출·draft·introduced·proposed → 법안.
 - 법률자문·해석지침·advisory는 법/법안이 아니라 가이드라인·원칙 또는 행정규칙.
 - 유엔 결의·정상 합의·정치선언은 보통 선언·성명 (조약·협약이 아님).
+- AI 개발사·랩이 공개한 윤리원칙·헌장·책임있는 AI 원칙·프론티어 안전
+  프레임워크(RSP/ASF/ASI 등)는 doc_kind=가이드라인·원칙(또는 전략·정책),
+  issuer_level=lab 로 두세요. "개발사 정책"이라는 doc_kind는 쓰지 마세요.
+
+층위 (issuer_level, 문서 종류와 별개)
+- issuer_level: {" | ".join(i for i, _ in ISSUER_LEVELS)}
+  international=국제기구·다자, national=국가, subnational=지방·주,
+  ministry=부처·규제기관, lab=프론티어 랩, industry=산업계·협회,
+  civil_society=시민사회·학계, multi=민관·혼합.
+- 한 문서에 주 발급 층위 하나만. 형태(doc_kind)와 층위(issuer_level)를 동시에 채우세요.
 
 토픽
 - 각 topic에 evidence를 원문에서 고른 짧은 구절로 반드시 채우세요. 근거 없으면 그 토픽은 빼세요.
@@ -100,7 +172,7 @@ SYSTEM = f"""당신은 AI 안전·거버넌스 라이브러리의 수석 큐레�
 
 한글 표기
 - short_name: 한국어 약칭. 관할(캘리포니아·EU 등)·고유번호(AB 410, SB 9)는 유지.
-- summary: 사실만 3~6문장. 마케팅·추측 금지.
+- summary: 사실만 3~6문장. 마케팅·추측 금지. 내용이 없으면 빈 문자열.
 """
 
 
@@ -155,8 +227,13 @@ def normalize_entry(raw: dict) -> dict:
         in_scope = False
         kind = ""
         raw.setdefault("reject_reason", "news_press")
+    kind, lab_hint = migrate_legacy_lab_kind(kind)
     if kind not in CURATED_KINDS:
         kind = ""
+
+    issuer = str(raw.get("issuer_level") or "").strip()
+    if issuer not in ISSUER_IDS:
+        issuer = lab_hint or ""
 
     topics = []
     for t in raw.get("topics") or []:
@@ -205,6 +282,12 @@ def normalize_entry(raw: dict) -> dict:
         "out_of_domain": "out_of_domain",
     }
     reject = alias.get(reject, reject)
+
+    summary = str(raw.get("summary") or "").strip()[:4000]
+    # 제목·출처만 있는 빈 요약 → 설명만 비움 (카드·범위는 유지)
+    if is_hollow_summary(summary):
+        summary = ""
+
     if not in_scope:
         if reject not in REJECT_REASONS:
             reject = "other"
@@ -216,12 +299,13 @@ def normalize_entry(raw: dict) -> dict:
         "in_scope_reason": str(raw.get("in_scope_reason") or "")[:240],
         "reject_reason": reject,
         "doc_kind": kind,
+        "issuer_level": issuer,
         "topics": topics,
         "published": published,
         "published_confidence": pconf,
         "published_note": str(raw.get("published_note") or "")[:240],
         "short_name": str(raw.get("short_name") or "").strip()[:200],
-        "summary": str(raw.get("summary") or "").strip()[:4000],
+        "summary": summary,
         "corrections": [str(c) for c in (raw.get("corrections") or []) if c][:12],
         "confidence": conf,
         "flags": [str(f) for f in (raw.get("flags") or []) if f][:12],
@@ -290,6 +374,7 @@ body/summary:
   "in_scope_reason": "한 문장",
   "reject_reason": "",
   "doc_kind": "<enum>",
+  "issuer_level": "<enum>",
   "topics": [{{"id":"<enum>", "evidence":"원문 근거 구절(필수)"}}],
   "published": "YYYY-MM-DD or empty",
   "published_confidence": "high|medium|low|none",
@@ -346,6 +431,9 @@ def apply_cache_to_docs(docs: list[dict], cache: dict | None = None) -> dict:
 
         if body.get("doc_kind") in CURATED_KINDS:
             d["doc_kind"] = body["doc_kind"]
+        if body.get("issuer_level") in ISSUER_IDS:
+            d["issuer_level"] = body["issuer_level"]
+            d["issuer_level_ko"] = dict(ISSUER_LEVELS).get(body["issuer_level"], "")
 
         topic_objs = []
         for t in body.get("topics") or []:
@@ -375,10 +463,15 @@ def apply_cache_to_docs(docs: list[dict], cache: dict | None = None) -> dict:
             d["short_name"] = body["short_name"]
             d["title"] = body["short_name"]
             stats["short_name"] += 1
-        if body.get("summary"):
-            d["summary"] = body["summary"]
-            d["snippet"] = body["summary"][:500]
+        if "summary" in body:
+            summary = str(body.get("summary") or "").strip()
+            if is_hollow_summary(summary):
+                summary = ""
+            d["summary"] = summary
+            d["snippet"] = summary[:500] if summary else ""
             stats["summary"] += 1
+            if not summary:
+                stats["summary_cleared"] = stats.get("summary_cleared", 0) + 1
 
         pconf = body.get("published_confidence") or "none"
         if body.get("published") and pconf in CONF_OK:
@@ -449,8 +542,29 @@ def main() -> None:
         action="store_true",
         help="규칙 토픽·종류가 애매한 문서 우선",
     )
+    ap.add_argument(
+        "--collection",
+        action="append",
+        default=[],
+        help="이 컬렉션 문서만 (반복 가능). 예: --collection lab-policies",
+    )
     args = ap.parse_args()
     workers = max(1, int(args.workers))
+    collection_filter = {c.strip() for c in (args.collection or []) if c.strip()}
+    filter_member_ids: set[str] = set()
+    if collection_filter:
+        from library_common import load_collection
+
+        for key in collection_filter:
+            for it in (load_collection(key).get("items") or []):
+                mid = it.get("id") or ""
+                if mid:
+                    filter_member_ids.add(mid)
+        print(
+            f"collection filter={sorted(collection_filter)} "
+            f"members={len(filter_member_ids)}",
+            flush=True,
+        )
 
     cache = load_cache()
     if args.validate_only:
@@ -475,6 +589,10 @@ def main() -> None:
         did = d.get("id") or ""
         if not did:
             continue
+        if filter_member_ids:
+            mids = {m for m in (d.get("member_ids") or []) if m}
+            if not (mids & filter_member_ids):
+                continue
         h = src_hash(d)
         prev = cache.get(did) or {}
         prev_body = prev.get("result") or prev

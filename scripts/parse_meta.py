@@ -21,6 +21,10 @@ DOC_KINDS = [
     "뉴스·보도",
     "기타",
 ]
+# 구 라벨 → (형태 종류). 층위는 issuer_level=lab 로 분리.
+LEGACY_KIND_ALIASES = {
+    "개발사 정책": "가이드라인·원칙",
+}
 
 # OECD Policy Navigator category → kind
 _OECD_CAT = {
@@ -328,14 +332,20 @@ def extract_meta(item: dict[str, Any]) -> dict[str, str]:
             full_name = raw_name or title
 
     status = (item.get("status") or "").strip()
-    kind = classify_doc_kind(
-        raw_kind,
-        item.get("title") or "",
-        full_name,
-        short,
-        category=category,
-        status=status,
-    )
+    preset = (item.get("doc_kind") or category or "").strip()
+    if preset in LEGACY_KIND_ALIASES:
+        kind = LEGACY_KIND_ALIASES[preset]
+    elif preset in DOC_KINDS:
+        kind = preset
+    else:
+        kind = classify_doc_kind(
+            raw_kind,
+            item.get("title") or "",
+            full_name,
+            short,
+            category=category,
+            status=status,
+        )
     # Lifecycle status wins even when category is Miscellaneous / Editors' Picks.
     st_l = status.lower()
     if kind == "법" and st_l in ("proposed", "defunct"):

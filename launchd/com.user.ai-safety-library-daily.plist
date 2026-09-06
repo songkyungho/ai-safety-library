@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.user.ai-safety-library-daily</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/bin/bash</string>
+		<string>/Users/kyunghosong/Library/Application Support/ai-safety-pipeline/run-library-daily.sh</string>
+	</array>
+	<key>WorkingDirectory</key>
+	<string>/Users/kyunghosong/Library/Application Support/ai-safety-pipeline</string>
+	<key>RunAtLoad</key>
+	<false/>
+	<key>ProcessType</key>
+	<string>Interactive</string>
+	<key>LowPriorityIO</key>
+	<false/>
+	<key>StartCalendarInterval</key>
+	<dict>
+		<key>Hour</key>
+		<integer>9</integer>
+		<key>Minute</key>
+		<integer>0</integer>
+	</dict>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>AI_SAFETY_ENV_FILE</key>
+		<string>/Users/kyunghosong/Library/Mobile Documents/com~apple~CloudDocs/5_Code/AI Safety/ai_safety_daily_env</string>
+	</dict>
+	<key>StandardOutPath</key>
+	<string>/tmp/ai-safety-library-daily.out.log</string>
+	<key>StandardErrorPath</key>
+	<string>/tmp/ai-safety-library-daily.err.log</string>
+</dict>
+</plist>

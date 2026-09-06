@@ -1,0 +1,485 @@
+{
+  "collection": "lab-policies",
+  "name": "개발사 프론티어 안전 정책",
+  "source": {
+    "seed": [
+      {
+        "name": "METR Common Elements of Frontier AI Safety Policies",
+        "url": "https://metr.org/common-elements"
+      },
+      {
+        "name": "METR Frontier AI Safety Policies index",
+        "url": "https://metr.org/fsp"
+      },
+      {
+        "name": "Vorp Labs Frontier AI framework inventory",
+        "url": "https://vorplabs.com/ai-regulatory-updates/frontier-ai-frameworks"
+      }
+    ],
+    "design_note": "UK AISI Emerging practices는 카탈로그 시드가 아니라 요약·필드 설계 참고용.",
+    "design_note_url": "https://www.aisi.gov.uk/research/emerging-practices-in-frontier-ai-safety-frameworks",
+    "note": "METR 12사 + Vorp 보강. AGORA Inflection 이관. 한국 개발사 안전정책(ASF/ASI/책무성)과 윤리원칙·헌장도 모두 형태는 `가이드라인·원칙`(또는 전략·정책), 층위는 `issuer_level=lab`으로 수록. IAAE의 네이버·카카오·LG·SKT 윤리문서도 동일 층위(lab)."
+  },
+  "count": 19,
+  "items": [
+    {
+      "id": "lab-anthropic-rsp",
+      "collection": "lab-policies",
+      "collection_name": "개발사 프론티어 안전 정책",
+      "title": "Anthropic Responsible Scaling Policy (RSP) v3.4",
+      "original_name": "Responsible Scaling Policy",
+      "org": "Anthropic",
+      "category": "가이드라인·원칙",
+      "doc_kind": "가이드라인·원칙",
+      "version": "v3.4",
+      "date": "2026-07-08",
+      "page_url": "https://www.anthropic.com/responsible-scaling-policy",
+      "source_urls": [
+        "https://www.anthropic.com/responsible-scaling-policy",
+        "https://cdn.sanity.io/files/4zrzovbb/website/0bacdc8440ea96e62a8766d99ebe1d4eea6d5f3a.pdf"
+      ],
+      "body": "Anthropic의 프론티어 모델 위험 관리 프로토콜. 능력 임계치와 이에 대응하는 보안·배포 안전장치(ASL 등)를 사전 약속한다. 시드: METR Common Elements / Vorp inventory (v3.4, 2026-07-08).",
+      "tags": "RSP|frontier|scaling",
+      "seed_sources": [
+        "metr-common-elements",
+        "vorp-inventory",
+        "metr-fsp"
+      ],
+      "issuer_level": "lab"
+    },
+    {
+      "id": "lab-openai-preparedness",
+      "collection": "lab-policies",
+      "collection_name": "개발사 프론티어 안전 정책",
+      "title": "OpenAI Preparedness Framework v2",
+      "original_name": "Preparedness Framework",
+      "org": "OpenAI",
+      "category": "가이드라인·원칙",
+      "doc_kind": "가이드라인·원칙",
+      "version": "v2",
+      "date": "2025-04-15",
+      "page_url": "https://cdn.openai.com/pdf/18a02b5d-6b67-4cec-ab64-68cdfbddebcd/preparedness-framework-v2.pdf",
+      "source_urls": [
+        "https://cdn.openai.com/pdf/18a02b5d-6b67-4cec-ab64-68cdfbddebcd/preparedness-framework-v2.pdf",
+        "https://openai.com/index/openai-frontier-governance-framework"
+      ],
+      "body": "OpenAI의 프론티어 능력 추적·위험 준비 프레임워크(Tracked Categories, High/Critical 임계). 관련 규제 대응 문서로 Frontier Governance Framework(2026)가 병행한다. 시드: METR / Vorp.",
+      "tags": "preparedness|frontier",
+      "seed_sources": [
+        "metr-common-elements",
+        "vorp-inventory",
+        "metr-fsp"
+      ],
+      "issuer_level": "lab"
+    },
+    {
+      "id": "lab-deepmind-fsf",
+      "collection": "lab-policies",
+      "collection_name": "개발사 프론티어 안전 정책",
+      "title": "Google DeepMind Frontier Safety Framework v3.1",
+      "original_name": "Frontier Safety Framework",
+      "org": "Google DeepMind",
+      "category": "가이드라인·원칙",
+      "doc_kind": "가이드라인·원칙",
+      "version": "v3.1",
+      "date": "2026-04-17",
+      "page_url": "https://deepmind.google/discover/blog/updating-the-frontier-safety-framework/",
+      "source_urls": [
+        "https://deepmind.google/discover/blog/updating-the-frontier-safety-framework/"
+      ],
+      "body": "DeepMind의 Critical Capability Levels(CCL) 및 Tracked Capability Levels(TCL) 기반 프론티어 안전 프레임워크. 시드: METR / Vorp (v3.1, 2026-04-17).",
+      "tags": "FSF|CCL|frontier",
+      "seed_sources": [
+        "metr-common-elements",
+        "vorp-inventory",
+        "metr-fsp"
+      ],
+      "issuer_level": "lab"
+    },
+    {
+      "id": "lab-meta-frontier",
+      "collection": "lab-policies",
+      "collection_name": "개발사 프론티어 안전 정책",
+      "title": "Meta Advanced AI Scaling Framework v2",
+      "original_name": "Advanced AI Scaling Framework (formerly Frontier AI Framework)",
+      "org": "Meta",
+      "category": "가이드라인·원칙",
+      "doc_kind": "가이드라인·원칙",
+      "version": "v2.0",
+      "date": "2026-04-08",
+      "page_url": "https://ai.meta.com/static-resource/Meta_Advanced-AI-Scaling-Framework-v2/",
+      "source_urls": [
+        "https://ai.meta.com/static-resource/Meta_Advanced-AI-Scaling-Framework-v2/",
+        "https://ai.meta.com/blog/scaling-how-we-build-test-advanced-ai/"
+      ],
+      "body": "Meta의 재앙적 위험(화학·생물, 사이버, 통제 상실) 임계·배포 기준. 이전 명칭 Frontier AI Framework. 시드: METR / Vorp.",
+      "tags": "frontier|scaling",
+      "seed_sources": [
+        "metr-common-elements",
+        "vorp-inventory",
+        "metr-fsp"
+      ],
+      "issuer_level": "lab"
+    },
+    {
+      "id": "lab-microsoft-fgf",
+      "collection": "lab-policies",
+      "collection_name": "개발사 프론티어 안전 정책",
+      "title": "Microsoft Frontier Governance Framework (February 2026)",
+      "original_name": "Frontier Governance Framework",
+      "org": "Microsoft",
+      "category": "가이드라인·원칙",
+      "doc_kind": "가이드라인·원칙",
+      "version": "2026-02",
+      "date": "2026-02-01",
+      "page_url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/en-us/microsoft-brand/documents/Microsoft-Frontier-Governance-Framework.pdf",
+      "source_urls": [
+        "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/en-us/microsoft-brand/documents/Microsoft-Frontier-Governance-Framework.pdf"
+      ],
+      "body": "Microsoft의 프론티어 모델 거버넌스·위험 관리 프레임워크. 시드: METR / Vorp.",
+      "tags": "frontier|governance",
+      "seed_sources": [
+        "metr-common-elements",
+        "vorp-inventory",
+        "metr-fsp"
+      ],
+      "issuer_level": "lab"
+    },
+    {
+      "id": "lab-amazon-fmsf",
+      "collection": "lab-policies",
+      "collection_name": "개발사 프론티어 안전 정책",
+      "title": "Amazon Frontier Model Safety Framework",
+      "original_name": "Frontier Model Safety Framework",
+      "org": "Amazon",
+      "category": "가이드라인·원칙",
+      "doc_kind": "가이드라인·원칙",
+      "version": "2025-02",
+      "date": "2025-02-10",
+      "page_url": "https://www.amazon.science/publications/amazons-frontier-model-safety-framework",
+      "source_urls": [
+        "https://www.amazon.science/publications/amazons-frontier-model-safety-framework"
+      ],
+      "body": "Amazon의 프론티어 모델 Critical Capability Thresholds(CBRN, 공격적 사이버, 자동화된 AI R&D 등)와 배포 전 안전장치. 시드: METR / Vorp.",
+      "tags": "frontier|FMSF",
+      "seed_sources": [
+        "metr-common-elements",
+        "vorp-inventory",
+        "metr-fsp"
+      ],
+      "issuer_level": "lab"
+    },
+    {
+      "id": "lab-xai-faif",
+      "collection": "lab-policies",
+      "collection_name": "개발사 프론티어 안전 정책",
+      "title": "xAI Frontier Artificial Intelligence Framework",
+      "original_name": "Frontier Artificial Intelligence Framework",
+      "org": "xAI",
+      "category": "가이드라인·원칙",
+      "doc_kind": "가이드라인·원칙",
+      "version": "2026-06-30",
+      "date": "2026-06-30",
+      "page_url": "https://x.ai/safety",
+      "source_urls": [
+        "https://x.ai/safety"
+      ],
+      "body": "xAI의 프론티어 AI 위험 관리 프레임워크(이전 Risk Management Framework 계열). 시드: METR / Vorp.",
+      "tags": "frontier|FAIF",
+      "seed_sources": [
+        "metr-common-elements",
+        "vorp-inventory",
+        "metr-fsp"
+      ],
+      "issuer_level": "lab"
+    },
+    {
+      "id": "lab-cohere-secure",
+      "collection": "lab-policies",
+      "collection_name": "개발사 프론티어 안전 정책",
+      "title": "Cohere Secure AI Frontier Model Framework",
+      "original_name": "Secure AI Frontier Model Framework",
+      "org": "Cohere",
+      "category": "가이드라인·원칙",
+      "doc_kind": "가이드라인·원칙",
+      "version": "v1.0",
+      "date": "2025-02-07",
+      "page_url": "https://cohere.com/blog/secure-model-framework",
+      "source_urls": [
+        "https://cohere.com/blog/secure-model-framework"
+      ],
+      "body": "Cohere의 프론티어 모델 보안·오용 위험 프레임워크. 시드: METR / Vorp.",
+      "tags": "frontier|secure",
+      "seed_sources": [
+        "metr-common-elements",
+        "vorp-inventory",
+        "metr-fsp"
+      ],
+      "issuer_level": "lab"
+    },
+    {
+      "id": "lab-nvidia-risk",
+      "collection": "lab-policies",
+      "collection_name": "개발사 프론티어 안전 정책",
+      "title": "NVIDIA Frontier AI Risk Assessment",
+      "original_name": "Frontier AI Risk Assessment",
+      "org": "NVIDIA",
+      "category": "가이드라인·원칙",
+      "doc_kind": "가이드라인·원칙",
+      "version": "2025-02",
+      "date": "2025-02-17",
+      "page_url": "https://images.nvidia.com/content/pdf/NVIDIA-Frontier-AI-Risk-Assessment.pdf",
+      "source_urls": [
+        "https://images.nvidia.com/content/pdf/NVIDIA-Frontier-AI-Risk-Assessment.pdf",
+        "https://metr.org/fsp"
+      ],
+      "body": "NVIDIA의 프론티어 AI 위험 평가 문서(PRA/DRA 등). 시드: METR / Vorp.",
+      "tags": "frontier|risk-assessment",
+      "seed_sources": [
+        "metr-common-elements",
+        "vorp-inventory",
+        "metr-fsp"
+      ],
+      "issuer_level": "lab"
+    },
+    {
+      "id": "lab-magic-agi",
+      "collection": "lab-policies",
+      "collection_name": "개발사 프론티어 안전 정책",
+      "title": "Magic AGI Readiness Policy v1.0",
+      "original_name": "AGI Readiness Policy",
+      "org": "Magic",
+      "category": "가이드라인·원칙",
+      "doc_kind": "가이드라인·원칙",
+      "version": "v1.0",
+      "date": "2024-07-02",
+      "page_url": "https://magic.dev/agi-readiness-policy",
+      "source_urls": [
+        "https://magic.dev/agi-readiness-policy"
+      ],
+      "body": "Magic의 AGI 준비·프론티어 코딩 모델 위험 정책. 시드: METR / Vorp.",
+      "tags": "AGI|frontier",
+      "seed_sources": [
+        "metr-common-elements",
+        "vorp-inventory",
+        "metr-fsp"
+      ],
+      "issuer_level": "lab"
+    },
+    {
+      "id": "lab-naver-asf",
+      "collection": "lab-policies",
+      "collection_name": "개발사 프론티어 안전 정책",
+      "title": "NAVER AI Safety Framework (ASF) 2.0",
+      "original_name": "NAVER AI Safety Framework 2.0",
+      "org": "NAVER",
+      "category": "가이드라인·원칙",
+      "doc_kind": "가이드라인·원칙",
+      "version": "2.0",
+      "date": "2026-07-08",
+      "page_url": "https://www.navercorp.com/en/media/pressReleasesDetail?seq=10034489",
+      "source_urls": [
+        "https://static-homepage.pstatic.net/cdn-static/naver/download/NAVER_AI.Safety.Framework.2.0.pdf",
+        "https://www.navercorp.com/en/media/pressReleasesDetail?seq=10034489",
+        "https://clova.ai/en/tech-blog/ai-safety-framework"
+      ],
+      "body": "네이버의 프론티어·서비스 중심 AI 안전 프레임워크(ASF) 2.0. 2024 ASF Beta(모델·프론티어 위험)를 확장해 멀티모델 서비스 전주기 위험 분류·영향평가·CHEC 2.0 운영체계를 담는다. METR Common Elements 목록의 한국 개발사 사례. 시드: METR / Vorp / 공식 PDF.",
+      "tags": "ASF|frontier|Korea",
+      "seed_sources": [
+        "metr-common-elements",
+        "vorp-inventory",
+        "metr-fsp"
+      ],
+      "issuer_level": "lab"
+    },
+    {
+      "id": "lab-g42-fsf",
+      "collection": "lab-policies",
+      "collection_name": "개발사 프론티어 안전 정책",
+      "title": "G42 Frontier AI Safety Framework",
+      "original_name": "Frontier AI Safety Framework",
+      "org": "G42",
+      "category": "가이드라인·원칙",
+      "doc_kind": "가이드라인·원칙",
+      "version": "2025-02",
+      "date": "2025-02-06",
+      "page_url": "https://www.g42.ai/resources/publications/g42-frontier-ai-safety-framework",
+      "source_urls": [
+        "https://www.g42.ai/resources/publications/g42-frontier-ai-safety-framework",
+        "https://metr.org/fsp"
+      ],
+      "body": "G42의 프론티어 AI 안전 프레임워크. 시드: METR / Vorp.",
+      "tags": "frontier",
+      "seed_sources": [
+        "metr-common-elements",
+        "vorp-inventory",
+        "metr-fsp"
+      ],
+      "issuer_level": "lab"
+    },
+    {
+      "id": "lab-kakao-asi",
+      "collection": "lab-policies",
+      "collection_name": "개발사 프론티어 안전 정책",
+      "title": "Kakao AI Safety Initiative (Kakao ASI)",
+      "original_name": "Kakao AI Safety Initiative",
+      "org": "Kakao",
+      "category": "가이드라인·원칙",
+      "doc_kind": "가이드라인·원칙",
+      "version": "2024-10",
+      "date": "2024-10-22",
+      "page_url": "https://www.kakaocorp.com/page/detail/11294",
+      "source_urls": [
+        "https://www.kakaocorp.com/page/detail/11294",
+        "https://www.kakaocorp.com/media/esg-resource/pdf/KakaoGroup_TechEthicsReport_2024.pdf"
+      ],
+      "body": "카카오의 AI 리스크 관리 체계(Kakao ASI). 윤리원칙·리스크 관리 사이클(식별·평가·대응)·AI Safety–ERM–경영진 3단 거버넌스로 구성. High 리스크 시 출시 보류·완화 후 재평가. 서울 프론티어 AI 안전 약속 실천 문서. Kanana 모델 안전평가와 연동. 기존 라이브러리(IAAE 카카오 알고리즘 윤리 헌장)와 별도로, 생성형·프론티어 리스크 운영 정책으로 수록.",
+      "tags": "ASI|frontier|Korea|Kakao",
+      "seed_sources": [
+        "web-search",
+        "digest",
+        "iaae-related"
+      ],
+      "issuer_level": "lab"
+    },
+    {
+      "id": "lab-inflection-frontier",
+      "collection": "lab-policies",
+      "collection_name": "개발사 프론티어 안전 정책",
+      "title": "Inflection Policy on Frontier Safety",
+      "original_name": "Our Policy on Frontier Safety",
+      "org": "Inflection",
+      "category": "가이드라인·원칙",
+      "doc_kind": "가이드라인·원칙",
+      "version": "2023-10",
+      "date": "2023-10-30",
+      "page_url": "https://inflection.ai/frontier-safety",
+      "source_urls": [
+        "https://inflection.ai/frontier-safety"
+      ],
+      "body": "Inflection의 프론티어 안전 정책(UK AI Safety Summit 대응). 책임 있는 스케일링, 사전 배포 평가·레드팀, 가중치 보안, 출시 후 모니터링, 취약점 제보 등 9개 영역을 서술. 기존 AGORA 수집본(agora-762)에서 이관.",
+      "tags": "frontier|Inflection",
+      "seed_sources": [
+        "agora",
+        "metr-adjacent"
+      ],
+      "issuer_level": "lab"
+    },
+    {
+      "id": "lab-lg-accountability-2025",
+      "collection": "lab-policies",
+      "collection_name": "개발사 프론티어 안전 정책",
+      "title": "LG AI Research Accountability Report on AI Ethics 2025",
+      "original_name": "Accountability Report on AI Ethics 2025",
+      "org": "LG AI Research",
+      "category": "가이드라인·원칙",
+      "doc_kind": "가이드라인·원칙",
+      "version": "2025",
+      "date": "2026-03-04",
+      "page_url": "https://www.lgresearch.ai/news/view?seq=630",
+      "source_urls": [
+        "https://www.lgresearch.ai/news/view?seq=630",
+        "https://www.lgresearch.ai/news/view?seq=628"
+      ],
+      "body": "LG AI연구원의 연간 AI 윤리 책무성 보고서(2025). K-AUT(Korea-Augmented Universal Taxonomy) 위험 분류·윤리영향평가·데이터 컴플라이언스(EXAONE NEXUS) 등 파운데이션 모델(EXAONE) 안전·윤리 운영 성과를 공개. METR식 RSP와 형식은 다르나, 국내 주요 파운데이션 모델 개발사의 공개 안전·윤리 거버넌스 문서로 수록. 관련: IAAE LG AI 윤리 원칙.",
+      "tags": "Korea|LG|K-AUT|ethics|safety",
+      "seed_sources": [
+        "web-search",
+        "digest",
+        "iaae-related"
+      ],
+      "issuer_level": "lab"
+    },
+    {
+      "id": "lab-upstage-ethics",
+      "collection": "lab-policies",
+      "collection_name": "개발사 프론티어 안전 정책",
+      "title": "Upstage AI Ethics Principles",
+      "original_name": "Upstage AI Ethics Principles",
+      "org": "Upstage",
+      "category": "가이드라인·원칙",
+      "doc_kind": "가이드라인·원칙",
+      "version": "2023",
+      "date": "2023-09-13",
+      "page_url": "https://www.upstage.ai/blog/en/ai-ethics",
+      "source_urls": [
+        "https://www.upstage.ai/blog/en/ai-ethics"
+      ],
+      "body": "업스테이지의 AI 윤리 5원칙(사람중심·신뢰성·공정성·안전성·보편성). 데이터 정제·모델 개발에 적용하며 1T Club 등 데이터 거버넌스와 연동. 공개 프론티어 안전 프레임워크는 없으나, 라이브러리 원칙상 개발사 윤리원칙으로 수록.",
+      "tags": "ethics|Korea|Upstage",
+      "seed_sources": [
+        "web-search",
+        "digest"
+      ],
+      "issuer_level": "lab"
+    },
+    {
+      "id": "lab-samsung-sds-ethics",
+      "collection": "lab-policies",
+      "collection_name": "개발사 프론티어 안전 정책",
+      "title": "Samsung SDS AI Ethics Charter",
+      "original_name": "AI 윤리헌장",
+      "org": "Samsung SDS",
+      "category": "가이드라인·원칙",
+      "doc_kind": "가이드라인·원칙",
+      "version": "",
+      "date": "2024-01-01",
+      "page_url": "https://www.samsungsds.com/kr/digital_responsibility/ai_ethics.html",
+      "source_urls": [
+        "https://www.samsungsds.com/kr/digital_responsibility/ai_ethics.html"
+      ],
+      "body": "삼성SDS AI 윤리헌장. UNESCO AI 윤리 권고를 참고해 인간 중심, 평등·다양성, 데이터 투명성·보안, 환경 지속가능성, 설명가능성 등 원칙을 개발·활용 전 과정에 적용.",
+      "tags": "ethics|Korea|Samsung",
+      "seed_sources": [
+        "web-search"
+      ],
+      "issuer_level": "lab"
+    },
+    {
+      "id": "lab-kt-astri",
+      "collection": "lab-policies",
+      "collection_name": "개발사 프론티어 안전 정책",
+      "title": "KT Responsible AI Principles (ASTRI)",
+      "original_name": "KT Responsible AI Principles (ASTRI)",
+      "org": "KT",
+      "category": "가이드라인·원칙",
+      "doc_kind": "가이드라인·원칙",
+      "version": "ASTRI",
+      "date": "2024-01-01",
+      "page_url": "https://enterprise.kt.com/bt/dxstory/3786.do",
+      "source_urls": [
+        "https://enterprise.kt.com/bt/dxstory/3786.do",
+        "https://corp.kt.com/KT_RAI_Report.pdf"
+      ],
+      "body": "KT Responsible AI 5원칙 ASTRI(Accountability·Sustainability·Transparency·Reliability·Inclusivity). RAI 거버넌스·위험 식별/평가/완화 프로세스의 기준. 관련 공개물: KT RAI Report, RAI Technical Report.",
+      "tags": "ethics|RAI|Korea|KT|ASTRI",
+      "seed_sources": [
+        "web-search",
+        "digest"
+      ],
+      "issuer_level": "lab"
+    },
+    {
+      "id": "lab-nc-ethics",
+      "collection": "lab-policies",
+      "collection_name": "개발사 프론티어 안전 정책",
+      "title": "NC AI Ethics Framework",
+      "original_name": "NC AI Ethics Framework",
+      "org": "NCSOFT",
+      "category": "가이드라인·원칙",
+      "doc_kind": "가이드라인·원칙",
+      "version": "",
+      "date": "2023-01-01",
+      "page_url": "https://about.ncsoft.com/news/article/nc-ai-ethics-framework-unbiased",
+      "source_urls": [
+        "https://about.ncsoft.com/news/article/nc-ai-ethics-framework-unbiased"
+      ],
+      "body": "엔씨소프트 AI Ethics Framework. Data Privacy·Unbiased·Transparency 3축. 게임·생성 AI 맥락의 편향·무례 표현 완화 등 실천 체계를 공개.",
+      "tags": "ethics|Korea|NCSOFT",
+      "seed_sources": [
+        "web-search"
+      ],
+      "issuer_level": "lab"
+    }
+  ]
+}

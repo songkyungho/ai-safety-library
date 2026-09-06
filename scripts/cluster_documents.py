@@ -28,6 +28,7 @@ COLLECTIONS = [
     "iaae-ethics",
     "agora",
     "oecd-navigator",
+    "lab-policies",
 ]
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 DEFAULT_LLM_MODEL = os.environ.get("CLUSTER_LLM_MODEL", "google/gemini-2.5-flash")

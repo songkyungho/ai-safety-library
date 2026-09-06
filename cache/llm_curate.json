@@ -2005,7 +2005,7 @@
       "published_confidence": "none",
       "published_note": "제시된 원문 메타와 출처 안내에는 발표·게시일이 명시되어 있지 않으며, 규칙 초안의 날짜는 사용하지 않았습니다.",
       "short_name": "디지털 휴먼 윤리 설계 5대 원칙",
-      "summary": "문서 제목은 『The Five Laws of Ethical Digital Human Design』입니다. 디지털 휴먼 설계의 윤리를 다루는 다섯 가지 원칙을 제시하는 자료로 식별됩니다. 상세 내용은 UneeQ 관련 출처 웹페이지에서 확인하도록 안내되어 있습니다.",
+      "summary": "",
       "corrections": [
         "문서 유형을 기타에서 가이드라인·원칙으로 수정했습니다.",
         "AI·디지털 휴먼 윤리와 직접 관련된 문서이므로 범위를 제외하지 않았습니다.",
@@ -2093,7 +2093,7 @@
       "published_confidence": "none",
       "published_note": "제공된 원문 메타에는 발표·채택·공표일이 없으며, 규칙 초안의 날짜는 원문 발표일로 확인되지 않습니다.",
       "short_name": "OpenAI 헌장",
-      "summary": "문서 제목은 ‘OpenAI 헌장’입니다. 원문 메타는 출처로 OpenAI Charter 웹페이지를 제시합니다. 제공된 본문 메타에는 헌장 조항의 구체적인 내용이 포함되어 있지 않습니다.",
+      "summary": "",
       "corrections": [
         "문서 종류를 ‘기타’에서 ‘가이드라인·원칙’으로 수정했습니다.",
         "AI 거버넌스 관련 헌장 문서이므로 범위를 false에서 true로 수정했습니다.",
@@ -2123,12 +2123,13 @@
       "published_confidence": "none",
       "published_note": "제공된 원문 메타에는 발표·공표일이 없으며, 규칙 초안의 날짜는 원문 출처가 확인되지 않아 사용하지 않았습니다.",
       "short_name": "카카오 알고리즘 윤리 헌장",
-      "summary": "카카오가 작성한 알고리즘 윤리 헌장입니다. 문서 제목상 알고리즘의 윤리적 운영과 관련된 원칙을 제시하는 문서로 분류됩니다. 제공된 원문 메타에는 세부 원칙이나 적용 범위가 포함되어 있지 않습니다.",
+      "summary": "",
       "corrections": [
         "원문 발표일이 확인되지 않아 규칙 초안의 2020-08-04 날짜를 published에 반영하지 않았습니다."
       ],
       "confidence": "medium",
-      "flags": []
+      "flags": [],
+      "issuer_level": "lab"
     }
   },
   "doc-42751b289abf": {
@@ -2884,7 +2885,7 @@
       "published_confidence": "none",
       "published_note": "제공된 원문 메타데이터에 발표일이 명시되어 있지 않으며, URL의 식별자나 규칙 초안 날짜는 사용하지 않았습니다.",
       "short_name": "Constitutional AI",
-      "summary": "문서 제목은 Constitutional AI입니다. Anthropic이 작성한 자료이며 ArXiv에 게재되어 있습니다. 제공된 메타데이터만으로는 연구의 세부 방법론이나 결과를 확인할 수 없습니다.",
+      "summary": "",
       "corrections": [
         "규칙 초안의 published 날짜를 제거했습니다. 원문 메타데이터에 발표일이 명시되어 있지 않습니다.",
         "원문 메타데이터만으로 근거가 확인되는 safety_research만 유지하고 frontier 토픽은 제외했습니다."
@@ -2993,7 +2994,7 @@
       "published_confidence": "none",
       "published_note": "원문 메타에는 게시일이 명시되어 있지 않으며, 규칙 초안의 날짜는 사용하지 않았습니다.",
       "short_name": "인공지능 윤리 교육 온라인 학습터",
-      "summary": "한국의 과기부지정 인공지능교육교사연구회와 한울초 김성락 교사가 제공하는 온라인 학습터입니다. 원문 메타는 이 자료의 제목을 ‘인공지능 윤리 교육 온라인 학습터’로 제시합니다. 구체적인 교육 내용은 제공된 메타만으로 확인할 수 없으며, 안내된 웹사이트 방문이 필요합니다.",
+      "summary": "",
       "corrections": [
         "규칙 초안의 게시일 2022-01-04를 원문에 명시된 날짜가 아니므로 제거했습니다.",
         "문서의 구체적 형식이나 공식 규범성을 확인할 수 없어 문서 종류를 기타로 유지했습니다."
@@ -3056,7 +3057,7 @@
       "published_confidence": "none",
       "published_note": "제공된 원문 메타데이터에는 발표·공표일이 없으며, 규칙 초안의 날짜는 사용하지 않았습니다.",
       "short_name": "KB금융그룹 AI 윤리 기준",
-      "summary": "KB금융그룹의 AI 윤리 기준 문서입니다. 문서의 세부 내용은 제공된 메타데이터에 포함되어 있지 않습니다. 출처로 KB금융그룹 홈페이지가 제시되어 있습니다.",
+      "summary": "",
       "corrections": [
         "문서 성격에 따라 doc_kind를 기타에서 가이드라인·원칙으로 수정했습니다.",
         "원문 메타데이터에 발표일이 없어 규칙 초안의 날짜를 제외하고 published를 비웠습니다."
@@ -3084,7 +3085,7 @@
       "published_confidence": "none",
       "published_note": "제공된 원문 메타데이터에 발표·발행일이 없으며, 규칙 초안의 날짜는 원문 근거로 확인되지 않아 사용하지 않았습니다.",
       "short_name": "네이버 소프트웨어야놀자 인공지능 윤리 교재",
-      "summary": "이 문서는 「인공지능 윤리 교재」로 제시된 교육 자료입니다. 원문 메타데이터에는 네이버 소프트웨어야놀자가 출처로 기재되어 있습니다. 상세 내용은 제시된 웹페이지를 방문하거나 첨부 파일을 다운로드하여 확인하도록 안내합니다.",
+      "summary": "",
       "corrections": [
         "규칙 초안의 2021-07-01 날짜를 원문 발표일로 확인할 수 없어 published를 비웠습니다.",
         "제목에 근거해 norms 토픽을 추가했습니다."
@@ -3244,7 +3245,8 @@
         "원문에 근거가 확인되는 norms와 guideline 토픽을 반영했습니다."
       ],
       "confidence": "medium",
-      "flags": []
+      "flags": [],
+      "issuer_level": "lab"
     }
   },
   "doc-f78b5cbdf9cc": {
@@ -6925,7 +6927,7 @@
       "published_confidence": "none",
       "published_note": "제공된 원문 메타데이터에 발표·공표·제정일이 없으며, 규칙 초안의 날짜는 사용하지 않았습니다.",
       "short_name": "개인정보 영향평가 수행안내서",
-      "summary": "문서 제목은 「개인정보 영향평가 수행안내서」입니다. 개인정보보호위원회와 KISA가 관련 기관으로 표기되어 있습니다. 자료 출처는 KISA 홈페이지로 기재되어 있으며, 상세 내용은 첨부 자료를 다운로드하도록 안내합니다.",
+      "summary": "",
       "corrections": [
         "문서 성격을 ‘기구·제도’가 아니라 제목과 안내서 형식에 따라 ‘가이드라인·원칙’으로 분류했습니다.",
         "AI와의 직접적인 관련성이 확인되지 않아 in_scope를 false로 유지하고 reject_reason을 weak_ai_link로 지정했습니다.",
@@ -41459,7 +41461,7 @@
       "published_confidence": "none",
       "published_note": "제공된 원문 메타에는 발표·채택일이 명시되어 있지 않습니다. 규칙 초안의 날짜는 사용하지 않았습니다.",
       "short_name": "챗봇 윤리 원칙",
-      "summary": "한국인터넷자율정책기구가 작성한 「챗봇 윤리 원칙」입니다. 원문 메타에는 해당 문서의 상세 내용이 포함되어 있지 않습니다. 상세 내용은 홈페이지 방문 또는 첨부 자료 다운로드를 통해 확인하도록 안내되어 있습니다. 자료 출처로 한국인터넷자율정책기구 홈페이지가 제시되어 있습니다.",
+      "summary": "",
       "corrections": [
         "문서 제목과 AI 윤리·거버넌스 관련성을 근거로 in_scope를 false에서 true로 수정했습니다.",
         "원문 메타에 발표일이 없어 published를 비웠습니다.",
@@ -43578,7 +43580,7 @@
       "published_confidence": "none",
       "published_note": "입력 원문 메타에 공식 발표일·채택일이 없으며, 제공된 날짜는 규칙 초안의 참고값이므로 사용하지 않았습니다.",
       "short_name": "영국 EPSRC 로보틱스 원칙",
-      "summary": "문서 제목은 「Principles of robotics」이며 영국 EPSRC가 제공하는 로보틱스 원칙 자료입니다. 입력 메타에는 원칙의 세부 조항이나 적용 범위가 포함되어 있지 않습니다. 따라서 구체적인 원칙 내용은 원문 웹페이지에서 확인해야 합니다.",
+      "summary": "",
       "corrections": [
         "규칙 초안의 in_scope=false를 로보틱스 원칙 문서의 직접적인 안전·거버넌스 관련성을 반영해 true로 수정했습니다.",
         "규칙 초안의 2021-03-07은 원문 발표일로 확인되지 않아 published를 비우고 published_confidence를 none으로 설정했습니다."
@@ -43935,7 +43937,7 @@
       "published_confidence": "none",
       "published_note": "제공된 메타데이터에 원문 발표일이 없으며, 제목의 2019는 발행일로 확정할 수 없습니다.",
       "short_name": "AI Now 2019 보고서",
-      "summary": "문서 제목은 AI Now Institute의 「AI Now 2019 Report」입니다. 제공된 메타데이터에는 보고서의 세부 내용이 포함되어 있지 않습니다. 원문 자료의 출처로 AI Now Institute PDF 링크가 제시되어 있습니다.",
+      "summary": "",
       "corrections": [
         "문서 유형을 기구·제도에서 정책보고서로 수정했습니다.",
         "AI 관련 정책보고서이므로 범위를 제외(False)에서 포함(True)으로 수정했습니다.",
@@ -44076,7 +44078,7 @@
       "published_confidence": "none",
       "published_note": "제공된 원문 메타에는 발표일이 명시되어 있지 않으며, 규칙 초안의 날짜는 카탈로그 메타데이터로 확인되지 않아 사용하지 않았습니다.",
       "short_name": "이용자 중심 지능정보사회 원칙",
-      "summary": "방송통신위원회가 제공한 이용자 중심의 지능정보사회 관련 원칙 자료입니다. 원문 메타의 자료 제목은 ‘방통위_이용자 중심의 지능정보사회를 위한 원칙_발표자료’로 제시되어 있습니다. 제공된 본문에는 원칙의 세부 내용이나 발표일이 포함되어 있지 않습니다.",
+      "summary": "",
       "corrections": [
         "문서 유형을 ‘기구·제도’에서 ‘가이드라인·원칙’으로 수정했습니다.",
         "AI·지능정보사회 관련 원칙 자료이므로 범위 제외에서 포함으로 수정했습니다.",
@@ -45305,7 +45307,7 @@
       "published_confidence": "none",
       "published_note": "제공된 메타데이터에 원문 발표·공표일이 없으며, 규칙 초안의 날짜는 확인된 원문 날짜로 사용할 수 없습니다.",
       "short_name": "대학 AI 활용 윤리 가이드라인",
-      "summary": "문서 제목은 「대학 AI 활용 윤리 가이드라인」입니다. 교육부와 한국대학교육협의회가 관련 기관으로 제시되어 있습니다. 문서는 대학에서의 AI 활용과 윤리를 다루는 가이드라인으로 분류됩니다. 세부 원칙과 적용 범위는 첨부 자료가 제공되지 않아 확인할 수 없습니다.",
+      "summary": "",
       "corrections": [
         "규칙 초안에 기재된 2026-08-28 날짜를 원문 발표일로 확인할 수 없어 published에서 제외했습니다.",
         "제공된 제목과 기관 정보에 근거해 topics를 guideline과 norms로 제한했습니다."
@@ -45368,7 +45370,7 @@
       "published_confidence": "none",
       "published_note": "원문 메타데이터에 공식 발표·제정일이 명시되어 있지 않으며, 제시된 2026-08-28은 규칙 초안의 참고값이므로 사용하지 않았습니다.",
       "short_name": "고영향 인공지능 판단 가이드라인",
-      "summary": "문서 제목은 「고영향 인공지능 판단 가이드라인」입니다. 한국지능정보사회진흥원(NIA) 홈페이지에 게시된 첨부 자료로 안내되어 있습니다. 함께 언급된 자료로는 고영향 인공지능 사업자 책무 가이드라인, 인공지능 투명성 확보 가이드라인, 인공지능 안전성 확보 가이드라인이 있습니다. 첨부 원문을 확인할 수 없어 세부 적용 대상과 내용은 확정하지 않습니다.",
+      "summary": "",
       "corrections": [
         "규칙 초안에 제시된 2026-08-28을 공식 발표일로 인정하지 않고 published를 비웠습니다.",
         "원문 메타데이터에서 직접 확인되는 근거가 없어 guideline 외 토픽을 추가하지 않았습니다."
@@ -45422,7 +45424,7 @@
       "published_confidence": "none",
       "published_note": "제공된 원문 메타와 본문에 채택·발표일이 명시되어 있지 않습니다.",
       "short_name": "인공지능 투명성 확보 가이드라인",
-      "summary": "문서 제목은 「인공지능 투명성 확보 가이드라인」입니다. 제공된 메타에는 자세한 내용이 첨부 자료에 수록되어 있다고 되어 있습니다. 해당 자료는 한국지능정보사회진흥원(NIA) 홈페이지의 게시물에서 제공된 것으로 표시되어 있습니다. 같은 게시물에는 고영향 인공지능 판단, 고영향 인공지능 사업자 책무, 인공지능 안전성과 관련된 가이드라인도 함께 열거되어 있습니다.",
+      "summary": "",
       "corrections": [
         "원문에 발표일이 없어 규칙 초안의 2026-08-28을 published에서 제외했습니다.",
         "제공된 자료만으로 확인 가능한 주제인 guideline만 유지했습니다."
@@ -45450,7 +45452,7 @@
       "published_confidence": "none",
       "published_note": "제공된 메타데이터와 본문 요약에 원문 발표일·채택일이 명시되어 있지 않습니다.",
       "short_name": "고영향 AI 사업자 책무 가이드라인",
-      "summary": "문서 제목은 「고영향 인공지능 사업자 책무 가이드라인」입니다. 고영향 인공지능 사업자가 준수할 책무와 관련된 가이드라인으로 제시되어 있습니다. 제공된 자료 설명에는 고영향 인공지능 판단 가이드라인, 인공지능 투명성 확보 가이드라인, 인공지능 안전성 확보 가이드라인도 함께 언급되어 있습니다.",
+      "summary": "",
       "corrections": [
         "규칙 초안의 발행일 2026-08-28은 원문 명시일로 확인되지 않아 published를 비웠습니다.",
         "제공된 제목을 기준으로 doc_kind를 가이드라인·원칙으로 분류했습니다."
@@ -45589,7 +45591,7 @@
       "published_confidence": "none",
       "published_note": "제공된 원문 메타에는 발표·채택·공포일이 없으며, 2026-08-25는 규칙 초안의 참고값이므로 사용하지 않았습니다.",
       "short_name": "대한민국 AI 윤리원칙",
-      "summary": "문서 제목은 「대한민국 인공지능 윤리원칙」입니다. 과기부, KISDI 및 부처합동 자료로 제시되어 있습니다. 제공된 메타만으로는 구체적인 윤리 원칙이나 조항의 내용을 확인할 수 없습니다. 상세 내용은 첨부 자료를 통해 확인하도록 안내되어 있습니다.",
+      "summary": "",
       "corrections": [
         "규칙 초안의 published 값(2026-08-25)은 원문 발표일로 확인되지 않아 삭제했습니다.",
         "제공된 메타에서 확인 가능한 범위로만 주제와 요약을 작성했습니다."
@@ -45619,7 +45621,7 @@
       "published_confidence": "none",
       "published_note": "원문 메타에 공식 발표·공포·채택일이 명시되어 있지 않으며, 제시된 2026-08-28은 규칙 초안 값이므로 사용하지 않았습니다.",
       "short_name": "인공지능 안전성 확보 가이드라인",
-      "summary": "문서 제목은 「인공지능 안전성 확보 가이드라인」입니다. 원문 메타는 한국지능정보사회진흥원(NIA) 홈페이지를 자료 출처로 제시합니다. 같은 자료 목록에는 고영향 인공지능 판단, 고영향 인공지능 사업자 책무, 인공지능 투명성 관련 가이드라인도 함께 열거되어 있습니다. 첨부파일의 세부 내용은 제공된 메타만으로 확인할 수 없습니다.",
+      "summary": "",
       "corrections": [
         "규칙 초안의 2026-08-28 날짜를 공식 원문 발표일로 확인할 수 없어 published를 비웠습니다.",
         "첨부파일 본문이 제공되지 않아 구체적인 의무·적용 대상·조항을 추가하지 않았습니다."
@@ -47917,7 +47919,7 @@
       "published_confidence": "none",
       "published_note": "제공된 원문 메타에는 공식 발표·발행일이 없으며, 규칙 초안의 날짜는 사용하지 않았습니다.",
       "short_name": "AI 보안 레드티밍 가이드",
-      "summary": "과기부/KISA의 AI 보안 레드티밍 가이드입니다. 제목상 AI 시스템의 보안 레드티밍을 다루는 안내 문서입니다. 상세 내용은 KISA 홈페이지의 첨부자료를 통해 제공된다고 기재되어 있습니다.",
+      "summary": "",
       "corrections": [
         "규칙 초안의 published 날짜를 공식 원문 날짜로 확인할 수 없어 비웠습니다.",
         "제공된 메타와 제목에 근거해 문서 유형과 토픽을 확정했습니다."
@@ -49339,7 +49341,7 @@
       "published_confidence": "none",
       "published_note": "본문과 원문 메타에 발표·제정·공표일이 명시되어 있지 않습니다. 규칙 초안의 2026-06-18은 사용하지 않았습니다.",
       "short_name": "서울시 AI 활용 윤리 지침",
-      "summary": "문서 제목은 「서울특별시 인공지능 활용 윤리 지침」입니다. 서울특별시의 인공지능 활용과 관련된 윤리 지침 문서로 제시되어 있습니다. 원문 메타에는 서울특별시 홈페이지가 자료 출처로 기재되어 있습니다. 상세 내용은 첨부 자료를 다운로드해야 확인할 수 있습니다.",
+      "summary": "",
       "corrections": [
         "문서 제목과 성격에 따라 doc_kind를 행정규칙에서 가이드라인·원칙으로 조정했습니다.",
         "원문에 발표일이 없어 published를 비웠습니다."
@@ -50051,7 +50053,7 @@
       "published_confidence": "none",
       "published_note": "제공된 원문 메타데이터에 공식 발표·공포·채택일이 없으며, 규칙 초안의 날짜는 검증된 원문 날짜로 볼 수 없어 사용하지 않았습니다.",
       "short_name": "인공지능 안전성 확보 가이드라인",
-      "summary": "문서 제목은 「인공지능 안전성 확보 가이드라인」입니다. 원문 메타데이터상 과학기술정보통신부 관련 문서이며, 자료 출처는 ETRI 홈페이지로 표시되어 있습니다. 상세 내용은 첨부 자료를 다운로드하도록 안내되어 있습니다.",
+      "summary": "",
       "corrections": [
         "규칙 초안에 제시된 2026-05-26 날짜를 원문 확인이 없어 published에서 제외했습니다.",
         "제공된 메타데이터에서 확인되는 근거에 따라 topics를 guideline으로만 분류했습니다."
@@ -50079,7 +50081,7 @@
       "published_confidence": "none",
       "published_note": "원문 메타에 발표·발간일이 명시되어 있지 않아 규칙 초안의 날짜는 사용하지 않았습니다.",
       "short_name": "예비 개발자 AI 윤리교육 연구",
-      "summary": "NC문화재단이 발간한 정책보고서입니다. 예비 개발자를 대상으로 인공지능 윤리교육을 연구했습니다. 구체적인 교육 내용과 방법론은 첨부 자료에서 확인할 수 있습니다. 원문 자료는 RISS 홈페이지에서 다운로드할 수 있다고 기재되어 있습니다.",
+      "summary": "",
       "corrections": [
         "규칙 초안의 published 날짜를 원문 발표일 근거가 없어 삭제했습니다.",
         "원문 메타에서 확인되는 AI 윤리교육 관련 주제만 norms로 유지했습니다."
@@ -54877,7 +54879,7 @@
       "published_confidence": "none",
       "published_note": "제공된 원문 메타에 발표·채택일이 명시되어 있지 않습니다.",
       "short_name": "생성형 인공지능 도구 책임있는 사용 권고사항",
-      "summary": "한국연구재단이 생성형 인공지능 도구의 책임 있는 사용을 위한 권고사항을 제시한 문서입니다. 제공된 메타데이터에는 권고사항의 세부 내용이 포함되어 있지 않으며, 첨부 자료를 내려받아 확인하도록 안내합니다. 자료 출처는 연구윤리정보포털입니다.",
+      "summary": "",
       "corrections": [
         "원문 메타에 발표일이 없어 규칙 초안의 2025-12-03을 published에 반영하지 않았습니다.",
         "제공된 제목과 설명에 근거해 토픽을 guideline으로 제한했습니다."
@@ -78127,7 +78129,7 @@
       "published_confidence": "none",
       "published_note": "제공된 원문 메타에 보고서의 발표일이 명시되어 있지 않으며, 규칙 초안의 날짜는 확인된 원문 발표일로 사용할 수 없습니다.",
       "short_name": "미국저작권청 AI와 저작권 제2부 보고서",
-      "summary": "미국저작권청이 발간한 「Copyright and AI」 시리즈의 제2부 보고서입니다. 이 보고서는 인공지능과 관련된 저작물의 저작권 보호 가능성을 다룹니다. 자세한 내용은 미국저작권청 홈페이지의 첨부 자료에서 확인할 수 있습니다.",
+      "summary": "",
       "corrections": [
         "원문 메타에서 확인되지 않은 2025-01-30 날짜를 published에서 제외했습니다.",
         "보고서의 주제에 근거해 norms 토픽을 추가했습니다."
@@ -86762,7 +86764,7 @@
       "published_confidence": "none",
       "published_note": "제공된 원문 메타에는 발표·공개·제정일이 명시되어 있지 않습니다. 규칙 초안의 날짜는 사용하지 않았습니다.",
       "short_name": "학교급별 생성형 AI 활용 지침",
-      "summary": "문서 제목은 「학교급별 생성형 AI 활용 지침」입니다. 서울시교육청 홈페이지 자료로 소개되어 있으며, 학교급별 생성형 AI 활용을 대상으로 합니다. 상세 내용은 첨부 자료를 다운로드하도록 안내되어 있어, 제공된 메타만으로 구체적인 적용 기준이나 조항은 확인할 수 없습니다.",
+      "summary": "",
       "corrections": [
         "문서 제목의 성격에 따라 행정규칙이 아닌 가이드라인·원칙으로 분류했습니다.",
         "원문에 발표일이 확인되지 않아 규칙 초안의 2024-07-30을 published에서 제외했습니다.",
@@ -87503,7 +87505,7 @@
       "published_confidence": "none",
       "published_note": "제공된 원문 메타에는 발표일이 명시되어 있지 않으며, 규칙 초안의 날짜는 원문 확인 없이 사용하지 않았습니다.",
       "short_name": "AI 서울 정상회의 서울 선언 및 의향서",
-      "summary": "문서 제목은 AI 서울 정상회의의 ‘서울 선언 및 의향서’입니다. 해당 문서는 AI와 관련된 정상회의 선언 및 의향서 형식의 문서로 식별됩니다. 제공된 메타데이터에는 본문 내용이 포함되지 않았고, 자세한 내용은 첨부 자료를 다운로드하도록 안내되어 있습니다. 따라서 선언의 구체적인 원칙이나 합의 내용은 이 메타데이터만으로 확인할 수 없습니다.",
+      "summary": "",
       "corrections": [
         "문서 유형은 AI 정상회의의 선언·의향서라는 제목에 따라 ‘선언·성명’으로 유지했습니다.",
         "규칙 초안에 제시된 2024-05-26은 제공된 원문 메타에서 확인되지 않아 published에서 제외했습니다.",
@@ -90258,7 +90260,8 @@
         "원문 발표일이 확인되지 않아 규칙 초안의 published 날짜를 제거했습니다."
       ],
       "confidence": "medium",
-      "flags": []
+      "flags": [],
+      "issuer_level": "lab"
     }
   },
   "doc-428b7d7502a2": {
@@ -91374,7 +91377,7 @@
       "published_confidence": "none",
       "published_note": "제공된 원문 메타에는 공식 발표일·공표일이 없으며, 규칙 초안의 날짜는 사용하지 않았습니다.",
       "short_name": "인공지능 윤리 점검 서식 KS 구성 항목",
-      "summary": "국가기술표준원이 인공지능(AI) 윤리 점검 서식의 KS 구성 항목을 안내하는 문서입니다. 상세 내용은 첨부 자료를 다운로드하도록 안내하고 있습니다. 문서 메타에는 해당 자료의 출처로 국가기술표준원 홈페이지가 제시되어 있습니다.",
+      "summary": "",
       "corrections": [
         "규칙 초안에 제시된 2023-07-07 날짜를 공식 원문 날짜로 확인할 수 없어 published에서 제외했습니다.",
         "첨부 자료의 구체적인 내용은 제공되지 않아 메타데이터와 제목으로 확인 가능한 범위만 요약했습니다."
@@ -92742,13 +92745,14 @@
       "published_confidence": "none",
       "published_note": "제공된 원문 메타에는 발표·제정일이 명시되어 있지 않으며, 규칙 초안의 날짜는 원문 확인이 되지 않아 사용하지 않았습니다.",
       "short_name": "LG AI 윤리 원칙",
-      "summary": "문서 제목은 ‘AI 윤리 원칙’입니다. 자료출처로 LG AI연구원의 윤리 관련 페이지가 제시되어 있습니다. 제공된 메타데이터에는 원칙의 세부 내용이나 조항이 포함되어 있지 않아 구체적인 내용을 확인할 수 없습니다.",
+      "summary": "",
       "corrections": [
         "규칙 초안에 제시된 2022-08-24 날짜는 원문 메타에서 확인되지 않아 published를 비웠습니다.",
         "원문 메타의 제목과 출처를 근거로 doc_kind와 topics를 판정했습니다."
       ],
       "confidence": "medium",
-      "flags": []
+      "flags": [],
+      "issuer_level": "lab"
     }
   },
   "doc-89a943a91620": {
@@ -93094,7 +93098,8 @@
       "confidence": "medium",
       "flags": [
         "첨부 파일 본문 미제공"
-      ]
+      ],
+      "issuer_level": "lab"
     }
   },
   "doc-51afe907bff4": {
@@ -93591,7 +93596,7 @@
       "published_confidence": "none",
       "published_note": "제공된 원문 메타와 본문에 발표·발행일이 명시되어 있지 않습니다. 규칙 초안의 날짜는 사용하지 않았습니다.",
       "short_name": "사회를 위한 보건의료 AI 활용 가이드",
-      "summary": "문서 제목은 「사회를 위한 보건의료 분야 인공지능 활용 가이드」입니다. 보건의료 분야에서 인공지능을 활용하는 내용을 다루는 가이드 문서로 제시되어 있습니다. 자료 출처로 KAIST KPC4IR 보고서 페이지가 안내되어 있습니다. 제공된 메타데이터만으로는 가이드의 세부 원칙과 적용 범위를 확인할 수 없습니다.",
+      "summary": "",
       "corrections": [
         "규칙 초안에 제시된 2021-08-15 날짜는 원문에 확인되지 않아 published를 비웠습니다.",
         "제목에 근거해 healthcare와 guideline 토픽을 부여했습니다."
@@ -94828,7 +94833,7 @@
       "published_confidence": "medium",
       "published_note": "자료 제목의 파일명에 '20200925'가 명시되어 있어 해당 날짜를 사용했습니다.",
       "short_name": "인공지능의 윤리적 사용을 위한 개선과제 보고서",
-      "summary": "국회입법조사처가 작성한 인공지능의 윤리적 사용을 위한 개선과제 보고서입니다. 원문 메타데이터는 이 문서를 「이슈와 논점」 제1759호로 제시하고 있습니다. 상세 내용은 첨부된 PDF 자료를 통해 확인하도록 안내되어 있습니다.",
+      "summary": "",
       "corrections": [
         "법률이나 법안이 아닌 국회입법조사처의 연구·정책 문서이므로 doc_kind를 정책보고서로 유지했습니다.",
         "법적 규율이 핵심이라는 근거가 없어 law 토픽을 제외하고, 제목에 직접 나타난 AI 윤리 주제를 norms로 분류했습니다.",
@@ -95248,7 +95253,7 @@
       "published_confidence": "none",
       "published_note": "원문 메타에 발표·공표일이 명시되어 있지 않으며, 규칙 초안의 날짜는 참고 정보로만 제공되어 사용하지 않았습니다.",
       "short_name": "인공지능 윤리 가이드라인",
-      "summary": "문서 제목은 「인공지능 윤리 가이드라인」입니다. 원문 메타에는 한국정보화진흥원이 자료출처로 제시되어 있습니다. 인공지능의 윤리적 활용과 관련된 가이드라인 문서로 분류됩니다.",
+      "summary": "",
       "corrections": [
         "원문 메타에 발표일이 없어 규칙 초안의 2020-08-04를 published에 반영하지 않았습니다."
       ],
@@ -97059,7 +97064,7 @@
       "published_confidence": "none",
       "published_note": "원문 메타에 공식 발표·제정일이 명시되어 있지 않아 날짜를 기재하지 않았습니다.",
       "short_name": "고영향 AI 판단 가이드라인",
-      "summary": "문서 제목은 고영향 인공지능의 판단과 관련된 가이드라인임을 나타냅니다. 제공된 메타만으로는 가이드라인의 세부 적용 대상이나 기준을 확인할 수 없습니다. 자료 목록에는 고영향 인공지능 사업자 책무, 인공지능 투명성, 인공지능 안전성 확보에 관한 관련 가이드라인도 함께 언급되어 있습니다.",
+      "summary": "",
       "corrections": [
         "규칙 초안의 발표일 2026-08-28은 원문 메타에서 확인되지 않아 published를 비웠습니다.",
         "제공된 메타에서 직접 확인되는 주제인 guideline만 유지했습니다."
@@ -97089,7 +97094,7 @@
       "published_confidence": "none",
       "published_note": "원문 메타에 공식 발표·발행일이 명시되어 있지 않으며, 규칙 초안의 날짜는 근거가 확인되지 않아 사용하지 않았습니다.",
       "short_name": "인공지능 투명성 확보 가이드라인",
-      "summary": "문서 제목은 「인공지능 투명성 확보 가이드라인」입니다. 원문 메타는 한국지능정보사회진흥원(NIA) 홈페이지의 첨부 자료를 출처로 제시합니다. 자료 목록에는 고영향 인공지능 판단, 고영향 인공지능 사업자 책무, 인공지능 안전성 확보에 관한 별도 가이드라인도 함께 제시되어 있습니다.",
+      "summary": "",
       "corrections": [
         "규칙 초안에 제시된 2026-08-28 날짜는 원문 메타에서 확인되지 않아 published를 비웠습니다.",
         "확인 가능한 제목과 문서 성격에 근거해 topics를 guideline으로 제한했습니다."
@@ -97117,7 +97122,7 @@
       "published_confidence": "none",
       "published_note": "제공된 원문 메타데이터에 공식 발표·발행일이 명시되어 있지 않으며, 규칙 초안의 날짜는 사용하지 않았습니다.",
       "short_name": "고영향 AI 사업자 책무 가이드라인",
-      "summary": "문서 제목은 「고영향 인공지능 사업자 책무 가이드라인」입니다. 한국지능정보사회진흥원(NIA) 홈페이지 자료로 제시되어 있습니다. 제공된 메타데이터에는 세부 내용이나 적용 대상별 책무가 포함되어 있지 않습니다. 같은 자료 안내에는 고영향 인공지능 판단, 인공지능 투명성, 인공지능 안전성 관련 가이드라인도 함께 언급되어 있습니다.",
+      "summary": "",
       "corrections": [
         "규칙 초안의 published 날짜를 사용하지 않고 발행일을 공란으로 처리했습니다.",
         "제공된 메타데이터에서 직접 확인되는 가이드라인 주제만 유지하고, 세부 책무나 추가 토픽은 추정하지 않았습니다."
@@ -97173,7 +97178,7 @@
       "published_confidence": "none",
       "published_note": "원문 메타데이터에 발표·제정·공표일이 명시되어 있지 않으며, 참고용 규칙 초안의 날짜는 사용하지 않았습니다.",
       "short_name": "인공지능 안전성 확보 가이드라인",
-      "summary": "문서 제목은 「인공지능 안전성 확보 가이드라인」입니다. 원문 메타데이터는 자료의 출처로 한국지능정보사회진흥원(NIA) 홈페이지를 제시합니다. 관련 자료 목록에는 고영향 인공지능 판단, 고영향 인공지능 사업자 책무, 인공지능 투명성 관련 가이드라인이 함께 언급되어 있습니다.",
+      "summary": "",
       "corrections": [
         "참고용 규칙 초안에 제시된 2026-08-28 날짜는 원문 메타데이터에 확인되지 않아 published에서 제외했습니다.",
         "원문 메타데이터에서 직접 확인되는 근거에 따라 topics를 guideline으로 제한했습니다."
@@ -97196,7 +97201,7 @@
       "published_confidence": "none",
       "published_note": "원문 메타에 발표·공표일이 없으며, 규칙 초안의 날짜는 사용하지 않았습니다.",
       "short_name": "보건의료데이터 활용 가이드라인",
-      "summary": "문서 제목은 「보건의료데이터 활용 가이드라인」입니다. 제공된 메타에는 보건복지부가 기관으로 표시되어 있습니다. 본문은 자세한 내용이 첨부 자료에 포함되어 있다고 안내하며, 보건복지부 홈페이지를 자료 출처로 제시합니다. 제공된 정보만으로는 AI 관련 내용이나 세부 지침을 확인할 수 없습니다.",
+      "summary": "",
       "corrections": [
         "AI와의 직접적인 관련성이 확인되지 않아 in_scope를 false로 판단했습니다.",
         "AI 관련 근거가 없어 규칙 초안의 guideline 토픽을 제외했습니다.",
@@ -97223,7 +97228,7 @@
       "published_confidence": "none",
       "published_note": "제공된 원문 메타데이터에 발표·제정·공표일이 없으며, 규칙 초안의 날짜는 원문 발표일로 확인되지 않아 사용하지 않았습니다.",
       "short_name": "가명정보 처리 가이드라인",
-      "summary": "문서 제목은 「가명정보 처리 가이드라인」입니다. 원문 메타데이터상 한국 개인정보보호위원회와 관련된 자료입니다. 세부 조항과 AI 관련 적용 범위는 제공된 내용만으로 확인할 수 없습니다.",
+      "summary": "",
       "corrections": [
         "AI 관련 적용 범위를 확인할 수 없어 in_scope를 false로 유지했습니다.",
         "AI와 직접 관련된 근거가 없어 topics를 비웠습니다.",
@@ -98961,7 +98966,7 @@
       "published_confidence": "none",
       "published_note": "제공된 원문 메타에는 발표·채택일이 명시되어 있지 않으며, 규칙 초안의 날짜는 사용하지 않았습니다.",
       "short_name": "블레츨리 선언",
-      "summary": "문서 제목은 '[AI SAFETY SUMMIT] The Bletchley Declaration'입니다. AI Safety Summit과 관련된 블레츨리 선언으로 분류됩니다. 제공된 메타에는 선언의 세부 내용이 없고 첨부 자료를 참조하도록 되어 있습니다.",
+      "summary": "",
       "corrections": [
         "규칙 초안의 published 날짜는 원문 메타에 명시되지 않아 제외했습니다.",
         "제공된 제목과 분류 정보로 확인되는 norms 토픽만 유지했습니다."
@@ -99238,7 +99243,7 @@
       "published_confidence": "none",
       "published_note": "제공된 메타데이터에서 원문 발표일을 확인할 수 없어 날짜를 기재하지 않았습니다.",
       "short_name": "AI 챗봇 윤리점검표",
-      "summary": "자료 제목은 ‘AI챗봇 윤리점검표’입니다. 스캐터랩 홈페이지를 자료 출처로 제시하고 있습니다. AI 챗봇과 관련된 윤리 점검 자료로 분류됩니다. 제공된 메타데이터만으로는 구체적인 점검 항목과 적용 범위를 확인할 수 없습니다.",
+      "summary": "",
       "corrections": [
         "규칙 초안의 2022-08-27 날짜는 원문 발표일로 확인되지 않아 published에서 제외했습니다.",
         "제공된 제목과 요약만을 근거로 문서 종류와 토픽을 판단했습니다."
@@ -99266,7 +99271,7 @@
       "published_confidence": "none",
       "published_note": "제공된 원문 메타데이터에 발표·제정일이 명시되어 있지 않아 날짜를 사용하지 않았습니다.",
       "short_name": "CJ올리브네트웍스 AI 윤리 원칙",
-      "summary": "문서 제목은 ‘AI 윤리 원칙’입니다. 문서 출처는 CJ올리브네트웍스 홈페이지로 표시되어 있습니다. 본문에는 원칙의 상세 내용이 첨부 파일에 있다고 안내되어 있으나, 제공된 메타데이터에는 구체적인 조항이나 내용이 포함되어 있지 않습니다.",
+      "summary": "",
       "corrections": [
         "규칙 초안의 게시일 2021-11-23은 제공된 원문 메타데이터에서 확인되지 않아 published를 비웠습니다.",
         "구체적인 조항이 제공되지 않아 topics는 AI 윤리 원칙을 직접 나타내는 norms로 제한했습니다."
@@ -99549,7 +99554,7 @@
       "published_confidence": "none",
       "published_note": "원문 메타에 공식 발표일이 없으며, 제시된 2026-06-09는 규칙 초안의 참고값이므로 사용하지 않았습니다.",
       "short_name": "에이전틱 AI 서비스 신중 도입",
-      "summary": "자료 제목은 “CAREFUL ADOPTION OF AGENTIC AI SERVICES”입니다. 메타데이터상 CISA 홈페이지를 자료 출처로 제시하고 있습니다. 본문에는 첨부 자료를 다운로드하라는 안내만 있어 구체적인 권고 내용은 확인할 수 없습니다.",
+      "summary": "",
       "corrections": [
         "문서 성격을 기타에서 가이드라인·원칙으로 수정했습니다.",
         "AI 안전·거버넌스와의 직접 관련성을 반영해 in_scope를 true로 수정했습니다.",
@@ -99581,7 +99586,7 @@
       "published_confidence": "none",
       "published_note": "원문 메타에 발표·공포·게시일이 명시되어 있지 않습니다.",
       "short_name": "인공지능기본법 지원데스크 사례집",
-      "summary": "과학기술정보통신부 명의의 인공지능기본법 지원데스크 사례집입니다. 인공지능기본법과 관련된 지원데스크 사례를 수록한 자료로 소개되어 있습니다. 원문 메타는 상세 내용을 첨부자료 다운로드를 통해 확인하도록 안내하며, 자료출처로 KOSA 홈페이지를 제시합니다.",
+      "summary": "",
       "corrections": [
         "규칙 초안의 문서종류 '법'을 사례집의 성격에 맞춰 '정책보고서'로 수정했습니다.",
         "원문에 발표일이 없어 규칙 초안의 2026-04-01을 published에 반영하지 않았습니다.",
@@ -99607,7 +99612,7 @@
       "published_confidence": "none",
       "published_note": "제공된 원문 메타데이터에 공식 발표일이 없으며, 규칙 초안의 날짜는 사용하지 않았습니다.",
       "short_name": "책임 있는 연구 수행 지침",
-      "summary": "문서 제목은 ‘책임 있는 연구 수행을 위한 지침’입니다. 메타데이터상 중국 과학기술부와 관련된 지침으로 제시되어 있습니다. 본문 내용은 제공되지 않고 첨부 자료 다운로드 안내만 있어, 구체적인 적용 대상과 조항은 확인할 수 없습니다.",
+      "summary": "",
       "corrections": [
         "AI 안전·거버넌스와의 직접적인 연계가 확인되지 않아 in_scope를 false로 판정했습니다.",
         "제공된 규칙 초안의 발행일은 공식 원문 날짜로 확인되지 않아 published에서 제외했습니다.",
@@ -99639,7 +99644,7 @@
       "published_confidence": "none",
       "published_note": "원문 메타에 발표일이 명시되어 있지 않고, 2025-09-11은 규칙 초안의 참고값이므로 사용하지 않았습니다.",
       "short_name": "KBS AI 가이드라인",
-      "summary": "문서 제목은 「KBS AI 가이드라인」입니다. 자료 출처로 KBS 사보가 기재되어 있습니다. 원문 메타에는 세부 내용이 첨부 자료에 포함되어 있다고만 되어 있으며, 첨부 자료의 본문은 제공되지 않았습니다. 따라서 가이드라인의 구체적인 적용 범위와 요구사항은 확인할 수 없습니다.",
+      "summary": "",
       "corrections": [
         "규칙 초안의 게시일 2025-09-11을 원문 근거가 없어 삭제했습니다.",
         "확인 가능한 제목을 근거로 guideline 토픽만 유지하고, 세부 주제는 추가하지 않았습니다.",
@@ -99649,6 +99654,617 @@
       "flags": [
         "full_text_unavailable"
       ]
+    }
+  },
+  "doc-4e9db99f82dc": {
+    "src_hash": "2e512338cb4b284f",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "OpenAI의 프론티어 능력 추적과 위험 대비 기준을 다루는 개발사 안전·거버넌스 정책 문서입니다.",
+      "reject_reason": "",
+      "doc_kind": "가이드라인·원칙",
+      "topics": [
+        {
+          "id": "frontier",
+          "evidence": "프론티어 능력 추적"
+        },
+        {
+          "id": "safety_research",
+          "evidence": "위험 대비 프레임워크"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "제공된 원문 메타에는 발표·채택·공포일이 없으며, 2025-04-15는 규칙 초안의 참고값이므로 사용하지 않았습니다.",
+      "short_name": "OpenAI 준비 프레임워크 v2",
+      "summary": "OpenAI의 프론티어 능력 추적 및 위험 대비 프레임워크입니다. 문서는 추적 대상 범주(Tracked Categories)를 제시합니다. 또한 High 및 Critical 임계값을 제시하는 것으로 요약되어 있습니다.",
+      "corrections": [
+        "규칙 초안의 2025-04-15 날짜는 원문 메타에서 확인되지 않아 published를 비웠습니다.",
+        "규칙 초안의 분류와 주제는 제공된 문서 요약에 근거해 유지했습니다."
+      ],
+      "confidence": "medium",
+      "flags": [],
+      "issuer_level": "lab"
+    }
+  },
+  "doc-567897b9e835": {
+    "src_hash": "ed2a3594f958d1f4",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "xAI의 프론티어 AI 위험 관리 프레임워크를 설명하는 개발사 정책 문서로 AI 위험 관리와 직접 관련됩니다.",
+      "reject_reason": "",
+      "doc_kind": "가이드라인·원칙",
+      "topics": [
+        {
+          "id": "frontier",
+          "evidence": "xAI의 프론티어 AI 위험 관리 프레임워크"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표·공개일이 명시되어 있지 않으며, 규칙 초안의 날짜는 사용하지 않았습니다.",
+      "short_name": "xAI 프론티어 AI 프레임워크",
+      "summary": "이 문서는 xAI의 프론티어 AI 위험 관리 프레임워크를 설명합니다. 이전 Risk Management Framework 계열의 문서로 제시되어 있습니다. 제공된 메타에는 시드로 METR와 Vorp가 언급되어 있습니다.",
+      "corrections": [
+        "규칙 초안의 published 날짜를 제거했습니다.",
+        "확인 가능한 근거에 따라 topics를 frontier로 유지했습니다."
+      ],
+      "confidence": "medium",
+      "flags": [],
+      "issuer_level": "lab"
+    }
+  },
+  "doc-07cc53683c9c": {
+    "src_hash": "819ffc57d2240aae",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "Google DeepMind가 프론티어 모델의 역량과 관련 위험을 추적하기 위한 안전 프레임워크를 제시한 개발사 정책 문서입니다.",
+      "reject_reason": "",
+      "doc_kind": "가이드라인·원칙",
+      "topics": [
+        {
+          "id": "frontier",
+          "evidence": "프론티어 모델의 역량과 관련 위험을 추적"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "제공된 원문 메타에 발표·공개일이 명시되지 않아 날짜를 기재하지 않았습니다.",
+      "short_name": "Google DeepMind 프론티어 안전 프레임워크 v3.1",
+      "summary": "Google DeepMind의 프론티어 안전 프레임워크 v3.1입니다. 이 프레임워크는 Critical Capability Levels(CCL)과 Tracked Capability Levels(TCL)을 기반으로 프론티어 모델의 역량과 관련 위험을 추적합니다. 원문 요약에는 METR와 Vorp가 시드로 언급되어 있습니다.",
+      "corrections": [
+        "규칙 초안의 published 날짜는 원문 메타에 발표일 근거가 없어 제거했습니다.",
+        "제공된 근거가 명확한 frontier 토픽만 유지했습니다."
+      ],
+      "confidence": "medium",
+      "flags": [],
+      "issuer_level": "lab"
+    }
+  },
+  "doc-637909a9f694": {
+    "src_hash": "d08814172d0d7b4c",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "Meta의 AI 시스템 재앙적 위험 평가와 배포 기준을 다루는 개발사 정책이므로 AI 안전·거버넌스와 직접 관련됩니다.",
+      "reject_reason": "",
+      "doc_kind": "가이드라인·원칙",
+      "topics": [
+        {
+          "id": "frontier",
+          "evidence": "AI 시스템의 재앙적 위험을 평가하기 위한 개발사 정책"
+        },
+        {
+          "id": "cybersecurity",
+          "evidence": "화학·생물학적 위험, 사이버 위험, 통제 상실을 주요 위험 범주로 제시합니다."
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 공식 발표일이 명시되지 않았으며, 제시된 2026-04-08은 규칙 초안의 참고값이므로 사용하지 않았습니다.",
+      "short_name": "Meta 고도 AI 스케일링 프레임워크 v2",
+      "summary": "Meta의 고도 AI 스케일링 프레임워크 v2는 AI 시스템의 재앙적 위험을 평가하기 위한 개발사 정책입니다. 문서는 화학·생물학적 위험, 사이버 위험, 통제 상실을 주요 위험 범주로 제시합니다. 각 위험에 대한 임계값과 배포 기준을 다룹니다. 이 문서는 이전에 Frontier AI Framework라는 명칭으로 불렸습니다.",
+      "corrections": [
+        "규칙 초안에 제시된 2026-04-08은 원문 발표일로 확인되지 않아 published에서 제외했습니다.",
+        "원문 메타에 근거해 문서 유형을 개발사 정책으로 유지하고, frontier 및 cybersecurity 토픽을 선정했습니다."
+      ],
+      "confidence": "medium",
+      "flags": [],
+      "issuer_level": "lab"
+    }
+  },
+  "doc-b78cf97cc6df": {
+    "src_hash": "d597351acc95aabc",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "Microsoft의 프론티어 모델 거버넌스와 위험 관리 접근을 직접 다루는 개발사 정책 문서입니다.",
+      "reject_reason": "",
+      "doc_kind": "가이드라인·원칙",
+      "topics": [
+        {
+          "id": "frontier",
+          "evidence": "Microsoft Frontier Governance Framework"
+        },
+        {
+          "id": "norms",
+          "evidence": "Microsoft의 프론티어 모델 거버넌스 및 위험 관리 프레임워크"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "제목에 'February 2026'이 표시되지만 정확한 발표일은 확인되지 않으므로 날짜를 기재하지 않았습니다.",
+      "short_name": "마이크로소프트 프론티어 거버넌스 프레임워크",
+      "summary": "Microsoft의 프론티어 모델 거버넌스 및 위험 관리 프레임워크입니다. 프론티어 모델과 관련된 Microsoft의 거버넌스 접근을 다룹니다. 원문 메타에는 METR와 Vorp가 시드로 언급되어 있습니다.",
+      "corrections": [
+        "원문 제목에 월과 연도만 확인되어 published를 비우고 published_confidence를 none으로 설정했습니다.",
+        "제공된 메타데이터에 근거해 frontier와 norms 토픽을 유지했습니다."
+      ],
+      "confidence": "medium",
+      "flags": [],
+      "issuer_level": "lab"
+    }
+  },
+  "doc-98eceb769c92": {
+    "src_hash": "660e6eea9ec28020",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "Anthropic의 프론티어 모델 위험 관리와 모델 능력 임계치에 따른 보안·배포 안전장치를 다루는 개발사 정책입니다.",
+      "reject_reason": "",
+      "doc_kind": "가이드라인·원칙",
+      "topics": [
+        {
+          "id": "frontier",
+          "evidence": "Anthropic의 프론티어 모델 위험 관리 프로토콜"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표일이 명시되어 있지 않아 비웠으며, 규칙 초안의 날짜는 채택하지 않았습니다.",
+      "short_name": "Anthropic 책임 있는 Scaling 정책(RSP) v3.4",
+      "summary": "Anthropic의 프론티어 모델 위험 관리 프로토콜입니다. 모델 능력 임계치에 따라 보안 및 배포 안전장치(ASL 등)를 사전에 약속합니다. 원문 메타 요약은 이 정책의 시드로 METR Common Elements와 Vorp inventory를 언급합니다.",
+      "corrections": [
+        "규칙 초안의 published 2026-07-08을 근거가 확인되지 않은 날짜로 보아 제외했습니다.",
+        "원문 메타 요약에서 AI 안전 연구를 직접 다루는 근거가 확인되지 않아 safety_research 토픽을 제외했습니다."
+      ],
+      "confidence": "medium",
+      "flags": [],
+      "issuer_level": "lab"
+    }
+  },
+  "doc-9f98a91c2f74": {
+    "src_hash": "e764750ca1be04de",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "NVIDIA가 작성한 프론티어 AI의 위험 평가 문서로 AI 안전·리스크 평가와 직접 관련됩니다.",
+      "reject_reason": "",
+      "doc_kind": "가이드라인·원칙",
+      "topics": [
+        {
+          "id": "frontier",
+          "evidence": "NVIDIA Frontier AI Risk Assessment"
+        },
+        {
+          "id": "safety_research",
+          "evidence": "프론티어 AI 위험 평가"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "제공된 원문 메타에 발표일이 없으며, 규칙 초안의 날짜는 원문 근거로 확인되지 않아 사용하지 않았습니다.",
+      "short_name": "NVIDIA 프론티어 AI 위험 평가",
+      "summary": "NVIDIA가 작성한 프론티어 AI 위험 평가 문서입니다. 문서의 원제는 “NVIDIA Frontier AI Risk Assessment”입니다. 제공된 메타데이터에는 PRA와 DRA 등의 위험 평가가 언급되어 있습니다.",
+      "corrections": [
+        "규칙 초안의 published 날짜를 원문 근거가 없어 제거했습니다.",
+        "제공된 메타데이터에서 확인되는 주제만 반영했습니다."
+      ],
+      "confidence": "medium",
+      "flags": [],
+      "issuer_level": "lab"
+    }
+  },
+  "doc-36790437fb84": {
+    "src_hash": "b9fdedf5ccb5bf7f",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "G42가 작성한 프론티어 AI 안전 프레임워크로, 프론티어 AI의 안전을 직접 다루는 개발사 정책 문서입니다.",
+      "reject_reason": "",
+      "doc_kind": "가이드라인·원칙",
+      "topics": [
+        {
+          "id": "frontier",
+          "evidence": "G42 Frontier AI Safety Framework"
+        },
+        {
+          "id": "safety_research",
+          "evidence": "프론티어 AI 안전 프레임워크"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "제공된 메타데이터의 2025-02-06은 규칙 초안에만 제시되어 있으며 원문 발표일로 확인되지 않으므로 사용하지 않았습니다.",
+      "short_name": "G42 프론티어 AI 안전 프레임워크",
+      "summary": "G42가 작성한 프론티어 AI 안전 프레임워크입니다. 이 문서는 프론티어 AI의 안전을 다루는 것으로 제공된 메타데이터에 설명되어 있습니다. 메타데이터에는 METR와 Vorp가 시드로 기재되어 있습니다.",
+      "corrections": [
+        "규칙 초안의 2025-02-06 날짜를 원문 발표일로 확인할 수 없어 published에서 제외했습니다.",
+        "제공된 메타데이터에 근거해 frontier 및 safety_research 토픽을 부여했습니다."
+      ],
+      "confidence": "medium",
+      "flags": [
+        "limited_source_metadata"
+      ],
+      "issuer_level": "lab"
+    }
+  },
+  "doc-0eb8b3c57e44": {
+    "src_hash": "e81a07eba6ecf8c4",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "Cohere의 프론티어 모델 보안과 오용 위험을 다루는 개발사 프레임워크로 AI 안전·보안 거버넌스와 직접 관련됩니다.",
+      "reject_reason": "",
+      "doc_kind": "가이드라인·원칙",
+      "topics": [
+        {
+          "id": "frontier",
+          "evidence": "Cohere Secure AI Frontier Model Framework"
+        },
+        {
+          "id": "cybersecurity",
+          "evidence": "프론티어 모델의 보안 및 오용 위험"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표일이 명시되어 있지 않아 규칙 초안의 날짜를 사용하지 않음.",
+      "short_name": "Cohere 프론티어 모델 보안 프레임워크",
+      "summary": "Cohere가 프론티어 모델의 보안과 오용 위험을 다루기 위해 제시한 프레임워크입니다. 이 프레임워크는 프론티어 모델의 보안 위험에 초점을 둡니다. 원문 메타에는 METR와 Vorp가 시드로 언급되어 있습니다.",
+      "corrections": [
+        "원문 발표일이 확인되지 않아 규칙 초안의 2025-02-07을 published에서 제외함.",
+        "원문 메타에 근거해 topics를 frontier와 cybersecurity로 제한함."
+      ],
+      "confidence": "medium",
+      "flags": [],
+      "issuer_level": "lab"
+    }
+  },
+  "doc-e0d9f5f32ad7": {
+    "src_hash": "946d3354b14440ca",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "Amazon의 프론티어 모델에 적용되는 안전 프레임워크로서 고위험 역량과 모델 배포 전 안전장치를 다룹니다.",
+      "reject_reason": "",
+      "doc_kind": "가이드라인·원칙",
+      "topics": [
+        {
+          "id": "frontier",
+          "evidence": "Amazon의 프론티어 모델에 적용되는 안전 프레임워크"
+        },
+        {
+          "id": "safety_research",
+          "evidence": "자동화된 AI R&D와 관련된 Critical Capability Thresholds"
+        },
+        {
+          "id": "national_security",
+          "evidence": "CBRN, 공격적 사이버"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표·공개일이 명시되어 있지 않으며, 규칙 초안의 날짜는 사용하지 않았습니다.",
+      "short_name": "Amazon 프론티어 모델 안전 프레임워크",
+      "summary": "Amazon의 프론티어 모델에 적용되는 안전 프레임워크입니다. CBRN, 공격적 사이버, 자동화된 AI R&D와 관련된 Critical Capability Thresholds를 다룹니다. 모델 배포 전에 적용하는 안전장치를 제시합니다.",
+      "corrections": [
+        "원문 메타에 발표일이 없어 published를 비웠습니다."
+      ],
+      "confidence": "high",
+      "flags": [],
+      "issuer_level": "lab"
+    }
+  },
+  "doc-6676c6a385d7": {
+    "src_hash": "6bf26b4be94342cd",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "NAVER의 AI 안전 프레임워크로서 프론티어 AI 안전 대응과 직접 관련된 개발사 정책 문서이다.",
+      "reject_reason": "",
+      "doc_kind": "가이드라인·원칙",
+      "topics": [
+        {
+          "id": "frontier",
+          "evidence": "서울 프론티어 커밋먼트 대응"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표일이 명시되지 않았으며, 규칙 초안의 2024-08-07은 참고값으로 사용하지 않음.",
+      "short_name": "NAVER AI 안전 프레임워크",
+      "summary": "NAVER의 AI 안전 프레임워크를 소개하는 개발사 정책 문서이다. 이 프레임워크는 서울 프론티어 커밋먼트 대응과 관련되어 있다. 원문 메타에는 METR와 Vorp가 시드로 제시되어 있다.",
+      "corrections": [
+        "규칙 초안의 published 날짜를 제거하고 미상으로 처리함.",
+        "원문 근거가 확인되는 frontier 토픽만 부여함."
+      ],
+      "confidence": "medium",
+      "flags": [
+        "제공된 메타데이터만으로 세부 정책 내용과 적용 범위 확인이 제한됨"
+      ],
+      "issuer_level": "lab"
+    }
+  },
+  "doc-14c6b29b18f1": {
+    "src_hash": "65e2691d3c22f43f",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "프론티어 코딩 모델의 위험과 AGI 준비를 다루는 개발사 정책 문서입니다.",
+      "reject_reason": "",
+      "doc_kind": "가이드라인·원칙",
+      "topics": [
+        {
+          "id": "frontier",
+          "evidence": "프론티어 코딩 모델의 위험"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표일이 명시되어 있지 않으며, 제시된 2024-07-02는 규칙 초안의 참고 정보이므로 사용하지 않았습니다.",
+      "short_name": "Magic AGI 준비 정책",
+      "summary": "Magic의 AGI 준비와 관련된 개발사 정책 문서입니다. 이 문서는 프론티어 코딩 모델의 위험을 다루는 정책으로 소개되어 있습니다. 문서 버전은 v1.0입니다. 시드로 METR와 Vorp가 언급되어 있습니다.",
+      "corrections": [
+        "규칙 초안의 2024-07-02 날짜는 원문 발표일로 확인되지 않아 published에서 제외했습니다.",
+        "확인 가능한 근거에 따라 topics를 frontier로 제한했습니다."
+      ],
+      "confidence": "medium",
+      "flags": [],
+      "issuer_level": "lab"
+    }
+  },
+  "doc-cf891d0ba077": {
+    "src_hash": "cbd18ca278809b11",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "LG AI Research의 파운데이션 모델 관련 AI 윤리·안전 위험 분류와 거버넌스 운영 성과를 다루는 책무성 보고서입니다.",
+      "reject_reason": "",
+      "doc_kind": "가이드라인·원칙",
+      "topics": [
+        {
+          "id": "norms",
+          "evidence": "AI 윤리 책무성 보고서"
+        },
+        {
+          "id": "safety_research",
+          "evidence": "K-AUT 위험 분류, 윤리영향평가"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "제목에 2025년이라는 연도만 표시되어 있으며, 원문 메타에 발표·공개 일자가 명시되지 않았습니다.",
+      "short_name": "LG AI Research AI 윤리 책무성 보고서 2025",
+      "summary": "LG AI연구원의 2025년 AI 윤리 책무성 보고서입니다. 파운데이션 모델 EXAONE과 관련해 K-AUT 위험 분류와 윤리영향평가 운영 성과를 공개합니다. 데이터 컴플라이언스 체계인 EXAONE NEXUS도 다룹니다. 국내 파운데이션 모델 개발사의 AI 안전·윤리 거버넌스 공개 문서입니다.",
+      "corrections": [
+        "규칙 초안의 2026-03-04 날짜를 발표일로 확인할 수 없어 published를 비웠습니다.",
+        "문서 메타에 명시된 AI 윤리·위험 분류·윤리영향평가 근거에 따라 topics를 유지했습니다."
+      ],
+      "confidence": "medium",
+      "flags": [],
+      "issuer_level": "lab"
+    }
+  },
+  "doc-2471ac5de814": {
+    "src_hash": "a3c730082b2ffb3f",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "네이버의 프론티어 및 서비스 중심 AI 안전 프레임워크로서 AI 위험 분류·영향평가·운영체계를 다룹니다.",
+      "reject_reason": "",
+      "doc_kind": "가이드라인·원칙",
+      "topics": [
+        {
+          "id": "frontier",
+          "evidence": "네이버의 프론티어 및 서비스 중심 AI 안전 프레임워크 2.0"
+        },
+        {
+          "id": "safety_research",
+          "evidence": "모델·프론티어 위험을 확장해 멀티모델 서비스의 전주기 위험 분류와 영향평가를 포함합니다."
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "제공된 원문 메타에 발표·공개일이 명시되어 있지 않습니다. 규칙 초안의 2026-07-08은 원문 날짜 근거가 없어 사용하지 않았습니다.",
+      "short_name": "네이버 AI 안전 프레임워크 2.0",
+      "summary": "네이버의 프론티어 및 서비스 중심 AI 안전 프레임워크 2.0입니다. 2024 ASF Beta에서 다룬 모델·프론티어 위험을 확장해 멀티모델 서비스의 전주기 위험 분류와 영향평가를 포함합니다. 또한 CHEC 2.0 운영체계를 담고 있습니다. METR Common Elements 목록에 포함된 한국 개발사 사례로 제시됩니다.",
+      "corrections": [
+        "원문 메타에 발표일이 없어 published를 비우고 published_confidence를 none으로 설정했습니다.",
+        "제공된 내용에 근거해 topics를 frontier와 safety_research로 유지했습니다."
+      ],
+      "confidence": "medium",
+      "flags": [],
+      "issuer_level": "lab"
+    }
+  },
+  "doc-0935b6b25e25": {
+    "src_hash": "7e96987216094411",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "카카오의 생성형·프론티어 AI 리스크 관리와 안전 거버넌스 운영 체계를 직접 다루는 개발사 정책입니다.",
+      "reject_reason": "",
+      "doc_kind": "가이드라인·원칙",
+      "topics": [
+        {
+          "id": "norms",
+          "evidence": "체계는 윤리원칙, 리스크 식별·평가·대응 사이클, AI Safety·ERM·경영진의 3단 거버넌스로 구성됩니다."
+        },
+        {
+          "id": "frontier",
+          "evidence": "생성형·프론티어 AI 리스크 운영 정책으로 제시됩니다."
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "제공된 원문 메타에는 발표·공개일이 명시되어 있지 않아 규칙 초안의 날짜를 사용하지 않았습니다.",
+      "short_name": "카카오 AI 안전 이니셔티브(Kakao ASI)",
+      "summary": "카카오의 AI 리스크 관리 체계인 Kakao ASI의 구성과 운영 방식을 설명합니다. 체계는 윤리원칙, 리스크 식별·평가·대응 사이클, AI Safety·ERM·경영진으로 구성된 3단 거버넌스를 포함합니다. 고위험으로 평가된 AI는 출시를 보류하고 완화 조치 후 재평가합니다. 이 체계는 Kanana 모델 안전평가와 연동되며 생성형·프론티어 AI 리스크 운영 정책으로 제시됩니다.",
+      "corrections": [
+        "원문 메타에 발표일이 확인되지 않아 규칙 초안의 2024-10-22를 published에서 제외했습니다.",
+        "원문 근거가 확인되는 norms와 frontier만 토픽으로 유지했습니다."
+      ],
+      "confidence": "medium",
+      "flags": [],
+      "issuer_level": "lab"
+    }
+  },
+  "doc-748dfb75ac4f": {
+    "src_hash": "d9a5dcb8b11a818a",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "삼성SDS의 AI 개발·활용 전 과정에 적용되는 윤리 원칙과 책임 기준을 제시하는 문서입니다.",
+      "reject_reason": "",
+      "doc_kind": "가이드라인·원칙",
+      "topics": [
+        {
+          "id": "norms",
+          "evidence": "인간 중심, 평등·다양성, 데이터 투명성·보안, 환경 지속가능성, 설명가능성"
+        },
+        {
+          "id": "guideline",
+          "evidence": "원칙을 개발·활용 전 과정에 적용"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표·제정·공개일이 명시되어 있지 않으며, 제시된 2024-01-01은 규칙 초안의 추정값이므로 사용하지 않았습니다.",
+      "short_name": "삼성SDS AI 윤리헌장",
+      "summary": "삼성SDS의 AI 윤리헌장은 UNESCO AI 윤리 권고를 참고해 마련된 원칙 문서입니다. 인간 중심, 평등과 다양성, 데이터 투명성과 보안, 환경 지속가능성, 설명가능성을 주요 원칙으로 제시합니다. 이 원칙들은 AI의 개발과 활용 전 과정에 적용됩니다.",
+      "corrections": [
+        "원문에 발표일이 없어 규칙 초안의 2024-01-01을 삭제하고 published를 공란으로 처리했습니다."
+      ],
+      "confidence": "medium",
+      "flags": [],
+      "issuer_level": "lab"
+    }
+  },
+  "doc-2cc6bc8d3a5d": {
+    "src_hash": "61584af5ab441c81",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "KT의 책임 있는 AI 원칙과 AI 거버넌스 및 위험 식별·평가·완화 프로세스를 다루는 가이드라인 문서입니다.",
+      "reject_reason": "",
+      "doc_kind": "가이드라인·원칙",
+      "topics": [
+        {
+          "id": "norms",
+          "evidence": "KT Responsible AI 5원칙 ASTRI"
+        },
+        {
+          "id": "guideline",
+          "evidence": "RAI 거버넌스·위험 식별/평가/완화 프로세스의 기준"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표·채택일이 명시되지 않았으며, 규칙 초안의 2024-01-01은 추정 날짜로 보아 사용하지 않았습니다.",
+      "short_name": "KT 책임 있는 AI 원칙(ASTRI)",
+      "summary": "KT의 책임 있는 AI 원칙은 ASTRI로 요약되는 5개 원칙으로 구성됩니다. ASTRI는 Accountability, Sustainability, Transparency, Reliability, Inclusivity를 뜻합니다. 이 원칙은 책임 있는 AI 거버넌스와 위험 식별·평가·완화 프로세스의 기준으로 제시됩니다. 관련 공개물로 KT RAI Report와 RAI Technical Report가 언급됩니다.",
+      "corrections": [
+        "원문 메타에 발표일이 확인되지 않아 published를 비우고 published_confidence를 none으로 설정했습니다."
+      ],
+      "confidence": "medium",
+      "flags": [],
+      "issuer_level": "lab"
+    }
+  },
+  "doc-23190f64d4e6": {
+    "src_hash": "21b3fb3a83c76159",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "업스테이지가 AI 개발과 데이터 거버넌스에 적용하는 윤리 원칙을 제시한 개발사 정책 문서입니다.",
+      "reject_reason": "",
+      "doc_kind": "가이드라인·원칙",
+      "topics": [
+        {
+          "id": "norms",
+          "evidence": "업스테이지의 AI 윤리 5원칙(사람중심·신뢰성·공정성·안전성·보편성)"
+        },
+        {
+          "id": "guideline",
+          "evidence": "데이터 정제·모델 개발에 적용"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "제공된 원문 메타에는 발표·채택일이 명시되어 있지 않으며, 2023-09-13은 규칙 초안의 날짜 정보이므로 사용하지 않았습니다.",
+      "short_name": "업스테이지 AI 윤리 원칙",
+      "summary": "업스테이지는 사람중심, 신뢰성, 공정성, 안전성, 보편성을 AI 윤리 5원칙으로 제시합니다. 이 원칙은 데이터 정제와 모델 개발에 적용됩니다. 또한 1T Club 등 데이터 거버넌스와 연동됩니다.",
+      "corrections": [
+        "문서 성격을 일반적인 가이드라인·원칙보다 개발사가 자체적으로 제시한 정책으로 보아 개발사 정책으로 분류했습니다.",
+        "원문 발표일이 확인되지 않아 published를 비웠습니다."
+      ],
+      "confidence": "medium",
+      "flags": [],
+      "issuer_level": "lab"
+    }
+  },
+  "doc-d5091a05abbf": {
+    "src_hash": "fcfe4a003dba5e29",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "AI의 데이터 프라이버시·편향·투명성을 다루는 기업의 AI 윤리 프레임워크로서 AI 거버넌스와 윤리 원칙에 직접 관련됩니다.",
+      "reject_reason": "",
+      "doc_kind": "가이드라인·원칙",
+      "topics": [
+        {
+          "id": "norms",
+          "evidence": "Data Privacy·Unbiased·Transparency 3축"
+        },
+        {
+          "id": "guideline",
+          "evidence": "게임·생성 AI 맥락의 편향·무례 표현 완화 등 실천 체계"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "제공된 메타데이터에 원문 발표일이 없으며, 2023-01-01은 규칙 초안의 추정값으로 보이므로 사용하지 않음.",
+      "short_name": "엔씨소프트 AI 윤리 프레임워크",
+      "summary": "엔씨소프트의 AI 윤리 프레임워크는 Data Privacy, Unbiased, Transparency의 3개 축으로 구성됩니다. 이 프레임워크는 게임 및 생성 AI 맥락에서 발생할 수 있는 편향과 무례한 표현을 완화하기 위한 실천 체계를 제시합니다. 제공된 메타데이터만으로는 세부 원칙과 적용 범위를 확인할 수 없습니다.",
+      "corrections": [
+        "규칙 초안의 2023-01-01 날짜를 원문 발표일 확인 불가로 보고 published에서 제거함."
+      ],
+      "confidence": "medium",
+      "flags": [],
+      "issuer_level": "lab"
     }
   }
 }

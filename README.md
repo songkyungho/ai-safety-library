@@ -2,13 +2,17 @@
 
 AI 관련 법·윤리·선언·가이드라인을 **원본 랜딩 URL** 기준으로 모아 보여 주는 자료 저장소입니다. 외교부·IAAE·AGORA·OECD 등 여러 큐레이터에 같은 문서가 있어도 원본으로 묶고, 상세 페이지는 **발표 히스토리**입니다. 일일 뉴스 요약(AI Safety Digest)과는 별개입니다.
 
+- **공개 사이트:** https://songkyungho.github.io/ai-safety-library/
+- **소개:** https://songkyungho.github.io/ai-safety-library/about.html
+
 **문서 필드**: 약칭 · 문서명(풀네임) · 기관 · 문서종류(법/법안/가이드라인·원칙/정책보고서 등) · 발표시점 · 핵심내용.
 외교부 본문의 `●기관`/`●문서종류`/`●문서명`/`●핵심내용`을 파싱해 채웁니다.
 
 ## 빠른 사용
 
 ```bash
-# IAAE 상세에서 [자료출처] URL 채우기
+# IAAE 목록 신규 + 상세에서 [자료출처] URL 채우기
+python3 scripts/ingest_iaae_board.py
 python3 scripts/enrich_iaae.py
 
 # OECD 재수집 (국가·sourceFiles 포함)
@@ -21,7 +25,22 @@ python3 scripts/audit_library.py --check-links --apply-dead
 python3 scripts/build_site.py
 ```
 
-화면: [`dist/index.html`](dist/index.html)
+화면: [`docs/index.html`](docs/index.html) · 공개 https://songkyungho.github.io/ai-safety-library/
+
+## 일일 자동 갱신
+
+동향 Digest와 같이 **이 맥의 launchd**로 돌립니다. (GitHub Actions 아님)
+
+- **시각:** 매일 09:00
+- **에이전트:** `launchd/com.user.ai-safety-library-daily.plist`
+- **하는 일:** OECD 수집 → IAAE 목록·보강 → 신규 LLM 큐레이션 → `build_site`(docs/) → (기본) git push → GitHub Pages
+- **수동 실행:** `./run_daily_pipeline.sh`
+- **로그:** `/tmp/ai-safety-library-daily.out.log` · `.err.log`
+- **환경변수:** Digest의 `ai_safety_daily_env` (OpenRouter 키) 재사용
+
+IAAE는 이 라이브러리에서만 수집·보관한다. Digest로 신규분을 알리지 않는다.
+
+push를 끄려면 `LIBRARY_PUSH=0 ./run_daily_pipeline.sh`.
 
 ## 데이터
 

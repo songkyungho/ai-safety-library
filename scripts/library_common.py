@@ -16,6 +16,7 @@ COLLECTIONS = [
     ("iaae-ethics", "IAAE 연구자료실"),
     ("agora", "ETO AGORA"),
     ("oecd-navigator", "OECD.AI Policy Navigator"),
+    ("lab-policies", "개발사 프론티어 안전 정책"),
     ("derived-splits", "묶음 분리"),
 ]
 

@@ -49,7 +49,7 @@ TOPIC_ORDER = [
     "incidents",
 ]
 
-# 동향 HTML --topic-* 라이트 팔레트
+# 동향 HTML --topic-* 라이트 팔레트 (export_digest_html.py 와 동일)
 TOPIC_COLORS: dict[str, str] = {
     "norms": "#a16207",
     "law": "#1d4ed8",

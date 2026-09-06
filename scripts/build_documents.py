@@ -118,6 +118,8 @@ def history_label(item: dict) -> str:
         return "원문 기록"
     if col == "oecd-navigator":
         return "OECD 등록"
+    if col == "lab-policies":
+        return "개발사 게시"
     if col == "derived-splits":
         return "원문 첨부"
     return COL_LABEL.get(col, col)
@@ -481,6 +483,14 @@ def build_documents(*, skip_instrument_merge: bool = False) -> list[dict]:
                 print(f"instrument_merge applied: {merge_stats}")
         except Exception as e:
             print("instrument_merge skip:", e)
+    try:
+        from issuer_levels import apply_issuer_taxonomy
+
+        iss = apply_issuer_taxonomy(docs)
+        if iss.get("lab_kind_migrated") or iss.get("issuer_set"):
+            print(f"issuer_level applied: {iss}")
+    except Exception as e:
+        print("issuer_level skip:", e)
     return docs
 
 
