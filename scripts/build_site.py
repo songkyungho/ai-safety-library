@@ -31,7 +31,7 @@ FOOTER_HTML = (
     "원본 랜딩 URL 기준 · 발표 히스토리 · AGORA CC BY-NC 4.0"
     "</footer>"
 )
-# AI Safety Digest festival palette → document kinds (light, dark).
+# 문서종류 칩 색 (라이트). 동향 시리즈 톤과 맞추되 헤더 네이비는 슬레이트 계열.
 # Digest tokens: navy #474284 · gold #f3b84f · accent #ef3837 · sage #3f5340 · rose #b44a58
 KIND_COLORS = {
     "법": ("#1d4ed8", "#93c5fd"),          # topic-law
@@ -339,77 +339,18 @@ def render_kind_trend(docs: list[dict], *, from_year: int = 2017) -> str:
 
 
 EXTRA_CSS = """
-/* 동향 Digest 페스티벌 팔레트(지면·내비·악센트) */
+/* 지면 토큰은 ui_common.NAV_CSS(:root) — 라이트 전용, 동향과 같은 시리즈·살짝 식힌 팔레트 */
 .viz-root {
-  --ink: #2a2848;
-  --ink-muted: #3a3858;
-  --text-muted: #5a6258;
-  --text-primary: #2a2848;
-  --text-secondary: #4a4858;
-  --plane: #f6f1e4;
-  --surface-1: #fffdf8;
-  --surface-2: #faf6ec;
-  --surface-pearl: #fffdf8;
-  --tile-dark: #221f32;
-  --accent: #ef3837;
-  --accent-focus: #474284;
-  --hairline: #e4dcc8;
-  --border: #e4dcc8;
-  --gridline: #ebe4d4;
-  --baseline: #e4dcc8;
-  --on-dark: #f6f1e4;
-  --navy: #474284;
-  --gold: #f3b84f;
-  --sage: #3f5340;
-  --rose: #b44a58;
   background: var(--plane);
   color: var(--ink);
   font-family: "IBM Plex Sans KR", "IBM Plex Sans", -apple-system, BlinkMacSystemFont,
     "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
 }
-@media (prefers-color-scheme: dark) {
-  .viz-root:where(:not([data-theme="light"])) {
-    --ink: #eee8dc; --ink-muted: #d8d0c0; --text-muted: #a8a898;
-    --text-primary: #eee8dc; --text-secondary: #c8c0b0;
-    --plane: #1a1828; --surface-1: #221f32; --surface-2: #2a2740;
-    --surface-pearl: #221f32; --tile-dark: #12101c;
-    --accent: #ed7787; --accent-focus: #b0acd8;
-    --hairline: #323048; --border: #323048; --gridline: #2a2840;
-    --baseline: #323048; --on-dark: #f6f1e4;
-    --navy: #2e2b5c; --gold: #f3b84f; --sage: #9bb396; --rose: #ed7787;
-  }
-}
-.viz-root[data-theme="dark"] {
-  --ink: #eee8dc; --ink-muted: #d8d0c0; --text-muted: #a8a898;
-  --text-primary: #eee8dc; --text-secondary: #c8c0b0;
-  --plane: #1a1828; --surface-1: #221f32; --surface-2: #2a2740;
-  --surface-pearl: #221f32; --tile-dark: #12101c;
-  --accent: #ed7787; --accent-focus: #b0acd8;
-  --hairline: #323048; --border: #323048; --gridline: #2a2840;
-  --baseline: #323048; --on-dark: #f6f1e4;
-  --navy: #2e2b5c; --gold: #f3b84f; --sage: #9bb396; --rose: #ed7787;
-}
-.viz-root[data-theme="light"] {
-  --ink: #2a2848; --plane: #f6f1e4; --surface-1: #fffdf8;
-  --accent: #ef3837; --accent-focus: #474284; --hairline: #e4dcc8;
-}
-.global-nav {
-  background: var(--navy) !important;
-  border-bottom-color: transparent !important;
-}
-.global-nav a, .global-nav .nav-current {
-  color: var(--on-dark) !important;
-}
-.global-nav a:hover { opacity: 0.88; }
-.sub-nav {
-  background: color-mix(in srgb, var(--surface-1) 92%, var(--gold) 8%) !important;
-  border-bottom-color: var(--hairline) !important;
-}
 a { color: var(--sage, #3f5340); }
 a:hover { color: var(--accent); }
 .timeline { position: relative; padding-left: 20px; }
 .timeline::before { content: ""; position: absolute; left: 4px; top: 6px; bottom: 6px; width: 2px; background: var(--baseline); }
-.year-group { margin-bottom: 8px; scroll-margin-top: 72px; }
+.year-group { margin-bottom: 8px; scroll-margin-top: 108px; }
 .year-header {
   cursor: pointer; font: inherit; font-weight: 600; font-size: 17px; letter-spacing: -0.37px;
   padding: 8px 0; color: var(--ink); user-select: none;
@@ -449,8 +390,6 @@ button.back-link { font: inherit; background: none; border: 0; padding: 0; }
 .event-card { position: relative; padding: 16px 18px; margin-bottom: 12px; }
 .event-card.open { border-color: color-mix(in srgb, var(--c-l) 35%, var(--hairline)); }
 .event-card::before { content: ""; position: absolute; left: -20px; top: 18px; width: 10px; height: 10px; border-radius: 50%; background: var(--c-l); border: 2px solid var(--plane); }
-@media (prefers-color-scheme: dark) { :root:where(:not([data-theme="light"])) .event-card::before { background: var(--c-d); } }
-:root[data-theme="dark"] .event-card::before { background: var(--c-d); }
 .event-head { display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline; margin-bottom: 4px; }
 .event-date { font-variant-numeric: tabular-nums; color: var(--text-muted); font-size: 12px; }
 .event-summary { margin: 6px 0; font-size: 17px; line-height: 1.47; letter-spacing: -0.37px; }
@@ -548,16 +487,6 @@ button.filter-more:hover { color: var(--ink); border-color: var(--text-muted); }
   color: #6b7280; border-color: color-mix(in srgb, #6b7280 28%, var(--hairline));
   background: color-mix(in srgb, #6b7280 8%, var(--surface-1));
 }
-@media (prefers-color-scheme: dark) {
-  :root:where(:not([data-theme="light"])) .event-summary .status-badge.status-enacted { color: #93c5fd; }
-  :root:where(:not([data-theme="light"])) .event-summary .status-badge.status-amended { color: #fbbf24; }
-  :root:where(:not([data-theme="light"])) .event-summary .status-badge.status-pending { color: #fb7185; }
-  :root:where(:not([data-theme="light"])) .event-summary .status-badge.status-defunct { color: #9ca3af; }
-}
-:root[data-theme="dark"] .event-summary .status-badge.status-enacted { color: #93c5fd; }
-:root[data-theme="dark"] .event-summary .status-badge.status-amended { color: #fbbf24; }
-:root[data-theme="dark"] .event-summary .status-badge.status-pending { color: #fb7185; }
-:root[data-theme="dark"] .event-summary .status-badge.status-defunct { color: #9ca3af; }
 .badge.kind-law, .filter-chip.kind-law { --chip: #1d4ed8; }
 .badge.kind-bill, .filter-chip.kind-bill { --chip: #be123c; }
 .badge.kind-admin, .filter-chip.kind-admin { --chip: #0369a1; }
@@ -570,44 +499,6 @@ button.filter-more:hover { color: var(--ink); border-color: var(--text-muted); }
 .badge.kind-institution, .filter-chip.kind-institution { --chip: #3f5340; }
 .badge.kind-news, .filter-chip.kind-news { --chip: #b44a58; }
 .badge.kind-other, .filter-chip.kind-other { --chip: #534f4a; }
-@media (prefers-color-scheme: dark) {
-  :root:where(:not([data-theme="light"])) .badge.kind-law,
-  :root:where(:not([data-theme="light"])) .filter-chip.kind-law { --chip: #93c5fd; }
-  :root:where(:not([data-theme="light"])) .badge.kind-bill,
-  :root:where(:not([data-theme="light"])) .filter-chip.kind-bill { --chip: #fb7185; }
-  :root:where(:not([data-theme="light"])) .badge.kind-admin,
-  :root:where(:not([data-theme="light"])) .filter-chip.kind-admin { --chip: #7dd3fc; }
-  :root:where(:not([data-theme="light"])) .badge.kind-treaty,
-  :root:where(:not([data-theme="light"])) .filter-chip.kind-treaty { --chip: #b8b4d0; }
-  :root:where(:not([data-theme="light"])) .badge.kind-declaration,
-  :root:where(:not([data-theme="light"])) .filter-chip.kind-declaration { --chip: #fbbf24; }
-  :root:where(:not([data-theme="light"])) .badge.kind-guideline,
-  :root:where(:not([data-theme="light"])) .filter-chip.kind-guideline { --chip: #5eead4; }
-  :root:where(:not([data-theme="light"])) .badge.kind-strategy,
-  :root:where(:not([data-theme="light"])) .filter-chip.kind-strategy { --chip: #fdba8c; }
-  :root:where(:not([data-theme="light"])) .badge.kind-report,
-  :root:where(:not([data-theme="light"])) .filter-chip.kind-report { --chip: #b0acd8; }
-  :root:where(:not([data-theme="light"])) .badge.kind-standard,
-  :root:where(:not([data-theme="light"])) .filter-chip.kind-standard { --chip: #c4b5fd; }
-  :root:where(:not([data-theme="light"])) .badge.kind-institution,
-  :root:where(:not([data-theme="light"])) .filter-chip.kind-institution { --chip: #9bb396; }
-  :root:where(:not([data-theme="light"])) .badge.kind-news,
-  :root:where(:not([data-theme="light"])) .filter-chip.kind-news { --chip: #ed7787; }
-  :root:where(:not([data-theme="light"])) .badge.kind-other,
-  :root:where(:not([data-theme="light"])) .filter-chip.kind-other { --chip: #c4bdb4; }
-}
-:root[data-theme="dark"] .badge.kind-law, :root[data-theme="dark"] .filter-chip.kind-law { --chip: #93c5fd; }
-:root[data-theme="dark"] .badge.kind-bill, :root[data-theme="dark"] .filter-chip.kind-bill { --chip: #fb7185; }
-:root[data-theme="dark"] .badge.kind-admin, :root[data-theme="dark"] .filter-chip.kind-admin { --chip: #7dd3fc; }
-:root[data-theme="dark"] .badge.kind-treaty, :root[data-theme="dark"] .filter-chip.kind-treaty { --chip: #b8b4d0; }
-:root[data-theme="dark"] .badge.kind-declaration, :root[data-theme="dark"] .filter-chip.kind-declaration { --chip: #fbbf24; }
-:root[data-theme="dark"] .badge.kind-guideline, :root[data-theme="dark"] .filter-chip.kind-guideline { --chip: #5eead4; }
-:root[data-theme="dark"] .badge.kind-strategy, :root[data-theme="dark"] .filter-chip.kind-strategy { --chip: #fdba8c; }
-:root[data-theme="dark"] .badge.kind-report, :root[data-theme="dark"] .filter-chip.kind-report { --chip: #b0acd8; }
-:root[data-theme="dark"] .badge.kind-standard, :root[data-theme="dark"] .filter-chip.kind-standard { --chip: #c4b5fd; }
-:root[data-theme="dark"] .badge.kind-institution, :root[data-theme="dark"] .filter-chip.kind-institution { --chip: #9bb396; }
-:root[data-theme="dark"] .badge.kind-news, :root[data-theme="dark"] .filter-chip.kind-news { --chip: #ed7787; }
-:root[data-theme="dark"] .badge.kind-other, :root[data-theme="dark"] .filter-chip.kind-other { --chip: #c4bdb4; }
 .thread-item { border-left: 2px solid var(--gridline); padding: 4px 0 14px 14px; margin-bottom: 4px; position: relative; }
 .thread-item::before { content: ""; position: absolute; left: -5px; top: 6px; width: 8px; height: 8px; border-radius: 50%; background: var(--text-muted); }
 .thread-date { font-size: 12px; color: var(--text-muted); font-variant-numeric: tabular-nums; }
@@ -763,7 +654,7 @@ def page(current: str, title: str, extra_css: str, body: str, page_js: str, inde
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root {{ color-scheme: light dark; }}
+:root {{ color-scheme: light; }}
 * {{ box-sizing: border-box; }}
 body {{ margin: 0; }}
 {chrome["nav_css"]}
