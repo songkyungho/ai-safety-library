@@ -82,10 +82,18 @@ header.page-head h1 {
   font-size: 1.45rem; margin: 0; font-weight: 700; letter-spacing: -0.02em;
   line-height: 1.35;
 }
+header.page-head h1 a {
+  color: var(--on-navy-muted);
+  text-decoration: none;
+  font-weight: 500;
+}
+header.page-head h1 a:hover { color: var(--gold); }
 header.page-head .tagline {
   margin: 6px 0 0; font-size: 0.92rem; color: var(--on-navy-muted); line-height: 1.55;
   max-width: 42em;
 }
+header.page-head .tagline a { color: var(--on-navy-muted); }
+header.page-head .tagline a:hover { color: var(--gold); }
 .list-search.omni-wrap {
   position: relative; margin: 14px 0 18px; max-width: 100%;
 }
@@ -127,6 +135,19 @@ TAGLINES = {
 }
 
 
+AUTHOR_NAME = "인공지능안전연구소 송경호"
+AUTHOR_URL = "https://songkyungho.github.io"
+
+
+def author_byline_html() -> str:
+    """동향 Digest와 같은 byline — 송경호만 Home으로 링크."""
+    linked = html.escape(AUTHOR_NAME).replace(
+        "송경호",
+        f'<a href="{html.escape(AUTHOR_URL)}" target="_blank" rel="noopener">송경호</a>',
+    )
+    return f" by {linked}"
+
+
 def nav_html(current: str = "") -> str:
     left = []
     for href, label in NAV_ITEMS:
@@ -156,7 +177,8 @@ def shell_html(current: str, title: str, *, head_count: int | None = None) -> st
         n_fmt = f"{n:,}"
         parts.append(
             "<h1>AI 안전 법·가이드라인·정책 아카이브 "
-            f'(총 <span id="headCount">{html.escape(n_fmt)}</span>건)</h1>'
+            f'(총 <span id="headCount">{html.escape(n_fmt)}</span>건)'
+            f"{author_byline_html()}</h1>"
         )
     else:
         parts.append(f"<h1>{html.escape(title)}</h1>")
