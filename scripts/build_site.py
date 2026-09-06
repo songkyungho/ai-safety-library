@@ -788,12 +788,7 @@ def render_index(docs: list[dict], index: dict, *, total_raw: int = 0, out_count
     trend_html = render_kind_trend(docs)
     from ui_common import omnibox_html
 
-    scope_note = ""
-    if total_raw:
-        scope_note = f" · 원본 전체 {total_raw:,}건 중 {out_count:,}건 제외"
     body = f"""
-  <p class="lede">기술안전·보안·위험관리·윤리·거버넌스·규제·권리·평가에 해당하는 문서만 보여 줍니다.
-    뉴스·보도와 단순 기구 목록은 제외합니다.{scope_note}</p>
   {trend_html}
   <div class="controls" id="listControls">
     <div class="sort-toggle filter-toolbar" id="kindToggle">{"".join(kind_btns)}</div>
@@ -1145,7 +1140,7 @@ document.getElementById('yearNav').addEventListener('click', ev => {{
 """
     return page(
         "index.html",
-        f"AI 안전 법·가이드라인·정책 아카이브 (총 {len(docs):,}건)",
+        "AI 안전 라이브러리",
         "",
         body,
         js,

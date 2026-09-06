@@ -79,20 +79,18 @@ header.page-head {
   max-width: 980px; margin: 0 auto; padding: 28px 20px 22px;
 }
 header.page-head h1 {
-  font-size: 1.45rem; margin: 0; font-weight: 700; letter-spacing: -0.02em;
+  font-size: 1.55rem; margin: 0 0 6px; font-weight: 700; letter-spacing: -0.02em;
   line-height: 1.35;
 }
-header.page-head h1 a {
+header.page-head .tagline {
+  margin: 0; font-size: 0.95rem; color: var(--on-navy-muted); line-height: 1.55;
+  max-width: 48em;
+}
+header.page-head .tagline a {
   color: var(--on-navy-muted);
   text-decoration: none;
   font-weight: 500;
 }
-header.page-head h1 a:hover { color: var(--gold); }
-header.page-head .tagline {
-  margin: 6px 0 0; font-size: 0.92rem; color: var(--on-navy-muted); line-height: 1.55;
-  max-width: 42em;
-}
-header.page-head .tagline a { color: var(--on-navy-muted); }
 header.page-head .tagline a:hover { color: var(--gold); }
 .list-search.omni-wrap {
   position: relative; margin: 14px 0 18px; max-width: 100%;
@@ -175,10 +173,11 @@ def shell_html(current: str, title: str, *, head_count: int | None = None) -> st
     if current == "index.html":
         n = head_count if head_count is not None else 0
         n_fmt = f"{n:,}"
+        parts.append("<h1>AI 안전 라이브러리</h1>")
         parts.append(
-            "<h1>AI 안전 법·가이드라인·정책 아카이브 "
+            '<p class="tagline">AI 안전 법·가이드라인·정책 라이브러리 '
             f'(총 <span id="headCount">{html.escape(n_fmt)}</span>건)'
-            f"{author_byline_html()}</h1>"
+            f"{author_byline_html()}</p>"
         )
     else:
         parts.append(f"<h1>{html.escape(title)}</h1>")
