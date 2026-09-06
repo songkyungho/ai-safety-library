@@ -79,24 +79,16 @@ header.page-head {
   max-width: 980px; margin: 0 auto; padding: 28px 20px 22px;
 }
 header.page-head h1 {
-  font-size: 1.55rem; margin: 0 0 6px; font-weight: 700; letter-spacing: -0.02em;
+  font-size: 1.45rem; margin: 0; font-weight: 700; letter-spacing: -0.02em;
+  line-height: 1.35;
 }
 header.page-head .tagline {
-  margin: 0; font-size: 0.92rem; color: var(--on-navy-muted); line-height: 1.55;
+  margin: 6px 0 0; font-size: 0.92rem; color: var(--on-navy-muted); line-height: 1.55;
   max-width: 42em;
 }
-.toolbar {
-  position: sticky; top: 40px; z-index: 30;
-  background: color-mix(in srgb, var(--plane) 88%, var(--gold) 12%);
-  border-bottom: 1px solid var(--hairline);
-  backdrop-filter: saturate(140%) blur(12px);
-  -webkit-backdrop-filter: saturate(140%) blur(12px);
+.list-search.omni-wrap {
+  position: relative; margin: 14px 0 18px; max-width: 100%;
 }
-.toolbar-inner {
-  max-width: 980px; margin: 0 auto; min-height: 56px; padding: 10px 20px;
-  display: flex; align-items: center; gap: 14px;
-}
-.omni-wrap { position: relative; flex: 1 1 auto; min-width: 0; margin: 0; }
 .omni-wrap input {
   width: 100%; height: 40px;
   border: 1px solid var(--hairline);
@@ -121,7 +113,7 @@ header.page-head .tagline {
   box-shadow: 0 8px 28px color-mix(in srgb, var(--ink) 10%, transparent);
 }
 .omni-results.hidden { display: none; }
-.wrap { max-width: 980px; margin: 0 auto; padding: 22px 20px 80px; }
+.wrap { max-width: 980px; margin: 0 auto; padding: 18px 20px 80px; }
 .site-footer {
   margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--hairline);
   font-size: 0.82rem; color: var(--text-muted); line-height: 1.55;
@@ -131,7 +123,6 @@ header.page-head .tagline {
 """
 
 TAGLINES = {
-    "index.html": "원본 랜딩 URL 기준 · 발표 히스토리 · 법·가이드라인·정책 아카이브",
     "about.html": "수집·분류·표시 파이프라인과 데이터 출처",
 }
 
@@ -143,7 +134,6 @@ def nav_html(current: str = "") -> str:
             left.append(f'<span class="nav-current">{html.escape(label)}</span>')
         else:
             left.append(f'<a href="{href}">{html.escape(label)}</a>')
-    # 시리즈 연결 — 동향 Digest로 가는 힌트
     right = (
         '<span class="nav-series">'
         '<a href="https://songkyungho.github.io/ai-safety-digest/" '
@@ -159,24 +149,26 @@ def nav_html(current: str = "") -> str:
     )
 
 
-def shell_html(current: str, title: str) -> str:
-    tagline = TAGLINES.get(current, "AI 안전·거버넌스 문서 라이브러리")
-    parts = [
-        nav_html(current),
-        '<header class="page-head"><div class="page-head-inner">',
-        f"<h1>{html.escape(title)}</h1>",
-        f'<p class="tagline">{html.escape(tagline)}</p>',
-        "</div></header>",
-    ]
+def shell_html(current: str, title: str, *, head_count: int | None = None) -> str:
+    parts = [nav_html(current), '<header class="page-head"><div class="page-head-inner">']
     if current == "index.html":
-        parts.append('<div class="toolbar"><div class="toolbar-inner">')
-        parts.append(omnibox_html())
-        parts.append("</div></div>")
+        n = head_count if head_count is not None else 0
+        n_fmt = f"{n:,}"
+        parts.append(
+            "<h1>AI 안전 법·가이드라인·정책 아카이브 "
+            f'(총 <span id="headCount">{html.escape(n_fmt)}</span>건)</h1>'
+        )
+    else:
+        parts.append(f"<h1>{html.escape(title)}</h1>")
+        tagline = TAGLINES.get(current)
+        if tagline:
+            parts.append(f'<p class="tagline">{html.escape(tagline)}</p>')
+    parts.append("</div></header>")
     return "".join(parts)
 
 
 def omnibox_html() -> str:
-    return """<div class="omni-wrap">
+    return """<div class="list-search omni-wrap">
     <input id="omniBox" type="search" placeholder="약칭 · 주제 · 기관 · 핵심내용  ( / )" autocomplete="off">
   <div id="omniResults" class="omni-results hidden"></div>
 </div>"""
@@ -208,11 +200,14 @@ def omnibox_boot_script(search_index_json: str) -> str:
 </script>"""
 
 
-def page_chrome(current: str, search_index=None, title: str = ""):
+def page_chrome(current: str, search_index=None, title: str = "", *, head_count: int | None = None):
     idx = search_index or {"docs": []}
     titles = dict(NAV_ITEMS)
     return {
-        "shell": shell_html(current, title or titles.get(current, "")),
+        "shell": shell_html(
+            current, title or titles.get(current, ""), head_count=head_count
+        ),
         "omni_js": omnibox_boot_script(safe_json(idx)),
         "nav_css": NAV_CSS,
+        "omnibox_html": omnibox_html(),
     }

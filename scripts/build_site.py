@@ -350,7 +350,7 @@ a { color: var(--sage, #3f5340); }
 a:hover { color: var(--accent); }
 .timeline { position: relative; padding-left: 20px; }
 .timeline::before { content: ""; position: absolute; left: 4px; top: 6px; bottom: 6px; width: 2px; background: var(--baseline); }
-.year-group { margin-bottom: 8px; scroll-margin-top: 108px; }
+.year-group { margin-bottom: 8px; scroll-margin-top: 56px; }
 .year-header {
   cursor: pointer; font: inherit; font-weight: 600; font-size: 17px; letter-spacing: -0.37px;
   padding: 8px 0; color: var(--ink); user-select: none;
@@ -642,8 +642,17 @@ def search_index(docs: list[dict]) -> dict:
     }
 
 
-def page(current: str, title: str, extra_css: str, body: str, page_js: str, index: dict) -> str:
-    chrome = page_chrome(current, index, title=title)
+def page(
+    current: str,
+    title: str,
+    extra_css: str,
+    body: str,
+    page_js: str,
+    index: dict,
+    *,
+    head_count: int | None = None,
+) -> str:
+    chrome = page_chrome(current, index, title=title, head_count=head_count)
     return f"""<!doctype html>
 <html lang="ko">
 <head>
@@ -777,11 +786,12 @@ def render_index(docs: list[dict], index: dict, *, total_raw: int = 0, out_count
             f'<span class="n">{n}</span></button>'
         )
     trend_html = render_kind_trend(docs)
+    from ui_common import omnibox_html
+
     scope_note = ""
     if total_raw:
         scope_note = f" · 원본 전체 {total_raw:,}건 중 {out_count:,}건 제외"
     body = f"""
-  <p class="meta" id="countLine"></p>
   <p class="lede">기술안전·보안·위험관리·윤리·거버넌스·규제·권리·평가에 해당하는 문서만 보여 줍니다.
     뉴스·보도와 단순 기구 목록은 제외합니다.{scope_note}</p>
   {trend_html}
@@ -791,6 +801,7 @@ def render_index(docs: list[dict], index: dict, *, total_raw: int = 0, out_count
     <div class="sort-toggle filter-toolbar" id="topicToggle">{"".join(topic_btns)}</div>
     <div class="sort-toggle filter-toolbar" id="countryToggle">{"".join(country_btns)}</div>
   </div>
+  {omnibox_html()}
   <div id="listView"></div>
   <nav class="year-nav hidden" id="yearNav" aria-label="연도 바로가기"></nav>
 """
@@ -978,7 +989,8 @@ function renderYearNav(keys) {{
 }}
 function renderList() {{
   const rows = visible();
-  document.getElementById('countLine').textContent = rows.length.toLocaleString('ko-KR') + '건 · ' + {TODAY!r};
+  const headCount = document.getElementById('headCount');
+  if (headCount) headCount.textContent = rows.length.toLocaleString('ko-KR');
   const visibleIds = new Set(rows.map(d => d.id));
   Object.keys(state.closedIds).forEach(id => {{
     if (!visibleIds.has(id)) delete state.closedIds[id];
@@ -1131,7 +1143,15 @@ document.getElementById('yearNav').addEventListener('click', ev => {{
 }})();
 </script>
 """
-    return page("index.html", "AI 안전 라이브러리", "", body, js, index)
+    return page(
+        "index.html",
+        f"AI 안전 법·가이드라인·정책 아카이브 (총 {len(docs):,}건)",
+        "",
+        body,
+        js,
+        index,
+        head_count=len(docs),
+    )
 
 
 PIPELINE_SVG = """<svg viewBox="0 0 720 700" class="pipe-svg" role="img"

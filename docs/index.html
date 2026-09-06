@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI 안전 라이브러리</title>
+<title>AI 안전 법·가이드라인·정책 아카이브 (총 1,931건)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -78,24 +78,16 @@ header.page-head {
   max-width: 980px; margin: 0 auto; padding: 28px 20px 22px;
 }
 header.page-head h1 {
-  font-size: 1.55rem; margin: 0 0 6px; font-weight: 700; letter-spacing: -0.02em;
+  font-size: 1.45rem; margin: 0; font-weight: 700; letter-spacing: -0.02em;
+  line-height: 1.35;
 }
 header.page-head .tagline {
-  margin: 0; font-size: 0.92rem; color: var(--on-navy-muted); line-height: 1.55;
+  margin: 6px 0 0; font-size: 0.92rem; color: var(--on-navy-muted); line-height: 1.55;
   max-width: 42em;
 }
-.toolbar {
-  position: sticky; top: 40px; z-index: 30;
-  background: color-mix(in srgb, var(--plane) 88%, var(--gold) 12%);
-  border-bottom: 1px solid var(--hairline);
-  backdrop-filter: saturate(140%) blur(12px);
-  -webkit-backdrop-filter: saturate(140%) blur(12px);
+.list-search.omni-wrap {
+  position: relative; margin: 14px 0 18px; max-width: 100%;
 }
-.toolbar-inner {
-  max-width: 980px; margin: 0 auto; min-height: 56px; padding: 10px 20px;
-  display: flex; align-items: center; gap: 14px;
-}
-.omni-wrap { position: relative; flex: 1 1 auto; min-width: 0; margin: 0; }
 .omni-wrap input {
   width: 100%; height: 40px;
   border: 1px solid var(--hairline);
@@ -120,7 +112,7 @@ header.page-head .tagline {
   box-shadow: 0 8px 28px color-mix(in srgb, var(--ink) 10%, transparent);
 }
 .omni-results.hidden { display: none; }
-.wrap { max-width: 980px; margin: 0 auto; padding: 22px 20px 80px; }
+.wrap { max-width: 980px; margin: 0 auto; padding: 18px 20px 80px; }
 .site-footer {
   margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--hairline);
   font-size: 0.82rem; color: var(--text-muted); line-height: 1.55;
@@ -140,7 +132,7 @@ a { color: var(--sage, #3f5340); }
 a:hover { color: var(--accent); }
 .timeline { position: relative; padding-left: 20px; }
 .timeline::before { content: ""; position: absolute; left: 4px; top: 6px; bottom: 6px; width: 2px; background: var(--baseline); }
-.year-group { margin-bottom: 8px; scroll-margin-top: 108px; }
+.year-group { margin-bottom: 8px; scroll-margin-top: 56px; }
 .year-header {
   cursor: pointer; font: inherit; font-weight: 600; font-size: 17px; letter-spacing: -0.37px;
   padding: 8px 0; color: var(--ink); user-select: none;
@@ -368,13 +360,9 @@ button.filter-chip.topic-chip .n {
 </head>
 <body>
 <div class="viz-root">
-<nav class="global-nav" aria-label="사이트"><div class="global-nav-inner"><div class="global-nav-left"><span class="nav-current">라이브러리</span><a href="about.html">소개</a></div><div class="global-nav-right"><span class="nav-series"><a href="https://songkyungho.github.io/ai-safety-digest/" target="_blank" rel="noopener">AI 안전 동향</a></span></div></div></nav><header class="page-head"><div class="page-head-inner"><h1>AI 안전 라이브러리</h1><p class="tagline">원본 랜딩 URL 기준 · 발표 히스토리 · 법·가이드라인·정책 아카이브</p></div></header><div class="toolbar"><div class="toolbar-inner"><div class="omni-wrap">
-    <input id="omniBox" type="search" placeholder="약칭 · 주제 · 기관 · 핵심내용  ( / )" autocomplete="off">
-  <div id="omniResults" class="omni-results hidden"></div>
-</div></div></div>
+<nav class="global-nav" aria-label="사이트"><div class="global-nav-inner"><div class="global-nav-left"><span class="nav-current">라이브러리</span><a href="about.html">소개</a></div><div class="global-nav-right"><span class="nav-series"><a href="https://songkyungho.github.io/ai-safety-digest/" target="_blank" rel="noopener">AI 안전 동향</a></span></div></div></nav><header class="page-head"><div class="page-head-inner"><h1>AI 안전 법·가이드라인·정책 아카이브 (총 <span id="headCount">1,931</span>건)</h1></div></header>
 <div class="wrap">
 
-  <p class="meta" id="countLine"></p>
   <p class="lede">기술안전·보안·위험관리·윤리·거버넌스·규제·권리·평가에 해당하는 문서만 보여 줍니다.
     뉴스·보도와 단순 기구 목록은 제외합니다. · 원본 전체 3,627건 중 1,696건 제외</p>
   <section class="trend-section">
@@ -389,6 +377,10 @@ button.filter-chip.topic-chip .n {
     <div class="sort-toggle filter-toolbar" id="topicToggle"><button class="filter-chip active" data-topic="" type="button">전체</button><button class="filter-chip topic-chip" data-topic="norms" type="button" style="--topic:#a16207">📜 윤리·규범<span class="n">829</span></button><button class="filter-chip topic-chip" data-topic="law" type="button" style="--topic:#1d4ed8">⚖️ 법<span class="n">591</span></button><button class="filter-chip topic-chip" data-topic="guideline" type="button" style="--topic:#0f766e">📋 가이드라인<span class="n">509</span></button><button class="filter-chip topic-chip" data-topic="standards" type="button" style="--topic:#7c3aed">📏 표준<span class="n">123</span></button><button class="filter-chip topic-chip" data-topic="national_security" type="button" style="--topic:#b45309">🛡️ 국가안보<span class="n">146</span></button><button class="filter-chip topic-chip" data-topic="cybersecurity" type="button" style="--topic:#0369a1">🔒 사이버안보<span class="n">174</span></button><button class="filter-chip topic-chip" data-topic="politics" type="button" style="--topic:#be123c">🗳️ 정치<span class="n">39</span></button><button class="filter-chip topic-chip" data-topic="sovereign_ai" type="button" style="--topic:#4338ca">🏛️ 소버린AI<span class="n">88</span></button><button class="filter-chip topic-chip" data-topic="healthcare" type="button" style="--topic:#059669">🏥 의료<span class="n">121</span></button><button class="filter-chip topic-chip" data-topic="youth" type="button" style="--topic:#db2777">🧒 청소년<span class="n">87</span></button><button class="filter-chip topic-chip" data-topic="agentic_ai" type="button" style="--topic:#ea580c">🤖 에이전틱AI<span class="n">26</span></button><button class="filter-chip topic-chip" data-topic="physical_ai" type="button" style="--topic:#4d7c0f">🦾 피지컬AI<span class="n">92</span></button><button class="filter-chip topic-chip" data-topic="safety_research" type="button" style="--topic:#4f46e5">🧪 안전기술<span class="n">139</span></button><button class="filter-chip topic-chip" data-topic="deepfake_disinfo" type="button" style="--topic:#9f1239">🎭 딥페이크·허위정보<span class="n">111</span></button><button class="filter-chip topic-chip" data-topic="open_weight" type="button" style="--topic:#0d9488">🔓 오픈소스·오픈웨이트<span class="n">9</span></button><button class="filter-chip topic-chip" data-topic="frontier" type="button" style="--topic:#c2410c">🚀 프론티어<span class="n">48</span></button><button class="filter-chip topic-chip" data-topic="incidents" type="button" style="--topic:#334155">🚨 사건·사고<span class="n">14</span></button></div>
     <div class="sort-toggle filter-toolbar" id="countryToggle"><button class="filter-chip active" data-country="" type="button">전체</button><button class="filter-chip" data-country="United States" type="button">🇺🇸 미국<span class="n">579</span></button><button class="filter-chip" data-country="South Korea" type="button">🇰🇷 한국<span class="n">63</span></button><button class="filter-chip" data-country="United Kingdom" type="button">🇬🇧 영국<span class="n">60</span></button><button class="filter-chip" data-country="China" type="button">🇨🇳 중국<span class="n">57</span></button><button class="filter-chip" data-country="Germany" type="button">🇩🇪 독일<span class="n">43</span></button><button class="filter-chip" data-country="Austria" type="button">🇦🇹 오스트리아<span class="n">43</span></button><button class="filter-chip" data-country="Japan" type="button">🇯🇵 일본<span class="n">42</span></button><button class="filter-chip" data-country="Australia" type="button">🇦🇺 호주<span class="n">38</span></button><button class="filter-chip" data-country="France" type="button">🇫🇷 프랑스<span class="n">34</span></button><button class="filter-chip" data-country="United Nations" type="button">🇺🇳 UN<span class="n">32</span></button><button class="filter-chip" data-country="Singapore" type="button">🇸🇬 싱가포르<span class="n">31</span></button><button class="filter-chip" data-country="Ukraine" type="button">🇺🇦 우크라이나<span class="n">28</span></button><button class="filter-chip" data-country="Colombia" type="button">🇨🇴 콜롬비아<span class="n">25</span></button><button class="filter-chip" data-country="Spain" type="button">🇪🇸 스페인<span class="n">23</span></button><button class="filter-chip" data-country="Slovenia" type="button">🇸🇮 슬로베니아<span class="n">22</span></button><button class="filter-chip" data-country="Saudi Arabia" type="button">🇸🇦 사우디<span class="n">20</span></button><button class="filter-chip" data-country="Belgium" type="button">🇧🇪 벨기에<span class="n">19</span></button><button class="filter-chip" data-country="Denmark" type="button">🇩🇰 덴마크<span class="n">18</span></button><button class="filter-chip" data-country="Brazil" type="button">🇧🇷 브라질<span class="n">17</span></button><button class="filter-chip" data-country="European Union" type="button">🇪🇺 EU<span class="n">16</span></button><button type="button" class="filter-more" id="countryMoreBtn" aria-expanded="false">더보기 +75</button><span class="filter-more-wrap hidden" id="countryMoreWrap"><button class="filter-chip" data-country="Greece" type="button">🇬🇷 그리스<span class="n">16</span></button><button class="filter-chip" data-country="Netherlands" type="button">🇳🇱 네덜란드<span class="n">16</span></button><button class="filter-chip" data-country="Latvia" type="button">🇱🇻 라트비아<span class="n">16</span></button><button class="filter-chip" data-country="Argentina" type="button">🇦🇷 아르헨티나<span class="n">16</span></button><button class="filter-chip" data-country="Canada" type="button">🇨🇦 캐나다<span class="n">16</span></button><button class="filter-chip" data-country="UNESCO" type="button">🇺🇳 유네스코<span class="n">15</span></button><button class="filter-chip" data-country="Sweden" type="button">🇸🇪 스웨덴<span class="n">14</span></button><button class="filter-chip" data-country="Portugal" type="button">🇵🇹 포르투갈<span class="n">14</span></button><button class="filter-chip" data-country="G7" type="button"> G7<span class="n">13</span></button><button class="filter-chip" data-country="ITU" type="button"> ITU<span class="n">13</span></button><button class="filter-chip" data-country="OECD" type="button"> OECD<span class="n">13</span></button><button class="filter-chip" data-country="Poland" type="button">🇵🇱 폴란드<span class="n">13</span></button><button class="filter-chip" data-country="Mexico" type="button">🇲🇽 멕시코<span class="n">12</span></button><button class="filter-chip" data-country="Malta" type="button">🇲🇹 몰타<span class="n">12</span></button><button class="filter-chip" data-country="Israel" type="button">🇮🇱 이스라엘<span class="n">12</span></button><button class="filter-chip" data-country="India" type="button">🇮🇳 인도<span class="n">12</span></button><button class="filter-chip" data-country="Turkey" type="button">🇹🇷 튀르키예<span class="n">12</span></button><button class="filter-chip" data-country="Finland" type="button">🇫🇮 핀란드<span class="n">12</span></button><button class="filter-chip" data-country="Italy" type="button">🇮🇹 이탈리아<span class="n">11</span></button><button class="filter-chip" data-country="Norway" type="button">🇳🇴 노르웨이<span class="n">10</span></button><button class="filter-chip" data-country="Bulgaria" type="button">🇧🇬 불가리아<span class="n">10</span></button><button class="filter-chip" data-country="Czechia" type="button">🇨🇿 체코<span class="n">10</span></button><button class="filter-chip" data-country="G20" type="button"> G20<span class="n">9</span></button><button class="filter-chip" data-country="New Zealand" type="button">🇳🇿 뉴질랜드<span class="n">9</span></button><button class="filter-chip" data-country="Lithuania" type="button">🇱🇹 리투아니아<span class="n">9</span></button><button class="filter-chip" data-country="Ireland" type="button">🇮🇪 아일랜드<span class="n">9</span></button><button class="filter-chip" data-country="Estonia" type="button">🇪🇪 에스토니아<span class="n">9</span></button><button class="filter-chip" data-country="Hungary" type="button">🇭🇺 헝가리<span class="n">9</span></button><button class="filter-chip" data-country="Egypt" type="button">🇪🇬 이집트<span class="n">8</span></button><button class="filter-chip" data-country="Chile" type="button">🇨🇱 칠레<span class="n">8</span></button><button class="filter-chip" data-country="Peru" type="button">🇵🇪 페루<span class="n">8</span></button><button class="filter-chip" data-country="Slovakia" type="button">🇸🇰 슬로바키아<span class="n">7</span></button><button class="filter-chip" data-country="Ecuador" type="button">🇪🇨 에콰도르<span class="n">6</span></button><button class="filter-chip" data-country="Croatia" type="button">🇭🇷 크로아티아<span class="n">6</span></button><button class="filter-chip" data-country="GPAI" type="button"> GPAI<span class="n">5</span></button><button class="filter-chip" data-country="United Arab Emirates" type="button">🇦🇪 UAE<span class="n">5</span></button><button class="filter-chip" data-country="Romania" type="button">🇷🇴 루마니아<span class="n">5</span></button><button class="filter-chip" data-country="Luxembourg" type="button">🇱🇺 룩셈부르크<span class="n">5</span></button><button class="filter-chip" data-country="Costa Rica" type="button">🇨🇷 코스타리카<span class="n">5</span></button><button class="filter-chip" data-country="Rwanda" type="button">🇷🇼 르완다<span class="n">4</span></button><button class="filter-chip" data-country="Uruguay" type="button">🇺🇾 우루과이<span class="n">4</span></button><button class="filter-chip" data-country="Indonesia" type="button">🇮🇩 인도네시아<span class="n">4</span></button><button class="filter-chip" data-country="Kenya" type="button">🇰🇪 케냐<span class="n">4</span></button><button class="filter-chip" data-country="Thailand" type="button">🇹🇭 태국<span class="n">4</span></button><button class="filter-chip" data-country="South Africa" type="button">🇿🇦 남아공<span class="n">3</span></button><button class="filter-chip" data-country="Serbia" type="button">🇷🇸 세르비아<span class="n">3</span></button><button class="filter-chip" data-country="Switzerland" type="button">🇨🇭 스위스<span class="n">3</span></button><button class="filter-chip" data-country="ASEAN" type="button">🌏 아세안<span class="n">3</span></button><button class="filter-chip" data-country="Iceland" type="button">🇮🇸 아이슬란드<span class="n">3</span></button><button class="filter-chip" data-country="Uzbekistan" type="button">🇺🇿 우즈베키스탄<span class="n">3</span></button><button class="filter-chip" data-country="Council of Europe" type="button">🇪🇺 유럽평의회<span class="n">3</span></button><button class="filter-chip" data-country="Cambodia" type="button">🇰🇭 캄보디아<span class="n">3</span></button><button class="filter-chip" data-country="Tunisia" type="button">🇹🇳 튀니지<span class="n">3</span></button><button class="filter-chip" data-country="Ghana" type="button">🇬🇭 가나<span class="n">2</span></button><button class="filter-chip" data-country="Dominican Republic" type="button">🇩🇴 도미니카공화국<span class="n">2</span></button><button class="filter-chip" data-country="Malaysia" type="button">🇲🇾 말레이시아<span class="n">2</span></button><button class="filter-chip" data-country="IEEE" type="button"> IEEE<span class="n">1</span></button><button class="filter-chip" data-country="IMF" type="button"> IMF<span class="n">1</span></button><button class="filter-chip" data-country="Nigeria" type="button">🇳🇬 나이지리아<span class="n">1</span></button><button class="filter-chip" data-country="Lesotho" type="button">🇱🇸 레소토<span class="n">1</span></button><button class="filter-chip" data-country="Libya" type="button">🇱🇾 리비아<span class="n">1</span></button><button class="filter-chip" data-country="Mauritius" type="button">🇲🇺 모리셔스<span class="n">1</span></button><button class="filter-chip" data-country="Mauritania" type="button">🇲🇷 모리타니<span class="n">1</span></button><button class="filter-chip" data-country="Vatican City" type="button">🇻🇦 바티칸<span class="n">1</span></button><button class="filter-chip" data-country="Benin" type="button">🇧🇯 베냉<span class="n">1</span></button><button class="filter-chip" data-country="Brunei" type="button">🇧🇳 브루나이<span class="n">1</span></button><button class="filter-chip" data-country="Senegal" type="button">🇸🇳 세네갈<span class="n">1</span></button><button class="filter-chip" data-country="Ethiopia" type="button">🇪🇹 에티오피아<span class="n">1</span></button><button class="filter-chip" data-country="Zambia" type="button">🇿🇲 잠비아<span class="n">1</span></button><button class="filter-chip" data-country="Zimbabwe" type="button">🇿🇼 짐바브웨<span class="n">1</span></button><button class="filter-chip" data-country="Kazakhstan" type="button">🇰🇿 카자흐스탄<span class="n">1</span></button><button class="filter-chip" data-country="Ivory Coast" type="button">🇨🇮 코트디부아르<span class="n">1</span></button><button class="filter-chip" data-country="Cuba" type="button">🇨🇺 쿠바<span class="n">1</span></button><button class="filter-chip" data-country="Cyprus" type="button">🇨🇾 키프로스<span class="n">1</span></button><button class="filter-chip" data-country="Philippines" type="button">🇵🇭 필리핀<span class="n">1</span></button></span></div>
   </div>
+  <div class="list-search omni-wrap">
+    <input id="omniBox" type="search" placeholder="약칭 · 주제 · 기관 · 핵심내용  ( / )" autocomplete="off">
+  <div id="omniResults" class="omni-results hidden"></div>
+</div>
   <div id="listView"></div>
   <nav class="year-nav hidden" id="yearNav" aria-label="연도 바로가기"></nav>
 
@@ -564,7 +556,8 @@ function renderYearNav(keys) {
 }
 function renderList() {
   const rows = visible();
-  document.getElementById('countLine').textContent = rows.length.toLocaleString('ko-KR') + '건 · ' + '2026-09-07';
+  const headCount = document.getElementById('headCount');
+  if (headCount) headCount.textContent = rows.length.toLocaleString('ko-KR');
   const visibleIds = new Set(rows.map(d => d.id));
   Object.keys(state.closedIds).forEach(id => {
     if (!visibleIds.has(id)) delete state.closedIds[id];

@@ -78,24 +78,16 @@ header.page-head {
   max-width: 980px; margin: 0 auto; padding: 28px 20px 22px;
 }
 header.page-head h1 {
-  font-size: 1.55rem; margin: 0 0 6px; font-weight: 700; letter-spacing: -0.02em;
+  font-size: 1.45rem; margin: 0; font-weight: 700; letter-spacing: -0.02em;
+  line-height: 1.35;
 }
 header.page-head .tagline {
-  margin: 0; font-size: 0.92rem; color: var(--on-navy-muted); line-height: 1.55;
+  margin: 6px 0 0; font-size: 0.92rem; color: var(--on-navy-muted); line-height: 1.55;
   max-width: 42em;
 }
-.toolbar {
-  position: sticky; top: 40px; z-index: 30;
-  background: color-mix(in srgb, var(--plane) 88%, var(--gold) 12%);
-  border-bottom: 1px solid var(--hairline);
-  backdrop-filter: saturate(140%) blur(12px);
-  -webkit-backdrop-filter: saturate(140%) blur(12px);
+.list-search.omni-wrap {
+  position: relative; margin: 14px 0 18px; max-width: 100%;
 }
-.toolbar-inner {
-  max-width: 980px; margin: 0 auto; min-height: 56px; padding: 10px 20px;
-  display: flex; align-items: center; gap: 14px;
-}
-.omni-wrap { position: relative; flex: 1 1 auto; min-width: 0; margin: 0; }
 .omni-wrap input {
   width: 100%; height: 40px;
   border: 1px solid var(--hairline);
@@ -120,7 +112,7 @@ header.page-head .tagline {
   box-shadow: 0 8px 28px color-mix(in srgb, var(--ink) 10%, transparent);
 }
 .omni-results.hidden { display: none; }
-.wrap { max-width: 980px; margin: 0 auto; padding: 22px 20px 80px; }
+.wrap { max-width: 980px; margin: 0 auto; padding: 18px 20px 80px; }
 .site-footer {
   margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--hairline);
   font-size: 0.82rem; color: var(--text-muted); line-height: 1.55;
@@ -140,7 +132,7 @@ a { color: var(--sage, #3f5340); }
 a:hover { color: var(--accent); }
 .timeline { position: relative; padding-left: 20px; }
 .timeline::before { content: ""; position: absolute; left: 4px; top: 6px; bottom: 6px; width: 2px; background: var(--baseline); }
-.year-group { margin-bottom: 8px; scroll-margin-top: 108px; }
+.year-group { margin-bottom: 8px; scroll-margin-top: 56px; }
 .year-header {
   cursor: pointer; font: inherit; font-weight: 600; font-size: 17px; letter-spacing: -0.37px;
   padding: 8px 0; color: var(--ink); user-select: none;
