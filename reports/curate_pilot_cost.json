@@ -1,0 +1,20 @@
+{
+  "model": "openai/gpt-5.6-luna",
+  "pilot_n": 25,
+  "avg_prompt_tokens": 891.84,
+  "avg_completion_tokens": 574.48,
+  "avg_cost_list_usd": 0.0008677440000000002,
+  "need_total": 3530,
+  "need_in_scope": 1862,
+  "est_full_list_usd": 3.0631363200000004,
+  "est_full_promo_usd": 1.5315681600000002,
+  "est_in_scope_list_usd": 1.6157393280000003,
+  "price_list": {
+    "in": 0.2,
+    "out": 1.2
+  },
+  "price_promo": {
+    "in": 0.1,
+    "out": 0.6
+  }
+}

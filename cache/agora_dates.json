@@ -1,0 +1,2962 @@
+{
+  "agora-431": {
+    "id": "agora-431",
+    "date": "2023-03-30",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "“Managing Active and Reserve Tech Talent Effectively Act of 2023”"
+  },
+  "agora-824": {
+    "id": "agora-824",
+    "date": "2023-05-18",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Western Wildfire Support Act of 2023, Sec. 206 (\"Study on Wildfire Detection Equipment and Integration of Artificial Int"
+  },
+  "agora-596": {
+    "id": "agora-596",
+    "date": "2023-06-21",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Wildfire Technology Demonstration, Evaluation, Modernization, and Optimization Act"
+  },
+  "agora-1219": {
+    "id": "agora-1219",
+    "date": "2024-08-01",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Workforce of the Future Act of 2024"
+  },
+  "agora-800": {
+    "id": "agora-800",
+    "date": "2023-10-26",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Weather Act Reauthorization Act of 2023, Sec. 304 (\"Data Assimilation, Management, and Sharing Practices\")"
+  },
+  "agora-519": {
+    "id": "agora-519",
+    "date": "2023-06-27",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Weather Information for Agriculture Act"
+  },
+  "agora-1923": {
+    "id": "agora-1923",
+    "date": "2024-11-20",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Workforce Data Enhancement Act"
+  },
+  "agora-802": {
+    "id": "agora-802",
+    "date": "2023-10-26",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Weather Act Reauthorization Act of 2023, Sec. 502 (\"National Integrated Drought Information System\")"
+  },
+  "agora-1243": {
+    "id": "agora-1243",
+    "date": "2024-07-30",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Workforce for AI Trust Act"
+  },
+  "agora-799": {
+    "id": "agora-799",
+    "date": "2023-10-26",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Weather Act Reauthorization Act of 2023, Sec. 116(f) (\"National Harmful Algal Bloom and Hypoxia Observing Network\")"
+  },
+  "agora-801": {
+    "id": "agora-801",
+    "date": "2023-10-31",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Weather Act Reauthorization Act of 2023, Sec. 402 (\"Hazardous Weather or Water Event Risk Communication\")"
+  },
+  "agora-1216": {
+    "id": "agora-1216",
+    "date": "2024-09-12",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Veterans Online Information and Cybersecurity Empowerment Act of 2024"
+  },
+  "agora-582": {
+    "id": "agora-582",
+    "date": "2023-05-18",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Water Infrastructure Modernization Act of 2023"
+  },
+  "agora-1259": {
+    "id": "agora-1259",
+    "date": "2024-07-11",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Validation and Evaluation for Trustworthy (VET) Artificial Intelligence Act"
+  },
+  "agora-798": {
+    "id": "agora-798",
+    "date": "2023-11-01",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Weather Act Reauthorization Act of 2023, Sec. 108 (\"Computing Resources Prioritization\")"
+  },
+  "agora-872": {
+    "id": "agora-872",
+    "date": "2024-04-10",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Veterans Appeals Efficiency Act of 2024"
+  },
+  "agora-443": {
+    "id": "agora-443",
+    "date": "2023-02-06",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Water Quality and Environmental Innovation Act"
+  },
+  "agora-593": {
+    "id": "agora-593",
+    "date": "2023-06-14",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "United States-Israel Health Technologies Cooperation Act"
+  },
+  "agora-571": {
+    "id": "agora-571",
+    "date": "2023-05-31",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Transparent Automated Governance Act"
+  },
+  "agora-1221": {
+    "id": "agora-1221",
+    "date": "2024-09-10",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Transformational Artificial intelligence to Modernize the Economy against Extreme Weather Act"
+  },
+  "agora-1230": {
+    "id": "agora-1230",
+    "date": "2024-08-02",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Unleashing AI Innovation in Financial Services Act"
+  },
+  "agora-540": {
+    "id": "agora-540",
+    "date": "2023-04-20",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Tornado Observations Research and Notification Assessment for Development of Operations Act"
+  },
+  "agora-1904": {
+    "id": "agora-1904",
+    "date": "2024-12-19",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Transparency in Bureaucratic Communications Act"
+  },
+  "agora-1293": {
+    "id": "agora-1293",
+    "date": "2024-06-18",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Tools to Address Known Exploitation by Immobilizing Technological Deepfakes on Websites and Networks Act"
+  },
+  "agora-420": {
+    "id": "agora-420",
+    "date": "2023-05-09",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "To establish a Joint Autonomy Office in the Department of Defense, and for other purposes."
+  },
+  "agora-422": {
+    "id": "agora-422",
+    "date": "2023-12-19",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "To require a briefing on the national security threats associated with Chinese autonomous ground vehicles operating in t"
+  },
+  "agora-1263": {
+    "id": "agora-1263",
+    "date": "2024-07-15",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "To provide for citizen engagement on the development and adoption of Federal civilian agency use of artificial intellige"
+  },
+  "agora-1264": {
+    "id": "agora-1264",
+    "date": "2024-07-15",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "To provide for Federal civilian agency laboratory development for testing and certification of artificial intelligence f"
+  },
+  "agora-1894": {
+    "id": "agora-1894",
+    "date": "2024-11-20",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "To prohibit the Secretary of Defense from entering into information technology contracts with entities that provide cert"
+  },
+  "agora-511": {
+    "id": "agora-511",
+    "date": "2023-07-25",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "To establish in the National Oceanic and Atmospheric Administration a program to improve precipitation forecasts, and fo"
+  },
+  "agora-1900": {
+    "id": "agora-1900",
+    "date": "2024-12-09",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Trustworthy By Design Artificial Intelligence Act of 2024"
+  },
+  "agora-410": {
+    "id": "agora-410",
+    "date": "2024-02-14",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "To direct the Director of the National Institutes of Health to establish a grant program to facilitate research regardin"
+  },
+  "agora-1276": {
+    "id": "agora-1276",
+    "date": "2024-09-10",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "To amend the Communications Act of 1934 to establish technical and procedural standards for artificial or prerecorded vo"
+  },
+  "agora-1320": {
+    "id": "agora-1320",
+    "date": "2024-06-03",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Technology in the Parks Act of 2024"
+  },
+  "agora-405": {
+    "id": "agora-405",
+    "date": "2023-11-15",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "To direct the Secretary of Defense to establish a working group to develop and coordinate an artificial intelligence ini"
+  },
+  "agora-1372": {
+    "id": "agora-1372",
+    "date": "2024-06-05",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "WIOA Performance Accountability Improvement Act, Section 2, Subsection (c) (\"Evaluation of State programs.\")"
+  },
+  "agora-1987": {
+    "id": "agora-1987",
+    "date": "2024-12-17",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "To amend and reauthorize the Workforce Innovation and Opportunity Act and the Older Americans Act of 1965."
+  },
+  "agora-489": {
+    "id": "agora-489",
+    "date": "2024-02-08",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Technology Workforce Framework Act of 2024"
+  },
+  "agora-1986": {
+    "id": "agora-1986",
+    "date": "2024-12-17",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "To amend and reauthorize the Workforce Innovation and Opportunity Act and the Older Americans Act of 1965."
+  },
+  "agora-828": {
+    "id": "agora-828",
+    "date": "2023-07-28",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Tech to Save Moms Act, Sec. 5 (\"Report on the Use of Technology in Maternity Care\")"
+  },
+  "agora-462": {
+    "id": "agora-462",
+    "date": "2023-10-26",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "TEST AI Act of 2023"
+  },
+  "agora-805": {
+    "id": "agora-805",
+    "date": "2023-05-10",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "TORPEDO Act of 2023, Sec. 6 (Reporting requirements on efforts of the Department of State to implement the AUKUS partner"
+  },
+  "agora-888": {
+    "id": "agora-888",
+    "date": "2024-03-15",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Targeting Online Sales of Fentanyl Act"
+  },
+  "agora-1924": {
+    "id": "agora-1924",
+    "date": "2024-12-10",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "TRAIN Act"
+  },
+  "agora-1375": {
+    "id": "agora-1375",
+    "date": "2024-06-26",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Sustaining America’s Fisheries for the Future Act of 2024, Title IV, Section 402 (\"Expanding and improving electronic te"
+  },
+  "agora-806": {
+    "id": "agora-806",
+    "date": "2023-05-04",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "TORPEDO Act of 2023,  Sec. 12 (Expedited release of advanced technologies to Australia, Canada, and the United Kingdom t"
+  },
+  "agora-1319": {
+    "id": "agora-1319",
+    "date": "2024-06-18",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Synthetic Biology Advancement Act of 2024"
+  },
+  "agora-1374": {
+    "id": "agora-1374",
+    "date": "2024-06-26",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Sustaining America’s Fisheries for the Future Act of 2024, Title IV, Section 401 (\"Data modernization.\")"
+  },
+  "agora-483": {
+    "id": "agora-483",
+    "date": "2023-02-02",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Supply Chain Mapping and Monitoring Act"
+  },
+  "agora-1231": {
+    "id": "agora-1231",
+    "date": "2024-07-30",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Supporting Innovation in Agriculture Act of 2024"
+  },
+  "agora-316": {
+    "id": "agora-316",
+    "date": "2023-05-18",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Supercomputing for Safer Chemicals Act"
+  },
+  "agora-457": {
+    "id": "agora-457",
+    "date": "2023-01-31",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Stop Spying Bosses Act"
+  },
+  "agora-1306": {
+    "id": "agora-1306",
+    "date": "2024-06-10",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Supercritical Geothermal Research and Development Act"
+  },
+  "agora-902": {
+    "id": "agora-902",
+    "date": "2024-03-05",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "TAME Extreme Weather Act"
+  },
+  "agora-1975": {
+    "id": "agora-1975",
+    "date": "2024-09-25",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Stop Smuggling Illicit Synthetic Drugs on U.S. Transportation Networks Act of 2024"
+  },
+  "agora-617": {
+    "id": "agora-617",
+    "date": "2023-07-25",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Strengthening Consumer Protections and Medical Debt Transparency Act"
+  },
+  "agora-461": {
+    "id": "agora-461",
+    "date": "2023-07-27",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Small Business Broadband and Emerging Information Technology Enhancement Act of 2023"
+  },
+  "agora-1296": {
+    "id": "agora-1296",
+    "date": "2024-06-18",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "State Industrial Competitiveness Act of 2024"
+  },
+  "agora-678": {
+    "id": "agora-678",
+    "date": "2023-02-14",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Solving the Border Crisis Act"
+  },
+  "agora-652": {
+    "id": "agora-652",
+    "date": "2023-12-19",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Stop Fentanyl at the Border Act"
+  },
+  "agora-408": {
+    "id": "agora-408",
+    "date": "2023-07-18",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Strategy for Public Health Preparedness and Response to Artificial Intelligence Threats"
+  },
+  "agora-1304": {
+    "id": "agora-1304",
+    "date": "2024-06-05",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Small Business Artificial Intelligence Training Act of 2024"
+  },
+  "agora-534": {
+    "id": "agora-534",
+    "date": "2023-04-18",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Sensible Classification Act of 2023"
+  },
+  "agora-530": {
+    "id": "agora-530",
+    "date": "2023-07-28",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Shifting Forward Vehicle Technologies Research and Development Act"
+  },
+  "agora-1280": {
+    "id": "agora-1280",
+    "date": "2024-07-02",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Securing Elections From AI Deception Act"
+  },
+  "agora-795": {
+    "id": "agora-795",
+    "date": "2023-04-06",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Simplify, Don't Amplify the IRS Act, Sec. 201 (\"Tax Gap Projection\")"
+  },
+  "agora-1287": {
+    "id": "agora-1287",
+    "date": "2024-07-09",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Social Media and AI Resiliency Toolkits in Schools Act"
+  },
+  "agora-328": {
+    "id": "agora-328",
+    "date": "2023-07-27",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Sec. 2501. Corporate Citizenship and Ownership, Digital Consumer Protection Commission Act of 2023"
+  },
+  "agora-1246": {
+    "id": "agora-1246",
+    "date": "2024-09-24",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Small Business Artificial Intelligence Advancement Act"
+  },
+  "agora-508": {
+    "id": "agora-508",
+    "date": "2023-03-30",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "STAND with Taiwan Act of 2023"
+  },
+  "agora-327": {
+    "id": "agora-327",
+    "date": "2023-07-27",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Sec. 2412. Duty of Care, Digital Consumer Protection Commission Act of 2023"
+  },
+  "agora-855": {
+    "id": "agora-855",
+    "date": "2024-04-18",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Secure Artificial Intelligence Act of 2024"
+  },
+  "agora-1346": {
+    "id": "agora-1346",
+    "date": "2024-06-05",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "STAND with Taiwan Act of 2024, Section 11 (\"Prohibition on investments by United States financial institutions that bene"
+  },
+  "agora-326": {
+    "id": "agora-326",
+    "date": "2023-10-25",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Sensible Classification Act of 2023, Sec. 7: Implementation of Technology for Classification and Declassification"
+  },
+  "agora-614": {
+    "id": "agora-614",
+    "date": "2023-01-25",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "SAFE from PRC Investments Act"
+  },
+  "agora-1202": {
+    "id": "agora-1202",
+    "date": "2024-09-20",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Secure Artificial Intelligence Act of 2024"
+  },
+  "agora-1214": {
+    "id": "agora-1214",
+    "date": "2024-09-12",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "SAFE Bet Act"
+  },
+  "agora-1343": {
+    "id": "agora-1343",
+    "date": "2024-09-19",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Sec. 103, Supporting Affordability and Fairness with Every Bet Act"
+  },
+  "agora-982": {
+    "id": "agora-982",
+    "date": "2023-01-09",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Richard L. Trumka Protecting the Right to Organize Act of 2023, Sec. 309 (GAO Report)"
+  },
+  "agora-1929": {
+    "id": "agora-1929",
+    "date": "2024-11-21",
+    "confidence": "low",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "S5344 Advancing Digital Freedom Act of 2024"
+  },
+  "agora-851": {
+    "id": "agora-851",
+    "date": "2024-05-29",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "S.4306, Five AIs Act 2024"
+  },
+  "agora-1980": {
+    "id": "agora-1980",
+    "date": "2024-11-21",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Rural Prosperity and Food Security Act of 2024"
+  },
+  "agora-573": {
+    "id": "agora-573",
+    "date": "2023-12-01",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "STOP HATE Act of 2023"
+  },
+  "agora-1981": {
+    "id": "agora-1981",
+    "date": "2024-06-11",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Rural Prosperity and Food Security Act of 2024"
+  },
+  "agora-1310": {
+    "id": "agora-1310",
+    "date": "2024-06-05",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "SPEED through Screening Act"
+  },
+  "agora-1922": {
+    "id": "agora-1922",
+    "date": "2024-12-19",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "SCAM Platform Act"
+  },
+  "agora-804": {
+    "id": "agora-804",
+    "date": "2023-12-19",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Research and Development Program on New Approaches to Data Analysis for Aviation Safety"
+  },
+  "agora-447": {
+    "id": "agora-447",
+    "date": "2023-05-02",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "REAL Political Advertisements Act"
+  },
+  "agora-485": {
+    "id": "agora-485",
+    "date": "2023-03-07",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "RESTRICT Act"
+  },
+  "agora-1249": {
+    "id": "agora-1249",
+    "date": "2024-07-25",
+    "confidence": "low",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "S.4862, A bill to ensure that new advances in artificial intelligence are ethically adopted to improve the health of all"
+  },
+  "agora-1920": {
+    "id": "agora-1920",
+    "date": "2024-11-21",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Responsible AI Disclosure Act of 2024"
+  },
+  "agora-604": {
+    "id": "agora-604",
+    "date": "2023-04-20",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Protecting the Information of our Vulnerable Adolescents, Children, and Youth Act"
+  },
+  "agora-481": {
+    "id": "agora-481",
+    "date": "2023-04-19",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Protecting Kids on Social Media Act"
+  },
+  "agora-1200": {
+    "id": "agora-1200",
+    "date": "2024-09-24",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Providing Individuals Various Opportunities for Technical Training to Build a Skills-Based Cyber Workforce Act of 2024"
+  },
+  "agora-834": {
+    "id": "agora-834",
+    "date": "2023-10-02",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Rail Worker and Community Safety Act, Sec. 13 (Equipment Inspections)"
+  },
+  "agora-1248": {
+    "id": "agora-1248",
+    "date": "2024-07-10",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "S.4870, A bill to require reports on artificial intelligence regulation in the financial services industry."
+  },
+  "agora-883": {
+    "id": "agora-883",
+    "date": "2024-03-21",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Protecting Consumers from Deceptive AI Act"
+  },
+  "agora-1218": {
+    "id": "agora-1218",
+    "date": "2024-07-23",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Protecting Patients from Deceptive Drug Ads Online Act"
+  },
+  "agora-568": {
+    "id": "agora-568",
+    "date": "2023-09-21",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Protect Working Musicians Act of 2023"
+  },
+  "agora-1303": {
+    "id": "agora-1303",
+    "date": "2024-06-06",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Promoting Responsible Evaluation and Procurement to Advance Readiness for Enterprise-wide Deployment for Artificial Inte"
+  },
+  "agora-466": {
+    "id": "agora-466",
+    "date": "2023-03-17",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Promoting Precision Agriculture Act of 2023"
+  },
+  "agora-453": {
+    "id": "agora-453",
+    "date": "2024-01-29",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "QUIET Act"
+  },
+  "agora-1913": {
+    "id": "agora-1913",
+    "date": "2024-12-10",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Protecting AI and Cloud Competition in Defense Act of 2024"
+  },
+  "agora-517": {
+    "id": "agora-517",
+    "date": "2023-07-27",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Protect Elections from Deceptive AI Act"
+  },
+  "agora-911": {
+    "id": "agora-911",
+    "date": "2024-02-29",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Promoting United States Leadership in Standards Act of 2024"
+  },
+  "agora-901": {
+    "id": "agora-901",
+    "date": "2024-03-05",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Protect Victims of Digital Exploitation and Manipulation Act of 2024"
+  },
+  "agora-499": {
+    "id": "agora-499",
+    "date": "2023-04-27",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Preventing PLA Acquisition of United States Technology Act of 2023"
+  },
+  "agora-533": {
+    "id": "agora-533",
+    "date": "2023-11-15",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Promoting Digital Privacy Technologies Act"
+  },
+  "agora-415": {
+    "id": "agora-415",
+    "date": "2024-01-30",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Preventing Algorithmic Collusion Act of 2024"
+  },
+  "agora-615": {
+    "id": "agora-615",
+    "date": "2023-11-09",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Preventing Adversaries from Developing Critical Capabilities Act"
+  },
+  "agora-433": {
+    "id": "agora-433",
+    "date": "2023-10-02",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Preventing Deep Fake Scams Act"
+  },
+  "agora-1311": {
+    "id": "agora-1311",
+    "date": "2024-06-05",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Preventing the Algorithmic Facilitation of Rental Housing Cartels Act of 2024"
+  },
+  "agora-849": {
+    "id": "agora-849",
+    "date": "2024-06-11",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Preparing Election Administrators for AI Act"
+  },
+  "agora-915": {
+    "id": "agora-915",
+    "date": "2024-05-02",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Preserving Telehealth, Hospital, and Ambulance Access Act, Sec. 105 (Report on Wearable Medical Devices)"
+  },
+  "agora-896": {
+    "id": "agora-896",
+    "date": "2023-12-11",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Preparing Election Administrators for AI Act"
+  },
+  "agora-1887": {
+    "id": "agora-1887",
+    "date": "2024-11-21",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Preserving American Dominance in Artificial Intelligence Act of 2024"
+  },
+  "agora-441": {
+    "id": "agora-441",
+    "date": "2023-09-14",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Political BIAS Emails Act of 2023"
+  },
+  "agora-579": {
+    "id": "agora-579",
+    "date": "2023-05-11",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Oversee Emerging Technology Act"
+  },
+  "agora-451": {
+    "id": "agora-451",
+    "date": "2024-01-30",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "R U REAL Act"
+  },
+  "agora-821": {
+    "id": "agora-821",
+    "date": "2023-07-13",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Pandemic and All-Hazards Preparedness and Response Act, Sec. 407 (\"Assessment of Artificial Intelligence Threats to Heal"
+  },
+  "agora-1371": {
+    "id": "agora-1371",
+    "date": "2023-06-08",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Platform Accountability and Transparency Act, Section 9 (\"Rulemaking authority\")"
+  },
+  "agora-557": {
+    "id": "agora-557",
+    "date": "2023-12-05",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Promoting Resilient Supply Chains Act of 2023"
+  },
+  "agora-844": {
+    "id": "agora-844",
+    "date": "2023-06-07",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "PAID Act, Sec. 3 (Requirements for Private Passenger Automobile Insurers)"
+  },
+  "agora-601": {
+    "id": "agora-601",
+    "date": "2023-07-27",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Outbound Investment Transparency Act of 2023"
+  },
+  "agora-837": {
+    "id": "agora-837",
+    "date": "2023-04-19",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Online Privacy Act of 2023, Sec. 106 (\"Right to individual autonomy\")"
+  },
+  "agora-867": {
+    "id": "agora-867",
+    "date": "2024-06-11",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Open Translation Center Act of 2024"
+  },
+  "agora-1232": {
+    "id": "agora-1232",
+    "date": "2024-07-30",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "National Windstorm Impact Reduction Program Reauthorization Act of 2024"
+  },
+  "agora-439": {
+    "id": "agora-439",
+    "date": "2024-01-10",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "No AI FRAUD Act"
+  },
+  "agora-572": {
+    "id": "agora-572",
+    "date": "2023-07-10",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Novel, Advanced Spectrum and Communications Technology Networks Promotion Act"
+  },
+  "agora-322": {
+    "id": "agora-322",
+    "date": "2023-11-02",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "No CCP Consultants Act"
+  },
+  "agora-891": {
+    "id": "agora-891",
+    "date": "2024-03-19",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "No AI Audits Act"
+  },
+  "agora-721": {
+    "id": "agora-721",
+    "date": "2023-11-15",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "No ICBMs or Drones for Iran Act of 2023"
+  },
+  "agora-1227": {
+    "id": "agora-1227",
+    "date": "2024-09-10",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "PATHS Act"
+  },
+  "agora-1007": {
+    "id": "agora-1007",
+    "date": "2023-07-12",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "National Wildland Fire Risk Reduction Program Act, Sec. 7 (Responsibilities of Program Agencies)"
+  },
+  "agora-556": {
+    "id": "agora-556",
+    "date": "2023-02-14",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "National Strategy to Utilize Microreactors for Natural Disaster Response Efforts Act"
+  },
+  "agora-790": {
+    "id": "agora-790",
+    "date": "2023-05-18",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "National Drone and Advanced Air Mobility Research and Development Act, Title VII (\"Department of Homeland Security Activ"
+  },
+  "agora-1687": {
+    "id": "agora-1687",
+    "date": "2024-09-27",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Next Generation Military Education Act"
+  },
+  "agora-808": {
+    "id": "agora-808",
+    "date": "2023-11-02",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "National Quantum Initiative Reauthorization Act, Sec. 16 (\"Department of Energy Quantum Information Science Research Pro"
+  },
+  "agora-898": {
+    "id": "agora-898",
+    "date": "2024-03-05",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "National Patient Safety Board Act of 2024"
+  },
+  "agora-789": {
+    "id": "agora-789",
+    "date": "2023-05-18",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "National Drone and Advanced Air Mobility Research and Development Act, Title VI (\"Department of Energy Activities\")"
+  },
+  "agora-655": {
+    "id": "agora-655",
+    "date": "2023-04-27",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "National Mesonet Authorization Act"
+  },
+  "agora-787": {
+    "id": "agora-787",
+    "date": "2023-05-18",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "National Drone and Advanced Air Mobility Research and Development Act, Title II (\"National Drone and Advanced Air Mobili"
+  },
+  "agora-522": {
+    "id": "agora-522",
+    "date": "2023-05-09",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "National Critical Capabilities Defense Act of 2023"
+  },
+  "agora-788": {
+    "id": "agora-788",
+    "date": "2023-05-18",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "National Drone and Advanced Air Mobility Research and Development Act, Title IV (\"National Science Foundation Activities"
+  },
+  "agora-1242": {
+    "id": "agora-1242",
+    "date": "2024-07-31",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "NO FAKES Act of 2024"
+  },
+  "agora-450": {
+    "id": "agora-450",
+    "date": "2023-06-20",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "National AI Commission Act"
+  },
+  "agora-822": {
+    "id": "agora-822",
+    "date": "2023-07-06",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "NTIA Reauthorization Act of 2023, Sec. 203 (\"Spectrum management improvements\")"
+  },
+  "agora-1316": {
+    "id": "agora-1316",
+    "date": "2024-05-22",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Modernizing Retrospective Regulatory Review Act"
+  },
+  "agora-1247": {
+    "id": "agora-1247",
+    "date": "2024-07-25",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Nucleic Acid Standards for Biosecurity Act"
+  },
+  "agora-1312": {
+    "id": "agora-1312",
+    "date": "2024-06-27",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "NSF and USDA Interagency Research Act"
+  },
+  "agora-845": {
+    "id": "agora-845",
+    "date": "2024-05-21",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "NSF AI Education Act of 2024"
+  },
+  "agora-1344": {
+    "id": "agora-1344",
+    "date": "2024-06-05",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Modernizing Wildfire Safety and Prevention Act of 2024, Section 405 (\"Joint Office of the Fire Environment Center (Repor"
+  },
+  "agora-905": {
+    "id": "agora-905",
+    "date": "2024-03-05",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Modernizing Retrospective Regulatory Review"
+  },
+  "agora-1679": {
+    "id": "agora-1679",
+    "date": "",
+    "confidence": "none",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Modernizing Data Practices to Improve Government Act"
+  },
+  "agora-841": {
+    "id": "agora-841",
+    "date": "2023-07-12",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Lummis-Gillibrand Responsible Financial Innovation Act, Sec. 1001 (\"Executive Office of the President Appropriations\")"
+  },
+  "agora-1197": {
+    "id": "agora-1197",
+    "date": "2024-04-17",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Lummis-Gillibrand Payment Stablecoin Act (Sec. 1-3)"
+  },
+  "agora-504": {
+    "id": "agora-504",
+    "date": "2024-01-18",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Medicare Transaction Fraud Prevention Act"
+  },
+  "agora-1283": {
+    "id": "agora-1283",
+    "date": "2024-06-18",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Maintaining Innovation and Safe Technologies Act"
+  },
+  "agora-500": {
+    "id": "agora-500",
+    "date": "2023-02-02",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "MEANS Act"
+  },
+  "agora-886": {
+    "id": "agora-886",
+    "date": "2024-03-21",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Living Wage for Musicians Act of 2024"
+  },
+  "agora-1205": {
+    "id": "agora-1205",
+    "date": "2024-09-24",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Modernizing Data Practices to Improve Government Act"
+  },
+  "agora-1199": {
+    "id": "agora-1199",
+    "date": "2024-09-25",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "MedShield Act of 2024"
+  },
+  "agora-894": {
+    "id": "agora-894",
+    "date": "2024-03-11",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Methane Emissions Mitigation Research and Development Act"
+  },
+  "agora-320": {
+    "id": "agora-320",
+    "date": "2023-06-15",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Land Grant Research Prioritization Act of 2023"
+  },
+  "agora-1244": {
+    "id": "agora-1244",
+    "date": "2024-07-30",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Literacy in Future Technologies Artificial Intelligence Act"
+  },
+  "agora-793": {
+    "id": "agora-793",
+    "date": "2023-04-27",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Kids Online Safety Act, Sec. 13 (\"Filter Bubble Transparency Requirements\")"
+  },
+  "agora-452": {
+    "id": "agora-452",
+    "date": "2023-07-06",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Jobs of the Future Act of 2023"
+  },
+  "agora-659": {
+    "id": "agora-659",
+    "date": "2023-05-18",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Know Your App Act"
+  },
+  "agora-1901": {
+    "id": "agora-1901",
+    "date": "2024-12-17",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Leadership in CET Act"
+  },
+  "agora-1009": {
+    "id": "agora-1009",
+    "date": "2024-04-09",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Kids Online Safety Act, Title II (Filter Bubble Transparency)"
+  },
+  "agora-496": {
+    "id": "agora-496",
+    "date": "2023-09-08",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Investing in Tomorrow's Workforce Act of 2023"
+  },
+  "agora-416": {
+    "id": "agora-416",
+    "date": "2024-02-21",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Justice in Forensic Algorithms Act of 2024"
+  },
+  "agora-641": {
+    "id": "agora-641",
+    "date": "2023-06-05",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "LISTOS Act"
+  },
+  "agora-1301": {
+    "id": "agora-1301",
+    "date": "2024-06-11",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "International Artificial Intelligence Research Partnership Act of 2024"
+  },
+  "agora-1341": {
+    "id": "agora-1341",
+    "date": "2024-06-04",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Intelligence Authorization Act for Fiscal Year 2025, Title V, Section 510 (\"Management of artificial intelligence securi"
+  },
+  "agora-813": {
+    "id": "agora-813",
+    "date": "2023-06-21",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Intelligence Authorization Act for Fiscal Year 2024, Title V (\"Matters Pertaining to United States Economic and Emerging"
+  },
+  "agora-1338": {
+    "id": "agora-1338",
+    "date": "2024-06-18",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Intelligence Authorization Act for Fiscal Year 2025, Title V, Section 504 (\"National security procedures to address cert"
+  },
+  "agora-1342": {
+    "id": "agora-1342",
+    "date": "2024-06-18",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Intelligence Authorization Act for Fiscal Year 2025, Title V, Section 505 (\"Establishment of Artificial Intelligence Sec"
+  },
+  "agora-429": {
+    "id": "agora-429",
+    "date": "2023-01-09",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Healthy Technology Act of 2023"
+  },
+  "agora-809": {
+    "id": "agora-809",
+    "date": "2023-06-07",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Intelligence Authorization Act for Fiscal Year 2024, Sec. 906 (\"Programs for Next-Generation Microelectronics in Support"
+  },
+  "agora-814": {
+    "id": "agora-814",
+    "date": "2023-06-21",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Intelligence Authorization Act for Fiscal Year 2024, Sec. 758 (\"Implementation of Technology for Classification and Decl"
+  },
+  "agora-1298": {
+    "id": "agora-1298",
+    "date": "2024-05-16",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Improving Seniors’ Timely Access to Care Act of 2024"
+  },
+  "agora-1927": {
+    "id": "agora-1927",
+    "date": "2024-12-10",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Improving Atmospheric River Forecasts Act"
+  },
+  "agora-830": {
+    "id": "agora-830",
+    "date": "2023-06-14",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Health Care Price Transparency Act of 2023, Sec. 301 (\"Establishing Requirements With Respect to the Use of Prior Author"
+  },
+  "agora-520": {
+    "id": "agora-520",
+    "date": "2023-11-14",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Integrating New Technologies to Empower Law Enforcement at Our Borders Act"
+  },
+  "agora-832": {
+    "id": "agora-832",
+    "date": "2023-11-02",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Harmful Algal Bloom and Hypoxia Research and Control Amendments Act of 2023, Sec. 2f (\"National Harmful Algal Bloom and "
+  },
+  "agora-1348": {
+    "id": "agora-1348",
+    "date": "2024-07-23",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Health Equity and Accountability Act of 2024, Sec 1013 (\"Task Force on Preventing Bias in AI and Algorithms\")"
+  },
+  "agora-810": {
+    "id": "agora-810",
+    "date": "2023-06-07",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Intelligence Authorization Act for Fiscal Year 2024, Sec. 909 (\"Requirement to Ensure Intelligence Community Directives "
+  },
+  "agora-1000": {
+    "id": "agora-1000",
+    "date": "2024-05-28",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "HR 7659 Coast Guard Authorization Act of 2024, Title III (\"Shipping and Navigation\"), Sec. 342 (\"Establishment of Nation"
+  },
+  "agora-1680": {
+    "id": "agora-1680",
+    "date": "2024-12-18",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Improving Diagnosis in Medicine Act of 2024"
+  },
+  "agora-874": {
+    "id": "agora-874",
+    "date": "2024-04-09",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Generative AI Copyright Disclosure Act of 2024"
+  },
+  "agora-843": {
+    "id": "agora-843",
+    "date": "2023-12-14",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "HOME Act of 2024, Sec. 7 (Identification of Unfair Screening Practices)"
+  },
+  "agora-1014": {
+    "id": "agora-1014",
+    "date": "2023-11-02",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Government Surveillance Reform Act of 2023, Title VII (Protection of Car Data from Warrantless Searches)"
+  },
+  "agora-860": {
+    "id": "agora-860",
+    "date": "2024-04-18",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Future of Artificial Intelligence Innovation Act of 2024"
+  },
+  "agora-1998": {
+    "id": "agora-1998",
+    "date": "2024-12-17",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Further Continuing Appropriations and Disaster Relief Supplemental Appropriations Act 2025 (Title IX \"Take It Down Act\")"
+  },
+  "agora-583": {
+    "id": "agora-583",
+    "date": "2023-02-14",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "HEARTS Act of 2022"
+  },
+  "agora-2001": {
+    "id": "agora-2001",
+    "date": "2024-12-17",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Further Continuing Appropriations and Disaster Relief Supplemental Appropriations Act 2025 (Title V \"Promoting Resilient"
+  },
+  "agora-1999": {
+    "id": "agora-1999",
+    "date": "2024-12-21",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Further Continuing Appropriations and Disaster Relief Supplemental Appropriations Act 2025 (Section 217 \"Report on Weara"
+  },
+  "agora-1269": {
+    "id": "agora-1269",
+    "date": "2024-07-11",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Fraudulent Artificial Intelligence Regulations (FAIR) Elections Act of 2024"
+  },
+  "agora-607": {
+    "id": "agora-607",
+    "date": "2023-05-18",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Forest Data Modernization Act of 2023"
+  },
+  "agora-1209": {
+    "id": "agora-1209",
+    "date": "2024-09-17",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "H.R. 9626, To direct the Department of Defense to develop a plan for the establishment of a secure computing and data st"
+  },
+  "agora-864": {
+    "id": "agora-864",
+    "date": "2024-03-06",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "GRIData Act of 2024"
+  },
+  "agora-2000": {
+    "id": "agora-2000",
+    "date": "2024-12-11",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Further Continuing Appropriations and Disaster Relief Supplemental Appropriations Act 2025 (Title VIII \"Prohibition and "
+  },
+  "agora-657": {
+    "id": "agora-657",
+    "date": "2023-06-21",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Food and Agriculture Industry Cybersecurity Support Act"
+  },
+  "agora-1353": {
+    "id": "agora-1353",
+    "date": "2024-06-18",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Fix Our Forests Act, Section 303 (\"Public-private wildfire technology deployment and demonstration partnership\")"
+  },
+  "agora-1239": {
+    "id": "agora-1239",
+    "date": "2024-07-31",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Forecasting Optimization for Robust Earth Climate Analysis and Subseasonal-to-Seasonal Tracking Act of 2024"
+  },
+  "agora-811": {
+    "id": "agora-811",
+    "date": "2023-06-22",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Federal Information Security Modernization Act of 2023, Sec. 14 (\"Automation and Artificial Intelligence\")"
+  },
+  "agora-397": {
+    "id": "agora-397",
+    "date": "2023-11-02",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Federal Artificial Intelligence Risk Management Act of 2023"
+  },
+  "agora-997": {
+    "id": "agora-997",
+    "date": "2024-06-03",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Farm, Food, and National Security Act of 2024, Title VII (\"Research, Extension, and Related Matters\"), Sec. 7208 (\"Cente"
+  },
+  "agora-1352": {
+    "id": "agora-1352",
+    "date": "2024-06-18",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Fix Our Forests Act, Section 102 (\"Fireshed Center\")"
+  },
+  "agora-880": {
+    "id": "agora-880",
+    "date": "2024-06-20",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Federal Improvement in Technology Procurement Act"
+  },
+  "agora-996": {
+    "id": "agora-996",
+    "date": "2024-05-17",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Farm, Food, and National Security Act of 2024, Title VI (\"Rural Development\"), Sec. 6303 (\"Promoting Precision Agricultu"
+  },
+  "agora-497": {
+    "id": "agora-497",
+    "date": "2023-01-13",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "FinCEN Modernization Act of 2023"
+  },
+  "agora-460": {
+    "id": "agora-460",
+    "date": "2023-12-14",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Farm Tech Act"
+  },
+  "agora-906": {
+    "id": "agora-906",
+    "date": "2024-03-01",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Federal AI Governance and Transparency Act"
+  },
+  "agora-998": {
+    "id": "agora-998",
+    "date": "2024-05-21",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Farm, Food, and National Security Act of 2024, Title VIII (\"Forestry\"), Sec. 8414 (\"Public-Private Wildfire Technology D"
+  },
+  "agora-856": {
+    "id": "agora-856",
+    "date": "2024-05-01",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Free Credit Scores for Consumers Act of 2024"
+  },
+  "agora-791": {
+    "id": "agora-791",
+    "date": "2023-01-24",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Fair Trade with China Enforcement Act, Sec. 101 (\"Establishment of list of certain products receiving support from gover"
+  },
+  "agora-792": {
+    "id": "agora-792",
+    "date": "2023-01-23",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Fair Trade with China Enforcement Act, Sec. 102 (\"Prohibition on export to People's Republic of China of national securi"
+  },
+  "agora-797": {
+    "id": "agora-797",
+    "date": "2023-05-18",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "FAA Research and Development Act of 2023, Sec. 215 (\"Air Traffic Control Training\")"
+  },
+  "agora-796": {
+    "id": "agora-796",
+    "date": "2023-05-18",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "FAA Research and Development Act of 2023, Sec. 210 (\"Technology review of artificial intelligence and machine learning t"
+  },
+  "agora-637": {
+    "id": "agora-637",
+    "date": "2023-10-26",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Facial Recognition Act of 2023"
+  },
+  "agora-541": {
+    "id": "agora-541",
+    "date": "2023-07-20",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Exploitative Workplace Surveillance and Technologies Task Force Act of 2023"
+  },
+  "agora-1228": {
+    "id": "agora-1228",
+    "date": "2024-12-20",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Expanding AI Voices Act"
+  },
+  "agora-592": {
+    "id": "agora-592",
+    "date": "2023-10-26",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Ensuring Safe and Ethical AI Development Through SAFE AI Research Grants"
+  },
+  "agora-878": {
+    "id": "agora-878",
+    "date": "2024-03-21",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Export Controls Enforcement Improvement Act of 2024"
+  },
+  "agora-1290": {
+    "id": "agora-1290",
+    "date": "2024-06-06",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Ending FCC Meddling in Our Elections Act"
+  },
+  "agora-1919": {
+    "id": "agora-1919",
+    "date": "2024-09-24",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Emerging Innovative Border Technologies Act"
+  },
+  "agora-1912": {
+    "id": "agora-1912",
+    "date": "2024-12-10",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Enable Intelligence Community Partnerships Act of 2024"
+  },
+  "agora-1685": {
+    "id": "agora-1685",
+    "date": "2024-12-19",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Eliminating Bias in Algorithmic Systems Act of 2024"
+  },
+  "agora-449": {
+    "id": "agora-449",
+    "date": "2023-11-15",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "FAIRR Act"
+  },
+  "agora-914": {
+    "id": "agora-914",
+    "date": "2023-03-30",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Eliminating Abusive and Rampant Neglect of Interactive Technologies Act of 2023 (National Commission on Online Child Sex"
+  },
+  "agora-414": {
+    "id": "agora-414",
+    "date": "2023-11-14",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Eliminating Bias in Algorithmic Systems Act of 2023"
+  },
+  "agora-857": {
+    "id": "agora-857",
+    "date": "2024-06-20",
+    "confidence": "low",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Examining Educational Redlining in Lending Act"
+  },
+  "agora-879": {
+    "id": "agora-879",
+    "date": "2024-03-29",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Emerging Innovative Border Technologies Act"
+  },
+  "agora-323": {
+    "id": "agora-323",
+    "date": "2023-06-09",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Drone Safety and Efficiency Act"
+  },
+  "agora-532": {
+    "id": "agora-532",
+    "date": "2023-03-21",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Disincentivizing Internet Service Censorship of Online Users and Restrictions on Speech and Expression Act"
+  },
+  "agora-531": {
+    "id": "agora-531",
+    "date": "2024-01-30",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Disrupt Explicit Forged Images And Non-Consensual Edits Act of 2024"
+  },
+  "agora-473": {
+    "id": "agora-473",
+    "date": "2023-05-17",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Digital Platform Commission Act of 2023"
+  },
+  "agora-566": {
+    "id": "agora-566",
+    "date": "2024-02-06",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Do Not Disturb Act"
+  },
+  "agora-580": {
+    "id": "agora-580",
+    "date": "2024-02-07",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Diversify Tech Act"
+  },
+  "agora-1258": {
+    "id": "agora-1258",
+    "date": "2024-07-18",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Digital Social Platform Transparency Act"
+  },
+  "agora-523": {
+    "id": "agora-523",
+    "date": "2023-11-14",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Digital Defense Content Provenance Act of 2023"
+  },
+  "agora-1684": {
+    "id": "agora-1684",
+    "date": "2024-10-29",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Economic Security and Diplomacy Act of 2024"
+  },
+  "agora-852": {
+    "id": "agora-852",
+    "date": "2024-07-10",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "ENFORCE Act"
+  },
+  "agora-524": {
+    "id": "agora-524",
+    "date": "2023-07-06",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Digital Defense Content Provenance Act of 2023"
+  },
+  "agora-611": {
+    "id": "agora-611",
+    "date": "2023-11-21",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Deploying American Blockchains Act of 2023"
+  },
+  "agora-1307": {
+    "id": "agora-1307",
+    "date": "2024-06-05",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Detection Equipment and Technology Evaluation to Counter the Threat of Fentanyl and Xylazine Act of 2024"
+  },
+  "agora-816": {
+    "id": "agora-816",
+    "date": "2023-06-15",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Department of State Authorization Act of 2023, Sec. 304 (\"Establishment of the Chief Artificial Intelligence Officer of "
+  },
+  "agora-818": {
+    "id": "agora-818",
+    "date": "2023-06-20",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Department of State Authorization Act of 2023, Sec. 941 (\"Reporting Related to the AUKUS Partnership\")"
+  },
+  "agora-1903": {
+    "id": "agora-1903",
+    "date": "2024-12-16",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Diabetes Act"
+  },
+  "agora-1003": {
+    "id": "agora-1003",
+    "date": "2023-07-20",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Department of State, Foreign Operations, and Related Programs Appropriations Act 2024, Title VII (\"General Provisions\"),"
+  },
+  "agora-817": {
+    "id": "agora-817",
+    "date": "2023-06-20",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Department of State Authorization Act of 2023, Sec. 931 (\"Priority for Australia and the United Kingdom in Foreign Milit"
+  },
+  "agora-815": {
+    "id": "agora-815",
+    "date": "2023-06-15",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Department of State Authorization Act of 2023, Sec. 303 (\"Task force to address artificial intelligence-enabled influenc"
+  },
+  "agora-1002": {
+    "id": "agora-1002",
+    "date": "2023-02-17",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Department of Peacebuilding Act of 2023, Sec. 107 (\"Office of Technology for Peace\")"
+  },
+  "agora-510": {
+    "id": "agora-510",
+    "date": "2023-02-17",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Data Science and Literacy Act of 2023"
+  },
+  "agora-546": {
+    "id": "agora-546",
+    "date": "2023-09-06",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Deceptive Experiences To Online Users Reduction Act"
+  },
+  "agora-1206": {
+    "id": "agora-1206",
+    "date": "2024-09-19",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Department of Energy Artificial Intelligence Act of 2024"
+  },
+  "agora-468": {
+    "id": "agora-468",
+    "date": "2023-03-17",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "DOE and USDA Interagency Research Act"
+  },
+  "agora-438": {
+    "id": "agora-438",
+    "date": "2023-05-02",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "DOE and NSF Interagency Research Act"
+  },
+  "agora-1274": {
+    "id": "agora-1274",
+    "date": "2024-06-05",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Department of Energy AI Act"
+  },
+  "agora-1690": {
+    "id": "agora-1690",
+    "date": "2024-09-25",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Data Protection Act of 2024"
+  },
+  "agora-897": {
+    "id": "agora-897",
+    "date": "2024-03-08",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Department of Defense Financial Audits Using Artificial Intelligence Act"
+  },
+  "agora-515": {
+    "id": "agora-515",
+    "date": "2023-05-02",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "DOE and NASA Interagency Research Coordination Act"
+  },
+  "agora-826": {
+    "id": "agora-826",
+    "date": "2023-09-19",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "DEEPFAKES Accountability Act, Sec. 2 (\"Transparency Requirements\")"
+  },
+  "agora-2046": {
+    "id": "agora-2046",
+    "date": "2024-09-25",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Department of Energy Quantum Leadership Act of 2024, Section 2"
+  },
+  "agora-988": {
+    "id": "agora-988",
+    "date": "2024-02-29",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Countering Communist China Act, Title I (\"Matters Related to Trade, Investment, and Economic Relations\"), Sec. 101 (\"Pre"
+  },
+  "agora-560": {
+    "id": "agora-560",
+    "date": "2023-11-08",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "DATA Privacy Act"
+  },
+  "agora-850": {
+    "id": "agora-850",
+    "date": "2024-05-10",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Cybersecurity and Infrastructure Security Agency Securing AI Task Force Act"
+  },
+  "agora-994": {
+    "id": "agora-994",
+    "date": "2024-02-29",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Countering Communist China Act, Title VI (\"Matters Related to Democracy, Human Rights, and Taiwan\"), Sec. 615 (\"Deterrin"
+  },
+  "agora-993": {
+    "id": "agora-993",
+    "date": "2024-03-01",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Countering Communist China Act, Title VII (\"Matters Related to Defense\"), Sec. 701 (\"Modifications to Use of Emergency S"
+  },
+  "agora-576": {
+    "id": "agora-576",
+    "date": "2023-03-30",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Cooper Davis Act"
+  },
+  "agora-1926": {
+    "id": "agora-1926",
+    "date": "2024-12-17",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "DOGE Act"
+  },
+  "agora-1270": {
+    "id": "agora-1270",
+    "date": "2024-07-11",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Content Origin Protection and Integrity from Edited and Deepfaked Media Act of 2024"
+  },
+  "agora-581": {
+    "id": "agora-581",
+    "date": "2023-07-20",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Countering Adversarial and Malicious Partnerships at Universities and Schools Act of 2023"
+  },
+  "agora-591": {
+    "id": "agora-591",
+    "date": "2024-02-15",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Counseling for Career Choice Act"
+  },
+  "agora-1011": {
+    "id": "agora-1011",
+    "date": "2023-05-10",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Community and Hydropower Improvement Act, Sec. 4 (Approach to Environmental Review)"
+  },
+  "agora-917": {
+    "id": "agora-917",
+    "date": "2023-11-29",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Countering Antisemitism Act, Sec. 8 (Online Antisemitism, Holocaust Denial, and Distortion)"
+  },
+  "agora-990": {
+    "id": "agora-990",
+    "date": "2024-02-29",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Countering Communist China Act, Title I (\"Matters Related to Trade, Investment, and Economic Relations\"), Sec. 102 (\"San"
+  },
+  "agora-539": {
+    "id": "agora-539",
+    "date": "2023-06-15",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Computer Science for All Act of 2023"
+  },
+  "agora-1251": {
+    "id": "agora-1251",
+    "date": "2024-07-31",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Consumer Literacy and Empowerment to Advance Responsible Navigation of Artificial Intelligence Act"
+  },
+  "agora-836": {
+    "id": "agora-836",
+    "date": "2023-07-24",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Communications, Video, and Technology Accessibility Act of 2023, Sec. 401 (\"Emerging Technology\")"
+  },
+  "agora-666": {
+    "id": "agora-666",
+    "date": "2023-03-29",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Combating Cartels on Social Media Act of 2023"
+  },
+  "agora-881": {
+    "id": "agora-881",
+    "date": "2024-03-21",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Contraband Awareness Technology Catches Harmful Fentanyl Act"
+  },
+  "agora-1358": {
+    "id": "agora-1358",
+    "date": "2024-09-25",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Combat Chinese Economic Aggression Act of 2024, Section 4 (\"Protection of covered sectors.\")"
+  },
+  "agora-1896": {
+    "id": "agora-1896",
+    "date": "2024-12-19",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Chinese Military and Surveillance Company Sanctions Act of 2024"
+  },
+  "agora-907": {
+    "id": "agora-907",
+    "date": "2024-03-01",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Comment Integrity and Management Act of 2024"
+  },
+  "agora-999": {
+    "id": "agora-999",
+    "date": "2024-03-13",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Coast Guard Authorization Act of 2024, Title II (\"Coast Guard\"), Sec. 207 (\"Report on establishment of unmanned systems "
+  },
+  "agora-401": {
+    "id": "agora-401",
+    "date": "2023-07-13",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Closing Loopholes for the Overseas Use and Development of Artificial Intelligence Act"
+  },
+  "agora-820": {
+    "id": "agora-820",
+    "date": "2023-04-20",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Coast Guard Authorization Act of 2023, Sec. 212 (\"Report on Establishment of an Unmanned Systems Capabilities Office\")"
+  },
+  "agora-444": {
+    "id": "agora-444",
+    "date": "2023-09-06",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "CREATE AI Act of 2023"
+  },
+  "agora-456": {
+    "id": "agora-456",
+    "date": "2023-07-13",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Candidate Voice Fraud Prohibition Act"
+  },
+  "agora-471": {
+    "id": "agora-471",
+    "date": "2023-02-02",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Building Resilient Supply Chains Act"
+  },
+  "agora-1265": {
+    "id": "agora-1265",
+    "date": "2024-07-15",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Civilian Agency AI Watermark Act"
+  },
+  "agora-865": {
+    "id": "agora-865",
+    "date": "2024-04-16",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Child Exploitation and Artificial Intelligence Expert Commission Act of 2024"
+  },
+  "agora-597": {
+    "id": "agora-597",
+    "date": "2023-05-17",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "CONSULT Act of 2023"
+  },
+  "agora-1233": {
+    "id": "agora-1233",
+    "date": "2024-07-30",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Bureau of Industry and Security Information Technology Modernization Act"
+  },
+  "agora-1016": {
+    "id": "agora-1016",
+    "date": "2024-02-05",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Border Act of 2024, General Provisions Title"
+  },
+  "agora-275": {
+    "id": "agora-275",
+    "date": "2023-04-27",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Block Nuclear Launch by Autonomous Artificial Intelligence Act of 2023"
+  },
+  "agora-807": {
+    "id": "agora-807",
+    "date": "2023-05-15",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Black Maternal Health Omnibus Act, Sec. 904 (Report on the Use of Technology in Maternity Care)"
+  },
+  "agora-428": {
+    "id": "agora-428",
+    "date": "2023-08-18",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Basic Allowance for Housing Calculation Improvement Act of 2023"
+  },
+  "agora-1391": {
+    "id": "agora-1391",
+    "date": "2023-03-22",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Better Mental Health Care for Americans Act, Sec. 201"
+  },
+  "agora-1392": {
+    "id": "agora-1392",
+    "date": "2023-03-22",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Better Mental Health Care for Americans Act, Sec. 203"
+  },
+  "agora-887": {
+    "id": "agora-887",
+    "date": "2024-03-14",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "CONSENT Act"
+  },
+  "agora-406": {
+    "id": "agora-406",
+    "date": "2023-12-14",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Artificial Intelligence Literacy Act of 2023"
+  },
+  "agora-823": {
+    "id": "agora-823",
+    "date": "2023-12-01",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Atomic Energy Advancement Act, Sec. 123 (\"Advancement of Nuclear Regulatory Oversight\")"
+  },
+  "agora-395": {
+    "id": "agora-395",
+    "date": "2023-11-30",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Artificial Intelligence Research, Innovation, and Accountability Act of 2023"
+  },
+  "agora-1245": {
+    "id": "agora-1245",
+    "date": "2024-07-30",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Atomic Supply Chain Solutions Act"
+  },
+  "agora-529": {
+    "id": "agora-529",
+    "date": "2024-02-05",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Autonomous Vehicle Accessibility Act/AV Accessibility Act"
+  },
+  "agora-400": {
+    "id": "agora-400",
+    "date": "2024-02-01",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Artificial Intelligence Environmental Impacts Act of 2024"
+  },
+  "agora-1198": {
+    "id": "agora-1198",
+    "date": "2024-07-31",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Artificial Intelligence Weapon Accountability and Risk Evaluation Act of 2024"
+  },
+  "agora-315": {
+    "id": "agora-315",
+    "date": "2023-07-18",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Artificial Intelligence and Biosecurity Risk Assessment Act"
+  },
+  "agora-1288": {
+    "id": "agora-1288",
+    "date": "2024-06-06",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Artificial Intelligence Public Awareness and Education Campaign Act"
+  },
+  "agora-1212": {
+    "id": "agora-1212",
+    "date": "2024-09-19",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Artificial Intelligence Allied Collaboration for Crucial Operations, Research, and Development Act of 2024"
+  },
+  "agora-394": {
+    "id": "agora-394",
+    "date": "2023-07-26",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Artificial Intelligence Bug Bounty Act of 2023"
+  },
+  "agora-1234": {
+    "id": "agora-1234",
+    "date": "2024-09-25",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Artificial Intelligence Acquisitions Act of 2024"
+  },
+  "agora-396": {
+    "id": "agora-396",
+    "date": "2023-05-16",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Artificial Intelligence Accountability Act"
+  },
+  "agora-986": {
+    "id": "agora-986",
+    "date": "2024-03-05",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Americas Act, Title II (\"Trade and Investment for the Americas\"), Sec. 255 (\"Transformational Energy Development\")"
+  },
+  "agora-399": {
+    "id": "agora-399",
+    "date": "2023-10-18",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Artificial Intelligence Advancement Act of 2023"
+  },
+  "agora-418": {
+    "id": "agora-418",
+    "date": "2023-09-21",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Algorithmic Accountability Act of 2023"
+  },
+  "agora-985": {
+    "id": "agora-985",
+    "date": "2024-03-05",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Americas Act, Title II (\"Trade and Investment for the Americas\"), Sec. 202 (\"Americas Partnership Business Advisory Boar"
+  },
+  "agora-682": {
+    "id": "agora-682",
+    "date": "2023-03-29",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Air Tour and Sport Parachuting Safety Improvement Act of 2023"
+  },
+  "agora-1337": {
+    "id": "agora-1337",
+    "date": "2024-06-18",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "American Privacy Rights Act of 2024, Sec. 114-5"
+  },
+  "agora-1357": {
+    "id": "agora-1357",
+    "date": "2024-06-21",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "American Medical Innovation and Investment Act of 2024 (Sec. 5)"
+  },
+  "agora-1961": {
+    "id": "agora-1961",
+    "date": "2024-12-17",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "American Foreign Affairs Talent Expansion Act: Diversity in Diplomacy and Development, Section 112 (Mitigating bias in a"
+  },
+  "agora-984": {
+    "id": "agora-984",
+    "date": "2024-03-05",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Americas Act, Title I (\"Administration\"), Sec. 103 (\"Additional Duties of Institute\")"
+  },
+  "agora-819": {
+    "id": "agora-819",
+    "date": "2023-01-09",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Advanced Safe Testing at Residence Telehealth Act of 2023, Sec. 2 (\"Coverage and Payment for Certain Tests and Assistive"
+  },
+  "agora-590": {
+    "id": "agora-590",
+    "date": "2023-09-07",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Advisory for AI-Generated Content Act"
+  },
+  "agora-1315": {
+    "id": "agora-1315",
+    "date": "2024-05-23",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Agriculture and National Security Act of 2024"
+  },
+  "agora-660": {
+    "id": "agora-660",
+    "date": "2023-06-15",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Advancing Automation Research and Development in Agriculture Act"
+  },
+  "agora-704": {
+    "id": "agora-704",
+    "date": "2023-01-10",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Advanced Aviation Act"
+  },
+  "agora-672": {
+    "id": "agora-672",
+    "date": "2023-06-08",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Advanced Aviation Integration Act"
+  },
+  "agora-484": {
+    "id": "agora-484",
+    "date": "2023-03-17",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "AI for National Security Act"
+  },
+  "agora-525": {
+    "id": "agora-525",
+    "date": "2023-11-08",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Advancing Nuclear Regulatory Oversight Act"
+  },
+  "agora-440": {
+    "id": "agora-440",
+    "date": "2023-04-26",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "ASSESS AI Act"
+  },
+  "agora-442": {
+    "id": "agora-442",
+    "date": "2023-05-16",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "ASK Act"
+  },
+  "agora-885": {
+    "id": "agora-885",
+    "date": "2024-03-21",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "American Economic Independence Act of 2024"
+  },
+  "agora-435": {
+    "id": "agora-435",
+    "date": "2023-03-17",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Advanced Weather Model Computing Development Act"
+  },
+  "agora-487": {
+    "id": "agora-487",
+    "date": "2023-11-30",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "Advanced Weather Model Computing Development Act"
+  },
+  "agora-432": {
+    "id": "agora-432",
+    "date": "2023-05-11",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "AI Leadership Training Act"
+  },
+  "agora-904": {
+    "id": "agora-904",
+    "date": "2023-12-11",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "AI Transparency in Elections Act of 2024"
+  },
+  "agora-829": {
+    "id": "agora-829",
+    "date": "2023-11-30",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "AREA Act, Part B (\"National Center for Education Research\"), Sec. 133 (\"Duties\")"
+  },
+  "agora-554": {
+    "id": "agora-554",
+    "date": "2023-08-01",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "AI Labeling Act of 2023"
+  },
+  "agora-1305": {
+    "id": "agora-1305",
+    "date": "2024-06-07",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "AI Transparency in Elections Act of 2024"
+  },
+  "agora-437": {
+    "id": "agora-437",
+    "date": "2023-06-13",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "AI LEAD Act"
+  },
+  "agora-467": {
+    "id": "agora-467",
+    "date": "2023-07-06",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "AI Training Expansion Act of 2023"
+  },
+  "agora-882": {
+    "id": "agora-882",
+    "date": "2024-03-21",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "AI PLAN Act"
+  },
+  "agora-854": {
+    "id": "agora-854",
+    "date": "2024-05-01",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "AI Grand Challenges Act of 2024"
+  },
+  "agora-1203": {
+    "id": "agora-1203",
+    "date": "2024-09-19",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "AI Incident Reporting and Security Enhancement Act"
+  },
+  "agora-448": {
+    "id": "agora-448",
+    "date": "2023-06-06",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "AI Disclosure Act of 2023"
+  },
+  "agora-1223": {
+    "id": "agora-1223",
+    "date": "2024-09-10",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "AI Grand Challenges Act of 2024"
+  },
+  "agora-889": {
+    "id": "agora-889",
+    "date": "2023-12-13",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "AI CONSENT Act"
+  },
+  "agora-1297": {
+    "id": "agora-1297",
+    "date": "2024-06-14",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "AI Leadership To Enable Accountable Deployment Act"
+  },
+  "agora-436": {
+    "id": "agora-436",
+    "date": "2023-12-19",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "AI Foundation Model Transparency Act of 2023"
+  },
+  "agora-1225": {
+    "id": "agora-1225",
+    "date": "2024-12-18",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "AI Development Practices Act of 2024"
+  },
+  "agora-1241": {
+    "id": "agora-1241",
+    "date": "2024-07-22",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "AI Innovation and Development for Efficiency Act of 2024"
+  },
+  "agora-1208": {
+    "id": "agora-1208",
+    "date": "2024-09-19",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "AI Ads Act"
+  },
+  "agora-1222": {
+    "id": "agora-1222",
+    "date": "2024-09-10",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "AI Advancement and Reliability Act of 2024"
+  },
+  "agora-1921": {
+    "id": "agora-1921",
+    "date": "2024-12-10",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "AI Act of 2024"
+  },
+  "agora-1681": {
+    "id": "agora-1681",
+    "date": "2024-12-12",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "AI Fraud Deterrence Act"
+  },
+  "agora-1886": {
+    "id": "agora-1886",
+    "date": "2024-09-25",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "A bill to require a study on the use of commercial-off-the-shelf products and artificial intelligence technologies by th"
+  },
+  "agora-403": {
+    "id": "agora-403",
+    "date": "2023-09-28",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "A bill to specify control and management of Department of Defense data and to establish the Chief Digital and Artificial"
+  },
+  "agora-398": {
+    "id": "agora-398",
+    "date": "2023-06-14",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "A bill to waive immunity under section 230 of the Communications Act of 1934 for claims and charges related to generativ"
+  },
+  "agora-1010": {
+    "id": "agora-1010",
+    "date": "2023-12-07",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "A Stronger Workforce for America Act, Chapter 3 (Performance Accountability)"
+  },
+  "agora-1261": {
+    "id": "agora-1261",
+    "date": "2024-05-22",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "A bill to require the Secretary of Defense to carry out a pilot program on using artificial intelligence-enabled softwar"
+  },
+  "agora-1891": {
+    "id": "agora-1891",
+    "date": "2024-12-19",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "A bill to prohibit and require notifications with respect to certain investments by United States persons in the People'"
+  },
+  "agora-411": {
+    "id": "agora-411",
+    "date": "2024-02-29",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "A bill to promote United States leadership in technical standards by directing the National Institute of Standards and T"
+  },
+  "agora-288": {
+    "id": "agora-288",
+    "date": "2023-07-20",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "A Bill to prohibit certain uses of automated decision systems by employers, and for other purposes."
+  },
+  "agora-1001": {
+    "id": "agora-1001",
+    "date": "2024-04-24",
+    "confidence": "high",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "21st Century Peace through Strength Act, Division D (\"Protecting Americans from Foreign Adversary Controlled Application"
+  },
+  "agora-1201": {
+    "id": "agora-1201",
+    "date": "2024-09-25",
+    "confidence": "medium",
+    "method": "llm",
+    "resolved": "2026-09-06",
+    "title": "A bill to establish protections for individual rights with respect to computational algorithms, and for other purposes."
+  }
+}

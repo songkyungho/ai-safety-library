@@ -1,0 +1,1858 @@
+{
+  "doc-e576dd1c6692": {
+    "members_hash": "1e758100ddae43d0",
+    "analyze_hash": "1e758100ddae43d0",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 37,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "미국 FY2026 국방수권법",
+      "summary": "미국과 일부 파트너 국가의 전투 역량 강화를 위한 신흥기술의 연구·개발·시험·평가를 다루며, 소형 무인항공기(sUAS) 산업기반과 취약한 공급망을 분석하고 투자·대응 조치 및 정부·산업계 협력 방안을 제안하는 실무그룹 설치와 보고를 규정합니다. 일정 조건 충족 시 육군장관이 SkyFoundry 프로그램을 설치할 수 있도록 권한을 부여합니다.",
+      "section_labels": [
+        "§914"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-7271d0f8d775": {
+    "members_hash": "eff7a355b5abc475",
+    "analyze_hash": "eff7a355b5abc475",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 31,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "FY2023 국방수권법(NDAA)",
+      "summary": "국가정보국장의 정보공동체 인공지능 정책·표준·지침 관련 책무를 규정하고, 국무부의 인공지능 및 핵심기술 분야 인력 채용·유지 전담 직위 설치와 관련 인력 확보 계획·연례 보고를 요구하며, 2023~2027 회계연도별 75만 달러의 예산을 승인합니다.",
+      "section_labels": [
+        "§9506"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-c1d55ea93b98": {
+    "members_hash": "69077cddd414791b",
+    "analyze_hash": "69077cddd414791b",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 26,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "FY2021 미국 국방수권법(NDAA)",
+      "summary": "인공지능 연구·교육·인력 개발·계획 수립 및 국제 협력을 지원하는 국가 AI 이니셔티브를 규정하고, AI 연구·재정지원 프로그램, 국가 AI 연구 자원 검토 사무국, 기관 간 조정위원회, 외부 자문위원회 및 태스크포스를 마련한다. 또한 AI 전략계획 수립·갱신, AI 노동력 영향 연구, 국립과학재단의 AI 연구·교육·윤리 활동 지원과 NIST의 AI·데이터 관련 임무 및 권한을 포함한다.",
+      "section_labels": [
+        "Division E"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-0b6a047571e8": {
+    "members_hash": "977c0d263ba9ca63",
+    "analyze_hash": "977c0d263ba9ca63",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 23,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "미국 FY2025 국방수권법 AI 조항",
+      "summary": "국방부 인력의 AI 시스템 사용성을 인적 요인·인지 인체공학 관점에서 개선하고 관련 지침 계획과 평가를 요구합니다. 첨단 AI 역량을 위한 고성능 컴퓨팅 인프라와 컴퓨팅 수요·보안 기준·자원 평가 로드맵을 마련하며, AI 개발·배포 생애주기의 데이터 비용과 관련 프로그램 예산을 계획하도록 합니다.",
+      "section_labels": [
+        "Title XV, Subtitle D"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-7b640ee6bdc3": {
+    "members_hash": "5d880a13d0f50ca5",
+    "analyze_hash": "5d880a13d0f50ca5",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 22,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "미국 FY2024 국방수권법(NDAA)",
+      "summary": "국방부의 AI·머신러닝 활용과 획득 체계를 갱신·확대하고, AI 버그바운티와 기초 AI 모델 취약점 제보 협력 체계를 마련하도록 한다. 생성형 AI 콘텐츠 탐지·워터마킹 기술 발전을 위한 경연과 의회 보고를 규정하며, AI의 윤리적 사용, 편향 완화, 사이버보안, 자율 시스템의 인간 감독, AI 리터러시 및 군사 분야 AI 취약점 연구와 관련된 국방부 정책·지침 수립을 요구한다.",
+      "section_labels": [
+        "Title XV, Subtitle E"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-0e2902fbcbf7": {
+    "members_hash": "bfc0dc0af90c795c",
+    "analyze_hash": "bfc0dc0af90c795c",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 19,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "미국 OBBB법 2025",
+      "summary": "미국의 2025년 One Big Beautiful Bill Act는 국경 보안용 AI·혁신 기술과 비침습 검사 장비의 AI·머신러닝 통합을 위해 2025 회계연도 예산을 배정하며, 해당 예산은 2029년 9월 30일까지 사용할 수 있습니다. 남서부 및 북부 국경에 검증되지 않은 자율 감시탑을 조달하거나 배치하는 데는 사용할 수 없습니다.",
+      "section_labels": [
+        "§20006",
+        "§90004",
+        "§60003"
+      ],
+      "split_reason": "",
+      "notes": "서로 다른 조항이 동일한 2025년 미국 One Big Beautiful Bill Act에 속합니다.",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-9bf21dfd644f": {
+    "members_hash": "bc2854f1df0d0d70",
+    "analyze_hash": "bc2854f1df0d0d70",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 12,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "미국 FY2022 국방수권법",
+      "summary": "국방부 장관이 인공지능 및 기타 디지털 기술 인력 채용 개선을 위한 최고 디지털 채용 책임자를 지정하도록 하고, 해당 책임자가 인공지능·분산원장기술·사이버보안 등의 역량 격차를 파악·해소하며 추진 상황을 매년 의회 국방위원회에 보고하도록 합니다.",
+      "section_labels": [
+        "§909"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-b6370009ccad": {
+    "members_hash": "9da9b9ca7b077464",
+    "analyze_hash": "9da9b9ca7b077464",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 8,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "미국 2020년 에너지법",
+      "summary": "에너지부 장관에게 전력망 구조·모델링·시각화·신기술 호환성 및 회복력 향상을 위한 연구개발 프로그램을 수립하도록 하고, 물리적·사이버 사건의 영향을 예측하는 모델과 전력망 감지·모니터링·시각화 도구의 개발을 지원합니다. 인공지능은 적용 가능한 신기술 중 하나로 열거됩니다.",
+      "section_labels": [
+        "Title VIII, Section 8002"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-4c4d0c7f1e90": {
+    "members_hash": "b03c17049287f938",
+    "analyze_hash": "b03c17049287f938",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 6,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "CHIPS/R&D법",
+      "summary": "미국 연방 법률로 연구개발·경쟁·혁신 및 국가표준기술연구소 관련 사항을 다루며, 환경관리 연구개발·실증 활동을 위해 미국 에너지부에 2억 달러의 세출을 승인합니다. 해당 활동에는 인공지능 관련 연구가 포함될 수 있으나, 제공된 메타만으로는 AI 안전이나 거버넌스가 핵심 주제라고 보기 어렵습니다.",
+      "section_labels": [
+        "제VI편 제10771조"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-7c9a989c33e8": {
+    "members_hash": "538a54a5a1c83975",
+    "analyze_hash": "538a54a5a1c83975",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 5,
+    "result": {
+      "same_instrument": true,
+      "confidence": "medium",
+      "short_name": "유럽 고성능 컴퓨팅 공동사업(EuroHPC JU)",
+      "summary": "유럽연합, 참여 유럽 국가 및 민간 파트너가 함께 추진하는 공동사업으로, 슈퍼컴퓨터·양자컴퓨터·AI 팩토리와 연구·혁신 프로젝트를 통해 유럽의 고성능 컴퓨팅 생태계 구축을 목표로 합니다. AI 팩토리 프로그램은 연구자, 스타트업, 중소기업, 산업계 및 공공기관에 AI 최적화 슈퍼컴퓨팅 자원과 기술 지원을 제공하며, 산업 혁신 활동에는 현물 형태의 컴퓨팅 지원이 활용됩니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "제목 표현과 등록일은 다르지만 모든 항목이 EuroHPC JU를 직접 지칭하거나 해당 공동사업에 대한 참여를 나타내는 변형으로 판단했습니다.",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-6bddcf5e251b": {
+    "members_hash": "d6f27135f33d914a",
+    "analyze_hash": "d6f27135f33d914a",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 4,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "EU 인공지능법",
+      "summary": "인공지능 시스템을 위험 수준에 따라 구분하고, 금지되는 AI 관행과 고위험 AI 시스템에 대한 위험관리·데이터 거버넌스·기술문서·기록보존·투명성·인간감독·정확성·견고성·사이버보안 의무를 정합니다. 범용 AI 모델 제공자에게도 기술문서, 저작권 준수 정책, 학습데이터 요약 공개 등의 의무를 부과합니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-2153bf16b3c8": {
+    "members_hash": "b62223ed3a6d1779",
+    "analyze_hash": "b62223ed3a6d1779",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 5,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "브라질 하원 Ulysses 프로그램",
+      "summary": "브라질 하원의 Ulysses 프로그램으로, 입법안에 대한 시민 전자투표 의견 분석과 찬반 논거 분류, 입법 수요·법안 절차 라우팅 분석, 법안 통합 요약 및 채팅 기능을 포함합니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-db7effba11e4": {
+    "members_hash": "cb20f0e0206b4b21",
+    "analyze_hash": "cb20f0e0206b4b21",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 4,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "미국 국가 드론·첨단 항공 모빌리티 연구개발법안",
+      "summary": "첨단 항공 모빌리티, 무인항공기시스템(UAS), 대UAS 시스템의 연구·개발·평가·시험을 지원하도록 국토안보부 장관에게 권한과 의무를 부여하고, 사이버보안·안전·데이터 관리 및 표준화·보안·개인정보 보호 데이터세트 구축을 요구합니다. 국토안보부 내 대UAS 우수성 센터 설립과 연구기관 지원을 규정하며, 연구기관 선정 시 과거 실적·연방시설과의 지리적 근접성·AI·머신러닝 역량 등을 고려하고 관련 기관·프로그램과의 조정을 요구합니다.",
+      "section_labels": [
+        "Title VII"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-d290b7367b73": {
+    "members_hash": "1d5f2fc6b5f7d757",
+    "analyze_hash": "1d5f2fc6b5f7d757",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 4,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "2023년 국무부 수권법안(AUKUS 파트너십 보고)",
+      "summary": "AUKUS 파트너십 관련 비구속적 문서에 대한 대통령 보고를 요구하고, 제정 1년 후부터 국무부 장관이 관계자와 협의해 격년 보고서를 제출하도록 합니다. 보고서는 AUKUS 필러 2의 인공지능·양자기술·사이버 및 기타 첨단 역량 협력과 수중 역량, 자율성, 극초음속 기술, 전자전, 혁신·정보공유 등을 평가합니다.",
+      "section_labels": [
+        "§941"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-b90d3c5d4e27": {
+    "members_hash": "87616600d695393a",
+    "analyze_hash": "87616600d695393a",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 4,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "대중국 공산주의 대응법",
+      "summary": "중국 군사기업에 대한 긴급 제재 권한의 사용을 의무화하고, 긴급 제재 대상에 AI 등 특정 분야를 포함하도록 관련 규정을 개정하는 법안입니다. 대상 기업은 AI 분야에서 상업 서비스, 제조, 생산 또는 수출에 관여하는 기업으로 정의됩니다.",
+      "section_labels": [
+        "제701절"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-f28531f12346": {
+    "members_hash": "6a0c2f570e066e3c",
+    "analyze_hash": "6a0c2f570e066e3c",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 5,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "2023년 기상법 재승인법안",
+      "summary": "국가통합가뭄정보시스템에 인공지능·기계학습·클라우드 기술을 활용하고, 가뭄 모니터링·예측과 돌발가뭄 연구·대응 도구를 개선하도록 하는 법안입니다. 연방 관측망과 데이터를 활용한 가뭄 지표·정보 제품 개선, 협력 및 양해각서 추진, 확률 예측과 동적·통계적 예측 모델 도입을 포함합니다.",
+      "section_labels": [
+        "제502조"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-2c90601fbfdc": {
+    "members_hash": "bd1857e2ea7fb6e5",
+    "analyze_hash": "bd1857e2ea7fb6e5",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 7,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "미국 인프라 투자·일자리법(IIJA)",
+      "summary": "대학 교통센터 프로그램의 연구 목적을 수정해 자율주행차, 연결형 차량 및 연결형 인프라 관련 기술의 사이버보안 영향 연구를 포함하는 미국 법률입니다.",
+      "section_labels": [
+        "§25017",
+        "§25005",
+        "§13005",
+        "§11401",
+        "Title V, Subtitle C, Part II",
+        "§40433",
+        "§40210"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-d8278cdfa573": {
+    "members_hash": "f9f9622aaa70bdfb",
+    "analyze_hash": "f9f9622aaa70bdfb",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 3,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "쿼드 기술 원칙",
+      "summary": "호주·인도·일본·미국은 기술의 설계·개발·거버넌스·사용이 공동의 민주적 가치와 보편적 인권을 존중해야 한다고 확인하고, 보편적 가치 지원과 신뢰·무결성·회복력 구축, 과학기술 발전을 위한 건전한 경쟁과 국제 협력을 지향합니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-aa2457676dde": {
+    "members_hash": "f8f46c2ad2642407",
+    "analyze_hash": "f8f46c2ad2642407",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 4,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "미국 2025년 계속·재난구호 추가 세출법안",
+      "summary": "국가안보 관련 대상 거래와 금지 기술에 대한 미국인의 투자를 제한하고, 특정 AI 개발을 포함한 거래에 통지 의무를 부과할 수 있도록 합니다. 예외 허용, 민사 제재와 투자 처분 명령, 자진 신고 및 사전 의견 요청 절차, 집행·기술 평가에 관한 의회 보고, 거래정보 보호와 공개 예외, 대상 외국 기관 데이터베이스 및 국제 협력을 규정합니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-f495c61ebf29": {
+    "members_hash": "894d5275b7cfde3b",
+    "analyze_hash": "894d5275b7cfde3b",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 3,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "미국 FY2025 정보수권법안(IAA FY2025)",
+      "summary": "AI 보안 취약점을 국가 취약점 데이터베이스(NVD)와 CISA의 CVE 프로그램에 반영하고, AI 보안·안전 사고 자발적 데이터베이스와 표준화된 보고 형식·기밀성 요건을 마련하도록 한다. 중요 기반시설 및 고영향 사례의 수록 가능성을 평가하며, AI 취약점 보고 합의 표준과 AI 공급망 위험 관리 모범사례를 다자간에 평가하도록 한다.",
+      "section_labels": [
+        "§504",
+        "§505",
+        "§510"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-44e7fdfb3b2d": {
+    "members_hash": "9f45f3cd775e0ec7",
+    "analyze_hash": "9f45f3cd775e0ec7",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 3,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "아메리카스 법안",
+      "summary": "에너지 인프라와 국제 에너지 금융을 지원하고, 변환적 에너지 기술에 AI 응용을 포함하며, 관련 기관의 에너지 담당 조직과 기관 간 에너지 수출·개발·무역 데이터베이스 및 보고 체계를 마련하는 법안입니다.",
+      "section_labels": [
+        "제255조"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-a47d87466a09": {
+    "members_hash": "1a64ba0eaa6c9121",
+    "analyze_hash": "1a64ba0eaa6c9121",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 3,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "미국 항공 성장·리더십 강화법",
+      "summary": "FAA 행정관은 14 CFR §107.200에 따른 면제증명 신청 심사에 빅데이터 분석과 머신러닝을 활용하고, 성과·위험 기반으로 심사해야 합니다. 비정상적·불규칙한 운항을 제외하고 개방형 서술형 질문의 사용을 금지하며, 독점 정보를 보호하면서 면제 정보를 온라인에 공개하고 유사한 면제의 변경·갱신을 신속히 처리하며 재산 접근 통제를 고려해야 합니다.",
+      "section_labels": [
+        "§908"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-fda70c65a3fc": {
+    "members_hash": "a9897990d565479b",
+    "analyze_hash": "a9897990d565479b",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 3,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "미국 2024년 농장·식품·국가안보법",
+      "summary": "산불 예방·탐지·통신·완화 기술의 배치와 시험을 위한 공공·민간 협력 시범사업을 제안하고, 시험 기술 및 대규모 도입 가능성에 관한 연례 보고를 요구합니다. 인공지능·양자 감지·증강현실 등 신기술을 우선 고려하며, 2029년 9월 30일 종료됩니다.",
+      "section_labels": [
+        "§8414"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-a6d04dc84d8a": {
+    "members_hash": "fcd9fb865a187316",
+    "analyze_hash": "fcd9fb865a187316",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 3,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "미국 AI 리더십 장벽 제거 행정명령",
+      "summary": "미국의 글로벌 AI 우위 확보를 위해 기존 AI 정책·지침·규제를 재검토·정비하도록 지시하고, 행정명령 14110을 폐지한다. 180일 내 AI 실행계획 제출과 60일 내 OMB 지침 개정을 요구하며, AI 시스템에서 이념적 편향과 공학화된 사회 의제를 배제하는 정책 방향을 제시한다.",
+      "section_labels": [
+        "행정명령 제14179호"
+      ],
+      "split_reason": "",
+      "notes": "세 항목 모두 미국 행정명령 14179를 가리킨다.",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-9ef15be48f77": {
+    "members_hash": "461b1fc4cc6be941",
+    "analyze_hash": "461b1fc4cc6be941",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 3,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "EU 범용 AI 실천규범",
+      "summary": "EU 집행위원회와 AI Office가 범용 AI 모델 제공자의 AI Act 자율 준수를 지원하기 위해 제시한 실천규범으로, 투명성, 저작권 및 학습데이터 관련 의무와 시스템적 위험 모델의 안전·보안, 사고보고·위험평가, 준수 입증을 다룬다.",
+      "section_labels": [
+        "투명성 장"
+      ],
+      "split_reason": "",
+      "notes": "세 항목은 동일한 EU 범용 AI 실천규범을 가리키며, 하나는 투명성 장을 지칭한다.",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-acd53f645f9c": {
+    "members_hash": "27c4de7d89a74bbb",
+    "analyze_hash": "27c4de7d89a74bbb",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 3,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "G7 공공부문 AI 활용 툴킷",
+      "summary": "G7 맥락에서 OECD와 UNESCO가 작성한 공공부문 AI 활용 지침으로, 정책결정자와 공공부문 리더가 안전하고 보안성 있으며 신뢰 가능한 AI 원칙을 정책과 행정에 적용하도록 실무적 고려사항을 제시합니다. 내부 운영, 정책결정, 공공서비스, 투명성·책임성 관련 활용사례와 정책 대응, AI 솔루션의 개발·배치·활용 단계 및 실행 성공요인을 다룹니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "동일한 G7 공공부문 AI 툴킷을 가리키는 항목으로 통합했습니다.",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-79e0115d1949": {
+    "members_hash": "9d22d9550fbbe3cc",
+    "analyze_hash": "9d22d9550fbbe3cc",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 3,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "미국 OMB M-25-22 AI 조달 지침",
+      "summary": "미국 백악관 예산관리국(OMB)이 연방정부의 인공지능 조달을 위해 제시한 지침이다. 신속하고 경쟁적인 AI 조달, 미국 AI 시장과 공급업체 활용 확대, 벤더 종속 방지와 상호운용성 확보를 주요 방향으로 하며, 과도한 절차 부담을 완화하고 성능·보안·책임성 기준을 적용해 공공 신뢰를 유지하도록 한다. 기존 M-24-18을 대체하며 M-25-21과 함께 연방정부의 AI 도입을 지원한다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-49dfc22c4c52": {
+    "members_hash": "b9aa9d908a55d6fa",
+    "analyze_hash": "b9aa9d908a55d6fa",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 3,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "미국 AI 행동계획 2025",
+      "summary": "미국의 AI 주도권 확보를 위한 범정부 실행전략으로, AI 인프라·연구개발·규제 샌드박스·오픈소스 생태계 지원, 중국과의 기술 경쟁 및 수출통제, 동맹국 협력, 연방기관의 AI 도입, NIST 기준 활용과 국가안보 관련 AI 위험 관리를 다룹니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "외교부 게시, 원문 기록, OECD 등록 형태로 제시된 동일 제도입니다.",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-95b7cbc56cf1": {
+    "members_hash": "eeb9e15162f6b8e7",
+    "analyze_hash": "eeb9e15162f6b8e7",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 3,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "캘리포니아 학교 AI 사용 지침법",
+      "summary": "교육감이 교육 환경에서의 안전하고 효과적인 AI 사용을 위한 실무그룹을 소집하도록 하고, 실무그룹이 학교의 AI 사용을 평가해 학생·교육자 지침과 지역 교육기관용 모델 정책을 개발하도록 합니다. 지침과 정책은 학업 정직성, 데이터 프라이버시, 허용 가능한 사용, 불평등 방지, 학생 데이터 보안, 교육의 질 및 교원 고용에 대한 영향을 다루며, 실무그룹은 다양한 이해관계자로 구성되고 절반 이상이 자격을 갖춘 교원이어야 합니다. 공청회 후 2027년 1월 1일까지 의회에 보고서와 지침을 공개해야 합니다.",
+      "section_labels": [
+        "SEC. 46"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-1cdc7482a2e8": {
+    "members_hash": "edde0cb696d88a47",
+    "analyze_hash": "edde0cb696d88a47",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "G20 인간 중심 AI 장관성명",
+      "summary": "G20은 인간 중심 인공지능의 혁신과 도입을 촉진하고, 포용적 경제성장과 사회적 편익에 기여하도록 한다. 개인정보 보호, 보안, 윤리, 노동시장 전환 등 사회적 과제에 대응하기 위해 포용적 성장, 인간 중심 가치, 투명성, 견고성, 책임성을 주요 원칙으로 제시하며 국제협력과 개발도상국의 참여를 강조한다.",
+      "section_labels": [
+        "제1절 제3항"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-2850220655d6": {
+    "members_hash": "cf1ef98683f2c6ed",
+    "analyze_hash": "cf1ef98683f2c6ed",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "medium",
+      "short_name": "코스타리카 디지털정부 200주년 행정명령",
+      "summary": "코스타리카 공공부문의 디지털정부 추진을 위해 고위급위원회 설립과 기관 간 협력 체계를 규정합니다. 국가 디지털정부 포트폴리오에 등록할 사업을 식별·정의·우선순위화하고 기관별 디지털정부 의제 수립을 추진하며, 인증된 전자서명 확대와 종이 문서의 전자서명 문서 전환을 제시합니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "두 항목은 동일한 코스타리카 디지털정부 200주년 행정명령으로 통합했습니다.",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-0a319547a733": {
+    "members_hash": "cd111bd2834fc172",
+    "analyze_hash": "cd111bd2834fc172",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "중국 국가 차세대 AI 거버넌스 전문가위원회",
+      "summary": "중국의 책임 있는 AI 개발과 활용을 지도하며, AI 윤리·법률·거버넌스에 관한 권고를 제시하는 전문가 자문기구입니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "동일 기구를 가리키는 영문 명칭 변형을 통합함.",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-881659300291": {
+    "members_hash": "a949ae71c6487f1a",
+    "analyze_hash": "a949ae71c6487f1a",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "미국 보건 연장·공중보건 강화법",
+      "summary": "미국 보건복지부 장관에게 인공지능을 포함한 미디어와 기술이 영유아·아동·청소년의 인지 발달, 신체 건강 및 정신 건강에 미치는 영향을 조사하도록 지시하고, 관련 연구·프로그램의 재정 지원과 의회 보고를 규정합니다.",
+      "section_labels": [
+        "§1432"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-43b64644f2f1": {
+    "members_hash": "97c4aba750e07019",
+    "analyze_hash": "97c4aba750e07019",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "미국 AI 리더십 유지 행정명령",
+      "summary": "미국의 AI 리더십 유지를 위해 연구개발 투자, 인력 교육, 국제 협력, 데이터 접근성 확대, 시민의 자유와 사생활 보호, 기술 표준 개발 및 핵심 AI 기술 보호를 추진합니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-7c3bfee1d3e4": {
+    "members_hash": "accfbbd4661665d9",
+    "analyze_hash": "accfbbd4661665d9",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "영국·미국 AI 연구개발 협력 선언",
+      "summary": "영국과 미국이 2020년 9월 25일 인공지능 연구개발 협력에 관한 의향서에 서명하고, 양국 간 AI 연구 협력 구축과 기술적 돌파구 촉진을 위한 공동 비전을 제시한 선언입니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "동일한 선언을 가리키는 제목 순서가 다른 표기입니다.",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-a69bffd03a15": {
+    "members_hash": "4dcde2c855b76867",
+    "analyze_hash": "4dcde2c855b76867",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "G7 히로시마 생성형 AI 프로세스",
+      "summary": "2023년 일본의 G7 의장국 수임 기간에 시작된 정책 프로세스로, 생성형 AI의 기회와 과제에 대응하기 위한 공동 정책 우선순위와 종합 정책 체계 마련을 논의합니다. G7 회원국 설문을 바탕으로 국가별·시기별 발전과 주요 동향을 정리합니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "동일 정책 프로세스의 중복 또는 미러로 통합했습니다.",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-ace6299c81d4": {
+    "members_hash": "12af43e23ee83416",
+    "analyze_hash": "12af43e23ee83416",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "미국 AI 안전·보안·신뢰 행정명령",
+      "summary": "미국 연방정부가 안전하고 보안성이 높으며 신뢰할 수 있는 AI의 개발과 사용을 촉진하도록 지시하며, 생물학적·사이버보안·기만적 콘텐츠 위험 기준, 국가안보 조치, 개인정보 보호, 알고리즘 차별 방지 및 주요 분야의 책임 있는 AI 활용을 요구한다.",
+      "section_labels": [
+        "EO 14110"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-f7960a308a29": {
+    "members_hash": "7905a84624fb76ce",
+    "analyze_hash": "7905a84624fb76ce",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "유럽 AI 사무소 설립 결정",
+      "summary": "유럽연합 집행위원회 내 유럽 AI 사무소를 설치하여 EU AI Act의 일관된 적용과 범용 AI 모델 관련 규칙의 집행을 지원하고, AI 안전성·신뢰성 평가, 회원국·전문가·과학계 협력, 국제 AI 거버넌스 및 신뢰 가능한 AI 연구·혁신을 담당하도록 하는 결정입니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-302db34e28a5": {
+    "members_hash": "01f40d7e98498b5c",
+    "analyze_hash": "01f40d7e98498b5c",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "블레츨리 선언",
+      "summary": "AI 안전 정상회의 참석국들이 프런티어 AI의 기회와 위험에 대한 국제적 공동인식을 제시하고, 인간 중심적이고 신뢰 가능하며 책임 있는 AI의 개발·활용, 인권과 기본적 자유의 보호, 안전성 시험·평가와 투명성, 위험 모니터링·완화, 국제 AI 안전 협력을 강조한 선언이다.",
+      "section_labels": [
+        "프런티어 AI의 기회와 위험",
+        "인간 중심적이고 책임 있는 AI",
+        "AI 안전성 시험·평가와 투명성",
+        "위험 모니터링과 완화",
+        "국제 AI 안전 협력"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-d0898b01da70": {
+    "members_hash": "2f88a8e74c716bd9",
+    "analyze_hash": "2f88a8e74c716bd9",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "영국 AI 규제 혁신친화적 접근 정부 답변",
+      "summary": "영국 정부는 AI 규제 백서 의견수렴을 반영해 혁신친화적·맥락기반·원칙중심 접근을 제시하고, 별도 단일 규제기관 대신 기존 분야별 규제기관이 공통 원칙을 적용하도록 했습니다. 규제기관의 AI 전략 공개와 기업 대상 최소 모범관행 기준 마련을 추진하며, 고성능 범용 AI 시스템에 대한 안전성·투명성·책임성 요건 도입 가능성을 검토합니다.",
+      "section_labels": [
+        "혁신친화적·맥락기반·원칙중심 규제",
+        "기존 분야별 규제기관 중심 적용",
+        "안전성·투명성·공정성·책임성·이의제기 가능성",
+        "규제기관 AI 전략 공개",
+        "AI Management Essentials 등 최소 모범관행",
+        "고성능 범용 AI 시스템 요건 검토"
+      ],
+      "split_reason": "",
+      "notes": "동일한 영국 정부 답변을 가리키는 항목으로 통합함",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-53605d282d7e": {
+    "members_hash": "1d8e4c157b47ff2a",
+    "analyze_hash": "1d8e4c157b47ff2a",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "국가안보 AI 거버넌스·위험관리 프레임워크",
+      "summary": "국가안보·인권·연방 인력에 대한 위험을 기준으로 금지된 AI 활용과 고영향 AI 활용을 분류하고, 고영향 AI에 위험평가·위험관리·인간 감독·책임성을 요구하는 프레임워크입니다. 중대한 인권 또는 국가안보 위험이 있는 결정에서 인간 감독 없는 AI 사용을 제한하며, 고영향 AI의 연례 목록화와 AI 책임자·거버넌스 위원회 설치, 교육·문서화를 요구합니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "동일 제목의 원문 기록과 게시 카드로 통합되었습니다.",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-e5361bb52c11": {
+    "members_hash": "1e8f63fdf9b26613",
+    "analyze_hash": "1e8f63fdf9b26613",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "싱가포르 국가 AI 전략 2.0",
+      "summary": "싱가포르는 AI를 공공재로 확립하고 산업·정부·연구기관 간 협력을 통해 연구·인재·스타트업·공공 부문의 AI 역량과 활용을 강화하며, 규제·보안·국제 협력·데이터 관리·개인정보 보호 기술을 바탕으로 책임 있는 AI 환경을 조성합니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "두 기록은 동일한 싱가포르 국가 AI 전략 2.0을 가리킵니다.",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-015714d68635": {
+    "members_hash": "ed008e408e5182bc",
+    "analyze_hash": "ed008e408e5182bc",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "유타 생성형 AI 소비자보호 책임 규정",
+      "summary": "생성형 AI 사용 사실만으로 소비자보호법 위반의 항변을 할 수 없도록 하고, 사람과 상호작용할 때 AI임을 명확히 고지하도록 한다. 규제 대상 직업의 서비스 제공자는 생성형 AI 사용 여부를 공개해야 하며, 법적 요건을 충족하지 않은 생성형 AI 기반 서비스 제공은 금지된다. 위반 시 소비자보호국의 건별 벌금·집행과 법원의 금지명령·부당이득 환수·추가 민사 제재가 가능하다.",
+      "section_labels": [
+        "§13-2-12"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-c68b8e297ca1": {
+    "members_hash": "e29afa36063a3b4e",
+    "analyze_hash": "e29afa36063a3b4e",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "블레츨리 AI 안전 정상회의",
+      "summary": "2023년 11월 1~2일 영국 블레츨리 파크에서 열린 AI 안전 정상회의와 논의 결과를 정리한 항목으로, 프런티어 AI의 기회와 위험에 대한 공동 인식을 바탕으로 과학적·증거 기반 위험평가, 국제협력, 배포 전후 안전성 평가, 독립적 테스트, 공공 평가역량 강화와 악의적 이용·통제상실·허위정보·편향·인권 위협에 대한 대응을 강조합니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-5e2cec9727a2": {
+    "members_hash": "52f270e85ffe2d53",
+    "analyze_hash": "52f270e85ffe2d53",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "중국 관련 기관과 미 국방부 IT 계약 금지 법안",
+      "summary": "미 국방부 장관이 중국의 AI 연구·개발 시설을 통제하거나 데이터센터를 운영하는 기관, 미국 정부 소프트웨어 소스 코드에 접근했거나 군사·법 집행·이중용도 소프트웨어를 제공한 중국 기관과 정보기술 계약을 체결·갱신·연장하는 것을 금지하는 법안이다. 국가안보상 필요하다고 판단하면 예외를 인정할 수 있으며, 금지 조항은 법 제정 후 3년 동안의 계약에 적용된다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-eb8d037319e9": {
+    "members_hash": "f84170b4def5b332",
+    "analyze_hash": "f84170b4def5b332",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "농촌 번영·식량안보법 2024",
+      "summary": "농업 분야 인공지능 활용의 개발·평가를 위한 연구 및 보급 보조금을 마련하고, 특수작물 생산 개선·농업 효율성 향상·농업 공정 기계화 관련 연구를 지원합니다.",
+      "section_labels": [
+        "제7518조"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-4e6b082d8afe": {
+    "members_hash": "e823c946841593f3",
+    "analyze_hash": "e823c946841593f3",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "WIOA·고령 미국인법 개정안",
+      "summary": "주정부가 WIOA 및 고령 미국인법 관련 프로그램의 운영·성과를 평가하고 개선할 수 있도록 머신러닝과 첨단 데이터 분석의 활용을 허용·장려하는 법안입니다.",
+      "section_labels": [
+        "Sec. 119(c)"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-40cbe55d7625": {
+    "members_hash": "d2e033de44ebe079",
+    "analyze_hash": "d2e033de44ebe079",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "미국 TORPEDO법(2023)",
+      "summary": "AUKUS 협정에 따른 미국·호주·영국 간 첨단 역량 협력과 이행 상황, 호주의 잠수함 관련 인프라·인력·기지 지원 목표 및 미국 국방목표 기여를 보고하도록 하고, AUKUS 파트너 및 캐나다와의 방산물자 교환을 촉진하기 위한 ITAR·수출통제 체계의 변경 사항과 개선 권고를 다루는 법안",
+      "section_labels": [
+        "§6"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-e2f3bb234aa4": {
+    "members_hash": "efccb700a7835785",
+    "analyze_hash": "efccb700a7835785",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "미국 2024년 미래 수산업 지속 법안",
+      "summary": "수산 데이터 수집에 전자 모니터링과 기타 전자기술을 활용하고, AI와 기계학습을 포함한 전자기술의 발전을 위한 혁신상과 자문 패널을 마련하며, 기술 성과 기준·데이터 소유권 및 관련 시스템의 주기적 검토·보고를 다루는 법안입니다.",
+      "section_labels": [
+        "제목 IV 제402절"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-721ab33dfcf5": {
+    "members_hash": "44f987f8a84e45ec",
+    "analyze_hash": "44f987f8a84e45ec",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "미국 표준 리더십법 2024",
+      "summary": "미국의 인공지능 및 핵심·신흥기술 표준 개발 참여를 확대하기 위해 국가표준기술연구소와 국무부의 관련 조치를 규정하는 법안입니다. AI 표준화 기회와 국제 활동을 알리는 웹 포털 구축, 연방기관 참여 현황 보고, 미국 내 AI 표준화 회의를 지원하는 보조금 시범사업을 포함하며 2024~2028 회계연도에 1,000만 달러를 승인합니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-7d855a47b009": {
+    "members_hash": "efc74aa148c27b0c",
+    "analyze_hash": "efc74aa148c27b0c",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "미국 FY2024 정보수권법 Title V Subtitle B",
+      "summary": "미국의 경제·신흥기술 경쟁과 관련해 중국의 인공지능·차세대 에너지·생명공학 및 관련 공급망 역량을 평가하고, 민간의 인공지능 관련 특정 위험·위협 통지 계획 수립을 요구합니다.",
+      "section_labels": [
+        "§758"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-0d481c2da7e5": {
+    "members_hash": "a9ac124f0d93f804",
+    "analyze_hash": "a9ac124f0d93f804",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "디지털 소비자 보호위원회법",
+      "summary": "외국 적대국 국민의 소유가 포함된 대규모 온라인 플랫폼에 대해 외국 법인·기관 대리인과 데이터·알고리즘을 분리 보관하도록 하고, 외국인 소유 및 운영 라이선스 부여를 규제한다.",
+      "section_labels": [
+        "§2501"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-b4e0429814ad": {
+    "members_hash": "a79eada7fbc967a7",
+    "analyze_hash": "a79eada7fbc967a7",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "미국 Fix Our Forests Act",
+      "summary": "AI·원격 감지 등 혁신적 산불 대응 기술의 민관 배치·실증을 위한 시범 프로그램을 마련하고, 참여 기관·실증 기술·비용 및 기술 확산 권고사항을 매년 의회에 보고하도록 합니다. 프로그램 권한은 제정 후 7년이 지나면 종료됩니다.",
+      "section_labels": [
+        "제303조"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-e9966b099531": {
+    "members_hash": "3b3b4f916641a2c3",
+    "analyze_hash": "3b3b4f916641a2c3",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "미국 2024년 해안경비대 승인법",
+      "summary": "미국 영해 내 자율 시스템의 규제와 이용에 관해 장관에게 자문하는 자율 해양 시스템 국가자문위원회를 설치하는 법안입니다. 위원회는 장관이 임명하는 9명의 위원으로 구성되며, 관련 전문성·지식·경험을 갖춘 해양 안전, 보안 기관, 선박 설계·건조, 무인 차량 제조, 항만 당국, 선박 운영자, 노동조합, 해사 도선사, 상업 우주 운송 및 학술기관 관련 대표가 포함됩니다. 법 제정 후 90일 이내에 위원회를 설치하도록 합니다.",
+      "section_labels": [
+        "§342"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-cd88de564682": {
+    "members_hash": "2b1474d0f0859246",
+    "analyze_hash": "2b1474d0f0859246",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "미국 FY2024 정보수권법 AI·ML 정보산출물 지침 검토",
+      "summary": "정보공동체 지침이 정보 산출물에서 인공지능·머신러닝 도구의 사용, 출처 및 투명성을 적절히 다루는지 검토하고, 국가정보국장이 관련 판단과 지침 업데이트 계획 또는 불필요한 사유를 정보위원회에 보고하도록 요구합니다.",
+      "section_labels": [
+        "제909조"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-1209f791379e": {
+    "members_hash": "2f4d89cca74dff46",
+    "analyze_hash": "2f4d89cca74dff46",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "대중국 공정무역 집행법",
+      "summary": "상무부 장관이 국가안보에 민감한 기술과 지식재산을 중국으로 수출하는 것을 금지하도록 하는 법안입니다. 대상에는 AI 관련 상품·서비스, 정보시스템, 인터넷 기반 서비스, 로봇공학, 생명공학 및 컴퓨팅 관련 기술과 특허·저작권·상표·영업비밀 등이 포함됩니다.",
+      "section_labels": [
+        "§101",
+        "§102"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-4bb779aadeb7": {
+    "members_hash": "267d1fb9d6905010",
+    "analyze_hash": "267d1fb9d6905010",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "미국 FAA 연구개발법안 2023",
+      "summary": "FAA가 항공교통관제 훈련 현대화를 위한 연구 프로그램을 수행하고, AI·머신러닝·가상·증강현실 등 첨단기술의 훈련 효과를 평가하며, 검증된 기술과 절차의 도입 일정을 마련하고 연구 결과를 의회에 보고하도록 하는 법안입니다.",
+      "section_labels": [
+        "§215"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-6dbf80c9279d": {
+    "members_hash": "8bf9b211c8f59970",
+    "analyze_hash": "8bf9b211c8f59970",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "미국인 정신건강 의료 개선법",
+      "summary": "사회보장법을 개정해 행동건강 관련 의료 정보의 공개를 의무화하고, 네트워크 내 행동건강 제공자 접근성, 신규 환자 예약 평균 대기시간, 제공자 참여계약 및 정신건강·약물사용장애 서비스 지급 요청 통계를 공개하도록 하는 법안입니다. 사전승인·지급 거부 건수와 비율을 유형별로 보고하고, 의사결정 지원·AI·머신러닝·임상 의사결정 기술 사용 여부도 명시하도록 합니다.",
+      "section_labels": [
+        "§203"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-fb1b7b22ae55": {
+    "members_hash": "60923bd815fd4278",
+    "analyze_hash": "60923bd815fd4278",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "인도-인도네시아 디지털 개발 협력 양해각서",
+      "summary": "인도 전자정보기술부와 인도네시아 통신디지털부 간 디지털 개발 협력을 규정하며, 인공지능·사물인터넷·디지털 인프라 등 신흥기술 개발과 공공 디지털 인프라 강화를 통해 시민의 필수 서비스·교육·의료 접근을 지원합니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-f00d0e3a379b": {
+    "members_hash": "8d6fe11c20762b3d",
+    "analyze_hash": "8d6fe11c20762b3d",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "알래스카 선거 딥페이크 표시 의무",
+      "summary": "후보자에게 해를 끼치거나 유권자를 기만할 목적으로 제작된 딥페이크가 포함된 선거 관련 커뮤니케이션에 AI 조작·생성 사실을 표시하도록 요구하며, 음성 매체에서는 표시를 청취할 수 있어야 하고 인쇄물·영상·디지털 매체에서는 전체에 걸쳐 표시해야 합니다. 이 법안은 폐기 상태입니다.",
+      "section_labels": [
+        "제2절"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-39f2cf41a247": {
+    "members_hash": "1b324e0ef357f186",
+    "analyze_hash": "1b324e0ef357f186",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "영국 AI 기회 행동계획 정부 답변",
+      "summary": "영국 정부가 AI를 성장·생산성·공공서비스 혁신의 핵심 동력으로 삼기 위해 연구자·중소기업의 공공 슈퍼컴퓨팅 접근성 확대, AI 데이터센터·인프라 유치, 공공부문 AI 도입 확대를 추진하고 인재·데이터·컴퓨팅·조달·규제환경을 연계하는 정책 방향을 제시합니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "OECD 등록 항목과 외교부 게시 항목을 통합함.",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-416b7d786d07": {
+    "members_hash": "b607265082f47c53",
+    "analyze_hash": "b607265082f47c53",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "미국 청소년 AI 교육 증진 행정명령",
+      "summary": "미국 청소년의 AI 문해력과 AI 인재 기반 강화를 위해 초중등 교육에서 AI 개념·기술 노출과 교사 AI 훈련을 확대하고, AI 인재 양성 및 민관협력 교육 프로그램을 추진합니다.",
+      "section_labels": [
+        "제14277호"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-d721230dde36": {
+    "members_hash": "a08ae35491d32f30",
+    "analyze_hash": "a08ae35491d32f30",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "EU AI 대륙 행동계획",
+      "summary": "유럽연합을 글로벌 AI 선도 지역으로 만들기 위해 AI 팩토리·AI 기가팩토리 구축, 고품질 데이터 접근성 확대, 전략산업의 AI 도입, AI 인재·기술역량 강화, AI Act 이행 지원과 규제 예측가능성 제고를 추진하는 산업전략 정책 커뮤니케이션입니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "동일한 EU AI 대륙 행동계획을 서로 다른 출처에서 수록한 항목입니다.",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-1d598b22478d": {
+    "members_hash": "20deba0d4dc47480",
+    "analyze_hash": "20deba0d4dc47480",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "일본 AI 기본법",
+      "summary": "AI 관련 기술의 연구개발과 활용을 촉진하고 위험에 대응하기 위한 국가 차원의 기본 체계를 마련하는 법률이다. 정부의 AI 기본계획 수립, 내각 AI전략본부 설치와 범정부 정책 조정, 사업자의 국가 시책 협력을 규정하며, 히로시마 AI 프로세스 등 국제지침에 부합하는 제도 구축을 지향한다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "동일한 일본 법률을 OECD 등록 및 일본 외교부 게시 형태로 다룬 자료로 통합함",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-605f1f0319a8": {
+    "members_hash": "37a9bf9b78efaa7b",
+    "analyze_hash": "37a9bf9b78efaa7b",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "일본 정부 생성AI 조달·활용 가이드라인",
+      "summary": "일본 디지털청이 경제산업성·총무성과 협력해 정부기관의 생성AI 조달·활용 기준을 제시한 지침이다. 생성AI 활용을 촉진하면서 개인정보·기밀정보·보안·저작권·부정확한 출력 위험을 관리하고, 역할별 규칙과 조달사양 작성·평가·운영관리 기준을 제시한다. 각 부처에는 사용자 규칙 마련과 AI 거버넌스 체계 강화를 요구하며, 2026회계연도부터 조달·활용되는 정부 정보시스템에 전면 적용하고 2025회계연도 시스템에도 정합성을 요청한다.",
+      "section_labels": [
+        "개인정보·기밀정보·보안·저작권·부정확한 출력 위험 관리",
+        "CAIO·기획자·제공자·사용자 역할별 규칙",
+        "생성AI 시스템 조달사양 작성·평가·운영관리",
+        "부처별 사용자 규칙 및 AI 거버넌스",
+        "2026회계연도 정부 정보시스템 전면 적용"
+      ],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-ce7afedfffc7": {
+    "members_hash": "f27930e284bd1adf",
+    "analyze_hash": "f27930e284bd1adf",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "미국 OMB M-25-21 연방 AI 활용 가속화 지침",
+      "summary": "미국 OMB가 EO 14179에 따라 연방정부의 AI 활용을 가속화하기 위한 지침을 제시한다. CFO Act 기관의 AI 전략 수립·공개, 기관별 Chief AI Officer 지정과 AI 거버넌스 구축, 고영향 AI의 배포 전 테스트·영향평가·성능 모니터링, AI 활용 목록과 준수계획의 보고·공개를 요구하며 기존 OMB M-24-10을 폐지·대체한다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "동일한 OMB Memorandum M-25-21의 번역·원문 기록을 통합함.",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-4aff29e19ddc": {
+    "members_hash": "6c2a803ae7ecd6a9",
+    "analyze_hash": "6c2a803ae7ecd6a9",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "싱가포르 생성형 AI 모델 거버넌스 프레임워크 공개협의 초안",
+      "summary": "생성형 AI를 위한 싱가포르의 모델 AI 거버넌스 프레임워크 공개협의 초안으로, 책임·데이터·신뢰가능한 개발·배포·사고 보고·테스트·평가·보안·콘텐츠 프라버넌스·안전 및 정렬 연구개발·공익을 위한 AI의 9개 차원을 제시한다. 개발자·배포자·사용자 등 이해관계자의 역할을 구분하고 기존 AI Verify 프레임워크와의 연계를 설명한다.",
+      "section_labels": [
+        "책임",
+        "데이터",
+        "신뢰가능한 개발·배포",
+        "사고 보고",
+        "테스트·평가",
+        "보안",
+        "콘텐츠 프라버넌스",
+        "안전 및 정렬 연구개발",
+        "공익을 위한 AI"
+      ],
+      "split_reason": "",
+      "notes": "동일한 싱가포르 생성형 AI 모델 거버넌스 프레임워크 공개협의 초안의 등록·게시 항목으로 통합함.",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-654e0eaa3467": {
+    "members_hash": "60128943c6d9f0af",
+    "analyze_hash": "60128943c6d9f0af",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "캘리포니아 AB 412",
+      "summary": "생성형 인공지능 모델 개발자가 훈련에 사용한 저작권 보호 자료와 권리자를 문서화·공개하고, 권리자의 자료 사용 여부 확인 요청에 대응하도록 하는 법안이다. 개발자는 관련 문서를 보관하고 요청 후 30일 이내 데이터셋 포함 여부를 알려야 하며, 미준수 시 위반 1건당 1,000달러의 손해배상 및 기타 구제 조치가 가능하다. 비상업적 연구와 공개 데이터 또는 개발자 소유 자료만 사용한 모델은 적용 대상에서 제외된다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-3e6c48bd568a": {
+    "members_hash": "0dcde98c7888f751",
+    "analyze_hash": "0dcde98c7888f751",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "medium",
+      "short_name": "코스타리카 국가 AI 연구소 구상",
+      "summary": "코스타리카의 국가 인공지능 연구소 설립 가능성을 검토하는 구상으로, 2020년 체결된 AI 협력 선언을 바탕으로 공공·민간 부문 및 국제 협력을 통해 국가 문제 해결을 지원하는 것을 목표로 합니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "날짜와 제목이 동일한 중복 등록으로 통합했으며, URL이 서로 달라 확신도는 medium으로 유지합니다.",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-02832a6557a0": {
+    "members_hash": "a486747ea0668218",
+    "analyze_hash": "a486747ea0668218",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "호주 CSIRO 머신러닝·AI 미래과학플랫폼",
+      "summary": "CSIRO가 2018년 Future Science Platforms 프로그램에 머신러닝·AI 분야를 추가해 전략적 연구, 새로운 해법과 데이터 기반 과제, 연구 역량 및 인력 양성을 지원하는 과학 투자 플랫폼입니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-fdf3b9ab87db": {
+    "members_hash": "b7ea463f69700ee4",
+    "analyze_hash": "b7ea463f69700ee4",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "덴마크 책임 있는 AI 전략",
+      "summary": "덴마크 정부가 시민 중심의 AI 개발·활용을 위해 책임 있는 AI의 세 가지 지도 원칙과 네 가지 국가 차원의 신규 사업을 제시한 전략입니다. 주요 사업으로 공공 부문의 AI 도입을 지원하는 디지털 AI 태스크포스, 책임 있는 AI 활용을 지원하는 연구 기반 자문센터, 안전하고 투명한 덴마크어 언어 모델 개발, 덴마크 데이터의 오픈소스 제공을 담고 있습니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "동일한 덴마크 국가 AI 전략을 가리키는 중복 또는 명칭 변형 항목을 통합했습니다.",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-279e583a6200": {
+    "members_hash": "1d8f7b46eaebdc3b",
+    "analyze_hash": "1d8f7b46eaebdc3b",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "세르비아 IT·전자정부 사무소",
+      "summary": "전자정부와 정보시스템, 국가 행정기관 및 정부 서비스의 인프라를 설계·조정·개발·운영하고, 정보통신기술 도입 표준을 개발·시행하며 관련 기술 적용을 지원하는 세르비아의 기구입니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "제목의 대소문자와 하이픈 표기만 다른 동일 기구 등록입니다.",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-2547c59cf23d": {
+    "members_hash": "0a90d839dd98ac19",
+    "analyze_hash": "0a90d839dd98ac19",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "코스타리카 공공부문 디지털 기술 활용 지침",
+      "summary": "코스타리카 중앙행정부에 필요한 조치를 명령하고 분산행정부에 기술적·재정적 조치를 지시하여, 국가 현실에 맞는 기술 솔루션을 계획·구체화·구현하도록 하는 지침입니다. 디지털 정부 정책에 따라 국가 디지털 정부 포트폴리오의 프로젝트를 식별·정의·우선순위화하고, 기존 기술 솔루션의 활용 또는 비용 효율적인 대안 검토를 요구합니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "동일한 항목의 중복 등록으로 보이며, 두 번째 제목에는 철자 오류가 있습니다.",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-a5c1a1b1a0c2": {
+    "members_hash": "bec804d12984a8cc",
+    "analyze_hash": "bec804d12984a8cc",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "노르딕·발틱 AI 선언",
+      "summary": "노르딕·발틱 지역의 디지털 개발 담당 장관들이 인간을 위한 인공지능의 개발과 활용에 협력하기로 한 선언이다. AI 기술 개발 기회와 데이터 접근성을 확대하고, 윤리·투명성 지침과 표준, 개인정보 보호·보안·신뢰를 위한 기술 표준을 개발하며, 유럽 디지털 단일시장 논의에서 AI의 중요성을 강화하고 불필요한 규제를 방지하는 내용을 담고 있다.",
+      "section_labels": [
+        "AI 개발·활용 협력",
+        "기술 개발 기회 확대",
+        "데이터 접근성 강화",
+        "윤리·투명성 지침과 표준",
+        "개인정보 보호·보안·신뢰",
+        "유럽 디지털 단일시장",
+        "규제 방지"
+      ],
+      "split_reason": "",
+      "notes": "동일 선언의 중복 카드로 통합함",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-d3ba4a023018": {
+    "members_hash": "e78979dadaa5cf81",
+    "analyze_hash": "e78979dadaa5cf81",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "호주·베트남 Aus4innovation 프로그램",
+      "summary": "호주와 베트남의 혁신 파트너십에 따라 시행되는 1,100만 호주달러 규모의 개발협력 프로그램으로, 베트남의 혁신체계 강화와 산업 4.0 대응을 지원하며 과학기술 혁신 의제, 디지털 전환, 상용화 및 공공·민간 협력 모델을 탐색합니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "호주·베트남 간 동일한 Aus4innovation 프로그램을 가리키는 중복 카드입니다.",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-0476b1cc4f0e": {
+    "members_hash": "09439cbd8a0d7581",
+    "analyze_hash": "09439cbd8a0d7581",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "아프리카연합 데이터 정책 프레임워크",
+      "summary": "아프리카 국가들의 국가 데이터 시스템과 역량 개발, 데이터 가치 창출을 위한 공통 비전·원칙·전략적 우선순위·권고사항을 제시합니다. 상호연결·상호운용 가능한 시장과 디지털 기업의 성장을 지원하고, 대륙 차원의 통합 데이터 환경과 조화된 데이터 거버넌스 체계를 구축하며, 데이터의 자유롭고 안전한 역내 이동과 인권·보안·공평한 접근 및 편익 공유를 지향합니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-1bdb786ab233": {
+    "members_hash": "4867e418a1f3d6fc",
+    "analyze_hash": "4867e418a1f3d6fc",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "미국 연방정부 조달 AI 중립성 행정명령",
+      "summary": "미국 행정명령 제14319호는 연방정부가 조달하는 대형언어모델에 진실추구, 정확성, 객관성 및 이념적 중립성 원칙을 적용하도록 합니다. OMB에 후속 조달 지침 마련을 지시하고, AI 모델 평가와 계약 조건에 편향 방지 기준을 반영하도록 합니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "2025년 7월 23일자 미국 행정명령 제14319호",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-410c2fc36f27": {
+    "members_hash": "0242fa8315935f60",
+    "analyze_hash": "0242fa8315935f60",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "스웨덴 전환 학업 지원",
+      "summary": "스웨덴은 2022년 성인의 재교육과 역량 확대를 위해 전환 학업 지원 프로그램을 도입했다. 27~62세 성인은 1년 동안 학업 전 급여의 80%에 해당하는 학업 보조금을 받고, 이후 1년 동안 학자금 대출을 신청할 수 있다. 지원 대상은 AI를 포함한 다양한 직업 분야의 재교육이다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "동일 정책의 중복 또는 미러로 판단됨.",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-c2157f9a7712": {
+    "members_hash": "0ee0faeb48338c32",
+    "analyze_hash": "0ee0faeb48338c32",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "플란데런 AI 행동계획",
+      "summary": "플란데런 정부의 AI 발전·도입 촉진 계획으로, 연간 3,200만 유로를 투입해 전략적 연구, 실행 활동, 윤리적 쟁점, 교육·훈련을 지원하고 법률 자문, AI 이사회, AI 학습 아카데미 운영 및 유럽 차원의 AI 협력을 추진합니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "동일한 제목과 등록일을 가진 OECD 등록 항목으로, URL만 다릅니다.",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-467a24815e2b": {
+    "members_hash": "fe21331a33b76aa5",
+    "analyze_hash": "fe21331a33b76aa5",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "medium",
+      "short_name": "스웨덴 데이터 접근성 전략",
+      "summary": "스웨덴 정부가 산업계와 협력해 데이터, 특히 인공지능과 디지털 혁신에 활용되는 데이터의 접근성을 높이고, 이를 통해 경제 성장·공공서비스 개선·분야별 혁신을 지원하는 전략입니다. 국가혁신위원회의 재정 지원으로 여러 정부기관에 7개 관련 업무가 부여되었으며, 원문 메타에 따르면 2024년까지 완료되었습니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "두 멤버는 동일한 스웨덴 데이터 접근성 전략을 가리키는 것으로 분석되었습니다.",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-caf66a31f99a": {
+    "members_hash": "41c4d8708fb279aa",
+    "analyze_hash": "41c4d8708fb279aa",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "미국 AI 기술 스택 수출 촉진 행정명령",
+      "summary": "미국 AI 기술·표준·거버넌스 모델의 해외 채택을 확대하고 미국의 AI 리더십을 유지하기 위해, 상무부가 국무부·OSTP와 협의하여 American AI Exports Program을 수립·이행하도록 지시한다. AI 반도체·서버·가속기, 데이터센터·클라우드·네트워크, 데이터 파이프라인, AI 모델·시스템, 보안조치 및 분야별 AI 응용을 포함하는 풀스택 수출 패키지의 추진과 파트너국의 규제·데이터·인프라 환경 지원을 규정한다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "동일한 미국 행정명령을 가리키는 두 기록을 통합함.",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-2b4596945fe1": {
+    "members_hash": "3746ced08ccd7b34",
+    "analyze_hash": "3746ced08ccd7b34",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "EUCAIM 프로젝트",
+      "summary": "EUCAIM은 유럽 전역의 암 영상과 관련 임상 데이터를 연계하는 디지털 인프라 구축 프로젝트로, 익명화된 암 영상 데이터의 안전한 공유·분석과 종양학 AI 모델의 개발·벤치마킹·검증을 지원하며 암 진단과 개인맞춤형 치료 전략의 향상을 지향합니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "EUCAIM을 지칭하는 명칭 변형 및 중복 등록을 통합했습니다.",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-8ae1f38d53d8": {
+    "members_hash": "8ec38334f3a3fb84",
+    "analyze_hash": "8ec38334f3a3fb84",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "네덜란드 국가 교육 AI 연구소(NOLAI)",
+      "summary": "네덜란드 정부가 지원하는 10년간의 교육 AI 사업으로, 학계·기업·학교가 참여해 초등·중등·특수교육에 AI와 스마트 기술을 통합하고 학습 성과 개선 및 AI 기반 교육 도구 개발을 추진합니다. 국가성장기금에서 9,100만 유로가 배정되었으며, 이 중 3,600만 유로는 EU 회복·복원력 기금으로 조달되고 5,300만 유로는 국가성장기금에서 유보됩니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "NOLAI와 National Education Lab AI는 동일한 네덜란드 교육 AI 사업을 가리키는 명칭 변형입니다.",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-4c9d1a3c659e": {
+    "members_hash": "7aa00aaeaa119db7",
+    "analyze_hash": "7aa00aaeaa119db7",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "루마니아 국가 반도체 기술 플랫폼(PNTS)",
+      "summary": "2024년 12월 출범한 루마니아의 국가 반도체 기술 플랫폼으로, 반도체 분야의 국가 연구개발 역량을 통합·강화하는 것을 목표로 합니다. 부쿠레슈티 국립 마이크로기술 연구개발원이 주도하고 루마니아 연구·혁신·디지털화부의 지원을 받으며, 2021~2027 스마트 성장·디지털화·금융수단 프로그램에서 재원을 조달합니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "동일한 제목과 동일한 플랫폼을 가리키는 항목으로 통합했습니다.",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-3bb54e0fc342": {
+    "members_hash": "9cd11e3b91a4c794",
+    "analyze_hash": "9cd11e3b91a4c794",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "medium",
+      "short_name": "슬로베니아 SMASH 기후 머신러닝 프로젝트",
+      "summary": "슬로베니아의 SMASH 프로젝트는 극한기상, 에어로졸, 대기오염원 식별, 장기 기후 예측 등 기후·대기 과정을 이해하고 예측하기 위한 AI 솔루션을 개발하며 기후과학과 정책 개발을 지원합니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "두 항목 모두 SMASH 프로젝트를 지칭하는 OECD 등록 카드로 보이며, 별도 법령·연도·관할의 근거는 확인되지 않습니다.",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-d7fb8d93f3cf": {
+    "members_hash": "ae150084e0ddbec7",
+    "analyze_hash": "ae150084e0ddbec7",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "medium",
+      "short_name": "우크라이나 Diia.AI",
+      "summary": "우크라이나 Diia 포털의 국가 AI 에이전트로, 정부 서비스 이용 안내와 서비스 제공을 지원합니다. 개인 계정에서 소득증명서를 요청·수령할 수 있으며, 준비 완료 시 이메일 알림을 받을 수 있습니다. 현재 웹 포털에서 제공되고 모바일 앱 연동이 계획되어 있습니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "두 항목은 동일한 Diia.AI 이니셔티브를 지칭하며, 별도 법령·정책·관할의 근거는 확인되지 않습니다.",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-a824c8c4988a": {
+    "members_hash": "05650d0f9b8edcf5",
+    "analyze_hash": "05650d0f9b8edcf5",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "캘리포니아 동반자 챗봇법",
+      "summary": "동반자 챗봇·플랫폼·운영자를 정의하고, 이용자가 사람으로 오인할 수 있는 경우 AI와 상호작용 중임을 명확하고 눈에 띄게 고지하도록 합니다. 자살사고·자살·자해 관련 콘텐츠를 방지하는 프로토콜과 위기 서비스 안내를 마련·공개하고, 미성년자에게 AI 고지와 3시간마다 휴식 알림을 제공하며 성적으로 노골적인 콘텐츠를 방지해야 합니다. 관련 조치와 탐지·대응 내용을 매년 Office of Suicide Prevention에 보고해야 하며, 위반 시 민사상 구제수단이 적용됩니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-c64a1e54cf08": {
+    "members_hash": "53263441c482a0d7",
+    "analyze_hash": "53263441c482a0d7",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "싱가포르 AI 시스템 보안 지침",
+      "summary": "싱가포르 사이버보안국(CSA)의 AI 시스템 보안 지침 및 부속 가이드로, 설계 단계부터의 보안 내재화, AI 공급망 보안, 적대적 머신러닝 대응, API 보호, 프롬프트 인젝션 방어, 출력 검증, 보안 모니터링과 사고 대응 절차를 다룬다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "동일한 제도를 가리키는 게시물로 통합함.",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-3685aac54067": {
+    "members_hash": "0e11801dcac8249c",
+    "analyze_hash": "0e11801dcac8249c",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "영국 과학 AI 전략",
+      "summary": "영국 과학연구 전 과정에서 AI 활용을 확대하기 위한 국가 전략으로, AI 활용이 가능한 데이터·연구용 컴퓨팅·연구인력 역량을 핵심 기반으로 삼고 기후·보건·생명과학·에너지 등 분야의 AI 적용과 연구기관·대학·기업 간 협력을 추진합니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-054986675e67": {
+    "members_hash": "d43e6f1eecbfe4fe",
+    "analyze_hash": "d43e6f1eecbfe4fe",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "AI 국가 정책 프레임워크 보장 행정명령",
+      "summary": "미국의 주별 AI 규제 파편화를 억제하고 연방 차원의 AI 정책 프레임워크를 추진하며, 주 AI 법률 관련 소송·평가와 연방 재정지원 연계 및 주법 사전배제 입법 권고안 마련을 지시한다.",
+      "section_labels": [
+        "행정명령 제14365호"
+      ],
+      "split_reason": "",
+      "notes": "동일한 미국 행정명령의 한국어 번역·영문 원문 기록을 통합함.",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-2bd7b4df723f": {
+    "members_hash": "1bcc143178e873d4",
+    "analyze_hash": "1bcc143178e873d4",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "유럽평의회 AI 기본협약",
+      "summary": "AI 관련 활동이 인권, 민주주의 및 법치에 부합하도록 하며, AI 시스템의 전 생애주기에 걸쳐 투명성, 책임성, 비차별, 프라이버시, 인간의 존엄성 및 민주적 절차를 보장하도록 요구한다. 인권 침해에 대한 구제수단과 절차적 보호장치, 위험 평가·완화 전략 및 감독 지침을 마련하도록 하며, 국가안보 관련 AI 활동에 적용하지 않는 경우에도 국제인권법 준수와 민주적 절차 존중을 요구한다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "동일 제도로 합의된 기록을 통합함.",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-ac0e15df523d": {
+    "members_hash": "7123dfeff23c00fd",
+    "analyze_hash": "7123dfeff23c00fd",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "캐나다 고급 생성형 AI 자율행동규범",
+      "summary": "캐나다 혁신·과학·산업부가 발표한 고급 생성형 AI의 책임 있는 개발·관리를 위한 자율 규범으로, 위험 식별·완화와 책임성·안전성·공정성·형평성·투명성·인간 감독·모니터링·유효성·견고성을 지향한다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "동일 규범의 등록·미러 항목을 통합함",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-514010f7a3bc": {
+    "members_hash": "10a08ce9b186859d",
+    "analyze_hash": "10a08ce9b186859d",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "첨단 AI 혁신·안보 촉진 행정명령",
+      "summary": "미국의 첨단 AI 혁신과 국가안보 역량 강화를 위해 연방 시스템과 핵심 인프라에 AI 기반 사이버 방어 도구를 도입하고, 사이버보안 지침·인력·정보공유 체계와 프런티어 AI 모델의 사전 벤치마킹·보안 프레임워크를 마련하도록 하며, 민간 AI 기업과의 협력 및 AI 기반 사이버범죄·지식재산 침해 대응을 추진하는 행정명령입니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "동일 날짜의 동일 행정명령에 대한 한국어 번역·영문 원문 기록을 통합했습니다.",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-ff4976b843aa": {
+    "members_hash": "71c02ad60c8337ef",
+    "analyze_hash": "71c02ad60c8337ef",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "캐나다 주권형 AI 컴퓨팅 전략",
+      "summary": "캐나다의 주권형 AI 컴퓨팅 인프라 투자 전략으로, 공공 소유·캐나다 운영의 AI 슈퍼컴퓨팅 시스템 구축, 민간 AI 데이터센터 지원, 기존 공공 컴퓨팅 인프라 확충을 추진하며 데이터 주권·지속가능성·캐나다 공급망 활용을 중점으로 합니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-6a0d3fef5b67": {
+    "members_hash": "25f8cf9e5ec2ca7e",
+    "analyze_hash": "25f8cf9e5ec2ca7e",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 2,
+    "result": {
+      "same_instrument": true,
+      "confidence": "high",
+      "short_name": "영국 AI 연구 자원(AIRR)",
+      "summary": "영국 정부가 주도하는 공공 AI 컴퓨팅 자원으로, AI 최적화 슈퍼컴퓨터와 게이트웨이를 통해 연구자·산업계·중소기업에 연구용 컴퓨팅 자원과 지원을 제공하며 응용 연구와 프런티어 AI 연구를 지원합니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "동일한 AI Research Resource(AIRR) 제도로 통합",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  },
+  "doc-d8521b03515b": {
+    "members_hash": "58a9f9cb8aef6f8f",
+    "analyze_hash": "58a9f9cb8aef6f8f",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-06",
+    "member_count": 3,
+    "result": {
+      "same_instrument": true,
+      "confidence": "medium",
+      "short_name": "생성형AI 데이터 품질관리 가이드",
+      "summary": "과학기술정보통신부의 생성형AI 데이터 품질관리 가이드로, 생성형AI 관련 데이터 품질관리를 다루는 문서입니다. 구체적인 품질관리 기준과 적용 대상은 제공된 메타정보만으로 확인되지 않습니다.",
+      "section_labels": [],
+      "split_reason": "",
+      "notes": "두 항목에 동일한 가이드 제목이 포함되어 있어 통합했으나, 한 항목은 다른 가이드 제목도 함께 열거하고 있어 단일 문서 게시물인지 여부는 불명확합니다.",
+      "keep_members": true,
+      "from_analyze": true
+    }
+  }
+}

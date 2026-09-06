@@ -1,0 +1,2184 @@
+{
+  "updated": "2026-09-06",
+  "counts": {
+    "split": 69,
+    "merge_ok": 95
+  },
+  "cross_doc_same_key": {
+    "us:intelligence-authorization-act:2024": [
+      "doc-7d855a47b009",
+      "doc-cd88de564682"
+    ]
+  },
+  "rows": [
+    {
+      "doc_id": "doc-5e047dee1b42",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "kr:high-impact-ai-judgment-guidelines:2026",
+      "members": 2,
+      "curated": true,
+      "title": "고영향 인공지능 판단 가이드라인",
+      "split_clusters": [
+        [
+          "derived-split-iaae-ethics-173516673-1"
+        ],
+        [
+          "iaae-ethics-173516673"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-4b73b684a052",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "kr:high-impact-ai-business-responsibility-guideline:2026",
+      "members": 2,
+      "curated": true,
+      "title": "고영향 AI 사업자 책무 가이드라인",
+      "split_clusters": [
+        [
+          "derived-split-iaae-ethics-173516673-2"
+        ],
+        [
+          "iaae-ethics-173516673"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-23d88160e523",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "kr:ai-transparency-guideline:2026",
+      "members": 2,
+      "curated": true,
+      "title": "인공지능 투명성 확보 가이드라인",
+      "split_clusters": [
+        [
+          "derived-split-iaae-ethics-173516673-3"
+        ],
+        [
+          "iaae-ethics-173516673"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-a34628469a02",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "kr:인공지능-안전성-확보-가이드라인:2026",
+      "members": 2,
+      "curated": true,
+      "title": "인공지능 안전성 확보 가이드라인",
+      "split_clusters": [
+        [
+          "derived-split-iaae-ethics-173516673-4"
+        ],
+        [
+          "iaae-ethics-173516673"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-d8521b03515b",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "kr:jeonbuk-ai-literacy-guideline:2026",
+      "members": 5,
+      "curated": true,
+      "title": "전북 AI 리터러시 교육 가이드라인",
+      "split_clusters": [
+        [
+          "iaae-ethics-173283499"
+        ],
+        [
+          "derived-split-iaae-ethics-172866423-1"
+        ],
+        [
+          "iaae-ethics-172866423"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-2153bf16b3c8",
+      "status": "merge_ok",
+      "confidence": "medium",
+      "dominant_key": "br:ulysses:2026",
+      "members": 5,
+      "curated": true,
+      "title": "브라질 하원 Ulysses 프로그램 관련 기사",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-39f2cf41a247",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "uk:ai-opportunities-action-plan:2025",
+      "members": 2,
+      "curated": true,
+      "title": "영국 AI 기회 행동계획 정부 답변",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-9ef15be48f77",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "eu:gpai-code-of-practice:2025",
+      "members": 3,
+      "curated": true,
+      "title": "EU 범용 AI 실천규범",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-d721230dde36",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "eu:ai-continent-action-plan:2025",
+      "members": 2,
+      "curated": true,
+      "title": "EU AI 대륙 행동계획",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-eacff10544c0",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "fi:tampere-pulse:2026",
+      "members": 3,
+      "curated": true,
+      "title": "AI-verkstaden(AI 워크숍)",
+      "split_clusters": [
+        [
+          "oecd-navigator-2521"
+        ],
+        [
+          "oecd-navigator-2522"
+        ],
+        [
+          "oecd-navigator-2523"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-ff4976b843aa",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "ca:canadian-sovereign-ai-compute-strategy:2026",
+      "members": 2,
+      "curated": true,
+      "title": "캐나다 주권형 AI 컴퓨팅 전략",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-3685aac54067",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "uk:ai-for-science-strategy:2025",
+      "members": 2,
+      "curated": true,
+      "title": "영국 과학을 위한 AI 전략",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-605f1f0319a8",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "jp:government-generative-ai-guideline:2025",
+      "members": 2,
+      "curated": true,
+      "title": "일본 정부 생성AI 조달·활용 가이드라인",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-6a0d3fef5b67",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "uk:airr:2026",
+      "members": 2,
+      "curated": true,
+      "title": "영국 AI 연구 자원(AIRR)",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-d0898b01da70",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "uk:pro-innovation-approach-to-ai-regulation:2024",
+      "members": 2,
+      "curated": true,
+      "title": "영국 AI 규제 정부 답변서",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-c93c67532f8b",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "jp:ai-basic-plan:2026",
+      "members": 2,
+      "curated": true,
+      "title": "[일본] AI 기본계획",
+      "split_clusters": [
+        [
+          "mofa-country-policy-88"
+        ],
+        [
+          "mofa-country-policy-49"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-79e0115d1949",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:omb-m-25-22:2025",
+      "members": 3,
+      "curated": true,
+      "title": "미국 OMB M-25-22 AI 조달 지침",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-02b083187e13",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "iso:iec-42001",
+      "members": 2,
+      "curated": true,
+      "title": "ISO/IEC 42001",
+      "split_clusters": [
+        [
+          "oecd-navigator-2446"
+        ],
+        [
+          "oecd-navigator-2444"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-2bd7b4df723f",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "other-multinational:coe-ai-framework-convention:2024",
+      "members": 2,
+      "curated": true,
+      "title": "유럽평의회 AI 기본협약",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-ac0e15df523d",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "ca:advanced-generative-ai-code:2026",
+      "members": 2,
+      "curated": true,
+      "title": "캐나다 고급 생성형 AI 자율 행동규범",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-42304c71cd5b",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "norway:joint-ai-plan:2024-2025",
+      "members": 2,
+      "curated": true,
+      "title": "노르웨이 보건·돌봄 공동 AI 계획 2024–2025",
+      "split_clusters": [
+        [
+          "oecd-navigator-2427"
+        ],
+        [
+          "oecd-navigator-2431"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-1d598b22478d",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "jp:ai-promotion:2025",
+      "members": 2,
+      "curated": true,
+      "title": "일본 AI 기본법",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-a6d04dc84d8a",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:eo-14179:2025",
+      "members": 3,
+      "curated": true,
+      "title": "미국 AI 리더십 장벽 제거 행정명령(EO 14179)",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-75eecc86f819",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "us:nsf-regional-innovation-engines",
+      "members": 2,
+      "curated": true,
+      "title": "미국 NSF 지역 혁신 엔진(NSF Engines)",
+      "split_clusters": [
+        [
+          "oecd-navigator-2420"
+        ],
+        [
+          "oecd-navigator-2419"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-514010f7a3bc",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:eo-14409:2026",
+      "members": 2,
+      "curated": true,
+      "title": "미국 첨단 AI 혁신 및 안보 행정명령(EO 14409)",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-4fb76f5acd32",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "fr:jei-jeir",
+      "members": 2,
+      "curated": true,
+      "title": "프랑스 청년혁신기업 세제 지위",
+      "split_clusters": [
+        [
+          "oecd-navigator-2406"
+        ],
+        [
+          "oecd-navigator-2398"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-ec33435e9784",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "fr:je-choisis-la-french-tech:2023",
+      "members": 2,
+      "curated": true,
+      "title": "프랑스·I Choose French Tech",
+      "split_clusters": [
+        [
+          "oecd-navigator-2405"
+        ],
+        [
+          "oecd-navigator-2407"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-c64a1e54cf08",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "sg:ai-system-security-guidelines",
+      "members": 2,
+      "curated": true,
+      "title": "싱가포르 AI 시스템 보안 지침",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-0f2a177a579f",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "us:nist-ai-rmf:2023",
+      "members": 3,
+      "curated": true,
+      "title": "미국 NIST AI RMF 생성형 AI 프로파일 (NIST AI 600-1)",
+      "split_clusters": [
+        [
+          "oecd-navigator-2363",
+          "agora-772"
+        ],
+        [
+          "mofa-country-policy-2"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-ecf9ceddf4b9",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "unknown:guidelines-for-ai-procurement:2026",
+      "members": 2,
+      "curated": true,
+      "title": "영국 AI 조달 가이드라인",
+      "split_clusters": [
+        [
+          "oecd-navigator-2362"
+        ],
+        [
+          "oecd-navigator-1109"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-7c9a989c33e8",
+      "status": "merge_ok",
+      "confidence": "medium",
+      "dominant_key": "eu:eurohpc-ju",
+      "members": 5,
+      "curated": true,
+      "title": "유럽 고성능 컴퓨팅 공동사업",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-d7fb8d93f3cf",
+      "status": "merge_ok",
+      "confidence": "medium",
+      "dominant_key": "ua:diia-ai",
+      "members": 2,
+      "curated": true,
+      "title": "우크라이나 Diia.AI",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-76ce9fb4c402",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "sg:agentic-ai-governance-framework:2026",
+      "members": 2,
+      "curated": true,
+      "title": "싱가포르 에이전틱 AI 거버넌스 프레임워크",
+      "split_clusters": [
+        [
+          "mofa-country-policy-18"
+        ],
+        [
+          "oecd-navigator-655"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-e576dd1c6692",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:ndaa:2026",
+      "members": 37,
+      "curated": true,
+      "title": "미국 FY2026 국방수권법",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-054986675e67",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:eo-14365:2025",
+      "members": 2,
+      "curated": true,
+      "title": "미국 AI 국가 정책 프레임워크 보장 행정명령(EO 14365)",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-6bddcf5e251b",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "eu:ai-act:2024",
+      "members": 4,
+      "curated": true,
+      "title": "EU 인공지능법",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-bdeb015e5da6",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "eu:ai-coordinated-plan-implementation-progress:2025",
+      "members": 2,
+      "curated": true,
+      "title": "EU AI 조정계획 이행 진전 제1권",
+      "split_clusters": [
+        [
+          "mofa-governance-256"
+        ],
+        [
+          "oecd-navigator-1234"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-29e347d6da80",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "oecd:voluntary-code-of-conduct-ai:2025",
+      "members": 3,
+      "curated": true,
+      "title": "우크라이나 책임 있는 AI 센터",
+      "split_clusters": [
+        [
+          "oecd-navigator-2230"
+        ],
+        [
+          "oecd-navigator-2219"
+        ],
+        [
+          "oecd-navigator-2215"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-46cc96b5ae0a",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "ukraine:winwin-strategy:2030",
+      "members": 2,
+      "curated": true,
+      "title": "우크라이나 WINWIN 전략 실행계획(2025~2027)",
+      "split_clusters": [
+        [
+          "oecd-navigator-2233"
+        ],
+        [
+          "oecd-navigator-2234"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-a824c8c4988a",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:california-sb-243:2025",
+      "members": 2,
+      "curated": true,
+      "title": "캘리포니아 SB 243(동반자 챗봇법)",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-7b88df230f92",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "pt:science-digital-program:2025",
+      "members": 2,
+      "curated": true,
+      "title": "포르투갈 과학·디지털 프로그램",
+      "split_clusters": [
+        [
+          "oecd-navigator-2201"
+        ],
+        [
+          "oecd-navigator-2200"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-8ae1f38d53d8",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "nl:nolai:2025",
+      "members": 2,
+      "curated": true,
+      "title": "네덜란드 국가 교육 AI 연구소(NOLAI)",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-2fb01e5a21f6",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "eu:ipcei-microelectronics-and-communication-technologies",
+      "members": 2,
+      "curated": true,
+      "title": "체코 마이크로전자·통신기술 공동유럽관심 중요프로젝트",
+      "split_clusters": [
+        [
+          "oecd-navigator-2173"
+        ],
+        [
+          "oecd-navigator-1446"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-0b6742ff1f51",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "bg:insait-institute:2025",
+      "members": 2,
+      "curated": true,
+      "title": "불가리아 INSAIT",
+      "split_clusters": [
+        [
+          "oecd-navigator-2145"
+        ],
+        [
+          "oecd-navigator-1437"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-2967c1fabce3",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "bg:competitiveness-and-innovation-in-enterprises-programme:2025",
+      "members": 2,
+      "curated": true,
+      "title": "불가리아 기업 경쟁력·혁신 프로그램",
+      "split_clusters": [
+        [
+          "oecd-navigator-2147"
+        ],
+        [
+          "oecd-navigator-1593"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-378b85e89b26",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "be:innoviris:unknown",
+      "members": 2,
+      "curated": true,
+      "title": "벨기에 Innoviris",
+      "split_clusters": [
+        [
+          "oecd-navigator-2123"
+        ],
+        [
+          "oecd-navigator-1428"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-6f3cc8b6df57",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "lv:ai-taxpayer-inquiry-responses:2025",
+      "members": 2,
+      "curated": true,
+      "title": "라트비아 납세자 문의 응답 AI 파일럿",
+      "split_clusters": [
+        [
+          "oecd-navigator-2107"
+        ],
+        [
+          "oecd-navigator-1846"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-4c9d1a3c659e",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "romania:pnts:2024",
+      "members": 2,
+      "curated": true,
+      "title": "루마니아 국가 반도체 기술 플랫폼(PNTS)",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-74a0e04a9d93",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "gr:chips-joint-undertaking:2025",
+      "members": 2,
+      "curated": true,
+      "title": "VELES 남동유럽 지역 스마트 데이터 공간",
+      "split_clusters": [
+        [
+          "oecd-navigator-2035"
+        ],
+        [
+          "oecd-navigator-1981"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-fc2916fa8969",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "se:lumi-participation:2025",
+      "members": 2,
+      "curated": true,
+      "title": "스웨덴의 LUMI 참여",
+      "split_clusters": [
+        [
+          "oecd-navigator-1999"
+        ],
+        [
+          "oecd-navigator-1268"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-3bb54e0fc342",
+      "status": "merge_ok",
+      "confidence": "medium",
+      "dominant_key": "si:smash:2023",
+      "members": 2,
+      "curated": true,
+      "title": "슬로베니아 SMASH 기후 머신러닝 프로젝트",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-257b47a69fa8",
+      "status": "split",
+      "confidence": "medium",
+      "dominant_key": "bg:ipa-initiatives:2025",
+      "members": 2,
+      "curated": true,
+      "title": "불가리아 행정원(IPA) AI 이니셔티브",
+      "split_clusters": [
+        [
+          "oecd-navigator-1998"
+        ],
+        [
+          "oecd-navigator-2001"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-2b4596945fe1",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "eu:eucaim:2025",
+      "members": 2,
+      "curated": true,
+      "title": "EUCAIM 유럽 암 영상 연합 프로젝트",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-32505c509a3a",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "oecd:dataspace4health:2025",
+      "members": 2,
+      "curated": true,
+      "title": "룩셈부르크 Dataspace4Health 출범 기사",
+      "split_clusters": [
+        [
+          "oecd-navigator-1898"
+        ],
+        [
+          "oecd-navigator-1899"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-467a24815e2b",
+      "status": "merge_ok",
+      "confidence": "medium",
+      "dominant_key": "se:data-strategy:2025",
+      "members": 2,
+      "curated": true,
+      "title": "스웨덴 데이터 전략",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-ce009cc72706",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "belgium:tef-health:2025",
+      "members": 2,
+      "curated": true,
+      "title": "TEF-Health 의료 AI 시험·실험 시설",
+      "split_clusters": [
+        [
+          "oecd-navigator-1844"
+        ],
+        [
+          "oecd-navigator-1810"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-1f74dd9ae990",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "es:unico-ipcei:2025",
+      "members": 2,
+      "curated": true,
+      "title": "스페인 UNICO IPCEI 엣지 기술 지원 프로그램",
+      "split_clusters": [
+        [
+          "oecd-navigator-1888"
+        ],
+        [
+          "oecd-navigator-1889"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-c2157f9a7712",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "be:flanders-ai-action-plan:2019",
+      "members": 2,
+      "curated": true,
+      "title": "플란데런 AI 행동계획",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-0fe68f2e527a",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "lv:bioeconomy-strategy:2025",
+      "members": 2,
+      "curated": false,
+      "title": "라트비아 바이오경제 R&I 전략",
+      "split_clusters": [
+        [
+          "oecd-navigator-1801"
+        ],
+        [
+          "oecd-navigator-1547"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-410c2fc36f27",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "se:transitional-study-support:2022",
+      "members": 2,
+      "curated": true,
+      "title": "스웨덴 전환 학업 지원",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-c3005820facd",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "cz:programme-to-support-applied-research:2024-2032",
+      "members": 2,
+      "curated": true,
+      "title": "체코 농업부 응용연구 지원 프로그램 2024–2032",
+      "split_clusters": [
+        [
+          "oecd-navigator-1734"
+        ],
+        [
+          "oecd-navigator-1729"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-29f6da6ed203",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "hr:eurocc-national-competence-center-hpc:2025",
+      "members": 2,
+      "curated": true,
+      "title": "크로아티아 국가 HPC 역량센터(EuroCC)",
+      "split_clusters": [
+        [
+          "oecd-navigator-1709"
+        ],
+        [
+          "oecd-navigator-1742"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-9d1da92326f9",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "se:assignment-generative-ai-public-administration:2025",
+      "members": 2,
+      "curated": true,
+      "title": "스웨덴 공공행정 생성형 AI 가이드라인 개발 지침",
+      "split_clusters": [
+        [
+          "oecd-navigator-1683"
+        ],
+        [
+          "oecd-navigator-1321"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-0afc2e360890",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "it:sustainable-mobility:2025",
+      "members": 2,
+      "curated": true,
+      "title": "이탈리아 지속가능 모빌리티 AI 이니셔티브",
+      "split_clusters": [
+        [
+          "oecd-navigator-1638"
+        ],
+        [
+          "oecd-navigator-1486"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-edb7614a2377",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "dk:wallenberg-ai-and-transformative-technologies-education-development-program:2025",
+      "members": 2,
+      "curated": true,
+      "title": "덴마크 AI 혁신센터·Gefion 협력",
+      "split_clusters": [
+        [
+          "oecd-navigator-1609"
+        ],
+        [
+          "oecd-navigator-1602"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-8fb229d5b24e",
+      "status": "split",
+      "confidence": "medium",
+      "dominant_key": "es:state-programme-talent-ai:2025",
+      "members": 2,
+      "curated": true,
+      "title": "스페인 국가 연구자 정착 프로그램 AI 특별 공모",
+      "split_clusters": [
+        [
+          "oecd-navigator-1580"
+        ],
+        [
+          "oecd-navigator-1089"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-6125ead22ae4",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "bg:open-data-portal-public-sector-data",
+      "members": 2,
+      "curated": true,
+      "title": "불가리아 공공데이터 포털",
+      "split_clusters": [
+        [
+          "oecd-navigator-1604"
+        ],
+        [
+          "oecd-navigator-1606"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-45841d353f01",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "be:flemish-cloud-strategy:2025",
+      "members": 2,
+      "curated": false,
+      "title": "벨기에 · 플란데런 행정부 클라우드 전략",
+      "split_clusters": [
+        [
+          "oecd-navigator-1543"
+        ],
+        [
+          "oecd-navigator-326"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-13f932f85d70",
+      "status": "split",
+      "confidence": "medium",
+      "dominant_key": "gr:ai-research-and-educational-institute:2025",
+      "members": 2,
+      "curated": true,
+      "title": "그리스 AI 연구·교육기관",
+      "split_clusters": [
+        [
+          "oecd-navigator-1472"
+        ],
+        [
+          "oecd-navigator-86"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-ca5f24772b79",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "at:schoolpackage-ai:2025",
+      "members": 2,
+      "curated": true,
+      "title": "오스트리아 Schoolpackage AI",
+      "split_clusters": [
+        [
+          "oecd-navigator-1422"
+        ],
+        [
+          "oecd-navigator-166"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-95b7cbc56cf1",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:california-ab-1170:2025",
+      "members": 3,
+      "curated": true,
+      "title": "캘리포니아 AB 1170 학교 AI 사용 지침법",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-1bdb786ab233",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:eo-14319:2025",
+      "members": 2,
+      "curated": true,
+      "title": "미국 연방정부 내 특정성향 AI 방지 행정명령(EO 14319)",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-caf66a31f99a",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:eo-14320:2025",
+      "members": 2,
+      "curated": true,
+      "title": "미국 AI 기술 스택 수출 촉진 행정명령(EO 14320)",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-49dfc22c4c52",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:ai-action-plan:2025",
+      "members": 3,
+      "curated": true,
+      "title": "미국 AI 행동계획 2025",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-acd53f645f9c",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "g7:g7-toolkit-for-artificial-intelligence-in-the-public-sector",
+      "members": 3,
+      "curated": true,
+      "title": "G7 공공부문 AI 툴킷",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-4aff29e19ddc",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "sg:model-ai-governance-framework-for-generative-ai:2024",
+      "members": 2,
+      "curated": true,
+      "title": "싱가포르 생성형 AI 모델 거버넌스 프레임워크 공개협의 초안",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-654e0eaa3467",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:california-ab-412:2025",
+      "members": 2,
+      "curated": true,
+      "title": "캘리포니아 AB 412",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-43b64644f2f1",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:eo-13859:2019",
+      "members": 2,
+      "curated": true,
+      "title": "미국 AI 리더십 유지 행정명령 (EO 13859)",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-814260870723",
+      "status": "split",
+      "confidence": "medium",
+      "dominant_key": "mt:pathfinder-mdia-digital-scholarship:2025",
+      "members": 2,
+      "curated": true,
+      "title": "몰타 MDIA 디지털 장학금",
+      "split_clusters": [
+        [
+          "oecd-navigator-1309"
+        ],
+        [
+          "oecd-navigator-592"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-09f79cbde765",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "cr:digital-government-bicentenary:2025",
+      "members": 2,
+      "curated": false,
+      "title": "코스타리카 · Development Digital Government Bicentenary",
+      "split_clusters": [
+        [
+          "oecd-navigator-220"
+        ],
+        [
+          "oecd-navigator-219"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-e631f7187b8a",
+      "status": "split",
+      "confidence": "low",
+      "dominant_key": "cn:vehicle-driving-automation-taxonomy:2025",
+      "members": 2,
+      "curated": true,
+      "title": "중국 차량 주행 자동화 분류체계",
+      "split_clusters": [
+        [
+          "oecd-navigator-879"
+        ],
+        [
+          "oecd-navigator-876"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-fdf3b9ab87db",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "denmark:responsible-ai-strategy:2025",
+      "members": 2,
+      "curated": true,
+      "title": "덴마크 책임 있는 AI 전략",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-0c851ce2002c",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "sg:sea-lion:2025",
+      "members": 2,
+      "curated": true,
+      "title": "싱가포르 SEA-LION 모델 프로그램",
+      "split_clusters": [
+        [
+          "oecd-navigator-624"
+        ],
+        [
+          "oecd-navigator-666"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-9d53c3a36053",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "kz:smart-data-ukimet:2025",
+      "members": 2,
+      "curated": true,
+      "title": "스마트 데이터 우키멧",
+      "split_clusters": [
+        [
+          "oecd-navigator-888"
+        ],
+        [
+          "oecd-navigator-889"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-48fd9ed7c38f",
+      "status": "split",
+      "confidence": "medium",
+      "dominant_key": "be:rd-projects:2019",
+      "members": 3,
+      "curated": true,
+      "title": "벨기에 R&D 프로젝트(산업 연구)",
+      "split_clusters": [
+        [
+          "oecd-navigator-401",
+          "oecd-navigator-399"
+        ],
+        [
+          "oecd-navigator-398"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-762849d2054f",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "be:next-tech:2025",
+      "members": 2,
+      "curated": true,
+      "title": "브뤼셀 NextTech 계획",
+      "split_clusters": [
+        [
+          "oecd-navigator-404"
+        ],
+        [
+          "oecd-navigator-406"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-b92df2055e25",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "saudi:open-data-regulations:2025",
+      "members": 3,
+      "curated": false,
+      "title": "사우디 Open Data Regulations",
+      "split_clusters": [
+        [
+          "oecd-navigator-999"
+        ],
+        [
+          "oecd-navigator-997"
+        ],
+        [
+          "oecd-navigator-996"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-279e583a6200",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "serbia:office-for-it-and-egovernment",
+      "members": 2,
+      "curated": true,
+      "title": "세르비아 IT·전자정부 사무소",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-858463ce5356",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "au:next-generation-ai-graduates-program:2025",
+      "members": 2,
+      "curated": true,
+      "title": "호주 차세대 AI 졸업생 프로그램",
+      "split_clusters": [
+        [
+          "oecd-navigator-263"
+        ],
+        [
+          "oecd-navigator-355"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-98ea4692a384",
+      "status": "split",
+      "confidence": "medium",
+      "dominant_key": "ar:programa-transparencia-datos-ia:2025",
+      "members": 2,
+      "curated": true,
+      "title": "아르헨티나 AI 투명성·개인정보보호 지침",
+      "split_clusters": [
+        [
+          "oecd-navigator-1231"
+        ],
+        [
+          "oecd-navigator-1223"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-3e6c48bd568a",
+      "status": "merge_ok",
+      "confidence": "medium",
+      "dominant_key": "cr:national-laboratory-for-ai:2025",
+      "members": 2,
+      "curated": true,
+      "title": "코스타리카 국가 AI 연구소 구상",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-6d95e4f1e184",
+      "status": "split",
+      "confidence": "medium",
+      "dominant_key": "gr:national-bioethics-and-techno-ethics-committee:2025",
+      "members": 2,
+      "curated": true,
+      "title": "그리스 국가 생명윤리·기술윤리위원회",
+      "split_clusters": [
+        [
+          "oecd-navigator-188"
+        ],
+        [
+          "oecd-navigator-318"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-6bbfbc6a5166",
+      "status": "split",
+      "confidence": "medium",
+      "dominant_key": "us:naiac",
+      "members": 3,
+      "curated": true,
+      "title": "NAIAC 법 집행 소위원회",
+      "split_clusters": [
+        [
+          "oecd-navigator-750",
+          "oecd-navigator-749"
+        ],
+        [
+          "oecd-navigator-748"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-2ecdfc7c3b9d",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "pt:mobilizing-program-to-foster-ai-in-the-public-administration:2025",
+      "members": 2,
+      "curated": true,
+      "title": "포르투갈 공공행정 AI 촉진 프로그램",
+      "split_clusters": [
+        [
+          "oecd-navigator-286"
+        ],
+        [
+          "oecd-navigator-280"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-02832a6557a0",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "au:csiro-ml-and-ai-future-science-platform:2018",
+      "members": 2,
+      "curated": true,
+      "title": "호주 CSIRO 머신러닝·AI 미래과학플랫폼",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-21fb28678afc",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "cr:law-no-9943:unknown",
+      "members": 2,
+      "curated": true,
+      "title": "코스타리카 국가 디지털정부청 설립법 No. 9943",
+      "split_clusters": [
+        [
+          "oecd-navigator-206"
+        ],
+        [
+          "oecd-navigator-225"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-5a8d8aa445b5",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "in:indiaai-portal:unknown",
+      "members": 1,
+      "curated": true,
+      "title": "IndiaAI 2023 전문가 그룹 보고서",
+      "split_clusters": [
+        [
+          "oecd-navigator-427"
+        ],
+        [
+          "oecd-navigator-363"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-2547c59cf23d",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "cr:public-sector-digital-technology-guidance:2025",
+      "members": 2,
+      "curated": true,
+      "title": "코스타리카 공공부문 디지털 기술 활용 지침",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-5a8d8aa445b5",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "in:indiaai-portal:unknown",
+      "members": 2,
+      "curated": true,
+      "title": "IndiaAI 2023 전문가 그룹 보고서",
+      "split_clusters": [
+        [
+          "oecd-navigator-427"
+        ],
+        [
+          "oecd-navigator-363"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-d7bd43ed7558",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "ke:blockchain-and-ai-task-force:2025",
+      "members": 2,
+      "curated": true,
+      "title": "케냐 신흥 디지털 기술 탐색·분석",
+      "split_clusters": [
+        [
+          "oecd-navigator-581"
+        ],
+        [
+          "oecd-navigator-582"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-a5c1a1b1a0c2",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "nordic-baltic:ai-declaration:2018",
+      "members": 2,
+      "curated": true,
+      "title": "노르딕-발틱 AI 선언",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-d6f746d594a8",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "kr:data-ai-driven-economy-promotion-plan:2025",
+      "members": 2,
+      "curated": true,
+      "title": "한국 데이터·AI경제 활성화 계획",
+      "split_clusters": [
+        [
+          "oecd-navigator-845"
+        ],
+        [
+          "oecd-navigator-844"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-d3ba4a023018",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "au-vn:aus4innovation:2025",
+      "members": 2,
+      "curated": true,
+      "title": "호주·베트남 Aus4innovation 프로그램",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-0476b1cc4f0e",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "au:au-data-policy-framework:2025",
+      "members": 2,
+      "curated": true,
+      "title": "아프리카연합 데이터 정책 프레임워크",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-fd51f1ca97a3",
+      "status": "split",
+      "confidence": "medium",
+      "dominant_key": "at:ai-stakeholder-forum",
+      "members": 2,
+      "curated": true,
+      "title": "오스트리아 AI 이해관계자 포럼",
+      "split_clusters": [
+        [
+          "oecd-navigator-212"
+        ],
+        [
+          "oecd-navigator-210"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-fdb4e79781cf",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "th:ai-governance-guideline-for-executives:2025",
+      "members": 2,
+      "curated": true,
+      "title": "태국 AI 거버넌스 가이드라인(경영진)",
+      "split_clusters": [
+        [
+          "oecd-navigator-949"
+        ],
+        [
+          "oecd-navigator-185"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-0e2902fbcbf7",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:obbb:2025",
+      "members": 19,
+      "curated": true,
+      "title": "미국 OBBB법 2025 §20006",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-416b7d786d07",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:eo-14277:2025",
+      "members": 2,
+      "curated": true,
+      "title": "미국 청소년 AI 교육 증진 행정명령(EO 14277)",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-ce7afedfffc7",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:omb-m-25-21:2025",
+      "members": 2,
+      "curated": true,
+      "title": "미국 OMB M-25-21 연방 AI 활용 가속화 지침",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-f00d0e3a379b",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:alaska-sb-177:2025",
+      "members": 2,
+      "curated": true,
+      "title": "알래스카 SB 177 제2절(선거 딥페이크 표시 의무)",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-fb1b7b22ae55",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "india-indonesia:mou-digital-development:2025",
+      "members": 2,
+      "curated": true,
+      "title": "인도-인도네시아 디지털 개발 협력 양해각서",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-ace6299c81d4",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:eo-14110:2023",
+      "members": 2,
+      "curated": true,
+      "title": "미국 AI 행정명령 (EO 14110)",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-f28531f12346",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:weather-act-reauthorization-act:2023",
+      "members": 5,
+      "curated": true,
+      "title": "2023년 기상법 재승인법안",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-5e2cec9727a2",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:s-5436:2025",
+      "members": 2,
+      "curated": true,
+      "title": "미국 S. 5436 중국 관련 기관과 국방부 IT 계약 금지 법안",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-4e6b082d8afe",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:wioa-older-americans-act-amendment:2025",
+      "members": 2,
+      "curated": true,
+      "title": "WIOA·Older Americans Act 개정안",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-40cbe55d7625",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:torpedo-act:2023",
+      "members": 2,
+      "curated": true,
+      "title": "미국 TORPEDO Act of 2023",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-e2f3bb234aa4",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:sustaining-americas-fisheries-for-the-future-act:2024",
+      "members": 2,
+      "curated": true,
+      "title": "미국 2024년 미래 수산업 지속 법안",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-0d481c2da7e5",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:digital-consumer-protection-commission-act:2023",
+      "members": 2,
+      "curated": true,
+      "title": "법인 시민권·소유권 및 디지털 소비자 보호법안(S. 2597)",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-eb8d037319e9",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:rural-prosperity-and-food-security-act:2024",
+      "members": 2,
+      "curated": true,
+      "title": "농촌 번영·식량안보법 2024(S. 5335)",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-721ab33dfcf5",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:promoting-united-states-leadership-in-standards-act:2024",
+      "members": 2,
+      "curated": true,
+      "title": "미국 리더십 표준법 2024",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-db7effba11e4",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:national-drone-and-advanced-air-mobility-research-and-development-act:2025",
+      "members": 4,
+      "curated": true,
+      "title": "미국 국가 드론 및 첨단 항공 모빌리티 연구개발법안(H.R. 3560)",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-f495c61ebf29",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:intelligence-authorization-act:2025",
+      "members": 3,
+      "curated": true,
+      "title": "미국 FY2025 정보수권법안(IAA FY2025)",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-7d855a47b009",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:intelligence-authorization-act:2024",
+      "members": 2,
+      "curated": true,
+      "title": "미국 FY2024 정보수권법안 Title V Subtitle B",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-cd88de564682",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:intelligence-authorization-act:2024",
+      "members": 2,
+      "curated": true,
+      "title": "미국 IAA FY2024 §909 AI·ML 정보산출물 지침 조항",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-e9966b099531",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:coast-guard-authorization-act:2024",
+      "members": 2,
+      "curated": true,
+      "title": "미국 HR 7659 해안경비대 승인법 2024 §342",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-aa2457676dde",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:further-continuing-appropriations-disaster-relief-supplemental-appropriations-act:2025",
+      "members": 4,
+      "curated": true,
+      "title": "미국 2025년 추가 계속 세출·재난구호 추가 세출법안(Title VIII)",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-b4e0429814ad",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:fix-our-forests-act:2025",
+      "members": 2,
+      "curated": true,
+      "title": "미국 Fix Our Forests Act",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-fda70c65a3fc",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:farm-food-national-security-act:2024",
+      "members": 3,
+      "curated": true,
+      "title": "미국 「2024년 농장·식품·국가안보법」 법안",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-1209f791379e",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:fair-trade-with-china-enforcement-act:2025",
+      "members": 2,
+      "curated": true,
+      "title": "대중국 공정무역 집행법",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-4bb779aadeb7",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:faa-research-and-development-act:2023",
+      "members": 2,
+      "curated": true,
+      "title": "미국 FAA 연구개발법안 2023 (H.R. 3559)",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-d290b7367b73",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:department-of-state-authorization-act:2023",
+      "members": 4,
+      "curated": true,
+      "title": "2023년 국무부 수권법안(§941 AUKUS 파트너십 보고)",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-b90d3c5d4e27",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:countering-communist-china-act:2025",
+      "members": 4,
+      "curated": true,
+      "title": "대중국 공산주의 대응법 제701절",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-6dbf80c9279d",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:better-mental-health-care-for-americans-act:2025",
+      "members": 2,
+      "curated": true,
+      "title": "미국인 정신건강 의료 개선법 §203",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-44e7fdfb3b2d",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:americas-act:2025",
+      "members": 3,
+      "curated": true,
+      "title": "아메리카스 법안",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-0b6a047571e8",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:ndaa:2025",
+      "members": 23,
+      "curated": true,
+      "title": "미국 FY2025 국방수권법 AI 조항",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-53605d282d7e",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:framework-to-advance-ai-governance-and-risk-management-in-national-security:2024",
+      "members": 2,
+      "curated": true,
+      "title": "미국 국가안보 AI 거버넌스·위험관리 프레임워크",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-0c6b7ec40be0",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "kr:school-generative-ai-guidelines:2024",
+      "members": 2,
+      "curated": true,
+      "title": "학교급별 생성형 AI 활용 지침",
+      "split_clusters": [
+        [
+          "iaae-ethics-53452713"
+        ],
+        [
+          "iaae-ethics-19268390"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-a47d87466a09",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:american-aviation-act:2024",
+      "members": 3,
+      "curated": true,
+      "title": "미국 항공 성장·리더십 강화법 §908(Part 107 면제 개선)",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-c8f4bab4eec2",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "oecd:ai-recommendation:2024",
+      "members": 4,
+      "curated": true,
+      "title": "개정 OECD AI 권고",
+      "split_clusters": [
+        [
+          "mofa-governance-112",
+          "agora-1396"
+        ],
+        [
+          "iaae-ethics-4384428",
+          "oecd-navigator-1163"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-015714d68635",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:utah-sb-149:2024",
+      "members": 2,
+      "curated": true,
+      "title": "유타 SB 149 §13-2-12(생성형 AI와 소비자보호법 책임)",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-f7960a308a29",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "eu:european-ai-office-decision:2024",
+      "members": 2,
+      "curated": true,
+      "title": "유럽 AI 사무소 설립 결정",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-c9aae9841c9d",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "kr:generative-ai-copyright-guide:2024",
+      "members": 4,
+      "curated": true,
+      "title": "생성형 AI 저작권 안내서",
+      "split_clusters": [
+        [
+          "iaae-ethics-17442001"
+        ],
+        [
+          "iaae-ethics-17385330"
+        ],
+        [
+          "iaae-ethics-17385304"
+        ],
+        [
+          "iaae-ethics-16870867"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-7b640ee6bdc3",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:ndaa:2024",
+      "members": 22,
+      "curated": true,
+      "title": "미국 FY2024 국방수권법(NDAA)",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-e5361bb52c11",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "sg:national-ai-strategy:2023",
+      "members": 2,
+      "curated": true,
+      "title": "싱가포르 국가 AI 전략 2.0",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-31a8491225b5",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "g7:hiroshima-process-code-of-conduct:2023",
+      "members": 6,
+      "curated": true,
+      "title": "G7 히로시마 AI 프로세스 정상 성명",
+      "split_clusters": [
+        [
+          "iaae-ethics-16798035",
+          "mofa-governance-119",
+          "agora-1383"
+        ],
+        [
+          "iaae-ethics-16798008"
+        ],
+        [
+          "mofa-governance-120"
+        ],
+        [
+          "mofa-governance-117"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-c68b8e297ca1",
+      "status": "merge_ok",
+      "confidence": "medium",
+      "dominant_key": "uk:ai-safety-summit:2023",
+      "members": 2,
+      "curated": true,
+      "title": "블레츨리 AI 안전 정상회의 의장 요약",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-302db34e28a5",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "international:bletchley-declaration:2023",
+      "members": 2,
+      "curated": true,
+      "title": "블레츨리 선언",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-4431599902ee",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "pe:public-procurement-technology-sandbox:2023",
+      "members": 3,
+      "curated": false,
+      "title": "페루 공공조달 지수기술 샌드박스",
+      "split_clusters": [
+        [
+          "oecd-navigator-839"
+        ],
+        [
+          "oecd-navigator-838"
+        ],
+        [
+          "oecd-navigator-828"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-a69bffd03a15",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "g7:g7-hiroshima-generative-ai-process:2023",
+      "members": 2,
+      "curated": true,
+      "title": "G7 히로시마 생성형 AI 프로세스",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-2c90601fbfdc",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:iija:2021",
+      "members": 7,
+      "curated": true,
+      "title": "미국 인프라 투자·일자리법(IIJA)",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-881659300291",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:health-extenders-strengthening-public-health:2022",
+      "members": 2,
+      "curated": true,
+      "title": "미국 2022년 보건 연장·공중보건 강화법 §1432",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-7271d0f8d775",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:ndaa:2023",
+      "members": 31,
+      "curated": true,
+      "title": "FY2023 국방수권법(NDAA)",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-4c4d0c7f1e90",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:chips-r-and-d-act:2022",
+      "members": 6,
+      "curated": true,
+      "title": "CHIPS/R&D법",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-058f8b32c8c7",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "kr:kaiea-korea-canada-ai-education-report:2022",
+      "members": 3,
+      "curated": false,
+      "title": "한국-캐나다 인공지능 교육 연구 보고서",
+      "split_clusters": [
+        [
+          "iaae-ethics-9478698"
+        ],
+        [
+          "iaae-ethics-9173141"
+        ],
+        [
+          "iaae-ethics-9103698"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-9bf21dfd644f",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:ndaa:2022",
+      "members": 12,
+      "curated": true,
+      "title": "미국 FY2022 국방수권법",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-e32ad6da0f49",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "unesco:recommendation-on-ethics-of-ai:2021",
+      "members": 5,
+      "curated": false,
+      "title": "인공지능(AI) 윤리에 관한 권고",
+      "split_clusters": [
+        [
+          "iaae-ethics-8994590"
+        ],
+        [
+          "iaae-ethics-6164587"
+        ],
+        [
+          "iaae-ethics-5511173"
+        ],
+        [
+          "iaae-ethics-5511161"
+        ],
+        [
+          "iaae-ethics-5254001"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-d8278cdfa573",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "quad:technology-principles:2021",
+      "members": 3,
+      "curated": true,
+      "title": "Quad 기술 설계·개발·거버넌스·사용 원칙",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-c1d55ea93b98",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:ndaa:2021",
+      "members": 26,
+      "curated": true,
+      "title": "FY2021 미국 국방수권법(NDAA)",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-b6370009ccad",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "us:energy-act:2020",
+      "members": 8,
+      "curated": true,
+      "title": "미국 2020년 에너지법",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-7c3bfee1d3e4",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "uk-us:ai-rd-declaration:2020",
+      "members": 2,
+      "curated": true,
+      "title": "영국·미국 AI 연구개발 협력 선언",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-7e6ed57779b0",
+      "status": "split",
+      "confidence": "high",
+      "dominant_key": "jp:governance-innovation-society-5-0:2020",
+      "members": 2,
+      "curated": true,
+      "title": "일본 Society 5.0 거버넌스 혁신",
+      "split_clusters": [
+        [
+          "oecd-navigator-576"
+        ],
+        [
+          "oecd-navigator-569"
+        ]
+      ]
+    },
+    {
+      "doc_id": "doc-0a319547a733",
+      "status": "merge_ok",
+      "confidence": "medium",
+      "dominant_key": "cn:national-new-generation-ai-governance-specialist-committee:2019",
+      "members": 2,
+      "curated": true,
+      "title": "중국 국가 차세대 AI 거버넌스 전문가위원회",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-1cdc7482a2e8",
+      "status": "merge_ok",
+      "confidence": "high",
+      "dominant_key": "other-multinational:g20-ministerial-statement:2019",
+      "members": 2,
+      "curated": true,
+      "title": "G20 인간 중심 인공지능 장관성명",
+      "split_clusters": []
+    },
+    {
+      "doc_id": "doc-2850220655d6",
+      "status": "merge_ok",
+      "confidence": "medium",
+      "dominant_key": "costa-rica:digital-government-bicentennial:2018",
+      "members": 2,
+      "curated": true,
+      "title": "코스타리카 디지털정부 200주년 고위급위원회 설립 행정명령",
+      "split_clusters": []
+    }
+  ]
+}

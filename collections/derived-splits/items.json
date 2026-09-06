@@ -1,0 +1,160 @@
+{
+  "collection": "derived-splits",
+  "name": "묶음 분리",
+  "count": 7,
+  "parent_ids": [
+    "iaae-ethics-173516673",
+    "iaae-ethics-172866423"
+  ],
+  "items": [
+    {
+      "id": "derived-split-iaae-ethics-173516673-1",
+      "collection": "derived-splits",
+      "collection_name": "묶음 분리",
+      "parent_id": "iaae-ethics-173516673",
+      "title": "[과기부/NIA/TTA/ETRI] 고영향 인공지능 판단 가이드라인",
+      "org": "과기부/NIA/TTA/ETRI",
+      "category": "과기부/NIA/TTA/ETRI",
+      "date": "2026-08-28",
+      "page_url": "https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99835&bcIdx=28987&deptCode=undefined&parentSeq=28987",
+      "source_urls": [
+        "https://www.nia.or.kr/common/board/Download.do?bcIdx=28987&cbIdx=99835&fileNo=27"
+      ],
+      "source_files": [
+        "https://www.nia.or.kr/common/board/Download.do?bcIdx=28987&cbIdx=99835&fileNo=27"
+      ],
+      "body": "자세한 내용은 첨부된 자료를 다운로드하시기 바랍니다.[자료출처] 한국지능정보사회진흥원(NIA) 홈페이지 (https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99835&bcIdx=28987&deptCode=undefined&parentSeq=28987)[자료제목] 고영향 인공지능 판단 가이드라인, 고영향 인공지능 사업자\n자료출처] 한국지능정보사회진흥원(NIA) 홈페이지 (https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99835&bcIdx=28987&deptCode=undefined&parentSeq=28987)[자료제목] 고영향 인공지능 판단 가이드라인, 고영향 인공지능 사업자 책무 가이드라인, 인공지능 투명성 확보 가이드라인, 인공지능 안전성 확보 가이드라인\"/>\n자료제목] 고영향 인공지능 판단 가이드라인, 고영향 인공지능 사업자 책무 가이드라인, 인공지능 투명성 확보 가이드라인, 인공지능 안전성 확보 가이드라인\"/>",
+      "bundle_index": 1,
+      "bundle_total": 4,
+      "bundle_parent_title": "[과기부/NIA/TTA/ETRI] 고영향 인공지능 판단 가이드라인, 고영향 인공지능 사업자 책무 가이드라인, 인공지능 투명성 확보 가이드라인, 인공지능 안전성 확보 가이드라인"
+    },
+    {
+      "id": "derived-split-iaae-ethics-173516673-2",
+      "collection": "derived-splits",
+      "collection_name": "묶음 분리",
+      "parent_id": "iaae-ethics-173516673",
+      "title": "[과기부/NIA/TTA/ETRI] 고영향 인공지능 사업자 책무 가이드라인",
+      "org": "과기부/NIA/TTA/ETRI",
+      "category": "과기부/NIA/TTA/ETRI",
+      "date": "2026-08-28",
+      "page_url": "https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99835&bcIdx=28987&deptCode=undefined&parentSeq=28987",
+      "source_urls": [
+        "https://www.nia.or.kr/common/board/Download.do?bcIdx=28987&cbIdx=99835&fileNo=23"
+      ],
+      "source_files": [
+        "https://www.nia.or.kr/common/board/Download.do?bcIdx=28987&cbIdx=99835&fileNo=23"
+      ],
+      "body": "자세한 내용은 첨부된 자료를 다운로드하시기 바랍니다.[자료출처] 한국지능정보사회진흥원(NIA) 홈페이지 (https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99835&bcIdx=28987&deptCode=undefined&parentSeq=28987)[자료제목] 고영향 인공지능 판단 가이드라인, 고영향 인공지능 사업자\n자료출처] 한국지능정보사회진흥원(NIA) 홈페이지 (https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99835&bcIdx=28987&deptCode=undefined&parentSeq=28987)[자료제목] 고영향 인공지능 판단 가이드라인, 고영향 인공지능 사업자 책무 가이드라인, 인공지능 투명성 확보 가이드라인, 인공지능 안전성 확보 가이드라인\"/>\n자료제목] 고영향 인공지능 판단 가이드라인, 고영향 인공지능 사업자 책무 가이드라인, 인공지능 투명성 확보 가이드라인, 인공지능 안전성 확보 가이드라인\"/>",
+      "bundle_index": 2,
+      "bundle_total": 4,
+      "bundle_parent_title": "[과기부/NIA/TTA/ETRI] 고영향 인공지능 판단 가이드라인, 고영향 인공지능 사업자 책무 가이드라인, 인공지능 투명성 확보 가이드라인, 인공지능 안전성 확보 가이드라인"
+    },
+    {
+      "id": "derived-split-iaae-ethics-173516673-3",
+      "collection": "derived-splits",
+      "collection_name": "묶음 분리",
+      "parent_id": "iaae-ethics-173516673",
+      "title": "[과기부/NIA/TTA/ETRI] 인공지능 투명성 확보 가이드라인",
+      "org": "과기부/NIA/TTA/ETRI",
+      "category": "과기부/NIA/TTA/ETRI",
+      "date": "2026-08-28",
+      "page_url": "https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99835&bcIdx=28987&deptCode=undefined&parentSeq=28987",
+      "source_urls": [
+        "https://www.nia.or.kr/common/board/Download.do?bcIdx=28987&cbIdx=99835&fileNo=14"
+      ],
+      "source_files": [
+        "https://www.nia.or.kr/common/board/Download.do?bcIdx=28987&cbIdx=99835&fileNo=14"
+      ],
+      "body": "자세한 내용은 첨부된 자료를 다운로드하시기 바랍니다.[자료출처] 한국지능정보사회진흥원(NIA) 홈페이지 (https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99835&bcIdx=28987&deptCode=undefined&parentSeq=28987)[자료제목] 고영향 인공지능 판단 가이드라인, 고영향 인공지능 사업자\n자료출처] 한국지능정보사회진흥원(NIA) 홈페이지 (https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99835&bcIdx=28987&deptCode=undefined&parentSeq=28987)[자료제목] 고영향 인공지능 판단 가이드라인, 고영향 인공지능 사업자 책무 가이드라인, 인공지능 투명성 확보 가이드라인, 인공지능 안전성 확보 가이드라인\"/>\n자료제목] 고영향 인공지능 판단 가이드라인, 고영향 인공지능 사업자 책무 가이드라인, 인공지능 투명성 확보 가이드라인, 인공지능 안전성 확보 가이드라인\"/>",
+      "bundle_index": 3,
+      "bundle_total": 4,
+      "bundle_parent_title": "[과기부/NIA/TTA/ETRI] 고영향 인공지능 판단 가이드라인, 고영향 인공지능 사업자 책무 가이드라인, 인공지능 투명성 확보 가이드라인, 인공지능 안전성 확보 가이드라인"
+    },
+    {
+      "id": "derived-split-iaae-ethics-173516673-4",
+      "collection": "derived-splits",
+      "collection_name": "묶음 분리",
+      "parent_id": "iaae-ethics-173516673",
+      "title": "[과기부/NIA/TTA/ETRI] 인공지능 안전성 확보 가이드라인",
+      "org": "과기부/NIA/TTA/ETRI",
+      "category": "과기부/NIA/TTA/ETRI",
+      "date": "2026-08-28",
+      "page_url": "https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99835&bcIdx=28987&deptCode=undefined&parentSeq=28987",
+      "source_urls": [
+        "https://www.nia.or.kr/common/board/Download.do?bcIdx=28987&cbIdx=99835&fileNo=15"
+      ],
+      "source_files": [
+        "https://www.nia.or.kr/common/board/Download.do?bcIdx=28987&cbIdx=99835&fileNo=15"
+      ],
+      "body": "자세한 내용은 첨부된 자료를 다운로드하시기 바랍니다.[자료출처] 한국지능정보사회진흥원(NIA) 홈페이지 (https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99835&bcIdx=28987&deptCode=undefined&parentSeq=28987)[자료제목] 고영향 인공지능 판단 가이드라인, 고영향 인공지능 사업자\n자료출처] 한국지능정보사회진흥원(NIA) 홈페이지 (https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99835&bcIdx=28987&deptCode=undefined&parentSeq=28987)[자료제목] 고영향 인공지능 판단 가이드라인, 고영향 인공지능 사업자 책무 가이드라인, 인공지능 투명성 확보 가이드라인, 인공지능 안전성 확보 가이드라인\"/>\n자료제목] 고영향 인공지능 판단 가이드라인, 고영향 인공지능 사업자 책무 가이드라인, 인공지능 투명성 확보 가이드라인, 인공지능 안전성 확보 가이드라인\"/>",
+      "bundle_index": 4,
+      "bundle_total": 4,
+      "bundle_parent_title": "[과기부/NIA/TTA/ETRI] 고영향 인공지능 판단 가이드라인, 고영향 인공지능 사업자 책무 가이드라인, 인공지능 투명성 확보 가이드라인, 인공지능 안전성 확보 가이드라인"
+    },
+    {
+      "id": "derived-split-iaae-ethics-172866423-1",
+      "collection": "derived-splits",
+      "collection_name": "묶음 분리",
+      "parent_id": "iaae-ethics-172866423",
+      "title": "[과학기술정보통신부] AI 데이터 품질관리 가이드",
+      "org": "과학기술정보통신부",
+      "category": "과학기술정보통신부",
+      "date": "2026-08-04",
+      "page_url": "https://aihub.or.kr/aihubnews/qlityguidance/view.do?nttSn=10404",
+      "source_urls": [
+        "https://aihub.or.kr/aihubnews/qlityguidance/view.do?nttSn=10404"
+      ],
+      "source_files": [],
+      "body": "자세한 내용은 첨부된 자료를 다운로드하시기 바랍니다.[자료출처] AI HUB 홈페이지 (https://aihub.or.kr/aihubnews/qlityguidance/view.do?nttSn=10404)[자료제목] AI 데이터 품질관리 가이드, 생성형AI 데이터 품질관리 가이드, AI 데이터 구축 가이드 \"/>\n자료출처] AI HUB 홈페이지 (https://aihub.or.kr/aihubnews/qlityguidance/view.do?nttSn=10404)[자료제목] AI 데이터 품질관리 가이드, 생성형AI 데이터 품질관리 가이드, AI 데이터 구축 가이드 \"/>\n자료제목] AI 데이터 품질관리 가이드, 생성형AI 데이터 품질관리 가이드, AI 데이터 구축 가이드 \"/>",
+      "bundle_index": 1,
+      "bundle_total": 3,
+      "bundle_parent_title": "[과학기술정보통신부] AI 데이터 품질관리 가이드, 생성형AI 데이터 품질관리 가이드, AI 데이터 구축 가이드"
+    },
+    {
+      "id": "derived-split-iaae-ethics-172866423-2",
+      "collection": "derived-splits",
+      "collection_name": "묶음 분리",
+      "parent_id": "iaae-ethics-172866423",
+      "title": "[과학기술정보통신부] 생성형AI 데이터 품질관리 가이드",
+      "org": "과학기술정보통신부",
+      "category": "과학기술정보통신부",
+      "date": "2026-08-04",
+      "page_url": "https://aihub.or.kr/aihubnews/qlityguidance/view.do?nttSn=10404",
+      "source_urls": [
+        "https://aihub.or.kr/aihubnews/qlityguidance/view.do?nttSn=10404"
+      ],
+      "source_files": [],
+      "body": "자세한 내용은 첨부된 자료를 다운로드하시기 바랍니다.[자료출처] AI HUB 홈페이지 (https://aihub.or.kr/aihubnews/qlityguidance/view.do?nttSn=10404)[자료제목] AI 데이터 품질관리 가이드, 생성형AI 데이터 품질관리 가이드, AI 데이터 구축 가이드 \"/>\n자료출처] AI HUB 홈페이지 (https://aihub.or.kr/aihubnews/qlityguidance/view.do?nttSn=10404)[자료제목] AI 데이터 품질관리 가이드, 생성형AI 데이터 품질관리 가이드, AI 데이터 구축 가이드 \"/>\n자료제목] AI 데이터 품질관리 가이드, 생성형AI 데이터 품질관리 가이드, AI 데이터 구축 가이드 \"/>",
+      "bundle_index": 2,
+      "bundle_total": 3,
+      "bundle_parent_title": "[과학기술정보통신부] AI 데이터 품질관리 가이드, 생성형AI 데이터 품질관리 가이드, AI 데이터 구축 가이드"
+    },
+    {
+      "id": "derived-split-iaae-ethics-172866423-3",
+      "collection": "derived-splits",
+      "collection_name": "묶음 분리",
+      "parent_id": "iaae-ethics-172866423",
+      "title": "[과학기술정보통신부] AI 데이터 구축 가이드",
+      "org": "과학기술정보통신부",
+      "category": "과학기술정보통신부",
+      "date": "2026-08-04",
+      "page_url": "https://aihub.or.kr/aihubnews/qlityguidance/view.do?nttSn=10404",
+      "source_urls": [
+        "https://aihub.or.kr/aihubnews/qlityguidance/view.do?nttSn=10404"
+      ],
+      "source_files": [],
+      "body": "자세한 내용은 첨부된 자료를 다운로드하시기 바랍니다.[자료출처] AI HUB 홈페이지 (https://aihub.or.kr/aihubnews/qlityguidance/view.do?nttSn=10404)[자료제목] AI 데이터 품질관리 가이드, 생성형AI 데이터 품질관리 가이드, AI 데이터 구축 가이드 \"/>\n자료출처] AI HUB 홈페이지 (https://aihub.or.kr/aihubnews/qlityguidance/view.do?nttSn=10404)[자료제목] AI 데이터 품질관리 가이드, 생성형AI 데이터 품질관리 가이드, AI 데이터 구축 가이드 \"/>\n자료제목] AI 데이터 품질관리 가이드, 생성형AI 데이터 품질관리 가이드, AI 데이터 구축 가이드 \"/>",
+      "bundle_index": 3,
+      "bundle_total": 3,
+      "bundle_parent_title": "[과학기술정보통신부] AI 데이터 품질관리 가이드, 생성형AI 데이터 품질관리 가이드, AI 데이터 구축 가이드"
+    }
+  ],
+  "note": "큐레이터 한 카드에 여러 지침이 묶인 경우, 원본 첨부(PDF) 기준으로 건을 나눈 파생 레코드",
+  "categories": {
+    "과기부/NIA/TTA/ETRI": 4,
+    "과학기술정보통신부": 3
+  },
+  "years": {
+    "2026": 7
+  }
+}

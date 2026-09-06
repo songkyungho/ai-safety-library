@@ -398,6 +398,11 @@ def identifiers(it: dict) -> set[str]:
 
 
 def title_similar(a: dict, b: dict) -> bool:
+    ka = act_section_key_local(a.get("title") or "")
+    kb = act_section_key_local(b.get("title") or "")
+    # Different sections/titles of an omnibus act are not the same document
+    if ka and kb and ka != kb:
+        return False
     ta, tb = latin_tokens(a.get("title") or ""), latin_tokens(b.get("title") or "")
     na, nb = norm_title(a.get("title") or ""), norm_title(b.get("title") or "")
     if na and na == nb and len(na) >= 16:
@@ -413,7 +418,7 @@ def is_parent_act_url(u: str) -> bool:
     p = urllib.parse.urlparse(u)
     path = p.path.lower()
     host = p.netloc
-    if "congress.gov" in host and "/bill/" in path:
+    if "congress.gov" in host and ("/bill/" in path or "/plaws/" in path):
         return True
     if "legislature.ca.gov" in host and "bill_id=" in p.query.lower():
         return True
@@ -421,7 +426,32 @@ def is_parent_act_url(u: str) -> bool:
         return True
     if "akleg.gov" in host and "bill" in path:
         return True
+    if "legiscan.com" in host and "/bill/" in path:
+        return True
+    if "openstates.org" in host and "/bills/" in path:
+        return True
     return False
+
+
+def act_section_key_local(title: str) -> str:
+    """Mirror library_common.act_section_key (kept local to avoid import path issues)."""
+    t = title or ""
+    m = re.search(r"\bSec(?:tion)?\.?\s*(\d+[A-Za-z\-]*)", t, re.I)
+    if m:
+        return f"sec:{m.group(1).lower()}"
+    parts = []
+    m = re.search(r"\bDivision\s+([A-Z\d]+)", t, re.I)
+    if m:
+        parts.append(f"div:{m.group(1).upper()}")
+    m = re.search(r"\bTitle\s+([IVXLCDM\d]+)", t, re.I)
+    if m:
+        parts.append(f"title:{m.group(1).upper()}")
+    m = re.search(r"\bSubtitle\s+([A-Z])", t, re.I)
+    if m:
+        parts.append(f"sub:{m.group(1).upper()}")
+    if parts:
+        return "-".join(parts)
+    return ""
 
 
 def link_url_group(group: list[str], u: str, spec: int, by_id: dict, link) -> None:
@@ -429,8 +459,18 @@ def link_url_group(group: list[str], u: str, spec: int, by_id: dict, link) -> No
     if len(group) < 2:
         return
     if is_parent_act_url(u):
-        for x in group[1:]:
-            link(group[0], x, f"act-url:{u}")
+        # Omnibus/bill pages list many sections — only merge true same-section
+        # duplicates, never the whole act catalog.
+        by_sec: dict[str, list[str]] = defaultdict(list)
+        for iid in group:
+            sk = act_section_key_local(by_id[iid].get("title") or "") or f"id:{iid}"
+            by_sec[sk].append(iid)
+        for sk, ids in by_sec.items():
+            ids = list(dict.fromkeys(ids))
+            if len(ids) < 2:
+                continue
+            for x in ids[1:]:
+                link(ids[0], x, f"act-sec-dup:{u}|{sk}")
         return
     for i in range(len(group)):
         for j in range(i + 1, len(group)):
@@ -449,9 +489,14 @@ def cluster_kind(members: list[dict]) -> str:
         return "same-document"
     if cols == {"agora"}:
         titles = [m.get("title") or "" for m in members]
+        sec_keys = {act_section_key_local(t) for t in titles}
+        sec_keys.discard("")
+        # Distinct sections of one act are NOT a display cluster anymore
+        if len(sec_keys) >= 2:
+            return "same-act"  # should be rare after link_url_group fix
         if sum(1 for t in titles if re.search(r"\bSec(?:tion)?\.?\s*\d", t, re.I)) >= 2:
-            return "same-act"
-        return "same-act" if len(members) >= 3 else "duplicate-record"
+            return "duplicate-record"
+        return "duplicate-record" if len(members) >= 2 else "duplicate-record"
     return "duplicate-record"
 
 
@@ -509,21 +554,45 @@ def deterministic(items: list[dict]) -> tuple[UnionFind, dict[str, list[dict]]]:
         spec = 2
         link_url_group(group, fake, spec, by_id, link)
 
-    # 3) exact normalized title
+    # 3) exact normalized title — cross-collection only, same jurisdiction
     by_title: dict[str, list[str]] = defaultdict(list)
     for it in items:
         nt = norm_title(it.get("title") or "")
         if len(nt) >= 20:
             by_title[nt].append(it["id"])
+
+    def _jur(it: dict) -> str:
+        """Jurisdiction key for title matching; empty = unknown."""
+        try:
+            from library_common import country_from_item
+
+            c = country_from_item(it) or ""
+        except Exception:
+            c = str(it.get("country") or it.get("gaiin_country") or "")
+        if not c or c == "International":
+            return ""
+        return c
+
     for nt, group in by_title.items():
         group = list(dict.fromkeys(group))
         if len(group) < 2:
             continue
         cols = {by_id[g]["collection"] for g in group}
-        # same-collection short titles can be coincidental; require length or cross-collection
-        if len(cols) >= 2 or len(nt) >= 28:
-            for x in group[1:]:
-                link(group[0], x, f"title:{nt[:80]}")
+        # Generic English titles repeat across OECD countries — never merge
+        # within a single collection by title alone.
+        if len(cols) < 2:
+            continue
+        if len(nt) < 20:
+            continue
+        for i in range(len(group)):
+            for j in range(i + 1, len(group)):
+                a, b = by_id[group[i]], by_id[group[j]]
+                if a["collection"] == b["collection"]:
+                    continue
+                ca, cb = _jur(a), _jur(b)
+                if ca and cb and ca != cb:
+                    continue
+                link(group[i], group[j], f"title:{nt[:80]}")
 
     # 4) identifiers
     by_ident: dict[str, list[str]] = defaultdict(list)
@@ -535,8 +604,17 @@ def deterministic(items: list[dict]) -> tuple[UnionFind, dict[str, list[dict]]]:
         if len(group) < 2:
             continue
         if ident.startswith("us-bill:") or ident.startswith("bill_id:"):
-            for x in group[1:]:
-                link(group[0], x, f"id:{ident}")
+            # Same bill number hosts many section cards — only merge same section
+            by_sec: dict[str, list[str]] = defaultdict(list)
+            for iid in group:
+                sk = act_section_key_local(by_id[iid].get("title") or "") or f"id:{iid}"
+                by_sec[sk].append(iid)
+            for sk, ids in by_sec.items():
+                ids = list(dict.fromkeys(ids))
+                if len(ids) < 2:
+                    continue
+                for x in ids[1:]:
+                    link(ids[0], x, f"id:{ident}|{sk}")
             continue
         num = ident.split(":")[-1] if ident.startswith("eo:") else ""
         for i in range(len(group)):
@@ -738,6 +816,11 @@ def build_clusters(items: list[dict], uf: UnionFind) -> list[dict]:
     n = 0
     for members in by_root.values():
         if len(members) < 2:
+            continue
+        # Safety net: never keep multi-section omnibus act catalogs as one cluster
+        sec_keys = {act_section_key_local(m.get("title") or "") for m in members}
+        sec_keys.discard("")
+        if len(sec_keys) >= 2:
             continue
         n += 1
         members_sorted = sorted(members, key=lambda m: (m.get("collection") or "", m.get("date") or ""), reverse=True)

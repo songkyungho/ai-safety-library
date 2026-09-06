@@ -1,0 +1,2135 @@
+{
+  "updated": "2026-09-06",
+  "model": "openai/gpt-5.6-luna",
+  "counts": {
+    "candidates": 68,
+    "confirm_split": 68,
+    "keep_merged": 0,
+    "items_remapped": 157,
+    "by_method": {
+      "rule_keys": 66,
+      "llm": 2
+    },
+    "cross_merges": 1
+  },
+  "item_to_bucket": {
+    "mofa-governance-112": "doc-c8f4bab4eec2__0",
+    "agora-1396": "doc-c8f4bab4eec2__0",
+    "iaae-ethics-4384428": "doc-c8f4bab4eec2__1",
+    "oecd-navigator-1163": "doc-c8f4bab4eec2__1",
+    "iaae-ethics-17442001": "doc-c9aae9841c9d__0",
+    "iaae-ethics-17385330": "doc-c9aae9841c9d__1",
+    "iaae-ethics-17385304": "doc-c9aae9841c9d__2",
+    "iaae-ethics-16870867": "doc-c9aae9841c9d__3",
+    "iaae-ethics-173283499": "doc-d8521b03515b__0",
+    "derived-split-iaae-ethics-172866423-1": "doc-d8521b03515b__1",
+    "iaae-ethics-172866423": "doc-d8521b03515b__2",
+    "iaae-ethics-16798035": "doc-31a8491225b5__0",
+    "mofa-governance-119": "doc-31a8491225b5__0",
+    "agora-1383": "doc-31a8491225b5__0",
+    "iaae-ethics-16798008": "doc-31a8491225b5__1",
+    "mofa-governance-120": "doc-31a8491225b5__2",
+    "mofa-governance-117": "doc-31a8491225b5__3",
+    "oecd-navigator-2363": "doc-0f2a177a579f__0",
+    "agora-772": "doc-0f2a177a579f__0",
+    "mofa-country-policy-2": "doc-0f2a177a579f__1",
+    "oecd-navigator-401": "doc-48fd9ed7c38f__0",
+    "oecd-navigator-399": "doc-48fd9ed7c38f__0",
+    "oecd-navigator-398": "doc-48fd9ed7c38f__1",
+    "oecd-navigator-2230": "doc-29e347d6da80__0",
+    "oecd-navigator-2219": "doc-29e347d6da80__1",
+    "oecd-navigator-2215": "doc-29e347d6da80__2",
+    "oecd-navigator-2521": "doc-eacff10544c0__0",
+    "oecd-navigator-2522": "doc-eacff10544c0__1",
+    "oecd-navigator-2523": "doc-eacff10544c0__2",
+    "oecd-navigator-750": "doc-6bbfbc6a5166__0",
+    "oecd-navigator-749": "doc-6bbfbc6a5166__0",
+    "oecd-navigator-748": "doc-6bbfbc6a5166__1",
+    "oecd-navigator-576": "doc-7e6ed57779b0__0",
+    "oecd-navigator-569": "doc-7e6ed57779b0__1",
+    "oecd-navigator-2362": "doc-ecf9ceddf4b9__0",
+    "oecd-navigator-1109": "doc-ecf9ceddf4b9__1",
+    "iaae-ethics-53452713": "doc-0c6b7ec40be0__0",
+    "iaae-ethics-19268390": "doc-0c6b7ec40be0__1",
+    "oecd-navigator-1309": "doc-814260870723__0",
+    "oecd-navigator-592": "doc-814260870723__1",
+    "oecd-navigator-888": "doc-9d53c3a36053__0",
+    "oecd-navigator-889": "doc-9d53c3a36053__1",
+    "oecd-navigator-404": "doc-762849d2054f__0",
+    "oecd-navigator-406": "doc-762849d2054f__1",
+    "oecd-navigator-624": "doc-0c851ce2002c__0",
+    "oecd-navigator-666": "doc-0c851ce2002c__1",
+    "oecd-navigator-263": "doc-858463ce5356__0",
+    "oecd-navigator-355": "doc-858463ce5356__1",
+    "oecd-navigator-1231": "doc-98ea4692a384__0",
+    "oecd-navigator-1223": "doc-98ea4692a384__1",
+    "oecd-navigator-188": "doc-6d95e4f1e184__0",
+    "oecd-navigator-318": "doc-6d95e4f1e184__1",
+    "oecd-navigator-206": "doc-21fb28678afc__0",
+    "oecd-navigator-225": "doc-21fb28678afc__1",
+    "oecd-navigator-286": "doc-2ecdfc7c3b9d__0",
+    "oecd-navigator-280": "doc-2ecdfc7c3b9d__1",
+    "oecd-navigator-581": "doc-d7bd43ed7558__0",
+    "oecd-navigator-582": "doc-d7bd43ed7558__1",
+    "oecd-navigator-427": "doc-5a8d8aa445b5__0",
+    "oecd-navigator-363": "doc-5a8d8aa445b5__1",
+    "oecd-navigator-845": "doc-d6f746d594a8__0",
+    "oecd-navigator-844": "doc-d6f746d594a8__1",
+    "oecd-navigator-212": "doc-fd51f1ca97a3__0",
+    "oecd-navigator-210": "doc-fd51f1ca97a3__1",
+    "oecd-navigator-949": "doc-fdb4e79781cf__0",
+    "oecd-navigator-185": "doc-fdb4e79781cf__1",
+    "oecd-navigator-1422": "doc-ca5f24772b79__0",
+    "oecd-navigator-166": "doc-ca5f24772b79__1",
+    "oecd-navigator-1472": "doc-13f932f85d70__0",
+    "oecd-navigator-86": "doc-13f932f85d70__1",
+    "oecd-navigator-1638": "doc-0afc2e360890__0",
+    "oecd-navigator-1486": "doc-0afc2e360890__1",
+    "oecd-navigator-1580": "doc-8fb229d5b24e__0",
+    "oecd-navigator-1089": "doc-8fb229d5b24e__1",
+    "oecd-navigator-1604": "doc-6125ead22ae4__0",
+    "oecd-navigator-1606": "doc-6125ead22ae4__1",
+    "oecd-navigator-1709": "doc-29f6da6ed203__0",
+    "oecd-navigator-1742": "doc-29f6da6ed203__1",
+    "oecd-navigator-1609": "doc-edb7614a2377__0",
+    "oecd-navigator-1602": "doc-edb7614a2377__1",
+    "oecd-navigator-1734": "doc-c3005820facd__0",
+    "oecd-navigator-1729": "doc-c3005820facd__1",
+    "oecd-navigator-1844": "doc-ce009cc72706__0",
+    "oecd-navigator-1810": "doc-ce009cc72706__1",
+    "oecd-navigator-1898": "doc-32505c509a3a__0",
+    "oecd-navigator-1899": "doc-32505c509a3a__1",
+    "oecd-navigator-1888": "doc-1f74dd9ae990__0",
+    "oecd-navigator-1889": "doc-1f74dd9ae990__1",
+    "oecd-navigator-1683": "doc-9d1da92326f9__0",
+    "oecd-navigator-1321": "doc-9d1da92326f9__1",
+    "oecd-navigator-1999": "doc-fc2916fa8969__0",
+    "oecd-navigator-1268": "doc-fc2916fa8969__1",
+    "oecd-navigator-1998": "doc-257b47a69fa8__0",
+    "oecd-navigator-2001": "doc-257b47a69fa8__1",
+    "oecd-navigator-2035": "doc-74a0e04a9d93__0",
+    "oecd-navigator-1981": "doc-74a0e04a9d93__1",
+    "oecd-navigator-2107": "doc-6f3cc8b6df57__0",
+    "oecd-navigator-1846": "doc-6f3cc8b6df57__1",
+    "oecd-navigator-2123": "doc-378b85e89b26__0",
+    "oecd-navigator-1428": "doc-378b85e89b26__1",
+    "oecd-navigator-2145": "doc-0b6742ff1f51__0",
+    "oecd-navigator-1437": "doc-0b6742ff1f51__1",
+    "oecd-navigator-2147": "doc-2967c1fabce3__0",
+    "oecd-navigator-1593": "doc-2967c1fabce3__1",
+    "oecd-navigator-2201": "doc-7b88df230f92__0",
+    "oecd-navigator-2200": "doc-7b88df230f92__1",
+    "oecd-navigator-2233": "doc-46cc96b5ae0a__0",
+    "oecd-navigator-2234": "doc-46cc96b5ae0a__1",
+    "oecd-navigator-2173": "doc-2fb01e5a21f6__0",
+    "oecd-navigator-1446": "doc-2fb01e5a21f6__1",
+    "mofa-governance-256": "doc-bdeb015e5da6__0",
+    "oecd-navigator-1234": "doc-bdeb015e5da6__1",
+    "mofa-country-policy-18": "doc-76ce9fb4c402__0",
+    "oecd-navigator-655": "doc-76ce9fb4c402__1",
+    "oecd-navigator-2406": "doc-4fb76f5acd32__0",
+    "oecd-navigator-2398": "doc-4fb76f5acd32__1",
+    "oecd-navigator-2405": "doc-ec33435e9784__0",
+    "oecd-navigator-2407": "doc-ec33435e9784__1",
+    "oecd-navigator-2420": "doc-75eecc86f819__0",
+    "oecd-navigator-2419": "doc-75eecc86f819__1",
+    "oecd-navigator-2446": "doc-02b083187e13__0",
+    "oecd-navigator-2444": "doc-02b083187e13__1",
+    "mofa-country-policy-88": "doc-c93c67532f8b__0",
+    "mofa-country-policy-49": "doc-c93c67532f8b__1",
+    "oecd-navigator-2427": "doc-42304c71cd5b__0",
+    "oecd-navigator-2431": "doc-42304c71cd5b__1",
+    "derived-split-iaae-ethics-173516673-1": "doc-5e047dee1b42__0",
+    "iaae-ethics-173516673": "doc-a34628469a02__1",
+    "derived-split-iaae-ethics-173516673-2": "doc-4b73b684a052__0",
+    "oecd-navigator-220": "doc-09f79cbde765__0",
+    "oecd-navigator-219": "doc-09f79cbde765__1",
+    "iaae-ethics-9478698": "doc-058f8b32c8c7__0",
+    "iaae-ethics-9173141": "doc-058f8b32c8c7__1",
+    "iaae-ethics-9103698": "doc-058f8b32c8c7__2",
+    "oecd-navigator-999": "doc-b92df2055e25__0",
+    "oecd-navigator-997": "doc-b92df2055e25__1",
+    "oecd-navigator-996": "doc-b92df2055e25__2",
+    "derived-split-iaae-ethics-173516673-3": "doc-23d88160e523__0",
+    "oecd-navigator-839": "doc-4431599902ee__0",
+    "oecd-navigator-838": "doc-4431599902ee__1",
+    "oecd-navigator-828": "doc-4431599902ee__2",
+    "oecd-navigator-1543": "doc-45841d353f01__0",
+    "oecd-navigator-326": "doc-45841d353f01__1",
+    "iaae-ethics-8994590": "doc-e32ad6da0f49__0",
+    "iaae-ethics-6164587": "doc-e32ad6da0f49__1",
+    "iaae-ethics-5511173": "doc-e32ad6da0f49__2",
+    "iaae-ethics-5511161": "doc-e32ad6da0f49__3",
+    "iaae-ethics-5254001": "doc-e32ad6da0f49__4",
+    "oecd-navigator-1801": "doc-0fe68f2e527a__0",
+    "oecd-navigator-1547": "doc-0fe68f2e527a__1",
+    "oecd-navigator-879": "doc-e631f7187b8a__0",
+    "oecd-navigator-876": "doc-e631f7187b8a__1",
+    "derived-split-iaae-ethics-173516673-4": "doc-a34628469a02__0",
+    "agora-813": "cross:us:intelligence-authorization-act:2024",
+    "agora-814": "cross:us:intelligence-authorization-act:2024",
+    "agora-810": "cross:us:intelligence-authorization-act:2024",
+    "agora-809": "cross:us:intelligence-authorization-act:2024"
+  },
+  "reviews": [
+    {
+      "doc_id": "doc-c8f4bab4eec2",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "2024년 OECD AI 권고 개정안과 2019년 OECD AI 권고안이 함께 포함되어 있어 동일 법령·정책으로 볼 수 없습니다.",
+      "instrument_keys": [
+        "oecd:ai-recommendation:2019",
+        "oecd:ai-recommendation:2024"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-c8f4bab4eec2__0",
+          "item_ids": [
+            "mofa-governance-112",
+            "agora-1396"
+          ],
+          "instrument_key": "oecd:ai-recommendation:2024"
+        },
+        {
+          "bucket": "doc-c8f4bab4eec2__1",
+          "item_ids": [
+            "iaae-ethics-4384428",
+            "oecd-navigator-1163"
+          ],
+          "instrument_key": "oecd:ai-recommendation:2019"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-c9aae9841c9d",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "멤버별 제목과 발행 주체가 서로 달라 동일 법령·정책으로 판정할 수 없습니다.",
+      "instrument_keys": [
+        "kr:ai-journalism-ethics-guidelines:2023",
+        "kr:generative-ai-copyright-guide:2024",
+        "kr:metaverse-practical-ethics:2023",
+        "kr:seoul-generative-ai-ethics-guidelines:2023"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-c9aae9841c9d__0",
+          "item_ids": [
+            "iaae-ethics-17442001"
+          ],
+          "instrument_key": "kr:generative-ai-copyright-guide:2024"
+        },
+        {
+          "bucket": "doc-c9aae9841c9d__1",
+          "item_ids": [
+            "iaae-ethics-17385330"
+          ],
+          "instrument_key": "kr:ai-journalism-ethics-guidelines:2023"
+        },
+        {
+          "bucket": "doc-c9aae9841c9d__2",
+          "item_ids": [
+            "iaae-ethics-17385304"
+          ],
+          "instrument_key": "kr:metaverse-practical-ethics:2023"
+        },
+        {
+          "bucket": "doc-c9aae9841c9d__3",
+          "item_ids": [
+            "iaae-ethics-16870867"
+          ],
+          "instrument_key": "kr:seoul-generative-ai-ethics-guidelines:2023"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-d8521b03515b",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "전북특별자치도교육청의 AI 리터러시 교육 가이드라인과 과학기술정보통신부 명의의 AI 데이터 관련 가이드는 제목·발행 주체·내용 범위가 다르다. 두 과학기술정보통신부 관련 항목도 하나는 단일 가이드이고 다른 하나는 복수 가이드의 묶음 게시물로, 동일 문서의 미러 또는 중복 카드로 판정하지 않는다.",
+      "instrument_keys": [
+        "kr:ai-data-guides:2026",
+        "kr:ai-data-quality-management-guide:2026",
+        "kr:jeonbuk-ai-literacy-guideline:2026"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-d8521b03515b__0",
+          "item_ids": [
+            "iaae-ethics-173283499"
+          ],
+          "instrument_key": "kr:jeonbuk-ai-literacy-guideline:2026"
+        },
+        {
+          "bucket": "doc-d8521b03515b__1",
+          "item_ids": [
+            "derived-split-iaae-ethics-172866423-1"
+          ],
+          "instrument_key": "kr:ai-data-quality-management-guide:2026"
+        },
+        {
+          "bucket": "doc-d8521b03515b__2",
+          "item_ids": [
+            "iaae-ethics-172866423"
+          ],
+          "instrument_key": "kr:ai-data-guides:2026"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-31a8491225b5",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "국제 행동규범, 국제 지도원칙, 종합정책 프레임워크 환영 정상 성명, 히로시마 AI 프로세스 정상 성명은 제목상 별도 문서이다. 행동규범 관련 3개 항목은 동일 문서의 게시·번역·미러로 판정했다.",
+      "instrument_keys": [
+        "g7:hiroshima-ai-process-summit-statement:2023",
+        "g7:hiroshima-process-code-of-conduct:2023",
+        "g7:hiroshima-process-comprehensive-policy-framework-welcome-statement:2023",
+        "g7:hiroshima-process-guiding-principles:2023"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-31a8491225b5__0",
+          "item_ids": [
+            "iaae-ethics-16798035",
+            "mofa-governance-119",
+            "agora-1383"
+          ],
+          "instrument_key": "g7:hiroshima-process-code-of-conduct:2023"
+        },
+        {
+          "bucket": "doc-31a8491225b5__1",
+          "item_ids": [
+            "iaae-ethics-16798008"
+          ],
+          "instrument_key": "g7:hiroshima-process-guiding-principles:2023"
+        },
+        {
+          "bucket": "doc-31a8491225b5__2",
+          "item_ids": [
+            "mofa-governance-120"
+          ],
+          "instrument_key": "g7:hiroshima-process-comprehensive-policy-framework-welcome-statement:2023"
+        },
+        {
+          "bucket": "doc-31a8491225b5__3",
+          "item_ids": [
+            "mofa-governance-117"
+          ],
+          "instrument_key": "g7:hiroshima-ai-process-summit-statement:2023"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-0f2a177a579f",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "oecd-navigator-2363와 agora-772는 NIST AI Risk Management Framework 1.0을 가리키는 동일 계열의 등록·원문 기록으로 판단됩니다. mofa-country-policy-2는 2024년 NIST AI 600-1 생성형 AI 프로파일로 별도 문서입니다.",
+      "instrument_keys": [
+        "us:nist-ai-600-1:2024",
+        "us:nist-ai-rmf:2023"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-0f2a177a579f__0",
+          "item_ids": [
+            "oecd-navigator-2363",
+            "agora-772"
+          ],
+          "instrument_key": "us:nist-ai-rmf:2023"
+        },
+        {
+          "bucket": "doc-0f2a177a579f__1",
+          "item_ids": [
+            "mofa-country-policy-2"
+          ],
+          "instrument_key": "us:nist-ai-600-1:2024"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-48fd9ed7c38f",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "medium",
+      "reason": "앞의 두 항목은 2019년 통합된 R&D Projects의 유형으로 확인되지만, Joint R&D Project는 별도 명칭이며 동일 법·정책이라는 근거가 메타에 없습니다.",
+      "instrument_keys": [
+        "be:joint-rd-project",
+        "be:rd-projects:2019"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-48fd9ed7c38f__0",
+          "item_ids": [
+            "oecd-navigator-401",
+            "oecd-navigator-399"
+          ],
+          "instrument_key": "be:rd-projects:2019"
+        },
+        {
+          "bucket": "doc-48fd9ed7c38f__1",
+          "item_ids": [
+            "oecd-navigator-398"
+          ],
+          "instrument_key": "be:joint-rd-project"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-29e347d6da80",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "세 항목은 제목상 각각 행동강령, 변호사 대상 지침, 웹 포털로 서로 다른 정책·자료 유형이다.",
+      "instrument_keys": [
+        "oecd:guidelines-responsible-use-ai-lawyers:2025",
+        "oecd:voluntary-code-of-conduct-ai:2025",
+        "ua:centre-for-responsible-artificial-intelligence:2025"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-29e347d6da80__0",
+          "item_ids": [
+            "oecd-navigator-2230"
+          ],
+          "instrument_key": "oecd:voluntary-code-of-conduct-ai:2025"
+        },
+        {
+          "bucket": "doc-29e347d6da80__1",
+          "item_ids": [
+            "oecd-navigator-2219"
+          ],
+          "instrument_key": "oecd:guidelines-responsible-use-ai-lawyers:2025"
+        },
+        {
+          "bucket": "doc-29e347d6da80__2",
+          "item_ids": [
+            "oecd-navigator-2215"
+          ],
+          "instrument_key": "ua:centre-for-responsible-artificial-intelligence:2025"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-eacff10544c0",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "세 항목은 OECD에 별도 정책 이니셔티브로 등록된 서로 다른 제목이며, 동일 법령의 조항·번역·미러·중복 카드라는 근거가 없습니다.",
+      "instrument_keys": [
+        "fi:ai-verkstaden:2026",
+        "fi:kb-lab:2026",
+        "fi:tampere-pulse:2026"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-eacff10544c0__0",
+          "item_ids": [
+            "oecd-navigator-2521"
+          ],
+          "instrument_key": "fi:tampere-pulse:2026"
+        },
+        {
+          "bucket": "doc-eacff10544c0__1",
+          "item_ids": [
+            "oecd-navigator-2522"
+          ],
+          "instrument_key": "fi:kb-lab:2026"
+        },
+        {
+          "bucket": "doc-eacff10544c0__2",
+          "item_ids": [
+            "oecd-navigator-2523"
+          ],
+          "instrument_key": "fi:ai-verkstaden:2026"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-6bbfbc6a5166",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "medium",
+      "reason": "1번은 NAIAC의 법 집행 소위원회이고 2번은 그 상위 기구로 확인됩니다. 3번은 별도의 소위원회로 제시되어 동일 정책·기구인지 원문 메타만으로 확인되지 않습니다.",
+      "instrument_keys": [
+        "us:ml-and-ai-subcommittee",
+        "us:naiac"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-6bbfbc6a5166__0",
+          "item_ids": [
+            "oecd-navigator-750",
+            "oecd-navigator-749"
+          ],
+          "instrument_key": "us:naiac"
+        },
+        {
+          "bucket": "doc-6bbfbc6a5166__1",
+          "item_ids": [
+            "oecd-navigator-748"
+          ],
+          "instrument_key": "us:ml-and-ai-subcommittee"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-7e6ed57779b0",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "두 항목은 제목과 문서 성격이 서로 다른 별개의 정책 문서이며, 동일한 날짜에 등록된 것만으로 동일 법령·정책으로 볼 수 없습니다.",
+      "instrument_keys": [
+        "jp:contract-guidelines-ai-data:2020",
+        "jp:governance-innovation-society-5-0:2020"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-7e6ed57779b0__0",
+          "item_ids": [
+            "oecd-navigator-576"
+          ],
+          "instrument_key": "jp:governance-innovation-society-5-0:2020"
+        },
+        {
+          "bucket": "doc-7e6ed57779b0__1",
+          "item_ids": [
+            "oecd-navigator-569"
+          ],
+          "instrument_key": "jp:contract-guidelines-ai-data:2020"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-ecf9ceddf4b9",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "제공된 메타상 게시일과 제목이 다르며, 첫 번째 항목에는 영국 관할 정보가 없습니다.",
+      "instrument_keys": [
+        "uk:ai-procurement-guidelines:2020",
+        "unknown:guidelines-for-ai-procurement:2026"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-ecf9ceddf4b9__0",
+          "item_ids": [
+            "oecd-navigator-2362"
+          ],
+          "instrument_key": "unknown:guidelines-for-ai-procurement:2026"
+        },
+        {
+          "bucket": "doc-ecf9ceddf4b9__1",
+          "item_ids": [
+            "oecd-navigator-1109"
+          ],
+          "instrument_key": "uk:ai-procurement-guidelines:2020"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-0c6b7ec40be0",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "두 항목은 제목과 문서 성격이 서로 다르며, 하나는 서울시교육청의 학교급별 생성형 AI 활용 지침이고 다른 하나는 The Bletchley Declaration이다.",
+      "instrument_keys": [
+        "international:bletchley-declaration",
+        "kr:school-generative-ai-guidelines:2024"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-0c6b7ec40be0__0",
+          "item_ids": [
+            "iaae-ethics-53452713"
+          ],
+          "instrument_key": "kr:school-generative-ai-guidelines:2024"
+        },
+        {
+          "bucket": "doc-0c6b7ec40be0__1",
+          "item_ids": [
+            "iaae-ethics-19268390"
+          ],
+          "instrument_key": "international:bletchley-declaration"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-814260870723",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "medium",
+      "reason": "두 항목의 제목이 서로 다르며, 하나는 디지털 장학사업이고 다른 하나는 기관을 가리킵니다.",
+      "instrument_keys": [
+        "mt:malta-digital-innovation-authority:2025",
+        "mt:pathfinder-mdia-digital-scholarship:2025"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-814260870723__0",
+          "item_ids": [
+            "oecd-navigator-1309"
+          ],
+          "instrument_key": "mt:pathfinder-mdia-digital-scholarship:2025"
+        },
+        {
+          "bucket": "doc-814260870723__1",
+          "item_ids": [
+            "oecd-navigator-592"
+          ],
+          "instrument_key": "mt:malta-digital-innovation-authority:2025"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-9d53c3a36053",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "두 항목은 제목과 정책 대상이 서로 다른 별개의 이니셔티브로 제시되어 있어 동일 법령·정책으로 볼 근거가 없습니다.",
+      "instrument_keys": [
+        "kz:artificial-intelligence-research-and-development-support-fund:2025",
+        "kz:smart-data-ukimet:2025"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-9d53c3a36053__0",
+          "item_ids": [
+            "oecd-navigator-888"
+          ],
+          "instrument_key": "kz:smart-data-ukimet:2025"
+        },
+        {
+          "bucket": "doc-9d53c3a36053__1",
+          "item_ids": [
+            "oecd-navigator-889"
+          ],
+          "instrument_key": "kz:artificial-intelligence-research-and-development-support-fund:2025"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-762849d2054f",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "제목이 서로 다르며, 제공된 메타데이터만으로 동일 정책의 조항·번역·미러·중복 카드로 볼 근거가 없습니다.",
+      "instrument_keys": [
+        "be:brussels-region-ai-policy:2025",
+        "be:next-tech:2025"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-762849d2054f__0",
+          "item_ids": [
+            "oecd-navigator-404"
+          ],
+          "instrument_key": "be:next-tech:2025"
+        },
+        {
+          "bucket": "doc-762849d2054f__1",
+          "item_ids": [
+            "oecd-navigator-406"
+          ],
+          "instrument_key": "be:brussels-region-ai-policy:2025"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-0c851ce2002c",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "두 항목은 제목상 서로 다른 프로그램이며, 제공된 메타데이터만으로 동일한 정책·프로그램의 조항, 번역, 미러 또는 중복 카드라고 볼 근거가 없습니다.",
+      "instrument_keys": [
+        "sg:national-multimodal-large-language-model-programme:2025",
+        "sg:sea-lion:2025"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-0c851ce2002c__0",
+          "item_ids": [
+            "oecd-navigator-624"
+          ],
+          "instrument_key": "sg:sea-lion:2025"
+        },
+        {
+          "bucket": "doc-0c851ce2002c__1",
+          "item_ids": [
+            "oecd-navigator-666"
+          ],
+          "instrument_key": "sg:national-multimodal-large-language-model-programme:2025"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-858463ce5356",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "제목이 서로 다른 별개의 정책·제도 항목으로 확인됩니다.",
+      "instrument_keys": [
+        "au:ai-and-digital-capability-centres:2025",
+        "au:next-generation-ai-graduates-program:2025"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-858463ce5356__0",
+          "item_ids": [
+            "oecd-navigator-263"
+          ],
+          "instrument_key": "au:next-generation-ai-graduates-program:2025"
+        },
+        {
+          "bucket": "doc-858463ce5356__1",
+          "item_ids": [
+            "oecd-navigator-355"
+          ],
+          "instrument_key": "au:ai-and-digital-capability-centres:2025"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-98ea4692a384",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "medium",
+      "reason": "두 항목은 날짜와 제목이 다르고, 제공된 메타데이터만으로 동일 문서의 번역·미러·중복 카드라고 확인할 수 없습니다.",
+      "instrument_keys": [
+        "ar:guidance-transparency-personal-data-responsible-ai:2025",
+        "ar:programa-transparencia-datos-ia:2025"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-98ea4692a384__0",
+          "item_ids": [
+            "oecd-navigator-1231"
+          ],
+          "instrument_key": "ar:programa-transparencia-datos-ia:2025"
+        },
+        {
+          "bucket": "doc-98ea4692a384__1",
+          "item_ids": [
+            "oecd-navigator-1223"
+          ],
+          "instrument_key": "ar:guidance-transparency-personal-data-responsible-ai:2025"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-6d95e4f1e184",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "medium",
+      "reason": "두 항목은 명칭상 서로 다른 국가 생명윤리 관련 기구를 가리키며, 첫 항목은 기존 National Bioethics Committee의 대체 기구로 표시되어 있어 동일한 법령·정책의 중복 카드로 판정하기 어렵습니다.",
+      "instrument_keys": [
+        "gr:hellenic-national-bioethics-commission:2025",
+        "gr:national-bioethics-and-techno-ethics-committee:2025"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-6d95e4f1e184__0",
+          "item_ids": [
+            "oecd-navigator-188"
+          ],
+          "instrument_key": "gr:national-bioethics-and-techno-ethics-committee:2025"
+        },
+        {
+          "bucket": "doc-6d95e4f1e184__1",
+          "item_ids": [
+            "oecd-navigator-318"
+          ],
+          "instrument_key": "gr:hellenic-national-bioethics-commission:2025"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-21fb28678afc",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "두 항목의 제목과 대상 기관이 다르므로 동일 법령으로 판정하지 않음.",
+      "instrument_keys": [
+        "cr:high-level-commission-for-digital-government:unknown",
+        "cr:law-no-9943:unknown"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-21fb28678afc__0",
+          "item_ids": [
+            "oecd-navigator-206"
+          ],
+          "instrument_key": "cr:law-no-9943:unknown"
+        },
+        {
+          "bucket": "doc-21fb28678afc__1",
+          "item_ids": [
+            "oecd-navigator-225"
+          ],
+          "instrument_key": "cr:high-level-commission-for-digital-government:unknown"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-2ecdfc7c3b9d",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "두 항목은 제목과 정책 대상이 서로 다른 OECD 등록 이니셔티브로, 동일 법령·정책의 조항이나 번역·미러·중복 카드로 볼 근거가 없습니다.",
+      "instrument_keys": [
+        "pt:mobilizing-program-to-foster-ai-in-the-public-administration:2025",
+        "unknown:doctoral-graduates-employment:2025"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-2ecdfc7c3b9d__0",
+          "item_ids": [
+            "oecd-navigator-286"
+          ],
+          "instrument_key": "pt:mobilizing-program-to-foster-ai-in-the-public-administration:2025"
+        },
+        {
+          "bucket": "doc-2ecdfc7c3b9d__1",
+          "item_ids": [
+            "oecd-navigator-280"
+          ],
+          "instrument_key": "unknown:doctoral-graduates-employment:2025"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-d7bd43ed7558",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "제목과 등록일의 연도가 서로 다르며, 제공된 메타데이터상 별개의 정책 이니셔티브로 식별됩니다.",
+      "instrument_keys": [
+        "ke:blockchain-and-ai-task-force:2025",
+        "ke:emerging-digital-technologies-for-kenya:2019"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-d7bd43ed7558__0",
+          "item_ids": [
+            "oecd-navigator-581"
+          ],
+          "instrument_key": "ke:blockchain-and-ai-task-force:2025"
+        },
+        {
+          "bucket": "doc-d7bd43ed7558__1",
+          "item_ids": [
+            "oecd-navigator-582"
+          ],
+          "instrument_key": "ke:emerging-digital-technologies-for-kenya:2019"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-5a8d8aa445b5",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "두 멤버는 제목상 서로 다른 정책 이니셔티브이며, 제공된 메타데이터만으로 동일 법령·정책의 조항, 번역, 미러 또는 중복 카드라고 볼 근거가 없습니다.",
+      "instrument_keys": [
+        "in:ai-phd-scholarships:unknown",
+        "in:indiaai-portal:unknown"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-5a8d8aa445b5__0",
+          "item_ids": [
+            "oecd-navigator-427"
+          ],
+          "instrument_key": "in:indiaai-portal:unknown"
+        },
+        {
+          "bucket": "doc-5a8d8aa445b5__1",
+          "item_ids": [
+            "oecd-navigator-363"
+          ],
+          "instrument_key": "in:ai-phd-scholarships:unknown"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-d6f746d594a8",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "두 멤버는 제목상 서로 다른 정책 문서이며, 동일 날짜에 등록되었다는 사실만으로 동일 정책으로 볼 수 없습니다.",
+      "instrument_keys": [
+        "kr:ai-rd-strategy:2025",
+        "kr:data-ai-driven-economy-promotion-plan:2025"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-d6f746d594a8__0",
+          "item_ids": [
+            "oecd-navigator-845"
+          ],
+          "instrument_key": "kr:data-ai-driven-economy-promotion-plan:2025"
+        },
+        {
+          "bucket": "doc-d6f746d594a8__1",
+          "item_ids": [
+            "oecd-navigator-844"
+          ],
+          "instrument_key": "kr:ai-rd-strategy:2025"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-fd51f1ca97a3",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "medium",
+      "reason": "두 항목은 제목과 OECD URL이 서로 다르며, 제공된 메타데이터만으로 동일한 기구·제도 또는 동일 법령의 번역·미러·중복 카드라고 볼 근거가 없습니다.",
+      "instrument_keys": [
+        "at:ai-policy-forum",
+        "at:ai-stakeholder-forum"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-fd51f1ca97a3__0",
+          "item_ids": [
+            "oecd-navigator-212"
+          ],
+          "instrument_key": "at:ai-stakeholder-forum"
+        },
+        {
+          "bucket": "doc-fd51f1ca97a3__1",
+          "item_ids": [
+            "oecd-navigator-210"
+          ],
+          "instrument_key": "at:ai-policy-forum"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-fdb4e79781cf",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "첫 번째 항목은 경영진 대상 AI 거버넌스 가이드라인이고, 두 번째 항목은 AI 거버넌스 센터로 명칭과 성격이 달라 동일한 법령·정책으로 보기 어렵습니다.",
+      "instrument_keys": [
+        "th:ai-governance-center:2025",
+        "th:ai-governance-guideline-for-executives:2025"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-fdb4e79781cf__0",
+          "item_ids": [
+            "oecd-navigator-949"
+          ],
+          "instrument_key": "th:ai-governance-guideline-for-executives:2025"
+        },
+        {
+          "bucket": "doc-fdb4e79781cf__1",
+          "item_ids": [
+            "oecd-navigator-185"
+          ],
+          "instrument_key": "th:ai-governance-center:2025"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-ca5f24772b79",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "두 항목은 제목과 등록 날짜가 서로 다르며, 제공된 메타데이터만으로 동일 정책의 조항·번역·미러·중복 카드라고 볼 근거가 없습니다.",
+      "instrument_keys": [
+        "at:ai-badge-for-eeducation-schools:2025",
+        "at:schoolpackage-ai:2025"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-ca5f24772b79__0",
+          "item_ids": [
+            "oecd-navigator-1422"
+          ],
+          "instrument_key": "at:schoolpackage-ai:2025"
+        },
+        {
+          "bucket": "doc-ca5f24772b79__1",
+          "item_ids": [
+            "oecd-navigator-166"
+          ],
+          "instrument_key": "at:ai-badge-for-eeducation-schools:2025"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-13f932f85d70",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "medium",
+      "reason": "두 항목은 제목상 별개의 정책 이니셔티브이며, 연구·교육기관은 AI 전환 청사진과 관련된 사업으로 설명되지만 동일한 법령·정책 자체로 확인되지는 않습니다.",
+      "instrument_keys": [
+        "gr:ai-research-and-educational-institute:2025",
+        "gr:blueprint-for-greece-ai-transformation:2025"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-13f932f85d70__0",
+          "item_ids": [
+            "oecd-navigator-1472"
+          ],
+          "instrument_key": "gr:ai-research-and-educational-institute:2025"
+        },
+        {
+          "bucket": "doc-13f932f85d70__1",
+          "item_ids": [
+            "oecd-navigator-86"
+          ],
+          "instrument_key": "gr:blueprint-for-greece-ai-transformation:2025"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-0afc2e360890",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "두 멤버의 제목이 서로 다른 정책 이니셔티브를 가리킵니다.",
+      "instrument_keys": [
+        "it:ai-in-primary-and-secondary-school:2025",
+        "it:sustainable-mobility:2025"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-0afc2e360890__0",
+          "item_ids": [
+            "oecd-navigator-1638"
+          ],
+          "instrument_key": "it:sustainable-mobility:2025"
+        },
+        {
+          "bucket": "doc-0afc2e360890__1",
+          "item_ids": [
+            "oecd-navigator-1486"
+          ],
+          "instrument_key": "it:ai-in-primary-and-secondary-school:2025"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-8fb229d5b24e",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "medium",
+      "reason": "두 항목은 제목상 서로 다른 정책·프로그램을 지칭하며, 제공된 메타데이터만으로 동일한 법령·정책의 조항, 번역, 미러 또는 중복 카드라고 확인할 수 없습니다.",
+      "instrument_keys": [
+        "es:spain-talent-hub:2025",
+        "es:state-programme-talent-ai:2025"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-8fb229d5b24e__0",
+          "item_ids": [
+            "oecd-navigator-1580"
+          ],
+          "instrument_key": "es:state-programme-talent-ai:2025"
+        },
+        {
+          "bucket": "doc-8fb229d5b24e__1",
+          "item_ids": [
+            "oecd-navigator-1089"
+          ],
+          "instrument_key": "es:spain-talent-hub:2025"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-6125ead22ae4",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "두 멤버는 제목상 서로 다른 불가리아 플랫폼을 가리키며, 동일한 날짜와 OECD 등록만으로 동일 제도라고 볼 근거는 없습니다.",
+      "instrument_keys": [
+        "bg:bulgarian-portal-for-open-science-bpos",
+        "bg:open-data-portal-public-sector-data"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-6125ead22ae4__0",
+          "item_ids": [
+            "oecd-navigator-1604"
+          ],
+          "instrument_key": "bg:open-data-portal-public-sector-data"
+        },
+        {
+          "bucket": "doc-6125ead22ae4__1",
+          "item_ids": [
+            "oecd-navigator-1606"
+          ],
+          "instrument_key": "bg:bulgarian-portal-for-open-science-bpos"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-29f6da6ed203",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "서로 다른 국가의 EuroCC 역량센터이므로 동일한 법령·정책으로 볼 수 없습니다.",
+      "instrument_keys": [
+        "cy:eurocc-cyprus:2025",
+        "hr:eurocc-national-competence-center-hpc:2025"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-29f6da6ed203__0",
+          "item_ids": [
+            "oecd-navigator-1709"
+          ],
+          "instrument_key": "hr:eurocc-national-competence-center-hpc:2025"
+        },
+        {
+          "bucket": "doc-29f6da6ed203__1",
+          "item_ids": [
+            "oecd-navigator-1742"
+          ],
+          "instrument_key": "cy:eurocc-cyprus:2025"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-edb7614a2377",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "두 항목은 제목상 서로 다른 프로그램·센터를 가리키므로 동일한 법령·정책으로 판정하지 않습니다.",
+      "instrument_keys": [
+        "dk:national-center-for-ai-innovation:2025",
+        "dk:wallenberg-ai-and-transformative-technologies-education-development-program:2025"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-edb7614a2377__0",
+          "item_ids": [
+            "oecd-navigator-1609"
+          ],
+          "instrument_key": "dk:wallenberg-ai-and-transformative-technologies-education-development-program:2025"
+        },
+        {
+          "bucket": "doc-edb7614a2377__1",
+          "item_ids": [
+            "oecd-navigator-1602"
+          ],
+          "instrument_key": "dk:national-center-for-ai-innovation:2025"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-c3005820facd",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "두 항목은 제목상 서로 다른 정책·프로그램을 가리키며, 동일 법령·정책의 조항이나 번역·미러·중복으로 확인되지 않습니다.",
+      "instrument_keys": [
+        "cz:european-innovation-partnership-operational-groups:unknown",
+        "cz:programme-to-support-applied-research:2024-2032"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-c3005820facd__0",
+          "item_ids": [
+            "oecd-navigator-1734"
+          ],
+          "instrument_key": "cz:programme-to-support-applied-research:2024-2032"
+        },
+        {
+          "bucket": "doc-c3005820facd__1",
+          "item_ids": [
+            "oecd-navigator-1729"
+          ],
+          "instrument_key": "cz:european-innovation-partnership-operational-groups:unknown"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-ce009cc72706",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "두 멤버의 제목과 식별 가능한 기구·정책 명칭이 서로 다르므로 동일한 법령·정책으로 볼 수 없습니다.",
+      "instrument_keys": [
+        "belgium:tef-health:2025",
+        "oecd:high-and-highest-performance-computing:2025"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-ce009cc72706__0",
+          "item_ids": [
+            "oecd-navigator-1844"
+          ],
+          "instrument_key": "belgium:tef-health:2025"
+        },
+        {
+          "bucket": "doc-ce009cc72706__1",
+          "item_ids": [
+            "oecd-navigator-1810"
+          ],
+          "instrument_key": "oecd:high-and-highest-performance-computing:2025"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-32505c509a3a",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "두 항목은 제목과 정책 이니셔티브가 서로 다르며, 제공된 요약에서도 Dataspace4Health가 Clinnova를 지원하는 별도 프로젝트로 제시됩니다.",
+      "instrument_keys": [
+        "oecd:clinnova:2025",
+        "oecd:dataspace4health:2025"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-32505c509a3a__0",
+          "item_ids": [
+            "oecd-navigator-1898"
+          ],
+          "instrument_key": "oecd:dataspace4health:2025"
+        },
+        {
+          "bucket": "doc-32505c509a3a__1",
+          "item_ids": [
+            "oecd-navigator-1899"
+          ],
+          "instrument_key": "oecd:clinnova:2025"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-1f74dd9ae990",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "두 항목은 제목상 각각 엣지 기술 지원 프로그램과 AI 개발을 위한 HPC 역량 강화 조치로 구분되며, 동일한 법령·정책의 조항이나 번역·미러·중복 카드라는 근거가 없습니다.",
+      "instrument_keys": [
+        "es:hpc-capacity-ai:2025",
+        "es:unico-ipcei:2025"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-1f74dd9ae990__0",
+          "item_ids": [
+            "oecd-navigator-1888"
+          ],
+          "instrument_key": "es:unico-ipcei:2025"
+        },
+        {
+          "bucket": "doc-1f74dd9ae990__1",
+          "item_ids": [
+            "oecd-navigator-1889"
+          ],
+          "instrument_key": "es:hpc-capacity-ai:2025"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-9d1da92326f9",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "첫 번째 항목은 가이드라인 개발 지시이고, 두 번째 항목은 가이드라인 자체를 가리키는 별도 정책 문서로 제목과 게시일이 다르다.",
+      "instrument_keys": [
+        "se:assignment-generative-ai-public-administration:2025",
+        "se:generative-ai-public-administration-guidelines:2025"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-9d1da92326f9__0",
+          "item_ids": [
+            "oecd-navigator-1683"
+          ],
+          "instrument_key": "se:assignment-generative-ai-public-administration:2025"
+        },
+        {
+          "bucket": "doc-9d1da92326f9__1",
+          "item_ids": [
+            "oecd-navigator-1321"
+          ],
+          "instrument_key": "se:generative-ai-public-administration-guidelines:2025"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-fc2916fa8969",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "두 항목은 LUMI와 관련되지만, 하나는 스웨덴의 LUMI 참여를 다루고 다른 하나는 LUMI 슈퍼컴퓨터 자체를 다루므로 동일한 정책·수단의 중복 또는 조항 관계로 볼 수 없습니다.",
+      "instrument_keys": [
+        "fi:lumi-supercomputer:2022",
+        "se:lumi-participation:2025"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-fc2916fa8969__0",
+          "item_ids": [
+            "oecd-navigator-1999"
+          ],
+          "instrument_key": "se:lumi-participation:2025"
+        },
+        {
+          "bucket": "doc-fc2916fa8969__1",
+          "item_ids": [
+            "oecd-navigator-1268"
+          ],
+          "instrument_key": "fi:lumi-supercomputer:2022"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-257b47a69fa8",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "medium",
+      "reason": "두 항목은 동일 기관과 날짜를 공유하지만 제목상 각각 이니셔티브와 AI 교육 프로그램으로 구분되며, 동일 법령의 조항·번역·미러·중복 카드라는 근거가 없습니다.",
+      "instrument_keys": [
+        "bg:ipa-ai-training-programmes:2025",
+        "bg:ipa-initiatives:2025"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-257b47a69fa8__0",
+          "item_ids": [
+            "oecd-navigator-1998"
+          ],
+          "instrument_key": "bg:ipa-initiatives:2025"
+        },
+        {
+          "bucket": "doc-257b47a69fa8__1",
+          "item_ids": [
+            "oecd-navigator-2001"
+          ],
+          "instrument_key": "bg:ipa-ai-training-programmes:2025"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-74a0e04a9d93",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "두 항목은 각각 Chips Joint Undertaking 참여와 VELES 지역 스마트 데이터 공간으로, 서로 다른 정책·사업이다.",
+      "instrument_keys": [
+        "gr:chips-joint-undertaking:2025",
+        "gr:veles:2025"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-74a0e04a9d93__0",
+          "item_ids": [
+            "oecd-navigator-2035"
+          ],
+          "instrument_key": "gr:chips-joint-undertaking:2025"
+        },
+        {
+          "bucket": "doc-74a0e04a9d93__1",
+          "item_ids": [
+            "oecd-navigator-1981"
+          ],
+          "instrument_key": "gr:veles:2025"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-6f3cc8b6df57",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "두 항목은 제목과 OECD 등록 항목이 서로 다르며, 하나는 납세자 문의 응답 AI이고 다른 하나는 라트비아 국가 인공지능 센터입니다.",
+      "instrument_keys": [
+        "lv:ai-taxpayer-inquiry-responses:2025",
+        "lv:national-center-for-artificial-intelligence:2025"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-6f3cc8b6df57__0",
+          "item_ids": [
+            "oecd-navigator-2107"
+          ],
+          "instrument_key": "lv:ai-taxpayer-inquiry-responses:2025"
+        },
+        {
+          "bucket": "doc-6f3cc8b6df57__1",
+          "item_ids": [
+            "oecd-navigator-1846"
+          ],
+          "instrument_key": "lv:national-center-for-artificial-intelligence:2025"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-378b85e89b26",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "두 항목은 제목상 하나는 Innoviris 기관 자체이고 다른 하나는 Innoviris의 STEM 자금지원 프로그램으로, 동일한 법령·정책의 조항·번역·미러·중복 카드라는 근거가 없습니다.",
+      "instrument_keys": [
+        "be:innoviris-funding-programmes-on-stem:unknown",
+        "be:innoviris:unknown"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-378b85e89b26__0",
+          "item_ids": [
+            "oecd-navigator-2123"
+          ],
+          "instrument_key": "be:innoviris:unknown"
+        },
+        {
+          "bucket": "doc-378b85e89b26__1",
+          "item_ids": [
+            "oecd-navigator-1428"
+          ],
+          "instrument_key": "be:innoviris-funding-programmes-on-stem:unknown"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-0b6742ff1f51",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "두 항목은 모두 INSAIT와 관련되지만, 하나는 연구기관이고 다른 하나는 Explorer Programme으로 제목과 대상이 구분됩니다.",
+      "instrument_keys": [
+        "bg:insait-explorer-programme:2025",
+        "bg:insait-institute:2025"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-0b6742ff1f51__0",
+          "item_ids": [
+            "oecd-navigator-2145"
+          ],
+          "instrument_key": "bg:insait-institute:2025"
+        },
+        {
+          "bucket": "doc-0b6742ff1f51__1",
+          "item_ids": [
+            "oecd-navigator-1437"
+          ],
+          "instrument_key": "bg:insait-explorer-programme:2025"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-2967c1fabce3",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "서로 다른 정책 문서명과 등록일을 가진 별개의 정책 수단입니다.",
+      "instrument_keys": [
+        "bg:competitiveness-and-innovation-in-enterprises-programme:2025",
+        "bg:digital-transformation-of-bulgaria-strategy:2024"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-2967c1fabce3__0",
+          "item_ids": [
+            "oecd-navigator-2147"
+          ],
+          "instrument_key": "bg:competitiveness-and-innovation-in-enterprises-programme:2025"
+        },
+        {
+          "bucket": "doc-2967c1fabce3__1",
+          "item_ids": [
+            "oecd-navigator-1593"
+          ],
+          "instrument_key": "bg:digital-transformation-of-bulgaria-strategy:2024"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-7b88df230f92",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "두 멤버는 제목상 서로 다른 프로그램으로 식별됩니다.",
+      "instrument_keys": [
+        "pt:science-digital-program:2025",
+        "pt:science-training-program:2025"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-7b88df230f92__0",
+          "item_ids": [
+            "oecd-navigator-2201"
+          ],
+          "instrument_key": "pt:science-digital-program:2025"
+        },
+        {
+          "bucket": "doc-7b88df230f92__1",
+          "item_ids": [
+            "oecd-navigator-2200"
+          ],
+          "instrument_key": "pt:science-training-program:2025"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-46cc96b5ae0a",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "첫 번째는 2030년까지의 전략이고, 두 번째는 해당 전략의 2025~2027년 실행계획으로 제목과 문서 유형이 구분된다.",
+      "instrument_keys": [
+        "ukraine:winwin-operational-plan:2025-2027",
+        "ukraine:winwin-strategy:2030"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-46cc96b5ae0a__0",
+          "item_ids": [
+            "oecd-navigator-2233"
+          ],
+          "instrument_key": "ukraine:winwin-strategy:2030"
+        },
+        {
+          "bucket": "doc-46cc96b5ae0a__1",
+          "item_ids": [
+            "oecd-navigator-2234"
+          ],
+          "instrument_key": "ukraine:winwin-operational-plan:2025-2027"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-2fb01e5a21f6",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "두 멤버는 제목상 각각 유럽 공동관심 중요프로젝트와 크로아티아 인공지능 협회로 서로 다른 대상이다. 원문 메타에 법령 연도가 없어 year는 비워 두었다.",
+      "instrument_keys": [
+        "eu:ipcei-microelectronics-and-communication-technologies",
+        "hr:croatian-association-for-artificial-intelligence-croai"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-2fb01e5a21f6__0",
+          "item_ids": [
+            "oecd-navigator-2173"
+          ],
+          "instrument_key": "eu:ipcei-microelectronics-and-communication-technologies"
+        },
+        {
+          "bucket": "doc-2fb01e5a21f6__1",
+          "item_ids": [
+            "oecd-navigator-1446"
+          ],
+          "instrument_key": "hr:croatian-association-for-artificial-intelligence-croai"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-bdeb015e5da6",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "첫 번째 항목은 2025년 이행 진전 정책보고서이고, 두 번째 항목은 2018년 유럽 AI 조정계획 자체를 가리키므로 동일한 법령·정책 문서로 볼 수 없습니다.",
+      "instrument_keys": [
+        "eu:ai-coordinated-plan-implementation-progress:2025",
+        "eu:european-coordinated-plan-on-artificial-intelligence:2018"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-bdeb015e5da6__0",
+          "item_ids": [
+            "mofa-governance-256"
+          ],
+          "instrument_key": "eu:ai-coordinated-plan-implementation-progress:2025"
+        },
+        {
+          "bucket": "doc-bdeb015e5da6__1",
+          "item_ids": [
+            "oecd-navigator-1234"
+          ],
+          "instrument_key": "eu:european-coordinated-plan-on-artificial-intelligence:2018"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-76ce9fb4c402",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "두 항목은 게시 날짜와 게시 주체·관할 표기가 다르며, 원문 메타만으로 동일 문서의 번역·미러·중복임을 확인할 수 없습니다.",
+      "instrument_keys": [
+        "oecd:model-ai-governance-framework:2025",
+        "sg:agentic-ai-governance-framework:2026"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-76ce9fb4c402__0",
+          "item_ids": [
+            "mofa-country-policy-18"
+          ],
+          "instrument_key": "sg:agentic-ai-governance-framework:2026"
+        },
+        {
+          "bucket": "doc-76ce9fb4c402__1",
+          "item_ids": [
+            "oecd-navigator-655"
+          ],
+          "instrument_key": "oecd:model-ai-governance-framework:2025"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-4fb76f5acd32",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "두 멤버의 제목이 각각 청년혁신기업·연구중심 청년혁신기업 세제 지위와 혁신세액공제로 구분되어 있어 동일한 법령·정책으로 판정하지 않습니다.",
+      "instrument_keys": [
+        "fr:innovation-tax-credit",
+        "fr:jei-jeir"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-4fb76f5acd32__0",
+          "item_ids": [
+            "oecd-navigator-2406"
+          ],
+          "instrument_key": "fr:jei-jeir"
+        },
+        {
+          "bucket": "doc-4fb76f5acd32__1",
+          "item_ids": [
+            "oecd-navigator-2398"
+          ],
+          "instrument_key": "fr:innovation-tax-credit"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-ec33435e9784",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "두 항목의 제목과 식별 가능한 정책명이 다르며, AI Action Plan의 관할·연도는 제공된 메타데이터에 없습니다.",
+      "instrument_keys": [
+        "fr:je-choisis-la-french-tech:2023",
+        "unknown:ai-action-plan:unknown"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-ec33435e9784__0",
+          "item_ids": [
+            "oecd-navigator-2405"
+          ],
+          "instrument_key": "fr:je-choisis-la-french-tech:2023"
+        },
+        {
+          "bucket": "doc-ec33435e9784__1",
+          "item_ids": [
+            "oecd-navigator-2407"
+          ],
+          "instrument_key": "unknown:ai-action-plan:unknown"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-75eecc86f819",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "NSF Regional Innovation Engines와 EDA Regional Technology and Innovation Hubs는 명칭과 담당 기관이 서로 다른 미국 프로그램입니다.",
+      "instrument_keys": [
+        "us:eda-regional-technology-and-innovation-hubs",
+        "us:nsf-regional-innovation-engines"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-75eecc86f819__0",
+          "item_ids": [
+            "oecd-navigator-2420"
+          ],
+          "instrument_key": "us:nsf-regional-innovation-engines"
+        },
+        {
+          "bucket": "doc-75eecc86f819__1",
+          "item_ids": [
+            "oecd-navigator-2419"
+          ],
+          "instrument_key": "us:eda-regional-technology-and-innovation-hubs"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-02b083187e13",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "두 항목은 각각 ISO/IEC 42001과 ISO/IEC 23894를 가리키는 서로 다른 표준입니다.",
+      "instrument_keys": [
+        "iso:iec-23894",
+        "iso:iec-42001"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-02b083187e13__0",
+          "item_ids": [
+            "oecd-navigator-2446"
+          ],
+          "instrument_key": "iso:iec-42001"
+        },
+        {
+          "bucket": "doc-02b083187e13__1",
+          "item_ids": [
+            "oecd-navigator-2444"
+          ],
+          "instrument_key": "iso:iec-23894"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-c93c67532f8b",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "제2기 인공지능기본계획과 AI 기본계획은 제목과 게시일이 서로 다르므로 동일 정책으로 판정하지 않음.",
+      "instrument_keys": [
+        "jp:ai-basic-plan:2025",
+        "jp:ai-basic-plan:2026"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-c93c67532f8b__0",
+          "item_ids": [
+            "mofa-country-policy-88"
+          ],
+          "instrument_key": "jp:ai-basic-plan:2026"
+        },
+        {
+          "bucket": "doc-c93c67532f8b__1",
+          "item_ids": [
+            "mofa-country-policy-49"
+          ],
+          "instrument_key": "jp:ai-basic-plan:2025"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-42304c71cd5b",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "두 멤버는 제목상 서로 다른 계획·전략을 가리키며, 동일 법령의 조항·번역·미러·중복 카드라는 근거가 없습니다.",
+      "instrument_keys": [
+        "norway:joint-ai-plan:2024-2025",
+        "unknown:eiasns:unknown"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-42304c71cd5b__0",
+          "item_ids": [
+            "oecd-navigator-2427"
+          ],
+          "instrument_key": "norway:joint-ai-plan:2024-2025"
+        },
+        {
+          "bucket": "doc-42304c71cd5b__1",
+          "item_ids": [
+            "oecd-navigator-2431"
+          ],
+          "instrument_key": "unknown:eiasns:unknown"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-5e047dee1b42",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "첫 번째 항목은 단일 가이드라인이고, 두 번째 항목은 해당 가이드라인을 포함한 여러 가이드라인을 함께 열거한 게시물입니다.",
+      "instrument_keys": [
+        "kr:ai-guidelines-collection:2026",
+        "kr:high-impact-ai-judgment-guidelines:2026"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-5e047dee1b42__0",
+          "item_ids": [
+            "derived-split-iaae-ethics-173516673-1"
+          ],
+          "instrument_key": "kr:high-impact-ai-judgment-guidelines:2026"
+        },
+        {
+          "bucket": "doc-5e047dee1b42__1",
+          "item_ids": [
+            "iaae-ethics-173516673"
+          ],
+          "instrument_key": "kr:ai-guidelines-collection:2026"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-4b73b684a052",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "두 번째 게시물은 사업자 책무 가이드라인 외에 판단·투명성·안전성 확보 가이드라인을 함께 열거하는 복수 문서 게시물이다. 따라서 개별 가이드라인과 동일한 단일 문서로 판정할 수 없다.",
+      "instrument_keys": [
+        "kr:high-impact-ai-business-responsibility-guideline:2026",
+        "kr:multiple-ai-guidelines:2026"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-4b73b684a052__0",
+          "item_ids": [
+            "derived-split-iaae-ethics-173516673-2"
+          ],
+          "instrument_key": "kr:high-impact-ai-business-responsibility-guideline:2026"
+        },
+        {
+          "bucket": "doc-4b73b684a052__1",
+          "item_ids": [
+            "iaae-ethics-173516673"
+          ],
+          "instrument_key": "kr:multiple-ai-guidelines:2026"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-09f79cbde765",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "두 항목은 제목상 서로 다른 코스타리카 정책·규제 이니셔티브이며, 제공된 메타데이터에 공통 법령명이나 조항 연결 정보가 없습니다.",
+      "instrument_keys": [
+        "cr:digital-government-bicentenary:2025",
+        "cr:technology-acquisitions-management-systems:2025"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-09f79cbde765__0",
+          "item_ids": [
+            "oecd-navigator-220"
+          ],
+          "instrument_key": "cr:digital-government-bicentenary:2025"
+        },
+        {
+          "bucket": "doc-09f79cbde765__1",
+          "item_ids": [
+            "oecd-navigator-219"
+          ],
+          "instrument_key": "cr:technology-acquisitions-management-systems:2025"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-058f8b32c8c7",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "세 항목은 제목, 발행일, 문서 성격이 서로 달라 동일한 법령·정책 또는 동일 문서의 조항·번역·미러·중복 카드로 볼 수 없습니다.",
+      "instrument_keys": [
+        "kr:fsc-financial-ai-guidelines:2021",
+        "kr:kaiea-elementary-metaverse-survey:2021",
+        "kr:kaiea-korea-canada-ai-education-report:2022"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-058f8b32c8c7__0",
+          "item_ids": [
+            "iaae-ethics-9478698"
+          ],
+          "instrument_key": "kr:kaiea-korea-canada-ai-education-report:2022"
+        },
+        {
+          "bucket": "doc-058f8b32c8c7__1",
+          "item_ids": [
+            "iaae-ethics-9173141"
+          ],
+          "instrument_key": "kr:kaiea-elementary-metaverse-survey:2021"
+        },
+        {
+          "bucket": "doc-058f8b32c8c7__2",
+          "item_ids": [
+            "iaae-ethics-9103698"
+          ],
+          "instrument_key": "kr:fsc-financial-ai-guidelines:2021"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-b92df2055e25",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "멤버 제목이 서로 다른 규정명을 나타내므로 동일 법령으로 판정하지 않음.",
+      "instrument_keys": [
+        "saudi:data-classification-regulations:2025",
+        "saudi:freedom-of-information-regulations:2025",
+        "saudi:open-data-regulations:2025"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-b92df2055e25__0",
+          "item_ids": [
+            "oecd-navigator-999"
+          ],
+          "instrument_key": "saudi:open-data-regulations:2025"
+        },
+        {
+          "bucket": "doc-b92df2055e25__1",
+          "item_ids": [
+            "oecd-navigator-997"
+          ],
+          "instrument_key": "saudi:freedom-of-information-regulations:2025"
+        },
+        {
+          "bucket": "doc-b92df2055e25__2",
+          "item_ids": [
+            "oecd-navigator-996"
+          ],
+          "instrument_key": "saudi:data-classification-regulations:2025"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-23d88160e523",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "첫 번째 항목은 인공지능 투명성 확보 가이드라인 단일 문서이고, 두 번째 항목은 해당 가이드라인을 포함해 서로 다른 여러 가이드라인을 함께 열거한 게시물입니다.",
+      "instrument_keys": [
+        "kr:ai-transparency-guideline:2026",
+        "kr:multiple-ai-guidelines:2026"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-23d88160e523__0",
+          "item_ids": [
+            "derived-split-iaae-ethics-173516673-3"
+          ],
+          "instrument_key": "kr:ai-transparency-guideline:2026"
+        },
+        {
+          "bucket": "doc-23d88160e523__1",
+          "item_ids": [
+            "iaae-ethics-173516673"
+          ],
+          "instrument_key": "kr:multiple-ai-guidelines:2026"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-4431599902ee",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "세 항목은 같은 관할·기관·등록일을 공유하지만, 조달 절차용 기술 샌드박스, 무인차량 규제 샌드박스, 오픈소스 인공지능 알고리즘 서비스로 대상과 정책 내용이 서로 다르다.",
+      "instrument_keys": [
+        "pe:open-source-ai-algorithm-service:2023",
+        "pe:public-procurement-technology-sandbox:2023",
+        "pe:unmanned-vehicles-regulatory-sandbox:2023"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-4431599902ee__0",
+          "item_ids": [
+            "oecd-navigator-839"
+          ],
+          "instrument_key": "pe:public-procurement-technology-sandbox:2023"
+        },
+        {
+          "bucket": "doc-4431599902ee__1",
+          "item_ids": [
+            "oecd-navigator-838"
+          ],
+          "instrument_key": "pe:unmanned-vehicles-regulatory-sandbox:2023"
+        },
+        {
+          "bucket": "doc-4431599902ee__2",
+          "item_ids": [
+            "oecd-navigator-828"
+          ],
+          "instrument_key": "pe:open-source-ai-algorithm-service:2023"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-45841d353f01",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "두 항목의 제목과 정책 대상이 서로 달라 동일한 전략·정책으로 볼 수 없습니다.",
+      "instrument_keys": [
+        "be:flemish-cloud-strategy:2025",
+        "unknown:special-secretariat-foresight-presidency-government:2025"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-45841d353f01__0",
+          "item_ids": [
+            "oecd-navigator-1543"
+          ],
+          "instrument_key": "be:flemish-cloud-strategy:2025"
+        },
+        {
+          "bucket": "doc-45841d353f01__1",
+          "item_ids": [
+            "oecd-navigator-326"
+          ],
+          "instrument_key": "unknown:special-secretariat-foresight-presidency-government:2025"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-e32ad6da0f49",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "제목, 발행 주체 및 연도가 서로 달라 동일 법령·정책으로 판정하지 않음.",
+      "instrument_keys": [
+        "ibm:principles-for-trust-and-transparency:2020",
+        "information-culture-forum:intelligent-information-society-ethics-guidelines:2021",
+        "korea-ministry-of-land-infrastructure-and-transport:autonomous-driving-ethics-guidelines:2020",
+        "korea-ministry-of-science-and-ict:national-ai-ethics-criteria-draft:2020",
+        "unesco:recommendation-on-ethics-of-ai:2021"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-e32ad6da0f49__0",
+          "item_ids": [
+            "iaae-ethics-8994590"
+          ],
+          "instrument_key": "unesco:recommendation-on-ethics-of-ai:2021"
+        },
+        {
+          "bucket": "doc-e32ad6da0f49__1",
+          "item_ids": [
+            "iaae-ethics-6164587"
+          ],
+          "instrument_key": "information-culture-forum:intelligent-information-society-ethics-guidelines:2021"
+        },
+        {
+          "bucket": "doc-e32ad6da0f49__2",
+          "item_ids": [
+            "iaae-ethics-5511173"
+          ],
+          "instrument_key": "korea-ministry-of-land-infrastructure-and-transport:autonomous-driving-ethics-guidelines:2020"
+        },
+        {
+          "bucket": "doc-e32ad6da0f49__3",
+          "item_ids": [
+            "iaae-ethics-5511161"
+          ],
+          "instrument_key": "korea-ministry-of-science-and-ict:national-ai-ethics-criteria-draft:2020"
+        },
+        {
+          "bucket": "doc-e32ad6da0f49__4",
+          "item_ids": [
+            "iaae-ethics-5254001"
+          ],
+          "instrument_key": "ibm:principles-for-trust-and-transparency:2020"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-0fe68f2e527a",
+      "confirm_split": true,
+      "method": "rule_keys",
+      "confidence": "high",
+      "reason": "두 멤버의 제목과 정책 대상이 서로 달라 동일한 전략·정책으로 판정할 수 없습니다.",
+      "instrument_keys": [
+        "lv:ai-related-training-courses:2025",
+        "lv:bioeconomy-strategy:2025"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-0fe68f2e527a__0",
+          "item_ids": [
+            "oecd-navigator-1801"
+          ],
+          "instrument_key": "lv:bioeconomy-strategy:2025"
+        },
+        {
+          "bucket": "doc-0fe68f2e527a__1",
+          "item_ids": [
+            "oecd-navigator-1547"
+          ],
+          "instrument_key": "lv:ai-related-training-courses:2025"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-e631f7187b8a",
+      "confirm_split": true,
+      "method": "llm",
+      "confidence": "high",
+      "reason": "제목이 서로 다르고 제공된 메타데이터만으로 동일 제도의 번역·미러·중복 카드임을 확인할 수 없으므로 분리합니다.",
+      "instrument_keys": [
+        "cn:autonomous-driving-standards:2025",
+        "cn:vehicle-driving-automation-taxonomy:2025"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-e631f7187b8a__0",
+          "item_ids": [
+            "oecd-navigator-879"
+          ],
+          "instrument_key": ""
+        },
+        {
+          "bucket": "doc-e631f7187b8a__1",
+          "item_ids": [
+            "oecd-navigator-876"
+          ],
+          "instrument_key": ""
+        }
+      ]
+    },
+    {
+      "doc_id": "doc-a34628469a02",
+      "confirm_split": true,
+      "method": "llm",
+      "confidence": "high",
+      "reason": "첫 번째 항목은 인공지능 안전성 확보 가이드라인 단일 문서이고 두 번째 항목은 이를 포함한 네 개의 별도 가이드라인을 열거한 게시물이므로 동일한 제도로 볼 수 없다.",
+      "instrument_keys": [
+        "kr:인공지능-안전성-확보-가이드라인:2026"
+      ],
+      "clusters": [
+        {
+          "bucket": "doc-a34628469a02__0",
+          "item_ids": [
+            "derived-split-iaae-ethics-173516673-4"
+          ],
+          "instrument_key": ""
+        },
+        {
+          "bucket": "doc-a34628469a02__1",
+          "item_ids": [
+            "iaae-ethics-173516673"
+          ],
+          "instrument_key": ""
+        }
+      ]
+    }
+  ],
+  "cross_merges": [
+    {
+      "bucket": "cross:us:intelligence-authorization-act:2024",
+      "instrument_key": "us:intelligence-authorization-act:2024",
+      "item_ids": [
+        "agora-813",
+        "agora-814",
+        "agora-810",
+        "agora-809"
+      ],
+      "reason": "analyze dominant_key 동일"
+    }
+  ]
+}

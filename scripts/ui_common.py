@@ -8,8 +8,6 @@ from pathlib import Path
 
 NAV_ITEMS = [
     ("index.html", "라이브러리"),
-    ("documents.html", "문서"),
-    ("clusters.html", "클러스터"),
     ("about.html", "소개"),
 ]
 
@@ -31,7 +29,9 @@ def _coop():
 
 
 _COOP = _coop()
-NAV_CSS = _COOP.NAV_CSS
+NAV_CSS = _COOP.NAV_CSS + """
+.org-flag { font-style: normal; font-size: 1.05em; line-height: 1; margin-right: 4px; }
+"""
 THEME_JS = _COOP.THEME_JS
 
 
@@ -62,7 +62,7 @@ def shell_html(current: str, title: str) -> str:
 
 def omnibox_html() -> str:
     return """<div class="omni-wrap">
-  <input id="omniBox" type="search" placeholder="문서 · 클러스터 검색  ( / )" autocomplete="off">
+    <input id="omniBox" type="search" placeholder="약칭 · 주제 · 기관 · 핵심내용  ( / )" autocomplete="off">
   <div id="omniResults" class="omni-results hidden"></div>
 </div>"""
 
@@ -72,56 +72,30 @@ def safe_json(obj) -> str:
 
 
 def omnibox_boot_script(search_index_json: str) -> str:
+    # 목록 필터는 페이지 스크립트가 #omniBox input으로 처리. 여기선 / 포커스만.
     return f"""<script id="search-index" type="application/json">{search_index_json}</script>
 <script>
 (function() {{
-  const IDX = JSON.parse(document.getElementById('search-index').textContent);
   const box = document.getElementById('omniBox');
   const panel = document.getElementById('omniResults');
-  if (!box || !panel) return;
-  function esc(s) {{
-    return String(s ?? '').replace(/[&<>"']/g, c => ({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}}[c]));
-  }}
-  function hay(parts) {{ return parts.join(' ').toLowerCase(); }}
-  function render() {{
-    const q = box.value.trim().toLowerCase();
-    if (!q) {{ panel.classList.add('hidden'); panel.innerHTML = ''; return; }}
-    const docs = (IDX.docs || []).filter(d => hay([d.title, d.org, d.col, d.id]).includes(q)).slice(0, 8);
-    const clusters = (IDX.clusters || []).filter(c => hay([c.title, c.kind, c.id]).includes(q)).slice(0, 6);
-    let html = '';
-    if (docs.length) {{
-      html += '<div class="omni-sec">문서</div>';
-      docs.forEach(d => {{
-        html += `<a class="omni-hit" href="documents.html#${{encodeURIComponent(d.id)}}"><span class="muted">${{esc(d.date)}}</span> <b>${{esc(d.title)}}</b></a>`;
-      }});
-    }}
-    if (clusters.length) {{
-      html += '<div class="omni-sec">클러스터</div>';
-      clusters.forEach(c => {{
-        html += `<a class="omni-hit" href="clusters.html#${{encodeURIComponent(c.id)}}"><b>${{esc(c.title)}}</b> <span class="muted">${{esc(c.kindLabel || c.kind)}} · ${{c.size}}건</span></a>`;
-      }});
-    }}
-    panel.innerHTML = html || '<div class="omni-empty">검색 결과가 없습니다.</div>';
-    panel.classList.remove('hidden');
-  }}
-  box.addEventListener('input', render);
-  box.addEventListener('focus', render);
+  if (!box) return;
+  if (panel) panel.classList.add('hidden');
   document.addEventListener('keydown', (ev) => {{
     if (ev.key === '/' && ev.target.tagName !== 'INPUT' && ev.target.tagName !== 'TEXTAREA') {{
       ev.preventDefault();
       box.focus();
     }}
-    if (ev.key === 'Escape') panel.classList.add('hidden');
-  }});
-  document.addEventListener('click', (ev) => {{
-    if (!ev.target.closest('.omni-wrap')) panel.classList.add('hidden');
+    if (ev.key === 'Escape') {{
+      box.blur();
+      if (panel) panel.classList.add('hidden');
+    }}
   }});
 }})();
 </script>"""
 
 
 def page_chrome(current: str, search_index=None, title: str = ""):
-    idx = search_index or {"docs": [], "clusters": []}
+    idx = search_index or {"docs": []}
     titles = dict(NAV_ITEMS)
     return {
         "shell": shell_html(current, title or titles.get(current, "")),

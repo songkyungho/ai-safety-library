@@ -1,0 +1,21 @@
+id,kind,size,title,reasons,years,countries,n_url,n_init
+cluster-0003,same-document,4,Recommendation of the Council on Artificial Intelligence (5/2/2024),years=2019|2020|2024,2019|2020|2024,OECD,4,1
+cluster-0005,same-document,3,G7 Toolkit for Artificial Intelligence in the Public Sector,oecd_inits=2,2024,G7,3,2
+cluster-0008,same-document,3,NIST AI Risk Management Framework 1.0,years=2023|2024,2023|2024,United States,3,1
+cluster-0010,same-document,2,A pro-innovation approach to AI regulation,years=2023|2024,2023|2024,United Kingdom,2,1
+cluster-0017,same-document,2,European Coordinated Plan on Artificial Intelligence,years=2019|2025,2019|2025,OECD,2,1
+cluster-0027,same-document,2,Model AI Governance Framework,years=2019|2026,2019|2026,Singapore,2,1
+cluster-0033,duplicate-record,2,AI Research Resource (AIRR),oecd_inits=2;years=2023|2025,2023|2025,United Kingdom,2,2
+cluster-0034,duplicate-record,2,AI Sovereign Compute Infrastructure Program (AI SCIP) / Canadian Sovereign AI Compute Strategy,oecd_inits=2,2024,Canada,2,2
+cluster-0035,duplicate-record,2,AU Data Policy Framework,oecd_inits=2,2022,,2,2
+cluster-0036,duplicate-record,2,CSIRO ML and AI Future Science Platform,oecd_inits=2,2018,Australia,2,2
+cluster-0037,duplicate-record,2,Declaration on AI in the Nordic-Baltic Region,countries=2;oecd_inits=2;same-col-multi-country,2019,Estonia|Latvia,2,2
+cluster-0038,duplicate-record,2,Federal Register Doc. No. 2024-28335 (Securing the Information and Communications Technology and Services Supply Chain),years=2021|2025,2021|2025,United States,2,0
+cluster-0039,duplicate-record,2,Flemish AI Action Plan,oecd_inits=2,2019,Belgium,2,2
+cluster-0041,duplicate-record,2,G7 Hiroshima Process on Generative Artificial Intelligence,oecd_inits=2,2023,,2,2
+cluster-0042,duplicate-record,2,Improvements in the Efficiency of Public Spending Through the Appropriate Use of Digital Technologies in the Costa Rican,oecd_inits=2,2018,Costa Rica,2,2
+cluster-0044,duplicate-record,2,National Laboratory for AI,oecd_inits=2,2020,Costa Rica,2,2
+cluster-0045,duplicate-record,2,National Platform of Technologies and Semiconductors ,oecd_inits=2;years=2024|2025,2024|2025,Romania,2,2
+cluster-0050,duplicate-record,2,Operational Plan for the WINWIN Strategy for the Digital Development of Innovation Activity in Ukraine until 2030: Measu,oecd_inits=2;years=2024|2025,2024|2025,Ukraine,2,2
+cluster-0051,duplicate-record,2,Transitional study support,oecd_inits=2,2022,Sweden,2,2
+cluster-0053,duplicate-record,2,Voluntary Code of Conduct on the Responsible Development and Management of Advanced Generative AI Systems,oecd_inits=2,2023,Canada,2,2

@@ -1,176 +1,546 @@
 #!/usr/bin/env python3
-"""Build the library static site using the international-cooperation page chrome."""
+"""Build the library static site (canonical documents + publish history)."""
 from __future__ import annotations
 
+import html as html_lib
 import json
+import re
 import sys
 from collections import Counter
 from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from ui_common import page_chrome, safe_json
+from build_documents import build_documents  # noqa: E402
+from library_common import write_json  # noqa: E402
+from ui_common import page_chrome, safe_json  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 DIST = ROOT / "dist"
 TODAY = date.today().isoformat()
 
-COLLECTIONS = [
-    ("mofa-governance", "외교부 거버넌스", "igo", "UN·G7·OECD 등 국제 문서"),
-    ("mofa-country-policy", "외교부 국가정책", "government", "미국·중국·EU·일본·영국 정책"),
-    ("iaae-ethics", "IAAE", "assoc", "윤리 원칙·가이드라인"),
-    ("agora", "AGORA", "law", "법·규정·표준 원문"),
-    ("oecd-navigator", "OECD Navigator", "igo", "국가·기구 AI 정책 이니셔티브"),
-]
-COL_LABEL = {k: lab for k, lab, *_ in COLLECTIONS}
-COL_SECTOR = {k: sec for k, _, sec, _ in COLLECTIONS}
-KIND_LABEL = {
-    "same-document": "교차 문서",
-    "same-act": "같은 법률",
-    "duplicate-record": "중복 레코드",
-}
 FOOTER_HTML = (
     '<footer class="site-footer">'
     "AI 안전 라이브러리 · 만든 사람: 인공지능안전연구소(Korea AISI) 송경호 · "
     '<a href="mailto:songkyungho@etri.re.kr">songkyungho@etri.re.kr</a><br>'
-    "디자인: 국제협력 트래커와 같은 톤 · AGORA 데이터셋 CC BY-NC 4.0 · "
-    '<a href="about.html">소개</a>'
+    "원본 랜딩 URL 기준 · 발표 히스토리 · AGORA CC BY-NC 4.0"
     "</footer>"
 )
+# AI Safety Digest topic/chip palette → document kinds (light, dark).
+KIND_COLORS = {
+    "법": ("#1d4ed8", "#93c5fd"),
+    "법안": ("#be123c", "#fb7185"),
+    "행정규칙": ("#0369a1", "#7dd3fc"),
+    "조약·협약": ("#4338ca", "#a5b4fc"),
+    "선언·성명": ("#a16207", "#fbbf24"),
+    "가이드라인·원칙": ("#0f766e", "#5eead4"),
+    "전략·정책": ("#c2410c", "#fdba8c"),
+    "정책보고서": ("#474284", "#b0acd8"),
+    "표준": ("#7c3aed", "#c4b5fd"),
+    "기구·제도": ("#3d3a6e", "#b8b4d0"),
+    "뉴스·보도": ("#b44a58", "#ed7787"),
+    "기타": ("#534f4a", "#c4bdb4"),
+}
+KIND_SLUG = {
+    "법": "law",
+    "법안": "bill",
+    "행정규칙": "admin",
+    "조약·협약": "treaty",
+    "선언·성명": "declaration",
+    "가이드라인·원칙": "guideline",
+    "전략·정책": "strategy",
+    "정책보고서": "report",
+    "표준": "standard",
+    "기구·제도": "institution",
+    "뉴스·보도": "news",
+    "기타": "other",
+}
+
+# AI 안전 핵심 키워드 (표시 라벨, 매칭 패턴). 순서 = 우선순위.
+KEYWORD_RULES: list[tuple[str, list[str]]] = [
+    ("AI 안전", [r"ai\s*safety", r"인공지능\s*안전", r"AI\s*안전"]),
+    ("안전성", [r"안전성", r"\bsafety\b", r"safe\s*ai"]),
+    ("프론티어", [r"프론티어", r"frontier"]),
+    ("정렬", [r"\balignment\b", r"정렬"]),
+    ("레드팀", [r"red\s*team", r"레드팀"]),
+    ("위험관리", [r"위험\s*관리", r"위험관리", r"risk\s*management", r"high[-\s]?risk", r"고위험"]),
+    ("거버넌스", [r"governan", r"거버넌스"]),
+    ("프레임워크", [r"프레임워크", r"framework"]),
+    ("투명성", [r"투명성", r"transpar"]),
+    ("설명가능성", [r"설명\s*가능", r"explainab"]),
+    ("책무성", [r"책무", r"accountability", r"책임\s*있는\s*AI", r"responsible\s*ai"]),
+    ("공정성", [r"공정성", r"fairness", r"편향", r"\bbias\b", r"차별"]),
+    ("개인정보", [r"개인정보", r"privacy", r"data\s*protection"]),
+    ("평가", [r"평가", r"evaluat", r"audit", r"감사", r"benchmark", r"적합성"]),
+    ("가이드라인", [r"가이드라인", r"guideline", r"(?<![a-z])guidance(?![a-z])", r"지침"]),
+    ("표준", [r"\bstandard", r"표준", r"iso/?iec"]),
+    ("규제", [r"regulat", r"규제", r"AI\s*Act", r"AI\s*기본법"]),
+    ("윤리", [r"ethic", r"윤리"]),
+    ("보안", [r"\bsecurit", r"보안", r"cybersecurity", r"사이버보안"]),
+    ("사고", [r"incident", r"사고"]),
+    ("딥페이크", [r"deepfake", r"딥페이크", r"합성\s*미디어"]),
+    ("오픈웨이트", [r"open[-\s]?weight", r"오픈\s*웨이트", r"오픈소스\s*모델"]),
+    ("가드레일", [r"guardrail", r"안전장치"]),
+    ("인권", [r"human\s*rights", r"인권"]),
+    ("신뢰", [r"trustworth", r"신뢰\s*가능", r"신뢰할\s*수\s*있는"]),
+]
+
+_KEYWORD_COMPILED = [
+    (label, [re.compile(p, re.I) for p in pats]) for label, pats in KEYWORD_RULES
+]
+
+
+def extract_keywords(*parts: str, limit: int = 8) -> list[str]:
+    hay = " ".join(p for p in parts if p)
+    if not hay:
+        return []
+    out: list[str] = []
+    for label, regs in _KEYWORD_COMPILED:
+        if any(r.search(hay) for r in regs):
+            out.append(label)
+            if len(out) >= limit:
+                break
+    return out
+
+
+def enrich_keywords(docs: list[dict]) -> list[dict]:
+    for d in docs:
+        d["keywords"] = extract_keywords(
+            d.get("summary") or "",
+            d.get("snippet") or "",
+            d.get("short_name") or "",
+            d.get("full_name") or "",
+            d.get("original_name") or "",
+            d.get("title") or "",
+            d.get("doc_kind") or "",
+            d.get("org") or "",
+        )
+    return docs
+
+
+def render_kind_trend(docs: list[dict], *, from_year: int = 2017) -> str:
+    """문서종류별 월간 건수 누적 막대. from_year 미만은 한 막대로 묶음."""
+    from parse_meta import DOC_KINDS
+
+    by_key: dict[str, Counter] = {}
+    kind_totals: Counter = Counter()
+    pre_label = f"{from_year} 이전"
+    month_hi = ""
+    for d in docs:
+        pub = (d.get("published") or "").strip()
+        y = pub[:4]
+        if len(y) != 4 or not y.isdigit():
+            continue
+        yi = int(y)
+        kind = d.get("doc_kind") or "기타"
+        if yi < from_year:
+            key = pre_label
+        else:
+            m = pub[5:7] if len(pub) >= 7 and pub[5:7].isdigit() else "01"
+            key = f"{y}-{m}"
+            if key > month_hi:
+                month_hi = key
+        by_key.setdefault(key, Counter())[kind] += 1
+        kind_totals[kind] += 1
+    if not by_key:
+        return ""
+
+    keys: list[str] = []
+    if pre_label in by_key:
+        keys.append(pre_label)
+    if month_hi:
+        y, m = from_year, 1
+        ey, em = int(month_hi[:4]), int(month_hi[5:7])
+        while (y, m) <= (ey, em):
+            keys.append(f"{y:04d}-{m:02d}")
+            m += 1
+            if m > 12:
+                m = 1
+                y += 1
+    elif not keys:
+        return ""
+
+    series = [k for k in DOC_KINDS if kind_totals.get(k)]
+    if not series:
+        return ""
+
+    pad_l, pad_r, pad_t, pad_b = 42, 6, 10, 24
+    plot_h = 200
+    n = len(keys)
+    slot = 10 if n > 90 else (12 if n > 60 else (16 if n > 36 else 22))
+    plot_w = max(560, int(n * slot))
+    w, h = pad_l + plot_w + pad_r, pad_t + plot_h + pad_b
+    peak = max((sum(by_key.get(k, Counter()).values()) for k in keys), default=1)
+    y_max = max(1, int(((peak + 4) // 5) * 5))
+    if y_max < peak:
+        y_max = peak
+    slot_w = plot_w / n
+    bar_w = max(3.5, slot_w * 0.72)
+
+    def y_of(v: float) -> float:
+        return pad_t + plot_h - (v / y_max) * plot_h
+
+    parts: list[str] = [
+        f'<svg class="trend-svg" viewBox="0 0 {w} {h}" role="img" '
+        f'aria-label="문서종류별 월간 발표 건수">'
+    ]
+    for g in range(5):
+        gy = pad_t + plot_h * g / 4
+        val = y_max * (4 - g) / 4
+        parts.append(
+            f'<line x1="{pad_l}" x2="{w - pad_r}" y1="{gy:.1f}" y2="{gy:.1f}" '
+            f'class="trend-grid" />'
+            f'<text x="{pad_l - 6}" y="{gy + 3:.1f}" class="trend-axis" '
+            f'text-anchor="end">{val:.0f}</text>'
+        )
+
+    for i, key in enumerate(keys):
+        x = pad_l + i * slot_w + (slot_w - bar_w) / 2
+        counts = by_key.get(key, Counter())
+        cum = 0
+        for kind in series:
+            v = int(counts.get(kind) or 0)
+            if v <= 0:
+                continue
+            y1, y2 = y_of(cum + v), y_of(cum)
+            color = KIND_COLORS.get(kind, KIND_COLORS["기타"])[0]
+            tip = f"{key} · {kind}: {v}건"
+            parts.append(
+                f'<rect x="{x:.1f}" y="{y1:.1f}" width="{bar_w:.1f}" '
+                f'height="{max(0.5, y2 - y1):.1f}" '
+                f'fill="{html_lib.escape(color, quote=True)}">'
+                f"<title>{html_lib.escape(tip)}</title>"
+                f"</rect>"
+            )
+            cum += v
+
+        # Axis: pre bucket + each January + last month
+        show = False
+        lab = key
+        if key == pre_label:
+            show, lab = True, pre_label
+        elif key.endswith("-01"):
+            show, lab = True, key[:4]
+        elif i == n - 1:
+            show, lab = True, key[2:].replace("-", "/")
+        if show:
+            parts.append(
+                f'<text x="{x + bar_w / 2:.1f}" y="{h - 4}" class="trend-axis" '
+                f'text-anchor="middle">{html_lib.escape(lab)}</text>'
+            )
+    parts.append("</svg>")
+
+    legend = []
+    for kind in series:
+        color = KIND_COLORS.get(kind, KIND_COLORS["기타"])[0]
+        legend.append(
+            f'<span class="trend-legend-item">'
+            f'<span class="trend-swatch" style="background:{html_lib.escape(color, quote=True)}"></span>'
+            f"{html_lib.escape(kind)}"
+            f'<span class="n">{kind_totals[kind]}</span></span>'
+        )
+    if pre_label in keys and month_hi:
+        span = f"{pre_label} + {from_year}-01~{month_hi}"
+    elif month_hi:
+        span = f"{from_year}-01 ~ {month_hi}"
+    else:
+        span = pre_label
+    return f"""<section class="trend-section">
+  <h2 class="trend-title">문서종류별 월간 추이</h2>
+  <div class="trend-sub">{html_lib.escape(span)} · 월별 누적 건수</div>
+  <div class="trend-chart-wrap">{"".join(parts)}</div>
+  <div class="trend-legend">{"".join(legend)}</div>
+</section>"""
+
+
 EXTRA_CSS = """
 .timeline { position: relative; padding-left: 20px; }
 .timeline::before { content: ""; position: absolute; left: 4px; top: 6px; bottom: 6px; width: 2px; background: var(--baseline); }
-.month-group { margin-bottom: 6px; }
-.month-header { cursor: pointer; font-weight: 600; font-size: 17px; letter-spacing: -0.37px; padding: 8px 0; color: var(--ink); user-select: none; }
-.month-header .muted { font-weight: 400; margin-left: 4px; }
-.event-card, .month-header, .dir-row { font: inherit; color: inherit; }
-button.event-card, button.month-header, button.dir-row { cursor: pointer; background: var(--surface-1); }
-button.month-header { background: transparent; border: 0; width: 100%; text-align: left; }
+.year-group { margin-bottom: 8px; scroll-margin-top: 72px; }
+.year-header {
+  cursor: pointer; font: inherit; font-weight: 600; font-size: 17px; letter-spacing: -0.37px;
+  padding: 8px 0; color: var(--ink); user-select: none;
+  background: transparent; border: 0; width: 100%; text-align: left;
+}
+.year-header .muted { font-weight: 400; margin-left: 4px; color: var(--text-muted); }
+.event-card, .year-header, .dir-row, .year-nav-item { font: inherit; color: inherit; }
+.event-card, button.dir-row { cursor: pointer; background: var(--surface-1); }
+.event-card { border: 1px solid var(--hairline); border-radius: 14px; display: block; }
 button.back-link { font: inherit; background: none; border: 0; padding: 0; }
+.year-nav {
+  position: fixed; right: 16px; top: 50%;
+  transform: translateY(-50%); z-index: 40;
+  display: flex; flex-direction: column; gap: 2px;
+  max-height: 70vh; overflow-y: auto; padding: 8px 6px;
+  border: 1px solid var(--hairline); border-radius: 12px;
+  background: color-mix(in srgb, var(--surface-1) 92%, transparent);
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 4px 20px color-mix(in srgb, var(--ink) 8%, transparent);
+}
+.year-nav.hidden { display: none; }
+.year-nav-item {
+  appearance: none; border: 0; background: transparent; cursor: pointer;
+  padding: 4px 8px; border-radius: 8px; font-size: 12px;
+  font-variant-numeric: tabular-nums; color: var(--text-muted);
+  text-align: center; line-height: 1.2;
+}
+.year-nav-item:hover { color: var(--ink); background: color-mix(in srgb, var(--ink) 6%, transparent); }
+.year-nav-item.active { color: var(--ink); font-weight: 600; }
+@media (max-width: 960px) {
+  .year-nav { right: 10px; padding: 6px 4px; }
+  .year-nav-item { padding: 3px 6px; font-size: 11px; }
+}
+@media (max-width: 720px) {
+  .year-nav { display: none; }
+}
 .event-card { position: relative; padding: 16px 18px; margin-bottom: 12px; }
+.event-card.open { border-color: color-mix(in srgb, var(--c-l) 35%, var(--hairline)); }
 .event-card::before { content: ""; position: absolute; left: -20px; top: 18px; width: 10px; height: 10px; border-radius: 50%; background: var(--c-l); border: 2px solid var(--plane); }
 @media (prefers-color-scheme: dark) { :root:where(:not([data-theme="light"])) .event-card::before { background: var(--c-d); } }
 :root[data-theme="dark"] .event-card::before { background: var(--c-d); }
 .event-head { display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline; margin-bottom: 4px; }
 .event-date { font-variant-numeric: tabular-nums; color: var(--text-muted); font-size: 12px; }
 .event-summary { margin: 6px 0; font-size: 17px; line-height: 1.47; letter-spacing: -0.37px; }
-.event-section { font-size: 14px; margin-top: 6px; }
-.chiplist { display: inline-flex; flex-wrap: wrap; gap: 6px; }
-.tag { background: var(--plane); border: 1px solid var(--hairline); border-radius: 999px; padding: 1px 8px; font-size: 12px; color: var(--text-secondary); }
-.linklist a { font-size: 14px; margin-right: 10px; }
-a.stat-tile, a.dir-row { text-decoration: none; color: inherit; }
+.event-summary a.event-title {
+  color: inherit; text-decoration: none; font-weight: inherit;
+}
+.event-summary a.event-title:hover { text-decoration: underline; text-underline-offset: 3px; }
+.event-body { display: none; margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--hairline); }
+.event-card.open .event-body { display: block; }
+.event-body p { margin: 0; font-size: 14px; line-height: 1.55; color: var(--text-secondary); white-space: pre-wrap; }
+a.stat-tile, a.dir-row, a.filter-chip { text-decoration: none; color: inherit; }
 .dir-row .org { min-width: 0; flex: 1 1 240px; }
+.filter-toolbar {
+  display: flex; flex-wrap: wrap; gap: 6px; align-items: center;
+  margin: 0 0 20px;
+}
+a.filter-chip, button.filter-chip {
+  display: inline-flex; align-items: center; gap: 5px;
+  border: 1px solid var(--hairline); background: transparent;
+  color: var(--text-secondary); border-radius: 999px;
+  padding: 3px 10px; font: inherit; font-size: 12px; line-height: 1.35;
+  cursor: pointer; white-space: nowrap;
+}
+a.filter-chip:hover, button.filter-chip:hover { color: var(--ink); border-color: var(--text-muted); }
+a.filter-chip .n, button.filter-chip .n {
+  font-variant-numeric: tabular-nums; color: var(--text-muted); font-size: 11px;
+}
+a.filter-chip.kind-badge, button.filter-chip.kind-badge {
+  background: color-mix(in srgb, var(--chip) 14%, var(--surface-1));
+  color: var(--chip);
+  border-color: color-mix(in srgb, var(--chip) 32%, var(--hairline));
+  font-weight: 600;
+}
+a.filter-chip.kind-badge .n, button.filter-chip.kind-badge .n {
+  color: color-mix(in srgb, var(--chip) 65%, var(--text-muted));
+}
+button.filter-more {
+  border: 1px dashed var(--hairline); background: transparent;
+  color: var(--text-muted); border-radius: 999px;
+  padding: 3px 10px; font: inherit; font-size: 12px; cursor: pointer;
+}
+button.filter-more:hover { color: var(--ink); border-color: var(--text-muted); }
+.filter-toolbar .filter-more-wrap { display: contents; }
+.filter-toolbar .filter-more-wrap.hidden { display: none; }
+.sort-toggle.filter-toolbar { display: flex; }
+.sort-toggle.filter-toolbar button.filter-chip,
+.sort-toggle.filter-toolbar button.filter-more {
+  border-radius: 999px; padding: 3px 10px; font-size: 12px;
+  background: transparent;
+}
+.sort-toggle.filter-toolbar button.filter-chip.kind-badge {
+  background: color-mix(in srgb, var(--chip) 14%, var(--surface-1));
+}
+.sort-toggle.filter-toolbar button.active {
+  border-color: var(--accent-focus); color: var(--ink); font-weight: 600;
+}
+.badge.kind-badge {
+  font-size: 11px; font-weight: 600; border-radius: 999px; padding: 2px 8px;
+  background: color-mix(in srgb, var(--chip) 14%, var(--surface-1));
+  color: var(--chip);
+  border: 1px solid color-mix(in srgb, var(--chip) 32%, var(--hairline));
+}
+.event-summary .status-badge {
+  display: inline-block; vertical-align: middle; margin-left: 8px;
+  font-size: 11px; font-weight: 500; letter-spacing: -0.02em;
+  padding: 1px 7px; border-radius: 6px; white-space: nowrap;
+  border: 1px solid var(--hairline); color: var(--text-secondary); background: var(--surface-1);
+}
+.event-summary .status-badge.status-enacted {
+  color: #1d4ed8; border-color: color-mix(in srgb, #1d4ed8 28%, var(--hairline));
+  background: color-mix(in srgb, #1d4ed8 8%, var(--surface-1));
+}
+.event-summary .status-badge.status-amended {
+  color: #a16207; border-color: color-mix(in srgb, #a16207 28%, var(--hairline));
+  background: color-mix(in srgb, #a16207 8%, var(--surface-1));
+}
+.event-summary .status-badge.status-pending {
+  color: #be123c; border-color: color-mix(in srgb, #be123c 28%, var(--hairline));
+  background: color-mix(in srgb, #be123c 8%, var(--surface-1));
+}
+.event-summary .status-badge.status-defunct {
+  color: #6b7280; border-color: color-mix(in srgb, #6b7280 28%, var(--hairline));
+  background: color-mix(in srgb, #6b7280 8%, var(--surface-1));
+}
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme="light"])) .event-summary .status-badge.status-enacted { color: #93c5fd; }
+  :root:where(:not([data-theme="light"])) .event-summary .status-badge.status-amended { color: #fbbf24; }
+  :root:where(:not([data-theme="light"])) .event-summary .status-badge.status-pending { color: #fb7185; }
+  :root:where(:not([data-theme="light"])) .event-summary .status-badge.status-defunct { color: #9ca3af; }
+}
+:root[data-theme="dark"] .event-summary .status-badge.status-enacted { color: #93c5fd; }
+:root[data-theme="dark"] .event-summary .status-badge.status-amended { color: #fbbf24; }
+:root[data-theme="dark"] .event-summary .status-badge.status-pending { color: #fb7185; }
+:root[data-theme="dark"] .event-summary .status-badge.status-defunct { color: #9ca3af; }
+.badge.kind-law, .filter-chip.kind-law { --chip: #1d4ed8; }
+.badge.kind-bill, .filter-chip.kind-bill { --chip: #be123c; }
+.badge.kind-admin, .filter-chip.kind-admin { --chip: #0369a1; }
+.badge.kind-treaty, .filter-chip.kind-treaty { --chip: #4338ca; }
+.badge.kind-declaration, .filter-chip.kind-declaration { --chip: #a16207; }
+.badge.kind-guideline, .filter-chip.kind-guideline { --chip: #0f766e; }
+.badge.kind-strategy, .filter-chip.kind-strategy { --chip: #c2410c; }
+.badge.kind-report, .filter-chip.kind-report { --chip: #474284; }
+.badge.kind-standard, .filter-chip.kind-standard { --chip: #7c3aed; }
+.badge.kind-institution, .filter-chip.kind-institution { --chip: #3d3a6e; }
+.badge.kind-news, .filter-chip.kind-news { --chip: #b44a58; }
+.badge.kind-other, .filter-chip.kind-other { --chip: #534f4a; }
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme="light"])) .badge.kind-law,
+  :root:where(:not([data-theme="light"])) .filter-chip.kind-law { --chip: #93c5fd; }
+  :root:where(:not([data-theme="light"])) .badge.kind-bill,
+  :root:where(:not([data-theme="light"])) .filter-chip.kind-bill { --chip: #fb7185; }
+  :root:where(:not([data-theme="light"])) .badge.kind-admin,
+  :root:where(:not([data-theme="light"])) .filter-chip.kind-admin { --chip: #7dd3fc; }
+  :root:where(:not([data-theme="light"])) .badge.kind-treaty,
+  :root:where(:not([data-theme="light"])) .filter-chip.kind-treaty { --chip: #a5b4fc; }
+  :root:where(:not([data-theme="light"])) .badge.kind-declaration,
+  :root:where(:not([data-theme="light"])) .filter-chip.kind-declaration { --chip: #fbbf24; }
+  :root:where(:not([data-theme="light"])) .badge.kind-guideline,
+  :root:where(:not([data-theme="light"])) .filter-chip.kind-guideline { --chip: #5eead4; }
+  :root:where(:not([data-theme="light"])) .badge.kind-strategy,
+  :root:where(:not([data-theme="light"])) .filter-chip.kind-strategy { --chip: #fdba8c; }
+  :root:where(:not([data-theme="light"])) .badge.kind-report,
+  :root:where(:not([data-theme="light"])) .filter-chip.kind-report { --chip: #b0acd8; }
+  :root:where(:not([data-theme="light"])) .badge.kind-standard,
+  :root:where(:not([data-theme="light"])) .filter-chip.kind-standard { --chip: #c4b5fd; }
+  :root:where(:not([data-theme="light"])) .badge.kind-institution,
+  :root:where(:not([data-theme="light"])) .filter-chip.kind-institution { --chip: #b8b4d0; }
+  :root:where(:not([data-theme="light"])) .badge.kind-news,
+  :root:where(:not([data-theme="light"])) .filter-chip.kind-news { --chip: #ed7787; }
+  :root:where(:not([data-theme="light"])) .badge.kind-other,
+  :root:where(:not([data-theme="light"])) .filter-chip.kind-other { --chip: #c4bdb4; }
+}
+:root[data-theme="dark"] .badge.kind-law, :root[data-theme="dark"] .filter-chip.kind-law { --chip: #93c5fd; }
+:root[data-theme="dark"] .badge.kind-bill, :root[data-theme="dark"] .filter-chip.kind-bill { --chip: #fb7185; }
+:root[data-theme="dark"] .badge.kind-admin, :root[data-theme="dark"] .filter-chip.kind-admin { --chip: #7dd3fc; }
+:root[data-theme="dark"] .badge.kind-treaty, :root[data-theme="dark"] .filter-chip.kind-treaty { --chip: #a5b4fc; }
+:root[data-theme="dark"] .badge.kind-declaration, :root[data-theme="dark"] .filter-chip.kind-declaration { --chip: #fbbf24; }
+:root[data-theme="dark"] .badge.kind-guideline, :root[data-theme="dark"] .filter-chip.kind-guideline { --chip: #5eead4; }
+:root[data-theme="dark"] .badge.kind-strategy, :root[data-theme="dark"] .filter-chip.kind-strategy { --chip: #fdba8c; }
+:root[data-theme="dark"] .badge.kind-report, :root[data-theme="dark"] .filter-chip.kind-report { --chip: #b0acd8; }
+:root[data-theme="dark"] .badge.kind-standard, :root[data-theme="dark"] .filter-chip.kind-standard { --chip: #c4b5fd; }
+:root[data-theme="dark"] .badge.kind-institution, :root[data-theme="dark"] .filter-chip.kind-institution { --chip: #b8b4d0; }
+:root[data-theme="dark"] .badge.kind-news, :root[data-theme="dark"] .filter-chip.kind-news { --chip: #ed7787; }
+:root[data-theme="dark"] .badge.kind-other, :root[data-theme="dark"] .filter-chip.kind-other { --chip: #c4bdb4; }
 .thread-item { border-left: 2px solid var(--gridline); padding: 4px 0 14px 14px; margin-bottom: 4px; position: relative; }
 .thread-item::before { content: ""; position: absolute; left: -5px; top: 6px; width: 8px; height: 8px; border-radius: 50%; background: var(--text-muted); }
 .thread-date { font-size: 12px; color: var(--text-muted); font-variant-numeric: tabular-nums; }
 .thread-summary { margin: 4px 0; font-size: 14px; }
 .detail .sub { color: var(--text-secondary); font-size: 14px; margin-bottom: 18px; }
-.col-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
-"""
-SHARED_JS = r"""
-function escapeHtml(s) {
-  return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+.flag-inline { margin-right: 6px; }
+.country-chip { font-size: 12px; color: var(--text-secondary); }
+.event-full { margin-top: 2px; font-size: 13px; line-height: 1.4; }
+.original-name { font-style: normal; opacity: 0.85; }
+.meta-table th { width: 7em; vertical-align: top; color: var(--text-secondary); font-weight: 500; }
+.meta-table td { white-space: pre-wrap; }
+
+.trend-section { margin: 0 0 24px; padding-bottom: 16px; border-bottom: 1px solid var(--hairline); }
+.trend-title { font-size: 1.05rem; letter-spacing: -0.3px; margin: 0 0 2px; color: var(--ink); }
+.trend-sub { color: var(--text-muted); font-size: 0.82rem; margin-bottom: 10px; }
+.trend-legend {
+  display: flex; flex-wrap: wrap; gap: 8px 14px; margin-top: 10px;
+  font-size: 0.75rem; color: var(--text-muted);
 }
-function colRibbon(col) {
-  const m = COLS[col];
-  if (!m) return '';
-  return `<span class="org-decor"><span class="org-ribbon sector-${escapeHtml(m.sector)}">${escapeHtml(m.short)}</span></span>`;
+.trend-legend-item { display: inline-flex; align-items: center; gap: 6px; }
+.trend-legend-item .n { font-variant-numeric: tabular-nums; opacity: 0.8; }
+.trend-swatch { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+.trend-chart-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.trend-svg { display: block; width: 100%; min-width: 640px; height: auto; }
+.trend-grid { stroke: var(--baseline); stroke-width: 1; }
+.trend-axis { fill: var(--text-muted); font-size: 9px; font-family: inherit; }
+.kw-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.kw-tag {
+  display: inline-flex; align-items: center;
+  border: 1px solid var(--hairline); border-radius: 999px;
+  padding: 2px 8px; font-size: 11px; color: var(--text-secondary);
+  background: color-mix(in srgb, var(--surface-2, var(--surface-1)) 80%, transparent);
+}
+.topic-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
+.topic-tag {
+  display: inline-flex; align-items: center; gap: 3px;
+  border-radius: 999px; padding: 2px 8px; font-size: 11px; font-weight: 600;
+  color: var(--topic); border: 1px solid color-mix(in srgb, var(--topic) 35%, var(--hairline));
+  background: color-mix(in srgb, var(--topic) 12%, var(--surface-1));
+}
+button.filter-chip.topic-chip {
+  color: var(--topic); border-color: color-mix(in srgb, var(--topic) 32%, var(--hairline));
+  background: color-mix(in srgb, var(--topic) 12%, var(--surface-1)); font-weight: 600;
+}
+button.filter-chip.topic-chip .n {
+  color: color-mix(in srgb, var(--topic) 65%, var(--text-muted));
+}
+.sort-toggle.filter-toolbar button.filter-chip.topic-chip.active {
+  border-color: var(--topic); color: var(--topic);
 }
 """
 
 
-def load_docs() -> list[dict]:
-    cluster_of = {}
-    clusters_path = ROOT / "clusters" / "clusters.json"
-    if clusters_path.exists():
-        blob = json.loads(clusters_path.read_text(encoding="utf-8"))
-        for c in blob.get("clusters") or []:
-            for m in c.get("members") or []:
-                cluster_of[m["id"]] = c["id"]
-    docs = []
-    for key, label, sector, _blurb in COLLECTIONS:
-        data = json.loads((ROOT / "collections" / key / "items.json").read_text(encoding="utf-8"))
-        for it in data.get("items") or []:
-            body = (it.get("body") or "").strip()
-            src = it.get("source_urls") or []
-            if isinstance(src, str):
-                src = [u for u in src.split(" | ") if u]
-            docs.append(
-                {
-                    "id": it["id"],
-                    "title": it.get("title") or "",
-                    "col": key,
-                    "date": it.get("date") or "",
-                    "org": it.get("org") or "",
-                    "cat": it.get("category") or "",
-                    "url": it.get("page_url") or "",
-                    "src": [u for u in src if isinstance(u, str) and u.startswith("http")][:4],
-                    "cluster": cluster_of.get(it["id"], ""),
-                    "snippet": body[:400],
-                }
-            )
-    docs.sort(key=lambda d: d["date"] or "", reverse=True)
+def kind_slug(kind: str) -> str:
+    return KIND_SLUG.get(kind or "", "other")
+
+
+def load_docs(*, scoped: bool = True) -> list[dict]:
+    path = ROOT / "documents.json"
+    if path.exists():
+        blob = json.loads(path.read_text(encoding="utf-8"))
+        docs = blob.get("documents") or []
+        if docs:
+            if scoped:
+                return [d for d in docs if d.get("in_scope", True)]
+            return docs
+    docs = build_documents()
+    write_json(
+        ROOT / "documents.json",
+        {
+            "name": "AI 안전 라이브러리 문서",
+            "updated": TODAY,
+            "count": len(docs),
+            "in_scope_count": sum(1 for d in docs if d.get("in_scope")),
+            "out_of_scope_count": sum(1 for d in docs if not d.get("in_scope")),
+            "documents": docs,
+        },
+    )
+    if scoped:
+        return [d for d in docs if d.get("in_scope", True)]
     return docs
 
 
-def load_clusters() -> list[dict]:
-    path = ROOT / "clusters" / "clusters.json"
-    if not path.exists():
-        return []
-    blob = json.loads(path.read_text(encoding="utf-8"))
-    out = []
-    for c in blob.get("clusters") or []:
-        out.append(
-            {
-                "id": c["id"],
-                "kind": c.get("kind") or "",
-                "kindLabel": KIND_LABEL.get(c.get("kind") or "", c.get("kind") or ""),
-                "title": c.get("title") or "",
-                "size": c.get("size") or len(c.get("members") or []),
-                "collections": c.get("collections") or [],
-                "date_min": c.get("date_min") or "",
-                "date_max": c.get("date_max") or "",
-                "members": [
-                    {
-                        "id": m["id"],
-                        "col": m.get("collection"),
-                        "title": m.get("title") or "",
-                        "date": m.get("date") or "",
-                        "url": m.get("page_url") or "",
-                    }
-                    for m in c.get("members") or []
-                ],
-            }
-        )
-    return out
-
-
-def search_index(docs: list[dict], clusters: list[dict]) -> dict:
+def search_index(docs: list[dict]) -> dict:
     return {
         "docs": [
-            {"id": d["id"], "title": d["title"][:120], "org": d["org"], "col": d["col"], "date": d["date"]}
-            for d in docs[:2500]
-        ],
-        "clusters": [
             {
-                "id": c["id"],
-                "title": c["title"][:120],
-                "kind": c["kind"],
-                "kindLabel": c["kindLabel"],
-                "size": c["size"],
+                "id": d["id"],
+                "title": (d.get("short_name") or d.get("title") or "")[:120],
+                "org": d.get("org") or "",
+                "country": d.get("country_ko") or d.get("country") or "",
+                "flag": d.get("flag") or "",
+                "date": d.get("published") or "",
+                "kind": d.get("doc_kind") or "",
+                "original": (d.get("original_name") or "")[:120],
             }
-            for c in clusters
-        ],
+            for d in docs[:4000]
+        ]
     }
-
-
-def cols_json() -> str:
-    return safe_json(
-        {
-            k: {"label": lab, "short": lab.replace("외교부 ", ""), "sector": sec}
-            for k, lab, sec, _ in COLLECTIONS
-        }
-    )
 
 
 def page(current: str, title: str, extra_css: str, body: str, page_js: str, index: dict) -> str:
@@ -205,324 +575,598 @@ body {{ margin: 0; }}
 """
 
 
-def render_index(docs: list[dict], clusters: list[dict], index: dict) -> str:
-    counts = Counter(d["col"] for d in docs)
-    cross = [c for c in clusters if c["kind"] == "same-document"]
-    tiles = "".join(
-        f'<a class="stat-tile" href="documents.html?col={key}">'
-        f'<div class="value">{counts.get(key, 0):,}</div>'
-        f'<div class="label">{label}</div></a>'
-        for key, label, *_ in COLLECTIONS
-    )
-    featured = cross[:12]
-    feat_rows = "".join(
-        f'<a class="dir-row" href="clusters.html#{c["id"]}">'
-        f'<span class="org">{_esc(c["title"][:90])}</span>'
-        f'<span class="muted">{c["size"]}건 · {" · ".join(COL_LABEL.get(x, x) for x in c["collections"])}</span>'
-        "</a>"
-        for c in featured
-    )
-    recent = docs[:12]
-    rec_cards = "".join(_event_card_html(d) for d in recent)
-    body = f"""
-  <p class="meta">{TODAY} 스냅샷 · 문서 {len(docs):,}건 · 클러스터 {len(clusters)}개</p>
-  <div class="stats">
-    <a class="stat-tile" href="documents.html"><div class="value">{len(docs):,}</div><div class="label">문서</div></a>
-    <a class="stat-tile" href="documents.html"><div class="value">5</div><div class="label">컬렉션</div></a>
-    <a class="stat-tile" href="clusters.html?kind=same-document"><div class="value">{len(cross)}</div><div class="label">교차 문서</div></a>
-    <a class="stat-tile" href="clusters.html"><div class="value">{len(clusters)}</div><div class="label">클러스터</div></a>
-  </div>
-  <h2 class="section-h">컬렉션</h2>
-  <div class="stats">{tiles}</div>
-  <h2 class="section-h">교차 컬렉션 문서</h2>
-  <p class="lede">외교부·IAAE·AGORA·OECD에 같은 법·선언·전략이 올라온 묶음.</p>
-  {feat_rows}
-  <p class="lede"><a href="clusters.html?kind=same-document">교차 문서 전체 보기</a></p>
-  <h2 class="section-h">최근 문서</h2>
-  <div class="timeline">{rec_cards}</div>
-"""
-    return page("index.html", "라이브러리", "", body, f"<script>const COLS={cols_json()};</script>", index)
-
-
 def _esc(s: str) -> str:
     return (
-        s.replace("&", "&amp;")
+        (s or "")
+        .replace("&", "&amp;")
         .replace("<", "&lt;")
         .replace(">", "&gt;")
         .replace('"', "&quot;")
     )
 
 
-def _event_card_html(d: dict) -> str:
-    ribbon = COL_LABEL.get(d["col"], d["col"])
-    href = f"documents.html#{d['id']}"
-    return (
-        f'<a class="event-card" href="{href}" style="--c-l:#5b3d8f;--c-d:#c4a6e8;display:block;color:inherit;text-decoration:none">'
-        f'<div class="event-head"><span class="event-date">{_esc(d["date"])}</span>'
-        f'<span class="tag">{_esc(ribbon)}</span></div>'
-        f'<div class="event-summary">{_esc(d["title"][:140])}</div>'
-        f'<div class="muted">{_esc(d["org"][:80])}</div></a>'
+def flag_emoji_safe(country: str) -> str:
+    from library_common import flag_emoji
+
+    return flag_emoji(country) or ""
+
+
+def render_index(docs: list[dict], index: dict, *, total_raw: int = 0, out_count: int = 0) -> str:
+    from parse_meta import DOC_KINDS
+
+    from library_common import country_label_ko
+
+    country_counts = Counter(d["country"] for d in docs if d.get("country"))
+    countries = sorted(
+        country_counts.keys(),
+        key=lambda c: (-country_counts[c], country_label_ko(c) or c),
     )
+    primary = countries[:20]
+    extra = countries[20:]
 
+    def _country_btn(c: str) -> str:
+        fl = flag_emoji_safe(c)
+        label = country_label_ko(c) or c
+        n = country_counts[c]
+        return (
+            f'<button class="filter-chip" data-country="{_esc(c)}" type="button">'
+            f"{fl} {_esc(label)}<span class=\"n\">{n}</span></button>"
+        )
 
-def render_documents(docs: list[dict], index: dict) -> str:
-    buttons = ['<button class="active" data-col="" type="button">전체</button>']
-    for key, label, *_ in COLLECTIONS:
-        buttons.append(f'<button data-col="{key}" type="button">{label}</button>')
+    country_btns = ['<button class="filter-chip active" data-country="" type="button">전체</button>']
+    country_btns.extend(_country_btn(c) for c in primary)
+    if extra:
+        more_chips = "".join(_country_btn(c) for c in extra)
+        country_btns.append(
+            f'<button type="button" class="filter-more" id="countryMoreBtn" '
+            f'aria-expanded="false">더보기 +{len(extra)}</button>'
+            f'<span class="filter-more-wrap hidden" id="countryMoreWrap">{more_chips}</span>'
+        )
+
+    kind_counts = Counter(d.get("doc_kind") or "기타" for d in docs)
+    kind_btns = ['<button class="filter-chip active" data-kind="" type="button">전체</button>']
+    for k in DOC_KINDS:
+        n = kind_counts.get(k, 0)
+        if n:
+            kind_btns.append(
+                f'<button class="filter-chip kind-badge kind-{kind_slug(k)}" data-kind="{_esc(k)}" type="button">'
+                f'{_esc(k)}<span class="n">{n}</span></button>'
+            )
+    kind_color_json = safe_json(
+        {k: {"l": v[0], "d": v[1], "slug": KIND_SLUG[k]} for k, v in KIND_COLORS.items()}
+    )
+    enrich_keywords(docs)
+    from topics import TOPIC_ORDER, enrich_topics, topic_icon, topic_label, TOPIC_COLORS
+
+    enrich_topics(docs)
+    topic_counts: Counter = Counter()
+    for d in docs:
+        for t in d.get("topics") or []:
+            topic_counts[t["id"]] += 1
+    topic_btns = ['<button class="filter-chip active" data-topic="" type="button">전체</button>']
+    for slug in TOPIC_ORDER:
+        n = topic_counts.get(slug, 0)
+        if not n:
+            continue
+        color = TOPIC_COLORS.get(slug, "#534f4a")
+        icon = topic_icon(slug)
+        lab = topic_label(slug)
+        prefix = f"{icon} " if icon else ""
+        topic_btns.append(
+            f'<button class="filter-chip topic-chip" data-topic="{_esc(slug)}" type="button" '
+            f'style="--topic:{_esc(color)}">{prefix}{_esc(lab)}'
+            f'<span class="n">{n}</span></button>'
+        )
+    trend_html = render_kind_trend(docs)
+    scope_note = ""
+    if total_raw:
+        scope_note = f" · 원본 전체 {total_raw:,}건 중 {out_count:,}건 제외"
     body = f"""
   <p class="meta" id="countLine"></p>
-  <button type="button" class="back-link" id="backLink">← 목록으로</button>
+  <p class="lede">기술안전·보안·위험관리·윤리·거버넌스·규제·권리·평가에 해당하는 문서만 보여 줍니다.
+    뉴스·보도와 단순 기구 목록은 제외합니다.{scope_note}</p>
+  {trend_html}
   <div class="controls" id="listControls">
-    <input class="search" id="searchBox" type="search" placeholder="이 목록에서 찾기 (제목 · 기관)">
-    <div class="sort-toggle" id="colToggle">{"".join(buttons)}</div>
+    <div class="sort-toggle filter-toolbar" id="kindToggle">{"".join(kind_btns)}</div>
+    <div class="sort-toggle filter-toolbar" id="topicToggle">{"".join(topic_btns)}</div>
+    <div class="sort-toggle filter-toolbar" id="countryToggle">{"".join(country_btns)}</div>
   </div>
   <div id="listView"></div>
-  <div id="detailView" class="detail hidden"></div>
+  <nav class="year-nav hidden" id="yearNav" aria-label="연도 바로가기"></nav>
+"""
+    more_js = ""
+    if extra:
+        more_js = """
+(function(){
+  const btn = document.getElementById('countryMoreBtn');
+  const wrap = document.getElementById('countryMoreWrap');
+  if (!btn || !wrap) return;
+  btn.addEventListener('click', () => {
+    const nowHidden = wrap.classList.toggle('hidden');
+    const open = !nowHidden;
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.textContent = open ? '접기' : ('더보기 +' + wrap.querySelectorAll('button.filter-chip').length);
+  });
+})();
 """
     js = f"""
 <script id="docs-data" type="application/json">{safe_json(docs)}</script>
 <script>
 const DOCS = JSON.parse(document.getElementById('docs-data').textContent);
-const COLS = {cols_json()};
-const KIND = {safe_json(KIND_LABEL)};
-{SHARED_JS}
-const state = {{ q: '', col: '' }};
+const KIND_COLORS = {kind_color_json};
+const state = {{ q: '', country: '', kind: '', topic: '', closedIds: {{}}, yearOpen: {{}}, yearKeys: [] }};
 const byId = Object.fromEntries(DOCS.map(d => [d.id, d]));
 
-function monthLabel(ym) {{
-  if (!ym || ym.length < 7) return '날짜 없음';
-  return ym.slice(0,4) + '년 ' + String(Number(ym.slice(5,7))) + '월';
+function escapeHtml(s) {{
+  return String(s ?? '').replace(/[&<>"']/g, c => ({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}}[c]));
+}}
+function yearKey(d) {{
+  const y = (d.published || '').slice(0, 4);
+  return /^\\d{{4}}$/.test(y) ? y : 'undated';
+}}
+function yearLabel(y) {{
+  return y === 'undated' ? '날짜 없음' : (y + '년');
+}}
+function isYearOpen(y, index) {{
+  if (Object.prototype.hasOwnProperty.call(state.yearOpen, y)) return !!state.yearOpen[y];
+  return index < 2;
+}}
+function hay(d) {{
+  const topics = (d.topics || []).map(t => t.label + ' ' + t.id).join(' ');
+  return [d.title, d.short_name, d.full_name, d.original_name, d.org, d.country, d.country_ko, d.doc_kind, d.status_ko, d.summary, d.snippet, (d.keywords || []).join(' '), topics]
+    .join(' ').toLowerCase();
+}}
+function hasTopic(d, topic) {{
+  return (d.topics || []).some(t => t.id === topic);
 }}
 function visible() {{
   const q = state.q.trim().toLowerCase();
   return DOCS.filter(d => {{
-    if (state.col && d.col !== state.col) return false;
+    if (state.country && d.country !== state.country) return false;
+    if (state.kind && (d.doc_kind || '기타') !== state.kind) return false;
+    if (state.topic && !hasTopic(d, state.topic)) return false;
     if (!q) return true;
-    return (d.title + ' ' + d.org + ' ' + d.cat).toLowerCase().includes(q);
+    return hay(d).includes(q);
   }});
+}}
+function flagHtml(d) {{
+  return d.flag ? `<span class="org-flag flag-inline" title="${{escapeHtml(d.country_ko || d.country || '')}}">${{d.flag}}</span>` : '';
+}}
+function kindStyle(kind) {{
+  const c = KIND_COLORS[kind] || KIND_COLORS['기타'];
+  return `--c-l:${{c.l}};--c-d:${{c.d}}`;
+}}
+function kindBadge(kind) {{
+  if (!kind) return '';
+  const c = KIND_COLORS[kind] || KIND_COLORS['기타'];
+  return `<span class="badge kind-badge kind-${{c.slug}}">${{escapeHtml(kind)}}</span>`;
+}}
+function statusBadge(d) {{
+  const label = d.status_ko || '';
+  if (!label) return '';
+  let cls = 'status-pending';
+  if (label === '제정') cls = 'status-enacted';
+  else if (label === '개정' || label === '개정안') cls = 'status-amended';
+  else if (label === '폐기') cls = 'status-defunct';
+  else if (label === '계류') cls = 'status-pending';
+  return `<span class="badge status-badge ${{cls}}">${{escapeHtml(label)}}</span>`;
+}}
+function topicTagsHtml(d) {{
+  const tags = d.topics || [];
+  if (!tags.length) return '';
+  return `<div class="topic-tags">${{tags.map(t =>
+    `<span class="topic-tag" data-topic="${{escapeHtml(t.id)}}" style="--topic:${{escapeHtml(t.color || '#534f4a')}}">${{escapeHtml((t.icon ? t.icon + ' ' : '') + (t.label || t.id))}}</span>`
+  ).join('')}}</div>`;
+}}
+function cardHtml(d) {{
+  const kind = kindBadge(d.doc_kind);
+  const place = d.country_ko
+    ? `${{flagHtml(d)}}<span class="country-chip">${{escapeHtml(d.country_ko)}}</span>`
+    : flagHtml(d);
+  const short = d.short_name || d.title || '';
+  const original = d.original_name || '';
+  const full = d.full_name || '';
+  const under = original || (full && full !== short ? full : '');
+  const underHtml = (under && under !== short)
+    ? `<div class="event-full muted">${{escapeHtml(under)}}</div>` : '';
+  const summary = escapeHtml(d.summary || d.snippet || '') || '핵심내용이 없습니다.';
+  const kws = (d.keywords || []).map(k => `<span class="kw-tag">${{escapeHtml(k)}}</span>`).join('');
+  const kwHtml = kws ? `<div class="kw-tags">${{kws}}</div>` : '';
+  const title = d.canonical_url
+    ? `<a class="event-title" href="${{escapeHtml(d.canonical_url)}}" target="_blank" rel="noopener">${{escapeHtml(short)}}</a>`
+    : escapeHtml(short);
+  const open = !state.closedIds[d.id];
+  const life = statusBadge(d);
+  return `<div class="event-card${{open ? ' open' : ''}}" data-id="${{escapeHtml(d.id)}}" style="${{kindStyle(d.doc_kind)}}" role="button" tabindex="0" aria-expanded="${{open ? 'true' : 'false'}}">
+    <div class="event-head"><span class="event-date">${{escapeHtml(d.published||'')}}</span>${{place}}${{kind}}</div>
+    <div class="event-summary">${{title}}${{life}}</div>
+    ${{underHtml}}
+    ${{topicTagsHtml(d)}}
+    <div class="event-body"><p>${{summary}}</p>${{kwHtml}}</div>
+  </div>`;
+}}
+function renderYearNav(keys) {{
+  const nav = document.getElementById('yearNav');
+  if (!nav) return;
+  state.yearKeys = keys;
+  if (keys.length < 2) {{
+    nav.classList.add('hidden');
+    nav.innerHTML = '';
+    return;
+  }}
+  nav.classList.remove('hidden');
+  nav.innerHTML = keys.map(y =>
+    `<button type="button" class="year-nav-item" data-year="${{escapeHtml(y)}}">${{escapeHtml(y === 'undated' ? '—' : y)}}</button>`
+  ).join('');
 }}
 function renderList() {{
   const rows = visible();
-  document.getElementById('countLine').textContent = rows.length.toLocaleString('ko-KR') + '건';
+  document.getElementById('countLine').textContent = rows.length.toLocaleString('ko-KR') + '건 · ' + {TODAY!r};
+  const visibleIds = new Set(rows.map(d => d.id));
+  Object.keys(state.closedIds).forEach(id => {{
+    if (!visibleIds.has(id)) delete state.closedIds[id];
+  }});
+  if (!rows.length) {{
+    document.getElementById('listView').innerHTML = '<div class="empty">해당하는 문서가 없습니다.</div>';
+    renderYearNav([]);
+    return;
+  }}
   const groups = {{}};
   rows.forEach(d => {{
-    const k = (d.date || '').slice(0,7) || 'undated';
-    (groups[k] || (groups[k] = [])).push(d);
+    const y = yearKey(d);
+    (groups[y] || (groups[y] = [])).push(d);
   }});
-  const keys = Object.keys(groups).sort().reverse();
+  const keys = Object.keys(groups).sort((a, b) => {{
+    if (a === 'undated') return 1;
+    if (b === 'undated') return -1;
+    return b.localeCompare(a);
+  }});
   let html = '<div class="timeline">';
-  keys.forEach((k, i) => {{
-    const open = i < 2 ? '' : ' hidden';
-    html += `<div class="month-group"><button type="button" class="month-header" data-month="${{k}}">${{monthLabel(k)}} <span class="muted">${{groups[k].length}}</span></button><div class="month-body${{open}}">`;
-    groups[k].forEach(d => {{
-      html += `<button type="button" class="event-card" data-id="${{escapeHtml(d.id)}}" style="--c-l:#5b3d8f;--c-d:#c4a6e8;width:100%;text-align:left">
-        <div class="event-head"><span class="event-date">${{escapeHtml(d.date)}}</span>${{colRibbon(d.col)}}<span class="muted">${{escapeHtml(d.org)}}</span></div>
-        <div class="event-summary">${{escapeHtml(d.title)}}</div>
-      </button>`;
-    }});
-    html += '</div></div>';
+  keys.forEach((y, i) => {{
+    const open = isYearOpen(y, i);
+    html += `<div class="year-group" id="year-${{escapeHtml(y)}}">
+      <button type="button" class="year-header" data-year="${{escapeHtml(y)}}" aria-expanded="${{open ? 'true' : 'false'}}">
+        ${{escapeHtml(yearLabel(y))}} <span class="muted">${{groups[y].length}}</span>
+      </button>
+      <div class="year-body${{open ? '' : ' hidden'}}">${{groups[y].map(cardHtml).join('')}}</div>
+    </div>`;
   }});
   html += '</div>';
-  document.getElementById('listView').innerHTML = html || '<div class="empty">해당하는 문서가 없습니다.</div>';
+  document.getElementById('listView').innerHTML = html;
+  renderYearNav(keys);
 }}
-function showDetail(id) {{
+function toggleCard(id, {{ scroll }} = {{}}) {{
+  if (!byId[id]) return;
   const d = byId[id];
-  if (!d) return;
-  const src = (d.src || []).map(u => `<a href="${{escapeHtml(u)}}" target="_blank" rel="noopener">원문</a>`).join(' ');
-  const page = d.url ? `<a href="${{escapeHtml(d.url)}}" target="_blank" rel="noopener">페이지</a>` : '';
-  const cl = d.cluster ? `<a href="clusters.html#${{encodeURIComponent(d.cluster)}}">같은 문서 클러스터</a>` : '';
-  document.getElementById('listControls').classList.add('hidden');
-  document.getElementById('listView').classList.add('hidden');
-  document.getElementById('backLink').classList.add('show');
-  document.getElementById('detailView').className = 'detail';
-  document.getElementById('detailView').innerHTML = `<div class="detail-panel">
-    <div class="event-head">${{colRibbon(d.col)}}<span class="event-date">${{escapeHtml(d.date)}}</span></div>
-    <h2 class="section-title">${{escapeHtml(d.title)}}</h2>
-    <p class="sub">${{escapeHtml(d.org)}} ${{d.cat ? '· ' + escapeHtml(d.cat) : ''}}</p>
-    <p>${{escapeHtml(d.snippet)}}</p>
-    <div class="linklist">${{page}} ${{src}} ${{cl}}</div>
-  </div>`;
-  history.replaceState(null, '', 'documents.html#' + encodeURIComponent(id));
+  const y = yearKey(d);
+  state.yearOpen[y] = true;
+  if (state.closedIds[id]) delete state.closedIds[id];
+  else state.closedIds[id] = true;
+  renderList();
+  if (scroll && !state.closedIds[id]) {{
+    const el = document.querySelector('.event-card[data-id="' + CSS.escape(id) + '"]');
+    if (el) el.scrollIntoView({{ behavior: 'smooth', block: 'nearest' }});
+  }}
 }}
-function showList() {{
-  document.getElementById('listControls').classList.remove('hidden');
-  document.getElementById('listView').classList.remove('hidden');
-  document.getElementById('backLink').classList.remove('show');
-  document.getElementById('detailView').className = 'detail hidden';
-  history.replaceState(null, '', 'documents.html' + (state.col ? '?col=' + encodeURIComponent(state.col) : ''));
-}}
-document.getElementById('searchBox').addEventListener('input', ev => {{ state.q = ev.target.value; renderList(); }});
-document.getElementById('colToggle').querySelectorAll('button').forEach(btn => {{
-  btn.addEventListener('click', () => {{
-    document.getElementById('colToggle').querySelectorAll('button').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    state.col = btn.dataset.col || '';
-    renderList();
+function jumpYear(y) {{
+  state.yearOpen[y] = true;
+  renderList();
+  const el = document.getElementById('year-' + y);
+  if (el) el.scrollIntoView({{ behavior: 'smooth', block: 'start' }});
+  document.querySelectorAll('.year-nav-item').forEach(b => {{
+    b.classList.toggle('active', b.dataset.year === y);
   }});
-}});
+}}
+(function bindOmniFilter() {{
+  const omni = document.getElementById('omniBox');
+  if (!omni) return;
+  omni.addEventListener('input', () => {{ state.q = omni.value; renderList(); }});
+}})();
+function bindFilter(id, key) {{
+  document.getElementById(id).querySelectorAll('button[data-' + key + ']').forEach(btn => {{
+    btn.addEventListener('click', () => {{
+      document.getElementById(id).querySelectorAll('button[data-' + key + ']').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      state[key] = btn.dataset[key] || '';
+      renderList();
+    }});
+  }});
+}}
+bindFilter('countryToggle', 'country');
+bindFilter('kindToggle', 'kind');
+bindFilter('topicToggle', 'topic');
 document.getElementById('listView').addEventListener('click', ev => {{
-  const head = ev.target.closest('.month-header');
-  if (head) {{
-    head.nextElementSibling.classList.toggle('hidden');
+  if (ev.target.closest('a')) return;
+  const ttag = ev.target.closest('.topic-tag[data-topic]');
+  if (ttag && ttag.dataset.topic) {{
+    ev.preventDefault();
+    state.topic = ttag.dataset.topic;
+    document.getElementById('topicToggle').querySelectorAll('button[data-topic]').forEach(b => {{
+      b.classList.toggle('active', (b.dataset.topic || '') === state.topic);
+    }});
+    renderList();
+    return;
+  }}
+  const head = ev.target.closest('.year-header');
+  if (head && head.dataset.year) {{
+    const y = head.dataset.year;
+    const idx = state.yearKeys.indexOf(y);
+    const now = isYearOpen(y, idx < 0 ? 99 : idx);
+    state.yearOpen[y] = !now;
+    renderList();
     return;
   }}
   const card = ev.target.closest('.event-card');
-  if (card && card.dataset.id) showDetail(card.dataset.id);
+  if (card && card.dataset.id) toggleCard(card.dataset.id);
 }});
-document.getElementById('backLink').addEventListener('click', showList);
+document.getElementById('yearNav').addEventListener('click', ev => {{
+  const btn = ev.target.closest('.year-nav-item');
+  if (btn && btn.dataset.year) jumpYear(btn.dataset.year);
+}});
+{more_js}
 (function boot() {{
   const params = new URLSearchParams(location.search);
-  if (params.get('col')) {{
-    state.col = params.get('col');
-    document.getElementById('colToggle').querySelectorAll('button').forEach(b => {{
-      b.classList.toggle('active', (b.dataset.col || '') === state.col);
+  if (params.get('country')) {{
+    state.country = params.get('country');
+    document.getElementById('countryToggle').querySelectorAll('button[data-country]').forEach(b => {{
+      b.classList.toggle('active', (b.dataset.country || '') === state.country);
     }});
+    const wrap = document.getElementById('countryMoreWrap');
+    const btn = document.getElementById('countryMoreBtn');
+    if (wrap && btn && state.country) {{
+      const hit = Array.from(wrap.querySelectorAll('button[data-country]')).find(b => b.dataset.country === state.country);
+      if (hit) {{
+        wrap.classList.remove('hidden');
+        btn.setAttribute('aria-expanded', 'true');
+        btn.textContent = '접기';
+      }}
+    }}
   }}
-  renderList();
-  const hash = decodeURIComponent((location.hash || '').slice(1));
-  if (hash && byId[hash]) showDetail(hash);
-}})();
-</script>
-"""
-    return page("documents.html", "문서", "", body, js, index)
-
-
-def render_clusters(clusters: list[dict], index: dict) -> str:
-    buttons = ['<button class="active" data-kind="" type="button">전체</button>']
-    for kind, lab in KIND_LABEL.items():
-        n = sum(1 for c in clusters if c["kind"] == kind)
-        buttons.append(f'<button data-kind="{kind}" type="button">{lab} {n}</button>')
-    body = f"""
-  <p class="meta" id="countLine"></p>
-  <button type="button" class="back-link" id="backLink">← 목록으로</button>
-  <div class="controls" id="listControls">
-    <input class="search" id="searchBox" type="search" placeholder="이 목록에서 찾기">
-    <div class="sort-toggle" id="kindToggle">{"".join(buttons)}</div>
-  </div>
-  <div id="listView"></div>
-  <div id="detailView" class="detail hidden"></div>
-"""
-    js = f"""
-<script id="clusters-data" type="application/json">{safe_json(clusters)}</script>
-<script>
-const CLUSTERS = JSON.parse(document.getElementById('clusters-data').textContent);
-const COLS = {cols_json()};
-{SHARED_JS}
-const state = {{ q: '', kind: '' }};
-const byId = Object.fromEntries(CLUSTERS.map(c => [c.id, c]));
-
-function visible() {{
-  const q = state.q.trim().toLowerCase();
-  return CLUSTERS.filter(c => {{
-    if (state.kind && c.kind !== state.kind) return false;
-    if (!q) return true;
-    return (c.title + ' ' + c.members.map(m => m.title).join(' ')).toLowerCase().includes(q);
-  }});
-}}
-function renderList() {{
-  const rows = visible();
-  document.getElementById('countLine').textContent = rows.length.toLocaleString('ko-KR') + '개 클러스터';
-  document.getElementById('listView').innerHTML = rows.map(c => `
-    <button type="button" class="dir-row" data-id="${{escapeHtml(c.id)}}" style="width:100%;text-align:left">
-      <span class="org">${{escapeHtml(c.title)}}</span>
-      <span class="badge">${{escapeHtml(c.kindLabel)}}</span>
-      <span class="muted">${{c.size}}건 · ${{c.collections.map(x => (COLS[x]||{{}}).short || x).join(' · ')}}</span>
-    </button>`).join('') || '<div class="empty">해당하는 클러스터가 없습니다.</div>';
-}}
-function showDetail(id) {{
-  const c = byId[id];
-  if (!c) return;
-  const members = c.members.map(m => `
-    <div class="thread-item">
-      <div class="thread-date">${{escapeHtml(m.date)}} ${{colRibbon(m.col)}}</div>
-      <div class="thread-summary"><a href="documents.html#${{encodeURIComponent(m.id)}}">${{escapeHtml(m.title)}}</a></div>
-      ${{m.url ? `<div class="linklist"><a href="${{escapeHtml(m.url)}}" target="_blank" rel="noopener">페이지</a></div>` : ''}}
-    </div>`).join('');
-  document.getElementById('listControls').classList.add('hidden');
-  document.getElementById('listView').classList.add('hidden');
-  document.getElementById('backLink').classList.add('show');
-  document.getElementById('detailView').className = 'detail';
-  document.getElementById('detailView').innerHTML = `<div class="detail-panel">
-    <span class="badge">${{escapeHtml(c.kindLabel)}}</span>
-    <h2 class="section-title">${{escapeHtml(c.title)}}</h2>
-    <p class="sub">${{c.size}}건 · ${{escapeHtml(c.date_min)}} ~ ${{escapeHtml(c.date_max)}}</p>
-    <div class="section-title">구성 문서</div>
-    ${{members}}
-  </div>`;
-  history.replaceState(null, '', 'clusters.html#' + encodeURIComponent(id));
-}}
-function showList() {{
-  document.getElementById('listControls').classList.remove('hidden');
-  document.getElementById('listView').classList.remove('hidden');
-  document.getElementById('backLink').classList.remove('show');
-  document.getElementById('detailView').className = 'detail hidden';
-  const q = state.kind ? '?kind=' + encodeURIComponent(state.kind) : '';
-  history.replaceState(null, '', 'clusters.html' + q);
-}}
-document.getElementById('searchBox').addEventListener('input', ev => {{ state.q = ev.target.value; renderList(); }});
-document.getElementById('kindToggle').querySelectorAll('button').forEach(btn => {{
-  btn.addEventListener('click', () => {{
-    document.getElementById('kindToggle').querySelectorAll('button').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    state.kind = btn.dataset.kind || '';
-    renderList();
-  }});
-}});
-document.getElementById('listView').addEventListener('click', ev => {{
-  const row = ev.target.closest('.dir-row');
-  if (row && row.dataset.id) showDetail(row.dataset.id);
-}});
-document.getElementById('backLink').addEventListener('click', showList);
-(function boot() {{
-  const params = new URLSearchParams(location.search);
   if (params.get('kind')) {{
     state.kind = params.get('kind');
-    document.getElementById('kindToggle').querySelectorAll('button').forEach(b => {{
+    document.getElementById('kindToggle').querySelectorAll('button[data-kind]').forEach(b => {{
       b.classList.toggle('active', (b.dataset.kind || '') === state.kind);
     }});
   }}
-  renderList();
+  if (params.get('topic')) {{
+    state.topic = params.get('topic');
+    document.getElementById('topicToggle').querySelectorAll('button[data-topic]').forEach(b => {{
+      b.classList.toggle('active', (b.dataset.topic || '') === state.topic);
+    }});
+  }}
   const hash = decodeURIComponent((location.hash || '').slice(1));
-  if (hash && byId[hash]) showDetail(hash);
+  if (hash && byId[hash]) {{
+    delete state.closedIds[hash];
+    state.yearOpen[yearKey(byId[hash])] = true;
+  }}
+  renderList();
+  if (hash && byId[hash]) {{
+    const el = document.querySelector('.event-card[data-id="' + CSS.escape(hash) + '"]');
+    if (el) el.scrollIntoView({{ block: 'nearest' }});
+  }}
 }})();
 </script>
 """
-    return page("clusters.html", "클러스터", "", body, js, index)
+    return page("index.html", "AI 안전 라이브러리", "", body, js, index)
 
 
-def render_about(docs: list[dict], clusters: list[dict], index: dict) -> str:
-    counts = Counter(d["col"] for d in docs)
-    rows = "".join(
-        f"<tr><td>{label}</td><td>{counts.get(key, 0):,}</td><td>{blurb}</td></tr>"
-        for key, label, _sec, blurb in COLLECTIONS
+PIPELINE_SVG = """<svg viewBox="0 0 720 700" class="pipe-svg" role="img"
+aria-label="수집, 규칙 후보, LLM 큐레이션, 병합 분석, 통합 합성, 사이트 빌드 파이프라인">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
+  </marker>
+</defs>
+<rect x="40" y="28" width="200" height="56" rx="12" fill="var(--surface, #f5f3ef)" stroke="currentColor" stroke-opacity=".25"/>
+<text x="140" y="52" text-anchor="middle" font-size="13" font-weight="700">1 · 수집</text>
+<text x="140" y="70" text-anchor="middle" font-size="11" opacity=".7">AGORA · OECD · 외교부 · IAAE</text>
+<line x1="140" y1="84" x2="140" y2="112" stroke="currentColor" stroke-opacity=".45" marker-end="url(#arr)"/>
+
+<rect x="40" y="116" width="200" height="56" rx="12" fill="var(--surface, #f5f3ef)" stroke="currentColor" stroke-opacity=".25"/>
+<text x="140" y="140" text-anchor="middle" font-size="13" font-weight="700">2 · 규칙 후보</text>
+<text x="140" y="158" text-anchor="middle" font-size="11" opacity=".7">모법 URL · 조항 · cluster</text>
+<line x1="140" y1="172" x2="140" y2="200" stroke="currentColor" stroke-opacity=".45" marker-end="url(#arr)"/>
+
+<rect x="40" y="204" width="200" height="72" rx="12" fill="var(--surface, #f5f3ef)" stroke="currentColor" stroke-opacity=".35" stroke-width="1.6"/>
+<text x="140" y="230" text-anchor="middle" font-size="13" font-weight="700">3 · LLM 큐레이션</text>
+<text x="140" y="248" text-anchor="middle" font-size="11" opacity=".7">문서별 범위·종류·토픽·한글</text>
+<text x="140" y="264" text-anchor="middle" font-size="11" opacity=".7">OpenRouter · 고·중신뢰만 반영</text>
+<line x1="140" y1="276" x2="140" y2="304" stroke="currentColor" stroke-opacity=".45" marker-end="url(#arr)"/>
+
+<rect x="40" y="308" width="200" height="64" rx="12" fill="var(--surface, #f5f3ef)" stroke="currentColor" stroke-opacity=".35" stroke-width="1.6"/>
+<text x="140" y="332" text-anchor="middle" font-size="13" font-weight="700">4 · 병합 분석</text>
+<text x="140" y="350" text-anchor="middle" font-size="11" opacity=".7">멤버 식별 · 같은 제도인지</text>
+<line x1="140" y1="372" x2="140" y2="400" stroke="currentColor" stroke-opacity=".45" marker-end="url(#arr)"/>
+
+<rect x="40" y="404" width="200" height="64" rx="12" fill="var(--surface, #f5f3ef)" stroke="currentColor" stroke-opacity=".35" stroke-width="1.6"/>
+<text x="140" y="428" text-anchor="middle" font-size="13" font-weight="700">5 · 통합 합성</text>
+<text x="140" y="446" text-anchor="middle" font-size="11" opacity=".7">합의된 그룹만 약칭·요약</text>
+
+<rect x="300" y="404" width="200" height="64" rx="12" fill="var(--surface, #f5f3ef)" stroke="currentColor" stroke-opacity=".25" stroke-dasharray="4 3"/>
+<text x="400" y="428" text-anchor="middle" font-size="13" font-weight="700">5b · 날짜 복원</text>
+<text x="400" y="446" text-anchor="middle" font-size="11" opacity=".7">원문 URL · 검색 · LLM</text>
+<line x1="240" y1="436" x2="300" y2="436" stroke="currentColor" stroke-opacity=".45" marker-end="url(#arr)"/>
+
+<line x1="140" y1="468" x2="140" y2="504" stroke="currentColor" stroke-opacity=".45" marker-end="url(#arr)"/>
+<line x1="400" y1="468" x2="400" y2="492" stroke="currentColor" stroke-opacity=".35"/>
+<line x1="140" y1="492" x2="400" y2="492" stroke="currentColor" stroke-opacity=".35"/>
+
+<rect x="40" y="508" width="200" height="56" rx="12" fill="var(--surface, #f5f3ef)" stroke="currentColor" stroke-opacity=".25"/>
+<text x="140" y="532" text-anchor="middle" font-size="13" font-weight="700">6 · 사이트 빌드</text>
+<text x="140" y="550" text-anchor="middle" font-size="11" opacity=".7">build_site.py → dist/</text>
+
+<rect x="300" y="508" width="380" height="120" rx="12" fill="var(--surface, #f5f3ef)" stroke="currentColor" stroke-opacity=".2"/>
+<text x="320" y="536" font-size="12" font-weight="700">설계 원칙</text>
+<text x="320" y="558" font-size="11" opacity=".8">· 문서별 분석(큐레이션) 후에야 통합</text>
+<text x="320" y="578" font-size="11" opacity=".8">· 규칙은 후보만, 확정은 LLM 분석</text>
+<text x="320" y="598" font-size="11" opacity=".8">· 날짜는 발표일 ≠ 카탈로그 등록일</text>
+<text x="320" y="618" font-size="11" opacity=".8">· low confidence는 UI에 자동 반영하지 않음</text>
+</svg>"""
+
+
+def render_about(docs: list[dict], index: dict, *, total_raw: int = 0, out_count: int = 0) -> str:
+    from curate_llm import CACHE_PATH, CURATED_KINDS, TOPIC_IDS, load_cache
+
+    cache = load_cache()
+    n_curated = sum(
+        1
+        for v in cache.values()
+        if isinstance(v, dict)
+        and ((v.get("result") or v).get("confidence") in ("high", "medium"))
     )
-    body = f"""
-  <p class="meta">{TODAY}</p>
-  <p class="lede">외교부·IAAE가 모아 둔 문서와 AGORA·OECD Policy Navigator를 한곳에 둔 자료 저장소입니다. 화면 톤은 국제협력 트래커와 같습니다.</p>
-  <h2 class="section-h">컬렉션</h2>
-  <table class="data-table">
-    <thead><tr><th>컬렉션</th><th>건수</th><th>내용</th></tr></thead>
-    <tbody>{rows}</tbody>
-  </table>
-  <h2 class="section-h">클러스터</h2>
-  <p class="lede">같은 법·선언·전략을 URL·식별자·제목으로 묶고, 한국어 항목은 OpenRouter로 대조했습니다. {len(clusters)}개 클러스터, 그중 교차 컬렉션 {sum(1 for c in clusters if c["kind"]=="same-document")}개.</p>
-  <h2 class="section-h">출처</h2>
-  <p class="lede">AGORA: Emerging Technology Observatory, CC BY-NC 4.0, <a href="https://doi.org/10.5281/zenodo.20714047">Zenodo 1.30.0</a>. Policy Navigator: OECD.AI. 외교부 게시판 · IAAE 연구자료실.</p>
+    n_llm_topics = sum(1 for d in docs if d.get("topics_source") == "llm")
+    css = """
+.about-wrap { max-width: 820px; margin: 0 auto; padding: 8px 4px 48px; }
+.about-wrap h2 { font-size: 1.25rem; margin: 1.6rem 0 .55rem; font-weight: 650; }
+.about-wrap p, .about-wrap li { line-height: 1.55; font-size: 1rem; opacity: .92; }
+.about-meta { opacity: .65; font-size: .92rem; margin-bottom: 1rem; }
+.pipe-scroll { overflow-x: auto; border: 1px solid color-mix(in srgb, currentColor 14%, transparent);
+  border-radius: 16px; padding: 12px; background: color-mix(in srgb, currentColor 3%, transparent); }
+.pipe-svg { display: block; width: 100%; min-width: 640px; height: auto; color: inherit; }
+.principles { border: 1px solid color-mix(in srgb, currentColor 14%, transparent);
+  border-radius: 16px; padding: .4rem 1.1rem; background: color-mix(in srgb, currentColor 3%, transparent); }
+.tool-panel { border: 1px solid color-mix(in srgb, currentColor 14%, transparent);
+  border-radius: 16px; padding: 14px 16px; margin: 12px 0 20px;
+  background: color-mix(in srgb, currentColor 3%, transparent); }
+.tool-item { margin-bottom: 12px; font-size: .95rem; }
+.tool-item:last-child { margin-bottom: 0; }
+.tool-item b { display: block; margin-bottom: 2px; }
+.tool-item code { display: block; font-size: .78rem; opacity: .85; overflow-wrap: anywhere; margin: 2px 0; }
+.tool-item span { opacity: .65; font-size: .88rem; }
+.kind-list { font-size: .92rem; opacity: .85; }
 """
-    return page("about.html", "소개", "", body, "", index)
+    kinds = " · ".join(CURATED_KINDS)
+    topics = " · ".join(TOPIC_IDS)
+    body = f"""
+<div class="about-wrap">
+  <p class="about-meta">표시 문서 {len(docs):,}건 · 원천 {total_raw:,}건 · 범위 밖 {out_count:,}건 ·
+  LLM 큐레이션 캐시 {len(cache):,}건(고·중신뢰 {n_curated:,}) · 토픽 LLM 반영 {n_llm_topics:,}건</p>
+
+  <p>AI 안전·거버넌스 관련 법·정책·표준·기구 문서를 모아, 종류·주제·날짜·한글 표기를
+  정리해 한 화면에서 훑을 수 있게 한 라이브러리입니다.
+  <b>문서별 LLM 큐레이션(분석)을 먼저</b> 한 뒤, 같은 법령·정책 후보를 확인하고
+  합의된 그룹만 통합 약칭·핵심내용을 합성합니다. 고·중신뢰만 사이트에 반영합니다.</p>
+
+  <h2>파이프라인</h2>
+  <div class="pipe-scroll">{PIPELINE_SVG}</div>
+  <p>키워드 태그는 초안용입니다. LLM이 토픽을 확정하면
+  (<code>topics_source=llm</code>) 키워드 매칭으로 덮어쓰지 않습니다.
+  예: 제목의 「정당성」만으로 <code>politics</code>를 붙이지 않습니다.</p>
+
+  <h2>데이터 원칙</h2>
+  <ul class="principles">
+    <li><b>뉴스·보도는 종류가 아니라 제외</b> — UI <code>doc_kind</code> enum에 두지 않고
+      <code>in_scope=false</code> + <code>reject_reason=news_press</code>로 뺍니다.</li>
+    <li><b>토픽은 의미 판정</b> — 부분문자열 함정(정당성≠정당, party≠정당)을 프롬프트·검증으로 막습니다.</li>
+    <li><b>날짜는 발표일</b> — OECD catalog Added-on·업로드 시각은 차트용 발표일로 쓰지 않습니다.
+      불확실하면 URL·검색·LLM으로 복원합니다 (<code>resolve_oecd_dates.py</code>).</li>
+    <li><b>저신뢰는 자동 반영 안 함</b> — <code>confidence=low</code>는 캐시에만 두고 UI 필드를 바꾸지 않습니다.</li>
+    <li><b>원문 제목 보존</b> — 한글 약칭을 쓸 때 영문 원제는 <code>original_name</code>에 남깁니다.</li>
+    <li><b>동일 법령은 한 카드</b> — 규칙으로 후보만 묶고, 큐레이션·병합 분석 후
+      같은 제도로 합의된 경우만 통합 요약·조항 목록을 씁니다
+      (<code>merge_instruments.py --analyze</code> → <code>--synthesize</code>).
+      다른 법이 섞이면 분할 플래그만 남깁니다.</li>
+  </ul>
+
+  <h2>허용 문서종류 · 토픽</h2>
+  <p class="kind-list"><b>doc_kind</b> {kinds}</p>
+  <p class="kind-list"><b>topics</b> {topics}</p>
+
+  <h2>수동 도구</h2>
+  <div class="tool-panel">
+    <div class="tool-item">
+      <b>LLM 큐레이션 (문서별 분석 — 먼저)</b>
+      <code>python3 scripts/curate_llm.py --limit 200</code>
+      <code>python3 scripts/curate_llm.py --validate-only</code>
+      <span>캐시 <code>cache/llm_curate.json</code>. 고·중신뢰만 build 시 반영.</span>
+    </div>
+    <div class="tool-item">
+      <b>병합 분석 → 후보 → 통합 합성</b>
+      <code>python3 scripts/merge_instruments.py --analyze --limit 30</code>
+      <code>python3 scripts/merge_instruments.py --propose</code>
+      <code>python3 scripts/merge_instruments.py --synthesize --limit 30</code>
+      <span>캐시 <code>cache/instrument_analyze.json</code> · <code>cache/instrument_merge.json</code>.</span>
+    </div>
+    <div class="tool-item">
+      <b>한글 약칭·요약 (레거시 배치)</b>
+      <code>python3 scripts/enrich_ko.py --limit 100</code>
+      <span>큐레이션이 short_name/summary를 채우면 점차 대체됩니다.</span>
+    </div>
+    <div class="tool-item">
+      <b>OECD 발표일 복원</b>
+      <code>python3 scripts/resolve_oecd_dates.py --limit 300 --llm --no-search --apply</code>
+      <span>원문 메타 우선, 실패 시 LLM. 캐시 <code>cache/oecd_dates.json</code>.</span>
+    </div>
+    <div class="tool-item">
+      <b>사이트 재생성</b>
+      <code>python3 scripts/build_site.py</code>
+      <span>후보 그룹 → 큐레이션 → 분석/합성 캐시 → dist/</span>
+    </div>
+  </div>
+
+  <p class="about-meta">캐시: <code>cache/llm_curate.json</code> · <code>cache/instrument_analyze.json</code> · <code>cache/instrument_merge.json</code></p>
+</div>
+"""
+    return page("about.html", "소개 · 파이프라인", css, body, "", index)
+
+
+def redirect_html(target: str = "index.html") -> str:
+    return f"""<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="refresh" content="0;url={target}">
+<title>이동 중…</title>
+<script>location.replace('{target}' + location.search + location.hash);</script>
+</head>
+<body><p><a href="{target}">라이브러리로 이동</a></p></body>
+</html>
+"""
+
 
 
 def main() -> None:
-    print("loading…")
-    docs = load_docs()
-    clusters = load_clusters()
-    index = search_index(docs, clusters)
+    print("building documents…")
+    all_docs = build_documents()
+    write_json(
+        ROOT / "documents.json",
+        {
+            "name": "AI 안전 라이브러리 문서",
+            "updated": TODAY,
+            "count": len(all_docs),
+            "in_scope_count": sum(1 for d in all_docs if d.get("in_scope")),
+            "out_of_scope_count": sum(1 for d in all_docs if not d.get("in_scope")),
+            "documents": all_docs,
+        },
+    )
+    docs = [d for d in all_docs if d.get("in_scope")]
+    out_count = len(all_docs) - len(docs)
+    print("documents", len(all_docs), "in_scope", len(docs), "out", out_count)
+    import csv
+
+    report_dir = ROOT / "reports" / f"audit-{TODAY}"
+    report_dir.mkdir(parents=True, exist_ok=True)
+    with (report_dir / "out_of_scope.csv").open("w", encoding="utf-8-sig", newline="") as f:
+        w = csv.DictWriter(
+            f,
+            fieldnames=["id", "title", "safety_score", "published", "canonical_url", "safety_reasons"],
+            extrasaction="ignore",
+        )
+        w.writeheader()
+        for d in all_docs:
+            if d.get("in_scope"):
+                continue
+            row = dict(d)
+            row["safety_reasons"] = ";".join(d.get("safety_reasons") or [])
+            w.writerow(row)
+
+    index = {"docs": []}  # 상단 검색은 목록 필터만 사용
     DIST.mkdir(parents=True, exist_ok=True)
     pages = {
-        "index.html": render_index(docs, clusters, index),
-        "documents.html": render_documents(docs, index),
-        "clusters.html": render_clusters(clusters, index),
-        "about.html": render_about(docs, clusters, index),
+        "index.html": render_index(docs, index, total_raw=len(all_docs), out_count=out_count),
+        "documents.html": redirect_html("index.html"),
+        "clusters.html": redirect_html("index.html"),
+        "about.html": render_about(docs, index, total_raw=len(all_docs), out_count=out_count),
     }
     for name, html in pages.items():
         (DIST / name).write_text(html, encoding="utf-8")

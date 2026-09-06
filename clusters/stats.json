@@ -1,34 +1,32 @@
 {
   "updated": "2026-09-04",
   "items": 3994,
-  "clusters": 135,
-  "clustered_items": 484,
-  "singletons": 3510,
+  "clusters": 53,
+  "clustered_items": 120,
+  "singletons": 3874,
   "by_kind": {
-    "same-document": 50,
-    "same-act": 31,
-    "duplicate-record": 54
+    "same-document": 32,
+    "duplicate-record": 21
   },
-  "cross_collection": 50,
-  "cross_collection_items": 115,
+  "cross_collection": 32,
+  "cross_collection_items": 78,
   "collection_pair_counts": {
-    "mofa-country-policy+oecd-navigator": 13,
-    "agora+mofa-country-policy": 9,
-    "agora+mofa-country-policy+oecd-navigator": 6,
-    "agora+iaae-ethics": 6,
-    "mofa-governance+oecd-navigator": 5,
-    "agora+oecd-navigator": 5,
-    "agora+iaae-ethics+mofa-governance": 2,
+    "mofa-country-policy+oecd-navigator": 8,
+    "agora+mofa-country-policy": 7,
+    "agora+mofa-country-policy+oecd-navigator": 5,
+    "agora+oecd-navigator": 4,
+    "mofa-governance+oecd-navigator": 3,
+    "agora+iaae-ethics+mofa-governance": 1,
     "agora+iaae-ethics+mofa-country-policy+oecd-navigator": 1,
     "agora+iaae-ethics+mofa-governance+oecd-navigator": 1,
-    "agora+mofa-governance+oecd-navigator": 1,
-    "iaae-ethics+oecd-navigator": 1
+    "agora+iaae-ethics": 1,
+    "agora+mofa-governance": 1
   },
   "by_collection_clustered": {
-    "oecd-navigator": 113,
-    "mofa-country-policy": 32,
-    "iaae-ethics": 11,
-    "agora": 319,
-    "mofa-governance": 9
+    "mofa-governance": 8,
+    "iaae-ethics": 5,
+    "agora": 37,
+    "oecd-navigator": 49,
+    "mofa-country-policy": 21
   }
 }

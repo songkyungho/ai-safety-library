@@ -87,6 +87,29 @@ def fetch_oecd() -> list[dict]:
     return list(seen.values())
 
 
+def oecd_storage_url(path: str) -> str:
+    """Build absolute URL for OECD.AI uploaded files."""
+    from urllib.parse import quote
+
+    path = (path or "").lstrip("/")
+    if not path:
+        return ""
+    return "https://api.oecdai.org/storage/" + quote(path, safe="/")
+
+
+def oecd_country(it: dict) -> tuple[str, str]:
+    """Return (country_name, iso3_or_empty) from gaiinCountry / org location."""
+    gaiin = it.get("gaiinCountry")
+    if isinstance(gaiin, dict) and (gaiin.get("name") or gaiin.get("slug")):
+        return (gaiin.get("name") or gaiin.get("slug") or "", gaiin.get("code") or "")
+    loc = it.get("responsibleOrganisationSILocation") or it.get("responsibleOrganisationSDLocation")
+    if isinstance(loc, dict):
+        return (loc.get("name") or loc.get("slug") or "", loc.get("code") or "")
+    if isinstance(loc, str) and loc.strip():
+        return (loc.strip(), "")
+    return ("", "")
+
+
 def oecd_records(raw: list[dict]) -> list[dict]:
     out = []
     for it in raw:
@@ -102,19 +125,31 @@ def oecd_records(raw: list[dict]) -> list[dict]:
                 href = u.get("url") or u.get("href") or ""
                 if href and href not in sources:
                     sources.append(href)
+        file_urls = []
+        for f in it.get("sourceFiles") or []:
+            if not isinstance(f, dict):
+                continue
+            href = oecd_storage_url(f.get("path") or "")
+            if href and href not in file_urls:
+                file_urls.append(href)
+        # startYear = initiative 개시 연도(연 단위). 사이트 Added on / Updated on =
+        # createdAt / updatedAt (일자). 라이브러리 date는 Added on을 우선한다.
         year = it.get("startYear")
-        date = f"{year}-01-01" if year else ""
+        created = (it.get("createdAt") or "")[:10]
+        updated = (it.get("updatedAt") or "")[:10]
+        date = created or updated or (f"{year}-01-01" if year else "")
         body = strip_html(it.get("description") or "")
         overview = strip_html(it.get("overview") or "")
         if overview and overview not in body:
             body = (body + "\n\n" + overview).strip() if body else overview
+        country_name, country_code = oecd_country(it)
         loc = it.get("responsibleOrganisationSILocation") or it.get("responsibleOrganisationSDLocation")
-        country = ""
+        loc_name = ""
         if isinstance(loc, dict):
-            country = loc.get("name") or loc.get("slug") or ""
+            loc_name = loc.get("name") or loc.get("slug") or ""
         elif isinstance(loc, str):
-            country = loc
-        org = it.get("responsibleOrganisation") or country or ""
+            loc_name = loc
+        org = it.get("responsibleOrganisation") or loc_name or country_name or ""
         if isinstance(org, dict):
             org = org.get("name") or org.get("englishName") or ""
         rec = {
@@ -129,8 +164,13 @@ def oecd_records(raw: list[dict]) -> list[dict]:
             "status": it.get("status") or "",
             "date": date,
             "start_year": year,
+            "added_on": created,
+            "updated_on": updated,
             "page_url": page,
             "source_urls": sources,
+            "source_files": file_urls,
+            "country": country_name,
+            "country_code": country_code,
             "document_name": it.get("originalName") or "",
             "body": body,
             "extent": it.get("extentBinding") or "",
@@ -250,7 +290,7 @@ def rebuild_root_catalog() -> None:
         ROOT / "catalog.json",
         {
             "name": "AI 안전 라이브러리",
-            "updated": "2026-09-04",
+            "updated": time.strftime("%Y-%m-%d"),
             "collections": collections_meta,
             "total": sum(v.get("count") or 0 for v in collections_meta.values()),
         },
@@ -258,75 +298,91 @@ def rebuild_root_catalog() -> None:
 
 
 def main() -> None:
-    print("fetching OECD…")
-    oecd_raw = fetch_oecd()
-    print("oecd unique", len(oecd_raw))
-    oecd_source = {
-        "count": len(oecd_raw),
-        "board": "Policy Navigator",
-        "list_url": "https://oecd.ai/en/dashboards/policy-initiatives",
-        "api": "https://api.oecdai.org/policy-initiatives",
-        "fetched": "2026-09-04",
-        "note": "국가·국제기구 AI 정책 이니셔티브. 인용: OECD.AI (2025), OECD.AI Policy Navigator, https://oecd.ai/dashboards",
-    }
-    write_json(ROOT / "collections/oecd-navigator/source.json", oecd_source)
-    oecd = oecd_records(oecd_raw)
-    oecd_pack = pack(
-        "oecd-navigator",
-        "OECD.AI Policy Navigator",
-        oecd_source,
-        oecd,
-    )
-    write_json(ROOT / "collections/oecd-navigator/items.json", oecd_pack)
-    write_csv(ROOT / "collections/oecd-navigator/items.csv", [csv_row(r) for r in oecd], CSV_FIELDS)
-    (ROOT / "collections/oecd-navigator/catalog.md").write_text(
-        catalog_md(
-            "OECD.AI Policy Navigator",
-            [
-                "- 큐레이터: OECD.AI / GPAI",
-                "- 출처: [Policy Navigator](https://oecd.ai/en/dashboards/policy-initiatives)",
-                "- API: `https://api.oecdai.org/policy-initiatives`",
-                "- 데이터: `items.json` · `items.csv`",
-            ],
-            oecd,
-        ),
-        encoding="utf-8",
-    )
+    import argparse
 
-    print("parsing AGORA…")
-    agora = agora_records()
-    print("agora", len(agora))
-    agora_source = {
-        "count": len(agora),
-        "board": "AI GOvernance and Regulatory Archive",
-        "list_url": "https://agora.eto.tech/",
-        "dataset": "https://doi.org/10.5281/zenodo.20714047",
-        "version": "1.30.0 (2026-06-16)",
-        "license": "CC BY-NC 4.0",
-        "note": "CSET/ETO 문서 아카이브. 전문 파일은 넣지 않고 메타데이터·요약·공식 URL만 보관. 인용: Emerging Technology Observatory AGORA dataset, https://eto.tech/dataset-docs/agora-dataset/",
-    }
-    write_json(ROOT / "collections/agora/source.json", agora_source)
-    agora_pack = pack(
-        "agora",
-        "ETO AGORA",
-        agora_source,
-        agora,
-    )
-    write_json(ROOT / "collections/agora/items.json", agora_pack)
-    write_csv(ROOT / "collections/agora/items.csv", [csv_row(r) for r in agora], CSV_FIELDS)
-    (ROOT / "collections/agora/catalog.md").write_text(
-        catalog_md(
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--oecd-only", action="store_true")
+    ap.add_argument("--agora-only", action="store_true")
+    ap.add_argument("--catalog-only", action="store_true")
+    args = ap.parse_args()
+
+    if args.catalog_only:
+        rebuild_root_catalog()
+        cat = json.loads((ROOT / "catalog.json").read_text(encoding="utf-8"))
+        print("library total", cat["total"])
+        return
+
+    if not args.agora_only:
+        print("fetching OECD…")
+        oecd_raw = fetch_oecd()
+        print("oecd unique", len(oecd_raw))
+        oecd_source = {
+            "count": len(oecd_raw),
+            "board": "Policy Navigator",
+            "list_url": "https://oecd.ai/en/dashboards/policy-initiatives",
+            "api": "https://api.oecdai.org/policy-initiatives",
+            "fetched": time.strftime("%Y-%m-%d"),
+            "note": "국가·국제기구 AI 정책 이니셔티브. 인용: OECD.AI (2025), OECD.AI Policy Navigator, https://oecd.ai/dashboards. gaiinCountry·sourceFiles 포함.",
+        }
+        write_json(ROOT / "collections/oecd-navigator/source.json", oecd_source)
+        oecd = oecd_records(oecd_raw)
+        oecd_pack = pack(
+            "oecd-navigator",
+            "OECD.AI Policy Navigator",
+            oecd_source,
+            oecd,
+        )
+        write_json(ROOT / "collections/oecd-navigator/items.json", oecd_pack)
+        write_csv(ROOT / "collections/oecd-navigator/items.csv", [csv_row(r) for r in oecd], CSV_FIELDS)
+        (ROOT / "collections/oecd-navigator/catalog.md").write_text(
+            catalog_md(
+                "OECD.AI Policy Navigator",
+                [
+                    "- 큐레이터: OECD.AI / GPAI",
+                    "- 출처: [Policy Navigator](https://oecd.ai/en/dashboards/policy-initiatives)",
+                    "- API: `https://api.oecdai.org/policy-initiatives`",
+                    "- 데이터: `items.json` · `items.csv`",
+                ],
+                oecd,
+            ),
+            encoding="utf-8",
+        )
+
+    if not args.oecd_only:
+        print("parsing AGORA…")
+        agora = agora_records()
+        print("agora", len(agora))
+        agora_source = {
+            "count": len(agora),
+            "board": "AI GOvernance and Regulatory Archive",
+            "list_url": "https://agora.eto.tech/",
+            "dataset": "https://doi.org/10.5281/zenodo.20714047",
+            "version": "1.30.0 (2026-06-16)",
+            "license": "CC BY-NC 4.0",
+            "note": "CSET/ETO 문서 아카이브. 전문 파일은 넣지 않고 메타데이터·요약·공식 URL만 보관. 인용: Emerging Technology Observatory AGORA dataset, https://eto.tech/dataset-docs/agora-dataset/",
+        }
+        write_json(ROOT / "collections/agora/source.json", agora_source)
+        agora_pack = pack(
+            "agora",
             "ETO AGORA",
-            [
-                "- 큐레이터: Georgetown CSET / Emerging Technology Observatory",
-                "- 출처: [AGORA](https://agora.eto.tech/) · 데이터셋 [Zenodo 1.30.0](https://doi.org/10.5281/zenodo.20714047)",
-                "- 라이선스: CC BY-NC 4.0. 요약 일부는 미검수 기계생성일 수 있다.",
-                "- 데이터: `items.json` · `items.csv` (전문 텍스트는 용량 때문에 제외, 공식 URL 사용)",
-            ],
+            agora_source,
             agora,
-        ),
-        encoding="utf-8",
-    )
+        )
+        write_json(ROOT / "collections/agora/items.json", agora_pack)
+        write_csv(ROOT / "collections/agora/items.csv", [csv_row(r) for r in agora], CSV_FIELDS)
+        (ROOT / "collections/agora/catalog.md").write_text(
+            catalog_md(
+                "ETO AGORA",
+                [
+                    "- 큐레이터: Georgetown CSET / Emerging Technology Observatory",
+                    "- 출처: [AGORA](https://agora.eto.tech/) · 데이터셋 [Zenodo 1.30.0](https://doi.org/10.5281/zenodo.20714047)",
+                    "- 라이선스: CC BY-NC 4.0. 요약 일부는 미검수 기계생성일 수 있다.",
+                    "- 데이터: `items.json` · `items.csv` (전문 텍스트는 용량 때문에 제외, 공식 URL 사용)",
+                ],
+                agora,
+            ),
+            encoding="utf-8",
+        )
 
     rebuild_root_catalog()
     cat = json.loads((ROOT / "catalog.json").read_text(encoding="utf-8"))

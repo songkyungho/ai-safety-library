@@ -1,0 +1,601 @@
+﻿url,host_kind,status,error
+http://ai4school.org/[자료제목],original,,UnicodeEncodeError: 'ascii' codec can't encode characters in position 6-9: ordinal not in range(128)
+http://board.sejong.ac.kr/boardview.do?pkid=160936¤tPage=1&searchField=ALL&siteGubun=19&menuGubun=1&bbsConfigFK=335&searchLowItem=ALL&searchValue=,original,,UnicodeEncodeError: 'ascii' codec can't encode character '\xa4' in position 29: ordinal not in range(128)
+http://aiiaorg.cn/index.php?m=content&c=index&a=show&catid=34&id=115   https://www.sohu.com/a/501708742_100207327,original,,InvalidURL: URL can't contain control characters. '/index.php?m=content&c=index&a=show&catid=34&id=115   https://www.sohu.com/a/501708742_100207327' (found at least ' ')
+http://alicia.concytec.gob.pe/vufind/   http://portal.concytec.gob.pe/index.php/informacion-cti/alicia/red-nacional-de-repositorios-digitales-de-ciencia-tecnologia-e-innovacion-de-acceso-abierto-renare,original,,InvalidURL: URL can't contain control characters. '/vufind/   http://portal.concytec.gob.pe/index.php/informacion-cti/alicia/red-nacional-de-repositorios-digitales-de-ciencia-tecnologia-e-innovacion-de-acceso-abierto-renare' (found at least ' ')
+http://bedigital.brussels/wp-content/uploads/2018/05/Plan-NextTech-FR-NExtTech.pdf,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+http://fi.china-embassy.gov.cn/eng/kxjs/201710/P020210628714286134479.pdf   http://most.gov.cn/kjbgz/201906/t20190617_147107.htm   https://www.newamerica.org/cybersecurity-initiative/digichina/blog/translation-chinese-expert-group-offers-governance-princi,original,,InvalidURL: URL can't contain control characters. '/eng/kxjs/201710/P020210628714286134479.pdf   http://most.gov.cn/kjbgz/201906/t20190617_147107.htm   https://www.newamerica.org/cybersecurity-initiative/digichina/blog/translation-chinese-expert-group-offers-governance-princi' (found at least ' ')
+http://fondzanauku.gov.rs/the-program-prisma/?lang=en   https://fondzanauku.gov.rs/programs/?lang=en,original,,InvalidURL: URL can't contain control characters. '/the-program-prisma/?lang=en   https://fondzanauku.gov.rs/programs/?lang=en' (found at least ' ')
+http://dbtindia.gov.in/sites/default/files/Draft1-Biological_Data_Policy.pdf,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+"http://most.gov.cn/kjbgz/201906/t20190617_147107.htm   http://ir.china-embassy.gov.cn/eng/sgzc/202310/t20231029_11170169.htm#:~:text=It%20stated%20eight%20principles%20for,agile%20governance.In%202020%2C%20the",original,,InvalidURL: URL can't contain control characters. '/kjbgz/201906/t20190617_147107.htm   http://ir.china-embassy.gov.cn/eng/sgzc/202310/t20231029_11170169.htm' (found at least ' ')
+http://opendatastore.brussels/fr/   https://opendata.brussels.be/page/home/,original,,InvalidURL: URL can't contain control characters. '/fr/   https://opendata.brussels.be/page/home/' (found at least ' ')
+http://prosoft.economia.gob.mx/ ; https://www.ciiia.mx/;,original,,InvalidURL: URL can't contain control characters. '/ ; https://www.ciiia.mx/;' (found at least ' ')
+http://participa.br/estrategia-brasileira-de-inteligencia-artificial/estrategia-brasileira-de-inteligencia-artificial-aplicacao-nos-setores-produtivos,original,,ConnectionResetError: [Errno 54] Connection reset by peer
+http://www.ai.iitkgp.ac.in/Research/,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+http://www.cac.gov.cn/2017-11/16/c_1121964697.htm   https://www.most.gov.cn/tpxw/201902/t20190221_145137.html,original,,InvalidURL: URL can't contain control characters. '/2017-11/16/c_1121964697.htm   https://www.most.gov.cn/tpxw/201902/t20190221_145137.html' (found at least ' ')
+http://www.fpip.kz/index.php/en/grant-programs/phd   http://fpip.kz/images/KZ_FPIP_PhD-Grant-Program_eng_2version.pdf,original,,InvalidURL: URL can't contain control characters. '/index.php/en/grant-programs/phd   http://fpip.kz/images/KZ_FPIP_PhD-Grant-Program_eng_2version.pdf' (found at least ' ')
+http://www.idris.fr/eng/ia/,original,404,HTTPError 404
+http://www.mcit.gov.eg              http://www.sis.gov.eg/Story/196763/%D8%B1%D8%A6%D9%8A%D8%B3-%D8%A7%D9%84%D9%88%D8%B2%D8%B1%D8%A7%D8%A1-%D9%8A%D8%B5%D8%AF%D8%B1-%D9%82%D8%B1%D8%A7%D8%B1%D8%A7-%D8%A8%D8%A5%D9%86%D8%B4%D8%A7%D8%A1-%D8%A7%D9%84%D9%85%D8%A,original,,InvalidURL: URL can't contain control characters. 'www.mcit.gov.eg              http' (found at least ' ')
+http://192.168.35.13:15871/cgi-bin/blockpage.cgi?ws-session=1048163155,original,,URLError: <urlopen error timed out>
+http://fpip.kz/index.php/en/,original,,URLError: <urlopen error timed out>
+http://www.msit.go.kr/web/msipContents/contentsView.do?cateId=mssw01174&artId=1373921,original,404,HTTPError 404
+http://siai.ijs.si,original,,URLError: <urlopen error timed out>
+http://legislation.nysenate.gov/pdf/bills/2025/S933,original,,URLError: <urlopen error _ssl.c:1112: The handshake operation timed out>
+http://tap.mk.gov.lv/doc/2020_02/IZ_MI%5b1%5d.2.docx,original,,URLError: <urlopen error timed out>
+http://www.roboethics.org/index_file/Roboethics%20Roadmap%20Rel.1.2.pdf[자료제목],original,,UnicodeEncodeError: 'ascii' codec can't encode characters in position 51-54: ordinal not in range(128)
+http://tap.mk.gov.lv/lv/mk/tap/?pid=40475479,original,,URLError: <urlopen error timed out>
+http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/L13709compilado.htm,original,,ConnectionResetError: [Errno 54] Connection reset by peer
+https://,original,,URLError: <urlopen error no host given>
+https://36dc704c-0d61-4da0-87fa-917581cbce16.filesusr.com/ugd/7be025_6f45f669e2fa4910b32671a001074987.pdf     https://oecd.ai/en/wonk/documents/mexico-mexican-national-ai-agenda-2018-2030,original,,InvalidURL: URL can't contain control characters. '/ugd/7be025_6f45f669e2fa4910b32671a001074987.pdf     https://oecd.ai/en/wonk/documents/mexico-mexican-national-ai-agenda-2018-2030' (found at least ' ')
+https://abci.ai/   https://abci.ai/ja/how_to_use/data/ABCI_Security_Whitepaper.pdf,original,,InvalidURL: URL can't contain control characters. '/   https://abci.ai/ja/how_to_use/data/ABCI_Security_Whitepaper.pdf' (found at least ' ')
+http://www.scielo.org.za/scielo.php?script=sci_arttext&pid=S0038-23532018000600004,original,,URLError: <urlopen error [Errno 61] Connection refused>
+http://www.conicit.go.cr/sic/biblioteca_virtual/publicaciones/publica_cyt/informes/TransfDigitalCR.pdfx,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://acein.aueb.gr/en/athens-center-for-entrepreneurship-and-innovation/,original,404,HTTPError 404
+https://acein.aueb.gr/en/,original,404,HTTPError 404
+https://ai-innovation.id/strategi,original,,URLError: <urlopen error [Errno 61] Connection refused>
+https://ai.bsa.org/wp-content/uploads/2019/09/humancentricai.pdf[자료제목],original,,UnicodeEncodeError: 'ascii' codec can't encode characters in position 51-54: ordinal not in range(128)
+http://www.inpdp.nat.tn/,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://ai-ethics-bok.scs.org.sg/,original,404,HTTPError 404
+https://ai.gov/wp-content/uploads/2024/04/AI-Talent-Surge-Progress-Report.pdf,original,404,HTTPError 404
+https://ai.in.th/,original,,URLError: <urlopen error [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1129)>
+https://ai.in.th/en/,original,,URLError: <urlopen error [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1129)>
+https://ai.in.th/wp-content/uploads/2022/12/20220726-AI.pdf,original,,URLError: <urlopen error [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1129)>
+https://ai.gov/wp-content/uploads/2024/10/NSM-Framework-to-Advance-AI-Governance-and-Risk-Management-in-National-Security.pdf,original,404,HTTPError 404
+https://ai.gov/research/,original,404,HTTPError 404
+https://ai100.stanford.edu[자료제목],original,,UnicodeEncodeError: 'latin-1' codec can't encode characters in position 19-22: ordinal not in range(256)
+https://ai4eosc.eu/project/,original,404,HTTPError 404
+https://ai.google/static/documents/EN-AI-Principles.pdf,original,404,HTTPError 404
+http://www3.weforum.org/docs/WEF_Framework_,original,,timeout: The read operation timed out
+https://ai.meta.com/static-resource/meta-frontier-ai-framework,original,500,HTTPError 500
+https://aicm.ai.gov.eg/en/Resources/EgyptianCharterForResponsibleAIEnglish-v1.0.pdf,original,,URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1129)>
+https://aiexports.gov/memberships/request?returnTo=%2Fconsortia%2Fapply,original,404,HTTPError 404
+https://ainowinstitute.org/AI_Now_2019_Report.pdf[자료제목],original,,UnicodeEncodeError: 'ascii' codec can't encode characters in position 28-31: ordinal not in range(128)
+https://ainowinstitute.org/discriminatingsystems.pdf[자료제목],original,,UnicodeEncodeError: 'ascii' codec can't encode characters in position 31-34: ordinal not in range(128)
+https://ainowinstitute.org/AI_Now_2019_Report.pdf,original,404,HTTPError 404
+https://ainowinstitute.org/discriminatingsystems.pdf,original,404,HTTPError 404
+https://airawat.cdac.in/airawat/,original,,URLError: <urlopen error timed out>
+https://au.int/sites/default/files/decisions/37590-2019_sharm_el_sheikh_declaration_-_stc-cict-3_oct_2019_ver2410-10pm-1rev-2.pdf                     http://www.mcit.gov.eg/Media_Center/Press_Room/Press_Releases/38439                           http://www.,original,,InvalidURL: URL can't contain control characters. '/sites/default/files/decisions/37590-2019_sharm_el_sheikh_declaration_-_stc-cict-3_oct_2019_ver2410-10pm-1rev-2.pdf                     http://www.mcit.gov.eg/Media_Center/Press_Room/Press_Releases/38439                           http://www.' (found at least ' ')
+https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1122115/Industry_Temperature_Check_-_Barriers_and_Enablers_to_AI_Assu,original,404,HTTPError 404
+https://bigscience.huggingface.co,original,,URLError: <urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1129)>
+https://bbr.bg/en/Products-and-services-bbr/products-bbr/direct-financing-with-invest-eu-guarantee/,original,404,HTTPError 404
+https://arc-sos.state.al.us/ucp/B19148AA.AEM.pdf,original,,URLError: <urlopen error timed out>
+https://architecture.digital.gov.au/standard/government-use-ai,original,,timeout: The read operation timed out
+https://arkleg.state.ar.us/Home/FTPDocument?path=%2FBills%2F2025R%2FPublic%2FHB1876.pdf,original,,URLError: <urlopen error timed out>
+https://business.gov.au/grants-and-programs/manufacturing-modernisation-fund-round-1   https://www.minister.industry.gov.au/ministers/karenandrews/media-releases/fund-modernise-manufacturing   https://business.gov.au/grants-and-programs/manufacturing-mode,original,,InvalidURL: URL can't contain control characters. '/grants-and-programs/manufacturing-modernisation-fund-round-1   https://www.minister.industry.gov.au/ministers/karenandrews/media-releases/fund-modernise-manufacturing   https://business.gov.au/grants-and-programs/manufacturing-mode' (found at least ' ')
+https://busquedas.elperuano.pe/dispositivo/NL/2192926-1   http://www.pcm.gob.pe/wp-content/uploads/2024/02/POI-2024-V2-PLIEGO.pdf   https://cdn.www.gob.pe/uploads/document/file/353216/decreto-legislativo-que-aprueba-la-ley-de-gobierno-digital-decreto-legi,original,,InvalidURL: URL can't contain control characters. '/dispositivo/NL/2192926-1   http://www.pcm.gob.pe/wp-content/uploads/2024/02/POI-2024-V2-PLIEGO.pdf   https://cdn.www.gob.pe/uploads/document/file/353216/decreto-legislativo-que-aprueba-la-ley-de-gobierno-digital-decreto-legi' (found at least ' ')
+https://caidg.smu.edu.sg,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://caipm.kau.edu.sa/Default-838990-ar,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://carnegieendowment.org/2022/01/04/china-s-new-ai-governance-initiatives-shouldn-t-be-ignored-pub-86127   https://cset.georgetown.edu/publication/ethical-norms-for-new-generation-artificial-intelligence-released/,original,,InvalidURL: URL can't contain control characters. '/2022/01/04/china-s-new-ai-governance-initiatives-shouldn-t-be-ignored-pub-86127   https://cset.georgetown.edu/publication/ethical-norms-for-new-generation-artificial-intelligence-released/' (found at least ' ')
+https://carnegieendowment.org/2022/01/04/china-s-new-ai-governance-initiatives-shouldn-t-be-ignored-pub-86127   https://digichina.stanford.edu/work/translation-guiding-opinions-on-strengthening-overall-governance-of-internet-information-service-algorithms,original,,InvalidURL: URL can't contain control characters. '/2022/01/04/china-s-new-ai-governance-initiatives-shouldn-t-be-ignored-pub-86127   https://digichina.stanford.edu/work/translation-guiding-opinions-on-strengthening-overall-governance-of-internet-information-service-algorithms' (found at least ' ')
+https://bmdv.bund.de/SharedDocs/DE/Anlage/DG/aktionsplan-ki.pdf?__blob=publicationFile,original,404,HTTPError 404
+https://bmdv.bund.de/EN/Topics/Digital-Matters/mFund/mFund.html,original,404,HTTPError 404
+https://bmdv.bund.de/SharedDocs/EN/Articles/DG/act-on-autonomous-driving.html,original,404,HTTPError 404
+https://cdn.www.gob.pe/uploads/document/file/1909267/National%20Artificial%20Intelligence%20Strategy%20-%20Peru.pdf?v=1630689882   http://www.pcm.gob.pe/wp-content/uploads/2024/02/POI-2024-V2-PLIEGO.pdf,original,,InvalidURL: URL can't contain control characters. '/uploads/document/file/1909267/National%20Artificial%20Intelligence%20Strategy%20-%20Peru.pdf?v=1630689882   http://www.pcm.gob.pe/wp-content/uploads/2024/02/POI-2024-V2-PLIEGO.pdf' (found at least ' ')
+https://cdn.www.gob.pe/uploads/document/file/1909267/National%20Artificial%20Intelligence%20Strategy%20-%20Peru.pdf?v=1630689882   https://www.gob.pe/13517-participar-de-la-estrategia-nacional-de-inteligencia-artificial   https://www.youtube.com/watch?v=z,original,,InvalidURL: URL can't contain control characters. '/uploads/document/file/1909267/National%20Artificial%20Intelligence%20Strategy%20-%20Peru.pdf?v=1630689882   https://www.gob.pe/13517-participar-de-la-estrategia-nacional-de-inteligencia-artificial   https://www.youtube.com/watch?v=z' (found at least ' ')
+https://chmura.gov.pl/informacje/czym-jest-zuch,original,,URLError: <urlopen error [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1129)>
+https://chmura.gov.pl/zuch/news/cztery-projekty-ipcei-cis-otrzymaly-dofinansowanie-w-ramach-krajowego-planu-odbudowy,original,,URLError: <urlopen error [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1129)>
+https://cis-legislation.com/document.fwx?rgn=130974   http://isrs.uz/en/page/pdf/eldor-aripov-strategia-cifrovoj-uzbekistan-2030-predpolagaet-rad-proryvnyh-dla-strany-mer,original,,InvalidURL: URL can't contain control characters. '/document.fwx?rgn=130974   http://isrs.uz/en/page/pdf/eldor-aripov-strategia-cifrovoj-uzbekistan-2030-predpolagaet-rad-proryvnyh-dla-strany-mer' (found at least ' ')
+https://cbddo.gov.tr/SharedFolderServer/Genel/File/UlusalYapayZekaStratejisi2024-2025EylemPlani.pdf,original,,URLError: <urlopen error timed out>
+https://cbddo.gov.tr/en/nais,original,,URLError: <urlopen error timed out>
+https://cbddo.gov.tr/en/news/4893/turkiye-de-bir-ilk-turk-beyin-projesi-cumhurbaskanligi-dijital-donusum-ofisi-ve-gazi-universitesi-is-birligi-ile-hayata-gecirildi-,original,,URLError: <urlopen error timed out>
+https://cbddo.gov.tr/en/opendata/about-the-project/,original,,URLError: <urlopen error timed out>
+https://cbddo.gov.tr/en/project-description/4605/national-data-dictionary-,original,,URLError: <urlopen error timed out>
+https://cbddo.gov.tr/en/projects/nationaldatadictionary/,original,,URLError: <urlopen error timed out>
+https://cbddo.gov.tr/projeler/dijital-genc/,original,,URLError: <urlopen error timed out>
+https://cms.thedigital.gov.ua/storage/uploads/files/page/community/docs/%D0%94%D0%BE%D1%80%D0%BE%D0%B6%D0%BD%D1%8F_%D0%BA%D0%B0%D1%80%D1%82%D0%B0_%D0%B7_%D1%80%D0%B5%D0%B3%D1%83%D0%BB%D1%8E%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F_%D0%A8%D0%86_%D0%B2_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%96_compressed.pdf,original,,URLError: <urlopen error timed out>
+https://cms.thedigital.gov.ua/storage/uploads/files/page/community/docs/Vykorystannya_AI_u_vyshchyy_osviti.pdf,original,,URLError: <urlopen error timed out>
+https://cms.thedigital.gov.ua/storage/uploads/files/page/community/docs/%D0%91%D1%96%D0%BB%D0%B0_%D0%BA%D0%BD%D0%B8%D0%B3%D0%B0_%D0%B7_%D1%80%D0%B5%D0%B3%D1%83%D0%BB%D1%8E%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F_%D0%A8%D0%86_%D0%B2_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%96_%D0%90%D0%9D%D0%93%D0%9B.pdf,original,,URLError: <urlopen error timed out>
+https://cms.thedigital.gov.ua/storage/uploads/files/page/community/docs/%D0%A8%D0%86%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%BE%D0%B7%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D0%BA%D1%96%D0%B2.pdf?utm_source=communication&utm_medium=cps&utm_id=1,original,,URLError: <urlopen error timed out>
+https://colaboracion.dnp.gov.co/CDT/Conpes/Econ%C3%B3micos/3920.pdf,original,,URLError: <urlopen error [Errno 65] No route to host>
+https://colaboracion.dnp.gov.co/CDT/Conpes/Econ%C3%B3micos/3995.pdf,original,,URLError: <urlopen error [Errno 65] No route to host>
+https://colaboracion.dnp.gov.co/CDT/Conpes/Econ%C3%B3micos/4144.pdf,original,,URLError: <urlopen error [Errno 65] No route to host>
+https://colaboracion.dnp.gov.co/CDT/Desarrollo%20Digital/EVENTOS/END_Colombia_2023_2026.pdf,original,,URLError: <urlopen error [Errno 65] No route to host>
+https://cset.georgetown.edu/wp-content/uploads/Notice-of-the-Ministry-of-Education-on-Issuing-the-Artificial-Intelligence-Innovation-Action-Plan-for-Institutes-of-Higher-Education.pdf   http://www.moe.gov.cn/srcsite/A16/s7062/201804/t20180410_332722.html,original,,InvalidURL: URL can't contain control characters. '/wp-content/uploads/Notice-of-the-Ministry-of-Education-on-Issuing-the-Artificial-Intelligence-Innovation-Action-Plan-for-Institutes-of-Higher-Education.pdf   http://www.moe.gov.cn/srcsite/A16/s7062/201804/t20180410_332722.html' (found at least ' ')
+https://cyber.harvard.edu/publication/2020/principled-ai[자료제목],original,,UnicodeEncodeError: 'ascii' codec can't encode characters in position 36-39: ordinal not in range(128)
+https://das.ohio.gov/wps/wcm/connect/gov/de987825-6f6d-41e7-86b9-31c957551975/IT-17.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE.Z18_M1HGGIK0N0JO00QO9DDDDM3000-de987825-6f6d-41e7-86b9-31c957551975-oMRScaB,original,404,HTTPError 404
+https://data61.csiro.au/en/Our-Research/Our-Work/AI-Roadmap   https://www.minister.industry.gov.au/ministers/karenandrews/media-releases/ai-next-frontier-solving-national-challenges   https://data61.csiro.au/~/media/D61/AI-Roadmap-assets/19-00346_DATA61_R,original,,InvalidURL: URL can't contain control characters. '/en/Our-Research/Our-Work/AI-Roadmap   https://www.minister.industry.gov.au/ministers/karenandrews/media-releases/ai-next-frontier-solving-national-challenges   https://data61.csiro.au/~/media/D61/AI-Roadmap-assets/19-00346_DATA61_R' (found at least ' ')
+https://digichina.stanford.edu/work/full-translation-chinas-new-generation-artificial-intelligence-development-plan-2017/   http://fi.china-embassy.gov.cn/eng/kxjs/201710/P020210628714286134479.pdf,original,,InvalidURL: URL can't contain control characters. '/work/full-translation-chinas-new-generation-artificial-intelligence-development-plan-2017/   http://fi.china-embassy.gov.cn/eng/kxjs/201710/P020210628714286134479.pdf' (found at least ' ')
+https://digital-luxembourg.public.lu/news/national-ai-vision-prioritizes-people   https://digital-luxembourg.public.lu/initiatives/artificial-intelligence-strategic-vision-luxembourg   https://digital-luxembourg.public.lu/sites/default/files/2020-09/AI_EN,original,,InvalidURL: URL can't contain control characters. '/news/national-ai-vision-prioritizes-people   https://digital-luxembourg.public.lu/initiatives/artificial-intelligence-strategic-vision-luxembourg   https://digital-luxembourg.public.lu/sites/default/files/2020-09/AI_EN' (found at least ' ')
+https://cueesantander.com/media/42ea63d433e83cecfc730465d45c6870.pdf,original,,URLError: <urlopen error timed out>
+https://digifinland.fi/en/ai-ecosystem-in-social-and-health-services-sote/,original,404,HTTPError 404
+https://dataintelligence.at/dataspaces/ds-datengetriebene-innovation-in-land-und-forstwirtschaft/,original,404,HTTPError 404
+https://digitalhumans.com/blog/why-we-wrote-the-five-laws-of-ethical-digital-human-design/[자료제목],original,,UnicodeEncodeError: 'ascii' codec can't encode characters in position 70-73: ordinal not in range(128)
+https://digitalcitizen.kr/front/iNews/trend/selectTrendList.do,original,404,HTTPError 404
+https://digitalcitizen.kr/front/iNew,original,404,HTTPError 404
+https://digitalhumans.com/blog/why-we-wrote-the-five-laws-of-ethical-digital-human-design/,original,404,HTTPError 404
+https://dre.pt/application/conteudo/132133788   https://www.ani.pt/pt/valorizacao-do-conhecimento/interface/zonas-livres-tecnol%C3%B3gicas/,original,,InvalidURL: URL can't contain control characters. '/application/conteudo/132133788   https://www.ani.pt/pt/valorizacao-do-conhecimento/interface/zonas-livres-tecnol%C3%B3gicas/' (found at least ' ')
+https://dutchdigitaldelta.nl/en/about-topsector-ict,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.111999/asr   https://www.e-tar.lt/portal/lt/legalAct/caa8cc80f5e711e7a20bfa7c2b23a6b2,original,,InvalidURL: URL can't contain control characters. '/portal/legalAct/lt/TAD/TAIS.111999/asr   https://www.e-tar.lt/portal/lt/legalAct/caa8cc80f5e711e7a20bfa7c2b23a6b2' (found at least ' ')
+https://eandt.theiet.org/content/articles/2019/05/darpa-funds-brain-machine-interface-project-for-controlling-weapons-via-thoughts/   https://www.technologyreview.com/2019/10/16/132269/us-military-super-soldiers-control-drones-brain-computer-interfaces/?u,original,,InvalidURL: URL can't contain control characters. '/content/articles/2019/05/darpa-funds-brain-machine-interface-project-for-controlling-weapons-via-thoughts/   https://www.technologyreview.com/2019/10/16/132269/us-military-super-soldiers-control-drones-brain-computer-interfaces/?u' (found at least ' ')
+https://ec.europa.eu/digital-single-market/en/news/call-acquire-new-world-class-supercomputer-portugal   https://perin.pt/financiamento/eurohpc/   https://eurocc.fccn.pt/en/hpc-in-portugal/   https://hpc-portal.eu/taxonomy/term/98,original,,InvalidURL: URL can't contain control characters. '/digital-single-market/en/news/call-acquire-new-world-class-supercomputer-portugal   https://perin.pt/financiamento/eurohpc/   https://eurocc.fccn.pt/en/hpc-in-portugal/   https://hpc-portal.eu/taxonomy/term/98' (found at least ' ')
+https://eiec.kdi.re.kr/policy/materialView.do?num=215524&topic=[자료제목],original,,UnicodeEncodeError: 'ascii' codec can't encode characters in position 46-49: ordinal not in range(128)
+https://doc.lucia.cenaero.be/,original,,URLError: <urlopen error timed out>
+https://docs.legis.wisconsin.gov/2023/related/acts/123,original,,URLError: <urlopen error timed out>
+https://en.kosgeb.gov.tr/site/tr/genel/destekdetay/1230/kobigel-sme-development-support-programme,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://en.digst.dk/media/lvgntc3r/bilag-2a-knowledge-assessment-of-projects-of-the-national-artificial-intelligence-uptake-fund.pdf,original,404,HTTPError 404
+https://e-gov.bg/wps/portal/agency/home/data/opendata/opendata-portal,original,,URLError: <urlopen error timed out>
+https://en.digst.dk/strategy/the-national-strategy-for-digitalisation/,original,404,HTTPError 404
+https://english.msit.go.kr/eng/bbs/view.do?sCode=eng&mId=10&mPid=9&bbsSeqNo=46&nttSeqNo=9   https://oecd.ai/en/wonk/documents/korea-national-strategy-for-ai-2019,original,,InvalidURL: URL can't contain control characters. '/eng/bbs/view.do?sCode=eng&mId=10&mPid=9&bbsSeqNo=46&nttSeqNo=9   https://oecd.ai/en/wonk/documents/korea-national-strategy-for-ai-2019' (found at least ' ')
+https://engpro.swa.gov.sa,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://en.unesco.org/events/regional-forum-artificial-intelligence-latin-america-and-caribbean,original,404,HTTPError 404
+https://epsrc.ukri.org/research/ourportfolio/themes/engineering/activities/principlesofrobotics/[자료제목],original,,UnicodeEncodeError: 'ascii' codec can't encode characters in position 79-82: ordinal not in range(128)
+https://euraxess.ec.europa.eu/worldwide/japan/call-trilateral-french-japanese-german-research-projects-artificial   https://www.dfg.de/en/research_funding/announcements_proposals/2019/info_wissenschaft_19_58/index.html,original,,InvalidURL: URL can't contain control characters. '/worldwide/japan/call-trilateral-french-japanese-german-research-projects-artificial   https://www.dfg.de/en/research_funding/announcements_proposals/2019/info_wissenschaft_19_58/index.html' (found at least ' ')
+https://eureka-joint-call.eu/wp-content/uploads/2020/04/webinario-llamada-clusters-ia-presentacion-ai4es.pdf?x99494,original,,"URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'eureka-joint-call.eu'. (_ssl.c:1129)>"
+https://en.techgarden.kz/,original,,timeout: The read operation timed out
+https://european-digital-innovation-hubs.ec.europa.eu/edih-catalogue/health-hubEuropean,original,404,HTTPError 404
+https://events.unesco.org/event/?id=2862999922&lang=1033,original,404,HTTPError 404
+https://eviden.com/insights/press-releases/eviden-to-deliver-perun-slovakias-new-supercomputer/,original,404,HTTPError 404
+https://futuremobilityfinland.fi/#,original,,URLError: <urlopen error [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1129)>
+https://futuremobilityfinland.fi/wp-content/uploads/2022/08/Mobility-Solutions-from-Finland.pdf,original,,URLError: <urlopen error [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1129)>
+https://g20.org.za/wp-content/uploads/2025/11/2025-G20-Summit-Declaration.pdf,original,,"URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'g20.org.za'. (_ssl.c:1129)>"
+https://gc.nh.gov/bill_status/legacy/bs2016/billText.aspx?sy=2024&id=1597&txtFormat=pdf&v=current,original,403,URLError: <urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>
+https://gc.nh.gov/bill_status/legacy/bs2016/bill_status.aspx?lsr=2510&sy=2024&sortoption=&txtsessionyear=2024&txtbillnumber=HB1688,original,,URLError: <urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>
+https://globalsmartcityforum.sa/en/default.aspx,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://goblab.uai.cl/en/sma-fondo-ia/,original,,"URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'goblab.uai.cl'. (_ssl.c:1129)>"
+https://governor.maryland.gov/Lists/ExecutiveOrders/Attachments/31/EO%2001.01.2024.02%20Catalyzing%20the%20Responsible%20and%20Productive%20Use%20of%20Artificial%20Intelligence%20in%20Maryland%20State%20Government_Accessible.pdf,original,404,HTTPError 404
+https://evinjeta.dars.si/en,original,,URLError: <urlopen error timed out>
+https://gouvernement.lu/en/dossiers/2014/digital-letzebuerg.html,original,404,HTTPError 404
+https://hai.stanford.edu/summary-ai-provisions-national-defense-authorization-act-2022   https://www.congress.gov/committee-print/117th-congress/house-committee-print/46591   https://www.congress.gov/bill/117th-congress/house-bill/4350,original,,InvalidURL: URL can't contain control characters. '/summary-ai-provisions-national-defense-authorization-act-2022   https://www.congress.gov/committee-print/117th-congress/house-committee-print/46591   https://www.congress.gov/bill/117th-congress/house-bill/4350' (found at least ' ')
+https://ia-latam.com/wp-content/uploads/2020/09/Plan-Nacional-de-Inteligencia-Artificial.pdf,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://hpc.kifu.hu/en/komondor,original,404,HTTPError 404
+https://icaire.sa/en/Pages/About.aspx,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://iaccmonitor.org/commitments/access-to-information-and-open-data/,original,,URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1129)>
+https://ico.org.uk/media/about-the-ico/consultations/4021868/draft-monitoring-at-work-20221011.pdf,original,404,HTTPError 404
+https://govai.gov.au,original,,timeout: The read operation timed out
+https://ico.org.uk/media/for-organisations/documents/4019035/sandbox-beta-review.pdf,original,404,HTTPError 404
+https://ico.org.uk/media/for-organisations/guide-to-data-protection/key-dp-themes/guidance-on-ai-and-data-protection-2-0.pdf,original,404,HTTPError 404
+https://ict.go.ke/wp-content/uploads/2020/08/10TH-JULY-FINAL-COPY-DIGITAL-ECONOMY-STRATEGY-DRAFT-ONE.pdf,original,404,HTTPError 404
+https://home.inai.org.mx//wp-content/documentos/DocumentosSectorPublico/RecomendacionesPDP-IA.pdf,original,,URLError: <urlopen error timed out>
+https://home.inai.org.mx//wp-content/documentos/DocumentosSectorPublico/guia_eipdp.pdf,original,,URLError: <urlopen error timed out>
+https://home.inai.org.mx/wp-content/documentos/DocumentosSectorPrivado/guiaeip.pdf,original,,URLError: <urlopen error timed out>
+https://industry.gov.au/data-and-publications/australias-tech-future/government-initiatives ;,original,,InvalidURL: URL can't contain control characters. '/data-and-publications/australias-tech-future/government-initiatives ;' (found at least ' ')
+"https://identita.gov.mt/expatriates-unit-key-employee-initiative-who-is-eligible/#:~:text=Non%2DEU%20Nationals%20%2F%20Key%20Employee,experience%20applicable%20to%20the%20job.",original,404,HTTPError 404
+https://innovationisrael.org.il/wp-content/uploads/2023/10/Government-Resoluion-No.-212.pdf                               https://www.gov.il/he/departments/policies/most_policy20210801,original,,InvalidURL: URL can't contain control characters. '/wp-content/uploads/2023/10/Government-Resoluion-No.-212.pdf                               https://www.gov.il/he/departments/policies/most_policy20210801' (found at least ' ')
+https://innovationisrael.org.il/wp-content/uploads/2023/10/Governmnet-Resoluion-No.-173.pdf                           https://www.gov.il/he/departments/policies/dec173-2023,original,,InvalidURL: URL can't contain control characters. '/wp-content/uploads/2023/10/Governmnet-Resoluion-No.-173.pdf                           https://www.gov.il/he/departments/policies/dec173-2023' (found at least ' ')
+https://innovationisrael.org.il/wp-content/uploads/2023/10/HPC-RFI-ENG-NOT-FORMAL.pdf                           https://english.news.cn/20230817/e43e8c760a244a22801c76ea717f5cc3/c.html                              https://www.hayadan.org.il/%D7%A8%D7%A9%D,original,,InvalidURL: URL can't contain control characters. '/wp-content/uploads/2023/10/HPC-RFI-ENG-NOT-FORMAL.pdf                           https://english.news.cn/20230817/e43e8c760a244a22801c76ea717f5cc3/c.html                              https://www.hayadan.org.il/%D7%A8%D7%A9%D' (found at least ' ')
+https://innovationisrael.org.il/wp-content/uploads/2023/10/Public-call-governmental-AI-projects.pdf                                 https://www.gov.il/he/departments/publications/Call_for_bids/rfp16082023,original,,InvalidURL: URL can't contain control characters. '/wp-content/uploads/2023/10/Public-call-governmental-AI-projects.pdf                                 https://www.gov.il/he/departments/publications/Call_for_bids/rfp16082023' (found at least ' ')
+https://imr.ie/pages/factoryxchange/,original,404,HTTPError 404
+https://ilga.gov/legislation/BillStatus.asp?GA=103&SessionID=112&DocTypeID=HB&DocNum=3563,original,,URLError: <urlopen error timed out>
+https://inteligenciaartificial.gov.co/,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://inteligenciaartificial.gov.co/en/dashboard-IA/,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://inteligenciaartificial.gov.co/en/ethical-framework/,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://inteligenciaartificial.gov.co/en/mission/,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://inteligenciaartificial.gov.co/static/img/ETHICAL_FRAMEWORK_FOR_ARTIFICIAL_INTELLIGENCE.pdf,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://ilga.gov/legislation/fulltext.asp?DocName=&SessionId=114&GA=104&DocTypeId=HB&DocNum=3506&GAID=18&LegID=162191&SpecSess=&Session=,original,,URLError: <urlopen error timed out>
+https://ilga.gov/legislation/fulltext.asp?DocName=10400SB2203lv&SessionID=114&GA=104&DocTypeID=SB&DocNum=2203&SpecSess=&Session=&print=true,original,,URLError: <urlopen error timed out>
+https://innoviris.brussels/research-platforms,original,404,HTTPError 404
+https://insait.ai/grf/,original,404,HTTPError 404
+https://insait.ai/bg/explorer/,original,404,HTTPError 404
+https://industry.gov.au/data-and-publications/australias-tech-future/government-initiatives,original,,timeout: The read operation timed out
+https://kohesio.eu/en/projects/Q3056633,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://kpc4ir.kaist.ac.kr/index.php?document_srl=3402&mid=KPC4IR_Reports,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://kpc4ir.kaist.ac.kr/index.php?document_srl=3402&mid=KPC4IR_Reports[자료제목],original,,UnicodeEncodeError: 'ascii' codec can't encode characters in position 52-55: ordinal not in range(128)
+https://itec.kuleuven-kulak.be/application-domains/smart-education-2-2/,original,,HTTPException: got more than 100 headers
+https://kiac.iisc.ac.in/about/the-centre/,original,404,HTTPError 404
+https://ki-zentren.net/,original,404,HTTPError 404
+https://kursuok.lt/en/about,original,404,HTTPError 404
+https://latvenergo.lv/en,original,451,HTTPError 451
+https://istitlaa.ncc.gov.sa/en/transportation/ndmo/deepfakesguidelines/Documents/SDAIA_Deepfakes%20Guidelines.pdf,original,,URLError: <urlopen error [Errno 65] No route to host>
+https://leam.ai/wp-content/uploads/2023/05/LEAM-Feasibility-STudy.pdf,original,404,HTTPError 404
+https://kadp.kalro.org/home/datasets,original,,URLError: <urlopen error timed out>
+https://legislatie.just.ro/Public/DetaliiDocumentAfis/285931,original,,RemoteDisconnected: Remote end closed connection without response
+https://legislatie.just.ro/public/DetaliiDocument/256856,original,,RemoteDisconnected: Remote end closed connection without response
+https://legislatie.just.ro/Public/DetaliiDocument/253296,original,,RemoteDisconnected: Remote end closed connection without response
+https://legislatie.just.ro/public/DetaliiDocument/261282,original,,RemoteDisconnected: Remote end closed connection without response
+https://legacylis.virginia.gov/cgi-bin/legp604.exe?241+sum+SB487,original,,URLError: <urlopen error timed out>
+https://legacylis.virginia.gov/cgi-bin/legp604.exe?241+sum+SB731,original,,URLError: <urlopen error timed out>
+https://legislation.nysenate.gov/pdf/bills/2023/A3593,original,,URLError: <urlopen error _ssl.c:1112: The handshake operation timed out>
+https://legislation.nysenate.gov/pdf/bills/2023/A216A,original,,URLError: <urlopen error _ssl.c:1112: The handshake operation timed out>
+https://legislation.nysenate.gov/pdf/bills/2023/A7501,original,,URLError: <urlopen error _ssl.c:1112: The handshake operation timed out>
+https://legislation.nysenate.gov/pdf/bills/2025/s3008c,original,,URLError: <urlopen error _ssl.c:1112: The handshake operation timed out>
+https://legislature.idaho.gov/sessioninfo/2024/legislation/h0664/,original,,URLError: <urlopen error timed out>
+https://legislature.idaho.gov/sessioninfo/2024/legislation/h0575/,original,,URLError: <urlopen error timed out>
+https://main.icmr.nic.in/sites/default/files/guidelines/guidelines_GTP.pdf,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://legislature.vermont.gov/Documents/2020/Docs/ACTS/ACT061/ACT061%20As%20Enacted.pdf,original,,URLError: <urlopen error timed out>
+https://legislature.vermont.gov/assets/Legislative-Reports/Agency-of-Digital-Services-Report-on-AI-Inventory.pdf,original,,URLError: <urlopen error timed out>
+https://lis.virginia.gov/cgi-bin/legp604.exe?212+sum+HB2154,original,,URLError: <urlopen error timed out>
+https://malegislature.gov/Bills/191/H5250.pdf,original,,URLError: <urlopen error timed out>
+https://malegislature.gov/Bills/193/H1873,original,,URLError: <urlopen error timed out>
+https://manchesterprize.org/,original,,URLError: <urlopen error [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1129)>
+https://malegislature.gov/Bills/193/H1974/BillHistory,original,,URLError: <urlopen error timed out>
+https://malegislature.gov/Bills/193/H4885,original,,URLError: <urlopen error timed out>
+https://malegislature.gov/Bills/193/H64,original,,URLError: <urlopen error timed out>
+https://malegislature.gov/Bills/193/SD1827,original,,URLError: <urlopen error timed out>
+https://media.defense.gov/2019/Feb/12/2002088963/-1/-1/1/SUMMARY-OF-DOD-AI-STRATEGY.PDF   https://www.af.mil/Portals/1/documents/5/USAF-AI-Annex-to-DoD-AI-Strategy.pdf,original,,InvalidURL: URL can't contain control characters. '/2019/Feb/12/2002088963/-1/-1/1/SUMMARY-OF-DOD-AI-STRATEGY.PDF   https://www.af.mil/Portals/1/documents/5/USAF-AI-Annex-to-DoD-AI-Strategy.pdf' (found at least ' ')
+https://media.defense.gov/2019/Oct/31/2002204458/-1/-1/0/DIB_AI_PRINCIPLES_PRIMARY_DOCUMENT.PDF   https://www.defense.gov/Newsroom/Releases/Release/Article/2091996/dod-adopts-ethical-principles-for-artificial-intelligence/   https://innovation.defense.gov,original,,InvalidURL: URL can't contain control characters. '/2019/Oct/31/2002204458/-1/-1/0/DIB_AI_PRINCIPLES_PRIMARY_DOCUMENT.PDF   https://www.defense.gov/Newsroom/Releases/Release/Article/2091996/dod-adopts-ethical-principles-for-artificial-intelligence/   https://innovation.defense.gov' (found at least ' ')
+https://malegislature.gov/Bills/194/HD396,original,,URLError: <urlopen error timed out>
+https://metaxseoul.com/pages/principles,original,500,HTTPError 500
+https://mcast.edu.mt/prospectus-2024-25/ri7-o06-21/,original,410,HTTPError 410
+https://malegislature.gov/Bills/194/HD4053,original,,URLError: <urlopen error timed out>
+https://meetiqm.com/press-releases/iqm-to-deliver-world-leading-300-qubit-quantum-computer-to-finland/,original,,URLError: <urlopen error [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1129)>
+https://navu.hu/en,original,404,HTTPError 404
+https://nitda.gov.ng/ncair/   https://prnigeria.com/2020/11/13/nitda-artificial-intelligence-robotic/,original,,InvalidURL: URL can't contain control characters. '/ncair/   https://prnigeria.com/2020/11/13/nitda-artificial-intelligence-robotic/' (found at least ' ')
+https://micrositios.inai.org.mx/eipdp/?page_id=70,original,,URLError: <urlopen error timed out>
+https://nads.gov.ua/news/u-kyievi-vidbulasia-mizhnarodna-konferentsiia-pro-shtuchnyi-intelekt-v-publichnomu-upravlinni,original,,URLError: <urlopen error timed out>
+https://nsf.gov/cise/ai.jsp   https://www.nsf.gov/pubs/2019/nsf19016/nsf19016.jsp   https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=505651,original,,InvalidURL: URL can't contain control characters. '/cise/ai.jsp   https://www.nsf.gov/pubs/2019/nsf19016/nsf19016.jsp   https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=505651' (found at least ' ')
+https://ndlegis.gov/assembly/68-2023/regular/documents/23-0346-05000.pdf,original,,URLError: <urlopen error timed out>
+https://obamawhitehouse.archives.gov/sites/default/files/whitehouse_files/microsites/ostp/NSTC/preparing_for_the_future_of_ai.pdf[자료제목],original,,UnicodeEncodeError: 'ascii' codec can't encode characters in position 98-101: ordinal not in range(128)
+"https://nebraskalegislature.gov/bills/view_bill.php?DocumentID=55278#:~:text=LB1284%20%2D%20Provide%20for%20and%20change,expansion%20program%2C%20create%20and%20change",original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://njleg.state.nj.us/bill-search/2024/AR141/bill-text?f=AR&n=141_S1,original,,URLError: <urlopen error timed out>
+https://oeffentlicherdienst.gv.at/verwaltungsinnovation/public-management-und-governance/digitale-verwaltung/seminare-zu-digitale-verwaltung-und-ethik/,original,404,HTTPError 404
+https://openai.com/charter[자료제목],original,,UnicodeEncodeError: 'ascii' codec can't encode characters in position 13-16: ordinal not in range(128)
+https://nugep.tjro.jus.br/,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://oportunitati-ue.gov.ro/en/,original,503,HTTPError 503
+https://oportunitati-ue.gov.ro/en/autoritatea-pentru-digitalizarea-romaniei-anunta-aprobarea-oficiala-a-planului-national-de-actiune-privind-deceniul-digital-pentru-romania/,original,503,HTTPError 503
+https://oportunitati-ue.gov.ro/en/pnrr-a-fost-actualizat-ghidul-digitalizarea-imm-urilor-grant-de-pana-la-100-000-euro-pe-intreprindere-care-sa-sprijine-imm-urile-in-adoptarea-tehnologiilor-digitale/,original,503,HTTPError 503
+https://oportunitati-ue.gov.ro/en/program/planul-national-de-cercetare-dezvoltare-si-inovare-2022-2027-pncdi-iv/,original,503,HTTPError 503
+https://pdp.nacs.gov.ua/courses/mozhlyvosti-vykorystannia-tsyfrovykh-tekhnolohii-ta-shtuchnoho-intelektu-v-diialnosti-publichnoho-sluzhbovtsia,original,,URLError: <urlopen error [Errno 61] Connection refused>
+https://pdp.nacs.gov.ua/courses/osnovy-shtuchnoho-intelektu-dlia-publichnoho-sluzhbovtsia,original,,URLError: <urlopen error [Errno 61] Connection refused>
+https://oportunitati-ue.gov.ro/en/program/programul-educatie-si-ocupare/,original,503,HTTPError 503
+https://plataformaparticipacionciudadana.gub.uy/processes/consulta-publica-estrategia-ia       https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/politicas-y-gestion/proceso-revision-estrategia-inteligencia-artificial-elaboracion-estrategia,original,,InvalidURL: URL can't contain control characters. '/processes/consulta-publica-estrategia-ia       https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/politicas-y-gestion/proceso-revision-estrategia-inteligencia-artificial-elaboracion-estrategia' (found at least ' ')
+https://olis.oregonlegislature.gov/liz/2024R1/Measures/Overview/HB4153,original,,URLError: <urlopen error timed out>
+https://olis.oregonlegislature.gov/liz/2024R1/Measures/Overview/SB5701,original,,URLError: <urlopen error timed out>
+https://olis.oregonlegislature.gov/liz/2024r1/Measures/Overview/SB1571,original,,URLError: <urlopen error timed out>
+https://quantum.psnc.pl/en/euroqcs-poland/,original,,URLError: <urlopen error [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1129)>
+https://renovaite.eu/fr/accueil/,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://pkip.egov.bg/wps/portal/program-pkip/home,original,,URLError: <urlopen error timed out>
+https://resources.nnlp-il.mafat.ai/                           https://www.timesofisrael.com/israel-allocates-nis-30m-to-fund-projects-for-ai-applications-in-hebrew-and-arabic/?utm_campaign=startup-daily-2023-09-20&utm_medium=email&utm_source=Startup+Daily,original,,InvalidURL: URL can't contain control characters. '/                           https://www.timesofisrael.com/israel-allocates-nis-30m-to-fund-projects-for-ai-applications-in-hebrew-and-arabic/?utm_campaign=startup-daily-2023-09-20&utm_medium=email&utm_source=Startup+Daily' (found at least ' ')
+https://researchrepository.ucd.ie/communities/57970c0f-0258-4fa2-ae9f-b64bee77b47d,original,405,HTTPError 405
+https://sdaia-kaust-ai.kaust.edu.sa/,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://sbb.gov.tr/wp-content/uploads/2020/03/On_BirinciPLan_ingilizce_SonBaski.pdf,original,404,HTTPError 404
+https://sites.google.com/view/ethicsai/%ED%99%88?authuser=0[자료제목],original,,UnicodeEncodeError: 'ascii' codec can't encode characters in position 40-43: ordinal not in range(128)
+https://smartcity.go.kr/en/2022/03/25/%EC%84%B8%EB%A5%B4%EB%B9%84%EC%95%84-%EC%A0%95%EB%B6%80-%EC%A0%84%EC%9E%90%EC%A0%95%EB%B3%B4-%EC%82%AC%EC%9,original,400,HTTPError 400
+https://startinmalta.com/wp-content/uploads/2024/05/Malta-Startup-Residence-Programme-Eligbility-and-Requirements-V2-April-2024.pdf,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://statbel.fgov.be/en/open-data   https://data.gov.be/en,original,,InvalidURL: URL can't contain control characters. '/en/open-data   https://data.gov.be/en' (found at least ' ')
+https://sid.si/en/financing/financing,original,404,HTTPError 404
+https://secihti.mx/cooperacion-internacional/puerta-horizonte-europa/,original,404,HTTPError 404
+https://team,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://sedeelectronica.sic.gov.co/sites/default/files/normativa/Circular%20Externa%20No.%20002%20del%2021%20de%20agosto%20de%202024.pdf,original,,URLError: <urlopen error timed out>
+https://tech.humanrights.gov.au/sites/default/files/inline-files/TechRights2019_DiscussionPaper_Summary.pdf,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://team.luda.ai/ai-ethics,original,404,HTTPError 404
+https://sedeelectronica.sic.gov.co/transparencia/normativa/circular-externa-no-002-de-2024-del-21-de-agosto-de-2024-lineamientos-sobre-el-tratamiento-de-datos-personales-en-sistemas-de,original,,URLError: <urlopen error timed out>
+https://tampere.ai/ai-hub-tampere-en/,original,404,HTTPError 404
+https://tampere.ai/tamperecitylab/,original,404,HTTPError 404
+https://tech.ed.gov/education-leaders-ai-toolkit/,original,404,HTTPError 404
+https://talentodigitalparachile.cl/vuelvereiniciateendigital/,original,404,HTTPError 404
+https://tefhealth.eu/home,original,404,HTTPError 404
+https://thedigital.gov.ua/storage/uploads/files/page/community/docs/%D0%A1%D0%BB%D0%BE%D0%B2%D0%BD%D0%B8%D0%BA%20%D1%82%D0%B5%D1%80%D0%BC%D1%96%D0%BD%D1%96%D0%B2%20%D1%83%20%D1%81%D1%84%D0%B5%D1%80%D1%96%20%D0%A8%D0%86%20(1).pdf,original,404,HTTPError 404
+https://trai.gov.in/sites/default/files/Recommendation_20072023_0.pdf,original,404,HTTPError 404
+https://trumpwhitehouse.archives.gov/presidential-actions/executive-order-promoting-use-trustworthy-artificial-intelligence-federal-government/   https://www.federalregister.gov/documents/2020/12/08/2020-27065/promoting-the-use-of-trustworthy-artificial-i,original,,InvalidURL: URL can't contain control characters. '/presidential-actions/executive-order-promoting-use-trustworthy-artificial-intelligence-federal-government/   https://www.federalregister.gov/documents/2020/12/08/2020-27065/promoting-the-use-of-trustworthy-artificial-i' (found at least ' ')
+https://tic.gov.pt/estrategias/estrategia-2021-2026,original,503,HTTPError 503
+https://tic.gov.pt/documentos/guia-para-uma-inteligencia-artificial-etica-transparente-e-responsavel-na-administracao-publica,original,503,HTTPError 503
+https://ufm.dk/en/publications/2023/strategy-for-quantum-technology-part-1-2013-world-class-research-and-innovation,original,404,HTTPError 404
+https://usiai.iusstf.org/documents/280363/0/IUSSTF_USIAI_Initiative_Presentation_Final.pdf/57c2049e,original,404,HTTPError 404
+https://vide-my.sharepoint.com/personal/arnissk_varam_gov_lv/Documents/Dokumenti/OECD%20aptaujai/NOAH_EU%20Coordinated%20Plan%20on%20AI%20%E2%80%93%20Draft%20country%20fiche/%0d%0d,original,400,HTTPError 400
+"https://wapp.capitol.tn.gov/apps/Billinfo/default.aspx?BillNumber=HB2163&ga=113#:~:text=Sexual%20Offenses%20%2D%20As%20enacted%2C%20specifies,Title%2039%20and%20Title%2040.",original,,URLError: <urlopen error [Errno 61] Connection refused>
+https://tvmnews.mt/en/news/over-100-robotic-surgeries-performed-at-mater-dei-last-year/,original,,URLError: <urlopen error timed out>
+https://wien.arbeiterkammer.at/service/digifonds/gefoerderte-projekte/Xplain_AI.html,original,500,HTTPError 500
+https://ww,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://www.4th-ir.go.kr/,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://vallalkozzdigitalisan.mkik.hu/index.html,original,,timeout: The read operation timed out
+https://www.acus.gov/report/government-algorithm-artificial-intelligence-federal-administrative-agencies   https://www.acus.gov/sites/default/files/documents/Government%20by%20Algorithm.pdf,original,,InvalidURL: URL can't contain control characters. '/report/government-algorithm-artificial-intelligence-federal-administrative-agencies   https://www.acus.gov/sites/default/files/documents/Government%20by%20Algorithm.pdf' (found at least ' ')
+https://www.add.gov.ma/programme-al-khawarizmi   https://www.cnrst.ma/fr/component/k2/item/446-programme-al-khawarizmi-resultats-de-l-appel-a-projets-dans-le-domaine-de-l-intelligence-artificielle-et-ses-applications   http://www.mcinet.gov.ma/sites/defau,original,,InvalidURL: URL can't contain control characters. '/programme-al-khawarizmi   https://www.cnrst.ma/fr/component/k2/item/446-programme-al-khawarizmi-resultats-de-l-appel-a-projets-dans-le-domaine-de-l-intelligence-artificielle-et-ses-applications   http://www.mcinet.gov.ma/sites/defau' (found at least ' ')
+https://www.adr.gov.ro/wp-content/uploads/2024/10/Report-on-Digital-Decade-2024_Romania_Executive_Summary.pdf,original,404,HTTPError 404
+https://webserver.rilegislature.gov/BillText/BillText23/SenateText23/S0117.pdf,original,,URLError: <urlopen error timed out>
+https://www.3ahealth.com/veles-excellence-hub-will-drive-innovation-in-south-east-europes-smart-healthcare-sector/,original,404,HTTPError 404
+https://webserver.rilegislature.gov/BillText22/SenateText22/S2083.htm,original,,URLError: <urlopen error timed out>
+https://webserver.rilegislature.gov/BillText23/HouseText23/H6423A.htm,original,,URLError: <urlopen error timed out>
+https://webserver.rilegislature.gov/Billtext/BillText22/HouseText22/H6654.htm,original,,URLError: <urlopen error timed out>
+https://www.aepd.es/sites/default/files/2020-07/adecuacion-rgpd-ia-en.pdf,original,500,HTTPError 500
+https://www.ai.gov/naiio/,original,404,HTTPError 404
+https://www.ai.gov/nairrtf/#ABOUT_THE_TASK_FORCE   https://www.whitehouse.gov/ostp/news-updates/2021/12/15/readout-of-the-fourth-national-artificial-intelligence-research-resource-nairr-task-force-meeting/   https://www.whitehouse.gov/ostp/news-updates/20,original,404,HTTPError 404
+https://www.aip.org.sg/caie-registry/,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://www.aitrustops.or.kr/web/main.do?lang=ko,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://www.add.gov.ma/ecosysteme-dedie-a-lintelligence-artificielle-prioritaire,original,,URLError: <urlopen error timed out>
+https://www.agriculture.gov.au/abares/research-topics/climate/drought/farmpredict,original,,timeout: The read operation timed out
+https://www.ai.gov.au/staying-safe-and-responsible/essential-ai-practices/guidance-ai-adoption-implementation-guidance,original,,timeout: The read operation timed out
+https://www.assembly.go.kr/assm/notification/news/news01/bodo/bodoView.do?bbs_id=ANCPUBINFO_05&bbs_num=49769&no=7236[자료제목],original,,UnicodeEncodeError: 'ascii' codec can't encode characters in position 95-98: ordinal not in range(128)
+https://www.astc.org/issues-policy-and-advocacy/united-states-releases-new-federal-stem-education-strategic-plan/   https://ednote.ecs.org/new-federal-5-year-stem-strategic-plan-is-a-starting-point-for-state-action/,original,,InvalidURL: URL can't contain control characters. '/issues-policy-and-advocacy/united-states-releases-new-federal-stem-education-strategic-plan/   https://ednote.ecs.org/new-federal-5-year-stem-strategic-plan-is-a-starting-point-for-state-action/' (found at least ' ')
+https://www.assembly.go.kr/assm/notification/news/news01/bodo/bodoView.do?bbs_id=ANCPUBINFO_05&bbs_num=49769&no=7236,original,404,HTTPError 404
+https://www.ai4dproject.eu/pilots/,original,,URLError: <urlopen error timed out>
+https://www.aris-rs.si/en/medn/gravity/razpisi/24/razpis-gravity-24-2.asp,original,404,HTTPError 404
+https://www.baai.ac.cn/news/beijing-ai-principles-en.html[자료제목],original,,UnicodeEncodeError: 'ascii' codec can't encode characters in position 40-43: ordinal not in range(128)
+https://www.benjamindada.com/nitda-national-artificial-intelligence-policy/   https://sciencenigeria.com/nitda-seeks-stakeholders-contribution-to-national-ai-policy/,original,,InvalidURL: URL can't contain control characters. '/nitda-national-artificial-intelligence-policy/   https://sciencenigeria.com/nitda-seeks-stakeholders-contribution-to-national-ai-policy/' (found at least ' ')
+https://www.austriatech.at/assets/Uploads/Fokusseiten/Kontaktstelle-Automatisierte-Mobilitaet/Dokumente/acc272c043/EN_Codeofpractice.pdf,original,404,HTTPError 404
+https://www.bildung.gv.at/course/view.php?id=20; https://dlpl.at/digicase-ki,original,,InvalidURL: URL can't contain control characters. '/course/view.php?id=20; https://dlpl.at/digicase-ki' (found at least ' ')
+https://www.bakom.admin.ch/dam/bakom/en/dokumente/informationsgesellschaft/strategie/strategie_digitale_schweiz.pdf.download.pdf/Strategie-DS-2020-EN.pdf,original,502,HTTPError 502
+https://www.austriatourism.com/innovation/ai-radar/,original,404,HTTPError 404
+https://www.arkleg.state.ar.us/Bills/Detail?ddBienniumSession=2019%2F2019R&measureno=SB656,original,,URLError: <urlopen error timed out>
+https://www.bmbf.de/bmbf/en/international-affairs/worldwide-networking/worldwide-networking_node.html,original,404,HTTPError 404
+https://www.bmftr.bund.de/DE/Bildung/Schule/Digitalisierung/KompetenzzentrenFuerDigitalesUnterrichten/kompetenzzentrenfuerdigitalesunterrichten_node.html,original,404,HTTPError 404
+https://www.bmvi.de/SharedDocs/EN/publications/report-ethics-commission.pdf?__blob=publicationFile[자료제목],original,,UnicodeEncodeError: 'ascii' codec can't encode characters in position 84-87: ordinal not in range(128)
+https://www.bmi.bund.de/SharedDocs/downloads/DE/publikationen/themen/moderne-verwaltung/ki/BMI25020-leitlinien-ki-bundesverwaltung.html,original,400,HTTPError 400
+https://www.bmi.bund.de/SharedDocs/downloads/DE/publikationen/themen/it-digitalpolitik/gutachten-datenethikkommission.pdf?__blob=publicationFile&v=6,original,400,HTTPError 400
+https://www.bmi.bund.de/SharedDocs/downloads/DE/publikationen/themen/it-digitalpolitik/BMI24014.pdf?__blob=publicationFile&v=3,original,400,HTTPError 400
+https://www.bmv.de/SharedDocs/DE/Anlage/DG/testfeld-deutschland-frankreich-luxemburg-konzept-fuer-das-grenzueberschreitende-digitale-testfeld.pdf?__blob=publicationFile,original,404,HTTPError 404
+https://www.bmv.de/SharedDocs/EN/Articles/DG/research-programme-on-automation-and-connectivity-in-road-transport.html,original,404,HTTPError 404
+https://www.bmi.bund.de/SharedDocs/downloads/EN/themen/it-digital-policy/datenethikkommission-abschlussgutachten-lang.pdf?__blob=publicationFile&v=5,original,400,HTTPError 400
+https://www.bmvi.de/EN/Topics/Digital-Matters/Automated-Connected-Driving/automated-and-connected-driving.html,original,,URLError: <urlopen error timed out>
+https://www.bmvi.de/SharedDocs/EN/Documents/DG/eight-act-amending-the-road-traffic-act.pdf?__blob=publicationFile,original,,URLError: <urlopen error timed out>
+https://www.bmvi.de/SharedDocs/EN/publications/report-ethics-commission.pdf?__blob=publicationFile,original,,URLError: <urlopen error timed out>
+https://www.bmvi.de/SharedDocs/EN/publications/strategy-for-automated-and-connected-driving.pdf?__blob=publicationFile,original,,URLError: <urlopen error timed out>
+https://www.businessfinland.fi/en/campaign-sites/digital-native-finland,original,404,HTTPError 404
+https://www.businessfinland.fi/en/campaign-sites/generative-ai,original,404,HTTPError 404
+https://www.business.gov.au/Grants-and-Programs/Space-Infrastructure-Fund-Robotics-Automation-Artificial-Intelligence-Command-and-Control-Centre,original,404,HTTPError 404
+https://www.c-roads.eu/deployments/core-members/portugal/Partner/project/show/c-roads-cooperative-streets.html,original,404,HTTPError 404
+https://www.canada.ca/en/canadian-heritage/news/2026/06/government-of-canada-introduces-legislation-to-make-social-media-services-and-ai-chatbots-safer-for-children.html,original,,timeout: The read operation timed out
+https://www.cameroononline.org/cameroon-unveils-seven-pillar-ai-strategy-to-become-africas-leading-hub-by-2040/,original,,timeout: The read operation timed out
+https://www.canada.ca/en/canadian-heritage/services/safe-social-media-act.html,original,,timeout: The read operation timed out
+https://www.carnet.hr/wp-content/uploads/2024/04/Kurikulum-fakultativnog-predmeta-za-srednje-skole-_Umjetna-inteligencija.pdf   https://www.carnet.hr/wp-content/uploads/2024/04/Kurikulum-izvannastavne-aktivnosti-za-osnovne-skole_Umjetna-inteligencija.pdf,original,,InvalidURL: URL can't contain control characters. '/wp-content/uploads/2024/04/Kurikulum-fakultativnog-predmeta-za-srednje-skole-_Umjetna-inteligencija.pdf   https://www.carnet.hr/wp-content/uploads/2024/04/Kurikulum-izvannastavne-aktivnosti-za-osnovne-skole_Umjetna-inteligencija.pdf' (found at least ' ')
+https://www.canada.ca/en/employment-social-development/programs/sectoral-workforce-solutions-program.html,original,,timeout: The read operation timed out
+https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/guide-use-generative-ai.html,original,,timeout: The read operation timed out
+https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/list-interested-artificial-intelligence-ai-suppliers.html,original,,timeout: The read operation timed out
+https://www.cdt.org.rs/   https://www.cdt.org.rs/programi   https://en.pks.rs/   https://digitalnaakademija.rs/   https://www.cdt.org.rs/images/programs/Speed-1-0-uspesne-price.PDF,original,,InvalidURL: URL can't contain control characters. '/   https://www.cdt.org.rs/programi   https://en.pks.rs/   https://digitalnaakademija.rs/   https://www.cdt.org.rs/images/programs/Speed-1-0-uspesne-price.PDF' (found at least ' ')
+https://www.canada.ca/en/innovation-science-economic-development/news/2019/05/canada-and-france-work-with-international-community-to-support-responsible-use-of-artificial-intelligence.html,original,,timeout: The read operation timed out
+https://www.canada.ca/en/innovation-science-economic-development/news/2026/06/government-of-canada-introduces-legislation-to-protect-canadians-privacy-in-the-digital-age.html,original,,timeout: The read operation timed out
+https://www.canada.ca/en/innovation-science-economic-development/news/2026/06/minister-solomon-highlights-canadas-national-artificial-intelligence.html,original,,timeout: The read operation timed out
+https://www.canada.ca/en/innovation-science-economic-development/news/2026/07/government-of-canada-launches-public-consultation-on-ai-transparency.html,original,,timeout: The read operation timed out
+https://www.cdt.org.rs/programi,original,404,HTTPError 404
+https://www.cdv.cz/en/novinky/testing-of-autonomous-vehicles-support-in-the-czech-republic,original,404,HTTPError 404
+https://www.cifar.ca/ai/pan-canadian-artificial-intelligence-strategy   https://cifar.ca/wp-content/uploads/2020/11/AICan-2020-CIFAR-Pan-Canadian-AI-Strategy-Impact-Report.pdf,original,,InvalidURL: URL can't contain control characters. '/ai/pan-canadian-artificial-intelligence-strategy   https://cifar.ca/wp-content/uploads/2020/11/AICan-2020-CIFAR-Pan-Canadian-AI-Strategy-Impact-Report.pdf' (found at least ' ')
+https://www.cminds.co/copy-of-ai   https://oecd.ai/en/wonk/documents/mexico-towards-an-ai-strategy-in-mexico-2018,original,,InvalidURL: URL can't contain control characters. '/copy-of-ai   https://oecd.ai/en/wonk/documents/mexico-towards-an-ai-strategy-in-mexico-2018' (found at least ' ')
+https://www.cnil,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://www.canada.ca/en/prairies-economic-development/services/funding/regional-artificial-intelligence-initiative.html,original,,timeout: The read operation timed out
+https://www.canada.ca/en/revenue-agency/services/scientific-research-experimental-development-tax-incentive-program.html,original,,timeout: The read operation timed out
+https://www.commerce.gov/american-workforce-policy-advisory-board   https://www.cnbc.com/2019/02/13/apple-and-ibm-ceos-join-trumps-advisory-board-on-workforce-policy.html,original,,InvalidURL: URL can't contain control characters. '/american-workforce-policy-advisory-board   https://www.cnbc.com/2019/02/13/apple-and-ibm-ceos-join-trumps-advisory-board-on-workforce-policy.html' (found at least ' ')
+https://www.congress.gov/bill/117th-congress/senate-bill/2551/text   https://www.fedweek.com/federal-managers-daily-report/senate-approves-boost-in-training-for-federal-employees-on-ai/,original,,InvalidURL: URL can't contain control characters. '/bill/117th-congress/senate-bill/2551/text   https://www.fedweek.com/federal-managers-daily-report/senate-approves-boost-in-training-for-federal-employees-on-ai/' (found at least ' ')
+https://www.cio.bund.de/Webs/CIO/DE/digitale-loesungen/datenpolitik/daten-und-ki/daten-und-ki-node.html,original,400,HTTPError 400
+https://www.confiance.ai/en/,original,404,HTTPError 404
+https://www.darpa.mil//about-us/ai-next   https://www.darpa.mil/work-with-us/ai-next-campaign,original,,InvalidURL: URL can't contain control characters. '//about-us/ai-next   https://www.darpa.mil/work-with-us/ai-next-campaign' (found at least ' ')
+https://www.csiro.au/en/work-with-us/industries/technology/National-AI-Centre,original,404,HTTPError 404
+https://www.data-infrastructure.eu/GAIAX/Navigation/EN/Home/home.html,original,,URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate (_ssl.c:1129)>
+https://www.co-pi.dk,original,,URLError: <urlopen error timed out>
+https://www.datatilsynet.no/regelverk-og-verktoy/sandkasse-for-kunstig-intelligens/   https://www.datatilsynet.no/en/regulations-and-tools/sandbox-for-artificial-intelligence/,original,,InvalidURL: URL can't contain control characters. '/regelverk-og-verktoy/sandkasse-for-kunstig-intelligens/   https://www.datatilsynet.no/en/regulations-and-tools/sandbox-for-artificial-intelligence/' (found at least ' ')
+https://www.defense.gov/Explore/News/Article/Article/2094085/dod-adopts-5-principles-of-artificial-intelligence-ethics/[자료제목],original,,UnicodeEncodeError: 'ascii' codec can't encode characters in position 101-104: ordinal not in range(128)
+https://www.deneyapturkiye.org/index.html,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://www.digdir.no/datadeling/norwegian-resource-centre-sharing-data/2766   https://data.norge.no/kunstig-intelligens   https://www.digdir.no/kunstig-intelligens/kunstig-intelligens/4132,original,,InvalidURL: URL can't contain control characters. '/datadeling/norwegian-resource-centre-sharing-data/2766   https://data.norge.no/kunstig-intelligens   https://www.digdir.no/kunstig-intelligens/kunstig-intelligens/4132' (found at least ' ')
+https://www.data-protection-authority.gv.at/data-protection-laws/relevant-data-protection-laws.html,original,404,HTTPError 404
+https://www.deic.dk/da/data-management/National-FAIR-strategi,original,404,HTTPError 404
+https://www.dfg.de/download/pdf/foerderung/internationales/dfg_jst_anr_call_text_2019.pdf,original,404,HTTPError 404
+https://www.dgterritorio.gov.pt/sites/default/files/ficheiros-artigos/Apresentacoes/2023/Copernicus_DGT_Joao_Pina.pdf,original,,URLError: <urlopen error timed out>
+https://www.digital.gov.au/initiatives/copilot-trial,original,,timeout: The read operation timed out
+https://www.digital.gov.au/ai/ai-in-government-policy,original,,timeout: The read operation timed out
+https://www.digital.gov.au/policy/ai/AI-technical-standard,original,,timeout: The read operation timed out
+https://www.digital.gov.au/policy/ai/agency-guidance-public-generative-ai,original,,timeout: The read operation timed out
+https://www.digital.gov.au/policy/ai/australian-public-service-ai-plan-2025,original,,timeout: The read operation timed out
+https://www.digital.gov.au/policy/ai/related-frameworks,original,,timeout: The read operation timed out
+https://www.digital.gov.au/policy/ai/staff-guidance-public-generative-ai,original,,timeout: The read operation timed out
+https://www.digitalwallonia.be/en/programs/digitalwallonia4-ai/             https://www.digitalwallonia.be/ia/,original,,InvalidURL: URL can't contain control characters. '/en/programs/digitalwallonia4-ai/             https://www.digitalwallonia.be/ia/' (found at least ' ')
+https://www.digitalcitizen.kr/js/pdfjs/web/viewer.html?file=/media/pdf/1/FILE_0000254909.do#locale=ko,original,404,HTTPError 404
+https://www.dihk.de/de/themen-und-positionen/wirtschaft-digital/dihk-durchblick-digital/datenlabore-86374,original,404,HTTPError 404
+https://www.dsti.gov.za/rdtax/images/tax-incentive/RD_Tax_Incentive_Guidelines_for_Applicants.pdf,original,404,HTTPError 404
+https://www.education.gov.au/australian-curriculum/support-science-technology-engineering-and-mathematics-stem/school-and-early-learning-stem-initiatives   https://www.digitaltechnologieshub.edu.au/,original,,InvalidURL: URL can't contain control characters. '/australian-curriculum/support-science-technology-engineering-and-mathematics-stem/school-and-early-learning-stem-initiatives   https://www.digitaltechnologieshub.edu.au/' (found at least ' ')
+https://www.eeoc.gov/ai   https://www.eeoc.gov/laws/guidance/americans-disabilities-act-and-use-software-algorithms-and-artificial-intelligence,original,,InvalidURL: URL can't contain control characters. '/ai   https://www.eeoc.gov/laws/guidance/americans-disabilities-act-and-use-software-algorithms-and-artificial-intelligence' (found at least ' ')
+https://www.eif.org/what_we_do/resources/lff/index.htm   http://www.innovation.public.lu/en/financer/competitivite/lff/index.html,original,,InvalidURL: URL can't contain control characters. '/what_we_do/resources/lff/index.htm   http://www.innovation.public.lu/en/financer/competitivite/lff/index.html' (found at least ' ')
+https://www.eeszt.gov.hu/hu/eeszt-mobilalkalmazas,original,404,HTTPError 404
+https://www.ebrains.eu/services/brain-i,original,404,HTTPError 404
+https://www.digitalhealth.gov.au/initiatives-and-programs#Initiatives,original,,timeout: The read operation timed out
+https://www.eif.org/what_we_do/resources/equifund-ii/index.htm,original,404,HTTPError 404
+https://www.enterprisesg.gov.sg/-/media/esg/files/media-centre/media-releases/2024/january/mci-disg-sng-enterprisesg-and-google-cloud-unveil-new-initiatives-to-advance-singapores-national-ai-strategy-showcase-impactful-gen-ai-solutions-from-ai-trailblazer,original,404,HTTPError 404
+https://www.energy.gov/science-innovation/artificial-intelligence-and-technology-office,original,404,HTTPError 404
+https://www.dnp.gov.co/LaEntidad_/subdireccion-general-prospectiva-desarrollo-nacional/direccion-innovacion-desarrollo-empresarial/Paginas/sistema-nacional-de-competitividad-e-innovacion-SNCI.aspx,original,,URLError: <urlopen error timed out>
+https://www.dnp.gov.co/publicaciones/Planeacion/Paginas/conpes-4144-hoja-de-ruta-colombia-inteligencia-artificial-retos-actuales-transformacion-futura.aspx,original,,URLError: <urlopen error timed out>
+https://www.etda.or.th/th/Our-Service/AIGC/Knowledge.aspx; https://www.etda.or.th/th/Our-Service/AIGC/AI_Readiness.aspx,original,,InvalidURL: URL can't contain control characters. '/th/Our-Service/AIGC/Knowledge.aspx; https://www.etda.or.th/th/Our-Service/AIGC/AI_Readiness.aspx' (found at least ' ')
+https://www.etda.or.th/th/Our-Service/AIGC/OurServices.aspx; https://www.etda.or.th/th/Our-Service/AIGC/ResearchandRec.aspx,original,,InvalidURL: URL can't contain control characters. '/th/Our-Service/AIGC/OurServices.aspx; https://www.etda.or.th/th/Our-Service/AIGC/ResearchandRec.aspx' (found at least ' ')
+https://www.etikkom.no/en,original,,"URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.etikkom.no'. (_ssl.c:1129)>"
+https://www.ewi-vlaanderen.be/nieuws/vlaams-actieplan-artificiele-intelligentie-gelanceerd                   https://www.vlaio.be/nl/andere-doelgroepen/vlaams-beleidsplan-artificiele-intelligentie/vlaams-beleidsplan-artificiele-0,original,,InvalidURL: URL can't contain control characters. '/nieuws/vlaams-actieplan-artificiele-intelligentie-gelanceerd                   https://www.vlaio.be/nl/andere-doelgroepen/vlaams-beleidsplan-artificiele-intelligentie/vlaams-beleidsplan-artificiele-0' (found at least ' ')
+https://www.fct.pt/concursos/concurso-de-projetos-de-computacao-avancada-inteligencia-artificial-em-cloud-2-edicao-1   https://former.fct.pt/apoios/Computacao/computacaoavancada/IAcloud/docs/resultados_CPCA_IAC_2022.pdf,original,,InvalidURL: URL can't contain control characters. '/concursos/concurso-de-projetos-de-computacao-avancada-inteligencia-artificial-em-cloud-2-edicao-1   https://former.fct.pt/apoios/Computacao/computacaoavancada/IAcloud/docs/resultados_CPCA_IAC_2022.pdf' (found at least ' ')
+https://www.fct.pt/en/financiamento/programas-de-financiamento/programas-em-areas-tematicas-especificas/programa-em-ciencia-dos-dados-e-inteligencia-artificial-na-administracao-publica/   https://www.fct.pt/wp-content/uploads/2022/06/Brochura_ResearchinDa,original,,InvalidURL: URL can't contain control characters. '/en/financiamento/programas-de-financiamento/programas-em-areas-tematicas-especificas/programa-em-ciencia-dos-dados-e-inteligencia-artificial-na-administracao-publica/   https://www.fct.pt/wp-content/uploads/2022/06/Brochura_ResearchinDa' (found at least ' ')
+https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-software-medical-device   https://www.fda.gov/media/145022/download,original,,InvalidURL: URL can't contain control characters. '/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-software-medical-device   https://www.fda.gov/media/145022/download' (found at least ' ')
+https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-software-medical-device,original,404,HTTPError 404
+https://www.fda.gov/science-research/advancing-regulatory-science/centers-excellence-regulatory-science-and-innovation-cersis,original,404,HTTPError 404
+https://www.federalregister.gov/documents/2019/02/14/2019-02544/maintaining-american-leadership-in-artificial-intelligence   https://www.whitehouse.gov/wp-content/uploads/2020/11/M-21-06.pdf,original,,InvalidURL: URL can't contain control characters. '/documents/2019/02/14/2019-02544/maintaining-american-leadership-in-artificial-intelligence   https://www.whitehouse.gov/wp-content/uploads/2020/11/M-21-06.pdf' (found at least ' ')
+https://www.federalregister.gov/documents/2019/07/10/2019-14618/identifying-priority-access-or-quality-improvements-for-federal-data-and-models-for-artificial   https://www.govinfo.gov/content/pkg/FR-2019-07-10/pdf/2019-14618.pdf,original,,InvalidURL: URL can't contain control characters. '/documents/2019/07/10/2019-14618/identifying-priority-access-or-quality-improvements-for-federal-data-and-models-for-artificial   https://www.govinfo.gov/content/pkg/FR-2019-07-10/pdf/2019-14618.pdf' (found at least ' ')
+https://www.esafety.gov.au/industry/tech-trends-and-challenges/generative-ai,original,,timeout: The read operation timed out
+https://www.fsc.go.kr/no010101/76206?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=[자료제목],original,,UnicodeEncodeError: 'ascii' codec can't encode characters in position 83-86: ordinal not in range(128)
+https://www.forschung-bundesgesundheitsministerium.de/foerderung/bekanntmachungen/rahmenbekanntmachung-zum-foerderschwerpunkt-digitale-innovationen-fuer-die-verbesserung-der-patientenzentrierten-versorgung-im-gesundheitswesen,original,,"URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.forschung-bundesgesundheitsministerium.de'. (_ssl.c:1129)>"
+https://www.ftc.gov/news-events/blogs/business-blog/2020/04/using-artificial-intelligence-algorithms[자료제목],original,,UnicodeEncodeError: 'ascii' codec can't encode characters in position 86-89: ordinal not in range(128)
+https://www.ftc.gov/system/files/attachments/press-releases/ftc-streamlines-consumer-protection-competition-investigations-eight-key-enforcement-areas-enable/omnibus_resolutions_p859900.pdf   https://www.ftc.gov/news-events/blogs/business-blog/2021/04/aim,original,,InvalidURL: URL can't contain control characters. '/system/files/attachments/press-releases/ftc-streamlines-consumer-protection-competition-investigations-eight-key-enforcement-areas-enable/omnibus_resolutions_p859900.pdf   https://www.ftc.gov/news-events/blogs/business-blog/2021/04/aim' (found at least ' ')
+https://www.fokus.fraunhofer.de/en/dps/news/KI4KL,original,404,HTTPError 404
+https://www.ftc.gov/news-events/blogs/business-blog/2020/04/using-artificial-intelligence-algorithms,original,404,HTTPError 404
+https://www.gencourt.state.nh.us/bill_Status/billinfo.aspx?id=1239,original,403,URLError: <urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>
+https://www.gob.pe/institucion/congreso-de-la-republica/normas-legales/4565760-31814   http://www.pcm.gob.pe/wp-content/uploads/2024/02/POI-2024-V2-PLIEGO.pdf,original,,InvalidURL: URL can't contain control characters. '/institucion/congreso-de-la-republica/normas-legales/4565760-31814   http://www.pcm.gob.pe/wp-content/uploads/2024/02/POI-2024-V2-PLIEGO.pdf' (found at least ' ')
+https://www.gmv.com/en/communication/press-room/press-releases/digital-public-services/agraria-project-leverages,original,404,HTTPError 404
+https://www.globalbusinessoutlook.com/saudi-government-signs-mou-with-sdaia-launches-ai-centre-energy-segment/,original,404,HTTPError 404
+https://www.gov.br/anpd/pt-br/assuntos/noticias/anpds-call-for-contributions-to-the-regulatory-sandbox-for-artificial-intelligence-and-data-protection-in-brazil-is-now-open,original,401,HTTPError 401
+https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/transformacaodigital/arquivosinteligenciaartificial/ebia-documento_referencia_4-979_2021.pdf,original,404,HTTPError 404
+https://www.gov.cn/xinwen/2016-05/23/5075944/files/9cb49ac44cf341b29adf687b6857da34.pdf   https://cset.georgetown.edu/publication/internet-artificial-intelligence-three-year-action-and-implementation-plan/,original,,InvalidURL: URL can't contain control characters. '/xinwen/2016-05/23/5075944/files/9cb49ac44cf341b29adf687b6857da34.pdf   https://cset.georgetown.edu/publication/internet-artificial-intelligence-three-year-action-and-implementation-plan/' (found at least ' ')
+https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/transformacaodigital/arquivosinteligenciaartificial/ia_estrategia_portaria_mcti_4-979_2021_anexo1.pdf,original,404,HTTPError 404
+https://www.gov.br/esporte/pt-br/acesso-a-informacao/lgpd,original,401,HTTPError 401
+https://www.fzt.haw-hamburg.de/pers/Scholz/arbeiten/TextBriegert.pdf,original,,URLError: <urlopen error timed out>
+https://www.gov.il/BlobFolder/legalinfo/machine-learning/he/18-12-2022.pdf                          https://www.gov.il/BlobFolder/legalinfo/machine-learning/he/machine-learning.pdf,original,,InvalidURL: URL can't contain control characters. '/BlobFolder/legalinfo/machine-learning/he/18-12-2022.pdf                          https://www.gov.il/BlobFolder/legalinfo/machine-learning/he/machine-learning.pdf' (found at least ' ')
+https://www.gov.il/BlobFolder/policy/ai_2023/en/Israels%20AI%20Policy%202023.pdf                   https://www.gov.il/BlobFolder/policy/ai_23/he/2023%20Artificial%20Intelligence%20Regulation%20and%20Ethics%20Policy%20Principles%20Document.pdf,original,,InvalidURL: URL can't contain control characters. '/BlobFolder/policy/ai_2023/en/Israels%20AI%20Policy%202023.pdf                   https://www.gov.il/BlobFolder/policy/ai_23/he/2023%20Artificial%20Intelligence%20Regulation%20and%20Ethics%20Policy%20Principles%20Document.pdf' (found at least ' ')
+https://www.gov.il/en/departments/news/nimbus-landingzone                  https://mr.gov.il/ilgstorefront/en/news/details/111222                                 https://en.wikipedia.org/wiki/Project_Nimbus,original,,InvalidURL: URL can't contain control characters. '/en/departments/news/nimbus-landingzone                  https://mr.gov.il/ilgstorefront/en/news/details/111222                                 https://en.wikipedia.org/wiki/Project_Nimbus' (found at least ' ')
+https://www.gov.pl/documents/31305/436699/Zauenia_do_strategii_AI_w_Polsce_-_raport.pdf/a03eb166-0ce5-e53c-52a4-3bfb903edf0a   https://oecd.ai/en/wonk/documents/poland,original,,InvalidURL: URL can't contain control characters. '/documents/31305/436699/Zauenia_do_strategii_AI_w_Polsce_-_raport.pdf/a03eb166-0ce5-e53c-52a4-3bfb903edf0a   https://oecd.ai/en/wonk/documents/poland' (found at least ' ')
+https://www.gov.pl/web/cyfryzacja/rozwoj-sztucznej-inteligencji-w-polsce--wazna-decyzja   https://www.gov.pl/documents/31305/436699/Zauenia_do_strategii_AI_w_Polsce_-_raport.pdf/a03eb166-0ce5-e53c-52a4-3bfb903edf0a   https://oecd.ai/en/wonk/documents/pola,original,,InvalidURL: URL can't contain control characters. '/web/cyfryzacja/rozwoj-sztucznej-inteligencji-w-polsce--wazna-decyzja   https://www.gov.pl/documents/31305/436699/Zauenia_do_strategii_AI_w_Polsce_-_raport.pdf/a03eb166-0ce5-e53c-52a4-3bfb903edf0a   https://oecd.ai/en/wonk/documents/pola' (found at least ' ')
+https://www.gov.uk/government/news/leading-experts-appointed-to-ai-council-to-supercharge-the-uks-artificial-intelligence-sectorhttps://www.gov.uk/government/groups/ai-council,original,404,HTTPError 404
+https://www.gov.uk/government/publications/declaration-of-the-united-states-of-america-and-the-united-kingdom-of-great-britain-and-northern-ireland-on-cooperation-in-ai-research-and-development/declaration-of-the-united-states-of-america-and-the-united-ki,original,404,HTTPError 404
+https://www.government.nl/topics/mobility-public-transport-and-road-safety/self-driving-vehicles,original,404,HTTPError 404
+https://www.gov.si/assets/ministrstva/MJU/DID/NpUI-SI-2025.docx,original,,timeout: The read operation timed out
+https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/comunicacion/publicaciones/relevamiento-casos-uso-aplicacion-inteligencia-artificial-estado-0      https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/comunicacion/publicaciones/recomendaciones-sobre-transparencia-algoritmica      https://miradordegobiernoabierto.agesic.gub.uy/SigesVisualizador/gu/o/GA/p/2264,original,,InvalidURL: URL can't contain control characters. '/agencia-gobierno-electronico-sociedad-informacion-conocimiento/comunicacion/publicaciones/relevamiento-casos-uso-aplicacion-inteligencia-artificial-estado-0      https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/comunicacion/publicaciones/recomendaciones-sobre-transparencia-algoritmica      https://miradordegobiernoabierto.agesic.gub.uy/SigesVisualizador/gu/o/GA/p/2264' (found at least ' ')
+https://www.governor.virginia.gov/media/governorvirginiagov/governor-of-virginia/pdf/ed/Executive-Directive-No.-5---Recognizing-the-Risks-and-Seizing-the-Opportunities-of-Artificial-Intelligence.pdf,original,404,HTTPError 404
+https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/sites/agencia-gobierno-electronico-sociedad-informacion-conocimiento/files/documentos/publicaciones/IA%20Strategy%20-%20english%20version.pdf   https://oecd.ai/en/wonk/docum,original,,InvalidURL: URL can't contain control characters. '/agencia-gobierno-electronico-sociedad-informacion-conocimiento/sites/agencia-gobierno-electronico-sociedad-informacion-conocimiento/files/documentos/publicaciones/IA%20Strategy%20-%20english%20version.pdf   https://oecd.ai/en/wonk/docum' (found at least ' ')
+https://www.health.gov.au/our-work/medical-research-future-fund   https://business.gov.au/grants-and-programs/biomedical-translation-fund   https://www1.health.gov.au/internet/main/publishing.nsf/Content/national-health-genomics-policy-framework-2018-2021,original,,InvalidURL: URL can't contain control characters. '/our-work/medical-research-future-fund   https://business.gov.au/grants-and-programs/biomedical-translation-fund   https://www1.health.gov.au/internet/main/publishing.nsf/Content/national-health-genomics-policy-framework-2018-2021' (found at least ' ')
+https://www.handelskammer.bz.it/en/services/eu-support/financing-enterprises/incentives/fund-artificial-intelligence-blockchain-and-iot,original,404,HTTPError 404
+https://www.humanrights.go.kr/site/program/board/basicboard/view?boardtypeid=24&boardid=7607961&menuid=001004002001[자료제목],original,,UnicodeEncodeError: 'ascii' codec can't encode characters in position 91-94: ordinal not in range(128)
+https://www.ibm.com/blogs/policy/trust-principles[자료제목],original,,UnicodeEncodeError: 'ascii' codec can't encode characters in position 35-38: ordinal not in range(128)
+https://www.ic.gc.ca/eic/site/062.nsf/eng/h_00108.html          https://www.ic.gc.ca/eic/site/062.nsf/fra/h_00108.html,original,,InvalidURL: URL can't contain control characters. '/eic/site/062.nsf/eng/h_00108.html          https://www.ic.gc.ca/eic/site/062.nsf/fra/h_00108.html' (found at least ' ')
+https://www.govai.gov.au/apps,original,,timeout: The read operation timed out
+https://www.ichec.ie/,original,,URLError: <urlopen error [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1129)>
+https://www.govai.gov.au/govai-chat,original,,timeout: The read operation timed out
+https://www.iea.org/policies/11514-korean-new-deal-digital-new-deal-green-new-deal-and-stronger-safety-net; https://www.fao.org/faolex/results/details/en/c/LEX-FAOC203848/,original,,InvalidURL: URL can't contain control characters. '/policies/11514-korean-new-deal-digital-new-deal-green-new-deal-and-stronger-safety-net; https://www.fao.org/faolex/results/details/en/c/LEX-FAOC203848/' (found at least ' ')
+https://www.ict.go.ke/blockchain.pdf,original,404,HTTPError 404
+https://www.ict.go.ke/wp-content/uploads/2019/05/Kenya-Digital-Economy-2019.pdf,original,404,HTTPError 404
+https://www.iesalc.unesco.org/wp-content/uploads/2023/04/ChatGPT-and-Artificial-Intelligence-in-higher-education-Quick-Start-guide_EN_FINAL.pdf,original,404,HTTPError 404
+https://www.ifabfoundation.org/national-centre-for-research-into-hpc-big-data-and-quantum-computing/,original,404,HTTPError 404
+https://www.health.gov.au/topics/health-technologies-and-digital-health/what-we-do/artificial-intelligence-ai-in-health-care,original,,timeout: The read operation timed out
+https://www.ilga.gov/legislation/BillStatus.asp?DocNum=2472&GAID=17&DocTypeID=HB&SessionID=112&GA=103,original,,URLError: <urlopen error timed out>
+https://www.ilga.gov/legislation/BillStatus.asp?DocNum=4844&GAID=17&DocTypeID=HB&SessionID=112&GA=103,original,,URLError: <urlopen error timed out>
+https://www.ilga.gov/legislation/BillStatus.asp?DocNum=645&GAID=16&DocTypeID=HB&SessionID=110&GA=102,original,,URLError: <urlopen error timed out>
+"https://www.ilga.gov/legislation/billstatus.asp?DocNum=2123&GAID=17&GA=103&DocTypeID=HB&LegID=145586&SessionID=112#:~:text=Provides%20that%20a%20depicted%20individual,to%20disseminate%20the%20sexual%20image.",original,,URLError: <urlopen error timed out>
+https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/press-releases/2023/generative-ai-evaluation-sandbox https://rsvp.withgoogle.com/events/privacysandbox-sg,original,,InvalidURL: URL can't contain control characters. '/resources/press-releases-factsheets-and-speeches/press-releases/2023/generative-ai-evaluation-sandbox https://rsvp.withgoogle.com/events/privacysandbox-sg' (found at least ' ')
+https://www.ilga.gov/legislation/fulltext.asp?DocName=&SessionId=108&GA=101&DocTypeId=HB&DocNum=2557&GAID=15&LegID=&SpecSess=&Session=,original,,URLError: <urlopen error timed out>
+https://www.ilga.gov/legislation/fulltext.asp?DocName=&SessionId=110&GA=102&DocTypeId=HB&DocNum=53&GAID=16&LegID=127865&SpecSess=&Session=,original,,URLError: <urlopen error timed out>
+https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=4015&ChapterID=68,original,,URLError: <urlopen error timed out>
+https://www.incode2030.gov.pt/   https://oecd.ai/en/wonk/documents/portugal-ai-portugal-2019-2030,original,,InvalidURL: URL can't contain control characters. '/   https://oecd.ai/en/wonk/documents/portugal-ai-portugal-2019-2030' (found at least ' ')
+https://www.incode2030.gov.pt/acp-2030/   https://www.incode2030.gov.pt/en/advanced-computing-portugal-2030,original,,InvalidURL: URL can't contain control characters. '/acp-2030/   https://www.incode2030.gov.pt/en/advanced-computing-portugal-2030' (found at least ' ')
+https://www.ilga.gov/legislation/publicacts/fulltext.asp?Name=103-0571,original,,URLError: <urlopen error timed out>
+https://www.industry.gov.au/artificial-intelligence   https://digitaleconomy.pmc.gov.au/fact-sheets/artificial-intelligence,original,,InvalidURL: URL can't contain control characters. '/artificial-intelligence   https://digitaleconomy.pmc.gov.au/fact-sheets/artificial-intelligence' (found at least ' ')
+https://www.industry.gov.au/data-and-publications/industry-40-testlabs-in-australia   https://business.gov.au/grants-and-programs/industry-testlabs-for-australia,original,,InvalidURL: URL can't contain control characters. '/data-and-publications/industry-40-testlabs-in-australia   https://business.gov.au/grants-and-programs/industry-testlabs-for-australia' (found at least ' ')
+https://www.ilga.gov/legislation/publicacts/fulltext.asp?Name=103-0804,original,,URLError: <urlopen error timed out>
+https://www.ina.pt/pt/ina/ina-para-lideres-publicos/,original,404,HTTPError 404
+https://www.ilga.gov/legislation/publicacts/fulltext.asp?Name=103-0836,original,,URLError: <urlopen error timed out>
+https://www.industry.gov.au/publications/australias-artificial-intelligence-ethics-framework   https://www.industry.gov.au/publications/australias-artificial-intelligence-ethics-framework/australias-ai-ethics-principles,original,,InvalidURL: URL can't contain control characters. '/publications/australias-artificial-intelligence-ethics-framework   https://www.industry.gov.au/publications/australias-artificial-intelligence-ethics-framework/australias-ai-ethics-principles' (found at least ' ')
+https://www.indiascienceandtechnology.gov.in/sites/default/files/file-uploads/guidelineregulations/1527507675_ICMR_Ethical_Guidelines_2017.pdf,original,,URLError: <urlopen error timed out>
+https://www.incode2030.gov.pt/en/2022/01/31/engenheiras-por-1-dia/,original,503,HTTPError 503
+"https://www.incode2030.gov.pt/en/estrategia-nacional-de-dados-en/#:~:text=The%20ambition%20of%20the%20National,in%20Portugal%20and%20across%20borders.",original,503,HTTPError 503
+https://www.industry.gov.au/data-and-publications/australia-2030-prosperity-through-innovation,original,,timeout: The read operation timed out
+https://www.incode2030.gov.pt/en/2022/01/16/programa-ap-digital/,original,503,HTTPError 503
+https://www.industry.gov.au/science-technology-and-innovation/technology/artificial-intelligence   https://www.industry.gov.au/artificial-intelligence,original,,InvalidURL: URL can't contain control characters. '/science-technology-and-innovation/technology/artificial-intelligence   https://www.industry.gov.au/artificial-intelligence' (found at least ' ')
+https://www.industry.gov.au/data-and-publications/australias-tech-future/government-initiatives,original,,timeout: The read operation timed out
+https://www.industry.gov.au/news/mandatory-guardrails-safe-and-responsible-ai-have-your-say,original,,timeout: The read operation timed out
+https://www.industry.gov.au/policies-and-initiatives/artificial-intelligence,original,,timeout: The read operation timed out
+https://www.industry.gov.au/publications/australias-artificial-intelligence-action-plan,original,,timeout: The read operation timed out
+https://www.industry.gov.au/publications/australias-artificial-intelligence-ethics-framework/australias-ai-ethics-principles,original,,timeout: The read operation timed out
+https://www.inovacionifond.rs/en/fond/about-fund; http://www.inovacionifond.rs/en/programs,original,,InvalidURL: URL can't contain control characters. '/en/fond/about-fund; http://www.inovacionifond.rs/en/programs' (found at least ' ')
+https://www.inria.fr/fr/oceania,original,404,HTTPError 404
+https://www.ipaustralia.gov.au/tools-and-research/professional-resources/data-research-and-reports/publications-and-reports/2023/02/08/05/22/artificial-intelligence-patent-analytics,original,404,HTTPError 404
+https://www.industry.gov.au/publications/national-ai-plan,original,,timeout: The read operation timed out
+https://www.itic.org/resources/AI-Policy-Principles-FullReport2.pdf[자료제목],original,,UnicodeEncodeError: 'ascii' codec can't encode characters in position 52-55: ordinal not in range(128)
+https://www.industry.gov.au/publications/voluntary-ai-safety-standard,original,,timeout: The read operation timed out
+https://www.industry.gov.au/science-technology-and-innovation/technology/artificial-intelligence,original,,timeout: The read operation timed out
+https://www.irt-systemx.fr/a-propos-irt-systemx/,original,404,HTTPError 404
+https://www.kbfg.com/Kor/about/ethics.htm,original,404,HTTPError 404
+https://www.kiso.or.kr/kiso-%EC%86%8C%EC%8B%9D/%EB%B3%B4%EB%8F%84%EC%9E%90%EB%A3%8C/?mod=document&uid=1400,original,404,HTTPError 404
+https://www.kiso.or.kr/kiso-%ec%86%8c%ec%8b%9d/%eb%b3%b4%eb%8f%84%ec%9e%90%eb%a3%8c/?mod=document&uid=1400,original,404,HTTPError 404
+https://www.kida-bmel.de/,original,,URLError: <urlopen error [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1129)>
+https://www.kratid.ee/en/kratijupid               https://koodivaramu.eesti.ee/explore/projects,original,,InvalidURL: URL can't contain control characters. '/en/kratijupid               https://koodivaramu.eesti.ee/explore/projects' (found at least ' ')
+https://www.kimarktplatz.bund.de/Webs/MaKI/DE/startseite/startseite-artikel.html,original,400,HTTPError 400
+https://www.legis.state.tx.us/BillLookup/Text.aspx?LegSess=89R&Bill=HB149 - wait until docx version is available,original,,InvalidURL: URL can't contain control characters. '/BillLookup/Text.aspx?LegSess=89R&Bill=HB149 - wait until docx version is available' (found at least ' ')
+https://www.lexology.com/library/detail.aspx?g=7fe41c5b-baa2-4544-a94e-09d25d33275f   https://www.govinfo.gov/content/pkg/BILLS-116hr6395enr/pdf/BILLS-116hr6395enr.pdf,original,,InvalidURL: URL can't contain control characters. '/library/detail.aspx?g=7fe41c5b-baa2-4544-a94e-09d25d33275f   https://www.govinfo.gov/content/pkg/BILLS-116hr6395enr/pdf/BILLS-116hr6395enr.pdf' (found at least ' ')
+https://www.lgresearch.ai/about/vision#ethics,original,404,HTTPError 404
+https://www.lawcom.gov.uk/comprehensive-regulatory-framework-for-self-driving-vehicles-proposed-to-government/,original,404,HTTPError 404
+https://www.kmu.gov.ua/news/mintsyfry-rozvyvatyme-infrastrukturu-dlia-vprovadzhennia-shi-u-derzhavni-servisy-pratsiuiemo-nad-ai-factory,original,,timeout: The read operation timed out
+https://www.list.lu/en/news/pioneering-sustainable-agriculture/?no_cache=1&cHash=5280f5a3192ed772a7e8cee46d4f5cfb,original,404,HTTPError 404
+https://www.luxconnect.lu/clarence-joint-venture-proximus-luxconnect-disconnected-sovereign-cloud/,original,404,HTTPError 404
+https://www.mdia.gov.mt/certification/tarf-technology-assessment-recognition-framework/   https://www.mdia.gov.mt/wp-content/uploads/2024/02/G-SPG-012-MDIA-TARF-Guidelines-.pdf   https://www.mdia.gov.mt/wp-content/uploads/2024/02/F-SPG-014-MDIA-TARF-Appli,original,,InvalidURL: URL can't contain control characters. '/certification/tarf-technology-assessment-recognition-framework/   https://www.mdia.gov.mt/wp-content/uploads/2024/02/G-SPG-012-MDIA-TARF-Guidelines-.pdf   https://www.mdia.gov.mt/wp-content/uploads/2024/02/F-SPG-014-MDIA-TARF-Appli' (found at least ' ')
+https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?syear=2023&sind=0&body=H&type=B&bn=0049,original,,URLError: <urlopen error timed out>
+"https://www.legis.state.pa.us/cfdocs/billinfo/bill_history.cfm?syear=2023&sind=0&body=H&type=B&bn=1063#:~:text=An%20Act%20amending%20Title%2018,the%20offense%20of%20transmission%20of",original,,URLError: <urlopen error timed out>
+https://www.legis.state.pa.us/CFDOCS/billInfo/billInfo.cfm?syear=2023&sInd=0&body=H&type=B&bn=1380,original,,URLError: <urlopen error timed out>
+https://www.meity.gov.in/writereaddata/files/IndiaAI-Expert-Group-Report-First-Edition.pdf,original,404,HTTPError 404
+https://www.meity.gov.in/writereaddata/files/Digital%20Personal%20Data%20Protection%20Act%202023.pdf,original,404,HTTPError 404
+https://www.meti.go.jp/english/press/2020/0713_001.html (dead link),original,,InvalidURL: URL can't contain control characters. '/english/press/2020/0713_001.html (dead link)' (found at least ' ')
+https://www.meti.go.jp/policy/it_policy/jinzai/AIdataguide.pdf (dead link),original,,InvalidURL: URL can't contain control characters. '/policy/it_policy/jinzai/AIdataguide.pdf (dead link)' (found at least ' ')
+https://www.mfat.govt.nz/en/trade/free-trade-agreements/free-trade-agreements-in-force/digital-economy-partnership-agreement-depa/   https://www.mti.gov.sg/Trade/Digital-Economy-Agreements/The-Digital-Economy-Partnership-Agreement,original,,InvalidURL: URL can't contain control characters. '/en/trade/free-trade-agreements/free-trade-agreements-in-force/digital-economy-partnership-agreement-depa/   https://www.mti.gov.sg/Trade/Digital-Economy-Agreements/The-Digital-Economy-Partnership-Agreement' (found at least ' ')
+https://www.micitt.go.cr/sites/default/files/GobernanzaDigital/,original,404,HTTPError 404
+https://www.micitt.go.cr/sites/default/files/GobernanzaDigital/Lineamientos%,original,400,HTTPError 400
+https://www.mise.gov.it/images/stories/documenti/DM%2026%20marzo%202019%20GURI%20n.%20100-2019.pdf ;                        https://www.mise.gov.it/images/stories/documenti/Programma%20supporto%20tecnologie%20emergenti%205G.pdf,original,,InvalidURL: URL can't contain control characters. '/images/stories/documenti/DM%2026%20marzo%202019%20GURI%20n.%20100-2019.pdf ;                        https://www.mise.gov.it/images/stories/documenti/Programma%20supporto%20tecnologie%20emergenti%205G.pdf' (found at least ' ')
+https://www.mimit.gov.it/index.php/it/notizie-stampa/blockchain-e-intelligenza-artificiale-da-settembre-gli-incentivi,original,404,HTTPError 404
+https://www.mineco.gob.es/portal/site/mineco/menuitem.ac30f9268750bd56a0b0240e026041a0/?vgnextoid=51884ba89bc63710VgnVCM1000001d04140aRCRD,original,404,HTTPError 404
+https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&lev=0&statusYN=W&s=moe&m=020402&opType=N&boardSeq=90660[자료제목],original,,UnicodeEncodeError: 'ascii' codec can't encode characters in position 96-99: ordinal not in range(128)
+https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&lev=0&statusYN=W&s=moe&m=020402&opType=N&boardSeq=92297[자료제목],original,,UnicodeEncodeError: 'ascii' codec can't encode characters in position 96-99: ordinal not in range(128)
+https://www.moh.gov.sg/licensing-and-regulation/artificial-intelligence-in-healthcare,original,416,HTTPError 416
+https://www.mise.gov.it/index.php/it/notizie-stampa/blockchain-e-intelligenza-artificiale-da-settembre-gli-incentivi,original,404,HTTPError 404
+https://www.msit.go.kr/web/msipContents/contentsView.do?cateId=mssw11211&artId=1557222,original,404,HTTPError 404
+https://www.msit.go.kr/web/msipContents/contentsView.do?cateId=mssw40a&artId=1577782,original,404,HTTPError 404
+https://www.mti.gov.sg/Trade/Digital-Economy-Agreements/The-Digital-Economy-Partnership-Agreement,original,416,HTTPError 416
+https://www.minister.industry.gov.au/charlton/media/ai-consumer-safety-priorities,original,,timeout: The read operation timed out
+https://www.nda.gov.cn/sjj/zwgk/zcfb/0608/20260608172117399715004_pc.html,original,,URLError: <urlopen error [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1129)>
+https://www.mintic.gov.co/portal/604/w3-article-100510.html,original,,timeout: timed out
+https://www.mintrabajo.gov.co/web/guest/empleo-y-pensiones/empleo/analisis-monitoreo-y-prospectiva-laboral/identificacion-y-medicion-de-brechas-de-capital-humano/-/document_library/gqWOCHzuV9in/view_file/63409548?_com_liferay_document_library_web_portlet_,original,,URLError: <urlopen error [Errno 65] No route to host>
+https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=90549&bcIdx=23786&parentSeq=23786[자료제목],original,,UnicodeEncodeError: 'ascii' codec can't encode characters in position 73-76: ordinal not in range(128)
+https://www.nist.gov/news-events/news/2019/08/plan-outlines-priorities-federal-agency-engagement-ai-standards-development   https://www.nist.gov/system/files/documents/2019/08/10/ai_standards_fedengagement_plan_9aug2019.pdf,original,,InvalidURL: URL can't contain control characters. '/news-events/news/2019/08/plan-outlines-priorities-federal-agency-engagement-ai-standards-development   https://www.nist.gov/system/files/documents/2019/08/10/ai_standards_fedengagement_plan_9aug2019.pdf' (found at least ' ')
+https://www.nist.gov/system/files/documents/2020/08/17/NIST%20Explainable%20AI%20Draft%20NISTIR8312%20%281%29.pdf   https://www.nist.gov/topics/artificial-intelligence/ai-foundational-research-explainability   https://nvlpubs.nist.gov/nistpubs/ir/2021/NIS,original,,InvalidURL: URL can't contain control characters. '/system/files/documents/2020/08/17/NIST%20Explainable%20AI%20Draft%20NISTIR8312%20%281%29.pdf   https://www.nist.gov/topics/artificial-intelligence/ai-foundational-research-explainability   https://nvlpubs.nist.gov/nistpubs/ir/2021/NIS' (found at least ' ')
+https://www.nicis.ac.za,original,,"URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.nicis.ac.za'. (_ssl.c:1129)>"
+https://www.nitrd.gov/coordination-areas/ai/   https://www.ai.gov/about/,original,,InvalidURL: URL can't contain control characters. '/coordination-areas/ai/   https://www.ai.gov/about/' (found at least ' ')
+https://www.nitrd.gov/pubs/National-AI-RD-Strategy-2019.pdf   https://www.nitrd.gov/pubs/AI-Research-and-Development-Progress-Report-2016-2019.pdf   https://www.federalregister.gov/documents/2018/09/26/2018-20914/request-for-information-on-update-to-the-2,original,,InvalidURL: URL can't contain control characters. '/pubs/National-AI-RD-Strategy-2019.pdf   https://www.nitrd.gov/pubs/AI-Research-and-Development-Progress-Report-2016-2019.pdf   https://www.federalregister.gov/documents/2018/09/26/2018-20914/request-for-information-on-update-to-the-2' (found at least ' ')
+https://www.niti.gov.in/sites/default/files/2024-07/Responsible_%20AI_for_All.pdf,original,404,HTTPError 404
+https://www.nidolab.be/nl/govbuysinnovation/fr/2022/07/consultation-du-marche-smart-data-sciences/,original,404,HTTPError 404
+https://www.nscai.gov/home   https://drive.google.com/file/d/1jg9YlNagGI_0rid-HXY-fvJOAejlFIiy/view,original,,InvalidURL: URL can't contain control characters. '/home   https://drive.google.com/file/d/1jg9YlNagGI_0rid-HXY-fvJOAejlFIiy/view' (found at least ' ')
+https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=505686   https://nsf.gov/cise/ai.jsp,original,,InvalidURL: URL can't contain control characters. '/funding/pgm_summ.jsp?pims_id=505686   https://nsf.gov/cise/ai.jsp' (found at least ' ')
+https://www.ndit.nd.gov/sites/www/files/documents/Policies/artificial_intelligence_policy_2024.pdf,original,,URLError: <urlopen error [Errno 65] No route to host>
+"https://www.nsf.gov/pubs/2021/nsf21585/nsf21585.htm#:~:text=NSF%20and%20Amazon%20are%20partnering,tackle%20grand%20challenges%20facing%20society.",original,404,HTTPError 404
+https://www.njleg.state.nj.us/bill-search/2018/AJR164/bill-text?f=JR19&n=2_,original,,URLError: <urlopen error timed out>
+https://www.njleg.state.nj.us/bill-search/2020/S2723,original,,URLError: <urlopen error timed out>
+https://www.njleg.state.nj.us/bill-search/2022/A168,original,,URLError: <urlopen error timed out>
+https://www.njleg.state.nj.us/bill-search/2022/A4909/bill-text?f=A5000&n=4909_I1,original,,URLError: <urlopen error timed out>
+https://www.njleg.state.nj.us/bill-search/2022/A537,original,,URLError: <urlopen error timed out>
+https://www.njleg.state.nj.us/bill-search/2022/S1402/bill-text?f=S1500&n=1402_I1,original,,URLError: <urlopen error timed out>
+https://www.ohchr.org/sites/default/files/documents/issues/terrorism/sr/un-sr-ct-ai-position-paper-dec-2025.pdf,original,,URLError: <urlopen error [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1129)>
+https://www.ohchr.org/en/documents/thematic-reports/ahrc6248-womens-and-girls-rights-and-artificial-intelligence-and-related,original,,URLError: <urlopen error [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1129)>
+https://www.ohchr.org/en/documents/thematic-reports/ahrc5953-artificial-intelligence-procurement-and-deployment-ensuring,original,,URLError: <urlopen error [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1129)>
+https://www.ohchr.org/sites/default/files/documents/hrbodies/hrcouncil/sessions-regular/session62/advance-versions/a-hrc-62-33-auv-1-en.pdf,original,,URLError: <urlopen error [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1129)>
+https://www.opendata.hu/,original,,URLError: <urlopen error [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1129)>
+https://www.ornl.gov/news/ornl-fight-against-covid-19   https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9014472/,original,,InvalidURL: URL can't contain control characters. '/news/ornl-fight-against-covid-19   https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9014472/' (found at least ' ')
+https://www.partnershiponai.org/about[자료제목],original,,UnicodeEncodeError: 'ascii' codec can't encode characters in position 11-14: ordinal not in range(128)
+https://www.palyazat.gov.hu/,original,,URLError: <urlopen error [Errno 61] Connection refused>
+https://www.playsw.or.kr/artificial/textbook[자료제목],original,,UnicodeEncodeError: 'ascii' codec can't encode characters in position 25-28: ordinal not in range(128)
+https://www.phd-ai.it/modello-organizzativo/,original,404,HTTPError 404
+https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/decreto/d9854.htm,original,,ConnectionResetError: [Errno 54] Connection reset by peer
+https://www.press.bmwgroup.com/global/article/detail/T0318411EN/seven-principles-for-ai:-bmw-group-sets-out-code-of-ethics-for-the-use-of-artificial-intelligence?language=en[자료제목],original,,UnicodeEncodeError: 'ascii' codec can't encode characters in position 148-151: ordinal not in range(128)
+https://www.privacy.org.nz/publications/guidance-resources/principles-for-the-safe-and-effective-use-of-data-and-analytics-guidance/   https://www.privacy.org.nz/assets/New-order/Resources-/Publications/Guidance-resources/Principles-for-the-safe-and-effec,original,,InvalidURL: URL can't contain control characters. '/publications/guidance-resources/principles-for-the-safe-and-effective-use-of-data-and-analytics-guidance/   https://www.privacy.org.nz/assets/New-order/Resources-/Publications/Guidance-resources/Principles-for-the-safe-and-effec' (found at least ' ')
+https://www.personuvernd.is/information-in-english/nr/436,original,404,HTTPError 404
+https://www.regjeringen.no/en/dokumenter/nasjonal-strategi-for-kunstig-intelligens/id2685594/   https://oecd.ai/en/wonk/documents/norway-national-strategy-for-ai-2020,original,,InvalidURL: URL can't contain control characters. '/en/dokumenter/nasjonal-strategi-for-kunstig-intelligens/id2685594/   https://oecd.ai/en/wonk/documents/norway-national-strategy-for-ai-2020' (found at least ' ')
+https://www.redipd.org/sites/default/files/2020-02/guia-recomendaciones-generales-tratamiento-datos-ia.pdf,original,503,HTTPError 503
+https://www.riken.jp/en/   https://www.jst.go.jp/kisoken/aip/en/about/intro/index.html,original,,InvalidURL: URL can't contain control characters. '/en/   https://www.jst.go.jp/kisoken/aip/en/about/intro/index.html' (found at least ' ')
+https://www.rijksoverheid.nl/documenten/kamerstukken/2022/12/22/kamerbrief-over-inrichtingsnota-algoritmetoezichthouder,original,404,HTTPError 404
+https://www.rolls-royce.com/sustainability/ethics-and-compliance/the-aletheia-framework.aspx[자료제목],original,,UnicodeEncodeError: 'ascii' codec can't encode characters in position 70-73: ordinal not in range(128)
+https://www.protectivesecurity.gov.au/protective-security-directions-under-pspf/protective-security-policy-advisories,original,,timeout: The read operation timed out
+https://www.ris.bka.gv.at/eli/bgbl/I/2023/191/20231231,original,503,HTTPError 503
+https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2016_II_402/BGBLA_2016_II_402.pdfsig,original,503,HTTPError 503
+https://www.ris.bka.gv.at/Dokumente/Erv/ERV_1999_1_165/ERV_1999_1_165.pdf,original,503,HTTPError 503
+https://www.rolls-royce.com/sustainability/ethics-and-compliance/the-aletheia-framework.aspx,original,404,HTTPError 404
+https://www.scmp.com/tech/tech-war/article/3149403/china-rolls-out-autonomous-driving-standards-carmakers-work-towards   https://siecledigital.fr/2021/10/04/chine-normes-conduite-autonome-mars-2022/,original,,InvalidURL: URL can't contain control characters. '/tech/tech-war/article/3149403/china-rolls-out-autonomous-driving-standards-carmakers-work-towards   https://siecledigital.fr/2021/10/04/chine-normes-conduite-autonome-mars-2022/' (found at least ' ')
+https://www.scotlandaistrategy.com/the-strategy,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://www.scstatehouse.gov/sess125_2023-2024/bills/4754.htm,original,,URLError: <urlopen error [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1129)>
+https://www.scstatehouse.gov/sess125_2023-2024/bills/404.htm,original,,URLError: <urlopen error [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1129)>
+https://www.scstatehouse.gov/sess126_2025-2026/bills/1037.htm,original,,URLError: <urlopen error [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1129)>
+https://www.si-dla-sprawiedliwosci.gov.pl/,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://www.smartdubai.ae/initiatives/ai-lab   https://www.doh.gov.ae/ai-assets/doc/ai-lab-playbook-v13-print.pdf,original,,InvalidURL: URL can't contain control characters. '/initiatives/ai-lab   https://www.doh.gov.ae/ai-assets/doc/ai-lab-playbook-v13-print.pdf' (found at least ' ')
+https://www.skolverket.se/om-oss/aktuellt/nyheter/nyheter/2023-09-05-ai-i-skolan---risker-och-mojligheter,original,404,HTTPError 404
+https://www.smartnation.gov.sg/about-smart-nation/transforming-singapore/,original,404,HTTPError 404
+https://www.smartnation.gov.sg/files/publications/national-ai-strategy.pdf,original,404,HTTPError 404
+https://www.smartnation.gov.sg/media-hub/press-releases/24072023/,original,404,HTTPError 404
+https://www.smartnation.gov.sg/media-hub/press-releases/20240301a/,original,404,HTTPError 404
+https://www.soumu.go.jp/main_content/000658284.pdf   http://www.soumu.go.jp/main_content/000581310.pdf,original,,InvalidURL: URL can't contain control characters. '/main_content/000658284.pdf   http://www.soumu.go.jp/main_content/000581310.pdf' (found at least ' ')
+https://www.srbija.gov.rs/tekst/en/149169   https://oecd.ai/en/wonk/documents/serbia-strategy-for-the-development-of-ai-in-the-republic-of-serbia-2020-2025,original,,InvalidURL: URL can't contain control characters. '/tekst/en/149169   https://oecd.ai/en/wonk/documents/serbia-strategy-for-the-development-of-ai-in-the-republic-of-serbia-2020-2025' (found at least ' ')
+https://www.srbija.gov.rs/vest/en/206031/great-potential-for-improving-cooperation-with-republic-of-korea.php   https://smartcity.go.kr/en/2022/03/25/%EC%84%B8%EB%A5%B4%EB%B9%84%EC%95%84-%EC%A0%95%EB%B6%80-%EC%A0%84%EC%9E%90%EC%A0%95%EB%B3%B4-%EC%82%AC%EC,original,,InvalidURL: URL can't contain control characters. '/vest/en/206031/great-potential-for-improving-cooperation-with-republic-of-korea.php   https://smartcity.go.kr/en/2022/03/25/%EC%84%B8%EB%A5%B4%EB%B9%84%EC%95%84-%EC%A0%95%EB%B6%80-%EC%A0%84%EC%9E%90%EC%A0%95%EB%B3%B4-%EC%82%AC%EC' (found at least ' ')
+https://www.srbija.gov.rs/vest/en/206031/great-potential-for-improving-cooperation-with-republic-of-korea.php   https://smartcity.go.kr/en/2022/03/25/%EC%84%B8%EB%A5%B4%EB%B9%84%EC%95%84-%EC%A0%95%EB%B6%80-%EC%A0%84%EC%9E%90%EC%A0%95%EB%B3%B4-%EC%82%AC%EC%9,original,,InvalidURL: URL can't contain control characters. '/vest/en/206031/great-potential-for-improving-cooperation-with-republic-of-korea.php   https://smartcity.go.kr/en/2022/03/25/%EC%84%B8%EB%A5%B4%EB%B9%84%EC%95%84-%EC%A0%95%EB%B6%80-%EC%A0%84%EC%9E%90%EC%A0%95%EB%B3%B4-%EC%82%AC%EC%9' (found at least ' ')
+https://www.oktatas.hu/pub_bin/dload/kozoktatas/kerettanterv/Digitalis_kultura_K.docx,original,,URLError: <urlopen error timed out>
+https://www.oktatas.hu/kozneveles/kerettantervek/2020_nat/kerettanterv_gimn_9_12_evf,original,,URLError: <urlopen error timed out>
+https://www.sic.gov.co/sandbox-microsite,original,,URLError: <urlopen error [Errno 65] No route to host>
+https://www.sic.gov.co/sites/default/files/normatividad/112020/031120_Sandbox-sobre-privacidad-desde-el-diseno-y-por-defecto.pdf,original,,URLError: <urlopen error [Errno 65] No route to host>
+https://www.teachersleadtech.com/teachers-lead-tech-emerges-as-winner-at-the-world-summit-awards-learning-and-education-category,original,,URLError: <urlopen error [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129)>
+https://www.transportation.gov/av/3   https://www.transportation.gov/sites/dot.gov/files/docs/policy-initiatives/automated-vehicles/320711/preparing-future-transportation-automated-vehicle-30.pdf   https://www.nhtsa.gov/sites/nhtsa.dot.gov/files/documents,original,,InvalidURL: URL can't contain control characters. '/av/3   https://www.transportation.gov/sites/dot.gov/files/docs/policy-initiatives/automated-vehicles/320711/preparing-future-transportation-automated-vehicle-30.pdf   https://www.nhtsa.gov/sites/nhtsa.dot.gov/files/documents' (found at least ' ')
+https://www.tobb.org.tr/Sayfalar/En,original,404,HTTPError 404
+https://www.turing.ac.uk/sites/default/files/2019-06/understanding_artificial_intelligence_ethics_and_safety.pdf[자료제목],original,,UnicodeEncodeError: 'ascii' codec can't encode characters in position 93-96: ordinal not in range(128)
+https://www.um.edu.mt/   https://mfhea.mt/,original,,InvalidURL: URL can't contain control characters. '/   https://mfhea.mt/' (found at least ' ')
+"https://www.startup.si/en-us/for-startups/p-2#:~:text=P2%20Product%20includes%3A&text=Every%20spring%20(call%20for%20tenders,from%20the%20eastern%20cohesion%20regions.",original,,timeout: The read operation timed out
+https://www.stlouis-mo.gov/government/departments/information-technology/documents/upload/Guidance-on-Generative-AI.pdf,original,,URLError: <urlopen error timed out>
+https://www.stlouis-mo.gov/government/city-laws/upload/legislative/BoardBills/support-documents/BB185CS%20Clean%20Copy.pdf,original,,URLError: <urlopen error timed out>
+https://www.stlouis-mo.gov/government/departments/mayor/documents/executive-orders/upload/EO-78-Surveillance-Transparency-1.pdf,original,,URLError: <urlopen error timed out>
+https://www.ukri.org/what-we-offer/developing-people-and-skills/epsrc/studentships/centres-for-doctoral-training/,original,404,HTTPError 404
+https://www.um.edu.mt/newspoint/events/malta/2025/04/preserving-mnajdra,original,,timeout: The read operation timed out
+https://www.um.edu.mt/newspoint/news/2019/06/communityofprofessionaleducatorssessions,original,,timeout: The read operation timed out
+https://www.um.edu.mt/newspoint/news/2024/10/take-off-seed-fund-awarded-2024,original,,timeout: The read operation timed out
+https://www.um.edu.mt/newspoint/news/2023/11/ai-employed-in-the-safeguarding-of-the-megalithic-temples-of-malta-the-megalith-project,original,,timeout: The read operation timed out
+https://www.vicepremier.gov.sk/wp-content/uploads/2019/10/AP-DT-English-Version-FINAL.pdf,original,404,HTTPError 404
+https://www.vlaio.be/nl/andere-doelgroepen/coock-collectief-oo-en-collectieve-kennisverspreiding   https://www.vlaio.be/nl/subsidies-financiering/subsidiedatabank/icon-subsidies-voor-cooperatief-vraaggedreven-onderzoek   https://www.blikopener.vlaanderen,original,,InvalidURL: URL can't contain control characters. '/nl/andere-doelgroepen/coock-collectief-oo-en-collectieve-kennisverspreiding   https://www.vlaio.be/nl/subsidies-financiering/subsidiedatabank/icon-subsidies-voor-cooperatief-vraaggedreven-onderzoek   https://www.blikopener.vlaanderen' (found at least ' ')
+https://www.whitehouse.gov/briefing-room/presidential-actions/2023/02/16/executive-order-on-further-advancing-racial-equity-and-support-for-underserved-communities-through-the-federal-government/,original,404,HTTPError 404
+https://www.whitehouse.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/,original,404,HTTPError 404
+https://www.whitehouse.gov/briefing-room/presidential-actions/2024/10/24/memorandum-on-advancing-the-united-states-leadership-in-artificial-intelligence-harnessing-artificial-intelligence-to-fulfill-national-security-objectives-and-fostering-the-safety-security/,original,404,HTTPError 404
+https://www.whitehouse.gov/ostp/ai-bill-of-rights/[자료제목],original,,UnicodeEncodeError: 'ascii' codec can't encode characters in position 29-32: ordinal not in range(128)
+https://www.whitehouse.gov/ostp/nstc/select-committee-on-artificial-intelligence/   https://ai.gov/,original,,InvalidURL: URL can't contain control characters. '/ostp/nstc/select-committee-on-artificial-intelligence/   https://ai.gov/' (found at least ' ')
+https://www.whitehouse.gov/briefing-room/presidential-actions/2025/01/14/executive-order-on-advancing-united-states-leadership-in-artificial-intelligence-infrastructure/,original,404,HTTPError 404
+https://www.whitehouse.gov/briefing-room/statements-releases/2021/09/24/quad-principles-on-technology-design-development-governance-and-use/,original,404,HTTPError 404
+https://www.whitehouse.gov/briefing-room/statements-releases/2021/09/29/u-s-eu-trade-and-technology-council-inaugural-joint-statement/,original,404,HTTPError 404
+https://www.whitehouse.gov/briefing-room/statements-releases/2023/07/21/fact-sheet-biden-harris-administration-secures-voluntary-commitments-from-leading-artificial-intelligence-companies-to-manage-the-risks-posed-by-ai/,original,404,HTTPError 404
+https://www.whitehouse.gov/ostp/ai-bill-of-rights/,original,404,HTTPError 404
+https://www.whitehouse.gov/pcast/briefing-room/2023/05/13/pcast-working-group-on-generative-ai-invites-public-input/,original,404,HTTPError 404
+https://www.whitehouse.gov/wp-content/uploads/2023/05/National-Artificial-Intelligence-Research-and-Development-Strategic-Plan-2023-Update.pdf,original,404,HTTPError 404
+https://www.whitehouse.gov/wp-content/uploads/2022/10/Blueprint-for-an-AI-Bill-of-Rights.pdf,original,404,HTTPError 404
+https://www.whitehouse.gov/wp-content/uploads/2024/04/Nucleic-Acid_Synthesis_Screening_Framework.pdf,original,404,HTTPError 404
+https://www.worldbank.org/en/news/loans-credits/2020/06/25/turkey-safe-schooling-and-distance-education-project,original,404,HTTPError 404
+https://www.wur.nl/en/research-results/chair-groups/research-funded-by-the-ministry-of-lvvn/soorten-onderzoek/kennisonline/national-field-lab-for-precision-farming-1.htm,original,404,HTTPError 404
+https://www.wur.nl/en/research-results/themes/artificial-intelligence.htm,original,404,HTTPError 404
+https://www8.cao.go.jp/cstp/tougosenryaku/kaigi.html   https://www8.cao.go.jp/cstp/ai/index.html,original,,InvalidURL: URL can't contain control characters. '/cstp/tougosenryaku/kaigi.html   https://www8.cao.go.jp/cstp/ai/index.html' (found at least ' ')
+https://wzine.kr/goe_ai/[자료제목],original,,UnicodeEncodeError: 'ascii' codec can't encode characters in position 13-16: ordinal not in range(128)
+https://yuz.uz/en/news/v-tashkente-sozdan-nauchno-issledovatelskiy-institut-razvitiya-tsifrovx-texnologiy-i-iskusstvennogo-intellekta   http://tashkenttimes.uz/national/6435-mirziyoyev-instructs-to-create-research-institute-for-development-of-digital-tech,original,,InvalidURL: URL can't contain control characters. '/en/news/v-tashkente-sozdan-nauchno-issledovatelskiy-institut-razvitiya-tsifrovx-texnologiy-i-iskusstvennogo-intellekta   http://tashkenttimes.uz/national/6435-mirziyoyev-instructs-to-create-research-institute-for-development-of-digital-tech' (found at least ' ')
+https://yuzikibinbursu.yok.gov.tr/ana-sayfa,original,,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://www2.gov.pt/en/servicos/programa-de-formacao-do-ina,original,502,HTTPError 502
+https://www2.santacruzcountyca.gov/personnel/vpolandproc/ProceduresManual/PM6476.pdf,original,,URLError: <urlopen error timed out>
