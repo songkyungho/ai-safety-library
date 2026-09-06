@@ -181,8 +181,8 @@ button.back-link { font: inherit; background: none; border: 0; padding: 0; }
 .event-head { display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline; margin-bottom: 4px; }
 .event-date { font-variant-numeric: tabular-nums; color: var(--text-muted); font-size: 12px; }
 .event-summary { margin: 6px 0; font-size: 17px; line-height: 1.47; letter-spacing: -0.37px; }
-.event-summary a.event-title {
-  color: inherit; text-decoration: none; font-weight: inherit;
+.event-summary .event-title {
+  color: inherit; text-decoration: none; font-weight: 700;
 }
 .event-summary a.event-title:hover { text-decoration: underline; text-underline-offset: 3px; }
 .event-body { display: none; margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--hairline); }
@@ -533,7 +533,7 @@ function cardHtml(d) {
   const bodyHtml = summary ? `<p>${summary}</p>` : '';
   const title = d.canonical_url
     ? `<a class="event-title" href="${escapeHtml(d.canonical_url)}" target="_blank" rel="noopener">${escapeHtml(short)}</a>`
-    : escapeHtml(short);
+    : `<span class="event-title">${escapeHtml(short)}</span>`;
   const open = !state.closedIds[d.id];
   const life = statusBadge(d);
   return `<div class="event-card${open ? ' open' : ''}" data-id="${escapeHtml(d.id)}" style="${kindStyle(d.doc_kind)}" role="button" tabindex="0" aria-expanded="${open ? 'true' : 'false'}">
