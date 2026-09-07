@@ -156,6 +156,10 @@ def main() -> int:
 
     if not new_rows:
         print("신규 없음")
+        # 이전 실행 잔여 파일 제거 — 텔레그램 +N 오인 방지
+        stale = ROOT / "cache" / "iaae_board_new_idxs.txt"
+        if stale.exists():
+            stale.unlink()
         return 0
 
     print(f"신규 {len(new_rows)}건 추가 예정")
@@ -172,6 +176,10 @@ def main() -> int:
     save_collection("iaae-ethics", data)
     # catalog.md 는 enrich_iaae 가 다시 씀
     print(f"저장: collections/iaae-ethics/items.json (총 {data['count']}건)")
+    out = ROOT / "cache" / "iaae_board_new_idxs.txt"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text("\n".join(r["idx"] for r in new_rows) + "\n", encoding="utf-8")
+    print(f"신규 idx: {out}")
     return 0
 
 

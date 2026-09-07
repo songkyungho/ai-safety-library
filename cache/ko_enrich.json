@@ -483,7 +483,7 @@
     "updated": "2026-09-05"
   },
   "doc-4415891ed160": {
-    "src_hash": "9445ecbd8f5657e0",
+    "src_hash": "914dcabb9bac507f",
     "short_name": "AI 적용 전략",
     "summary": "EU가 전략산업과 공공부문 전반의 AI 도입을 촉진하기 위해 마련한 부문별 AI 확산 전략으로, AI 개발 역량뿐 아니라 산업·공공서비스 현장에서의 실제 활용 확대에 초점을 둔다. 중소기업의 AI 채택, EU 기술주권 강화, “AI first” 정책, 공공부문의 “buy European” 접근, 오픈소스 AI 활용을 강조한다. 주요 추진 축은 보건·제약, 모빌리티·교통·자동차, 로봇, 제조, 건설, 기후·환경, 에너지, 농식품, 방위·안보·우주, 전자통신, 문화·창작·미디어 및 공공부문 등에서의 AI 확산, 중소기업 지원, AI 인프라를 통한 기술주권 강화, AI 활용 인력 양성, 이해관계자 연계와 관찰 체계 구축이다.",
     "model": "openai/gpt-5.6-luna",
@@ -707,7 +707,7 @@
     "updated": "2026-09-05"
   },
   "doc-d721230dde36": {
-    "src_hash": "1cda9727962e0c4d",
+    "src_hash": "ac5aefe05a161502",
     "short_name": "EU AI 대륙 행동계획",
     "summary": "유럽연합 집행위원회가 2025년 4월 9일 발표한 AI 산업전략 정책 커뮤니케이션이다. EU를 글로벌 AI 선도 지역으로 만들기 위해 산업기반·연구역량·인재풀을 활용하고, AI Factories·AI Gigafactories·데이터·인재·규제지원·산업 적용을 하나의 패키지로 제시한다. 핵심 축은 ① AI Factories 및 AI Gigafactories 구축 ② 고품질 데이터 접근성 확대 ③ 전략산업의 AI 도입 촉진 ④ AI 인재·기술역량 강화 ⑤ AI Act 이행 지원과 규제 예측가능성 제고이다.",
     "model": "openai/gpt-5.6-luna",
@@ -1015,7 +1015,7 @@
     "updated": "2026-09-05"
   },
   "doc-8efee95210a0": {
-    "src_hash": "7290a83f05fa7a16",
+    "src_hash": "40b2aecd54e2b061",
     "short_name": "[미국저작권청] AI와 저작권: 2부 저작권 보호 가능성 보고서",
     "summary": "미국 저작권청이 발간한 「Copyright and AI」 시리즈의 제2부 보고서이다. 인공지능과 관련된 저작물의 저작권 보호 가능성을 다룬다. 자세한 내용은 미국 저작권청 홈페이지의 첨부 자료에서 확인할 수 있다.",
     "model": "openai/gpt-5.6-luna",
@@ -6601,7 +6601,7 @@
     "updated": "2026-09-05"
   },
   "doc-53860baf9970": {
-    "src_hash": "0441077c5420a5fd",
+    "src_hash": "c58ffa0ba76f26b1",
     "short_name": "유네스코 AI 윤리 영향평가",
     "summary": "유네스코가 발행한 자료다. AI 윤리 권고의 도구로서 Ethical Impact Assessment를 다룬다. 제공된 원문에는 평가 절차나 적용 방법에 관한 세부 내용은 제시되지 않았다.",
     "model": "openai/gpt-5.6-luna",
@@ -6678,7 +6678,7 @@
     "updated": "2026-09-05"
   },
   "doc-ed164fbfec00": {
-    "src_hash": "7a0393cfe414f4ef",
+    "src_hash": "c54240fe687bdbb2",
     "short_name": "Constitutional AI",
     "summary": "Anthropic이 작성한 Constitutional AI 자료이다. 해당 자료는 ArXiv에 게재되어 있으며, 원문은 https://arxiv.org/abs/2212.08073에서 확인할 수 있다.",
     "model": "openai/gpt-5.6-luna",
@@ -6930,7 +6930,7 @@
     "updated": "2026-09-05"
   },
   "doc-1832d37706e2": {
-    "src_hash": "47716b8ec3f2d791",
+    "src_hash": "14fb1ec128ea2d50",
     "short_name": "교육·학습에서 AI와 데이터 사용에 관한 윤리 지침",
     "summary": "유럽연합 집행위원회가 교육자를 대상으로 교육과 학습에서 인공지능과 데이터를 사용하는 데 관한 윤리 지침을 제시한 문서입니다.",
     "model": "openai/gpt-5.6-luna",
@@ -7042,7 +7042,7 @@
     "updated": "2026-09-05"
   },
   "doc-23aac05dd599": {
-    "src_hash": "e5d746eed1f70c4d",
+    "src_hash": "5ec2d63402e13e55",
     "short_name": "AI Index Report 2022",
     "summary": "스탠퍼드대 Human-Centered AI Institute가 발간한 정책보고서이다. 보고서의 자세한 내용은 첨부파일에서 확인할 수 있다.",
     "model": "openai/gpt-5.6-luna",
@@ -12061,7 +12061,7 @@
     "updated": "2026-09-06"
   },
   "doc-dec5f77e9386": {
-    "src_hash": "8a37b929176ccbc6",
+    "src_hash": "4b30344a6952a794",
     "short_name": "소프트뱅크 AI 윤리 정책",
     "summary": "1. 소프트뱅크가 홈페이지에 게시한 AI 윤리 정책 문서입니다.\n2. 정책의 구체적인 내용은 소프트뱅크 홈페이지의 원문을 통해 확인할 수 있습니다.",
     "model": "openai/gpt-5.6-luna",
@@ -12180,7 +12180,7 @@
     "updated": "2026-09-06"
   },
   "doc-5bb0df4257b6": {
-    "src_hash": "2edef2c37ef2375f",
+    "src_hash": "29b1fd6ba1f8e679",
     "short_name": "Good AI 교육",
     "summary": "AI4SCHOOL의 「Good AI Education」 자료입니다. 자세한 내용은 AI4SCHOOL 웹사이트(http://ai4school.org/)에서 확인할 수 있습니다.",
     "model": "openai/gpt-5.6-luna",
@@ -12201,7 +12201,7 @@
     "updated": "2026-09-06"
   },
   "doc-699e2afa8a43": {
-    "src_hash": "10a8f2568fde7f50",
+    "src_hash": "5e85c3ce6930894c",
     "short_name": "WHO 보건 분야 AI 윤리·거버넌스",
     "summary": "세계보건기구(WHO)의 보건 분야 인공지능 윤리 및 거버넌스 관련 문서입니다. 자세한 내용은 WHO 웹사이트에서 확인할 수 있습니다: https://www.who.int/publications/i/item/9789240029200",
     "model": "openai/gpt-5.6-luna",
@@ -12215,7 +12215,7 @@
     "updated": "2026-09-06"
   },
   "doc-f19784f0d184": {
-    "src_hash": "66101365e6793a2f",
+    "src_hash": "e60ba861ce8f10dc",
     "short_name": "AI100 보고서",
     "summary": "스탠포드대학교의 정책보고서로, 인공지능에 관한 100년 연구(One Hundred Year Study on Artificial Intelligence)의 보고서입니다. 원문 핵심 내용은 제공되지 않았으며, 자세한 내용은 공식 웹사이트(https://ai100.stanford.edu)에서 확인할 수 있습니다.",
     "model": "openai/gpt-5.6-luna",
@@ -12285,7 +12285,7 @@
     "updated": "2026-09-06"
   },
   "doc-678bce6340ce": {
-    "src_hash": "de9a7d3f800aea68",
+    "src_hash": "6a8ec3009de7ace2",
     "short_name": "미 국방성 AI 윤리 5원칙",
     "summary": "미 국방성은 인공지능의 개발과 사용을 위한 5가지 윤리 원칙을 채택했습니다. 원칙은 책임성, 공정성, 추적성, 신뢰성, 통제 가능성입니다. 인공지능 시스템은 적절한 수준의 판단과 주의를 바탕으로 책임 있게 운용되고, 의도하지 않은 편향을 최소화해야 합니다. 또한 시스템의 기능과 사용 목적은 투명하고 감사 가능해야 하며, 명확한 용도에 맞게 안전성과 보안성을 검증해야 합니다. 의도하지 않은 결과나 동작이 발생할 경우 이를 탐지하고 시스템을 비활성화하거나 중단할 수 있어야 합니다.",
     "model": "openai/gpt-5.6-luna",
@@ -12327,28 +12327,28 @@
     "updated": "2026-09-06"
   },
   "doc-6a0ce65c89a4": {
-    "src_hash": "087e535612d56e11",
+    "src_hash": "36d693409c21395b",
     "short_name": "헬싱키대학교 AI 윤리 교육 과정",
     "summary": "University of Helsinki의 ‘Ethics of AI’ 교육 과정 프로그램으로 표시되어 있다. 제공된 원문에는 AI 윤리 교육·강의 안내와 AI 활용·기술·교양 강의 항목이 포함되어 있다. 구체적인 교육 내용, 대상, 운영 방식 및 일정은 원문에서 확인되지 않는다.",
     "model": "openai/gpt-5.6-luna",
     "updated": "2026-09-06"
   },
   "doc-120e92edba38": {
-    "src_hash": "338be0be157a726e",
+    "src_hash": "66631cf5ec88e8f7",
     "short_name": "원칙 기반 인공지능",
     "summary": "Berkman Klein Center가 발행한 인공지능 관련 가이드라인·원칙 문서입니다. 문서의 상세 내용은 제공된 원문에 포함되어 있지 않으며, 출처 웹사이트에서 확인할 수 있습니다. 출처: https://cyber.harvard.edu/publication/2020/principled-ai",
     "model": "openai/gpt-5.6-luna",
     "updated": "2026-09-06"
   },
   "doc-efff7fcd4e46": {
-    "src_hash": "94039d677001f3e5",
+    "src_hash": "1700b3a8dd6d4444",
     "short_name": "BMW그룹 AI 7대 원칙",
     "summary": "BMW그룹이 인공지능의 개발과 사용을 위한 윤리 원칙을 제시한 가이드라인이다. 주요 원칙은 인간의 감독과 통제, 기술적 견고성과 안전성, 개인정보 및 데이터 거버넌스, 투명성, 다양성·비차별·공정성, 환경·사회적 복지, 책임성이다. BMW그룹은 이 원칙을 바탕으로 AI를 책임 있고 신뢰할 수 있는 방식으로 활용하고자 한다.",
     "model": "openai/gpt-5.6-luna",
     "updated": "2026-09-06"
   },
   "doc-237eea41535f": {
-    "src_hash": "1d7ae4845326f78c",
+    "src_hash": "93e50aefa92d7062",
     "short_name": "AI 윤리와 안전 이해",
     "summary": "앨런튜링연구소의 「Understanding artificial intelligence ethics and safety」 자료입니다. 인공지능 윤리와 안전을 주제로 합니다. 자세한 내용은 제공된 PDF 출처를 확인해야 합니다.",
     "model": "openai/gpt-5.6-luna",
@@ -12362,28 +12362,28 @@
     "updated": "2026-09-06"
   },
   "doc-b336e66b983a": {
-    "src_hash": "e2db31e7ebc64a17",
+    "src_hash": "e4b5dba45d26064b",
     "short_name": "Beijing AI Principles",
     "summary": "제공된 원문에는 문서 본문이나 세부 원칙이 포함되어 있지 않습니다. 문서 제목은 “Beijing AI Principles”이며, 베이징지원인공지능연구원이 발행한 가이드라인·원칙으로 제시되어 있습니다. 자세한 내용은 제공된 출처 웹사이트에서 확인해야 합니다.",
     "model": "openai/gpt-5.6-luna",
     "updated": "2026-09-06"
   },
   "doc-be791ac9278d": {
-    "src_hash": "852867791a9a4d83",
+    "src_hash": "da0b6b306a133741",
     "short_name": "인공지능의 미래 준비",
     "summary": "미국 오바마 행정부가 발간한 인공지능 관련 문서입니다. 원문 제목은 「PREPARING FOR THE FUTURE OF ARTIFICIAL INTELLIGENCE」입니다. 자세한 내용은 미국 백악관 아카이브의 원문 PDF에서 확인할 수 있습니다.",
     "model": "openai/gpt-5.6-luna",
     "updated": "2026-09-06"
   },
   "doc-04b3ea51c393": {
-    "src_hash": "ba9d1a0cf065c3c8",
+    "src_hash": "a7856340c1576447",
     "short_name": "PARTNERSHIP ON AI 목표와 활동",
     "summary": "PARTNERSHIP ON AI의 목표와 활동을 소개하는 자료입니다. 자세한 내용은 PARTNERSHIP ON AI 웹사이트에서 확인할 수 있습니다.",
     "model": "openai/gpt-5.6-luna",
     "updated": "2026-09-06"
   },
   "doc-f9695fd81214": {
-    "src_hash": "dfc797a21d73bc0e",
+    "src_hash": "8895d360748cb3e8",
     "short_name": "IBM AI 원칙",
     "summary": "IBM이 제시한 인공지능 관련 윤리 가이드라인·원칙 문서입니다. 원문 자료의 제목은 「Everyday Ethics for Artificial Intelligence」이며, 자세한 내용은 IBM 웹사이트의 PDF에서 확인할 수 있습니다.",
     "model": "openai/gpt-5.6-luna",
@@ -12397,21 +12397,21 @@
     "updated": "2026-09-06"
   },
   "doc-6268117586fb": {
-    "src_hash": "2ab7deab700a4507",
+    "src_hash": "0b1f49c018fba99f",
     "short_name": "MS AI 원칙",
     "summary": "Microsoft의 책임 있는 AI 관련 원칙을 다루는 문서다. 구체적인 내용은 Microsoft 출처 웹사이트에서 확인할 수 있다.",
     "model": "openai/gpt-5.6-luna",
     "updated": "2026-09-06"
   },
   "doc-0b6dfee9f4ac": {
-    "src_hash": "f10aee479de19555",
+    "src_hash": "afc93cde6d6bd501",
     "short_name": "구글 AI 원칙",
     "summary": "구글은 AI가 사회에 유익하고, 불공정한 편견을 만들거나 강화하지 않으며, 안전성을 고려해 개발·시험되어야 한다고 제시합니다. 또한 사람에 대한 책임성과 설계 단계부터의 개인정보 보호, 높은 수준의 과학적 엄밀성을 강조합니다. 구글은 사람에게 해를 끼치는 것을 주된 목적으로 하는 기술, 무기 및 위해를 촉진하는 기술, 국제적으로 인정된 규범을 위반하는 감시 기술, 국제법과 인권의 원칙에 반하는 기술은 개발하지 않겠다고 밝힙니다.",
     "model": "openai/gpt-5.6-luna",
     "updated": "2026-09-06"
   },
   "doc-19e42b272079": {
-    "src_hash": "81392780d3e8961a",
+    "src_hash": "57c4ae34d94fc33b",
     "short_name": "아실로마 AI 원칙",
     "summary": "인공지능의 연구·개발·활용과 장기적 영향에 관한 23개 원칙을 제시한다. AI 연구는 안전과 사회적 이익을 목표로 하고, 투명성·책임성·인간의 가치와 권리를 존중해야 한다. AI 시스템의 안전성, 보안성, 인간의 통제와 감독을 확보하며, 경제적 이익과 권력의 집중을 방지해야 한다. 고도화된 AI의 장기적 위험에 대비하기 위해 국제적 협력과 거버넌스가 필요하다고 강조한다.",
     "model": "openai/gpt-5.6-luna",
@@ -12432,7 +12432,7 @@
     "updated": "2026-09-06"
   },
   "doc-a9599253367b": {
-    "src_hash": "06060899733765bc",
+    "src_hash": "74e891d7e1379c2b",
     "short_name": "몬트리올 선언",
     "summary": "인공지능의 책임 있는 개발과 활용을 위한 윤리 원칙을 제시한다. 주요 원칙은 웰빙, 자율성 존중, 사생활 보호, 연대, 민주적 참여, 형평성, 다양성·포용, 신중성, 책임성, 지속가능한 발전이다. 이 선언은 AI가 인간의 존엄과 권리를 존중하고 사회적·환경적 영향을 고려해야 한다는 방향을 제시한다.",
     "model": "openai/gpt-5.6-luna",
@@ -12467,7 +12467,7 @@
     "updated": "2026-09-06"
   },
   "doc-cd23f2502654": {
-    "src_hash": "c33738102d81e72f",
+    "src_hash": "2dc4b06cfc12f8d6",
     "short_name": "대화형 AI 윤리 이슈",
     "summary": "대화형 인공지능(conversational AI)의 윤리 이슈를 다루는 문서다. 제공된 원문에는 국제인공지능윤리협회의 메뉴와 AI 윤리 가이드라인, 감정교류 AI 윤리 가이드라인, 디지털휴먼 윤리가이드라인 등의 항목이 포함되어 있다. 구체적인 윤리 이슈의 내용은 제공된 본문에 나타나지 않는다.",
     "model": "openai/gpt-5.6-luna",

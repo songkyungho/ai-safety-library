@@ -6,3 +6,4 @@ __pycache__/
 .vscode/
 
 logs/
+ai_safety_library_env

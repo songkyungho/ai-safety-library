@@ -146,7 +146,8 @@ a:hover { color: var(--accent); }
 }
 .year-header .muted { font-weight: 400; margin-left: 4px; color: var(--text-muted); }
 .event-card, .year-header, .dir-row, .year-nav-item { font: inherit; color: inherit; }
-.event-card, button.dir-row { cursor: pointer; background: var(--surface-1); }
+.event-card { background: var(--surface-1); }
+button.dir-row { cursor: pointer; background: var(--surface-1); }
 .event-card { border: 1px solid var(--hairline); border-radius: 14px; display: block; }
 button.back-link { font: inherit; background: none; border: 0; padding: 0; }
 .year-nav {
@@ -176,23 +177,30 @@ button.back-link { font: inherit; background: none; border: 0; padding: 0; }
   .year-nav { display: none; }
 }
 .event-card { position: relative; padding: 16px 18px; margin-bottom: 12px; }
-.event-card.open { border-color: color-mix(in srgb, var(--c-l) 35%, var(--hairline)); }
 .event-card::before { content: ""; position: absolute; left: -20px; top: 18px; width: 10px; height: 10px; border-radius: 50%; background: var(--c-l); border: 2px solid var(--plane); }
 .event-head { display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline; margin-bottom: 4px; }
 .event-date { font-variant-numeric: tabular-nums; color: var(--text-muted); font-size: 12px; }
 .event-summary { margin: 6px 0; font-size: 17px; line-height: 1.47; letter-spacing: -0.37px; }
 .event-summary .event-title {
-  color: inherit; text-decoration: none; font-weight: 700;
+  font-weight: 700;
 }
-.event-summary a.event-title:hover { text-decoration: underline; text-underline-offset: 3px; }
-.event-body { display: none; margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--hairline); }
-.event-card.open .event-body { display: block; }
+.event-summary a.event-title {
+  color: #1d4ed8;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.event-summary a.event-title:hover,
+.event-summary a.event-title:focus-visible {
+  color: #1e40af;
+}
+.event-body { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--hairline); }
 .event-body p { margin: 0; font-size: 14px; line-height: 1.55; color: var(--text-secondary); white-space: pre-wrap; }
 .event-body .term-em {
   font-weight: 650; color: var(--ink);
 }
 .event-body .term-name {
-  font-weight: 650; color: var(--ink);
+  font-weight: inherit; color: inherit;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
@@ -200,9 +208,26 @@ button.back-link { font: inherit; background: none; border: 0; padding: 0; }
 }
 a.stat-tile, a.dir-row, a.filter-chip { text-decoration: none; color: inherit; }
 .dir-row .org { min-width: 0; flex: 1 1 240px; }
+#listControls {
+  margin: 0 0 20px;
+}
 .filter-toolbar {
   display: flex; flex-wrap: wrap; gap: 6px; align-items: center;
-  margin: 0 0 20px;
+  margin: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--hairline);
+}
+#listControls .filter-toolbar:last-child { border-bottom: 0; padding-bottom: 0; }
+#listControls .filter-toolbar:first-child { padding-top: 0; }
+.filter-label {
+  flex: 0 0 auto;
+  min-width: 2.4em;
+  margin-right: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: -0.02em;
+  white-space: nowrap;
 }
 a.filter-chip, button.filter-chip {
   display: inline-flex; align-items: center; gap: 5px;
@@ -319,7 +344,11 @@ button.filter-more:hover { color: var(--ink); border-color: var(--text-muted); }
   color: var(--navy, var(--accent-focus));
   background: color-mix(in srgb, var(--gold, #f3b84f) 22%, var(--surface-1));
 }
-.ribbon-row { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; align-items: center; }
+.ribbon-row {
+  display: flex; flex-wrap: nowrap; gap: 5px; margin-top: 8px; align-items: center;
+  overflow-x: auto; -webkit-overflow-scrolling: touch;
+}
+.ribbon-row > * { flex-shrink: 0; }
 .kw-tag {
   display: inline-flex; align-items: center;
   border: 1px solid var(--hairline); border-radius: 999px;
@@ -389,8 +418,8 @@ button.filter-chip.topic-chip .n {
 <div class="wrap">
 
 <div class="about-wrap">
-  <p class="about-meta">표시 문서 1,930건 · 원천 3,625건 · 범위 밖 1,695건 ·
-  LLM 큐레이션 캐시 3,596건(고·중신뢰 3,570) · 토픽 LLM 반영 1,880건</p>
+  <p class="about-meta">표시 문서 1,928건 · 원천 3,625건 · 범위 밖 1,697건 ·
+  LLM 큐레이션 캐시 3,596건(고·중신뢰 3,570) · 토픽 LLM 반영 989건</p>
 
   <p>AI 안전·거버넌스 관련 법·정책·표준·기구 문서를 모아, 종류·주제·날짜·한글 표기를
   정리해 한 화면에서 훑을 수 있게 한 라이브러리입니다.
@@ -476,7 +505,7 @@ aria-label="수집, 규칙 후보, LLM 큐레이션, 병합 분석, 통합 합�
   <h2>허용 문서종류 · 토픽</h2>
   <p class="kind-list"><b>doc_kind</b> (형태) 법 · 법안 · 행정규칙 · 조약·협약 · 선언·성명 · 가이드라인·원칙 · 전략·정책 · 정책보고서 · 표준 · 기구·제도 · 기타</p>
   <p class="kind-list"><b>issuer_level</b> (층위) 국제기구·다자(international) · 국가(national) · 지방·주(subnational) · 부처·규제기관(ministry) · 프론티어 랩(lab) · 산업계·협회(industry) · 시민사회·학계(civil_society) · 민관·혼합(multi)</p>
-  <p class="kind-list"><b>topics</b> (주제) norms · law · guideline · standards · national_security · cybersecurity · politics · sovereign_ai · healthcare · youth · agentic_ai · physical_ai · safety_research · deepfake_disinfo · open_weight · frontier · incidents</p>
+  <p class="kind-list"><b>topics</b> (주제) national_security · cybersecurity · politics · sovereign_ai · healthcare · youth · agentic_ai · physical_ai · safety_research · deepfake_disinfo · open_weight · frontier · incidents</p>
 
   <h2>수동 도구</h2>
   <div class="tool-panel">
@@ -520,6 +549,15 @@ aria-label="수집, 규칙 후보, LLM 큐레이션, 병합 분석, 통합 합�
 <script id="search-index" type="application/json">{"docs": []}</script>
 <script>
 (function() {
+  document.addEventListener('click', (ev) => {
+    const a = ev.target.closest && ev.target.closest('a[href]');
+    if (!a) return;
+    const href = a.getAttribute('href') || '';
+    if (/^https?:\/\//i.test(href) || href.startsWith('//')) {
+      a.setAttribute('target', '_blank');
+      a.setAttribute('rel', 'noopener noreferrer');
+    }
+  }, true);
   const box = document.getElementById('omniBox');
   const panel = document.getElementById('omniResults');
   if (!box) return;

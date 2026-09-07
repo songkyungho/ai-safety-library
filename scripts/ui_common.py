@@ -203,6 +203,15 @@ def omnibox_boot_script(search_index_json: str) -> str:
     return f"""<script id="search-index" type="application/json">{search_index_json}</script>
 <script>
 (function() {{
+  document.addEventListener('click', (ev) => {{
+    const a = ev.target.closest && ev.target.closest('a[href]');
+    if (!a) return;
+    const href = a.getAttribute('href') || '';
+    if (/^https?:\\/\\//i.test(href) || href.startsWith('//')) {{
+      a.setAttribute('target', '_blank');
+      a.setAttribute('rel', 'noopener noreferrer');
+    }}
+  }}, true);
   const box = document.getElementById('omniBox');
   const panel = document.getElementById('omniResults');
   if (!box) return;

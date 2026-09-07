@@ -11,6 +11,9 @@ AI 관련 법·윤리·선언·가이드라인을 **원본 랜딩 URL** 기준�
 ## 빠른 사용
 
 ```bash
+# 외교부 게시판 신규 (브라우저 Cookie → ~/.ai_safety_daily_env 의 MOFA_COOKIE)
+python3 scripts/ingest_mofa_board.py
+
 # IAAE 목록 신규 + 상세에서 [자료출처] URL 채우기
 python3 scripts/ingest_iaae_board.py
 python3 scripts/enrich_iaae.py
@@ -33,14 +36,16 @@ python3 scripts/build_site.py
 
 - **시각:** 매일 09:00
 - **에이전트:** `launchd/com.user.ai-safety-library-daily.plist`
-- **하는 일:** OECD 수집 → IAAE 목록·보강 → 신규 LLM 큐레이션 → `build_site`(docs/) → (기본) git push → GitHub Pages
+- **하는 일:** OECD 수집 → 외교부 게시판(쿠키 있을 때) → IAAE 목록·보강 → 신규 LLM 큐레이션 → `build_site`(docs/) → (기본) git push → GitHub Pages
 - **수동 실행:** `./run_daily_pipeline.sh`
 - **로그:** `/tmp/ai-safety-library-daily.out.log` · `.err.log`
-- **환경변수:** Digest의 `ai_safety_daily_env` (OpenRouter 키) 재사용
+- **환경변수:** Digest의 `ai_safety_daily_env` (OpenRouter·텔레그램·`MOFA_COOKIE`) 재사용. 외교부 WAF 쿠키는 만료되면 브라우저에서 Cookie 헤더를 다시 넣는다. git에 커밋하지 말 것.
+- **완료 알림:** 파이프라인 끝나면 텔레그램 한 통 (`PIPELINE_TELEGRAM=0`이면 생략)
 
 IAAE는 이 라이브러리에서만 수집·보관한다. Digest로 신규분을 알리지 않는다.
 
 push를 끄려면 `LIBRARY_PUSH=0 ./run_daily_pipeline.sh`.
+텔레그램 알림을 끄려면 `PIPELINE_TELEGRAM=0 ./run_daily_pipeline.sh` (Digest와 같은 `TELEGRAM_BOT_TOKEN` / `TELEGRAM_CHAT_ID`).
 
 ## 데이터
 

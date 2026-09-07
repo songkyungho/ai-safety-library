@@ -961,6 +961,20 @@ def korean_title_rank(item: dict) -> int:
     return 0
 
 
+def is_scrape_chrome(text: str) -> bool:
+    """IAAE 상세 페이지 안내문·내비·깨진 HTML 조각. 문서 요약으로 쓰지 않는다."""
+    s = (text or "").strip()
+    if not s:
+        return False
+    if '"/>' in s or "자료출처" in s or "자료제목" in s:
+        return True
+    if re.search(r"자세한\s*내용은.{0,80}첨부", s):
+        return True
+    if s.startswith("연구 자료실") and "연합뉴스" in s:
+        return True
+    return False
+
+
 def rebuild_collection_stats(data: dict) -> dict:
     items = data.get("items") or []
     data["count"] = len(items)

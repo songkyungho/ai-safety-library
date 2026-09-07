@@ -28,12 +28,9 @@ TOPIC_KEYWORDS = _MOD.TOPIC_KEYWORDS
 TOPIC_LABELS = _MOD.TOPIC_LABELS
 match_topics = _MOD.match_topics
 
-# 필터·표시 순서 (동향 TOPIC_LABELS 순서, 한국 locus·안전연구소 카테고리 전용은 제외)
+# 필터·표시 순서. 종류(doc_kind)와 겹치는 윤리·규범/법/가이드라인/표준은 쓰지 않는다.
+KIND_OVERLAP_TOPICS = frozenset({"norms", "law", "guideline", "standards"})
 TOPIC_ORDER = [
-    "norms",
-    "law",
-    "guideline",
-    "standards",
     "national_security",
     "cybersecurity",
     "politics",
@@ -82,6 +79,29 @@ def topic_icon(slug: str) -> str:
     return icon or ""
 
 
+def drop_kind_overlap_topics(topics: list) -> list:
+    """종류 리본과 같은 뜻의 주제는 카드·필터에 남기지 않는다."""
+    out: list = []
+    seen: set[str] = set()
+    for t in topics or []:
+        tid = str((t.get("id") if isinstance(t, dict) else t) or "")
+        if not tid or tid in KIND_OVERLAP_TOPICS or tid in seen:
+            continue
+        seen.add(tid)
+        if isinstance(t, dict):
+            out.append(t)
+        else:
+            out.append(
+                {
+                    "id": tid,
+                    "label": topic_label(tid),
+                    "icon": topic_icon(tid),
+                    "color": TOPIC_COLORS.get(tid, "#534f4a"),
+                }
+            )
+    return out
+
+
 def match_doc_topics(doc: dict) -> list[str]:
     hay = "\n".join(
         str(doc.get(k) or "")
@@ -97,8 +117,11 @@ def match_doc_topics(doc: dict) -> list[str]:
             "doc_kind_raw",
         )
     )
-    matched = match_topics(hay, TOPIC_KEYWORDS)
-    # TOPIC_ORDER 우선, 그 외 슬러그는 뒤에
+    matched = [
+        s
+        for s in match_topics(hay, TOPIC_KEYWORDS)
+        if s in TOPIC_ORDER and s not in KIND_OVERLAP_TOPICS
+    ]
     order_index = {s: i for i, s in enumerate(TOPIC_ORDER)}
     return sorted(set(matched), key=lambda s: (order_index.get(s, 999), s))
 
@@ -107,6 +130,7 @@ def enrich_topics(docs: list[dict]) -> list[dict]:
     for d in docs:
         # LLM 큐레이션이 이미 토픽을 넣었으면 키워드 매칭으로 덮지 않음
         if d.get("topics_source") == "llm" and isinstance(d.get("topics"), list):
+            d["topics"] = drop_kind_overlap_topics(d["topics"])
             continue
         slugs = match_doc_topics(d)
         d["topics"] = [

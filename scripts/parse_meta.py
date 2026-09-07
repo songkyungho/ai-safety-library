@@ -290,14 +290,21 @@ def _infer_org(item: dict[str, Any]) -> str:
 
 
 def _infer_summary(item: dict[str, Any], fields: dict[str, str]) -> str:
+    from library_common import is_scrape_chrome
+
     if fields.get("핵심내용"):
-        return fields["핵심내용"].strip()
+        text = fields["핵심내용"].strip()
+        return "" if is_scrape_chrome(text) else text
+    # IAAE 상세는 원문 요약이 아니라 첨부·자료출처 안내문이다. LLM이 채우기 전엔 비운다.
+    col = item.get("collection") or ""
+    if col in ("iaae-ethics", "derived-splits"):
+        return ""
     body = (item.get("body") or "").strip()
+    if not body or is_scrape_chrome(body):
+        return ""
     if body and "●" not in body:
         return body[:1200]
-    # AGORA/OECD English body often is the summary
     if body and "●핵심내용" not in body:
-        # strip leading bullet block if partial
         if body.startswith("●"):
             return ""
         return body[:1200]

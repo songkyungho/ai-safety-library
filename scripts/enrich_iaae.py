@@ -19,6 +19,7 @@ from library_common import (  # noqa: E402
     is_bad_original,
     is_curator_url,
     is_http_url,
+    is_scrape_chrome,
     rebuild_collection_stats,
     write_json,
 )
@@ -99,14 +100,19 @@ def extract_links(html: str) -> list[str]:
     ):
         add(m.group(1), allow_chrome=True)
 
+    # 빈 <a href>는 이전 글 잔여 링크인 경우가 많아 쓰지 않는다.
     for m in re.finditer(
-        r"자료출처[\s\S]{0,400}?<a[^>]+href=[\"'](https?://[^\"']+)[\"']",
-        text,
-        flags=re.IGNORECASE,
+        r"자료출처[\s\S]{0,400}?<a[^>]+href=[\"'](https?://[^\"']+)[\"'][^>]*>(.*?)</a>",
+        html,
+        flags=re.IGNORECASE | re.DOTALL,
     ):
-        add(m.group(1), allow_chrome=True)
+        inner = re.sub(r"<[^>]+>", "", m.group(2)).strip()
+        if inner:
+            add(m.group(1), allow_chrome=True)
 
     if found:
+        return found
+    if re.search(r"자료출처", text, flags=re.IGNORECASE):
         return found
 
     # Fallback: links immediately after 자료제목 / 원문 / PDF markers only
@@ -131,29 +137,8 @@ def extract_links(html: str) -> list[str]:
 
 
 def extract_body(html: str) -> str:
-    text = html_mod.unescape(html)
-    # Pull plain-ish snippet around 자료출처 / 안내문
-    chunks = []
-    for pat in (
-        r"자세한 내용은[^<\n]{0,200}",
-        r"자료출처[^\n<]{0,300}",
-        r"자료제목[^\n<]{0,200}",
-    ):
-        m = re.search(pat, text)
-        if m:
-            chunks.append(re.sub(r"\s+", " ", m.group(0)).strip())
-    # Strip tags from a mid-page window if nothing found
-    if not chunks:
-        stripped = re.sub(r"(?is)<script[^>]*>.*?</script>", " ", text)
-        stripped = re.sub(r"(?is)<style[^>]*>.*?</style>", " ", stripped)
-        stripped = re.sub(r"<[^>]+>", " ", stripped)
-        stripped = re.sub(r"\s+", " ", stripped).strip()
-        # skip nav chrome: find title marker
-        idx = stripped.find("연구 자료실")
-        if idx >= 0:
-            stripped = stripped[idx : idx + 800]
-        chunks.append(stripped[:500])
-    return "\n".join(chunks)[:1500]
+    """IAAE 상세는 첨부 안내만 있는 경우가 많다. 카드 요약으로 쓰지 않으므로 비운다."""
+    return ""
 
 
 def write_csv(path: Path, rows: list[dict]) -> None:
@@ -206,6 +191,8 @@ def main() -> None:
     ok = 0
     fail = 0
     for i, it in enumerate(items, 1):
+        if is_scrape_chrome(it.get("body") or ""):
+            it["body"] = ""
         if it.get("source_urls") and not args.force:
             ok += 1
             continue

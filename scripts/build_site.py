@@ -120,10 +120,11 @@ TAG_DROP_IF_KIND: dict[str, frozenset[str]] = {
     "가이드라인": frozenset({"가이드라인·원칙"}),
 }
 
-# 카드 본문 강조: 고유 규범·프레임워크 명칭 → 밑줄, 개념어 → 볼드.
+# 상세 본문 강조: 종류·주체 → 밑줄(name), 주제 → 볼드(em).
 # 약어는 영숫자 경계만 막아 한국어 조사(에/을 등)와도 매칭되게 한다.
 _ACRO = r"(?<![A-Za-z0-9]){0}(?![A-Za-z0-9])"
-EMPHASIS_NAME_PATTERNS: list[str] = [
+# 고유 문건명(종류에 가깝게 밑줄).
+EMPHASIS_INSTRUMENT_PATTERNS: list[str] = [
     r"EU\s*AI\s*Act",
     r"AI\s*Act",
     r"AI\s*기본법",
@@ -139,25 +140,261 @@ EMPHASIS_NAME_PATTERNS: list[str] = [
     _ACRO.format(r"ASTRI"),
     r"NIST\s*AI\s*RMF",
     r"Hiroshima\s*Process|히로시마\s*프로세스",
-    r"Bletchley|블레출리",
+    r"Bletchley|블레츨리|블레출리",
     _ACRO.format(r"GPAI"),
     r"ASL[-\s]?\d",
     r"CCL[-\s]?\d?",
 ]
+# 문서 종류 키워드 → 밑줄. 긴 표현이 앞에 오도록 둔다.
+EMPHASIS_KIND_PATTERNS: list[str] = [
+    r"정책보고서",
+    r"행정규칙",
+    r"시행규칙",
+    r"시행령",
+    r"법률안",
+    r"기본법",
+    r"가이드라인",
+    r"가이드북",
+    r"권고안",
+    r"모범사례",
+    r"규제샌드박스",
+    r"법제화",
+    r"제정안",
+    r"개정안",
+    r"법령",
+    r"법률",
+    r"법안",
+    r"조약",
+    r"협약",
+    r"선언문",
+    r"선언",
+    r"성명",
+    r"지침",
+    r"전략",
+    r"표준화",
+    r"표준",
+    r"규제",
+    r"입법",
+    r"정책",
+    r"(?<![가-힣])법(?![가-힣])",
+    r"guidelines?",
+    r"code of (?:practice|conduct)",
+    r"executive orders?",
+    r"regulatory framework",
+    r"legislation",
+    r"regulations?",
+    r"statutes?",
+    r"(?<![A-Za-z])bills?(?![A-Za-z])",
+    r"treat(?:y|ies)",
+    r"conventions?",
+    r"declarations?",
+    r"strateg(?:y|ies)",
+    r"polic(?:y|ies)",
+    r"standards?",
+]
+# 지방·규제기관 등 주체 고유명(국가명은 emphasis_rules_for_js에서 합친다).
+EMPHASIS_SUBJECT_EXTRA: list[str] = [
+    r"과학기술정보통신부",
+    r"개인정보보호위원회",
+    r"한국지능정보사회진흥원",
+    r"국가인공지능위원회",
+    r"유럽연합\s*집행위원회",
+    r"방송통신위원회",
+    r"산업통상자원부",
+    r"공정거래위원회",
+    r"행정안전부",
+    r"보건복지부",
+    r"국가정보원",
+    r"과기정통부",
+    r"규제당국",
+    r"규제기관",
+    r"감독기관",
+    r"집행위원회",
+    r"유럽의회",
+    r"유럽연합",
+    r"유럽평의회",
+    r"인공지능안전연구소",
+    r"외교부",
+    r"교육부",
+    r"국방부",
+    r"과기부",
+    r"개보위",
+    r"방통위",
+    r"산업부",
+    r"행안부",
+    r"내각부",
+    r"헌법재판소",
+    r"대법원",
+    r"국회",
+    r"의회",
+    r"캘리포니아",
+    r"콜로라도",
+    r"일리노이",
+    r"텍사스",
+    r"뉴욕주",
+    r"워싱턴주",
+    r"경기도",
+    r"서울시",
+    r"베이징",
+    r"상하이",
+    r"도쿄",
+    r"오사카",
+    r"부산",
+    r"서울",
+    r"뉴욕",
+    r"European Commission",
+    r"Council of Europe",
+    r"EU AI Office",
+    r"AI Office",
+    r"State of California",
+    r"New York",
+    r"California",
+    r"Colorado",
+    r"Illinois",
+    r"Texas",
+    r"Congress",
+    _ACRO.format(r"NIST"),
+    _ACRO.format(r"NTIA"),
+    _ACRO.format(r"CISA"),
+    _ACRO.format(r"FTC"),
+    _ACRO.format(r"FCC"),
+    _ACRO.format(r"FDA"),
+    _ACRO.format(r"ICO"),
+    _ACRO.format(r"CNIL"),
+    r"(?<![A-Za-z])Ofcom(?![A-Za-z])",
+]
+# 주제 키워드 → 볼드. 종류·주체와 겹치는 법/가이드라인/표준/국가명은 넣지 않는다.
+EMPHASIS_TOPIC_EXTRA: list[str] = [
+    r"딥페이크\s*성범죄",
+    r"딥페이크",
+    r"허위조작정보",
+    r"허위정보",
+    r"가짜뉴스",
+    r"합성미디어",
+    r"합성\s*미디어",
+    r"음성복제",
+    r"피지컬\s*AI",
+    r"피지컬AI",
+    r"물리적\s*AI",
+    r"소버린\s*AI",
+    r"소버린AI",
+    r"주권\s*AI",
+    r"주권AI",
+    r"데이터주권",
+    r"디지털주권",
+    r"에이전틱\s*AI",
+    r"에이전틱AI",
+    r"에이전틱",
+    r"AI\s*에이전트",
+    r"자율\s*에이전트",
+    r"멀티에이전트",
+    r"휴머노이드",
+    r"로보틱스",
+    r"자율주행",
+    r"오픈소스\s*AI",
+    r"오픈소스\s*모델",
+    r"오픈웨이트",
+    r"오픈모델",
+    r"사이버안보",
+    r"사이버보안",
+    r"국가안보",
+    r"윤리\s*원칙",
+    r"윤리\s*규범",
+    r"AI\s*윤리",
+    r"프론티어\s*모델",
+    r"프론티어\s*AI",
+    r"레드티밍",
+    r"의료AI",
+    r"헬스케어",
+    r"deepfakes?",
+    r"disinformation",
+    r"misinformation",
+    r"synthetic media",
+    r"physical AI",
+    r"embodied AI",
+    r"sovereign AI",
+    r"AI sovereignty",
+    r"digital sovereignty",
+    r"agentic AI",
+    r"AI agents?",
+    r"humanoid",
+    r"\brobotics\b",
+    r"open[-\s]?weight",
+    r"cybersecurity",
+    r"national security",
+]
+# 카드 태그용 개념어 중 종류 키워드는 본문에서 밑줄로 돌린다.
+_KEYWORD_AS_KIND = {"가이드라인", "표준", "규제"}
 
 _KEYWORD_COMPILED = [
     (label, [re.compile(p, re.I) for p in pats]) for label, pats in KEYWORD_RULES
 ]
 
 
+def _country_subject_patterns() -> list[str]:
+    """국가·국제기구 표기 → 밑줄. 짧은 한국어 오탐은 후방/전방 탐색으로 막는다."""
+    from library_common import COUNTRY_KO, ORG_FLAGS, TITLE_COUNTRY
+
+    special = {
+        "한국": r"한국(?!어)",
+        "인도": r"인도(?![적주의화하네])",
+        "오만": r"오만(?![한함])",
+        "가나": r"가나(?![능히])",
+        "이란": r"이란(?![가-힣])",
+    }
+    ko_names: list[str] = []
+    en_lits: list[str] = []
+    en_acro: list[str] = []
+    seen: set[str] = set()
+
+    def _add_en(name: str) -> None:
+        if not name or name in seen or name == "International":
+            return
+        seen.add(name)
+        if re.fullmatch(r"[A-Z0-9]{2,5}", name):
+            en_acro.append(re.escape(name))
+        else:
+            en_lits.append(re.escape(name))
+
+    for name in list(TITLE_COUNTRY.keys()) + list(COUNTRY_KO.values()):
+        name = (name or "").strip()
+        if not name or name in seen:
+            continue
+        if re.fullmatch(r"[A-Za-z0-9 .'-]+", name):
+            _add_en(name)
+            continue
+        seen.add(name)
+        ko_names.append(special.get(name, re.escape(name)))
+    ko_names.sort(key=len, reverse=True)
+
+    for name in list(COUNTRY_KO.keys()) + list(ORG_FLAGS.keys()):
+        _add_en((name or "").strip())
+    en_lits.sort(key=len, reverse=True)
+    out: list[str] = []
+    if ko_names:
+        out.append("(?:%s)" % "|".join(ko_names))
+    if en_lits:
+        out.append(rf"(?<![A-Za-z])(?:{'|'.join(en_lits)})(?![A-Za-z])")
+    if en_acro:
+        out.append(_ACRO.format("(?:%s)" % "|".join(en_acro)))
+    return out
+
+
 def emphasis_rules_for_js() -> list[dict]:
-    """프론트엔드 본문 강조용. name이 em보다 우선(동일 구간)."""
+    """프론트엔드 본문 강조용. 종류·주체(name/밑줄)가 주제(em/볼드)보다 우선."""
     rules: list[dict] = []
-    for pat in EMPHASIS_NAME_PATTERNS:
+    for pat in EMPHASIS_INSTRUMENT_PATTERNS:
         rules.append({"re": pat, "style": "name"})
-    for _label, pats in KEYWORD_RULES:
+    rules.append({"re": "(?:%s)" % "|".join(EMPHASIS_KIND_PATTERNS), "style": "name"})
+    rules.append({"re": "(?:%s)" % "|".join(EMPHASIS_SUBJECT_EXTRA), "style": "name"})
+    for pat in _country_subject_patterns():
+        rules.append({"re": pat, "style": "name"})
+    for label, pats in KEYWORD_RULES:
+        if label in _KEYWORD_AS_KIND:
+            continue
         for pat in pats:
             rules.append({"re": pat, "style": "em"})
+    rules.append({"re": "(?:%s)" % "|".join(EMPHASIS_TOPIC_EXTRA), "style": "em"})
     return rules
 
 
@@ -358,7 +595,8 @@ a:hover { color: var(--accent); }
 }
 .year-header .muted { font-weight: 400; margin-left: 4px; color: var(--text-muted); }
 .event-card, .year-header, .dir-row, .year-nav-item { font: inherit; color: inherit; }
-.event-card, button.dir-row { cursor: pointer; background: var(--surface-1); }
+.event-card { background: var(--surface-1); }
+button.dir-row { cursor: pointer; background: var(--surface-1); }
 .event-card { border: 1px solid var(--hairline); border-radius: 14px; display: block; }
 button.back-link { font: inherit; background: none; border: 0; padding: 0; }
 .year-nav {
@@ -388,23 +626,30 @@ button.back-link { font: inherit; background: none; border: 0; padding: 0; }
   .year-nav { display: none; }
 }
 .event-card { position: relative; padding: 16px 18px; margin-bottom: 12px; }
-.event-card.open { border-color: color-mix(in srgb, var(--c-l) 35%, var(--hairline)); }
 .event-card::before { content: ""; position: absolute; left: -20px; top: 18px; width: 10px; height: 10px; border-radius: 50%; background: var(--c-l); border: 2px solid var(--plane); }
 .event-head { display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline; margin-bottom: 4px; }
 .event-date { font-variant-numeric: tabular-nums; color: var(--text-muted); font-size: 12px; }
 .event-summary { margin: 6px 0; font-size: 17px; line-height: 1.47; letter-spacing: -0.37px; }
 .event-summary .event-title {
-  color: inherit; text-decoration: none; font-weight: 700;
+  font-weight: 700;
 }
-.event-summary a.event-title:hover { text-decoration: underline; text-underline-offset: 3px; }
-.event-body { display: none; margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--hairline); }
-.event-card.open .event-body { display: block; }
+.event-summary a.event-title {
+  color: #1d4ed8;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.event-summary a.event-title:hover,
+.event-summary a.event-title:focus-visible {
+  color: #1e40af;
+}
+.event-body { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--hairline); }
 .event-body p { margin: 0; font-size: 14px; line-height: 1.55; color: var(--text-secondary); white-space: pre-wrap; }
 .event-body .term-em {
   font-weight: 650; color: var(--ink);
 }
 .event-body .term-name {
-  font-weight: 650; color: var(--ink);
+  font-weight: inherit; color: inherit;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
@@ -412,9 +657,26 @@ button.back-link { font: inherit; background: none; border: 0; padding: 0; }
 }
 a.stat-tile, a.dir-row, a.filter-chip { text-decoration: none; color: inherit; }
 .dir-row .org { min-width: 0; flex: 1 1 240px; }
+#listControls {
+  margin: 0 0 20px;
+}
 .filter-toolbar {
   display: flex; flex-wrap: wrap; gap: 6px; align-items: center;
-  margin: 0 0 20px;
+  margin: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--hairline);
+}
+#listControls .filter-toolbar:last-child { border-bottom: 0; padding-bottom: 0; }
+#listControls .filter-toolbar:first-child { padding-top: 0; }
+.filter-label {
+  flex: 0 0 auto;
+  min-width: 2.4em;
+  margin-right: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: -0.02em;
+  white-space: nowrap;
 }
 a.filter-chip, button.filter-chip {
   display: inline-flex; align-items: center; gap: 5px;
@@ -531,7 +793,11 @@ button.filter-more:hover { color: var(--ink); border-color: var(--text-muted); }
   color: var(--navy, var(--accent-focus));
   background: color-mix(in srgb, var(--gold, #f3b84f) 22%, var(--surface-1));
 }
-.ribbon-row { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; align-items: center; }
+.ribbon-row {
+  display: flex; flex-wrap: nowrap; gap: 5px; margin-top: 8px; align-items: center;
+  overflow-x: auto; -webkit-overflow-scrolling: touch;
+}
+.ribbon-row > * { flex-shrink: 0; }
 .kw-tag {
   display: inline-flex; align-items: center;
   border: 1px solid var(--hairline); border-radius: 999px;
@@ -791,10 +1057,10 @@ def render_index(docs: list[dict], index: dict, *, total_raw: int = 0, out_count
     body = f"""
   {trend_html}
   <div class="controls" id="listControls">
-    <div class="sort-toggle filter-toolbar" id="kindToggle">{"".join(kind_btns)}</div>
-    <div class="sort-toggle filter-toolbar" id="issuerToggle">{"".join(issuer_btns)}</div>
-    <div class="sort-toggle filter-toolbar" id="topicToggle">{"".join(topic_btns)}</div>
-    <div class="sort-toggle filter-toolbar" id="countryToggle">{"".join(country_btns)}</div>
+    <div class="sort-toggle filter-toolbar" id="kindToggle"><span class="filter-label">종류</span>{"".join(kind_btns)}</div>
+    <div class="sort-toggle filter-toolbar" id="issuerToggle"><span class="filter-label">주체</span>{"".join(issuer_btns)}</div>
+    <div class="sort-toggle filter-toolbar" id="topicToggle"><span class="filter-label">주제</span>{"".join(topic_btns)}</div>
+    <div class="sort-toggle filter-toolbar" id="countryToggle"><span class="filter-label">국가</span>{"".join(country_btns)}</div>
   </div>
   {omnibox_html()}
   <div id="listView"></div>
@@ -822,13 +1088,13 @@ const DOCS = JSON.parse(document.getElementById('docs-data').textContent);
 const KIND_COLORS = {kind_color_json};
 const ISSUER_COLORS = {issuer_color_json};
 const EMPHASIS_RULES = {emphasis_json};
-const state = {{ q: '', country: '', kind: '', issuer: '', topic: '', closedIds: {{}}, yearOpen: {{}}, yearKeys: [] }};
+const state = {{ q: '', country: '', kind: '', issuer: '', topic: '', yearOpen: {{}}, yearKeys: [] }};
 const byId = Object.fromEntries(DOCS.map(d => [d.id, d]));
 
 function escapeHtml(s) {{
   return String(s ?? '').replace(/[&<>"']/g, c => ({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}}[c]));
 }}
-/** 상세 요약에서 개념어는 볼드, 고유 규범명은 볼드+밑줄. 최장·비겹침 우선. */
+/** 상세 요약: 종류·주체(국가·기관명)는 밑줄, 주제 키워드는 볼드. 최장·비겹침, 밑줄 우선. */
 function emphasizeSummary(raw) {{
   const text = String(raw || '');
   if (!text.trim()) return '';
@@ -932,18 +1198,19 @@ function statusBadge(d) {{
   return `<span class="badge status-badge ${{cls}}">${{escapeHtml(label)}}</span>`;
 }}
 function ribbonHtml(d) {{
+  const issuer = issuerBadge(d);
+  const kind = kindBadge(d.doc_kind);
   const topics = d.topics || [];
   const kws = d.keywords || [];
-  if (!topics.length && !kws.length) return '';
   const topicHtml = topics.map(t =>
     `<span class="topic-tag" data-topic="${{escapeHtml(t.id)}}" style="--topic:${{escapeHtml(t.color || '#534f4a')}}">${{escapeHtml((t.icon ? t.icon + ' ' : '') + (t.label || t.id))}}</span>`
   ).join('');
   const kwHtml = kws.map(k => `<span class="kw-tag">${{escapeHtml(k)}}</span>`).join('');
-  return `<div class="ribbon-row">${{topicHtml}}${{kwHtml}}</div>`;
+  const inner = issuer + kind + topicHtml + kwHtml;
+  if (!inner) return '';
+  return `<div class="ribbon-row">${{inner}}</div>`;
 }}
 function cardHtml(d) {{
-  const kind = kindBadge(d.doc_kind);
-  const issuer = issuerBadge(d);
   const place = d.country_ko
     ? `${{flagHtml(d)}}<span class="country-chip">${{escapeHtml(d.country_ko)}}</span>`
     : flagHtml(d);
@@ -956,12 +1223,11 @@ function cardHtml(d) {{
   const summary = emphasizeSummary(d.summary || d.snippet || '');
   const bodyHtml = summary ? `<p>${{summary}}</p>` : '';
   const title = d.canonical_url
-    ? `<a class="event-title" href="${{escapeHtml(d.canonical_url)}}" target="_blank" rel="noopener">${{escapeHtml(short)}}</a>`
+    ? `<a class="event-title" href="${{escapeHtml(d.canonical_url)}}" target="_blank" rel="noopener noreferrer">${{escapeHtml(short)}}</a>`
     : `<span class="event-title">${{escapeHtml(short)}}</span>`;
-  const open = !state.closedIds[d.id];
   const life = statusBadge(d);
-  return `<div class="event-card${{open ? ' open' : ''}}" data-id="${{escapeHtml(d.id)}}" style="${{kindStyle(d.doc_kind)}}" role="button" tabindex="0" aria-expanded="${{open ? 'true' : 'false'}}">
-    <div class="event-head"><span class="event-date">${{escapeHtml(d.published||'')}}</span>${{place}}${{kind}}${{issuer}}</div>
+  return `<div class="event-card" data-id="${{escapeHtml(d.id)}}" style="${{kindStyle(d.doc_kind)}}">
+    <div class="event-head"><span class="event-date">${{escapeHtml(d.published||'')}}</span>${{place}}</div>
     <div class="event-summary">${{title}}${{life}}</div>
     ${{underHtml}}
     ${{ribbonHtml(d)}}
@@ -986,10 +1252,6 @@ function renderList() {{
   const rows = visible();
   const headCount = document.getElementById('headCount');
   if (headCount) headCount.textContent = rows.length.toLocaleString('ko-KR');
-  const visibleIds = new Set(rows.map(d => d.id));
-  Object.keys(state.closedIds).forEach(id => {{
-    if (!visibleIds.has(id)) delete state.closedIds[id];
-  }});
   if (!rows.length) {{
     document.getElementById('listView').innerHTML = '<div class="empty">해당하는 문서가 없습니다.</div>';
     renderYearNav([]);
@@ -1018,19 +1280,6 @@ function renderList() {{
   html += '</div>';
   document.getElementById('listView').innerHTML = html;
   renderYearNav(keys);
-}}
-function toggleCard(id, {{ scroll }} = {{}}) {{
-  if (!byId[id]) return;
-  const d = byId[id];
-  const y = yearKey(d);
-  state.yearOpen[y] = true;
-  if (state.closedIds[id]) delete state.closedIds[id];
-  else state.closedIds[id] = true;
-  renderList();
-  if (scroll && !state.closedIds[id]) {{
-    const el = document.querySelector('.event-card[data-id="' + CSS.escape(id) + '"]');
-    if (el) el.scrollIntoView({{ behavior: 'smooth', block: 'nearest' }});
-  }}
 }}
 function jumpYear(y) {{
   state.yearOpen[y] = true;
@@ -1081,8 +1330,6 @@ document.getElementById('listView').addEventListener('click', ev => {{
     renderList();
     return;
   }}
-  const card = ev.target.closest('.event-card');
-  if (card && card.dataset.id) toggleCard(card.dataset.id);
 }});
 document.getElementById('yearNav').addEventListener('click', ev => {{
   const btn = ev.target.closest('.year-nav-item');
@@ -1127,7 +1374,6 @@ document.getElementById('yearNav').addEventListener('click', ev => {{
   }}
   const hash = decodeURIComponent((location.hash || '').slice(1));
   if (hash && byId[hash]) {{
-    delete state.closedIds[hash];
     state.yearOpen[yearKey(byId[hash])] = true;
   }}
   renderList();

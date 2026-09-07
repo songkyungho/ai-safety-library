@@ -91,9 +91,13 @@ _HOLLOW_SIBLING_LIST = re.compile(
 
 def is_hollow_summary(text: str) -> bool:
     """제목·출처 안내만 있고 규범 내용이 없는 빈 요약 → summary만 삭제 대상."""
+    from library_common import is_scrape_chrome
+
     s = (text or "").strip()
     if not s:
         return False
+    if is_scrape_chrome(s):
+        return True
     no_detail = bool(_HOLLOW_NO_DETAIL.search(s))
     title_only = bool(_HOLLOW_TITLE.search(s))
     source_only = bool(_HOLLOW_SOURCE_ONLY.search(s))
@@ -152,16 +156,18 @@ SYSTEM = f"""당신은 AI 안전·거버넌스 라이브러리의 수석 큐레�
   international=국제기구·다자, national=국가, subnational=지방·주,
   ministry=부처·규제기관, lab=프론티어 랩, industry=산업계·협회,
   civil_society=시민사회·학계, multi=민관·혼합.
+- 시·도 교육청, 광역시·특별자치도, 주 정부/주 의회, City of·County of 문서는
+  subnational. 중앙부처(교육부·Ministry of Local Government 등)는 ministry.
 - 한 문서에 주 발급 층위 하나만. 형태(doc_kind)와 층위(issuer_level)를 동시에 채우세요.
 
 토픽
 - 각 topic에 evidence를 원문에서 고른 짧은 구절로 반드시 채우세요. 근거 없으면 그 토픽은 빼세요.
 - 보통 1~2개. 명확히 복합 주제일 때만 3개.
+- norms, law, guideline, standards 는 쓰지 마세요. 그건 doc_kind(종류)입니다.
 - politics: 선거제도·정당·선거운동·로비·의회 정치과정이 규율 대상의 핵심일 때.
-  선거 딥페이크/허위조작 규제는 deepfake_disinfo(+law)를 기본으로 두고,
+  선거 딥페이크/허위조작 규제는 deepfake_disinfo를 기본으로 두고,
   선거·정치과정이 규율 대상이면 politics를 함께 둡니다.
   아동 성착취물·일반 딥페이크·소비자 기만만이면 politics 금지.
-- law: 구속력 있는 법령·법안이 핵심. 가이드라인·자문은 guideline 또는 norms.
 - cybersecurity: AI/모델/선거 인프라 보안이 핵심일 때. 일반 IT만이면 신중히.
 
 날짜 (published)
@@ -416,6 +422,13 @@ def apply_cache_to_docs(docs: list[dict], cache: dict | None = None) -> dict:
         conf = body.get("confidence") or "low"
         if conf not in CONF_OK:
             stats["skip_low_conf"] += 1
+            # 저신뢰여도 LLM이 요약을 비웠으면 원문 폴백을 남기지 않는다.
+            if "summary" in body:
+                s = str(body.get("summary") or "").strip()
+                if not s or is_hollow_summary(s):
+                    d["summary"] = ""
+                    d["snippet"] = ""
+                    stats["summary_cleared"] += 1
             continue
 
         stats["applied"] += 1
@@ -692,6 +705,24 @@ def main() -> None:
 
     save_cache(cache)
     elapsed = time.time() - t0
+    run_path = ROOT / "cache" / "curate_last_run.json"
+    run_path.parent.mkdir(parents=True, exist_ok=True)
+    run_path.write_text(
+        json.dumps(
+            {
+                "recorded_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
+                "batch": total,
+                "ok": ok,
+                "fail": fail,
+                "elapsed_sec": round(elapsed, 1),
+                "model": args.model,
+            },
+            ensure_ascii=False,
+            indent=2,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
     print(
         f"done ok={ok} fail={fail} cache={len(cache)} "
         f"elapsed={elapsed/60:.1f}m → {CACHE_PATH}"

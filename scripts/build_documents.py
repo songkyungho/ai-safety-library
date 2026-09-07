@@ -26,6 +26,7 @@ from library_common import (  # noqa: E402
     format_act_section_labels,
     is_curator_url,
     is_parent_act_url,
+    is_scrape_chrome,
     korean_title_rank,
     load_collection,
     normalize_url,
@@ -333,15 +334,22 @@ def build_documents(*, skip_instrument_merge: bool = False) -> list[dict]:
         ):
             short_name = f"{country_ko} · {short_name}"
         summary = meta.get("summary") or ""
+        if is_scrape_chrome(summary):
+            summary = ""
+        # 원문 스크랩을 카드 요약으로 쓰지 않는다. 외교부 ●핵심내용만 허용하고,
+        # IAAE 안내문·깨진 HTML은 빈칸. 나머지는 LLM 큐레이션이 채운다.
         if not summary:
             for m in sorted(members, key=korean_title_rank, reverse=True):
+                col = m.get("collection") or ""
+                if col in ("iaae-ethics", "derived-splits"):
+                    continue
                 body = (m.get("body") or "").strip()
-                if body:
-                    # strip bullet header if present
-                    if "●핵심내용" in body:
-                        summary = extract_meta(m).get("summary") or body[:800]
-                    else:
-                        summary = body[:800]
+                if not body or is_scrape_chrome(body):
+                    continue
+                if "●핵심내용" in body:
+                    summary = extract_meta(m).get("summary") or ""
+                    if is_scrape_chrome(summary):
+                        summary = ""
                     break
         if merge_as_act and len(section_titles) >= 2:
             sec_list = format_act_section_labels(section_titles)
