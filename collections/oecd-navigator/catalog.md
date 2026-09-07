@@ -1,7 +1,9 @@
 # OECD.AI Policy Navigator
 
-국가·국제기구 AI 정책 이니셔티브 스냅샷.
-date = 사이트 Added on(createdAt). start_year = initiative startYear. updated_on = Updated on.
+- 큐레이터: OECD.AI / GPAI
+- 출처: [Policy Navigator](https://oecd.ai/en/dashboards/policy-initiatives)
+- API: `https://api.oecdai.org/policy-initiatives`
+- 데이터: `items.json` · `items.csv`
 
 - 건수: **2502건**
 - 기간: 2025-07-09 ~ 2026-08-28

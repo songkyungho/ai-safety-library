@@ -2,10 +2,11 @@
 
 - 큐레이터: 국제인공지능윤리협회(IAAE)
 - 원본 URL은 상세 페이지 `[자료출처]`에서 추출
-- 건수: **144건**
+- 건수: **145건**
 
 | 날짜 | 기관 | 제목 | 원문 |
 |---|---|---|---|
+| 2026-09-04 | NC문화재단 | [[NC문화재단] 가장 인간적인 미래를 위한 다학제적 AI 윤리 교육: Embedded EthiCS](https://iaae.ai/research/?bmode=view&idx=173721301) | [원문](https://aihub.or.kr/aihubnews/qlityguidance/view.do?nttSn=10404) |
 | 2026-08-28 | 과기부/NIA/TTA/ETRI | [[과기부/NIA/TTA/ETRI] 고영향 인공지능 판단 가이드라인, 고영향 인공지능 사업자 책무 가이드라인, 인공지능 투명성 확보 가이드라인, 인공지능 안전성 확보 가이드라인](https://iaae.ai/research/?bmode=view&idx=173516673) | [원문](https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99835&bcIdx=28987&deptCode=undefined&parentSeq=28987) |
 | 2026-08-28 | 교육부,한국대학교육협의회 | [[교육부,한국대학교육협의회] 대학 AI 활용 윤리 가이드라인](https://iaae.ai/research/?bmode=view&idx=173516181) | [원문](https://www.kcue.or.kr/notice/sub06.php?pagenumber=1&at=view&idx=658867) |
 | 2026-08-25 | 과기부,KISDI,부처합동 | [[과기부,KISDI,부처합동] 대한민국 인공지능 윤리원칙](https://iaae.ai/research/?bmode=view&idx=173403604) | [원문](https://ai.kisdi.re.kr) |
@@ -76,36 +77,36 @@
 | 2022-10-07 | 미국 백악관 | [[미국 백악관] AI Bill of Rights (AI 권리장전)](https://iaae.ai/research/?bmode=view&idx=13119768) | [원문](https://www.whitehouse.gov/ostp/ai-bill-of-rights/[자료제목]) |
 | 2022-08-27 | 스캐터랩 | [[스캐터랩] AI챗봇 윤리점검표](https://iaae.ai/research/?bmode=view&idx=12678687) | [원문](https://team.luda.ai/ai-ethics) |
 | 2022-08-24 | LG | [[LG] AI 윤리 원칙](https://iaae.ai/research/?bmode=view&idx=12659769) | [원문](https://www.lgresearch.ai/about/vision#ethics) |
-| 2022-08-24 | 경기도교육청 | [[경기도교육청] AI원리로 배우는 AI윤리](https://iaae.ai/research/?bmode=view&idx=12659131) | [원문](https://wzine.kr/goe_ai/[자료제목]) |
-| 2022-08-12 | 교육부 | [[교육부] 교육분야 인공지능 윤리 원칙](https://iaae.ai/research/?bmode=view&idx=12582172) | [원문](https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&lev=0&statusYN=W&s=moe&m=020402&opType=N&boardSeq=92297[자료제목]) |
+| 2022-08-24 | 경기도교육청 | [[경기도교육청] AI원리로 배우는 AI윤리](https://iaae.ai/research/?bmode=view&idx=12659131) | [원문](https://wzine.kr/goe_ai/) |
+| 2022-08-12 | 교육부 | [[교육부] 교육분야 인공지능 윤리 원칙](https://iaae.ai/research/?bmode=view&idx=12582172) | [원문](https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&lev=0&statusYN=W&s=moe&m=020402&opType=N&boardSeq=92297) |
 | 2022-07-01 | IAAE | [[IAAE] IAAE 디지털 휴먼 윤리 가이드라인_220701제정 (한글본)](https://iaae.ai/research/?bmode=view&idx=12061157) |  |
 | 2022-06-27 | UneeQ | [[UneeQ] The Five Laws of Ethical Digital Human Design](https://iaae.ai/research/?bmode=view&idx=11965439) | [원문](https://digitalhumans.com/blog/why-we-wrote-the-five-laws-of-ethical-digital-human-design/[자료제목]) |
-| 2022-05-18 | 국가인권위원회 | [[국가인권위원회] 인공지능 개발과 활용에 관한 인권 가이드라인](https://iaae.ai/research/?bmode=view&idx=11518495) | [원문](https://www.humanrights.go.kr/site/program/board/basicboard/view?boardtypeid=24&boardid=7607961&menuid=001004002001[자료제목]) |
+| 2022-05-18 | 국가인권위원회 | [[국가인권위원회] 인공지능 개발과 활용에 관한 인권 가이드라인](https://iaae.ai/research/?bmode=view&idx=11518495) | [원문](https://www.humanrights.go.kr/site/program/board/basicboard/view?boardtypeid=24&boardid=7607961&menuid=001004002001) |
 | 2022-05-11 | SK텔레콤 | [[SK텔레콤] 사람 중심의 AI 윤리 가치 원칙](https://iaae.ai/research/?bmode=view&idx=11376372) |  |
-| 2022-05-03 | 교육부 | [[교육부] 교육분야 인공지능 윤리 원칙(시안)](https://iaae.ai/research/?bmode=view&idx=11327371) | [원문](https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&lev=0&statusYN=W&s=moe&m=020402&opType=N&boardSeq=90660[자료제목]) |
+| 2022-05-03 | 교육부 | [[교육부] 교육분야 인공지능 윤리 원칙(시안)](https://iaae.ai/research/?bmode=view&idx=11327371) | [원문](https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&lev=0&statusYN=W&s=moe&m=020402&opType=N&boardSeq=90660) |
 | 2022-01-17 | KAIEA | [[KAIEA] 한국-캐나다 인공지능 교육 연구 보고서](https://iaae.ai/research/?bmode=view&idx=9478698) | [원문](https://www.fsc.go.kr/no010101/76206?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=) |
-| 2022-01-04 | AI4SCHOOL | [[AI4SCHOOL] Good AI Education](https://iaae.ai/research/?bmode=view&idx=9329276) | [원문](http://ai4school.org/[자료제목]) |
-| 2022-01-04 | 과기부지정 인공지능교육교사연구회&한울초 김성락 교사 | [[과기부지정 인공지능교육교사연구회&한울초 김성락 교사] 인공지능 윤리 교육 온라인 학습터](https://iaae.ai/research/?bmode=view&idx=9329223) | [원문](https://sites.google.com/view/ethicsai/%ED%99%88?authuser=0[자료제목]) |
+| 2022-01-04 | AI4SCHOOL | [[AI4SCHOOL] Good AI Education](https://iaae.ai/research/?bmode=view&idx=9329276) | [원문](http://ai4school.org/) |
+| 2022-01-04 | 과기부지정 인공지능교육교사연구회&한울초 김성락 교사 | [[과기부지정 인공지능교육교사연구회&한울초 김성락 교사] 인공지능 윤리 교육 온라인 학습터](https://iaae.ai/research/?bmode=view&idx=9329223) | [원문](https://sites.google.com/view/ethicsai/%ED%99%88?authuser=0) |
 | 2021-12-20 | KAIEA | [[KAIEA] 초등학생 메타버스 서비스 이용 현황 조사 결과](https://iaae.ai/research/?bmode=view&idx=9173141) | [원문](https://www.fsc.go.kr/no010101/76206?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=) |
 | 2021-12-10 | 세계보건기구(WHO) | [[세계보건기구(WHO)] Ethics and governance of artificial intelligence for health](https://iaae.ai/research/?bmode=view&idx=9104489) | [원문](https://www.who.int/publications/i/item/9789240029200) |
-| 2021-12-10 | 금융위원회 | [[금융위원회] 금융분야 인공지능(AI) 가이드라인](https://iaae.ai/research/?bmode=view&idx=9103698) | [원문](https://www.fsc.go.kr/no010101/76206?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=[자료제목]) |
-| 2021-12-10 | 방송통신위원회 | [[방송통신위원회] 인공지능 기반 미디어 추천 서비스 이용자 보호 기본원칙](https://iaae.ai/research/?bmode=view&idx=9100086) | [원문](https://eiec.kdi.re.kr/policy/materialView.do?num=215524&topic=[자료제목]) |
-| 2021-12-09 | 한국지능정보사회진흥원 | [[한국지능정보사회진흥원] 국가 인공지능 사업 추진 윤리 원칙](https://iaae.ai/research/?bmode=view&idx=9091219) | [원문](https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=90549&bcIdx=23786&parentSeq=23786[자료제목]) |
+| 2021-12-10 | 금융위원회 | [[금융위원회] 금융분야 인공지능(AI) 가이드라인](https://iaae.ai/research/?bmode=view&idx=9103698) | [원문](https://www.fsc.go.kr/no010101/76206?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=) |
+| 2021-12-10 | 방송통신위원회 | [[방송통신위원회] 인공지능 기반 미디어 추천 서비스 이용자 보호 기본원칙](https://iaae.ai/research/?bmode=view&idx=9100086) | [원문](https://eiec.kdi.re.kr/policy/materialView.do?num=215524&topic=) |
+| 2021-12-09 | 한국지능정보사회진흥원 | [[한국지능정보사회진흥원] 국가 인공지능 사업 추진 윤리 원칙](https://iaae.ai/research/?bmode=view&idx=9091219) | [원문](https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=90549&bcIdx=23786&parentSeq=23786) |
 | 2021-11-28 | UNESCO | [[UNESCO] 인공지능(AI) 윤리에 관한 권고](https://iaae.ai/research/?bmode=view&idx=8994590) | [원문](https://www.ibm.com/blogs/policy/trust-principles/) |
 | 2021-11-23 | CJ올리브네트웍스 | [[CJ올리브네트웍스] AI 윤리 원칙](https://iaae.ai/research/?bmode=view&idx=8935315) |  |
-| 2021-09-27 | 스탠포드대학교 | [[스탠포드대학교] AI100 Report - One Hundred Year Study on Artificial Intelligence](https://iaae.ai/research/?bmode=view&idx=8092138) | [원문](https://ai100.stanford.edu[자료제목]) |
+| 2021-09-27 | 스탠포드대학교 | [[스탠포드대학교] AI100 Report - One Hundred Year Study on Artificial Intelligence](https://iaae.ai/research/?bmode=view&idx=8092138) | [원문](https://ai100.stanford.edu/) |
 | 2021-09-07 | KAIEA | [[KAIEA] 제 2회 인공지능 윤리 대전 강연자료 (요약본)](https://iaae.ai/research/?bmode=view&idx=7809807) |  |
 | 2021-08-15 | KAIST | [[KAIST] 사회를 위한 보건의료 분야 인공지능 활용 가이드](https://iaae.ai/research/?bmode=view&idx=7533254) | [원문](https://kpc4ir.kaist.ac.kr/index.php?document_srl=3402&mid=KPC4IR_Reports[자료제목]) |
-| 2021-07-01 | 네이버 소프트웨어야놀자 | [[네이버 소프트웨어야놀자] 인공지능 윤리 교재](https://iaae.ai/research/?bmode=view&idx=7137897) | [원문](https://www.playsw.or.kr/artificial/textbook[자료제목]) |
+| 2021-07-01 | 네이버 소프트웨어야놀자 | [[네이버 소프트웨어야놀자] 인공지능 윤리 교재](https://iaae.ai/research/?bmode=view&idx=7137897) | [원문](https://www.playsw.or.kr/artificial/textbook) |
 | 2021-06-04 | 개인정보보호위원회 | [[개인정보보호위원회] 인공지능 개인정보보호 자율점검표](https://iaae.ai/research/?bmode=view&idx=6843729) |  |
 | 2021-03-31 | 아름다운인터넷세상 | [[아름다운인터넷세상] 코르셋에 갇힌 인공지능](https://iaae.ai/research/?bmode=view&idx=6164769) | [원문](https://www.digitalcitizen.kr/js/pdfjs/web/viewer.html?file=/media/pdf/1/FILE_0000254909.do#locale=ko) |
 | 2021-03-31 | 한국지능정보사회진흥원 | [[한국지능정보사회진흥원] 2021 지능정보윤리 이슈리포트 (봄호)](https://iaae.ai/research/?bmode=view&idx=6164716) | [원문](https://digitalcitizen.kr/front/iNews/trend/selectTrendList.do) |
 | 2021-03-31 | 정보문화포럼 | [[정보문화포럼] 지능정보사회 윤리 가이드라인](https://iaae.ai/research/?bmode=view&idx=6164587) | [원문](https://www.ibm.com/blogs/policy/trust-principles/) |
-| 2021-03-07 | 일본 내각부 | [[일본 내각부] 인간 중심의 AI 사회 원칙안](https://iaae.ai/research/?bmode=view&idx=6013285) | [원문](https://ai.bsa.org/wp-content/uploads/2019/09/humancentricai.pdf[자료제목]) |
+| 2021-03-07 | 일본 내각부 | [[일본 내각부] 인간 중심의 AI 사회 원칙안](https://iaae.ai/research/?bmode=view&idx=6013285) | [원문](https://ai.bsa.org/wp-content/uploads/2019/09/humancentricai.pdf) |
 | 2021-03-07 | 독일 연방교통인프라부 | [[독일 연방교통인프라부] Ethics Commission Automated and Connected Driving](https://iaae.ai/research/?bmode=view&idx=6013242) | [원문](https://www.bmvi.de/SharedDocs/EN/publications/report-ethics-commission.pdf?__blob=publicationFile[자료제목]) |
-| 2021-03-07 | 영국 EPSRC | [[영국 EPSRC] Principles of robotics](https://iaae.ai/research/?bmode=view&idx=6013182) | [원문](https://epsrc.ukri.org/research/ourportfolio/themes/engineering/activities/principlesofrobotics/[자료제목]) |
-| 2021-03-07 | 유럽로봇연구네트워크(EURON) | [[유럽로봇연구네트워크(EURON)] The EURON Roboethics Roadmap](https://iaae.ai/research/?bmode=view&idx=6013167) | [원문](http://www.roboethics.org/index_file/Roboethics%20Roadmap%20Rel.1.2.pdf[자료제목]) |
-| 2021-03-07 | 미 국방성 | [[미 국방성] Adopts 5 Principles of Artificial Intelligence Ethics](https://iaae.ai/research/?bmode=view&idx=6013148) | [원문](https://www.defense.gov/Explore/News/Article/Article/2094085/dod-adopts-5-principles-of-artificial-intelligence-ethics/[자료제목]) |
+| 2021-03-07 | 영국 EPSRC | [[영국 EPSRC] Principles of robotics](https://iaae.ai/research/?bmode=view&idx=6013182) | [원문](https://epsrc.ukri.org/research/ourportfolio/themes/engineering/activities/principlesofrobotics/) |
+| 2021-03-07 | 유럽로봇연구네트워크(EURON) | [[유럽로봇연구네트워크(EURON)] The EURON Roboethics Roadmap](https://iaae.ai/research/?bmode=view&idx=6013167) | [원문](http://www.roboethics.org/index_file/Roboethics%20Roadmap%20Rel.1.2.pdf) |
+| 2021-03-07 | 미 국방성 | [[미 국방성] Adopts 5 Principles of Artificial Intelligence Ethics](https://iaae.ai/research/?bmode=view&idx=6013148) | [원문](https://www.defense.gov/Explore/News/Article/Article/2094085/dod-adopts-5-principles-of-artificial-intelligence-ethics/) |
 | 2021-02-17 | 네이버 | [[네이버] AI 윤리 준칙](https://iaae.ai/research/?bmode=view&idx=5915219) |  |
 | 2021-01-11 | IAAE | [[IAAE] IAAE 인공지능 윤리 헌장_210111개정 (영문본)](https://iaae.ai/research/?bmode=view&idx=5634394) |  |
 | 2021-01-11 | IAAE | [[IAAE] IAAE 인공지능 윤리 헌장_210111개정 (한글본)](https://iaae.ai/research/?bmode=view&idx=5634386) |  |
@@ -113,15 +114,15 @@
 | 2020-12-16 | 국토교통부 | [[국토교통부] 자율주행자동차 윤리 가이드라인](https://iaae.ai/research/?bmode=view&idx=5511173) | [원문](https://www.ibm.com/blogs/policy/trust-principles/) |
 | 2020-12-16 | 과학기술정보통신부 | [[과학기술정보통신부] 국가 인공지능 윤리기준(안)](https://iaae.ai/research/?bmode=view&idx=5511161) | [원문](https://www.ibm.com/blogs/policy/trust-principles/) |
 | 2020-12-09 | University of Helsinki | [[University of Helsinki] ethics of AI 교육 과정 프로그램](https://iaae.ai/research/?bmode=view&idx=5471139) | [원문](https://ethics-of-ai.mooc.fi/start) |
-| 2020-11-04 | Berkman Klein Center | [[Berkman Klein Center] Principled Artificial Intelligence](https://iaae.ai/research/?bmode=view&idx=5254887) | [원문](https://cyber.harvard.edu/publication/2020/principled-ai[자료제목]) |
-| 2020-11-04 | BMW그룹 | [[BMW그룹] Seven principles for AI](https://iaae.ai/research/?bmode=view&idx=5254867) | [원문](https://www.press.bmwgroup.com/global/article/detail/T0318411EN/seven-principles-for-ai:-bmw-group-sets-out-code-of-ethics-for-the-use-of-artificial-intelligence?language=en[자료제목]) |
+| 2020-11-04 | Berkman Klein Center | [[Berkman Klein Center] Principled Artificial Intelligence](https://iaae.ai/research/?bmode=view&idx=5254887) | [원문](https://cyber.harvard.edu/publication/2020/principled-ai) |
+| 2020-11-04 | BMW그룹 | [[BMW그룹] Seven principles for AI](https://iaae.ai/research/?bmode=view&idx=5254867) | [원문](https://www.press.bmwgroup.com/global/article/detail/T0318411EN/seven-principles-for-ai:-bmw-group-sets-out-code-of-ethics-for-the-use-of-artificial-intelligence?language=en) |
 | 2020-11-04 | 미국연방거래위원회 | [[미국연방거래위원회] Using Artificial Intelligence and Algorithms](https://iaae.ai/research/?bmode=view&idx=5254862) | [원문](https://www.ftc.gov/news-events/blogs/business-blog/2020/04/using-artificial-intelligence-algorithms[자료제목]) |
-| 2020-11-04 | 앨런튜링연구소 | [[앨런튜링연구소] Understanding artificial intelligence ethics and safety](https://iaae.ai/research/?bmode=view&idx=5254853) | [원문](https://www.turing.ac.uk/sites/default/files/2019-06/understanding_artificial_intelligence_ethics_and_safety.pdf[자료제목]) |
-| 2020-11-04 | ITI | [[ITI] AI Policy Principles](https://iaae.ai/research/?bmode=view&idx=5254209) | [원문](https://www.itic.org/resources/AI-Policy-Principles-FullReport2.pdf[자료제목]) |
-| 2020-11-04 | 베이징지원인공지능연구원 | [[베이징지원인공지능연구원] Beijing AI Principles](https://iaae.ai/research/?bmode=view&idx=5254169) | [원문](https://www.baai.ac.cn/news/beijing-ai-principles-en.html[자료제목]) |
-| 2020-11-04 | 미국오바마행정부 | [[미국오바마행정부] PREPARING FOR THE FUTURE OF ARTIFICIAL INTELLIGENCE](https://iaae.ai/research/?bmode=view&idx=5254089) | [원문](https://obamawhitehouse.archives.gov/sites/default/files/whitehouse_files/microsites/ostp/NSTC/preparing_for_the_future_of_ai.pdf[자료제목]) |
-| 2020-11-04 | PARTNERSHIP ON AI | [[PARTNERSHIP ON AI] Our Goal and Work](https://iaae.ai/research/?bmode=view&idx=5254049) | [원문](https://www.partnershiponai.org/about[자료제목]) |
-| 2020-11-04 | IBM | [[IBM] IBM AI 원칙 (IBM’s Principles for Trust and Transparency)](https://iaae.ai/research/?bmode=view&idx=5254001) | [원문](https://www.ibm.com/blogs/policy/trust-principles[자료제목]) |
+| 2020-11-04 | 앨런튜링연구소 | [[앨런튜링연구소] Understanding artificial intelligence ethics and safety](https://iaae.ai/research/?bmode=view&idx=5254853) | [원문](https://www.turing.ac.uk/sites/default/files/2019-06/understanding_artificial_intelligence_ethics_and_safety.pdf) |
+| 2020-11-04 | ITI | [[ITI] AI Policy Principles](https://iaae.ai/research/?bmode=view&idx=5254209) | [원문](https://www.itic.org/resources/AI-Policy-Principles-FullReport2.pdf) |
+| 2020-11-04 | 베이징지원인공지능연구원 | [[베이징지원인공지능연구원] Beijing AI Principles](https://iaae.ai/research/?bmode=view&idx=5254169) | [원문](https://www.baai.ac.cn/news/beijing-ai-principles-en.html) |
+| 2020-11-04 | 미국오바마행정부 | [[미국오바마행정부] PREPARING FOR THE FUTURE OF ARTIFICIAL INTELLIGENCE](https://iaae.ai/research/?bmode=view&idx=5254089) | [원문](https://obamawhitehouse.archives.gov/sites/default/files/whitehouse_files/microsites/ostp/NSTC/preparing_for_the_future_of_ai.pdf) |
+| 2020-11-04 | PARTNERSHIP ON AI | [[PARTNERSHIP ON AI] Our Goal and Work](https://iaae.ai/research/?bmode=view&idx=5254049) | [원문](https://www.partnershiponai.org/about/) |
+| 2020-11-04 | IBM | [[IBM] IBM AI 원칙 (IBM’s Principles for Trust and Transparency)](https://iaae.ai/research/?bmode=view&idx=5254001) | [원문](https://www.ibm.com/blogs/policy/trust-principles/) |
 | 2020-11-04 | DeepMind | [[DeepMind] Ethics & Society Principles](https://iaae.ai/research/?bmode=view&idx=5253901) | [원문](https://deepmind.com/about/ethics-and-society#themes[자료제목]) |
 | 2020-11-04 | OpenAI | [[OpenAI] OpenAI 헌장](https://iaae.ai/research/?bmode=view&idx=5253877) | [원문](https://openai.com/charter[자료제목]) |
 | 2020-11-04 | AI NOW INSTITUTE | [[AI NOW INSTITUTE] AI Now 2019 Report](https://iaae.ai/research/?bmode=view&idx=5253827) | [원문](https://ainowinstitute.org/AI_Now_2019_Report.pdf[자료제목]) |
