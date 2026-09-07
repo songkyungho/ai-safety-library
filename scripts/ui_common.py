@@ -5,10 +5,16 @@ from __future__ import annotations
 import html
 import json
 
-NAV_ITEMS = [
+NAV_LEFT = [
     ("index.html", "라이브러리"),
-    ("about.html", "소개"),
 ]
+NAV_RIGHT = [
+    ("about.html", "소개"),
+    ("about/log.html", "업데이트"),
+]
+DIGEST_URL = "https://songkyungho.github.io/ai-safety-digest/"
+DIGEST_LABEL = "AI 안전 동향"
+NAV_ITEMS = NAV_LEFT + NAV_RIGHT
 
 # 동향(#474284 퍼플 네이비·#f6f1e4 크림·#f3b84f 골드)과 같은 시리즈이되
 # 아카이브 톤으로 살짝 식힌 슬레이트 네이비·차가운 크림·브라스 골드.
@@ -67,10 +73,6 @@ body {
 .global-nav a { opacity: 0.78; }
 .global-nav a:hover { opacity: 1; color: var(--gold); }
 .global-nav .nav-current { opacity: 1; font-weight: 650; }
-.global-nav .nav-series {
-  opacity: 0.55; font-size: 0.72rem; letter-spacing: 0.02em;
-}
-.global-nav .nav-series a { opacity: 0.85; }
 header.page-head {
   background: linear-gradient(165deg, var(--navy) 0%, var(--navy-2) 100%);
   color: var(--on-navy);
@@ -88,7 +90,9 @@ header.page-head .tagline {
 }
 header.page-head .tagline a {
   color: var(--on-navy-muted);
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
   font-weight: 500;
 }
 header.page-head .tagline a:hover { color: var(--gold); }
@@ -130,6 +134,7 @@ header.page-head .tagline a:hover { color: var(--gold); }
 
 TAGLINES = {
     "about.html": "수집·분류·표시 파이프라인과 데이터 출처",
+    "about/log.html": "사이트 구조·분류·파이프라인이 바뀐 기록",
 }
 
 
@@ -146,30 +151,43 @@ def author_byline_html() -> str:
     return f" by {linked}"
 
 
-def nav_html(current: str = "") -> str:
-    left = []
-    for href, label in NAV_ITEMS:
-        if href == current:
-            left.append(f'<span class="nav-current">{html.escape(label)}</span>')
-        else:
-            left.append(f'<a href="{href}">{html.escape(label)}</a>')
-    right = (
-        '<span class="nav-series">'
-        '<a href="https://songkyungho.github.io/ai-safety-digest/" '
-        'target="_blank" rel="noopener">AI 안전 동향</a>'
-        "</span>"
-    )
+def _nav_items(items: list[tuple[str, str]], current: str, *, rel_prefix: str) -> str:
+    parts: list[str] = []
+    for href, label in items:
+        external = href.startswith("http://") or href.startswith("https://")
+        resolved = href if external else f"{rel_prefix}{href}"
+        if not external and href == current:
+            parts.append(f'<span class="nav-current">{html.escape(label)}</span>')
+            continue
+        attrs = f'href="{html.escape(resolved)}"'
+        if external:
+            attrs += ' target="_blank" rel="noopener noreferrer"'
+        parts.append(f"<a {attrs}>{html.escape(label)}</a>")
+    return "".join(parts)
+
+
+def nav_html(current: str = "", *, rel_prefix: str = "") -> str:
+    left = list(NAV_LEFT) + [(DIGEST_URL, DIGEST_LABEL)]
     return (
         '<nav class="global-nav" aria-label="사이트">'
         '<div class="global-nav-inner">'
-        f'<div class="global-nav-left">{"".join(left)}</div>'
-        f'<div class="global-nav-right">{right}</div>'
+        f'<div class="global-nav-left">{_nav_items(left, current, rel_prefix=rel_prefix)}</div>'
+        f'<div class="global-nav-right">{_nav_items(list(NAV_RIGHT), current, rel_prefix=rel_prefix)}</div>'
         "</div></nav>"
     )
 
 
-def shell_html(current: str, title: str, *, head_count: int | None = None) -> str:
-    parts = [nav_html(current), '<header class="page-head"><div class="page-head-inner">']
+def shell_html(
+    current: str,
+    title: str,
+    *,
+    head_count: int | None = None,
+    rel_prefix: str = "",
+) -> str:
+    parts = [
+        nav_html(current, rel_prefix=rel_prefix),
+        '<header class="page-head"><div class="page-head-inner">',
+    ]
     if current == "index.html":
         n = head_count if head_count is not None else 0
         n_fmt = f"{n:,}"
@@ -230,12 +248,22 @@ def omnibox_boot_script(search_index_json: str) -> str:
 </script>"""
 
 
-def page_chrome(current: str, search_index=None, title: str = "", *, head_count: int | None = None):
+def page_chrome(
+    current: str,
+    search_index=None,
+    title: str = "",
+    *,
+    head_count: int | None = None,
+    rel_prefix: str = "",
+):
     idx = search_index or {"docs": []}
     titles = dict(NAV_ITEMS)
     return {
         "shell": shell_html(
-            current, title or titles.get(current, ""), head_count=head_count
+            current,
+            title or titles.get(current, ""),
+            head_count=head_count,
+            rel_prefix=rel_prefix,
         ),
         "omni_js": omnibox_boot_script(safe_json(idx)),
         "nav_css": NAV_CSS,

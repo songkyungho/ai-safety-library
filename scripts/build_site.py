@@ -917,8 +917,11 @@ def page(
     index: dict,
     *,
     head_count: int | None = None,
+    rel_prefix: str = "",
 ) -> str:
-    chrome = page_chrome(current, index, title=title, head_count=head_count)
+    chrome = page_chrome(
+        current, index, title=title, head_count=head_count, rel_prefix=rel_prefix
+    )
     return f"""<!doctype html>
 <html lang="ko">
 <head>
@@ -1561,6 +1564,68 @@ def render_about(docs: list[dict], index: dict, *, total_raw: int = 0, out_count
     return page("about.html", "소개 · 파이프라인", css, body, "", index)
 
 
+def render_about_log(index: dict) -> str:
+    from library_changelog import changelog_months
+
+    css = """
+.about-wrap { max-width: 820px; margin: 0 auto; padding: 8px 4px 48px; }
+.about-wrap h2 { font-size: 1.15rem; margin: 1.6rem 0 .55rem; font-weight: 650; }
+.about-wrap p { line-height: 1.55; font-size: 1rem; opacity: .92; }
+.log-intro { opacity: .75; font-size: .95rem; margin-bottom: 1.4rem; }
+.log-entry {
+  border-bottom: 1px solid var(--hairline); padding: 14px 0;
+}
+.log-entry:last-child { border-bottom: 0; }
+.log-meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 6px; }
+.log-date { font-variant-numeric: tabular-nums; font-size: 12px; color: var(--text-muted); }
+.log-tag {
+  font-size: 11px; color: var(--text-muted);
+  border: 1px solid var(--hairline); border-radius: 999px; padding: 1px 8px;
+}
+.log-entry h3 { font-size: 1rem; margin: 0 0 6px; font-weight: 700; }
+.log-entry p { margin: 0; font-size: 0.92rem; }
+"""
+    sections: list[str] = []
+    for _ym, month_label, items in changelog_months():
+        rows: list[str] = []
+        for item in items:
+            tags = "".join(
+                f'<span class="log-tag">{html_lib.escape(t)}</span>' for t in item["tags"]
+            )
+            rows.append(
+                '<article class="log-entry">'
+                '<div class="log-meta">'
+                f'<time class="log-date" datetime="{html_lib.escape(item["date"])}">'
+                f'{html_lib.escape(item["date"])}</time>'
+                f"{tags}"
+                "</div>"
+                f'<h3>{html_lib.escape(item["title"])}</h3>'
+                f'<p>{html_lib.escape(item["body"])}</p>'
+                "</article>"
+            )
+        sections.append(
+            f'<section><h2>{html_lib.escape(month_label)}</h2>'
+            + "".join(rows)
+            + "</section>"
+        )
+    body = (
+        '<div class="about-wrap">'
+        '<p class="log-intro">수집이 매일 쌓인 기록은 빼고, 사이트 구조·분류·파이프라인이 '
+        "바뀐 지점만 적습니다. 최신 달이 위입니다.</p>"
+        + "".join(sections)
+        + "</div>"
+    )
+    return page(
+        "about/log.html",
+        "업데이트",
+        css,
+        body,
+        "",
+        index,
+        rel_prefix="../",
+    )
+
+
 def redirect_html(target: str = "index.html") -> str:
     return f"""<!doctype html>
 <html lang="ko">
@@ -1623,10 +1688,13 @@ def main() -> None:
         "documents.html": redirect_html("index.html"),
         "clusters.html": redirect_html("index.html"),
         "about.html": render_about(docs, index, total_raw=len(all_docs), out_count=out_count),
+        "about/log.html": render_about_log(index),
     }
     for name, html in pages.items():
-        (DOCS / name).write_text(html, encoding="utf-8")
-        (DIST_MIRROR / name).write_text(html, encoding="utf-8")
+        for root in (DOCS, DIST_MIRROR):
+            out = root / name
+            out.parent.mkdir(parents=True, exist_ok=True)
+            out.write_text(html, encoding="utf-8")
         print(name, f"{(DOCS / name).stat().st_size / 1024:.0f} KB")
     print("wrote", DOCS, "(mirror", DIST_MIRROR, ")")
 

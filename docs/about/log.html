@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>소개 · 파이프라인</title>
+<title>업데이트</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -390,156 +390,29 @@ button.filter-chip.topic-chip .n {
 
 
 .about-wrap { max-width: 820px; margin: 0 auto; padding: 8px 4px 48px; }
-.about-wrap h2 { font-size: 1.25rem; margin: 1.6rem 0 .55rem; font-weight: 650; }
-.about-wrap p, .about-wrap li { line-height: 1.55; font-size: 1rem; opacity: .92; }
-.about-meta { opacity: .65; font-size: .92rem; margin-bottom: 1rem; }
-.pipe-scroll { overflow-x: auto; border: 1px solid color-mix(in srgb, currentColor 14%, transparent);
-  border-radius: 16px; padding: 12px; background: color-mix(in srgb, currentColor 3%, transparent); }
-.pipe-svg { display: block; width: 100%; min-width: 640px; height: auto; color: inherit; }
-.principles { border: 1px solid color-mix(in srgb, currentColor 14%, transparent);
-  border-radius: 16px; padding: .4rem 1.1rem; background: color-mix(in srgb, currentColor 3%, transparent); }
-.tool-panel { border: 1px solid color-mix(in srgb, currentColor 14%, transparent);
-  border-radius: 16px; padding: 14px 16px; margin: 12px 0 20px;
-  background: color-mix(in srgb, currentColor 3%, transparent); }
-.tool-item { margin-bottom: 12px; font-size: .95rem; }
-.tool-item:last-child { margin-bottom: 0; }
-.tool-item b { display: block; margin-bottom: 2px; }
-.tool-item code { display: block; font-size: .78rem; opacity: .85; overflow-wrap: anywhere; margin: 2px 0; }
-.tool-item span { opacity: .65; font-size: .88rem; }
-.kind-list { font-size: .92rem; opacity: .85; }
+.about-wrap h2 { font-size: 1.15rem; margin: 1.6rem 0 .55rem; font-weight: 650; }
+.about-wrap p { line-height: 1.55; font-size: 1rem; opacity: .92; }
+.log-intro { opacity: .75; font-size: .95rem; margin-bottom: 1.4rem; }
+.log-entry {
+  border-bottom: 1px solid var(--hairline); padding: 14px 0;
+}
+.log-entry:last-child { border-bottom: 0; }
+.log-meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 6px; }
+.log-date { font-variant-numeric: tabular-nums; font-size: 12px; color: var(--text-muted); }
+.log-tag {
+  font-size: 11px; color: var(--text-muted);
+  border: 1px solid var(--hairline); border-radius: 999px; padding: 1px 8px;
+}
+.log-entry h3 { font-size: 1rem; margin: 0 0 6px; font-weight: 700; }
+.log-entry p { margin: 0; font-size: 0.92rem; }
 
 </style>
 </head>
 <body>
 <div class="viz-root">
-<nav class="global-nav" aria-label="사이트"><div class="global-nav-inner"><div class="global-nav-left"><a href="index.html">라이브러리</a><a href="https://songkyungho.github.io/ai-safety-digest/" target="_blank" rel="noopener noreferrer">AI 안전 동향</a></div><div class="global-nav-right"><span class="nav-current">소개</span><a href="about/log.html">업데이트</a></div></div></nav><header class="page-head"><div class="page-head-inner"><h1>소개 · 파이프라인</h1><p class="tagline">수집·분류·표시 파이프라인과 데이터 출처</p></div></header>
+<nav class="global-nav" aria-label="사이트"><div class="global-nav-inner"><div class="global-nav-left"><a href="../index.html">라이브러리</a><a href="https://songkyungho.github.io/ai-safety-digest/" target="_blank" rel="noopener noreferrer">AI 안전 동향</a></div><div class="global-nav-right"><a href="../about.html">소개</a><span class="nav-current">업데이트</span></div></div></nav><header class="page-head"><div class="page-head-inner"><h1>업데이트</h1><p class="tagline">사이트 구조·분류·파이프라인이 바뀐 기록</p></div></header>
 <div class="wrap">
-
-<div class="about-wrap">
-  <p class="about-meta">표시 문서 1,928건 · 원천 3,625건 · 범위 밖 1,697건 ·
-  LLM 큐레이션 캐시 3,596건(고·중신뢰 3,570) · 토픽 LLM 반영 989건</p>
-
-  <p>AI 안전·거버넌스 관련 법·정책·표준·기구 문서를 모아, 종류·주제·날짜·한글 표기를
-  정리해 한 화면에서 훑을 수 있게 한 라이브러리입니다.
-  <b>문서별 LLM 큐레이션(분석)을 먼저</b> 한 뒤, 같은 법령·정책 후보를 확인하고
-  합의된 그룹만 통합 약칭·핵심내용을 합성합니다. 고·중신뢰만 사이트에 반영합니다.</p>
-
-  <h2>파이프라인</h2>
-  <div class="pipe-scroll"><svg viewBox="0 0 720 700" class="pipe-svg" role="img"
-aria-label="수집, 규칙 후보, LLM 큐레이션, 병합 분석, 통합 합성, 사이트 빌드 파이프라인">
-<defs>
-  <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-    <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
-  </marker>
-</defs>
-<rect x="40" y="28" width="200" height="56" rx="12" fill="var(--surface, #f5f3ef)" stroke="currentColor" stroke-opacity=".25"/>
-<text x="140" y="52" text-anchor="middle" font-size="13" font-weight="700">1 · 수집</text>
-<text x="140" y="70" text-anchor="middle" font-size="11" opacity=".7">AGORA · OECD · 외교부 · IAAE</text>
-<line x1="140" y1="84" x2="140" y2="112" stroke="currentColor" stroke-opacity=".45" marker-end="url(#arr)"/>
-
-<rect x="40" y="116" width="200" height="56" rx="12" fill="var(--surface, #f5f3ef)" stroke="currentColor" stroke-opacity=".25"/>
-<text x="140" y="140" text-anchor="middle" font-size="13" font-weight="700">2 · 규칙 후보</text>
-<text x="140" y="158" text-anchor="middle" font-size="11" opacity=".7">모법 URL · 조항 · cluster</text>
-<line x1="140" y1="172" x2="140" y2="200" stroke="currentColor" stroke-opacity=".45" marker-end="url(#arr)"/>
-
-<rect x="40" y="204" width="200" height="72" rx="12" fill="var(--surface, #f5f3ef)" stroke="currentColor" stroke-opacity=".35" stroke-width="1.6"/>
-<text x="140" y="230" text-anchor="middle" font-size="13" font-weight="700">3 · LLM 큐레이션</text>
-<text x="140" y="248" text-anchor="middle" font-size="11" opacity=".7">문서별 범위·종류·토픽·한글</text>
-<text x="140" y="264" text-anchor="middle" font-size="11" opacity=".7">OpenRouter · 고·중신뢰만 반영</text>
-<line x1="140" y1="276" x2="140" y2="304" stroke="currentColor" stroke-opacity=".45" marker-end="url(#arr)"/>
-
-<rect x="40" y="308" width="200" height="64" rx="12" fill="var(--surface, #f5f3ef)" stroke="currentColor" stroke-opacity=".35" stroke-width="1.6"/>
-<text x="140" y="332" text-anchor="middle" font-size="13" font-weight="700">4 · 병합 분석</text>
-<text x="140" y="350" text-anchor="middle" font-size="11" opacity=".7">멤버 식별 · 같은 제도인지</text>
-<line x1="140" y1="372" x2="140" y2="400" stroke="currentColor" stroke-opacity=".45" marker-end="url(#arr)"/>
-
-<rect x="40" y="404" width="200" height="64" rx="12" fill="var(--surface, #f5f3ef)" stroke="currentColor" stroke-opacity=".35" stroke-width="1.6"/>
-<text x="140" y="428" text-anchor="middle" font-size="13" font-weight="700">5 · 통합 합성</text>
-<text x="140" y="446" text-anchor="middle" font-size="11" opacity=".7">합의된 그룹만 약칭·요약</text>
-
-<rect x="300" y="404" width="200" height="64" rx="12" fill="var(--surface, #f5f3ef)" stroke="currentColor" stroke-opacity=".25" stroke-dasharray="4 3"/>
-<text x="400" y="428" text-anchor="middle" font-size="13" font-weight="700">5b · 날짜 복원</text>
-<text x="400" y="446" text-anchor="middle" font-size="11" opacity=".7">원문 URL · 검색 · LLM</text>
-<line x1="240" y1="436" x2="300" y2="436" stroke="currentColor" stroke-opacity=".45" marker-end="url(#arr)"/>
-
-<line x1="140" y1="468" x2="140" y2="504" stroke="currentColor" stroke-opacity=".45" marker-end="url(#arr)"/>
-<line x1="400" y1="468" x2="400" y2="492" stroke="currentColor" stroke-opacity=".35"/>
-<line x1="140" y1="492" x2="400" y2="492" stroke="currentColor" stroke-opacity=".35"/>
-
-<rect x="40" y="508" width="200" height="56" rx="12" fill="var(--surface, #f5f3ef)" stroke="currentColor" stroke-opacity=".25"/>
-<text x="140" y="532" text-anchor="middle" font-size="13" font-weight="700">6 · 사이트 빌드</text>
-<text x="140" y="550" text-anchor="middle" font-size="11" opacity=".7">build_site.py → docs/</text>
-
-<rect x="300" y="508" width="380" height="120" rx="12" fill="var(--surface, #f5f3ef)" stroke="currentColor" stroke-opacity=".2"/>
-<text x="320" y="536" font-size="12" font-weight="700">설계 원칙</text>
-<text x="320" y="558" font-size="11" opacity=".8">· 문서별 분석(큐레이션) 후에야 통합</text>
-<text x="320" y="578" font-size="11" opacity=".8">· 규칙은 후보만, 확정은 LLM 분석</text>
-<text x="320" y="598" font-size="11" opacity=".8">· 날짜는 발표일 ≠ 카탈로그 등록일</text>
-<text x="320" y="618" font-size="11" opacity=".8">· low confidence는 UI에 자동 반영하지 않음</text>
-</svg></div>
-  <p>키워드 태그는 초안용입니다. LLM이 토픽을 확정하면
-  (<code>topics_source=llm</code>) 키워드 매칭으로 덮어쓰지 않습니다.
-  예: 제목의 「정당성」만으로 <code>politics</code>를 붙이지 않습니다.</p>
-
-  <h2>데이터 원칙</h2>
-  <ul class="principles">
-    <li><b>형태 × 층위 × 주제</b> — <code>doc_kind</code>는 규범 형태,
-      <code>issuer_level</code>은 발급 층위(국제·국가·부처·랩·시민사회 등),
-      <code>topics</code>는 주제. 구「개발사 정책」은 층위 <code>lab</code> + 형태
-      (대개 가이드라인·원칙)로 나눕니다.</li>
-    <li><b>뉴스·보도는 종류가 아니라 제외</b> — UI <code>doc_kind</code> enum에 두지 않고
-      <code>in_scope=false</code> + <code>reject_reason=news_press</code>로 뺍니다.</li>
-    <li><b>토픽은 의미 판정</b> — 부분문자열 함정(정당성≠정당, party≠정당)을 프롬프트·검증으로 막습니다.</li>
-    <li><b>날짜는 발표일</b> — OECD catalog Added-on·업로드 시각은 차트용 발표일로 쓰지 않습니다.
-      불확실하면 URL·검색·LLM으로 복원합니다 (<code>resolve_oecd_dates.py</code>).</li>
-    <li><b>저신뢰는 자동 반영 안 함</b> — <code>confidence=low</code>는 캐시에만 두고 UI 필드를 바꾸지 않습니다.</li>
-    <li><b>원문 제목 보존</b> — 한글 약칭을 쓸 때 영문 원제는 <code>original_name</code>에 남깁니다.</li>
-    <li><b>동일 법령은 한 카드</b> — 규칙으로 후보만 묶고, 큐레이션·병합 분석 후
-      같은 제도로 합의된 경우만 통합 요약·조항 목록을 씁니다
-      (<code>merge_instruments.py --analyze</code> → <code>--synthesize</code>).
-      다른 법이 섞이면 분할 플래그만 남깁니다.</li>
-  </ul>
-
-  <h2>허용 문서종류 · 토픽</h2>
-  <p class="kind-list"><b>doc_kind</b> (형태) 법 · 법안 · 행정규칙 · 조약·협약 · 선언·성명 · 가이드라인·원칙 · 전략·정책 · 정책보고서 · 표준 · 기구·제도 · 기타</p>
-  <p class="kind-list"><b>issuer_level</b> (층위) 국제기구·다자(international) · 국가(national) · 지방·주(subnational) · 부처·규제기관(ministry) · 프론티어 랩(lab) · 산업계·협회(industry) · 시민사회·학계(civil_society) · 민관·혼합(multi)</p>
-  <p class="kind-list"><b>topics</b> (주제) national_security · cybersecurity · politics · sovereign_ai · healthcare · youth · agentic_ai · physical_ai · safety_research · deepfake_disinfo · open_weight · frontier · incidents</p>
-
-  <h2>수동 도구</h2>
-  <div class="tool-panel">
-    <div class="tool-item">
-      <b>LLM 큐레이션 (문서별 분석 — 먼저)</b>
-      <code>python3 scripts/curate_llm.py --limit 200</code>
-      <code>python3 scripts/curate_llm.py --validate-only</code>
-      <span>캐시 <code>cache/llm_curate.json</code>. 고·중신뢰만 build 시 반영.</span>
-    </div>
-    <div class="tool-item">
-      <b>병합 분석 → 후보 → 통합 합성</b>
-      <code>python3 scripts/merge_instruments.py --analyze --limit 30</code>
-      <code>python3 scripts/merge_instruments.py --propose</code>
-      <code>python3 scripts/merge_instruments.py --synthesize --limit 30</code>
-      <span>캐시 <code>cache/instrument_analyze.json</code> · <code>cache/instrument_merge.json</code>.</span>
-    </div>
-    <div class="tool-item">
-      <b>한글 약칭·요약 (레거시 배치)</b>
-      <code>python3 scripts/enrich_ko.py --limit 100</code>
-      <span>큐레이션이 short_name/summary를 채우면 점차 대체됩니다.</span>
-    </div>
-    <div class="tool-item">
-      <b>OECD 발표일 복원</b>
-      <code>python3 scripts/resolve_oecd_dates.py --limit 300 --llm --no-search --apply</code>
-      <span>원문 메타 우선, 실패 시 LLM. 캐시 <code>cache/oecd_dates.json</code>.</span>
-    </div>
-    <div class="tool-item">
-      <b>사이트 재생성</b>
-      <code>python3 scripts/build_site.py</code>
-      <span>후보 그룹 → 큐레이션 → 분석/합성 캐시 → docs/</span>
-    </div>
-  </div>
-
-  <p class="about-meta">캐시: <code>cache/llm_curate.json</code> · <code>cache/instrument_analyze.json</code> · <code>cache/instrument_merge.json</code></p>
-</div>
-
+<div class="about-wrap"><p class="log-intro">수집이 매일 쌓인 기록은 빼고, 사이트 구조·분류·파이프라인이 바뀐 지점만 적습니다. 최신 달이 위입니다.</p><section><h2>2026년 9월</h2><article class="log-entry"><div class="log-meta"><time class="log-date" datetime="2026-09-07">2026-09-07</time><span class="log-tag">사이트</span></div><h3>메뉴를 라이브러리·동향 / 소개·업데이트로 나눈다</h3><p>왼쪽은 라이브러리와 AI 안전 동향, 오른쪽은 소개와 업데이트다. 동향은 시리즈 사이트로 새 탭에서 연다.</p></article><article class="log-entry"><div class="log-meta"><time class="log-date" datetime="2026-09-07">2026-09-07</time><span class="log-tag">사이트</span></div><h3>종류와 겹치는 주제 리본을 뺀다</h3><p>윤리·규범, 법, 가이드라인, 표준은 문서 종류와 같은 축이라 주제 필터·카드에서 빼 둔다. 국가안보·피지컬AI·딥페이크 같은 내용 주제만 남긴다.</p></article><article class="log-entry"><div class="log-meta"><time class="log-date" datetime="2026-09-07">2026-09-07</time><span class="log-tag">사이트</span></div><h3>카드는 접지 않고 제목에서 원문을 연다</h3><p>카드 클릭으로 요약을 접지 않는다. URL이 있는 제목은 파란 밑줄 링크로 두고, 원문과 다른 외부 링크는 새 탭에서 연다.</p></article><article class="log-entry"><div class="log-meta"><time class="log-date" datetime="2026-09-07">2026-09-07</time><span class="log-tag">분류</span></div><h3>시·도·주 문서는 지방·주로 분류한다</h3><p>교육청·광역시·특별시, 미국 주·시, 중국 지방정부처럼 발급 주체가 지방이면 국가·부처가 아니라 지방·주로 둔다. 교육부+교육청이나 노르웨이 지방정부부 같은 중앙부처는 그대로 둔다.</p></article><article class="log-entry"><div class="log-meta"><time class="log-date" datetime="2026-09-07">2026-09-07</time><span class="log-tag">사이트</span></div><h3>필터에 종류·주체·주제·국가 라벨을 단다</h3><p>리본 묶음마다 ‘전체’ 왼쪽에 이름을 쓰고, 묶음 사이는 실선으로 구분한다. 상세 요약은 종류·주체 키워드에 밑줄, 주제 키워드에 볼드를 쓴다.</p></article></section></div>
 <footer class="site-footer">AI 안전 라이브러리 · 만든 사람: 인공지능안전연구소(Korea AISI) 송경호 · <a href="mailto:songkyungho@etri.re.kr">songkyungho@etri.re.kr</a><br>원본 랜딩 URL 기준 · 발표 히스토리 · AGORA CC BY-NC 4.0</footer>
 </div>
 </div>

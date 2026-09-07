@@ -66,10 +66,6 @@ body {
 .global-nav a { opacity: 0.78; }
 .global-nav a:hover { opacity: 1; color: var(--gold); }
 .global-nav .nav-current { opacity: 1; font-weight: 650; }
-.global-nav .nav-series {
-  opacity: 0.55; font-size: 0.72rem; letter-spacing: 0.02em;
-}
-.global-nav .nav-series a { opacity: 0.85; }
 header.page-head {
   background: linear-gradient(165deg, var(--navy) 0%, var(--navy-2) 100%);
   color: var(--on-navy);
@@ -87,7 +83,9 @@ header.page-head .tagline {
 }
 header.page-head .tagline a {
   color: var(--on-navy-muted);
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
   font-weight: 500;
 }
 header.page-head .tagline a:hover { color: var(--gold); }
@@ -414,7 +412,7 @@ button.filter-chip.topic-chip .n {
 </head>
 <body>
 <div class="viz-root">
-<nav class="global-nav" aria-label="사이트"><div class="global-nav-inner"><div class="global-nav-left"><a href="index.html">라이브러리</a><span class="nav-current">소개</span></div><div class="global-nav-right"><span class="nav-series"><a href="https://songkyungho.github.io/ai-safety-digest/" target="_blank" rel="noopener">AI 안전 동향</a></span></div></div></nav><header class="page-head"><div class="page-head-inner"><h1>소개 · 파이프라인</h1><p class="tagline">수집·분류·표시 파이프라인과 데이터 출처</p></div></header>
+<nav class="global-nav" aria-label="사이트"><div class="global-nav-inner"><div class="global-nav-left"><a href="index.html">라이브러리</a><a href="https://songkyungho.github.io/ai-safety-digest/" target="_blank" rel="noopener noreferrer">AI 안전 동향</a></div><div class="global-nav-right"><span class="nav-current">소개</span><a href="about/log.html">업데이트</a></div></div></nav><header class="page-head"><div class="page-head-inner"><h1>소개 · 파이프라인</h1><p class="tagline">수집·분류·표시 파이프라인과 데이터 출처</p></div></header>
 <div class="wrap">
 
 <div class="about-wrap">
