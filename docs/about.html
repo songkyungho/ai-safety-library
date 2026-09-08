@@ -325,18 +325,46 @@ button.filter-more:hover { color: var(--ink); border-color: var(--text-muted); }
 .trend-section { margin: 0 0 24px; padding-bottom: 16px; border-bottom: 1px solid var(--hairline); }
 .trend-title { font-size: 1.05rem; letter-spacing: -0.3px; margin: 0 0 2px; color: var(--ink); }
 .trend-sub { color: var(--text-muted); font-size: 0.82rem; margin-bottom: 10px; }
-.trend-legend {
-  display: flex; flex-wrap: wrap; gap: 8px 14px; margin-top: 10px;
-  font-size: 0.75rem; color: var(--text-muted);
+.heatmap-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 6px; }
+.heatmap { border-collapse: collapse; width: 100%; min-width: 760px; }
+.heatmap th, .heatmap td { text-align: center; padding: 0; }
+.heatmap thead th {
+  color: var(--text-muted); padding: 0 0 8px;
+  font-size: 0.68rem; font-weight: 400; font-variant-numeric: tabular-nums;
 }
-.trend-legend-item { display: inline-flex; align-items: center; gap: 6px; }
-.trend-legend-item .n { font-variant-numeric: tabular-nums; opacity: 0.8; }
-.trend-swatch { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
-.trend-chart-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-.trend-svg { display: block; width: 100%; min-width: 640px; height: auto; }
-.trend-grid { stroke: var(--baseline); stroke-width: 1; }
-.trend-axis { fill: var(--text-muted); font-size: 9px; font-family: inherit; }
-.trend-svg rect { rx: 2; }
+.heatmap thead th:first-child { text-align: left; }
+.heatmap tbody th {
+  text-align: left; white-space: nowrap; border-top: 1px solid var(--hairline);
+  padding-right: 14px; font-size: 0.76rem; font-weight: 600;
+}
+.heatmap tbody tr:first-child th, .heatmap tbody tr:first-child td { border-top: 0; }
+.heatmap tbody td { border-top: 1px solid var(--hairline); padding: 3px; }
+.heat-cell {
+  font-variant-numeric: tabular-nums; border-radius: 4px;
+  justify-content: center; align-items: center; height: 28px;
+  font-size: 0.7rem; font-weight: 600; display: flex; width: 100%; min-width: 28px;
+}
+button.heat-cell, button.heat-row {
+  border: 0; background: transparent; font: inherit; cursor: pointer; color: inherit;
+}
+button.heat-row {
+  font-size: 0.76rem; font-weight: 600; color: var(--heat); padding: 0; text-align: left;
+}
+button.heat-cell { font-size: 0.7rem; font-weight: 600; }
+.heat-cell.c0 { background: var(--surface-2); color: var(--hairline); }
+.heat-cell.c1 { background: color-mix(in srgb, var(--heat) 18%, var(--surface-1)); color: var(--heat); }
+.heat-cell.c2 { background: color-mix(in srgb, var(--heat) 38%, var(--surface-1)); color: var(--heat); }
+.heat-cell.c3 { color: #fff; background: color-mix(in srgb, var(--heat) 62%, var(--surface-1)); }
+.heat-cell.c4 { color: #fff; background: color-mix(in srgb, var(--heat) 88%, var(--surface-1)); }
+.heat-cell.total { color: var(--ink); background: transparent; font-size: 0.78rem; font-weight: 700; }
+.heatmap thead th.total-head, .heatmap tbody td.total-cell { border-left: 2px solid var(--ink); }
+button.heat-cell:hover, button.heat-row:hover { outline: 1px solid color-mix(in srgb, var(--heat) 45%, var(--hairline)); outline-offset: 1px; }
+.heatmap-legend {
+  --heat: var(--navy, #3a5270);
+  color: var(--text-muted); display: flex; align-items: center; gap: 8px;
+  margin-top: 14px; font-size: 0.68rem;
+}
+.heatmap-legend .heat-cell { width: 22px; height: 16px; min-width: 22px; }
 .sort-toggle.filter-toolbar button.filter-chip.active {
   border-color: var(--navy, var(--accent-focus));
   color: var(--navy, var(--accent-focus));
@@ -490,8 +518,10 @@ aria-label="수집, 규칙 후보, LLM 큐레이션, 병합 분석, 통합 합�
     <li><b>뉴스·보도는 종류가 아니라 제외</b> — UI <code>doc_kind</code> enum에 두지 않고
       <code>in_scope=false</code> + <code>reject_reason=news_press</code>로 뺍니다.</li>
     <li><b>토픽은 의미 판정</b> — 부분문자열 함정(정당성≠정당, party≠정당)을 프롬프트·검증으로 막습니다.</li>
-    <li><b>날짜는 발표일</b> — OECD catalog Added-on·업로드 시각은 차트용 발표일로 쓰지 않습니다.
-      불확실하면 URL·검색·LLM으로 복원합니다 (<code>resolve_oecd_dates.py</code>).</li>
+    <li><b>날짜는 발표일</b> — OECD는 원문에서 확인된 고·중신뢰 날짜만 발표일로 쓰고,
+      아니면 catalog Added-on을 둡니다. 외교부는 발표시점이 연도뿐이면 원문 URL 메타·경로로
+      월·일을 보강합니다
+      (<code>resolve_oecd_dates.py</code> · <code>mofa_dates.py</code>).</li>
     <li><b>저신뢰는 자동 반영 안 함</b> — <code>confidence=low</code>는 캐시에만 두고 UI 필드를 바꾸지 않습니다.</li>
     <li><b>원문 제목 보존</b> — 한글 약칭을 쓸 때 영문 원제는 <code>original_name</code>에 남깁니다.</li>
     <li><b>동일 법령은 한 카드</b> — 규칙으로 후보만 묶고, 큐레이션·병합 분석 후
@@ -527,8 +557,14 @@ aria-label="수집, 규칙 후보, LLM 큐레이션, 병합 분석, 통합 합�
     </div>
     <div class="tool-item">
       <b>OECD 발표일 복원</b>
+      <code>python3 scripts/resolve_oecd_dates.py --apply-only</code>
       <code>python3 scripts/resolve_oecd_dates.py --limit 300 --llm --no-search --apply</code>
-      <span>원문 메타 우선, 실패 시 LLM. 캐시 <code>cache/oecd_dates.json</code>.</span>
+      <span>원문에서 월·일이 확인된 고·중신뢰만 발표일. 아니면 Added-on. 캐시 <code>cache/oecd_dates.json</code>.</span>
+    </div>
+    <div class="tool-item">
+      <b>외교부 연도만 있는 날짜</b>
+      <code>python3 scripts/mofa_dates.py</code>
+      <span>원문 HTML·PDF·URL 경로. 캐시 <code>cache/mofa_dates.json</code>.</span>
     </div>
     <div class="tool-item">
       <b>사이트 재생성</b>

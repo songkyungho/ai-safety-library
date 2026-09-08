@@ -460,12 +460,26 @@ def enrich_keywords(docs: list[dict]) -> list[dict]:
     return docs
 
 
+def _heat_level(n: int) -> int:
+    """HOME 업적 히트맵과 같은 5단. 라이브러리 건수에 맞춰 구간만 넓힌다."""
+    if n <= 0:
+        return 0
+    if n <= 9:
+        return 1
+    if n <= 24:
+        return 2
+    if n <= 49:
+        return 3
+    return 4
+
+
 def render_kind_trend(docs: list[dict], *, from_year: int = 2017) -> str:
-    """문서종류별 연간 건수 누적 막대. from_year 미만은 한 막대로 묶음."""
+    """문서종류×연도 히트맵. 줄마다 리본색, 셀은 HOME 업적 표와 같은 밀도."""
     from parse_meta import DOC_KINDS
 
     by_key: dict[str, Counter] = {}
     kind_totals: Counter = Counter()
+    pre_key = "pre"
     pre_label = f"{from_year} 이전"
     year_hi = 0
     for d in docs:
@@ -476,7 +490,7 @@ def render_kind_trend(docs: list[dict], *, from_year: int = 2017) -> str:
         yi = int(y)
         kind = d.get("doc_kind") or "기타"
         if yi < from_year:
-            key = pre_label
+            key = pre_key
         else:
             key = y
             if yi > year_hi:
@@ -487,8 +501,8 @@ def render_kind_trend(docs: list[dict], *, from_year: int = 2017) -> str:
         return ""
 
     keys: list[str] = []
-    if pre_label in by_key:
-        keys.append(pre_label)
+    if pre_key in by_key:
+        keys.append(pre_key)
     if year_hi:
         keys.extend(f"{y:04d}" for y in range(from_year, year_hi + 1))
     elif not keys:
@@ -498,82 +512,76 @@ def render_kind_trend(docs: list[dict], *, from_year: int = 2017) -> str:
     if not series:
         return ""
 
-    pad_l, pad_r, pad_t, pad_b = 42, 6, 10, 24
-    plot_h = 200
-    n = len(keys)
-    slot = 48 if n <= 14 else (36 if n <= 20 else 28)
-    plot_w = max(560, int(n * slot))
-    w, h = pad_l + plot_w + pad_r, pad_t + plot_h + pad_b
-    peak = max((sum(by_key.get(k, Counter()).values()) for k in keys), default=1)
-    y_max = max(1, int(((peak + 4) // 5) * 5))
-    if y_max < peak:
-        y_max = peak
-    slot_w = plot_w / n
-    bar_w = max(12.0, slot_w * 0.62)
+    def col_label(key: str) -> str:
+        return "이전" if key == pre_key else key
 
-    def y_of(v: float) -> float:
-        return pad_t + plot_h - (v / y_max) * plot_h
+    def col_title(key: str) -> str:
+        return pre_label if key == pre_key else key
 
-    parts: list[str] = [
-        f'<svg class="trend-svg" viewBox="0 0 {w} {h}" role="img" '
-        f'aria-label="문서종류별 연간 발표 건수">'
-    ]
-    for g in range(5):
-        gy = pad_t + plot_h * g / 4
-        val = y_max * (4 - g) / 4
-        parts.append(
-            f'<line x1="{pad_l}" x2="{w - pad_r}" y1="{gy:.1f}" y2="{gy:.1f}" '
-            f'class="trend-grid" />'
-            f'<text x="{pad_l - 6}" y="{gy + 3:.1f}" class="trend-axis" '
-            f'text-anchor="end">{val:.0f}</text>'
+    head_cells = ['<th scope="col"></th>']
+    for key in keys:
+        lab = col_label(key)
+        year_attr = f' data-year="{_esc(key)}"' if key != pre_key else ""
+        head_cells.append(
+            f'<th scope="col"{year_attr} title="{_esc(col_title(key))}">{_esc(lab)}</th>'
         )
+    head_cells.append('<th scope="col" class="total-head">합계</th>')
 
-    for i, key in enumerate(keys):
-        x = pad_l + i * slot_w + (slot_w - bar_w) / 2
-        counts = by_key.get(key, Counter())
-        cum = 0
-        for kind in series:
-            v = int(counts.get(kind) or 0)
-            if v <= 0:
-                continue
-            y1, y2 = y_of(cum + v), y_of(cum)
-            color = KIND_COLORS.get(kind, KIND_COLORS["기타"])[0]
-            tip = f"{key} · {kind}: {v}건"
-            parts.append(
-                f'<rect x="{x:.1f}" y="{y1:.1f}" width="{bar_w:.1f}" '
-                f'height="{max(0.5, y2 - y1):.1f}" '
-                f'fill="{html_lib.escape(color, quote=True)}">'
-                f"<title>{html_lib.escape(tip)}</title>"
-                f"</rect>"
-            )
-            cum += v
-
-        parts.append(
-            f'<text x="{x + bar_w / 2:.1f}" y="{h - 4}" class="trend-axis" '
-            f'text-anchor="middle">{html_lib.escape(key)}</text>'
-        )
-    parts.append("</svg>")
-
-    legend = []
+    body_rows: list[str] = []
     for kind in series:
         color = KIND_COLORS.get(kind, KIND_COLORS["기타"])[0]
-        legend.append(
-            f'<span class="trend-legend-item">'
-            f'<span class="trend-swatch" style="background:{html_lib.escape(color, quote=True)}"></span>'
-            f"{html_lib.escape(kind)}"
-            f'<span class="n">{kind_totals[kind]}</span></span>'
+        cells: list[str] = [
+            f'<th scope="row"><button type="button" class="heat-row" data-kind="{_esc(kind)}">'
+            f"{_esc(kind)}</button></th>"
+        ]
+        for key in keys:
+            v = int(by_key.get(key, Counter()).get(kind) or 0)
+            lv = _heat_level(v)
+            tip = f"{col_label(key)} · {kind}: {v}건"
+            if v:
+                year_attr = f' data-year="{_esc(key)}"' if key != pre_key else ""
+                cells.append(
+                    f"<td><button type=\"button\" class=\"heat-cell c{lv}\" "
+                    f'data-kind="{_esc(kind)}"{year_attr} title="{_esc(tip)}">{v}</button></td>'
+                )
+            else:
+                cells.append(
+                    f'<td><div class="heat-cell c0" title="{_esc(tip)}"></div></td>'
+                )
+        cells.append(
+            f'<td class="total-cell"><div class="heat-cell total">{kind_totals[kind]}</div></td>'
         )
-    if pre_label in keys and year_hi:
+        body_rows.append(
+            f'<tr style="--heat:{_esc(color)}">{"".join(cells)}</tr>'
+        )
+
+    if pre_key in keys and year_hi:
         span = f"{pre_label} + {from_year}–{year_hi}"
     elif year_hi:
         span = f"{from_year}–{year_hi}"
     else:
         span = pre_label
+    legend = (
+        '<div class="heatmap-legend">'
+        "<span>0</span>"
+        '<span class="heat-cell c0"></span>'
+        '<span class="heat-cell c1"></span>'
+        '<span class="heat-cell c2"></span>'
+        '<span class="heat-cell c3"></span>'
+        '<span class="heat-cell c4"></span>'
+        "<span>50건 이상</span>"
+        "</div>"
+    )
     return f"""<section class="trend-section">
-  <h2 class="trend-title">문서종류별 연간 추이</h2>
-  <div class="trend-sub">{html_lib.escape(span)} · 연별 누적 건수</div>
-  <div class="trend-chart-wrap">{"".join(parts)}</div>
-  <div class="trend-legend">{"".join(legend)}</div>
+  <h2 class="trend-title">문서종류별 연간 구성</h2>
+  <div class="trend-sub">{html_lib.escape(span)} · 셀은 그 종류·연도의 건수 · 줄 색은 리본</div>
+  <div class="heatmap-scroll" id="kindHeatmap">
+    <table class="heatmap" aria-label="문서종류별 연간 구성">
+      <thead><tr>{"".join(head_cells)}</tr></thead>
+      <tbody>{"".join(body_rows)}</tbody>
+    </table>
+  </div>
+  {legend}
 </section>"""
 
 
@@ -778,18 +786,46 @@ button.filter-more:hover { color: var(--ink); border-color: var(--text-muted); }
 .trend-section { margin: 0 0 24px; padding-bottom: 16px; border-bottom: 1px solid var(--hairline); }
 .trend-title { font-size: 1.05rem; letter-spacing: -0.3px; margin: 0 0 2px; color: var(--ink); }
 .trend-sub { color: var(--text-muted); font-size: 0.82rem; margin-bottom: 10px; }
-.trend-legend {
-  display: flex; flex-wrap: wrap; gap: 8px 14px; margin-top: 10px;
-  font-size: 0.75rem; color: var(--text-muted);
+.heatmap-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 6px; }
+.heatmap { border-collapse: collapse; width: 100%; min-width: 760px; }
+.heatmap th, .heatmap td { text-align: center; padding: 0; }
+.heatmap thead th {
+  color: var(--text-muted); padding: 0 0 8px;
+  font-size: 0.68rem; font-weight: 400; font-variant-numeric: tabular-nums;
 }
-.trend-legend-item { display: inline-flex; align-items: center; gap: 6px; }
-.trend-legend-item .n { font-variant-numeric: tabular-nums; opacity: 0.8; }
-.trend-swatch { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
-.trend-chart-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-.trend-svg { display: block; width: 100%; min-width: 640px; height: auto; }
-.trend-grid { stroke: var(--baseline); stroke-width: 1; }
-.trend-axis { fill: var(--text-muted); font-size: 9px; font-family: inherit; }
-.trend-svg rect { rx: 2; }
+.heatmap thead th:first-child { text-align: left; }
+.heatmap tbody th {
+  text-align: left; white-space: nowrap; border-top: 1px solid var(--hairline);
+  padding-right: 14px; font-size: 0.76rem; font-weight: 600;
+}
+.heatmap tbody tr:first-child th, .heatmap tbody tr:first-child td { border-top: 0; }
+.heatmap tbody td { border-top: 1px solid var(--hairline); padding: 3px; }
+.heat-cell {
+  font-variant-numeric: tabular-nums; border-radius: 4px;
+  justify-content: center; align-items: center; height: 28px;
+  font-size: 0.7rem; font-weight: 600; display: flex; width: 100%; min-width: 28px;
+}
+button.heat-cell, button.heat-row {
+  border: 0; background: transparent; font: inherit; cursor: pointer; color: inherit;
+}
+button.heat-row {
+  font-size: 0.76rem; font-weight: 600; color: var(--heat); padding: 0; text-align: left;
+}
+button.heat-cell { font-size: 0.7rem; font-weight: 600; }
+.heat-cell.c0 { background: var(--surface-2); color: var(--hairline); }
+.heat-cell.c1 { background: color-mix(in srgb, var(--heat) 18%, var(--surface-1)); color: var(--heat); }
+.heat-cell.c2 { background: color-mix(in srgb, var(--heat) 38%, var(--surface-1)); color: var(--heat); }
+.heat-cell.c3 { color: #fff; background: color-mix(in srgb, var(--heat) 62%, var(--surface-1)); }
+.heat-cell.c4 { color: #fff; background: color-mix(in srgb, var(--heat) 88%, var(--surface-1)); }
+.heat-cell.total { color: var(--ink); background: transparent; font-size: 0.78rem; font-weight: 700; }
+.heatmap thead th.total-head, .heatmap tbody td.total-cell { border-left: 2px solid var(--ink); }
+button.heat-cell:hover, button.heat-row:hover { outline: 1px solid color-mix(in srgb, var(--heat) 45%, var(--hairline)); outline-offset: 1px; }
+.heatmap-legend {
+  --heat: var(--navy, #3a5270);
+  color: var(--text-muted); display: flex; align-items: center; gap: 8px;
+  margin-top: 14px; font-size: 0.68rem;
+}
+.heatmap-legend .heat-cell { width: 22px; height: 16px; min-width: 22px; }
 .sort-toggle.filter-toolbar button.filter-chip.active {
   border-color: var(--navy, var(--accent-focus));
   color: var(--navy, var(--accent-focus));
@@ -1146,6 +1182,13 @@ function yearKey(d) {{
   const y = (d.published || '').slice(0, 4);
   return /^\\d{{4}}$/.test(y) ? y : 'undated';
 }}
+function formatPublished(p) {{
+  const s = String(p || '');
+  if (/^\\d{{4}}$/.test(s) || /^\\d{{4}}-01-01$/.test(s)) return s.slice(0, 4) + '년';
+  const ym = s.match(/^(\\d{{4}})-(\\d{{2}})$/);
+  if (ym) return ym[1] + '년 ' + String(parseInt(ym[2], 10)) + '월';
+  return s;
+}}
 function yearLabel(y) {{
   return y === 'undated' ? '날짜 없음' : (y + '년');
 }}
@@ -1232,7 +1275,7 @@ function cardHtml(d) {{
     : `<span class="event-title">${{escapeHtml(short)}}</span>`;
   const life = statusBadge(d);
   return `<div class="event-card" data-id="${{escapeHtml(d.id)}}" style="${{kindStyle(d.doc_kind)}}">
-    <div class="event-head"><span class="event-date">${{escapeHtml(d.published||'')}}</span>${{place}}</div>
+    <div class="event-head"><span class="event-date">${{escapeHtml(formatPublished(d.published))}}</span>${{place}}</div>
     <div class="event-summary">${{title}}${{life}}</div>
     ${{underHtml}}
     ${{ribbonHtml(d)}}
@@ -1314,6 +1357,24 @@ bindFilter('countryToggle', 'country');
 bindFilter('kindToggle', 'kind');
 bindFilter('issuerToggle', 'issuer');
 bindFilter('topicToggle', 'topic');
+(function bindKindHeatmap() {{
+  const wrap = document.getElementById('kindHeatmap');
+  if (!wrap) return;
+  wrap.addEventListener('click', ev => {{
+    const cell = ev.target.closest('[data-kind], th[data-year]');
+    if (!cell) return;
+    const kind = cell.dataset.kind || '';
+    const year = cell.dataset.year || '';
+    if (kind) {{
+      state.kind = kind;
+      document.getElementById('kindToggle').querySelectorAll('button[data-kind]').forEach(b => {{
+        b.classList.toggle('active', (b.dataset.kind || '') === state.kind);
+      }});
+      renderList();
+    }}
+    if (/^\\d{{4}}$/.test(year)) jumpYear(year);
+  }});
+}})();
 document.getElementById('listView').addEventListener('click', ev => {{
   if (ev.target.closest('a')) return;
   const ttag = ev.target.closest('.topic-tag[data-topic]');
@@ -1513,8 +1574,10 @@ def render_about(docs: list[dict], index: dict, *, total_raw: int = 0, out_count
     <li><b>뉴스·보도는 종류가 아니라 제외</b> — UI <code>doc_kind</code> enum에 두지 않고
       <code>in_scope=false</code> + <code>reject_reason=news_press</code>로 뺍니다.</li>
     <li><b>토픽은 의미 판정</b> — 부분문자열 함정(정당성≠정당, party≠정당)을 프롬프트·검증으로 막습니다.</li>
-    <li><b>날짜는 발표일</b> — OECD catalog Added-on·업로드 시각은 차트용 발표일로 쓰지 않습니다.
-      불확실하면 URL·검색·LLM으로 복원합니다 (<code>resolve_oecd_dates.py</code>).</li>
+    <li><b>날짜는 발표일</b> — OECD는 원문에서 확인된 고·중신뢰 날짜만 발표일로 쓰고,
+      아니면 catalog Added-on을 둡니다. 외교부는 발표시점이 연도뿐이면 원문 URL 메타·경로로
+      월·일을 보강합니다
+      (<code>resolve_oecd_dates.py</code> · <code>mofa_dates.py</code>).</li>
     <li><b>저신뢰는 자동 반영 안 함</b> — <code>confidence=low</code>는 캐시에만 두고 UI 필드를 바꾸지 않습니다.</li>
     <li><b>원문 제목 보존</b> — 한글 약칭을 쓸 때 영문 원제는 <code>original_name</code>에 남깁니다.</li>
     <li><b>동일 법령은 한 카드</b> — 규칙으로 후보만 묶고, 큐레이션·병합 분석 후
@@ -1550,8 +1613,14 @@ def render_about(docs: list[dict], index: dict, *, total_raw: int = 0, out_count
     </div>
     <div class="tool-item">
       <b>OECD 발표일 복원</b>
+      <code>python3 scripts/resolve_oecd_dates.py --apply-only</code>
       <code>python3 scripts/resolve_oecd_dates.py --limit 300 --llm --no-search --apply</code>
-      <span>원문 메타 우선, 실패 시 LLM. 캐시 <code>cache/oecd_dates.json</code>.</span>
+      <span>원문에서 월·일이 확인된 고·중신뢰만 발표일. 아니면 Added-on. 캐시 <code>cache/oecd_dates.json</code>.</span>
+    </div>
+    <div class="tool-item">
+      <b>외교부 연도만 있는 날짜</b>
+      <code>python3 scripts/mofa_dates.py</code>
+      <span>원문 HTML·PDF·URL 경로. 캐시 <code>cache/mofa_dates.json</code>.</span>
     </div>
     <div class="tool-item">
       <b>사이트 재생성</b>

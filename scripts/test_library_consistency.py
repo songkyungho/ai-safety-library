@@ -740,6 +740,142 @@ def test_glued_summary() -> None:
     ok("원문 요약" in (low[0].get("summary") or ""), "low-conf empty does not wipe")
 
 
+def test_oecd_dates() -> None:
+    from build_documents import pick_best_published
+    from resolve_oecd_dates import apply_cache_to_oecd_items, oecd_card_date
+
+    item = {
+        "id": "oecd-navigator-1",
+        "collection": "oecd-navigator",
+        "date": "2025-07-09",
+        "added_on": "2025-07-09",
+        "start_year": 2019,
+    }
+    cache = {
+        "oecd-navigator-1": {
+            "date": "2019-05-22",
+            "confidence": "high",
+            "method": "html-meta",
+        }
+    }
+    ok(oecd_card_date(item, cache) == "2019-05-22", "cache high date wins")
+    ok(oecd_card_date(item, {}) == "2025-07-09", "unverified falls back to Added-on")
+    year_hit = {
+        "oecd-navigator-1": {"date": "2019-01-01", "confidence": "medium", "method": "llm"}
+    }
+    ok(oecd_card_date(item, year_hit) == "2025-07-09", "year placeholder is not a day")
+    n = apply_cache_to_oecd_items([item], cache)
+    ok(n == 1 and item["date"] == "2019-05-22", "apply writes resolved date")
+    ok(item["added_on"] == "2025-07-09", "apply keeps added_on")
+
+    oecd = {
+        "id": "oecd-navigator-x",
+        "collection": "oecd-navigator",
+        "date": "2025-07-09",
+        "added_on": "2025-07-09",
+        "start_year": 2018,
+    }
+    mofa = {
+        "id": "mofa-1",
+        "collection": "mofa-governance",
+        "date": "2019-06-11",
+    }
+    pick = pick_best_published(
+        [oecd, mofa],
+        [(oecd, {"published": "2025-07-09"}), (mofa, {"published": "2019-06-11"})],
+        oecd_cache={},
+    )
+    ok(pick == "2019-06-11", "MOFA calendar date beats OECD Added-on")
+    oecd_only = pick_best_published(
+        [oecd],
+        [(oecd, {"published": "2025-07-09"})],
+        oecd_cache={},
+    )
+    ok(oecd_only == "2025-07-09", "OECD-only unresolved uses Added-on")
+
+
+def test_iaae_and_year_dates() -> None:
+    from build_documents import pick_best_published
+    from iaae_dates import iaae_card_date
+    from parse_meta import normalize_date_ko
+
+    asilomar = {
+        "id": "iaae-ethics-1",
+        "collection": "iaae-ethics",
+        "date": "2020-08-04",
+        "title": "[FUTURE OF LIFE] 아실로마 AI 원칙 (Asilomar AI Principles)",
+        "source_urls": ["https://futureoflife.org/open-letter/ai-principles/"],
+    }
+    ok(iaae_card_date(asilomar).startswith("2017"), "Asilomar not board dump day")
+    turing = {
+        "id": "iaae-ethics-2",
+        "collection": "iaae-ethics",
+        "date": "2020-11-04",
+        "title": "[앨런튜링연구소] Understanding artificial intelligence ethics and safety",
+        "source_urls": [
+            "https://www.turing.ac.uk/sites/default/files/2019-06/understanding_artificial_intelligence_ethics_and_safety.pdf"
+        ],
+    }
+    ok(iaae_card_date(turing) == "2019-06", "Turing date from PDF path")
+    oecd_item = {
+        "id": "oecd-navigator-x",
+        "collection": "oecd-navigator",
+        "date": "2019-05-22",
+        "added_on": "2025-07-09",
+        "date_source": "llm",
+        "date_resolved": "2019-05-22",
+    }
+    pick = pick_best_published(
+        [asilomar, oecd_item],
+        [(asilomar, {"published": "2020-08-04"}), (oecd_item, {"published": "2019-05-22"})],
+        oecd_cache={},
+    )
+    ok(pick == "2019-05-22", "OECD calendar date beats IAAE dump")
+    ok(normalize_date_ko("2026년") == "2026", "MOFA year-only stays year")
+    ok(normalize_date_ko("2026년 5월") == "2026-05", "MOFA month-only not Jan 1")
+    ok(normalize_date_ko("2026년 5월 12일") == "2026-05-12", "MOFA full date")
+
+
+def test_mofa_url_dates() -> None:
+    from mofa_dates import date_from_url_path, mofa_card_date
+
+    oecd_pdf = (
+        "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/11/"
+        "progress-in-implementing-the-european-union-coordinated-plan-on-artificial-"
+        "intelligence-volume-2_92ec8756/3ac96d41-en.pdf"
+    )
+    ok(date_from_url_path(oecd_pdf, 2026) == "2025-11", "OECD path month")
+    asean = "https://asean.org/wp-content/uploads/2026/01/ASEAN-Digital-Master-Plan-2030-final-2026.pdf"
+    ok(date_from_url_path(asean, 2026) == "2026-01", "ASEAN wp uploads month")
+    item = {
+        "id": "mofa-governance-x",
+        "published": "2026년",
+        "date": "2026-01-01",
+        "source_urls": [oecd_pdf],
+    }
+    cache = {
+        "mofa-governance-x": {
+            "date": "2025-11",
+            "confidence": "medium",
+            "method": "url-path",
+        }
+    }
+    ok(mofa_card_date(item, cache) == "2025-11", "cache month beats year-only body")
+    itu = {
+        "id": "mofa-governance-y",
+        "published": "2026년 1월",
+        "date": "2026-01-01",
+    }
+    cache_d = {
+        "mofa-governance-y": {
+            "date": "2026-01-19",
+            "confidence": "high",
+            "method": "html-published-line",
+        }
+    }
+    ok(mofa_card_date(itu, cache_d) == "2026-01-19", "html day beats month")
+
+
 def main() -> None:
     test_urls()
     test_known()
@@ -749,6 +885,9 @@ def main() -> None:
     test_leftover_titles()
     test_disambiguate()
     test_glued_summary()
+    test_oecd_dates()
+    test_iaae_and_year_dates()
+    test_mofa_url_dates()
     print("ALL TESTS PASSED")
 
 

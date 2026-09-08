@@ -129,16 +129,16 @@ def normalize_date_ko(raw: str) -> str:
         return f"{m.group(1)}-{int(m.group(2)):02d}-{int(m.group(3)):02d}"
     m = re.search(r"(20\d{2})\s*년\s*(\d{1,2})\s*월", raw)
     if m:
-        return f"{m.group(1)}-{int(m.group(2)):02d}-01"
+        return f"{m.group(1)}-{int(m.group(2)):02d}"
     m = re.search(r"(20\d{2})[./-](\d{1,2})[./-](\d{1,2})", raw)
     if m:
         return f"{m.group(1)}-{int(m.group(2)):02d}-{int(m.group(3)):02d}"
     m = re.search(r"(20\d{2})[./-](\d{1,2})\b", raw)
     if m:
-        return f"{m.group(1)}-{int(m.group(2)):02d}-01"
+        return f"{m.group(1)}-{int(m.group(2)):02d}"
     m = re.search(r"(20\d{2})\s*년", raw)
     if m:
-        return f"{m.group(1)}-01-01"
+        return m.group(1)
     return ""
 
 

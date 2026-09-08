@@ -51,16 +51,21 @@ def short_name_fallback(title: str) -> str:
     return title
 
 
-def date_precision(date: str, *, collection: str = "") -> int:
-    """Higher = more trustworthy calendar date. OECD startYear→01-01 is year-only."""
+def date_precision(date: str, *, collection: str = "", added_on: str = "") -> int:
+    """Higher = more trustworthy calendar date. OECD Added-on is weaker than a peer day."""
     d = (date or "").strip()[:10]
     col = (collection or "").strip()
+    added = (added_on or "").strip()[:10]
     if not d:
         return 0
+    if col == "oecd-navigator" and added and d == added:
+        return 1
+    if col == "iaae-ethics" and d in ("2020-08-04", "2020-11-04"):
+        return 1
     if col == "oecd-navigator" and re.fullmatch(r"20\d{2}-01-01", d):
         return 1
     if re.fullmatch(r"20\d{2}-\d{2}-\d{2}", d):
-        if d.endswith("-01-01") and col in ("oecd-navigator",):
+        if d.endswith("-01-01"):
             return 1
         return 3
     if re.fullmatch(r"20\d{2}-\d{2}", d):
@@ -70,19 +75,83 @@ def date_precision(date: str, *, collection: str = "") -> int:
     return 0
 
 
-def pick_best_published(members: list[dict], metas: list[tuple[dict, dict]]) -> str:
-    """Prefer precise peer dates over OECD year placeholders."""
+def load_oecd_date_cache() -> dict:
+    path = ROOT / "cache" / "oecd_dates.json"
+    if not path.exists():
+        return {}
+    try:
+        blob = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    return blob if isinstance(blob, dict) else {}
+
+
+def member_published_date(item: dict, meta: dict | None = None, *, oecd_cache: dict | None = None) -> str:
+    """Card date: OECD uses verified publication, else Added-on."""
+    col = item.get("collection") or ""
+    if col == "oecd-navigator":
+        from resolve_oecd_dates import oecd_card_date
+
+        return oecd_card_date(item, oecd_cache if oecd_cache is not None else {})
+    if col == "iaae-ethics":
+        from iaae_dates import iaae_card_date
+
+        d = iaae_card_date(item)
+        if d.endswith("-01-01"):
+            return d[:4]
+        return d
+    if col.startswith("mofa"):
+        from mofa_dates import mofa_card_date
+
+        return mofa_card_date(item)
+    d = ((meta or {}).get("published") or item.get("date") or "").strip()
+    if re.fullmatch(r"20\d{2}-\d{2}-\d{2}", d[:10]):
+        if d.endswith("-01-01"):
+            return d[:4]
+        return d[:10]
+    if re.fullmatch(r"20\d{2}-\d{2}", d[:7]):
+        return d[:7]
+    if re.fullmatch(r"20\d{2}", d[:4]) and len(d) <= 7:
+        return d[:4]
+    return d[:10]
+
+
+def pick_best_published(
+    members: list[dict],
+    metas: list[tuple[dict, dict]],
+    *,
+    oecd_cache: dict | None = None,
+) -> str:
+    """Prefer a verified peer calendar date over OECD Added-on."""
     scored: list[tuple[int, str]] = []
     for m, meta in metas:
-        d = (meta.get("published") or m.get("date") or "").strip()[:10]
+        d = member_published_date(m, meta, oecd_cache=oecd_cache)
         if not d:
             continue
-        scored.append((date_precision(d, collection=m.get("collection") or ""), d))
+        scored.append(
+            (
+                date_precision(
+                    d,
+                    collection=m.get("collection") or "",
+                    added_on=m.get("added_on") or "",
+                ),
+                d,
+            )
+        )
     for m in members:
-        d = (m.get("date") or "").strip()[:10]
+        d = member_published_date(m, oecd_cache=oecd_cache)
         if not d:
             continue
-        scored.append((date_precision(d, collection=m.get("collection") or ""), d))
+        scored.append(
+            (
+                date_precision(
+                    d,
+                    collection=m.get("collection") or "",
+                    added_on=m.get("added_on") or "",
+                ),
+                d,
+            )
+        )
     if not scored:
         return ""
     scored.sort(key=lambda x: (x[0], x[1]), reverse=True)
@@ -151,6 +220,7 @@ def build_documents(*, skip_instrument_merge: bool = False) -> list[dict]:
     membership = load_cluster_membership()
     split_parents = load_split_parents()
     item_buckets = load_item_split_buckets()
+    oecd_dates = load_oecd_date_cache()
     # Group key: prefer confirmed instrument split, else same-document cluster, else URL
     groups: dict[str, list[dict]] = defaultdict(list)
     pending: list[dict] = []
@@ -387,7 +457,10 @@ def build_documents(*, skip_instrument_merge: bool = False) -> list[dict]:
         history = []
         seen_hist = set()
         for m in members:
-            d = (m.get("date") or "").strip()
+            if (m.get("collection") or "") == "oecd-navigator":
+                d = (m.get("added_on") or m.get("date") or "").strip()
+            else:
+                d = (m.get("date") or "").strip()
             label = history_label(m)
             url = ""
             page = m.get("page_url") or ""
@@ -413,9 +486,9 @@ def build_documents(*, skip_instrument_merge: bool = False) -> list[dict]:
             )
         history.sort(key=lambda h: h["date"] or "", reverse=True)
 
-        published = pick_best_published(members, metas)
+        published = pick_best_published(members, metas, oecd_cache=oecd_dates)
         if not published:
-            dates = [h["date"] for h in history if h["date"]]
+            dates = [h["date"] for h in history if h.get("date")]
             published = max(dates) if dates else ""
 
         display_country = country

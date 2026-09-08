@@ -133,7 +133,7 @@ def oecd_records(raw: list[dict]) -> list[dict]:
             if href and href not in file_urls:
                 file_urls.append(href)
         # startYear = initiative 개시 연도(연 단위). 사이트 Added on / Updated on =
-        # createdAt / updatedAt (일자). 라이브러리 date는 Added on을 우선한다.
+        # createdAt / updatedAt (일자). date는 수집 직후 캐시로 발표일을 덮어쓴다.
         year = it.get("startYear")
         created = (it.get("createdAt") or "")[:10]
         updated = (it.get("updatedAt") or "")[:10]
@@ -326,6 +326,16 @@ def main() -> None:
         }
         write_json(ROOT / "collections/oecd-navigator/source.json", oecd_source)
         oecd = oecd_records(oecd_raw)
+        try:
+            from resolve_oecd_dates import CACHE as OECD_DATES_CACHE
+            from resolve_oecd_dates import apply_cache_to_oecd_items
+
+            if OECD_DATES_CACHE.exists():
+                oecd_date_cache = json.loads(OECD_DATES_CACHE.read_text(encoding="utf-8"))
+                n_dates = apply_cache_to_oecd_items(oecd, oecd_date_cache)
+                print(f"oecd dates applied from cache: {n_dates}")
+        except Exception as e:
+            print("oecd date cache skip:", e)
         oecd_pack = pack(
             "oecd-navigator",
             "OECD.AI Policy Navigator",

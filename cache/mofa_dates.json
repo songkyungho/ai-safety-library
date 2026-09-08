@@ -1,0 +1,350 @@
+{
+  "mofa-governance-237": {
+    "id": "mofa-governance-237",
+    "date": "",
+    "method": "none",
+    "confidence": "none",
+    "title": "[UNICEF] 아동과 부모의 AI 이용 및 우려 현황",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-216": {
+    "date": "2026-05-11",
+    "method": "pdf-creation",
+    "evidence_url": "https://s43678.pcdn.co/metaverse/wp-content/uploads/2026/05/AI-Enabled-Citiverse-A-Strategic-Blueprint-for-Cities-in-the-Age-of-AI.pdf",
+    "confidence": "high",
+    "id": "mofa-governance-216",
+    "title": "[ITU 등] AI 기반 시티버스: AI 시대 도시를 위한 전략 청사진",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-234": {
+    "id": "mofa-governance-234",
+    "date": "",
+    "method": "none",
+    "confidence": "none",
+    "title": "[UN Women] 남성의 참여와 폭력 종식",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-233": {
+    "id": "mofa-governance-233",
+    "date": "",
+    "method": "none",
+    "confidence": "none",
+    "title": "[UN Women] AI 시대 온라인 폭력의 영향, 양상 및 구제",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-223": {
+    "id": "mofa-governance-223",
+    "date": "",
+    "method": "none",
+    "confidence": "none",
+    "title": "[UNESCO] AI: 우리는 여전히 생각할 필요가 있는가?",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-210": {
+    "id": "mofa-governance-210",
+    "date": "",
+    "method": "none",
+    "confidence": "none",
+    "title": "[UNDGC] 광고, AI와 글로벌 정보 위기",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-255": {
+    "date": "2026-02",
+    "method": "url-path",
+    "evidence_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/02/exploring-possible-ai-trajectories-through-2030_b6fb75d9/cb41117a-en.pdf",
+    "confidence": "medium",
+    "id": "mofa-governance-255",
+    "title": "[GPAI] 2030년까지 가능한 AI 발전 경로 탐색",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-253": {
+    "date": "2026-02",
+    "method": "url-path",
+    "evidence_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/02/trends-in-ai-incidents-and-hazards-reported-by-the-media_7c824ca9/4f5ff43c-en.pdf",
+    "confidence": "medium",
+    "id": "mofa-governance-253",
+    "title": "[GPAI] 언론에 보도된 AI 사고와 위험 동향",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-161": {
+    "id": "mofa-governance-161",
+    "date": "",
+    "method": "none",
+    "confidence": "none",
+    "title": "[UNICEF] AI와 아동 성착취·학대 이슈 브리프",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-254": {
+    "date": "2025-11",
+    "method": "url-path",
+    "evidence_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/11/progress-in-implementing-the-european-union-coordinated-plan-on-artificial-intelligence-volume-2_92ec8756/3ac96d41-en.pdf",
+    "confidence": "medium",
+    "id": "mofa-governance-254",
+    "title": "[OECD 등] 유럽연합 AI 조정계획 이행 진전 제2권",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-246": {
+    "date": "2026-01",
+    "method": "url-path",
+    "evidence_url": "https://asean.org/wp-content/uploads/2026/01/ASEAN-Digital-Master-Plan-2030-final-2026.pdf",
+    "confidence": "medium",
+    "id": "mofa-governance-246",
+    "title": "[ASEAN] ASEAN 디지털 마스터플랜 2030",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-228": {
+    "id": "mofa-governance-228",
+    "date": "",
+    "method": "none",
+    "confidence": "none",
+    "title": "[UNESCO] 기술직업훈련의 디지털 전환과 AI 통합 전략",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-227": {
+    "id": "mofa-governance-227",
+    "date": "",
+    "method": "none",
+    "confidence": "none",
+    "title": "[UNESCO] 판사를 위한 AI 핵심 안내서",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-224": {
+    "id": "mofa-governance-224",
+    "date": "",
+    "method": "none",
+    "confidence": "none",
+    "title": "[UNESCO 등] AI 기업 데이터 이니셔티브의 2025년 글로벌 인사이트",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-222": {
+    "id": "mofa-governance-222",
+    "date": "",
+    "method": "none",
+    "confidence": "none",
+    "title": "[UNESCO] 학습자 중심 교육에서의 인공지능 윤리",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-176": {
+    "date": "2026-01-19",
+    "method": "html-published-line",
+    "evidence_url": "https://www.itu.int/hub/publication/t-ai4g-ai4good-2025-6/",
+    "confidence": "high",
+    "id": "mofa-governance-176",
+    "title": "[ITU] AI 준비도 표준 프레임워크 분석 보고서",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-194": {
+    "id": "mofa-governance-194",
+    "date": "",
+    "method": "none",
+    "confidence": "none",
+    "title": "[UNDP] AI는 왜 국가 간 불평등을 확대할 수 있는가",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-249": {
+    "date": "2025-12-03",
+    "method": "pdf-creation",
+    "evidence_url": "https://www.unicc.org/wp-content/uploads/2025/12/From-Total-Cost-of-Ownership-to-Social-Impact-by-Frugal-AI-Hub-and-UNICC-AI-Hub.pdf",
+    "confidence": "high",
+    "id": "mofa-governance-249",
+    "title": "[UNICC 등] AI 포트폴리오를 전략자산으로 측정하기 위한 절약형 AI 프레임워크",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-238": {
+    "id": "mofa-governance-238",
+    "date": "",
+    "method": "none",
+    "confidence": "none",
+    "title": "[UNICEF] 무력분쟁 중 생물무기로부터 아동 보호",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-159": {
+    "id": "mofa-governance-159",
+    "date": "",
+    "method": "none",
+    "confidence": "none",
+    "title": "[UNICEF] AI와 아동 가이드라인(제3판)",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-236": {
+    "id": "mofa-governance-236",
+    "date": "",
+    "method": "none",
+    "confidence": "none",
+    "title": "[UN Women] AI가 기술매개 여성·여아 대상 폭력을 어떻게 악화시키는가",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-160": {
+    "date": "2026-06-18",
+    "method": "html-published-line",
+    "evidence_url": "https://www.itu.int/hub/publication/d-str-cyb_joint-2025/",
+    "confidence": "high",
+    "id": "mofa-governance-160",
+    "title": "[UNICEF 등] AI와 아동 권리에 관한 공동성명",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-175": {
+    "date": "2025-10-10",
+    "method": "html-meta",
+    "evidence_url": "https://www.itu.int/epublications/zh/publication/the-annual-ai-governance-report-2025-steering-the-future-of-ai/en",
+    "confidence": "high",
+    "id": "mofa-governance-175",
+    "title": "[ITU] 연례 AI 거버넌스 보고서 2025",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-158": {
+    "id": "mofa-governance-158",
+    "date": "",
+    "method": "none",
+    "confidence": "none",
+    "title": "[UNICEF] AI 규제와 아동권리에 대한 영향에 관한 글로벌 신속 검토",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-152": {
+    "id": "mofa-governance-152",
+    "date": "",
+    "method": "none",
+    "confidence": "none",
+    "title": "[APEC] 효율적·탄력적 에너지 시스템을 위한 AI 활용",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-286": {
+    "date": "2025-07-03",
+    "method": "html-meta",
+    "evidence_url": "https://unidir.org/publication/artificial-intelligence-in-the-military-domain-and-its-implications-for-international-peace-and-security-an-evidence-based-road-map-for-future-policy-action/",
+    "confidence": "high",
+    "id": "mofa-governance-286",
+    "title": "[UNIDIR] 군사 영역 AI와 국제평화·안보에 대한 함의",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-174": {
+    "id": "mofa-governance-174",
+    "date": "",
+    "method": "none",
+    "confidence": "none",
+    "title": "[ITU] AI for Good 영향 보고서 2025",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-150": {
+    "id": "mofa-governance-150",
+    "date": "",
+    "method": "none",
+    "confidence": "none",
+    "title": "[APEC] APEC 역내 AI 규제 현황: 개발과 감독의 균형",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-149": {
+    "id": "mofa-governance-149",
+    "date": "",
+    "method": "none",
+    "confidence": "none",
+    "title": "[APEC] AI 기술이 자격체계에 미치는 영향 워크숍 결과보고서",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-164": {
+    "id": "mofa-governance-164",
+    "date": "",
+    "method": "none",
+    "confidence": "none",
+    "title": "[UNESCO] 교원용 AI 역량 프레임워크",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-133": {
+    "id": "mofa-governance-133",
+    "date": "",
+    "method": "none",
+    "confidence": "none",
+    "title": "[G20] 2024 브라질 DEWG AI 준비도·역량평가 툴킷",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-132": {
+    "id": "mofa-governance-132",
+    "date": "",
+    "method": "none",
+    "confidence": "none",
+    "title": "[G20] 2024 브라질 DEWG AI 개발 동향 분석",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-181": {
+    "id": "mofa-governance-181",
+    "date": "",
+    "method": "none",
+    "confidence": "none",
+    "title": "[WIPO] 생성형 AI 지식재산 활용 가이드",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-180": {
+    "id": "mofa-governance-180",
+    "date": "",
+    "method": "none",
+    "confidence": "none",
+    "title": "[WIPO] 생성형 AI 특허 동향 보고서",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-173": {
+    "id": "mofa-governance-173",
+    "date": "",
+    "method": "none",
+    "confidence": "none",
+    "title": "[ITU] UN 시스템 AI 활동 종합보고서 2024",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-103": {
+    "id": "mofa-governance-103",
+    "date": "",
+    "method": "none",
+    "confidence": "none",
+    "title": "[UN] AI 자문기구 중간보고서: 인류를 위한 AI 거버넌스",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-147": {
+    "date": "2023-11",
+    "method": "url-path",
+    "evidence_url": "https://www.apec.org/publications/2023/11/the-current-state-of-ai-implementation-within-the-apec-region-for-covid-19-mitigation",
+    "confidence": "medium",
+    "id": "mofa-governance-147",
+    "title": "[APEC] 코로나19 대응 AI 활용 현황 보고서",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-145": {
+    "date": "2023-09",
+    "method": "url-path",
+    "evidence_url": "https://www.apec.org/publications/2023/09/best-practices-to-detect-and-avoid-harmful-biases-in-artificial-intelligence-systems",
+    "confidence": "medium",
+    "id": "mofa-governance-145",
+    "title": "[APEC] AI 시스템 유해 편향 탐지·방지 모범사례",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-171": {
+    "id": "mofa-governance-171",
+    "date": "",
+    "method": "none",
+    "confidence": "none",
+    "title": "[ITU] UN 시스템 AI 활동 종합보고서 2023",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-163": {
+    "id": "mofa-governance-163",
+    "date": "",
+    "method": "none",
+    "confidence": "none",
+    "title": "[UNESCO] 디지털 플랫폼 거버넌스 가이드라인",
+    "resolved": "2026-09-08"
+  },
+  "mofa-governance-166": {
+    "id": "mofa-governance-166",
+    "date": "",
+    "method": "none",
+    "confidence": "none",
+    "title": "[UNESCO] AI와 교육: 정책담당자 가이드",
+    "resolved": "2026-09-08"
+  },
+  "mofa-country-policy-20": {
+    "id": "mofa-country-policy-20",
+    "date": "",
+    "method": "none",
+    "confidence": "none",
+    "title": "[싱가포르] LLM 기반 애플리케이션 안전성·신뢰성 테스트 스타터 킷",
+    "resolved": "2026-09-08"
+  }
+}

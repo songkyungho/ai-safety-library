@@ -89,6 +89,68 @@ def save_json(path: Path, obj) -> None:
     path.write_text(json.dumps(obj, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+USABLE_CONF = ("high", "medium")
+
+
+def cache_publication_date(hit: dict | None) -> str:
+    """High/medium calendar date, or empty. YYYY-01-01 is not treated as a real day."""
+    if not isinstance(hit, dict):
+        return ""
+    if hit.get("confidence") not in USABLE_CONF:
+        return ""
+    d = normalize_date(str(hit.get("date") or ""))
+    if not d or d.endswith("-01-01"):
+        return ""
+    return d
+
+
+def apply_cache_to_oecd_items(items: list[dict], cache: dict) -> int:
+    """Write verified calendar dates onto OECD items; otherwise keep Added-on."""
+    n = 0
+    for it in items:
+        iid = it.get("id") or ""
+        added = (it.get("added_on") or "")[:10]
+        d = cache_publication_date(cache.get(iid) or {})
+        if d:
+            if it.get("date") != d or it.get("date_source") != (cache[iid].get("method") or "resolved"):
+                n += 1
+            it["date"] = d
+            it["date_source"] = cache[iid].get("method") or "resolved"
+            it["date_resolved"] = d
+            continue
+        if not added:
+            continue
+        if it.get("date") != added or it.get("date_source") not in ("", None, "added_on"):
+            n += 1
+        it["date"] = added
+        it["date_source"] = "added_on"
+        it.pop("date_resolved", None)
+    return n
+
+
+def oecd_card_date(item: dict, cache: dict | None = None) -> str:
+    """Card date: verified original publication, else OECD Added-on."""
+    iid = item.get("id") or ""
+    added = (item.get("added_on") or "")[:10]
+    current = (item.get("date") or "")[:10]
+    hit = (cache or {}).get(iid) if cache is not None else None
+    d = cache_publication_date(hit) if hit is not None else ""
+    if not d:
+        resolved = (item.get("date_resolved") or "")[:10]
+        if resolved and not resolved.endswith("-01-01") and resolved != added:
+            d = resolved
+        elif (
+            current
+            and current != added
+            and not current.endswith("-01-01")
+            and re.fullmatch(r"20\d{2}-\d{2}-\d{2}", current)
+        ):
+            d = current
+    if d and not d.endswith("-01-01"):
+        return d[:10]
+    return added or current or ""
+
+
 def normalize_date(raw: str) -> str:
     raw = unescape((raw or "").strip())
     if not raw:
@@ -412,6 +474,7 @@ def main() -> None:
     ap.add_argument("--llm", action="store_true", help="원문/검색 실패 시 OpenRouter로 추정")
     ap.add_argument("--model", default="openai/gpt-5.6-luna")
     ap.add_argument("--apply", action="store_true", help="high 신뢰 결과를 items.json date에 반영")
+    ap.add_argument("--apply-only", action="store_true", help="재추정 없이 캐시만 items.json에 반영")
     ap.add_argument("--force", action="store_true", help="캐시 있어도 재시도")
     args = ap.parse_args()
     use_search = args.search or not args.no_search
@@ -422,6 +485,14 @@ def main() -> None:
     cache = load_json(CACHE) if CACHE.exists() else {}
     if not isinstance(cache, dict):
         cache = {}
+
+    if args.apply_only:
+        n = apply_cache_to_oecd_items(items, cache)
+        blob["items"] = items
+        blob["updated"] = date.today().isoformat()
+        save_json(ITEMS, blob)
+        print(f"applied high/medium dates to {n} items (apply-only)")
+        return
 
     queue = candidate_items(items, bulk_first=True)
     # skip already resolved unless force
@@ -520,19 +591,7 @@ def main() -> None:
     print(f"cache → {CACHE}")
 
     if args.apply:
-        usable = {
-            k: v
-            for k, v in cache.items()
-            if v.get("date") and v.get("confidence") in ("high", "medium")
-        }
-        n = 0
-        for it in items:
-            iid = it.get("id") or ""
-            if iid in usable:
-                it["date"] = usable[iid]["date"]
-                it["date_source"] = usable[iid].get("method") or "resolved"
-                it["date_resolved"] = usable[iid]["date"]
-                n += 1
+        n = apply_cache_to_oecd_items(items, cache)
         blob["items"] = items
         blob["updated"] = date.today().isoformat()
         save_json(ITEMS, blob)
