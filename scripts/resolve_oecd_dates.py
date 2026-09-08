@@ -28,6 +28,8 @@ from html import unescape
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from library_common import clean_scraped_url  # noqa: E402
 ITEMS = ROOT / "collections" / "oecd-navigator" / "items.json"
 CACHE = ROOT / "cache" / "oecd_dates.json"
 UA = (
@@ -144,7 +146,7 @@ def expand_urls(raw_urls: list[str]) -> list[str]:
         if not parts and text.startswith("http"):
             parts = [text.split()[0]]
         for p in parts:
-            u = re.sub(r"[\x00-\x1f\x7f]", "", p).rstrip(".,);]'\"")
+            u = clean_scraped_url(p)
             if not u.startswith("http") or u in seen:
                 continue
             seen.add(u)

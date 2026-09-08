@@ -33,7 +33,13 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from enrich_ko import ensure_openrouter_key, llm_json  # noqa: E402
 from issuer_levels import ISSUER_IDS, ISSUER_LEVELS, migrate_legacy_lab_kind  # noqa: E402
-from library_common import write_json  # noqa: E402
+from library_common import (  # noqa: E402
+    clean_scraped_url,
+    known_instrument_group_key,
+    normalize_url,
+    titles_look_same_instrument,
+    write_json,
+)
 from parse_meta import DOC_KINDS  # noqa: E402
 from topics import TOPIC_COLORS, TOPIC_ORDER, topic_icon, topic_label  # noqa: E402
 
@@ -219,7 +225,7 @@ def expand_urls(raw_urls) -> list[str]:
         if not parts and text.startswith("http"):
             parts = [text.split()[0]]
         for p in parts:
-            u = re.sub(r"[\x00-\x1f\x7f]", "", p).rstrip(".,);]'\"")
+            u = clean_scraped_url(p)
             if u.startswith("http") and u not in seen:
                 seen.add(u)
                 out.append(u)
@@ -407,13 +413,98 @@ topics.evidence가 비면 그 토픽은 넣지 마세요.
     return normalize_entry(raw if isinstance(raw, dict) else {})
 
 
+def _doc_id_from_seed(seed: str) -> str:
+    seed = (seed or "").strip()
+    if not seed:
+        return ""
+    return "doc-" + hashlib.sha1(seed.encode("utf-8")).hexdigest()[:12]
+
+
+def _doc_ids_from_url(url: str) -> list[str]:
+    raw = (url or "").strip()
+    if not raw:
+        return []
+    nu = normalize_url(raw) if raw.startswith(("http://", "https://")) else raw
+    seeds = [raw]
+    if nu and nu not in seeds:
+        seeds.append(nu)
+    if nu:
+        seeds.append(f"url:{nu}")
+    out: list[str] = []
+    seen: set[str] = set()
+    for s in seeds:
+        did = _doc_id_from_seed(s)
+        if did and did not in seen:
+            seen.add(did)
+            out.append(did)
+    return out
+
+
+def _cache_score(entry: dict) -> tuple[int, str]:
+    body = entry.get("result") or entry
+    if not isinstance(body, dict):
+        return (-1, "")
+    conf = body.get("confidence") or "low"
+    sc = 0
+    if body.get("in_scope"):
+        sc += 10
+    if conf == "high":
+        sc += 3
+    elif conf == "medium":
+        sc += 1
+    sn = str(body.get("short_name") or "")
+    if re.search(r"[가-힣]", sn):
+        sc += 5
+    return sc, sn
+
+
+def cache_entry_for_doc(doc: dict, cache: dict) -> dict | None:
+    """문서 id가 바뀌어도(동일 원문 URL 병합) 기존 큐레이션을 재사용."""
+
+    did = doc.get("id") or ""
+    if did and did in cache:
+        return cache[did]
+    seen: set[str] = set()
+    cands: list[dict] = []
+    orig = " ".join(
+        str(doc.get(k) or "")
+        for k in ("title", "short_name", "original_name", "full_name")
+    )
+    urls = [doc.get("canonical_url") or ""]
+    for h in doc.get("history") or []:
+        if isinstance(h, dict):
+            urls.append(h.get("url") or "")
+    for extra in doc.get("_cache_urls") or []:
+        urls.append(extra)
+    for raw in urls:
+        for piece in expand_urls([raw]) or [raw]:
+            for alt in _doc_ids_from_url(piece):
+                if not alt or alt in seen:
+                    continue
+                seen.add(alt)
+                if alt not in cache:
+                    continue
+                entry = cache[alt]
+                body = entry.get("result") or entry
+                sn = str((body or {}).get("short_name") or "") if isinstance(body, dict) else ""
+                if sn and orig and not titles_look_same_instrument(sn, orig):
+                    k_sn = known_instrument_group_key(sn)
+                    k_orig = known_instrument_group_key(orig)
+                    if not (k_sn and k_sn == k_orig):
+                        continue
+                cands.append(entry)
+    if not cands:
+        return None
+    cands.sort(key=_cache_score, reverse=True)
+    return cands[0]
+
+
 def apply_cache_to_docs(docs: list[dict], cache: dict | None = None) -> dict:
     """고·중신뢰 큐레이션을 문서에 반영."""
     cache = cache if cache is not None else load_cache()
     stats: Counter = Counter()
     for d in docs:
-        did = d.get("id") or ""
-        entry = cache.get(did)
+        entry = cache_entry_for_doc(d, cache)
         if not entry:
             continue
         body = entry.get("result") or entry
@@ -422,8 +513,8 @@ def apply_cache_to_docs(docs: list[dict], cache: dict | None = None) -> dict:
         conf = body.get("confidence") or "low"
         if conf not in CONF_OK:
             stats["skip_low_conf"] += 1
-            # 저신뢰여도 LLM이 요약을 비웠으면 원문 폴백을 남기지 않는다.
-            if "summary" in body:
+            # 저신뢰 빈 요약은 이미 있는 원문 요약을 지우지 않는다.
+            if "summary" in body and not (d.get("summary") or "").strip():
                 s = str(body.get("summary") or "").strip()
                 if not s or is_hollow_summary(s):
                     d["summary"] = ""
@@ -480,11 +571,16 @@ def apply_cache_to_docs(docs: list[dict], cache: dict | None = None) -> dict:
             summary = str(body.get("summary") or "").strip()
             if is_hollow_summary(summary):
                 summary = ""
-            d["summary"] = summary
-            d["snippet"] = summary[:500] if summary else ""
-            stats["summary"] += 1
-            if not summary:
+            if summary:
+                d["summary"] = summary
+                d["snippet"] = summary[:500]
+                stats["summary"] += 1
+            elif not (d.get("summary") or "").strip():
+                d["summary"] = ""
+                d["snippet"] = ""
                 stats["summary_cleared"] = stats.get("summary_cleared", 0) + 1
+            else:
+                stats["summary_kept"] += 1
 
         pconf = body.get("published_confidence") or "none"
         if body.get("published") and pconf in CONF_OK:

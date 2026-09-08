@@ -14,23 +14,27 @@ from classify_safety import apply_safety_scope  # noqa: E402
 from library_common import (  # noqa: E402
     COLLECTIONS,
     ROOT,
-    ORG_FLAGS,
     act_base_name,
     act_section_key,
     act_short_name,
     as_url_list,
     candidate_originals,
-    country_from_item,
     country_label_ko,
+    choose_group_country,
     flag_emoji,
     format_act_section_labels,
     is_curator_url,
+    is_http_url,
     is_parent_act_url,
     is_scrape_chrome,
+    known_instrument_group_key,
     korean_title_rank,
     load_collection,
     normalize_url,
     pick_canonical,
+    pick_group_canonical,
+    item_legislation_family,
+    url_owners_should_merge,
     write_json,
 )
 from parse_meta import extract_meta, lifecycle_label  # noqa: E402
@@ -149,7 +153,7 @@ def build_documents(*, skip_instrument_merge: bool = False) -> list[dict]:
     item_buckets = load_item_split_buckets()
     # Group key: prefer confirmed instrument split, else same-document cluster, else URL
     groups: dict[str, list[dict]] = defaultdict(list)
-    unkeyed: list[dict] = []
+    pending: list[dict] = []
 
     for key, _name in COLLECTIONS:
         path = ROOT / "collections" / key / "items.json"
@@ -157,25 +161,54 @@ def build_documents(*, skip_instrument_merge: bool = False) -> list[dict]:
             continue
         data = load_collection(key)
         for it in data.get("items") or []:
-            # Parent bundles that were expanded into per-PDF children → skip
             if it.get("id") in split_parents:
                 continue
-            item_id = it.get("id") or ""
-            bucket = item_buckets.get(item_id)
-            if bucket:
-                groups[f"split:{bucket}"].append(it)
-                continue
-            canon = pick_canonical(it)
-            cluster = membership.get(item_id, "")
-            if cluster:
-                groups[f"cluster:{cluster}"].append(it)
-            elif canon:
-                nu = normalize_url(canon)
-                # Parent bill/act URLs (congress.gov etc.) may have many AGORA
-                # section cards — merge into one document per act.
-                groups[f"url:{nu}"].append(it)
+            pending.append(it)
+
+    url_owners: dict[str, list[dict]] = defaultdict(list)
+    for it in pending:
+        canon = pick_canonical(it)
+        if not canon:
+            continue
+        url_owners[normalize_url(canon)].append(it)
+    contested_urls = {
+        nu for nu, its in url_owners.items() if nu and not url_owners_should_merge(its)
+    }
+
+    for it in pending:
+        item_id = it.get("id") or ""
+        fp = known_instrument_group_key(
+            it.get("title") or "",
+            it.get("document_name") or "",
+            it.get("original_name") or "",
+        )
+        if fp:
+            groups[f"instr:{fp}"].append(it)
+            continue
+        bucket = item_buckets.get(item_id)
+        if bucket:
+            groups[f"split:{bucket}"].append(it)
+            continue
+        fam = item_legislation_family(it)
+        if fam:
+            groups[f"leg:{fam}"].append(it)
+            continue
+        cluster = membership.get(item_id, "")
+        if cluster:
+            groups[f"cluster:{cluster}"].append(it)
+            continue
+        canon = pick_canonical(it, skip_normalized=contested_urls)
+        if not canon:
+            continue
+        nu = normalize_url(canon)
+        if nu in contested_urls:
+            page = (it.get("page_url") or "").strip()
+            if page and is_http_url(page):
+                groups[f"url:{normalize_url(page)}"].append(it)
             else:
-                unkeyed.append(it)
+                groups[f"item:{item_id}"].append(it)
+            continue
+        groups[f"url:{nu}"].append(it)
 
     # Attach parent curator records to derived-split groups (history only)
     parent_items: dict[str, dict] = {}
@@ -190,6 +223,8 @@ def build_documents(*, skip_instrument_merge: bool = False) -> list[dict]:
                 parent_items[it["id"]] = it
 
     for gkey, members in list(groups.items()):
+        if not gkey.startswith("split:"):
+            continue
         for m in list(members):
             pid = m.get("parent_id")
             if pid and pid in parent_items:
@@ -199,13 +234,9 @@ def build_documents(*, skip_instrument_merge: bool = False) -> list[dict]:
 
     docs = []
     for gkey, members in groups.items():
-        # Resolve canonical: prefer any member's original
-        canon = ""
-        for m in members:
-            c = pick_canonical(m)
-            if c:
-                canon = c
-                break
+        # Resolve canonical: prefer a landing that isn't shared by unrelated items
+        skip = None if gkey.startswith(("instr:", "leg:")) else contested_urls
+        canon = pick_group_canonical(members, skip_normalized=skip)
         if not canon:
             continue
 
@@ -241,31 +272,6 @@ def build_documents(*, skip_instrument_merge: bool = False) -> list[dict]:
         if "법" in member_kinds and meta.get("doc_kind") == "법안":
             meta = dict(meta)
             meta["doc_kind"] = "법"
-
-        # Jurisdiction: prefer a real country, else org-with-flag (EU/UN), else International
-        country = ""
-        if meta.get("country_hint"):
-            from library_common import resolve_org_or_country
-
-            country = resolve_org_or_country(meta["country_hint"]) or ""
-        if not country:
-            for m in members:
-                c = country_from_item(m)
-                if c and c != "International" and c not in ORG_FLAGS:
-                    country = c
-                    break
-        if not country:
-            for m in members:
-                c = country_from_item(m)
-                if c and c in ORG_FLAGS:
-                    country = c
-                    break
-        if not country:
-            for m in members:
-                c = country_from_item(m)
-                if c:
-                    country = c
-                    break
 
         short_name = meta.get("short_name") or short_name_fallback(title)
         short_name = re.sub(r"^[［\[][^］\]]+[］\]]\s*", "", short_name).strip()
@@ -324,10 +330,23 @@ def build_documents(*, skip_instrument_merge: bool = False) -> list[dict]:
                 if b:
                     short_name = b
                     break
+        country = choose_group_country(
+            members,
+            extra_text=" ".join(
+                [
+                    title,
+                    short_name,
+                    full_name,
+                    original_name,
+                    meta.get("country_hint") or "",
+                ]
+            ),
+        )
         # OECD template titles omit the country — prefix for disambiguation
         country_ko = country_label_ko(country) if country else ""
         if (
             country_ko
+            and country != "International"
             and any((m.get("collection") or "") == "oecd-navigator" for m in members)
             and country_ko not in short_name
             and (country or "").lower() not in (short_name + " " + original_name).lower()
@@ -343,13 +362,11 @@ def build_documents(*, skip_instrument_merge: bool = False) -> list[dict]:
                 col = m.get("collection") or ""
                 if col in ("iaae-ethics", "derived-splits"):
                     continue
-                body = (m.get("body") or "").strip()
-                if not body or is_scrape_chrome(body):
-                    continue
-                if "●핵심내용" in body:
-                    summary = extract_meta(m).get("summary") or ""
-                    if is_scrape_chrome(summary):
-                        summary = ""
+                s = extract_meta(m).get("summary") or ""
+                if is_scrape_chrome(s):
+                    s = ""
+                if s:
+                    summary = s
                     break
         if merge_as_act and len(section_titles) >= 2:
             sec_list = format_act_section_labels(section_titles)
@@ -401,12 +418,14 @@ def build_documents(*, skip_instrument_merge: bool = False) -> list[dict]:
             dates = [h["date"] for h in history if h["date"]]
             published = max(dates) if dates else ""
 
-        display_country = "" if country == "International" else country
-        # Stable id: section-split / cluster keys must hash the full group key.
-        if gkey.startswith("url:") or gkey.startswith("cluster:"):
-            id_seed = gkey
-        else:
-            id_seed = canon or gkey
+        display_country = country
+        cache_urls: list[str] = []
+        for m in members:
+            cache_urls.extend(candidate_originals(m))
+            if m.get("page_url"):
+                cache_urls.append(m["page_url"])
+        # Stable id: 그룹 키 전체를 해시해 split 버킷이 같은 원문 URL을 써도 겹치지 않게 한다.
+        id_seed = gkey
 
         doc_kind = meta.get("doc_kind") or "기타"
         # Prefer Enacted status when merging; otherwise first member status.
@@ -459,19 +478,12 @@ def build_documents(*, skip_instrument_merge: bool = False) -> list[dict]:
                 "history": history,
                 "member_ids": [m.get("id") for m in members],
                 "member_count": len(members),
+                "_cache_urls": cache_urls,
             }
         )
 
     docs.sort(key=lambda d: d.get("published") or "", reverse=True)
     apply_safety_scope(docs)
-    try:
-        from enrich_ko import apply_cache_to_docs
-
-        n = apply_cache_to_docs(docs)
-        if n:
-            print(f"ko_enrich applied to {n} fields/docs")
-    except Exception as e:
-        print("ko_enrich skip:", e)
     try:
         from curate_llm import apply_cache_to_docs as apply_curation
 
@@ -491,6 +503,23 @@ def build_documents(*, skip_instrument_merge: bool = False) -> list[dict]:
                 print(f"instrument_merge applied: {merge_stats}")
         except Exception as e:
             print("instrument_merge skip:", e)
+    # 한글 약칭은 큐레이션·합성 뒤에 적용해 한·영 혼용 제목이 다시 덮이지 않게 한다.
+    try:
+        from enrich_ko import apply_cache_to_docs
+
+        n = apply_cache_to_docs(docs)
+        if n:
+            print(f"ko_enrich applied to {n} fields/docs")
+    except Exception as e:
+        print("ko_enrich skip:", e)
+    try:
+        from library_common import fill_missing_country
+
+        filled = sum(1 for d in docs if fill_missing_country(d))
+        if filled:
+            print(f"country filled from title/org: {filled}")
+    except Exception as e:
+        print("country fill skip:", e)
     try:
         from issuer_levels import apply_issuer_taxonomy
 
@@ -499,6 +528,39 @@ def build_documents(*, skip_instrument_merge: bool = False) -> list[dict]:
             print(f"issuer_level applied: {iss}")
     except Exception as e:
         print("issuer_level skip:", e)
+    try:
+        from library_common import (
+            apply_revision_labels,
+            disambiguate_duplicate_short_names,
+            polish_short_names,
+        )
+
+        nrev = apply_revision_labels(docs)
+        if nrev:
+            print(f"revision labels applied: {nrev}")
+        npol = polish_short_names(docs)
+        if npol:
+            print(f"short names polished: {npol}")
+        ndup = disambiguate_duplicate_short_names(docs)
+        if ndup:
+            print(f"duplicate short names labeled: {ndup}")
+    except Exception as e:
+        print("revision label skip:", e)
+    for d in docs:
+        d.pop("_cache_urls", None)
+    seen_ids: set[str] = set()
+    collisions = 0
+    for d in docs:
+        did = d.get("id") or ""
+        if did not in seen_ids:
+            seen_ids.add(did)
+            continue
+        collisions += 1
+        extra = "|" + "|".join(str(x) for x in (d.get("member_ids") or []) if x)
+        d["id"] = doc_id_for(did + extra)
+        seen_ids.add(d["id"])
+    if collisions:
+        print(f"doc id collisions remapped: {collisions}")
     return docs
 
 

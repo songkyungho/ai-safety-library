@@ -16,6 +16,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from library_common import (  # noqa: E402
     ROOT,
     as_url_list,
+    clean_scraped_url,
     is_bad_original,
     is_curator_url,
     is_http_url,
@@ -72,7 +73,7 @@ def extract_links(html: str) -> list[str]:
     }
 
     def add(url: str, *, allow_chrome: bool = False) -> None:
-        url = url.strip().rstrip(").,;\"'")
+        url = clean_scraped_url(url)
         url = html_mod.unescape(url)
         if not is_http_url(url):
             return

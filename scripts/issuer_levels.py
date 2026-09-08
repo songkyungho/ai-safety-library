@@ -10,6 +10,11 @@ from __future__ import annotations
 import re
 from typing import Any
 
+try:
+    from library_common import ORG_FLAGS
+except Exception:  # pragma: no cover — scripts 단독 실행 시
+    ORG_FLAGS = {}
+
 # id → 한국어 라벨 (필터·배지)
 ISSUER_LEVELS: list[tuple[str, str]] = [
     ("international", "국제기구·다자"),
@@ -135,13 +140,19 @@ _SUBNAT_ORG = re.compile(
     r"autonomous city|"
     r"\bstate governments?\b|"
     r"(?<!ministry of )(?<!department of )\blocal governments?\b|"
-    r"플란데런|플란더스|\bflanders\b|\bvlaander",
+    r"플란데런|플란더스|\bflanders\b|\bvlaander|"
+    r"scottish government|welsh government|"
+    r"government of new south wales|"
+    r"government of flanders",
     re.I,
 )
 _SUBNAT_TITLE = re.compile(
     r"교육청|특별자치도|특별자치시|광역시|조례|"
     r"\bcity of\b|\bcounty of\b|"
-    r"\b(SB|AB|HB|HF|HCR|SCR)\s*\d+",
+    r"\b(SB|AB|HB|HF|HCR|SCR)\s*\d+|"
+    r"\(Subnational:|"
+    r"플란데런|플란더스|\bflanders\b|"
+    r"스코틀랜드\s*국가",
     re.I,
 )
 # 국가명만 org에 있고 지방 신호가 없으면 주 문서로 보지 않는다.
@@ -172,16 +183,34 @@ _LAB_ORG = re.compile(
     r"\b(openai|anthropic|google\s*deepmind|deepmind|meta\s*ai|"
     r"microsoft|amazon|xai|inflection|mistral|cohere|"
     r"naver|kakao|samsung|upstage|ncsoft|lg\s*ai|"
-    r"skt|sk\s*telecom)\b",
+    r"skt|sk\s*telecom|nvidia|g42|meta)\b",
+    re.I,
+)
+_COMPANY_ORG = re.compile(
+    r"\b(ibm|google|softbank|rolls[-\s]?royce)\b|"
+    r"소프트뱅크|롤스로이스|구글|CJ올리브|KB금융|"
+    r"private-sector companies",
+    re.I,
+)
+_CIVIL_ORG_FORCE = re.compile(
+    r"대학교|university|berkman|turing institute|스탠포드|앨런튜링|"
+    r"교황청|holy see|vatican|"
+    r"정보통신정책연구원|문화재단|\biaae\b|\bkaiea\b|"
+    r"소프트웨어야놀자|아름다운인터넷세상|\bAI4SCHOOL\b|교사연구회",
+    re.I,
+)
+_SUMMIT_FORCE = re.compile(
+    r"ai safety summit|ai action summit|ai seoul summit|"
+    r"bletchley|블레츨리|ai 서울 정상|서울 정상회의",
     re.I,
 )
 _INDUSTRY = re.compile(
-    r"\b(association|chamber|\bbsa\b|partnership on ai|"
+    r"\b(association|chamber|\bbsa\b|\biti\b|partnership on ai|"
     r"업계|협회|연맹|컨소시엄)\b",
     re.I,
 )
 _CIVIL = re.compile(
-    r"\b(iaae|metr\b|future of life|\bfli\b|stanford|berkeley|"
+    r"\b(iaae|kaiea|metr\b|future of life|\bfli\b|stanford|berkeley|"
     r"university|institute|think\s*tank|\bngo\b|civil\s*society|"
     r"시민|학회|연구소|대학|싱크탱크)\b",
     re.I,
@@ -218,10 +247,11 @@ def _issuer_looks_subnational(org: str, title: str) -> bool:
         return True
     if o and _SUBNAT_ORG.search(o):
         return True
+    # OECD "(Subnational: Alberta)" 등: org가 국가명이어도 제목 지방 신호가 우선.
+    if t and _SUBNAT_TITLE.search(t):
+        return True
     if _COUNTRY_ORG.match(o):
         return False
-    if t and _SUBNAT_TITLE.search(t) and not _COUNTRY_ORG.match(o):
-        return True
     return False
 
 
@@ -256,15 +286,44 @@ def _is_lab_member(doc: dict[str, Any]) -> bool:
     return False
 
 
+def _issuer_from_identity(org: str, title: str, doc: dict[str, Any]) -> str:
+    """org·제목이 분명한 층위면 LLM 프리셋보다 우선."""
+    if _is_lab_member(doc) or _LAB_ORG.search(org):
+        return "lab"
+    if re.search(r"private-sector companies", org, re.I):
+        return "lab" if re.search(r"정상회의|summit", title, re.I) else "industry"
+    if _COMPANY_ORG.search(org):
+        return "industry"
+    if _INDUSTRY.search(org):
+        return "industry"
+    if _CIVIL_ORG_FORCE.search(org):
+        return "civil_society"
+    if _SUMMIT_FORCE.search(org) or _SUMMIT_FORCE.search(title):
+        return "international"
+    return ""
+
+
 def infer_issuer_level(doc: dict[str, Any]) -> str:
     """문서 메타로 주 발급 층위 1개 추정."""
     org = str(doc.get("org") or "")
     title = _title_blob(doc)
+    preset = str(doc.get("issuer_level") or "").strip()
+    country = str(doc.get("country") or "")
     # org·제목의 지방 신호는 LLM이 national/ministry로 둔 경우에도 우선.
     if _issuer_looks_subnational(org, title):
         return "subnational"
 
-    preset = str(doc.get("issuer_level") or "").strip()
+    ident = _issuer_from_identity(org, title, doc)
+    if ident:
+        return ident
+
+    # 다자·국제기구 관할은 국가/부처 프리셋보다 우선.
+    if country == "International" or country in ORG_FLAGS:
+        if preset in ("national", "ministry", "subnational", ""):
+            return "international"
+        if preset in ISSUER_IDS:
+            return preset
+
     if preset in ISSUER_IDS:
         # 국가명만 있는 org를 지방으로 둔 LLM 오분류는 다시 본다.
         if not (preset == "subnational" and _COUNTRY_ORG.match(org.strip())):
@@ -274,7 +333,6 @@ def infer_issuer_level(doc: dict[str, Any]) -> str:
     if kind == LEGACY_LAB_KIND or _is_lab_member(doc):
         return "lab"
 
-    country = str(doc.get("country") or "")
     summary = str(doc.get("summary") or "")
     blob = f"{org} {country} {title} {summary} {kind}"
 

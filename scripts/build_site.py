@@ -341,6 +341,8 @@ def _country_subject_patterns() -> list[str]:
         "오만": r"오만(?![한함])",
         "가나": r"가나(?![능히])",
         "이란": r"이란(?![가-힣])",
+        "멕시코": r"(?<!뉴)멕시코",
+        "아일랜드": r"(?<!로드)아일랜드",
     }
     ko_names: list[str] = []
     en_lits: list[str] = []

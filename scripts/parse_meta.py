@@ -89,6 +89,9 @@ def parse_bullet_fields(body: str) -> dict[str, str]:
             continue
         m = re.match(r"^([^:：\n]{1,40})\s*[:：]\s*([\s\S]*)$", part)
         if not m:
+            # 외교부 본문에 ●핵심내용 다음 콜론이 없는 경우
+            m = re.match(r"^(핵심내용)([\s\S]+)$", part)
+        if not m:
             continue
         out[m.group(1).strip()] = m.group(2).strip()
     return out

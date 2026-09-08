@@ -133,14 +133,14 @@
 | 2020-08-04 | OECD | [[OECD] OECD AI 권고안 (OECD Principles on AI)](https://iaae.ai/research/?bmode=view&idx=4384428) | [원문](http://www.oecd.org/going-digital/ai/principles) |
 | 2020-08-04 | 마이크로소프트 | [[마이크로소프트] MS AI 원칙 (Microsoft AI principles)](https://iaae.ai/research/?bmode=view&idx=4384409) | [원문](http://www.microsoft.com/en-us/ai/responsible-ai?activetab=pivot1:primaryr6) |
 | 2020-08-04 | 구글 | [[구글] 구글 AI 원칙 (Artificial Intelligence at Google: Our Principles)](https://iaae.ai/research/?bmode=view&idx=4384387) | [원문](http://ai.google/principles) |
-| 2020-08-04 | FUTURE OF LIFE | [[FUTURE OF LIFE] 아실로마 AI 원칙 (Asilomar AI Principles)](https://iaae.ai/research/?bmode=view&idx=4384368) | [원문](http://futureoflife.org) |
+| 2020-08-04 | FUTURE OF LIFE | [[FUTURE OF LIFE] 아실로마 AI 원칙 (Asilomar AI Principles)](https://iaae.ai/research/?bmode=view&idx=4384368) | [원문](https://futureoflife.org/open-letter/ai-principles/) |
 | 2020-08-04 | 카카오 | [[카카오] 알고리즘 윤리 헌장](https://iaae.ai/research/?bmode=view&idx=4384325) |  |
 | 2020-08-04 | 방송통신위원회 | [[방송통신위원회] 이용자 중심의 지능정보사회를 위한 원칙](https://iaae.ai/research/?bmode=view&idx=4384245) |  |
 | 2020-08-04 | 한국과학기술기획평가원 | [[한국과학기술기획평가원] 인공지능 기술 발전에 따른 이슈 및 대응 방안](https://iaae.ai/research/?bmode=view&idx=4384190) |  |
 | 2020-08-04 | IEEE | [[IEEE] 윤리적 인공지능 시스템 개발을 위한 설계 계획](https://iaae.ai/research/?bmode=view&idx=4384135) |  |
 | 2020-08-04 | EU 집행위원회 | [[EU 집행위원회] 신뢰할 수 있는 AI 윤리 가이드라인](https://iaae.ai/research/?bmode=view&idx=4384062) |  |
-| 2020-08-04 | 몬트리올대학교 | [[몬트리올대학교] AI윤리원칙 몬트리올 선언 (Montréal Declaration)](https://iaae.ai/research/?bmode=view&idx=4383949) |  |
-| 2020-08-04 | 로마교황청 | [[로마교황청] 로마교황청 발표 AI 윤리 백서 '로마 콜(Rome Call)'](https://iaae.ai/research/?bmode=view&idx=4383901) |  |
+| 2020-08-04 | 몬트리올대학교 | [[몬트리올대학교] AI윤리원칙 몬트리올 선언 (Montréal Declaration)](https://iaae.ai/research/?bmode=view&idx=4383949) | [원문](https://montrealdeclaration-responsibleai.com/) |
+| 2020-08-04 | 로마교황청 | [[로마교황청] 로마교황청 발표 AI 윤리 백서 '로마 콜(Rome Call)'](https://iaae.ai/research/?bmode=view&idx=4383901) | [원문](https://romecall.org/) |
 | 2020-08-04 | 정보통신정책연구원 | [[정보통신정책연구원] 4차산업혁명 시대 산업별 인공지능 윤리이슈 분석 및 정책적 대응방안](https://iaae.ai/research/?bmode=view&idx=4383715) |  |
 | 2020-08-04 | 한국정보화진흥원 | [[한국정보화진흥원] 인공지능 윤리 가이드라인](https://iaae.ai/research/?bmode=view&idx=4383692) |  |
 | 2019-12-19 | KAIEA | [[KAIEA] KAIEA 인공지능 윤리 헌장_191219개정 (영문본)](https://iaae.ai/research/?bmode=view&idx=2868466) |  |

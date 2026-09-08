@@ -2278,7 +2278,7 @@
       "date": "2020-08-04",
       "page_url": "https://iaae.ai/research/?bmode=view&idx=4384368",
       "source_urls": [
-        "http://futureoflife.org"
+        "https://futureoflife.org/open-letter/ai-principles/"
       ],
       "body": "",
       "digest_file": "2020-08-04.md",
@@ -2370,7 +2370,9 @@
       "category": "몬트리올대학교",
       "date": "2020-08-04",
       "page_url": "https://iaae.ai/research/?bmode=view&idx=4383949",
-      "source_urls": [],
+      "source_urls": [
+        "https://montrealdeclaration-responsibleai.com/"
+      ],
       "body": "",
       "digest_file": "2020-08-04.md",
       "list_page": null
@@ -2385,7 +2387,9 @@
       "category": "로마교황청",
       "date": "2020-08-04",
       "page_url": "https://iaae.ai/research/?bmode=view&idx=4383901",
-      "source_urls": [],
+      "source_urls": [
+        "https://romecall.org/"
+      ],
       "body": "",
       "digest_file": "2020-08-04.md",
       "list_page": null

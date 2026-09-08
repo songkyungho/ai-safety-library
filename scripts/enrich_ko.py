@@ -4,7 +4,8 @@
 사용:
   python3 scripts/enrich_ko.py --limit 30          # 샘플
   python3 scripts/enrich_ko.py --limit 200         # 배치
-  python3 scripts/enrich_ko.py --missing-only      # 미번역만
+  python3 scripts/enrich_ko.py --leftover-titles --force --limit 80
+  python3 scripts/enrich_ko.py --english-titles --limit 80
   python3 scripts/build_site.py                    # 캐시 반영 후 사이트 빌드
 
 캐시: cache/ko_enrich.json  (doc id → short_name / summary)
@@ -35,6 +36,67 @@ DEFAULT_MODEL = os.environ.get("OPENROUTER_MODEL") or "openai/gpt-5.6-luna"
 TODAY = date.today().isoformat()
 _HANGUL = re.compile(r"[가-힣]")
 _LATIN = re.compile(r"[A-Za-z]")
+_EN_WORD = re.compile(r"\b[A-Za-z][A-Za-z'’-]{2,}\b")
+# 약칭에 남아도 되는 짧은 고유명·법안 번호. 일반 영어 명사는 여기 두지 않는다.
+_LEFTOVER_KEEP = {
+    "the",
+    "and",
+    "for",
+    "of",
+    "on",
+    "in",
+    "to",
+    "a",
+    "an",
+    "or",
+    "ai",
+    "act",
+    "bill",
+    "hr",
+    "sb",
+    "ab",
+    "s",
+    "scr",
+    "acr",
+    "eu",
+    "un",
+    "oecd",
+    "unesco",
+    "g7",
+    "g20",
+    "nato",
+    "iso",
+    "ieee",
+    "itu",
+    "gpai",
+    "who",
+    "ilo",
+    "wipo",
+    "nist",
+    "gpt",
+    "llm",
+    "api",
+}
+# 프로그램·프레임워크 고유명은 한·영 병기를 유지한다.
+_SKIP_PROPER = re.compile(
+    r"Defense Innovation Board|Health Data Lab|AI Essentials|Aletheia|"
+    r"TechGirls|IBM.?s Principles|Grant Connect|Privacy Act|"
+    r"Embedded EthiCS|Copilot|Tampere Pulse|verkstaden|Pax Silica|"
+    r"Magnifica Humanitas|DAEDALUS|Tipping Point|GovTech Sandbox|"
+    r"Cultural AI Lab|SeCoIA|Regulatory Sandbox|Project Nimbus|"
+    r"Project Explain|KI@Polizei|Police AI|INDIAai|Evaluation Sandbox|"
+    r"Stakeholder Forum|Source List|Frontier Safety|Miami-Dade|"
+    r"Kendall County|Asilomar|Rome Call|Responsible Scaling|Scaling 정책|"
+    r"DeepMind|GovAI Chat|AMALIA|ALLiaNCE|Leuven\.AI|AI4Citizens|"
+    r"\bSURF\b|xPlain-AI|AI Politeia Lab|fAIr LAC|AiLECS|"
+    r"Constitutional AI|TRAIL\(",
+    re.I,
+)
+_EN_TITLE_SIGNAL = re.compile(
+    r"\b(Act|NDAA|IAA|AB-|HR\s|Bill|Principles|Authority|Report|"
+    r"Faculty|Index|Uzbekistan|Appropriations|Program)\b",
+    re.I,
+)
 
 
 def load_env_file(path: Path) -> None:
@@ -77,6 +139,69 @@ def hangul_ratio(text: str) -> float:
 def src_hash(short: str, summary: str, original: str) -> str:
     blob = f"{short}\n{original}\n{summary}".encode("utf-8")
     return hashlib.sha256(blob).hexdigest()[:16]
+
+
+def leftover_english_words(text: str) -> list[str]:
+    """한글 약칭에 남은 일반 영어 단어. 짧은 대문자 약어는 제외."""
+    out: list[str] = []
+    for w in _EN_WORD.findall(text or ""):
+        if w.lower() in _LEFTOVER_KEEP:
+            continue
+        if w.isupper() and len(w) <= 6:
+            continue
+        out.append(w)
+    return out
+
+
+_BILL_HOST = re.compile(r"congress\.gov|legislature\.ca\.gov", re.I)
+
+
+def leftover_title_needs_rewrite(
+    doc: dict, *, min_words: int = 3, bills_only: bool = False
+) -> bool:
+    """한글이 있는데 일반 영어 단어가 남은 약칭. 고유명 병기는 건너뛴다."""
+    short = doc.get("short_name") or doc.get("title") or ""
+    original = doc.get("original_name") or ""
+    if _SKIP_PROPER.search(short) or _SKIP_PROPER.search(original):
+        return False
+    if not _HANGUL.search(short):
+        return False
+    if bills_only:
+        urls = [doc.get("canonical_url") or ""]
+        for h in doc.get("history") or []:
+            if isinstance(h, dict):
+                urls.append(h.get("url") or "")
+        if not _BILL_HOST.search(" ".join(urls)):
+            return False
+    return len(leftover_english_words(short)) >= min_words
+
+
+def english_summary_needs_rewrite(doc: dict) -> bool:
+    """한글 약칭인데 핵심내용이 영어인 카드."""
+    short = doc.get("short_name") or doc.get("title") or ""
+    summary = doc.get("summary") or ""
+    if not _HANGUL.search(short):
+        return False
+    if len(summary) < 40:
+        return False
+    return hangul_ratio(summary) < 0.2
+
+
+def english_title_needs_rewrite(doc: dict) -> bool:
+    """한글이 없는 약칭. 프로그램·랩 고유명은 건너뛰고 법안·기관명만 옮긴다."""
+    short = doc.get("short_name") or doc.get("title") or ""
+    original = doc.get("original_name") or ""
+    if _HANGUL.search(short):
+        return False
+    if _SKIP_PROPER.search(short) or _SKIP_PROPER.search(original):
+        return False
+    if _EN_TITLE_SIGNAL.search(short):
+        return True
+    urls = [doc.get("canonical_url") or ""]
+    for h in doc.get("history") or []:
+        if isinstance(h, dict):
+            urls.append(h.get("url") or "")
+    return bool(_BILL_HOST.search(" ".join(urls)))
 
 
 def needs_enrich(doc: dict) -> bool:
@@ -147,8 +272,32 @@ SYSTEM = """당신은 AI 안전·거버넌스 문서 큐레이터입니다.
 4) JSON만 출력: {"short_name":"...","summary":"..."}
 """
 
+SYSTEM_LEFTOVER = """당신은 AI 안전·거버넌스 문서 큐레이터입니다.
+표시 제목에 한글과 영어가 섞여 있습니다. 원문 제목을 보고 한국어 약칭을 새로 씁니다.
 
-def enrich_one(doc: dict, *, model: str) -> dict:
+규칙:
+1) short_name은 한국어. amend, direct, Secretary, require, relating, establish 같은
+   일반 영어 단어는 쓰지 않습니다. 영어는 법안 번호(HR 1142, S 1974, AB 682)와
+   공식 약어(AI, OECD, NIST 등)만 허용합니다.
+2) 법의 대상과 목적을 짧게 한국어로 쓰고, 원문 제목을 직역해 영어 단어를 남기지 않습니다.
+3) summary: 한국어 핵심내용. 3~6문장. 원문에 없는 사실 금지.
+4) JSON만 출력: {"short_name":"...","summary":"..."}
+"""
+
+SYSTEM_SUMMARY = """당신은 AI 안전·거버넌스 문서 큐레이터입니다.
+표시 제목은 이미 한국어입니다. short_name은 입력과 똑같이 두고, summary만 한국어로 씁니다.
+
+규칙:
+1) short_name은 받은 표시 제목을 그대로 반환합니다. 바꾸지 않습니다.
+2) summary: 한국어 핵심내용. 3~6문장. 원문에 없는 사실 금지.
+   서론·마케팅 문구 금지.
+3) JSON만 출력: {"short_name":"...","summary":"..."}
+"""
+
+
+def enrich_one(
+    doc: dict, *, model: str, leftover: bool = False, summary_only: bool = False
+) -> dict:
     short = doc.get("short_name") or doc.get("title") or ""
     original = doc.get("original_name") or ""
     summary = (doc.get("summary") or "")[:3500]
@@ -157,15 +306,25 @@ def enrich_one(doc: dict, *, model: str) -> dict:
     country = doc.get("country_ko") or doc.get("country") or ""
     user = (
         f"국가/기구: {country}\n기관: {org}\n문서종류: {kind}\n"
-        f"표시 제목: {short}\n원문 제목: {original}\n\n핵심내용(원문):\n{summary}"
+        f"표시 제목(참고): {short}\n원문 제목(이것을 번역): {original}\n\n"
+        f"핵심내용(원문):\n{summary}"
     )
-    return llm_json(
+    if summary_only:
+        system = SYSTEM_SUMMARY
+    elif leftover:
+        system = SYSTEM_LEFTOVER
+    else:
+        system = SYSTEM
+    out = llm_json(
         model,
         [
-            {"role": "system", "content": SYSTEM},
+            {"role": "system", "content": system},
             {"role": "user", "content": user},
         ],
     )
+    if summary_only:
+        out["short_name"] = short
+    return out
 
 
 def apply_cache_to_docs(docs: list[dict], cache: dict | None = None) -> int:
@@ -212,6 +371,32 @@ def main() -> None:
     ap.add_argument("--model", default=DEFAULT_MODEL)
     ap.add_argument("--sleep", type=float, default=0.4)
     ap.add_argument("--force", action="store_true", help="캐시 무시하고 재번역")
+    ap.add_argument(
+        "--leftover-titles",
+        action="store_true",
+        help="한글·영어가 섞인 약칭만 원문 제목 기준으로 다시 쓴다",
+    )
+    ap.add_argument(
+        "--min-words",
+        type=int,
+        default=3,
+        help="leftover-titles일 때 남은 영어 단어 최소 개수",
+    )
+    ap.add_argument(
+        "--bills-only",
+        action="store_true",
+        help="미국·캘리포니아 법안 주소만 leftover 대상으로",
+    )
+    ap.add_argument(
+        "--english-summaries",
+        action="store_true",
+        help="한글 약칭인데 핵심내용이 영어인 카드만 요약 번역",
+    )
+    ap.add_argument(
+        "--english-titles",
+        action="store_true",
+        help="영어 약칭만 한글로 옮긴다. 프로그램·랩 고유명은 건너뛴다",
+    )
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
@@ -227,7 +412,20 @@ def main() -> None:
     candidates = []
     for d in docs:
         did = d.get("id") or ""
-        if not did or not needs_enrich(d):
+        if not did:
+            continue
+        if args.leftover_titles:
+            if not leftover_title_needs_rewrite(
+                d, min_words=args.min_words, bills_only=args.bills_only
+            ):
+                continue
+        elif args.english_summaries:
+            if not english_summary_needs_rewrite(d):
+                continue
+        elif args.english_titles:
+            if not english_title_needs_rewrite(d):
+                continue
+        elif not needs_enrich(d):
             continue
         h = src_hash(d.get("short_name") or "", d.get("summary") or "", d.get("original_name") or "")
         prev = cache.get(did)
@@ -260,11 +458,30 @@ def main() -> None:
         if args.dry_run:
             continue
         try:
-            out = enrich_one(d, model=args.model)
+            out = enrich_one(
+                d,
+                model=args.model,
+                leftover=args.leftover_titles or args.english_titles,
+                summary_only=args.english_summaries,
+            )
             short = (out.get("short_name") or "").strip()
             summary = (out.get("summary") or "").strip()
             if not short or not summary:
                 raise ValueError(f"empty fields: {out!r}")
+            min_left = args.min_words if args.leftover_titles else 3
+            still_en = args.english_titles and not _HANGUL.search(short)
+            leftover_retry = args.leftover_titles and len(leftover_english_words(short)) >= min_left
+            if leftover_retry or still_en:
+                print(f"  retry leftover EN: {short[:70]}")
+                out = enrich_one(d, model=args.model, leftover=True)
+                short = (out.get("short_name") or "").strip()
+                summary = (out.get("summary") or "").strip()
+                if not short or not summary:
+                    raise ValueError(f"empty fields: {out!r}")
+            if args.leftover_titles and len(leftover_english_words(short)) >= min_left:
+                print(f"  still leftover: {short[:70]}")
+            if args.english_titles and not _HANGUL.search(short):
+                print(f"  still English title: {short[:70]}")
             cache[did] = {
                 "src_hash": h,
                 "short_name": short,
