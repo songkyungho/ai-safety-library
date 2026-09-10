@@ -5,16 +5,15 @@ from __future__ import annotations
 import html
 import json
 
-NAV_LEFT = [
-    ("index.html", "라이브러리"),
-]
 NAV_RIGHT = [
     ("about.html", "소개"),
     ("about/log.html", "업데이트"),
 ]
 DIGEST_URL = "https://songkyungho.github.io/ai-safety-digest/"
-DIGEST_LABEL = "AI 안전 동향"
-NAV_ITEMS = NAV_LEFT + NAV_RIGHT
+DIGEST_LABEL = "AI 안전 다이제스트"
+GLOSSARY_URL = "https://songkyungho.github.io/ai-safety-glossary/"
+GLOSSARY_LABEL = "AI 안전 용어집"
+NAV_ITEMS = NAV_RIGHT
 
 # 동향(#474284 퍼플 네이비·#f6f1e4 크림·#f3b84f 골드)과 같은 시리즈이되
 # 아카이브 톤으로 살짝 식힌 슬레이트 네이비·차가운 크림·브라스 골드.
@@ -140,6 +139,7 @@ TAGLINES = {
 
 AUTHOR_NAME = "인공지능안전연구소 송경호"
 AUTHOR_URL = "https://songkyungho.github.io"
+CONTACT_EMAIL = "songkyungho@etri.re.kr"
 
 
 def author_byline_html() -> str:
@@ -149,6 +149,33 @@ def author_byline_html() -> str:
         f'<a href="{html.escape(AUTHOR_URL)}" target="_blank" rel="noopener">송경호</a>',
     )
     return f" by {linked}"
+
+
+def footer_inner_html() -> str:
+    """다이제스트와 같은 푸터 문구."""
+    author_linked = html.escape(AUTHOR_NAME).replace(
+        "송경호",
+        f'<a href="{html.escape(AUTHOR_URL)}" target="_blank" rel="noopener">송경호</a>',
+    )
+    return (
+        f"만든 사람: {author_linked} · "
+        f'문의/오류제보: <a href="mailto:{html.escape(CONTACT_EMAIL)}">{html.escape(CONTACT_EMAIL)}</a>'
+    )
+
+
+def footer_html() -> str:
+    return f'<footer class="site-footer">{footer_inner_html()}</footer>'
+
+
+def _nav_item(href: str, label: str, *, active: bool, rel_prefix: str) -> str:
+    if active:
+        return f'<span class="nav-current">{html.escape(label)}</span>'
+    external = href.startswith("http://") or href.startswith("https://")
+    resolved = href if external else f"{rel_prefix}{href}"
+    attrs = f'href="{html.escape(resolved)}"'
+    if external:
+        attrs += ' target="_blank" rel="noopener noreferrer"'
+    return f"<a {attrs}>{html.escape(label)}</a>"
 
 
 def _nav_items(items: list[tuple[str, str]], current: str, *, rel_prefix: str) -> str:
@@ -167,11 +194,15 @@ def _nav_items(items: list[tuple[str, str]], current: str, *, rel_prefix: str) -
 
 
 def nav_html(current: str = "", *, rel_prefix: str = "") -> str:
-    left = list(NAV_LEFT) + [(DIGEST_URL, DIGEST_LABEL)]
+    left = (
+        _nav_item(DIGEST_URL, DIGEST_LABEL, active=False, rel_prefix="")
+        + _nav_item("index.html", "AI 안전 라이브러리", active=True, rel_prefix=rel_prefix)
+        + _nav_item(GLOSSARY_URL, GLOSSARY_LABEL, active=False, rel_prefix="")
+    )
     return (
         '<nav class="global-nav" aria-label="사이트">'
         '<div class="global-nav-inner">'
-        f'<div class="global-nav-left">{_nav_items(left, current, rel_prefix=rel_prefix)}</div>'
+        f'<div class="global-nav-left">{left}</div>'
         f'<div class="global-nav-right">{_nav_items(list(NAV_RIGHT), current, rel_prefix=rel_prefix)}</div>'
         "</div></nav>"
     )

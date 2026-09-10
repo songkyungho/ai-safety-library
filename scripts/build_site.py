@@ -15,7 +15,7 @@ from build_documents import build_documents  # noqa: E402
 from curate_llm import is_hollow_summary  # noqa: E402
 from issuer_levels import ISSUER_COLORS, ISSUER_LEVELS  # noqa: E402
 from library_common import write_json  # noqa: E402
-from ui_common import page_chrome, safe_json  # noqa: E402
+from ui_common import footer_html, page_chrome, safe_json  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 # GitHub Pages는 저장소의 / 또는 /docs 만 소스로 허용 → 공개 HTML은 docs/
@@ -24,13 +24,7 @@ DIST = DOCS  # 하위 호환 이름
 DIST_MIRROR = ROOT / "dist"  # 로컬·기존 경로용 미러
 TODAY = date.today().isoformat()
 
-FOOTER_HTML = (
-    '<footer class="site-footer">'
-    "AI 안전 라이브러리 · 만든 사람: 인공지능안전연구소(Korea AISI) 송경호 · "
-    '<a href="mailto:songkyungho@etri.re.kr">songkyungho@etri.re.kr</a><br>'
-    "원본 랜딩 URL 기준 · 발표 히스토리 · AGORA CC BY-NC 4.0"
-    "</footer>"
-)
+FOOTER_HTML = footer_html()
 # 문서종류 칩 색 (라이트). 동향 시리즈 톤과 맞추되 헤더 네이비는 슬레이트 계열.
 # Digest tokens: navy #474284 · gold #f3b84f · accent #ef3837 · sage #3f5340 · rose #b44a58
 KIND_COLORS = {
@@ -597,14 +591,24 @@ a { color: var(--sage, #3f5340); }
 a:hover { color: var(--accent); }
 .timeline { position: relative; padding-left: 20px; }
 .timeline::before { content: ""; position: absolute; left: 4px; top: 6px; bottom: 6px; width: 2px; background: var(--baseline); }
-.year-group { margin-bottom: 8px; scroll-margin-top: 56px; }
-.year-header {
-  cursor: pointer; font: inherit; font-weight: 600; font-size: 17px; letter-spacing: -0.37px;
-  padding: 8px 0; color: var(--ink); user-select: none;
-  background: transparent; border: 0; width: 100%; text-align: left;
+.month-current, .archive-month { margin-bottom: 8px; scroll-margin-top: 56px; }
+.month-label {
+  font: inherit; font-weight: 600; font-size: 17px; letter-spacing: -0.37px;
+  padding: 8px 0; color: var(--ink);
 }
-.year-header .muted { font-weight: 400; margin-left: 4px; color: var(--text-muted); }
-.event-card, .year-header, .dir-row, .year-nav-item { font: inherit; color: inherit; }
+.month-label .muted, .archive-month summary .muted {
+  font-weight: 400; margin-left: 4px; color: var(--text-muted);
+}
+.archive-month summary {
+  cursor: pointer; font: inherit; font-weight: 600; font-size: 17px; letter-spacing: -0.37px;
+  padding: 8px 0; color: var(--ink); user-select: none; list-style: none;
+  border-bottom: 1px solid var(--hairline);
+}
+.archive-month summary::-webkit-details-marker { display: none; }
+.archive-month summary::before { content: "▸ "; color: var(--text-muted); font-weight: 400; }
+.archive-month[open] summary::before { content: "▾ "; }
+.cat-month-body { padding-top: 8px; }
+.event-card, .dir-row, .year-nav-item { font: inherit; color: inherit; }
 .event-card { background: var(--surface-1); }
 button.dir-row { cursor: pointer; background: var(--surface-1); }
 .event-card { border: 1px solid var(--hairline); border-radius: 14px; display: block; }
@@ -1129,7 +1133,8 @@ const DOCS = JSON.parse(document.getElementById('docs-data').textContent);
 const KIND_COLORS = {kind_color_json};
 const ISSUER_COLORS = {issuer_color_json};
 const EMPHASIS_RULES = {emphasis_json};
-const state = {{ q: '', country: '', kind: '', issuer: '', topic: '', yearOpen: {{}}, yearKeys: [] }};
+const CURRENT_YM = {TODAY[:7]!r};
+const state = {{ q: '', country: '', kind: '', issuer: '', topic: '', monthOpen: {{}}, monthKeys: [], yearKeys: [] }};
 const byId = Object.fromEntries(DOCS.map(d => [d.id, d]));
 
 function escapeHtml(s) {{
@@ -1178,9 +1183,13 @@ function emphasizeSummary(raw) {{
   out += escapeHtml(text.slice(i));
   return out;
 }}
-function yearKey(d) {{
-  const y = (d.published || '').slice(0, 4);
-  return /^\\d{{4}}$/.test(y) ? y : 'undated';
+/** YYYY-MM · 연도만(YYYY / YYYY-01-01)은 YYYY-00 · 그 외 undated */
+function monthKey(d) {{
+  const p = String(d.published || '');
+  if (/^\\d{{4}}$/.test(p) || /^\\d{{4}}-01-01$/.test(p)) return p.slice(0, 4) + '-00';
+  const m = p.match(/^(\\d{{4}})-(\\d{{2}})/);
+  if (m) return m[1] + '-' + m[2];
+  return 'undated';
 }}
 function formatPublished(p) {{
   const s = String(p || '');
@@ -1189,13 +1198,16 @@ function formatPublished(p) {{
   if (ym) return ym[1] + '년 ' + String(parseInt(ym[2], 10)) + '월';
   return s;
 }}
-function yearLabel(y) {{
-  return y === 'undated' ? '날짜 없음' : (y + '년');
+function monthLabel(ym) {{
+  if (ym === 'undated') return '날짜 없음';
+  if (ym.endsWith('-00')) return ym.slice(0, 4) + '년';
+  const parts = ym.split('-');
+  return parts[0] + '년 ' + String(parseInt(parts[1], 10)) + '월';
 }}
-function isYearOpen(y, index) {{
-  if (Object.prototype.hasOwnProperty.call(state.yearOpen, y)) return !!state.yearOpen[y];
-  // 기본: 올해만 펼침, 그 이전·미상은 접힘
-  return y === {TODAY[:4]!r};
+function isMonthOpen(ym) {{
+  if (Object.prototype.hasOwnProperty.call(state.monthOpen, ym)) return !!state.monthOpen[ym];
+  // 다이제스트와 같이: 이번 달만 기본 펼침
+  return ym === CURRENT_YM;
 }}
 function hay(d) {{
   const topics = (d.topics || []).map(t => t.label + ' ' + t.id).join(' ');
@@ -1282,17 +1294,26 @@ function cardHtml(d) {{
     <div class="event-body">${{bodyHtml}}</div>
   </div>`;
 }}
-function renderYearNav(keys) {{
+function renderYearNav(monthKeys) {{
   const nav = document.getElementById('yearNav');
   if (!nav) return;
-  state.yearKeys = keys;
-  if (keys.length < 2) {{
+  state.monthKeys = monthKeys;
+  const years = [];
+  const seen = new Set();
+  monthKeys.forEach(ym => {{
+    if (ym === 'undated') return;
+    const y = ym.slice(0, 4);
+    if (!seen.has(y)) {{ seen.add(y); years.push(y); }}
+  }});
+  if (monthKeys.includes('undated')) years.push('undated');
+  state.yearKeys = years;
+  if (years.length < 2) {{
     nav.classList.add('hidden');
     nav.innerHTML = '';
     return;
   }}
   nav.classList.remove('hidden');
-  nav.innerHTML = keys.map(y =>
+  nav.innerHTML = years.map(y =>
     `<button type="button" class="year-nav-item" data-year="${{escapeHtml(y)}}">${{escapeHtml(y === 'undated' ? '—' : y)}}</button>`
   ).join('');
 }}
@@ -1307,8 +1328,8 @@ function renderList() {{
   }}
   const groups = {{}};
   rows.forEach(d => {{
-    const y = yearKey(d);
-    (groups[y] || (groups[y] = [])).push(d);
+    const ym = monthKey(d);
+    (groups[ym] || (groups[ym] = [])).push(d);
   }});
   const keys = Object.keys(groups).sort((a, b) => {{
     if (a === 'undated') return 1;
@@ -1316,23 +1337,36 @@ function renderList() {{
     return b.localeCompare(a);
   }});
   let html = '<div class="timeline">';
-  keys.forEach((y, i) => {{
-    const open = isYearOpen(y, i);
-    html += `<div class="year-group" id="year-${{escapeHtml(y)}}">
-      <button type="button" class="year-header" data-year="${{escapeHtml(y)}}" aria-expanded="${{open ? 'true' : 'false'}}">
-        ${{escapeHtml(yearLabel(y))}} <span class="muted">${{groups[y].length}}</span>
-      </button>
-      <div class="year-body${{open ? '' : ' hidden'}}">${{groups[y].map(cardHtml).join('')}}</div>
-    </div>`;
+  keys.forEach(ym => {{
+    const open = isMonthOpen(ym);
+    const label = escapeHtml(monthLabel(ym));
+    const count = `<span class="muted">${{groups[ym].length}}</span>`;
+    const cards = groups[ym].map(cardHtml).join('');
+    const id = 'month-' + escapeHtml(ym);
+    if (ym === CURRENT_YM) {{
+      html += `<section class="month-current" id="${{id}}">
+        <div class="month-label">${{label}} ${{count}}</div>
+        <div class="cat-month-body">${{cards}}</div>
+      </section>`;
+    }} else {{
+      html += `<details class="archive-month" id="${{id}}" data-month="${{escapeHtml(ym)}}"${{open ? ' open' : ''}}>
+        <summary>${{label}} ${{count}}</summary>
+        <div class="cat-month-body">${{cards}}</div>
+      </details>`;
+    }}
   }});
   html += '</div>';
   document.getElementById('listView').innerHTML = html;
   renderYearNav(keys);
 }}
 function jumpYear(y) {{
-  state.yearOpen[y] = true;
+  const months = state.monthKeys.filter(ym =>
+    y === 'undated' ? ym === 'undated' : ym.startsWith(y)
+  );
+  months.forEach(ym => {{ state.monthOpen[ym] = true; }});
   renderList();
-  const el = document.getElementById('year-' + y);
+  const first = months[0];
+  const el = first ? document.getElementById('month-' + first) : null;
   if (el) el.scrollIntoView({{ behavior: 'smooth', block: 'start' }});
   document.querySelectorAll('.year-nav-item').forEach(b => {{
     b.classList.toggle('active', b.dataset.year === y);
@@ -1387,16 +1421,13 @@ document.getElementById('listView').addEventListener('click', ev => {{
     renderList();
     return;
   }}
-  const head = ev.target.closest('.year-header');
-  if (head && head.dataset.year) {{
-    const y = head.dataset.year;
-    const idx = state.yearKeys.indexOf(y);
-    const now = isYearOpen(y, idx < 0 ? 99 : idx);
-    state.yearOpen[y] = !now;
-    renderList();
-    return;
-  }}
 }});
+document.getElementById('listView').addEventListener('toggle', ev => {{
+  const det = ev.target;
+  if (!(det instanceof HTMLDetailsElement)) return;
+  if (!det.classList.contains('archive-month') || !det.dataset.month) return;
+  state.monthOpen[det.dataset.month] = det.open;
+}}, true);
 document.getElementById('yearNav').addEventListener('click', ev => {{
   const btn = ev.target.closest('.year-nav-item');
   if (btn && btn.dataset.year) jumpYear(btn.dataset.year);
@@ -1440,7 +1471,7 @@ document.getElementById('yearNav').addEventListener('click', ev => {{
   }}
   const hash = decodeURIComponent((location.hash || '').slice(1));
   if (hash && byId[hash]) {{
-    state.yearOpen[yearKey(byId[hash])] = true;
+    state.monthOpen[monthKey(byId[hash])] = true;
   }}
   renderList();
   if (hash && byId[hash]) {{
@@ -1629,6 +1660,7 @@ def render_about(docs: list[dict], index: dict, *, total_raw: int = 0, out_count
     </div>
   </div>
 
+  <p class="about-meta">원본 랜딩 URL 기준 · 발표 히스토리 · AGORA 메타는 CC BY-NC 4.0.</p>
   <p class="about-meta">캐시: <code>cache/llm_curate.json</code> · <code>cache/instrument_analyze.json</code> · <code>cache/instrument_merge.json</code></p>
 </div>
 """

@@ -136,14 +136,24 @@ a { color: var(--sage, #3f5340); }
 a:hover { color: var(--accent); }
 .timeline { position: relative; padding-left: 20px; }
 .timeline::before { content: ""; position: absolute; left: 4px; top: 6px; bottom: 6px; width: 2px; background: var(--baseline); }
-.year-group { margin-bottom: 8px; scroll-margin-top: 56px; }
-.year-header {
-  cursor: pointer; font: inherit; font-weight: 600; font-size: 17px; letter-spacing: -0.37px;
-  padding: 8px 0; color: var(--ink); user-select: none;
-  background: transparent; border: 0; width: 100%; text-align: left;
+.month-current, .archive-month { margin-bottom: 8px; scroll-margin-top: 56px; }
+.month-label {
+  font: inherit; font-weight: 600; font-size: 17px; letter-spacing: -0.37px;
+  padding: 8px 0; color: var(--ink);
 }
-.year-header .muted { font-weight: 400; margin-left: 4px; color: var(--text-muted); }
-.event-card, .year-header, .dir-row, .year-nav-item { font: inherit; color: inherit; }
+.month-label .muted, .archive-month summary .muted {
+  font-weight: 400; margin-left: 4px; color: var(--text-muted);
+}
+.archive-month summary {
+  cursor: pointer; font: inherit; font-weight: 600; font-size: 17px; letter-spacing: -0.37px;
+  padding: 8px 0; color: var(--ink); user-select: none; list-style: none;
+  border-bottom: 1px solid var(--hairline);
+}
+.archive-month summary::-webkit-details-marker { display: none; }
+.archive-month summary::before { content: "▸ "; color: var(--text-muted); font-weight: 400; }
+.archive-month[open] summary::before { content: "▾ "; }
+.cat-month-body { padding-top: 8px; }
+.event-card, .dir-row, .year-nav-item { font: inherit; color: inherit; }
 .event-card { background: var(--surface-1); }
 button.dir-row { cursor: pointer; background: var(--surface-1); }
 .event-card { border: 1px solid var(--hairline); border-radius: 14px; display: block; }
@@ -440,7 +450,7 @@ button.filter-chip.topic-chip .n {
 </head>
 <body>
 <div class="viz-root">
-<nav class="global-nav" aria-label="사이트"><div class="global-nav-inner"><div class="global-nav-left"><a href="index.html">라이브러리</a><a href="https://songkyungho.github.io/ai-safety-digest/" target="_blank" rel="noopener noreferrer">AI 안전 동향</a></div><div class="global-nav-right"><span class="nav-current">소개</span><a href="about/log.html">업데이트</a></div></div></nav><header class="page-head"><div class="page-head-inner"><h1>소개 · 파이프라인</h1><p class="tagline">수집·분류·표시 파이프라인과 데이터 출처</p></div></header>
+<nav class="global-nav" aria-label="사이트"><div class="global-nav-inner"><div class="global-nav-left"><a href="https://songkyungho.github.io/ai-safety-digest/" target="_blank" rel="noopener noreferrer">AI 안전 다이제스트</a><span class="nav-current">AI 안전 라이브러리</span><a href="https://songkyungho.github.io/ai-safety-glossary/" target="_blank" rel="noopener noreferrer">AI 안전 용어집</a></div><div class="global-nav-right"><span class="nav-current">소개</span><a href="about/log.html">업데이트</a></div></div></nav><header class="page-head"><div class="page-head-inner"><h1>소개 · 파이프라인</h1><p class="tagline">수집·분류·표시 파이프라인과 데이터 출처</p></div></header>
 <div class="wrap">
 
 <div class="about-wrap">
@@ -573,10 +583,11 @@ aria-label="수집, 규칙 후보, LLM 큐레이션, 병합 분석, 통합 합�
     </div>
   </div>
 
+  <p class="about-meta">원본 랜딩 URL 기준 · 발표 히스토리 · AGORA 메타는 CC BY-NC 4.0.</p>
   <p class="about-meta">캐시: <code>cache/llm_curate.json</code> · <code>cache/instrument_analyze.json</code> · <code>cache/instrument_merge.json</code></p>
 </div>
 
-<footer class="site-footer">AI 안전 라이브러리 · 만든 사람: 인공지능안전연구소(Korea AISI) 송경호 · <a href="mailto:songkyungho@etri.re.kr">songkyungho@etri.re.kr</a><br>원본 랜딩 URL 기준 · 발표 히스토리 · AGORA CC BY-NC 4.0</footer>
+<footer class="site-footer">만든 사람: 인공지능안전연구소 <a href="https://songkyungho.github.io" target="_blank" rel="noopener">송경호</a> · 문의/오류제보: <a href="mailto:songkyungho@etri.re.kr">songkyungho@etri.re.kr</a></footer>
 </div>
 </div>
 
