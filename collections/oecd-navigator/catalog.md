@@ -5,16 +5,16 @@
 - API: `https://api.oecdai.org/policy-initiatives`
 - 데이터: `items.json` · `items.csv`
 
-- 건수: **2508건**
-- 기간: 2000-10-31 ~ 2026-09-08
+- 건수: **2512건**
+- 기간: 2000-10-31 ~ 2026-09-09
 
 ## 분류
 
 | 분류 | 건수 |
 |---|---:|
-| AI policy initiatives, programmes and projects | 1721 |
-| Regulations, guidelines and standards | 429 |
-| National – AI governance bodies or mechanisms | 149 |
+| AI policy initiatives, programmes and projects | 1723 |
+| Regulations, guidelines and standards | 430 |
+| National – AI governance bodies or mechanisms | 150 |
 | AI Policy Frameworks and Initiatives (intergovernmental or supranational) | 107 |
 | National – Strategy | 94 |
 | AI Governance Bodies and Mechanisms (intergovernmental or supranational) | 8 |
@@ -23,7 +23,7 @@
 
 | 연도 | 건수 |
 |---|---:|
-| 2026 | 197 |
+| 2026 | 201 |
 | 2025 | 1255 |
 | 2024 | 197 |
 | 2023 | 168 |
@@ -49,6 +49,10 @@
 
 | 날짜 | 분류 | 제목 | 원문 |
 |---|---|---|---|
+| 2026-09-09 | AI policy initiatives, programmes and pr | [Sindh Cloud First Policy (Subnational: Province of Sindh)](https://oecd.ai/en/dashboards/policy-initiatives/sindh-cloud-first-policy-subnational-province-of-sindh) | [원문](https://istd.sindh.gov.pk/) |
+| 2026-09-09 | AI policy initiatives, programmes and pr | [REGi - Regulatory Intelligence (Subnational: Ontario)](https://oecd.ai/en/dashboards/policy-initiatives/regi-regulatory-intelligence-subnational-ontario) | [원문](https://data.ontario.ca/dataset/artificial-intelligence-ai-use-cases-in-the-ontario-public-service) |
+| 2026-09-09 | National – AI governance bodies or mecha | [Pakistan Digital Authority (PDA)](https://oecd.ai/en/dashboards/policy-initiatives/pakistan-digital-authority-pda) | [원문](https://www.pda.gov.pk/) |
+| 2026-09-09 | Regulations, guidelines and standards | [Enhancing Digital Security and Trust Act, 2024 (Subnational: Ontario)](https://oecd.ai/en/dashboards/policy-initiatives/enhancing-digital-security-and-trust-act,-2024-subnational-ontario) | [원문](https://www.ontario.ca/laws/statute/24e24) |
 | 2026-09-08 | Regulations, guidelines and standards | [Roadmap Toward the Development and Ethical Implementation of Artificial Intelligence in Guanajuato (Subnational: Guanajuato State)](https://oecd.ai/en/dashboards/policy-initiatives/roadmap-toward-the-development-and-ethical-implementation-of-artificial-intelligence-in-guanajuato-subnational-guanajuato-state) | [원문](https://www.policylab.tech/resources) |
 | 2026-09-08 | Regulations, guidelines and standards | [Responsible AI Policy](https://oecd.ai/en/dashboards/policy-initiatives/responsible-ai-policy) |  |
 | 2026-09-08 | AI policy initiatives, programmes and pr | [Explorer](https://oecd.ai/en/dashboards/policy-initiatives/explorer) | [원문](https://www.aa.com.tr/tr/ekonomi/naylon-fatura-yapay-zeka-tabanli-kasif-ile-aninda-yakalaniyor/3804685) |

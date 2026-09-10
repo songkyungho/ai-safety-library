@@ -1,8 +1,8 @@
 {
-  "count": 2508,
+  "count": 2512,
   "board": "Policy Navigator",
   "list_url": "https://oecd.ai/en/dashboards/policy-initiatives",
   "api": "https://api.oecdai.org/policy-initiatives",
-  "fetched": "2026-09-09",
+  "fetched": "2026-09-10",
   "note": "국가·국제기구 AI 정책 이니셔티브. 인용: OECD.AI (2025), OECD.AI Policy Navigator, https://oecd.ai/dashboards. gaiinCountry·sourceFiles 포함."
 }

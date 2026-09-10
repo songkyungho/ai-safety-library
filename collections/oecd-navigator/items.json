@@ -2,24 +2,24 @@
   "collection": "oecd-navigator",
   "name": "OECD.AI Policy Navigator",
   "source": {
-    "count": 2508,
+    "count": 2512,
     "board": "Policy Navigator",
     "list_url": "https://oecd.ai/en/dashboards/policy-initiatives",
     "api": "https://api.oecdai.org/policy-initiatives",
-    "fetched": "2026-09-09",
+    "fetched": "2026-09-10",
     "note": "국가·국제기구 AI 정책 이니셔티브. 인용: OECD.AI (2025), OECD.AI Policy Navigator, https://oecd.ai/dashboards. gaiinCountry·sourceFiles 포함."
   },
-  "count": 2508,
+  "count": 2512,
   "categories": {
-    "Regulations, guidelines and standards": 429,
-    "AI policy initiatives, programmes and projects": 1721,
-    "National – AI governance bodies or mechanisms": 149,
+    "AI policy initiatives, programmes and projects": 1723,
+    "National – AI governance bodies or mechanisms": 150,
+    "Regulations, guidelines and standards": 430,
     "National – Strategy": 94,
     "AI Policy Frameworks and Initiatives (intergovernmental or supranational)": 107,
     "AI Governance Bodies and Mechanisms (intergovernmental or supranational)": 8
   },
   "years": {
-    "2026": 197,
+    "2026": 201,
     "2023": 168,
     "2025": 1255,
     "2024": 197,
@@ -42,6 +42,118 @@
     "2004": 1
   },
   "items": [
+    {
+      "id": "oecd-navigator-2602",
+      "collection": "oecd-navigator",
+      "collection_name": "OECD.AI Policy Navigator",
+      "oecd_id": 2602,
+      "title": "Sindh Cloud First Policy (Subnational: Province of Sindh)",
+      "original_name": "",
+      "org": "Pakistan",
+      "category": "AI policy initiatives, programmes and projects",
+      "status": "Active",
+      "date": "2026-09-09",
+      "start_year": 2022,
+      "added_on": "2026-09-09",
+      "updated_on": "2026-09-09",
+      "page_url": "https://oecd.ai/en/dashboards/policy-initiatives/sindh-cloud-first-policy-subnational-province-of-sindh",
+      "source_urls": [
+        "https://istd.sindh.gov.pk/",
+        "https://dailytimes.com.pk/964247/sindh-cabinet-approves-first-ever-cloud-policy/",
+        "https://www.dawn.com/news/1698703"
+      ],
+      "source_files": [
+        "https://api.oecdai.org/storage/policy-initiatives/Sep2026/117ojp1hydrmttwxn55-sindh-cloud-first-policy-2022.pdf"
+      ],
+      "country": "Pakistan",
+      "country_code": "PAK",
+      "document_name": "",
+      "body": "The Sindh Cloud First Policy is a provincial government policy issued by the Province of Sindh, Pakistan in 2022 to mandate cloud-based infrastructure across all public sector entities. By establishing a Cloud Acquisition Office and shifting ICT procurement toward scalable cloud services, the policy builds the foundational compute layer required for AI adoption and data-driven governance across provincial departments. The policy benefits all government agencies and the citizens they serve.\n\nThe Province of Sindh, Pakistan, recognised that fragmented on-premises ICT infrastructure across its public sector entities created inefficiencies, security vulnerabilities, and barriers to adopting modern technologies such as artificial intelligence. Public sector organisations were operating in silos with small server clusters that lacked the compute capacity, scalability, and data consolidation necessary for AI-driven analytics, predictive modelling, and intelligent public service delivery.\n\nIn response, the Government of Sindh issued the Sindh Cloud First Policy in July 2022, formulated by the Information Science and Technology Department. The policy mandates that all new ICT investments by provincial public sector entities must prioritise cloud-based solutions. A dedicated Cloud Acquisition Office has been established to facilitate the transition, overseeing the design, procurement, migration, and management of cloud workloads. The Office works in liaison with the federal National Cloud Office and the Sindh Procurement Regulatory Authority to ensure compliance with accreditation standards and procurement best practices.\n\nThe policy also restricts new investments in fragmented ICT infrastructure such as standalone data centres and server rooms, redirecting resources toward shared, scalable cloud environments. This consolidation of compute demand across provincial entities is designed to achieve economies of scale, lower ICT costs, and create an interoperable ecosystem where AI-enabled solutions can be developed, tested, and replicated across departments. Only cloud service providers accredited by the National Cloud Office are eligible for government contracts, and service level agreements are monitored for compliance.\n\nLooking ahead, the policy positions Sindh as an AI-ready province by ensuring that cloud infrastructure, data accessibility, and procurement frameworks are in place to support emerging AI workloads in areas such as public health, education, tax administration, and citizen services. The shift from capital to operational expenditure models and the pay-as-you-use approach further enable agile experimentation with AI tools without large upfront investments. The policy is issued in continuation of the Pakistan Cloud First Policy approved by the federal government in February 2022, ensuring alignment between provincial and national digital transformation strategies.",
+      "extent": "",
+      "date_source": "added_on"
+    },
+    {
+      "id": "oecd-navigator-2604",
+      "collection": "oecd-navigator",
+      "collection_name": "OECD.AI Policy Navigator",
+      "oecd_id": 2604,
+      "title": "REGi - Regulatory Intelligence (Subnational: Ontario)",
+      "original_name": "",
+      "org": "Canada",
+      "category": "AI policy initiatives, programmes and projects",
+      "status": "Active",
+      "date": "2026-09-09",
+      "start_year": 2024,
+      "added_on": "2026-09-09",
+      "updated_on": "2026-09-09",
+      "page_url": "https://oecd.ai/en/dashboards/policy-initiatives/regi-regulatory-intelligence-subnational-ontario",
+      "source_urls": [
+        "https://data.ontario.ca/dataset/artificial-intelligence-ai-use-cases-in-the-ontario-public-service"
+      ],
+      "source_files": [],
+      "country": "Canada",
+      "country_code": "CAN",
+      "document_name": "",
+      "body": "REGi is an internal government AI tool to reduce burden and improving life for people and businesses by making it easier to find red tape and uncover opportunities to modernise laws, regulations, policies and forms. The tool currently uses AI to scan Ontario laws, including regulations, and forms to help identify government rules that businesses and individuals need to follow, including where there may be outdated language and/or overly dense rules.  The tool will evolve over time.\n\nREGi was developed to address long-standing challenge in identifying rules across Ontario’s laws, regulations, and forms. The initial use case focused on helping Ontario government employees quickly and consistently find government rules in Ontario’s nearly 3,500 laws and regulations, a key first step in identifying red tape.\n   \nSince its launch in June 2025, REGi has expanded to include features that highlight overly dense rules and identify outdated requirements. REGi displays results in an accessible format that allows users to search, compare, and export findings, supporting transparency, reproducible analytics, and expert validation. \n\nREGi has improved consistency in identifying regulatory requirements and reduced manual efforts across ministries. User access and engagement continue to grow, with activity metrics indicating increased use over time. Between 26 June and 11 February 2026, average engagement time (time spent on the site) has increased by 58% and event activity (the number of actions a user is taking while on the site) per user is up by over 120%.\n\nREGi started as an innovative MVP supported by strong executive sponsorship and targeted change management. Strong executive champions helped remove barriers and maintain momentum. Change-management efforts focused on user engagement and building confidence in AI-supported analysis. \n\nTo remain technologically current and avoid vendor lock-in, REGi was designed with a modular architecture, so components, including language models, can be upgraded as more advanced options become available. Over time, REGi is positioned to enable more proactive, data driven, decision-making across ministries and contribute to a more modern regulatory environment.",
+      "extent": "",
+      "date_source": "added_on"
+    },
+    {
+      "id": "oecd-navigator-2603",
+      "collection": "oecd-navigator",
+      "collection_name": "OECD.AI Policy Navigator",
+      "oecd_id": 2603,
+      "title": "Pakistan Digital Authority (PDA)",
+      "original_name": "",
+      "org": "Pakistan",
+      "category": "National – AI governance bodies or mechanisms",
+      "status": "Active",
+      "date": "2026-09-09",
+      "start_year": 2025,
+      "added_on": "2026-09-09",
+      "updated_on": "2026-09-09",
+      "page_url": "https://oecd.ai/en/dashboards/policy-initiatives/pakistan-digital-authority-pda",
+      "source_urls": [
+        "https://www.pda.gov.pk/",
+        "https://www.pda.gov.pk/acts-and-regulations.php",
+        "https://pakistancode.gov.pk/english/UY2FqaJw1-apaUY2Fqa-apaUY2Npa5praQ%3D%3D-sg-jjjjjjjjjjjjj"
+      ],
+      "source_files": [
+        "https://api.oecdai.org/storage/policy-initiatives/Sep2026/117ojp1hydrmttx9uo0-the-digital-nation-pakistan-act-2025.pdf"
+      ],
+      "country": "Pakistan",
+      "country_code": "PAK",
+      "document_name": "",
+      "body": "Pakistan Digital Authority (PDA) is a statutory body established under the Digital Nation Pakistan Act 2025 to lead Pakistan’s digital transformation. It develops and implements the National Digital Masterplan and coordinates efforts across government and stakeholders. The PDA also provides oversight, standards, and compliance for data governance, AI, and emerging technologies.\n\nThe PDA was established under the Digital Nation Pakistan Act 2025 as Pakistan’s statutory institution to spearhead the country’s transition toward a digital nation. It serves as a national governance mechanism to coordinate digital transformation across the public sector while engaging the private sector and civil society. Under Section 8 of the Act, the PDA is mandated to develop and implement the National Digital Masterplan and to carry out digital maturity assessment, monitoring and evaluation of digital initiatives. It reviews digital plans and projects for alignment with the Masterplan and recommends approvals. It also advises on laws, rules, regulations and policies related to the National Digital Masterplan. The PDA’s mandate includes oversight, standards and compliance for data governance, AI, and emerging technologies, alongside development of national strategies such as the National Data Strategy, Digital Economy Strategy and National Citizen Experience Strategy. It also leads the development, implementation and oversight of Digital Public Infrastructure and supports policies and frameworks for digital innovation. This governance model is intended to institutionalise interoperable digital transformation, strengthen foundations for scalable and trustworthy AI use in government, and improve digital service delivery and citizen experience across Pakistan.\nResults, outcomes and impacts\nThe Act created the PDA as a statutory governance mechanism for national digital transformation. The PDA’s mandate includes developing and implementing the National Digital Masterplan, conducting digital maturity assessments, reviewing digital projects for alignment, and establishing oversight, standards and compliance for data governance, AI and emerging technologies. Near-term results will be measured through Masterplan adoption, project alignment decisions, maturity assessment outputs, and monitoring and evaluation of digital initiatives. Longer-term impacts include improved interoperability, stronger digital public infrastructure, and AI-ready data governance.\nChallenges and lessons learned\nKey challenges include coordinating across federal, provincial and local governments; aligning digital plans and procurement with the National Digital Masterplan; and achieving interoperability across legacy systems. Capacity constraints may affect consistent maturity assessment, monitoring and evaluation across agencies, requiring sustained resourcing and skills development. For AI-related oversight, success depends on clear standards, secure data governance practices and workable compliance mechanisms that avoid duplication or unclear overlaps with existing regulators. Lessons include the need for strong political sponsorship, phased implementation priorities, measurable KPIs, inter-agency coordination mechanisms, and a citizen-experience focus so digital transformation delivers practical public value.",
+      "extent": "",
+      "date_source": "added_on"
+    },
+    {
+      "id": "oecd-navigator-2605",
+      "collection": "oecd-navigator",
+      "collection_name": "OECD.AI Policy Navigator",
+      "oecd_id": 2605,
+      "title": "Enhancing Digital Security and Trust Act, 2024 (Subnational: Ontario)",
+      "original_name": "",
+      "org": "Canada",
+      "category": "Regulations, guidelines and standards",
+      "status": "Active",
+      "date": "2026-09-09",
+      "start_year": 2024,
+      "added_on": "2026-09-09",
+      "updated_on": "2026-09-09",
+      "page_url": "https://oecd.ai/en/dashboards/policy-initiatives/enhancing-digital-security-and-trust-act,-2024-subnational-ontario",
+      "source_urls": [
+        "https://www.ontario.ca/laws/statute/24e24"
+      ],
+      "source_files": [],
+      "country": "Canada",
+      "country_code": "CAN",
+      "document_name": "",
+      "body": "In January 2025, Ontario brought the Enhancing Digital Security and Trust Act, 2024 (EDSTA) into force. EDSTA builds a foundation to support the responsible use of AI through: introducing a definition of “artificial intelligence system” in alignment with leading jurisdictions, and creating regulation-making authorities to set accountability, risk management and transparency requirements and technical standards around the use of AI systems for select public sector organisations.\n\nThe Act has created a legislative foundation to strengthen cyber security, privacy protections, and responsible AI use in the select broader public sector entities. The legislation includes a definition for AI and allows government to set regulations related to AI use in the public sector. Progress is measured through enactment of the legislation, consultations, and development of regulations. Over time, and if regulations are approved, the Act is expected to improve digital trust, reduce cyber and privacy risks, and enable responsible AI use in the broader public sector.\n\nDevelopment of the Act reinforced the value of enabling legislation that provides a durable foundation while allowing future requirements to be refined as risks and technologies evolve. Engagement with stakeholders helped inform a balanced approach. Experience suggests that success depends on clear legislative intent, phased implementation, and alignment with existing privacy, cyber security, and digital governance frameworks.",
+      "extent": "Binding",
+      "date_source": "added_on"
+    },
     {
       "id": "oecd-navigator-2601",
       "collection": "oecd-navigator",
