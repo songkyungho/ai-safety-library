@@ -7,3 +7,9 @@ __pycache__/
 
 logs/
 ai_safety_library_env
+
+# MCP 검색 색인 (iCloud로는 동기화, git에는 미포함)
+knowledge/library.db
+knowledge/*.db-journal
+knowledge/*.db-wal
+knowledge/*.db-shm

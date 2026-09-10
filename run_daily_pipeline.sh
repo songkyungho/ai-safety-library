@@ -158,6 +158,9 @@ _run_step "4" "LLM 큐레이션 (신규만)" \
 _run_step "5" "사이트 빌드" \
   python3 scripts/build_site.py
 
+_run_step "5b" "MCP 검색 인덱스(library.db)" \
+  python3 mcp_server/build_index.py --skip-if-fresh
+
 if [[ "$PUSH" == "1" ]] && git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
   echo ""
   echo "▶ 6 변경분 커밋·푸시"

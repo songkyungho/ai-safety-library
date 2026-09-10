@@ -17,6 +17,12 @@ class ChangelogEntry(TypedDict):
 
 LIBRARY_CHANGELOG: list[ChangelogEntry] = [
     {
+        "date": "2026-09-11",
+        "title": "로컬 MCP로 라이브러리를 검색한다",
+        "body": "documents.json을 FTS+임베딩으로 색인해 search_library·get_document·corpus_stats를 Cursor에서 쓴다. 일일 파이프라인이 인덱스를 갱신한다.",
+        "tags": ("도구",),
+    },
+    {
         "date": "2026-09-10",
         "title": "푸터를 헤더와 같은 밴드로 맞춘다",
         "body": "만든 사람·문의 문구는 그대로이고, 형식은 다이제스트처럼 헤더색 풀폭 밴드다. 본문 글자 크기도 다이제스트와 같은 16px 기준으로 맞춘다.",

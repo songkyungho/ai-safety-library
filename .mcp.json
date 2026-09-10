@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "ai-safety-library": {
+      "command": "mcp_server/run_server.sh",
+      "args": []
+    }
+  }
+}

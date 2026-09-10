@@ -1,0 +1,5 @@
+# MCP 검색 색인(iCloud 동기화용 로컬 DB — git에는 올리지 않음)
+knowledge/library.db
+knowledge/*.db-journal
+knowledge/*.db-wal
+knowledge/*.db-shm

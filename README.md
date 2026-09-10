@@ -36,8 +36,16 @@ python3 scripts/build_site.py
 
 - **시각:** 매일 09:00
 - **에이전트:** `launchd/com.user.ai-safety-library-daily.plist`
-- **하는 일:** OECD 수집 → 외교부 게시판(쿠키 있을 때) → IAAE 목록·보강 → 신규 LLM 큐레이션 → `build_site`(docs/) → (기본) git push → GitHub Pages
+- **하는 일:** OECD 수집 → 외교부 게시판(쿠키 있을 때) → IAAE 목록·보강 → 신규 LLM 큐레이션 → `build_site`(docs/) → MCP 검색 인덱스 → (기본) git push → GitHub Pages
 - **수동 실행:** `./run_daily_pipeline.sh`
+
+## 로컬 MCP
+
+Cursor/Claude에서 라이브러리를 검색할 때 쓰는 stdio MCP 서버가 있습니다.
+
+- 도구: `search_library` · `get_document` · `corpus_stats`
+- 설정·색인: [`mcp_server/README.md`](mcp_server/README.md)
+- 최초 1회: venv 설치 후 `python3 mcp_server/build_index.py`
 - **로그:** `/tmp/ai-safety-library-daily.out.log` · `.err.log`
 - **환경변수:** Digest의 `ai_safety_daily_env` (OpenRouter·텔레그램·`MOFA_COOKIE`) 재사용. 외교부 WAF 쿠키는 만료되면 브라우저에서 Cookie 헤더를 다시 넣는다. git에 커밋하지 말 것.
 - **완료 알림:** 파이프라인 끝나면 텔레그램 한 통 (`PIPELINE_TELEGRAM=0`이면 생략)
