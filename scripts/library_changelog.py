@@ -18,6 +18,12 @@ class ChangelogEntry(TypedDict):
 LIBRARY_CHANGELOG: list[ChangelogEntry] = [
     {
         "date": "2026-09-10",
+        "title": "푸터를 헤더와 같은 밴드로 맞춘다",
+        "body": "만든 사람·문의 문구는 그대로이고, 형식은 다이제스트처럼 헤더색 풀폭 밴드다. 본문 글자 크기도 다이제스트와 같은 16px 기준으로 맞춘다.",
+        "tags": ("사이트",),
+    },
+    {
+        "date": "2026-09-10",
         "title": "전체 목록을 월별로 접는다",
         "body": "다이제스트처럼 이번 달은 펼치고 이전 달은 월별 details로 접는다. 연도만 있는 날짜는 ‘YYYY년’ 묶음으로 둔다.",
         "tags": ("사이트",),

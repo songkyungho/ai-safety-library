@@ -593,14 +593,14 @@ a:hover { color: var(--accent); }
 .timeline::before { content: ""; position: absolute; left: 4px; top: 6px; bottom: 6px; width: 2px; background: var(--baseline); }
 .month-current, .archive-month { margin-bottom: 8px; scroll-margin-top: 56px; }
 .month-label {
-  font: inherit; font-weight: 600; font-size: 17px; letter-spacing: -0.37px;
+  font: inherit; font-weight: 600; font-size: 1.05rem; letter-spacing: -0.37px;
   padding: 8px 0; color: var(--ink);
 }
 .month-label .muted, .archive-month summary .muted {
   font-weight: 400; margin-left: 4px; color: var(--text-muted);
 }
 .archive-month summary {
-  cursor: pointer; font: inherit; font-weight: 600; font-size: 17px; letter-spacing: -0.37px;
+  cursor: pointer; font: inherit; font-weight: 600; font-size: 1.05rem; letter-spacing: -0.37px;
   padding: 8px 0; color: var(--ink); user-select: none; list-style: none;
   border-bottom: 1px solid var(--hairline);
 }
@@ -614,9 +614,10 @@ button.dir-row { cursor: pointer; background: var(--surface-1); }
 .event-card { border: 1px solid var(--hairline); border-radius: 14px; display: block; }
 button.back-link { font: inherit; background: none; border: 0; padding: 0; }
 .year-nav {
+  display: none;
   position: fixed; right: 16px; top: 50%;
   transform: translateY(-50%); z-index: 40;
-  display: flex; flex-direction: column; gap: 2px;
+  flex-direction: column; gap: 2px;
   max-height: 70vh; overflow-y: auto; padding: 8px 6px;
   border: 1px solid var(--hairline); border-radius: 12px;
   background: color-mix(in srgb, var(--surface-1) 92%, transparent);
@@ -624,6 +625,9 @@ button.back-link { font: inherit; background: none; border: 0; padding: 0; }
   box-shadow: 0 4px 20px color-mix(in srgb, var(--ink) 8%, transparent);
 }
 .year-nav.hidden { display: none; }
+@media (min-width: 1024px) {
+  .year-nav:not(.hidden) { display: flex; }
+}
 .year-nav-item {
   appearance: none; border: 0; background: transparent; cursor: pointer;
   padding: 4px 8px; border-radius: 8px; font-size: 12px;
@@ -632,18 +636,11 @@ button.back-link { font: inherit; background: none; border: 0; padding: 0; }
 }
 .year-nav-item:hover { color: var(--ink); background: color-mix(in srgb, var(--ink) 6%, transparent); }
 .year-nav-item.active { color: var(--ink); font-weight: 600; }
-@media (max-width: 960px) {
-  .year-nav { right: 10px; padding: 6px 4px; }
-  .year-nav-item { padding: 3px 6px; font-size: 11px; }
-}
-@media (max-width: 720px) {
-  .year-nav { display: none; }
-}
 .event-card { position: relative; padding: 16px 18px; margin-bottom: 12px; }
 .event-card::before { content: ""; position: absolute; left: -20px; top: 18px; width: 10px; height: 10px; border-radius: 50%; background: var(--c-l); border: 2px solid var(--plane); }
 .event-head { display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline; margin-bottom: 4px; }
-.event-date { font-variant-numeric: tabular-nums; color: var(--text-muted); font-size: 12px; }
-.event-summary { margin: 6px 0; font-size: 17px; line-height: 1.47; letter-spacing: -0.37px; }
+.event-date { font-variant-numeric: tabular-nums; color: var(--text-muted); font-size: 0.75rem; }
+.event-summary { margin: 6px 0; font-size: 1.05rem; line-height: 1.47; letter-spacing: -0.37px; }
 .event-summary .event-title {
   font-weight: 700;
 }
@@ -658,7 +655,7 @@ button.back-link { font: inherit; background: none; border: 0; padding: 0; }
   color: #1e40af;
 }
 .event-body { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--hairline); }
-.event-body p { margin: 0; font-size: 14px; line-height: 1.55; color: var(--text-secondary); white-space: pre-wrap; }
+.event-body p { margin: 0; font-size: 1rem; line-height: 1.55; color: var(--text-secondary); white-space: pre-wrap; }
 .event-body .term-em {
   font-weight: 650; color: var(--ink);
 }
@@ -686,7 +683,7 @@ a.stat-tile, a.dir-row, a.filter-chip { text-decoration: none; color: inherit; }
   flex: 0 0 auto;
   min-width: 2.4em;
   margin-right: 4px;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 700;
   color: var(--text-muted);
   letter-spacing: -0.02em;
@@ -696,12 +693,12 @@ a.filter-chip, button.filter-chip {
   display: inline-flex; align-items: center; gap: 5px;
   border: 1px solid var(--hairline); background: transparent;
   color: var(--text-secondary); border-radius: 999px;
-  padding: 3px 10px; font: inherit; font-size: 12px; line-height: 1.35;
+  padding: 3px 10px; font: inherit; font-size: 0.75rem; line-height: 1.35;
   cursor: pointer; white-space: nowrap;
 }
 a.filter-chip:hover, button.filter-chip:hover { color: var(--ink); border-color: var(--text-muted); }
 a.filter-chip .n, button.filter-chip .n {
-  font-variant-numeric: tabular-nums; color: var(--text-muted); font-size: 11px;
+  font-variant-numeric: tabular-nums; color: var(--text-muted); font-size: 0.75rem;
 }
 a.filter-chip.kind-badge, button.filter-chip.kind-badge {
   background: color-mix(in srgb, var(--chip) 14%, var(--surface-1));
@@ -715,7 +712,7 @@ a.filter-chip.kind-badge .n, button.filter-chip.kind-badge .n {
 button.filter-more {
   border: 1px dashed var(--hairline); background: transparent;
   color: var(--text-muted); border-radius: 999px;
-  padding: 3px 10px; font: inherit; font-size: 12px; cursor: pointer;
+  padding: 3px 10px; font: inherit; font-size: 0.75rem; cursor: pointer;
 }
 button.filter-more:hover { color: var(--ink); border-color: var(--text-muted); }
 .filter-toolbar .filter-more-wrap { display: contents; }
@@ -723,7 +720,7 @@ button.filter-more:hover { color: var(--ink); border-color: var(--text-muted); }
 .sort-toggle.filter-toolbar { display: flex; }
 .sort-toggle.filter-toolbar button.filter-chip,
 .sort-toggle.filter-toolbar button.filter-more {
-  border-radius: 999px; padding: 3px 10px; font-size: 12px;
+  border-radius: 999px; padding: 3px 10px; font-size: 0.75rem;
   background: transparent;
 }
 .sort-toggle.filter-toolbar button.filter-chip.kind-badge {
@@ -736,14 +733,14 @@ button.filter-more:hover { color: var(--ink); border-color: var(--text-muted); }
   background: color-mix(in srgb, var(--gold, #f3b84f) 22%, var(--surface-1));
 }
 .badge.kind-badge {
-  font-size: 11px; font-weight: 600; border-radius: 999px; padding: 2px 8px;
+  font-size: 0.75rem; font-weight: 600; border-radius: 999px; padding: 2px 8px;
   background: color-mix(in srgb, var(--chip) 14%, var(--surface-1));
   color: var(--chip);
   border: 1px solid color-mix(in srgb, var(--chip) 32%, var(--hairline));
 }
 .event-summary .status-badge {
   display: inline-block; vertical-align: middle; margin-left: 8px;
-  font-size: 11px; font-weight: 500; letter-spacing: -0.02em;
+  font-size: 0.75rem; font-weight: 500; letter-spacing: -0.02em;
   padding: 1px 7px; border-radius: 6px; white-space: nowrap;
   border: 1px solid var(--hairline); color: var(--text-secondary); background: var(--surface-1);
 }
@@ -777,12 +774,12 @@ button.filter-more:hover { color: var(--ink); border-color: var(--text-muted); }
 .badge.kind-other, .filter-chip.kind-other { --chip: #534f4a; }
 .thread-item { border-left: 2px solid var(--gridline); padding: 4px 0 14px 14px; margin-bottom: 4px; position: relative; }
 .thread-item::before { content: ""; position: absolute; left: -5px; top: 6px; width: 8px; height: 8px; border-radius: 50%; background: var(--text-muted); }
-.thread-date { font-size: 12px; color: var(--text-muted); font-variant-numeric: tabular-nums; }
-.thread-summary { margin: 4px 0; font-size: 14px; }
-.detail .sub { color: var(--text-secondary); font-size: 14px; margin-bottom: 18px; }
+.thread-date { font-size: 0.75rem; color: var(--text-muted); font-variant-numeric: tabular-nums; }
+.thread-summary { margin: 4px 0; font-size: 1rem; }
+.detail .sub { color: var(--text-secondary); font-size: 1rem; margin-bottom: 18px; }
 .flag-inline { margin-right: 6px; }
-.country-chip { font-size: 12px; color: var(--text-secondary); }
-.event-full { margin-top: 2px; font-size: 13px; line-height: 1.4; }
+.country-chip { font-size: 0.75rem; color: var(--text-secondary); }
+.event-full { margin-top: 2px; font-size: 0.95rem; line-height: 1.4; }
 .original-name { font-style: normal; opacity: 0.85; }
 .meta-table th { width: 7em; vertical-align: top; color: var(--text-secondary); font-weight: 500; }
 .meta-table td { white-space: pre-wrap; }
@@ -790,7 +787,7 @@ button.filter-more:hover { color: var(--ink); border-color: var(--text-muted); }
 .trend-section { margin: 0 0 24px; padding-bottom: 16px; border-bottom: 1px solid var(--hairline); }
 .trend-title { font-size: 1.05rem; letter-spacing: -0.3px; margin: 0 0 2px; color: var(--ink); }
 .trend-sub { color: var(--text-muted); font-size: 0.82rem; margin-bottom: 10px; }
-.heatmap-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 6px; }
+.heatmap-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 6px; max-width: 100%; }
 .heatmap { border-collapse: collapse; width: 100%; min-width: 760px; }
 .heatmap th, .heatmap td { text-align: center; padding: 0; }
 .heatmap thead th {
@@ -843,12 +840,12 @@ button.heat-cell:hover, button.heat-row:hover { outline: 1px solid color-mix(in 
 .kw-tag {
   display: inline-flex; align-items: center;
   border: 1px solid var(--hairline); border-radius: 999px;
-  padding: 2px 8px; font-size: 11px; color: var(--text-secondary);
+  padding: 2px 8px; font-size: 0.75rem; color: var(--text-secondary);
   background: color-mix(in srgb, var(--surface-2, var(--surface-1)) 80%, transparent);
 }
 .topic-tag {
   display: inline-flex; align-items: center; gap: 3px;
-  border-radius: 999px; padding: 2px 8px; font-size: 11px; font-weight: 600;
+  border-radius: 999px; padding: 2px 8px; font-size: 0.75rem; font-weight: 600;
   color: var(--topic); border: 1px solid color-mix(in srgb, var(--topic) 35%, var(--hairline));
   background: color-mix(in srgb, var(--topic) 12%, var(--surface-1));
 }
@@ -865,7 +862,7 @@ button.heat-cell:hover, button.heat-row:hover { outline: 1px solid color-mix(in 
 }
 .issuer-badge {
   display: inline-flex; align-items: center;
-  border-radius: 999px; padding: 2px 8px; font-size: 11px; font-weight: 600;
+  border-radius: 999px; padding: 2px 8px; font-size: 0.75rem; font-weight: 600;
   color: var(--issuer); border: 1px solid color-mix(in srgb, var(--issuer) 35%, var(--hairline));
   background: color-mix(in srgb, var(--issuer) 12%, var(--surface-1));
 }
@@ -987,8 +984,8 @@ body {{ margin: 0; }}
 {chrome["shell"]}
 <div class="wrap">
 {body}
-{FOOTER_HTML}
 </div>
+{FOOTER_HTML}
 </div>
 {page_js}
 {chrome["omni_js"]}

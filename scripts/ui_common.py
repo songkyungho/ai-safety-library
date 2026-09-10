@@ -45,23 +45,28 @@ NAV_CSS = """
   --on-dark: #f4f2eb;
 }
 * { box-sizing: border-box; }
+html { font-size: 16px; overflow-x: hidden; }
 body {
   margin: 0;
   background: var(--plane);
   color: var(--ink);
   font-family: "IBM Plex Sans KR", "IBM Plex Sans", -apple-system, BlinkMacSystemFont,
     "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  font-size: 16px;
   line-height: 1.7;
+  overflow-x: hidden;
 }
-.viz-root { min-height: 100vh; background: var(--plane); color: var(--ink); }
+.viz-root { min-height: 100vh; background: var(--plane); color: var(--ink); overflow-x: hidden; }
 .global-nav {
   position: sticky; top: 0; z-index: 40;
   background: var(--navy); color: var(--on-navy); height: 40px;
+  overflow-x: auto; -webkit-overflow-scrolling: touch;
 }
 .global-nav-inner {
   max-width: 980px; margin: 0 auto; height: 40px; padding: 0 20px;
   display: flex; align-items: center; justify-content: space-between; gap: 24px;
   font-size: 0.78rem; font-weight: 500; letter-spacing: -0.02em;
+  min-width: 0; width: 100%;
 }
 .global-nav-left, .global-nav-right {
   display: flex; align-items: center; gap: 16px; flex-shrink: 0;
@@ -77,10 +82,10 @@ header.page-head {
   color: var(--on-navy);
 }
 .page-head-inner {
-  max-width: 980px; margin: 0 auto; padding: 28px 20px 22px;
+  max-width: 980px; margin: 0 auto; padding: 30px 20px 22px;
 }
 header.page-head h1 {
-  font-size: 1.55rem; margin: 0 0 6px; font-weight: 700; letter-spacing: -0.02em;
+  font-size: 1.6rem; margin: 0 0 4px; font-weight: 700; letter-spacing: -0.01em;
   line-height: 1.35;
 }
 header.page-head .tagline {
@@ -122,12 +127,17 @@ header.page-head .tagline a:hover { color: var(--gold); }
   box-shadow: 0 8px 28px color-mix(in srgb, var(--ink) 10%, transparent);
 }
 .omni-results.hidden { display: none; }
-.wrap { max-width: 980px; margin: 0 auto; padding: 18px 20px 80px; }
+.wrap { max-width: 980px; margin: 0 auto; padding: 18px 20px 48px; }
 .site-footer {
-  margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--hairline);
-  font-size: 0.82rem; color: var(--text-muted); line-height: 1.55;
+  background: linear-gradient(165deg, var(--navy) 0%, var(--navy-2) 100%);
+  color: var(--on-navy-muted);
 }
-.site-footer a { color: var(--sage); }
+.footer-inner {
+  max-width: 980px; margin: 0 auto; padding: 28px 20px 32px;
+  font-size: 0.78rem; text-align: center; line-height: 1.8;
+}
+.site-footer a { color: var(--on-navy-muted); }
+.site-footer a:hover { color: var(--gold); }
 .org-flag { font-style: normal; font-size: 1.05em; line-height: 1; margin-right: 4px; }
 """
 
@@ -164,7 +174,11 @@ def footer_inner_html() -> str:
 
 
 def footer_html() -> str:
-    return f'<footer class="site-footer">{footer_inner_html()}</footer>'
+    return (
+        '<footer class="site-footer">'
+        f'<div class="footer-inner">{footer_inner_html()}</div>'
+        "</footer>"
+    )
 
 
 def _nav_item(href: str, label: str, *, active: bool, rel_prefix: str) -> str:
