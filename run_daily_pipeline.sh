@@ -5,7 +5,7 @@
 # 실행: ./run_daily_pipeline.sh
 # 환경: Digest와 같은 ai_safety_daily_env (OPENROUTER_API_KEY, TELEGRAM_* 등)
 # LIBRARY_PUSH=0 이면 git push 생략 (기본 1)
-# LIBRARY_CURATE_LIMIT 기본 120
+# LIBRARY_CURATE_LIMIT 기본 120 (상한; 수집으로 새로 들어온 member만 대상)
 # PIPELINE_TELEGRAM=0 이면 종료 텔레그램 알림만 생략
 #
 set -euo pipefail
@@ -47,7 +47,8 @@ PUSH="${LIBRARY_PUSH:-1}"
 LOG_TS="$(date '+%Y-%m-%d %H:%M:%S %z')"
 REPORT_FILE="$(mktemp -t ai-safety-library-pipeline.XXXXXX)"
 BEFORE_FILE="$(mktemp -t ai-safety-library-before.XXXXXX)"
-trap 'rm -f "$REPORT_FILE" "$BEFORE_FILE"' EXIT
+MEMBER_IDS_FILE="$(mktemp -t ai-safety-library-members.XXXXXX)"
+trap 'rm -f "$REPORT_FILE" "$BEFORE_FILE" "$MEMBER_IDS_FILE"' EXIT
 
 _record() {
   # id  label  status  duration  detail
@@ -76,10 +77,9 @@ _run_step() {
   return 0
 }
 
-# 시작 시 컬렉션 건수 스냅샷 (텔레그램 변동 표시용)
+# 시작 시 컬렉션 건수·member id 스냅샷 (텔레그램 변동 + 신규 큐레이션용)
 python3 - <<'PY' >"$BEFORE_FILE"
 import json, sys
-from pathlib import Path
 sys.path.insert(0, "scripts")
 from library_common import COLLECTIONS, load_collection
 out = {}
@@ -89,6 +89,23 @@ for key, _ in COLLECTIONS:
     except Exception:
         out[key] = 0
 print(json.dumps(out, ensure_ascii=False))
+PY
+
+python3 - <<'PY' >"$MEMBER_IDS_FILE"
+import json, sys
+sys.path.insert(0, "scripts")
+from library_common import COLLECTIONS, load_collection
+ids = []
+for key, _ in COLLECTIONS:
+    try:
+        items = load_collection(key).get("items") or []
+    except Exception:
+        items = []
+    for it in items:
+        mid = it.get("id") or ""
+        if mid:
+            ids.append(mid)
+print(json.dumps({"ids": ids}, ensure_ascii=False))
 PY
 
 echo ""
@@ -134,8 +151,9 @@ _run_step "2" "IAAE 목록 수집" \
 _run_step "3" "IAAE 원문 보강" \
   python3 scripts/enrich_iaae.py
 
-_run_step "4" "LLM 큐레이션" \
-  python3 scripts/curate_llm.py --limit "$CURATE_LIMIT" --workers 6
+# 수집 전 스냅샷에 없던 member만 큐레이션 (이미 medium/high 캐시는 스킵)
+_run_step "4" "LLM 큐레이션 (신규만)" \
+  python3 scripts/curate_llm.py --new-since "$MEMBER_IDS_FILE" --limit "$CURATE_LIMIT" --workers 6
 
 _run_step "5" "사이트 빌드" \
   python3 scripts/build_site.py

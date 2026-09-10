@@ -8,9 +8,13 @@
   python3 scripts/curate_llm.py --limit 20
   python3 scripts/curate_llm.py --prefer-uncertain --limit 50
   python3 scripts/curate_llm.py --workers 8 --limit 4000
+  python3 scripts/curate_llm.py --new-since /tmp/ids.json --limit 120  # 일일: 신규 멤버만
+  python3 scripts/curate_llm.py --refresh-stale --limit 200  # 해시 어긋난 기존건 재큐레이션
   python3 scripts/curate_llm.py --validate-only
   python3 scripts/build_site.py
 
+기본: confidence가 medium/high인 캐시가 있으면 건너뜀(해시 무시).
+--new-since: 스냅샷에 없던 collection member만 대상으로 함(일일 파이프라인용).
 캐시: cache/llm_curate.json
 날짜 URL/검색 복원은 resolve_oecd_dates.py 와 병행(별도 단계).
 """
@@ -643,7 +647,21 @@ def main() -> None:
         default=8,
         help="병렬 워커 수 (OpenRouter 한도 보며 4~16 권장)",
     )
-    ap.add_argument("--force", action="store_true")
+    ap.add_argument(
+        "--force",
+        action="store_true",
+        help="캐시 무시하고 전부 재큐레이션",
+    )
+    ap.add_argument(
+        "--refresh-stale",
+        action="store_true",
+        help="confidence OK여도 src_hash가 바뀐 문서를 다시 큐레이션",
+    )
+    ap.add_argument(
+        "--new-since",
+        metavar="PATH",
+        help="수집 전 member id 스냅샷(JSON 배열). 스냅샷에 없는 member가 있는 문서만 대상",
+    )
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--validate-only", action="store_true")
     ap.add_argument(
@@ -675,6 +693,18 @@ def main() -> None:
             flush=True,
         )
 
+    known_member_ids: set[str] | None = None
+    if args.new_since:
+        raw = json.loads(Path(args.new_since).read_text(encoding="utf-8"))
+        if isinstance(raw, dict):
+            raw = raw.get("ids") or raw.get("member_ids") or []
+        known_member_ids = {str(x) for x in raw if x}
+        print(
+            f"new-since snapshot members={len(known_member_ids)} "
+            f"path={args.new_since}",
+            flush=True,
+        )
+
     cache = load_cache()
     if args.validate_only:
         raise SystemExit(run_validate(cache))
@@ -693,42 +723,66 @@ def main() -> None:
     docs = build_documents()
     enrich_topics(docs)
 
+    # 기본: medium/high 캐시가 있으면 스킵(해시 무시) → 신규·미캐시·low만.
+    # --new-since: 스냅샷에 없던 member가 포함된 문서만.
+    # --refresh-stale: 해시 불일치도 재큐레이션. --force: 전부.
     candidates = []
+    skipped_ok = 0
+    skipped_old = 0
+    hash_repaired = 0
     for d in docs:
         did = d.get("id") or ""
         if not did:
             continue
-        if filter_member_ids:
-            mids = {m for m in (d.get("member_ids") or []) if m}
-            if not (mids & filter_member_ids):
+        mids = {m for m in (d.get("member_ids") or []) if m}
+        if filter_member_ids and not (mids & filter_member_ids):
+            continue
+        if known_member_ids is not None:
+            # member_ids가 비어 있으면 doc id 자체로 판별
+            markers = mids or {did}
+            if markers <= known_member_ids:
+                skipped_old += 1
                 continue
         h = src_hash(d)
         prev = cache.get(did) or {}
         prev_body = prev.get("result") or prev
-        if (
-            not args.force
-            and prev.get("src_hash") == h
-            and (prev_body.get("confidence") in CONF_OK)
-        ):
-            continue
+        conf_ok = prev_body.get("confidence") in CONF_OK
+        hash_ok = prev.get("src_hash") == h
+        if not args.force and conf_ok:
+            if not args.refresh_stale or hash_ok:
+                if not hash_ok and isinstance(prev, dict) and "result" in prev:
+                    prev["src_hash"] = h
+                    hash_repaired += 1
+                skipped_ok += 1
+                continue
         score = 0
-        if (d.get("doc_kind") or "") in ("기타", "뉴스·보도", ""):
-            score += 3
-        if any(
-            (t.get("id") if isinstance(t, dict) else t) == "politics"
-            for t in (d.get("topics") or [])
-        ):
+        if not prev:
+            score += 10  # 미캐시(신규) 우선
+        elif not conf_ok:
             score += 5
-        if not d.get("in_scope"):
-            score += 1
-        candidates.append((score if args.prefer_uncertain else 0, d))
+        if args.prefer_uncertain:
+            if (d.get("doc_kind") or "") in ("기타", "뉴스·보도", ""):
+                score += 3
+            if any(
+                (t.get("id") if isinstance(t, dict) else t) == "politics"
+                for t in (d.get("topics") or [])
+            ):
+                score += 5
+            if not d.get("in_scope"):
+                score += 1
+        candidates.append((score, d))
 
-    if args.prefer_uncertain:
-        candidates.sort(key=lambda x: -x[0])
+    # 신규(미캐시) → low → 그 외 순
+    candidates.sort(key=lambda x: -x[0])
     batch = [d for _, d in candidates[: max(0, args.limit)]]
+    if hash_repaired and not args.dry_run:
+        save_cache(cache)
     print(
-        f"need≈{len(candidates)} batch={len(batch)} workers={workers} "
-        f"model={args.model} cache={len(cache)}",
+        f"need≈{len(candidates)} batch={len(batch)} skipped_ok={skipped_ok} "
+        f"skipped_old={skipped_old} hash_repaired={hash_repaired} "
+        f"workers={workers} model={args.model} cache={len(cache)}"
+        f"{' refresh-stale' if args.refresh_stale else ''}"
+        f"{' force' if args.force else ''}",
         flush=True,
     )
 
