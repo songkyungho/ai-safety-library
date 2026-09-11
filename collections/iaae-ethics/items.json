@@ -6,8 +6,9 @@
     "list_url": "https://iaae.ai/research/",
     "note": "IAAE가 큐레이션한 국내외 AI 윤리 원칙·가이드라인. 본문은 원문 PDF를 봐야 한다."
   },
-  "count": 145,
+  "count": 146,
   "categories": {
+    "교육부": 3,
     "NC문화재단": 2,
     "과기부/NIA/TTA/ETRI": 1,
     "교육부,한국대학교육협의회": 1,
@@ -64,7 +65,6 @@
     "스캐터랩": 1,
     "LG": 1,
     "경기도교육청": 1,
-    "교육부": 2,
     "UneeQ": 1,
     "국가인권위원회": 1,
     "SK텔레콤": 1,
@@ -121,7 +121,7 @@
     "국민권익위원회 블로그": 1
   },
   "years": {
-    "2026": 21,
+    "2026": 22,
     "2025": 12,
     "2024": 9,
     "2023": 22,
@@ -131,6 +131,21 @@
     "2019": 8
   },
   "items": [
+    {
+      "id": "iaae-ethics-173953852",
+      "collection": "iaae-ethics",
+      "collection_name": "IAAE 연구자료실",
+      "idx": "173953852",
+      "title": "[교육부] 디지털 교육 규범",
+      "org": "교육부",
+      "category": "교육부",
+      "date": "2026-09-10",
+      "page_url": "https://iaae.ai/research/?bmode=view&idx=173953852",
+      "source_urls": [],
+      "body": "",
+      "digest_file": null,
+      "list_page": null
+    },
     {
       "id": "iaae-ethics-173721301",
       "collection": "iaae-ethics",

@@ -1,10 +1,51 @@
 {
   "name": "AI 안전 라이브러리 문서",
-  "updated": "2026-09-10",
-  "count": 3613,
+  "updated": "2026-09-11",
+  "count": 3614,
   "in_scope_count": 1898,
-  "out_of_scope_count": 1715,
+  "out_of_scope_count": 1716,
   "documents": [
+    {
+      "id": "doc-28f54abdb94c",
+      "title": "디지털 교육 규범",
+      "short_name": "디지털 교육 규범",
+      "full_name": "",
+      "original_name": "",
+      "doc_kind": "기타",
+      "doc_kind_raw": "교육부",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://iaae.ai/research/?bmode=view&idx=173953852",
+      "country": "South Korea",
+      "country_ko": "한국",
+      "flag": "🇰🇷",
+      "org": "교육부",
+      "published": "2026-09-10",
+      "published_raw": "",
+      "summary": "",
+      "snippet": "",
+      "history": [
+        {
+          "date": "2026-09-10",
+          "label": "IAAE 게시",
+          "url": "https://iaae.ai/research/?bmode=view&idx=173953852",
+          "title": "[교육부] 디지털 교육 규범",
+          "item_id": "iaae-ethics-173953852"
+        }
+      ],
+      "member_ids": [
+        "iaae-ethics-173953852"
+      ],
+      "member_count": 1,
+      "safety_score": 3,
+      "in_scope": false,
+      "safety_reasons": [
+        "+iaae",
+        "-no-ai"
+      ],
+      "issuer_level": "national",
+      "issuer_level_ko": "국가"
+    },
     {
       "id": "doc-73db846ff301",
       "title": "신드 클라우드 퍼스트 정책",
@@ -160604,7 +160645,7 @@
       "id": "doc-2a915d97146e",
       "title": "IAAE 인공지능 윤리 헌장 (2021-01 개정)",
       "short_name": "IAAE 인공지능 윤리 헌장 (2021-01 개정)",
-      "full_name": "[IAAE] IAAE 인공지능 윤리 헌장_210111개정 (한글본)",
+      "full_name": "",
       "original_name": "IAAE 인공지능 윤리 헌장_210111개정 (영문본)",
       "doc_kind": "선언·성명",
       "doc_kind_raw": "IAAE",
@@ -168332,7 +168373,7 @@
       "id": "doc-c13711cf1bec",
       "title": "KAIEA 인공지능 윤리 헌장 (2019-12 개정)",
       "short_name": "KAIEA 인공지능 윤리 헌장 (2019-12 개정)",
-      "full_name": "[KAIEA] KAIEA 인공지능 윤리 헌장_191219개정 (한글본)",
+      "full_name": "",
       "original_name": "KAIEA 인공지능 윤리 헌장_191219개정 (영문본)",
       "doc_kind": "가이드라인·원칙",
       "doc_kind_raw": "KAIEA",
@@ -169777,7 +169818,7 @@
       "id": "doc-5a4e86001bc6",
       "title": "KAIEA 인공지능 윤리 헌장",
       "short_name": "KAIEA 인공지능 윤리 헌장",
-      "full_name": "",
+      "full_name": "[KAIEA] KAIEA 인공지능 윤리 헌장 (한글본)",
       "original_name": "KAIEA 인공지능 윤리 헌장 (영문본)",
       "doc_kind": "선언·성명",
       "doc_kind_raw": "KAIEA",
