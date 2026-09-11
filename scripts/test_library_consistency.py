@@ -876,6 +876,16 @@ def test_mofa_url_dates() -> None:
     ok(mofa_card_date(itu, cache_d) == "2026-01-19", "html day beats month")
 
 
+def test_emphasis_markup() -> None:
+    from build_site import prose_with_emphasis
+
+    html = prose_with_emphasis("정부는 **다층 방어**를 발표했고 감염률은 __0%부터 70%__였다.")
+    ok("<strong>다층 방어</strong>" in html, "bold fact")
+    ok("<u>0%부터 70%</u>" in html, "underline number")
+    ok("term-em" not in html and "term-name" not in html, "no auto term classes")
+    ok("&lt;" in prose_with_emphasis("<script>"), "escapes html")
+
+
 def main() -> None:
     test_urls()
     test_known()
@@ -888,6 +898,7 @@ def main() -> None:
     test_oecd_dates()
     test_iaae_and_year_dates()
     test_mofa_url_dates()
+    test_emphasis_markup()
     print("ALL TESTS PASSED")
 
 

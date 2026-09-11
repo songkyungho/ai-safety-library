@@ -21,6 +21,37 @@ COLLECTIONS = [
     ("derived-splits", "묶음 분리"),
 ]
 
+# 필터·카드 소스 리본. 외교부 두 보드는 한 칩으로 묶는다.
+SOURCE_RIBBON: list[tuple[str, str, str]] = [
+    ("mofa", "외교부", "#1d4ed8"),
+    ("iaae-ethics", "IAAE", "#3f5340"),
+    ("agora", "AGORA", "#7c3aed"),
+    ("oecd-navigator", "OECD", "#0369a1"),
+    ("dpa-ai", "DPA", "#0f766e"),
+    ("lab-policies", "개발사", "#c2410c"),
+]
+SOURCE_LABEL = {k: lab for k, lab, _ in SOURCE_RIBBON}
+SOURCE_COLOR = {k: color for k, _, color in SOURCE_RIBBON}
+
+
+def source_id_for_collection(col: str) -> str:
+    c = (col or "").strip()
+    if c.startswith("mofa"):
+        return "mofa"
+    if c in SOURCE_LABEL:
+        return c
+    return ""
+
+
+def sources_from_members(members: list[dict]) -> list[str]:
+    found: set[str] = set()
+    for m in members:
+        sid = source_id_for_collection(m.get("collection") or "")
+        if sid:
+            found.add(sid)
+    return [sid for sid, _, _ in SOURCE_RIBBON if sid in found]
+
+
 CURATOR_HOSTS = {
     "www.mofa.go.kr",
     "mofa.go.kr",

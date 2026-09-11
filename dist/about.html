@@ -211,15 +211,11 @@ button.back-link { font: inherit; background: none; border: 0; padding: 0; }
 }
 .event-body { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--hairline); }
 .event-body p { margin: 0; font-size: 1rem; line-height: 1.55; color: var(--text-secondary); white-space: pre-wrap; }
-.event-body .term-em {
-  font-weight: 650; color: var(--ink);
-}
-.event-body .term-name {
-  font-weight: inherit; color: inherit;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
-  text-decoration-color: color-mix(in srgb, var(--c-l, var(--ink)) 55%, transparent);
+.event-body strong { font-weight: 700; color: var(--ink); }
+.event-body u {
+  text-decoration: underline 1px;
+  text-underline-offset: 2px;
+  text-decoration-color: color-mix(in srgb, var(--ink) 55%, transparent);
 }
 a.stat-tile, a.dir-row, a.filter-chip { text-decoration: none; color: inherit; }
 .dir-row .org { min-width: 0; flex: 1 1 240px; }
@@ -420,6 +416,24 @@ button.heat-cell:hover, button.heat-row:hover { outline: 1px solid color-mix(in 
   border-radius: 999px; padding: 2px 8px; font-size: 0.75rem; font-weight: 600;
   color: var(--issuer); border: 1px solid color-mix(in srgb, var(--issuer) 35%, var(--hairline));
   background: color-mix(in srgb, var(--issuer) 12%, var(--surface-1));
+}
+
+.filter-chip.source-chip {
+  color: var(--source); border-color: color-mix(in srgb, var(--source) 35%, var(--hairline));
+  background: color-mix(in srgb, var(--source) 12%, var(--surface-1)); font-weight: 600;
+}
+.filter-chip.source-chip .n {
+  color: color-mix(in srgb, var(--source) 65%, var(--text-muted));
+}
+.sort-toggle.filter-toolbar button.filter-chip.source-chip.active {
+  border-color: var(--source); color: var(--source);
+}
+.source-tag {
+  display: inline-flex; align-items: center;
+  border-radius: 999px; padding: 2px 8px; font-size: 0.75rem; font-weight: 600;
+  color: var(--source); border: 1px solid color-mix(in srgb, var(--source) 35%, var(--hairline));
+  background: color-mix(in srgb, var(--source) 12%, var(--surface-1));
+  cursor: pointer;
 }
 
 button.filter-chip.topic-chip {

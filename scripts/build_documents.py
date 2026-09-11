@@ -34,6 +34,7 @@ from library_common import (  # noqa: E402
     pick_canonical,
     pick_group_canonical,
     item_legislation_family,
+    sources_from_members,
     url_owners_should_merge,
     write_json,
 )
@@ -233,6 +234,8 @@ def build_documents(*, skip_instrument_merge: bool = False) -> list[dict]:
             continue
         data = load_collection(key)
         for it in data.get("items") or []:
+            if not it.get("collection"):
+                it["collection"] = key
             if it.get("id") in split_parents:
                 continue
             pending.append(it)
@@ -551,6 +554,7 @@ def build_documents(*, skip_instrument_merge: bool = False) -> list[dict]:
                 "summary": summary,
                 "snippet": summary[:500],
                 "history": history,
+                "sources": sources_from_members(members),
                 "member_ids": [m.get("id") for m in members],
                 "member_count": len(members),
                 "_cache_urls": cache_urls,

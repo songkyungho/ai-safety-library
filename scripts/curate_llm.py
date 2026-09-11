@@ -189,6 +189,8 @@ SYSTEM = f"""당신은 AI 안전·거버넌스 라이브러리의 수석 큐레�
 한글 표기
 - short_name: 한국어 약칭. 관할(캘리포니아·EU 등)·고유번호(AB 410, SB 9)는 유지.
 - summary: 사실만 3~6문장. 마케팅·추측 금지. 내용이 없으면 빈 문자열.
+  핵심 결론·사실은 **이렇게 별표 두 개로**, 중요한 용어나 구체 수치는 __이렇게 밑줄 두 개로__ 감싼다
+  (마크다운 표기이지 HTML이 아니다). 남발하지 말고 카드당 많아야 1~2곳만. HTML 태그는 쓰지 않는다.
 """
 
 
@@ -396,7 +398,7 @@ body/summary:
   "published_confidence": "high|medium|low|none",
   "published_note": "날짜 출처. catalog Added-on/추측이면 비우고 confidence none",
   "short_name": "한국어 약칭",
-  "summary": "한국어 핵심 3~6문장 또는 번호 목록",
+  "summary": "한국어 핵심 3~6문장 또는 번호 목록. 핵심 사실은 **굵게**, 중요 용어·수치는 __밑줄__. 카드당 1~2곳",
   "corrections": ["규칙 초안 대비 고친 점"],
   "confidence": "high|medium|low",
   "flags": []
