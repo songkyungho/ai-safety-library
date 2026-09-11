@@ -1606,6 +1606,9 @@ def render_about(docs: list[dict], index: dict, *, total_raw: int = 0, out_count
       아니면 catalog Added-on을 둡니다. 외교부는 발표시점이 연도뿐이면 원문 URL 메타·경로로
       월·일을 보강합니다
       (<code>resolve_oecd_dates.py</code> · <code>mofa_dates.py</code>).</li>
+    <li><b>DPA는 큐레이터 랜딩</b> — Regulating AI 스레드의 intervention을 받습니다.
+      공식 원문 URL은 API에 없어서 DPA 페이지를 연결하고, 범위는 OECD·외교부와 같은
+      안전·거버넌스·규제 큐레이션을 씁니다.</li>
     <li><b>저신뢰는 자동 반영 안 함</b> — <code>confidence=low</code>는 캐시에만 두고 UI 필드를 바꾸지 않습니다.</li>
     <li><b>원문 제목 보존</b> — 한글 약칭을 쓸 때 영문 원제는 <code>original_name</code>에 남깁니다.</li>
     <li><b>동일 법령은 한 카드</b> — 규칙으로 후보만 묶고, 큐레이션·병합 분석 후
@@ -1649,6 +1652,12 @@ def render_about(docs: list[dict], index: dict, *, total_raw: int = 0, out_count
       <b>외교부 연도만 있는 날짜</b>
       <code>python3 scripts/mofa_dates.py</code>
       <span>원문 HTML·PDF·URL 경로. 캐시 <code>cache/mofa_dates.json</code>.</span>
+    </div>
+    <div class="tool-item">
+      <b>DPA Regulating AI (파일럿)</b>
+      <code>python3 scripts/ingest_dpa_ai_thread.py --limit 250</code>
+      <code>python3 scripts/curate_llm.py --collection dpa-ai --limit 400 --workers 8</code>
+      <span>issue 42 event-list. 키 <code>DPA_API</code>. 랜딩은 DPA intervention 페이지.</span>
     </div>
     <div class="tool-item">
       <b>사이트 재생성</b>

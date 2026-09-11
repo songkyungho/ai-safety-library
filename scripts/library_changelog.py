@@ -18,6 +18,12 @@ class ChangelogEntry(TypedDict):
 LIBRARY_CHANGELOG: list[ChangelogEntry] = [
     {
         "date": "2026-09-11",
+        "title": "DPA Regulating AI 스레드를 파일럿 소스로 넣는다",
+        "body": "Digital Policy Alert issue 42(규제 intervention)를 큐레이터 컬렉션으로 받는다. 원문 URL은 아직 없고 DPA 페이지가 랜딩이다. OECD·외교부와 같이 수집은 넓게 두고, 규칙 점수와 LLM 큐레이션으로 AI 안전·거버넌스·규제만 목록에 남긴다. 지금은 최근분 파일럿이다.",
+        "tags": ("사이트", "분류"),
+    },
+    {
+        "date": "2026-09-11",
         "title": "로컬 MCP로 라이브러리를 검색한다",
         "body": "documents.json을 FTS+임베딩으로 색인해 search_library·get_document·corpus_stats를 Cursor에서 쓴다. 일일 파이프라인이 인덱스를 갱신한다.",
         "tags": ("도구",),

@@ -16,6 +16,7 @@ COLLECTIONS = [
     ("iaae-ethics", "IAAE 연구자료실"),
     ("agora", "ETO AGORA"),
     ("oecd-navigator", "OECD.AI Policy Navigator"),
+    ("dpa-ai", "DPA Regulating AI"),
     ("lab-policies", "개발사 프론티어 안전 정책"),
     ("derived-splits", "묶음 분리"),
 ]
@@ -27,6 +28,8 @@ CURATOR_HOSTS = {
     "www.iaae.ai",
     "oecd.ai",
     "www.oecd.ai",
+    "digitalpolicyalert.org",
+    "www.digitalpolicyalert.org",
 }
 
 # Hosts that are never a useful original landing page.
@@ -603,6 +606,9 @@ _COUNTRY_ALIASES.update(
         "us": "United States",
         "u.s.": "United States",
         "u.s.a.": "United States",
+        "united states of america": "United States",
+        "chinese taipei": "Taiwan",
+        "taiwan, china": "Taiwan",
         "uk": "United Kingdom",
         "uae": "United Arab Emirates",
         "korea": "South Korea",

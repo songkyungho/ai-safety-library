@@ -21,6 +21,10 @@ python3 scripts/enrich_iaae.py
 # OECD 재수집 (국가·sourceFiles 포함)
 python3 scripts/ingest_agora_oecd.py --oecd-only
 
+# DPA Regulating AI 스레드 (파일럿)
+python3 scripts/ingest_dpa_ai_thread.py --limit 250
+python3 scripts/curate_llm.py --collection dpa-ai --limit 400
+
 # 중복·원본 없음·약한 항목·죽은 링크 리포트 (+ 죽은 원본 URL 제거)
 python3 scripts/audit_library.py --check-links --apply-dead
 
@@ -63,6 +67,7 @@ push를 끄려면 `LIBRARY_PUSH=0 ./run_daily_pipeline.sh`.
 | IAAE 연구자료실 | 큐레이터 카드 → 상세에서 원본 URL 추출 |
 | ETO AGORA | 법·규정·표준 원문 메타 (CC BY-NC 4.0) |
 | OECD.AI Policy Navigator | 정책 이니셔티브 + `gaiinCountry`·첨부 PDF |
+| DPA Regulating AI | 규제 intervention 타임라인 (큐레이터 랜딩, 파일럿) |
 
 공통 필드: `page_url`(큐레이터 또는 공식), `source_urls`(원본 후보), OECD는 `source_files`·`country` 추가.
 
@@ -81,3 +86,4 @@ push를 끄려면 `LIBRARY_PUSH=0 ./run_daily_pipeline.sh`.
 
 - AGORA: Emerging Technology Observatory, https://doi.org/10.5281/zenodo.20714047 (CC BY-NC 4.0)
 - Policy Navigator: OECD.AI, https://oecd.ai/dashboards
+- Digital Policy Alert: https://digitalpolicyalert.org/threads/regulating-artificial-intelligence (CC BY-NC 4.0)

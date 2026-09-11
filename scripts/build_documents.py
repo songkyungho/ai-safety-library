@@ -192,6 +192,8 @@ def history_label(item: dict) -> str:
         return "원문 기록"
     if col == "oecd-navigator":
         return "OECD 등록"
+    if col == "dpa-ai":
+        return "DPA 기록"
     if col == "lab-policies":
         return "개발사 게시"
     if col == "derived-splits":

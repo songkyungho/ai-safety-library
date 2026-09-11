@@ -57,7 +57,7 @@ _NEG = [
     (r"invest(ment)?\b|투자\s*유치|venture|펀드|기금(?!.*안전)", 2),
     (r"talent|인재\s*양성|skills\s*agenda|역량\s*강화(?!.*윤리)", 2),
     (r"competitiv|경쟁력|market\s*share|시장\s*동향", 2),
-    (r"adopt(ion)?\b|도입\s*가속|활용\s*촉진|deploy(ment)?\b(?!.*safe)", 2),
+    (r"(?:ai\s+)?adoption\b|도입\s*가속|활용\s*촉진|deploy(?:ment)?\b(?!.*safe)", 2),
     (r"cluster|허브\s*조성|sandbox(?!.*(안전|risk|ethic|규제))", 2),
     (r"chip|반도체|compute\s*infr|데이터센터\s*투자", 2),
     (r"gdp|생산성|productivity|growth\s*strateg", 2),
@@ -107,6 +107,9 @@ def score_document(doc: dict) -> SafetyScore:
     if "외교부 게시" in labels:
         score += 1
         reasons.append("+mofa")
+    if "DPA 기록" in labels:
+        score += 1
+        reasons.append("+dpa")
     if "원문 기록" in labels:
         score += 1
         reasons.append("+agora")
