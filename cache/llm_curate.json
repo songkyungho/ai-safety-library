@@ -106871,5 +106871,263 @@
         "원문 메타데이터 일부가 말줄임표로 생략되어 세부 내용은 확인되지 않음"
       ]
     }
+  },
+  "doc-ec43e2a36d21": {
+    "src_hash": "07a9340857e352c7",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-12",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "브라질 공공부문에서 생성형 AI를 윤리적이고 책임 있게 사용하도록 안내하는 실무 지침 모음입니다.",
+      "reject_reason": "",
+      "doc_kind": "가이드라인·원칙",
+      "issuer_level": "national",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표·채택·공개일이 명시되어 있지 않습니다.",
+      "short_name": "브라질 공공서비스 AI 안내·방법론·가이드",
+      "summary": "**브라질 공공부문과 일반 이용자가 AI 도구를 책임 있게 이해하고 사용하도록 돕는 가이드 모음**입니다. 생성형 AI의 개요와 한계·위험, 브라질 공공부문에서의 윤리적 활용 방법, 도구 선택 및 프롬프트 설계의 모범 사례를 다룹니다. 별도의 IT 사전 지식 없이 AI를 이해하고 책임 있게 도입할 수 있도록 실무 지침을 제공합니다.",
+      "corrections": [
+        "원문에 발표일이 없어 규칙 초안의 2026-09-11을 published에서 제거했습니다."
+      ],
+      "confidence": "high",
+      "flags": []
+    }
+  },
+  "doc-b51aefff6294": {
+    "src_hash": "91c5e7c135b68e2e",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-12",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "사우디 식품의약청이 의약품 규제검사를 위해 개발한 AI 시스템으로, 공중보건과 규제 집행의 자동화·일관성에 직접 관련됩니다.",
+      "reject_reason": "",
+      "doc_kind": "기타",
+      "issuer_level": "ministry",
+      "topics": [
+        {
+          "id": "healthcare",
+          "evidence": "The system analyses images of medicines carried by travelers to detect controlled substances and verify compliance with regulatory rules."
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표·공개일이 명시되어 있지 않아 날짜를 기재하지 않음.",
+      "short_name": "사우디 RASID 의약품 검사 시스템",
+      "summary": "**RASID는 사우디 식품의약청(SFDA)이 국경 검문소의 의약품 검사를 지원하기 위해 개발한 AI 기반 규제 시스템입니다.** 여행자가 소지한 의약품 포장 이미지에서 약품명·수량·용량 등의 정보를 추출하고, 규제 대상 물질 여부와 규정 준수 여부를 확인하도록 설계되었습니다. 이 시스템은 다양한 브랜드·제형·포장 형태의 의약품을 처리하며, 수작업 검사에 따른 처리 지연과 판정 불일치를 줄이는 것을 목적으로 합니다.",
+      "corrections": [
+        "공식 법령·정책 문서의 실질 내용이 확인되지 않아 문서 종류를 전략·정책이 아닌 기타로 분류함.",
+        "원문 메타에 발표일이 없어 published를 비움.",
+        "의약품 규제검사와 공중보건 관련 근거에 따라 healthcare 토픽을 추가함."
+      ],
+      "confidence": "medium",
+      "flags": []
+    }
+  },
+  "doc-703da3156181": {
+    "src_hash": "48e3c1b25a3cf5fd",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-12",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "식품·의약품·화장품·의료기기의 규제 준수와 안전 기준 확인을 지원하는 AI 기반 검사 프로젝트로 공공 안전 및 규제 집행과 직접 관련됩니다.",
+      "reject_reason": "",
+      "doc_kind": "기타",
+      "issuer_level": "ministry",
+      "topics": [
+        {
+          "id": "healthcare",
+          "evidence": "food, pharmaceutical, cosmetic, and medical device products"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표·채택·공포일이 없으며, 규칙 초안의 날짜는 OECD 등록일 또는 추정일일 수 있어 사용하지 않았습니다.",
+      "short_name": "사우디 ProVerifier",
+      "summary": "ProVerifier는 사우디 식품의약청(SFDA) 검사관이 식품·의약품·화장품·의료기기의 규제 준수 여부를 확인하도록 지원하는 AI 기반 검사 도구입니다. 검사관이 제품을 촬영하거나 스캔하면 시스템이 주요 정보를 추출하고 공식 등록 데이터베이스 및 안전 기준과 대조합니다. **이 도구의 목적은 수작업 검사 시간을 줄이고 인적 오류를 최소화해 공중보건 보호를 강화하는 것입니다.** 기존에는 검사관이 제품 라벨을 여러 정부 데이터베이스와 규제 문서에 수동으로 대조했으며, 적용 대상은 __4개 제품 범주__입니다.",
+      "corrections": [
+        "규칙 초안의 doc_kind인 전략·정책을 프로젝트형 문서에 맞춰 기타로 조정했습니다.",
+        "규칙 초안의 published 날짜는 원문에 명시된 발표일이 아니므로 삭제했습니다.",
+        "원문 근거가 확인되는 healthcare 토픽을 추가했습니다."
+      ],
+      "confidence": "medium",
+      "flags": []
+    }
+  },
+  "doc-0d22038ebb3e": {
+    "src_hash": "31e0a027d4d6878c",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-12",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "일본 디지털청이 행정 업무에서 생성형 AI를 시험하고 활용 효과와 관련 위험을 검토한 AI 정책 실증 프로젝트이므로 범위에 해당합니다.",
+      "reject_reason": "",
+      "doc_kind": "기타",
+      "issuer_level": "ministry",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표일이 없으며, 2023년 12월부터 2024년 3월까지의 기간은 프로젝트 실증 기간이므로 published로 사용하지 않았습니다.",
+      "short_name": "일본 행정 생성형 AI 적정 활용 기술검증",
+      "summary": "**일본 디지털청은 __2023년 12월부터 2024년 3월까지__ 행정 업무에서 텍스트 기반 생성형 AI의 활용 가능성을 시험하는 실증 프로젝트를 운영했습니다.** 중앙 부처와 일부 지방정부 공무원은 여러 대규모 언어 모델을 이용하는 채팅 플랫폼을 사용해 국민 의견 처리, 규제 초안 작성, 코드 생성 등의 업무를 검토했습니다. 이 프로젝트는 행정에서 생성형 AI가 효율성 및 품질 개선에 기여할 수 있는 분야와 관련 위험을 파악하기 위해 추진되었습니다.",
+      "corrections": [
+        "규칙 초안의 in_scope=false를 직접적인 AI 행정 활용 및 위험 검토 프로젝트라는 점에 따라 true로 수정했습니다.",
+        "규칙 초안의 published 2026-09-11은 원문에 발표일 근거가 없어 published를 비웠습니다.",
+        "프로젝트 실증 기록으로 보아 doc_kind를 전략·정책이 아닌 기타로 분류했습니다."
+      ],
+      "confidence": "medium",
+      "flags": []
+    }
+  },
+  "doc-c5a48d821dd1": {
+    "src_hash": "2d83d3ed3c0f80ae",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-12",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "뉴질랜드 공공서비스 기관과 공무원이 생성형 AI를 안전하고 투명하며 책임 있게 활용하도록 지원하는 정부 지침이다.",
+      "reject_reason": "",
+      "doc_kind": "가이드라인·원칙",
+      "issuer_level": "national",
+      "topics": [],
+      "published": "2025-01-01",
+      "published_confidence": "low",
+      "published_note": "원문 메타에 2025년판이라고만 명시되어 있어 연도만 반영했으며 월·일은 확인되지 않는다.",
+      "short_name": "뉴질랜드 공공서비스 생성형 AI 책임 있는 AI 지침",
+      "summary": "**뉴질랜드 공공서비스 기관과 공무원이 생성형 인공지능(GenAI)을 안전하고 투명하며 책임 있게 활용하도록 지원하는 지침**이다. 2025년판은 __2023년 7월__ 발행된 공공서비스 임시 생성형 AI 지침을 갱신하고 기관들의 의견을 반영했다. 이 지침은 GenAI 도입 과정에서 위험과 잠재적 이익의 균형을 고려하도록 지원하며, 정부 최고디지털책임자(GCDO)가 개발한 AI 도구 모음과 사례 연구 등의 자료군에 포함된다.",
+      "corrections": [
+        "규칙 초안의 2026-09-11 날짜를 원문에 명시된 2025년판 기준으로 2025-01-01로 수정하고 신뢰도를 low로 낮췄다."
+      ],
+      "confidence": "high",
+      "flags": []
+    }
+  },
+  "doc-b6cad97fcd31": {
+    "src_hash": "982d8a917c09224f",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-12",
+    "result": {
+      "in_scope": false,
+      "in_scope_reason": "정부 웹사이트에 통합되는 AI 대화형 도구의 공공서비스 활용을 설명하지만 AI 안전·리스크·거버넌스·규제에 관한 실질적 내용은 확인되지 않습니다.",
+      "reject_reason": "weak_ai_link",
+      "doc_kind": "기타",
+      "issuer_level": "ministry",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문에는 2025년에 파일럿으로 출시되었다는 내용만 있으며 문서 발표일은 확인되지 않습니다.",
+      "short_name": "슬로베니아 통합 지능형 도우미",
+      "summary": "**슬로베니아 디지털전환부가 개발한 통합 지능형 도우미**는 기존 정부 웹사이트에 통합되는 AI 기반 대화형 도구입니다. __2025년__ 파일럿 솔루션으로 출시되었으며, 여러 정부 포털에 분산된 정보를 자연어 대화로 찾도록 지원합니다. 반복 문의에 자동으로 답변해 전화·이메일 등 기존 지원 채널의 부담을 줄이고, 정부 정보에 24시간 접근할 수 있도록 설계되었습니다.",
+      "corrections": [
+        "AI 안전·거버넌스 문서가 아니라 공공서비스 AI 프로젝트 설명에 해당하므로 in_scope를 false로 판단했습니다.",
+        "규칙 초안의 전략·정책 대신, 실질적인 규범이나 정책 조항이 없는 프로젝트 설명으로 보아 doc_kind를 기타로 분류했습니다.",
+        "원문에 정확한 발표일이 없어 규칙 초안의 2026-09-11을 published에서 제외했습니다."
+      ],
+      "confidence": "medium",
+      "flags": [
+        "본문이 중간에 잘려 있어 전체 범위와 세부 내용을 확인할 수 없습니다."
+      ]
+    }
+  },
+  "doc-658b148f4f82": {
+    "src_hash": "1484f59db5d7600f",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-12",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "일본 정부의 AI와 과학기술 정책을 연구부터 사회 구현까지 조정하는 국가 차원의 전략 문서이므로 AI 거버넌스와 직접 관련됩니다.",
+      "reject_reason": "",
+      "doc_kind": "전략·정책",
+      "issuer_level": "national",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 개별 문서의 채택·발표일이 명시되어 있지 않고, 제시된 2026-09-11은 출처가 확인되지 않는 규칙 초안 날짜이므로 사용하지 않았습니다.",
+      "short_name": "일본 통합혁신전략",
+      "summary": "**일본 통합혁신전략은 __2018년부터 매년__ 일본 내각이 승인해 온 국가 차원의 계획입니다.** 이 전략은 AI와 과학기술 정책을 기초연구부터 사회 구현까지 연결하고, 내각부 산하 과학기술·혁신회의(CSTI)가 조정합니다. 전략은 AI·양자·바이오 등 신흥기술을 정부 차원에서 조정하며, 일본의 과학기술·혁신 기본계획을 실행하고 Society 5.0 실현을 지원합니다. 원문은 __2018~2025년 8개 판__이 발행되었다고 설명합니다.",
+      "corrections": [
+        "원문에 개별 발표일이 없어 규칙 초안의 2026-09-11을 published에 반영하지 않았습니다.",
+        "원문에서 특정 허용 토픽의 직접 근거가 확인되지 않아 topics를 비워 두었습니다."
+      ],
+      "confidence": "medium",
+      "flags": []
+    }
+  },
+  "doc-3f0e46530c34": {
+    "src_hash": "a9fbb1675bcdfc1b",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-12",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "AI 영상분석과 RFID를 활용해 성지 순례객의 이동과 군중 흐름을 관리하고 과밀로 인한 안전 위험을 예방하는 공공 안전 시스템이므로 AI 안전·리스크와 직접 관련됩니다.",
+      "reject_reason": "",
+      "doc_kind": "기구·제도",
+      "issuer_level": "ministry",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 공식 발표·채택·공포일이 없으며, 규칙 초안의 2026-09-11은 사용할 수 없습니다.",
+      "short_name": "사우디 누숙 카드 시스템",
+      "summary": "**누숙 카드 시스템은 RFID 스마트카드와 AI 영상분석을 결합한 하지 군중관리 시스템입니다.** 성지 전역의 __800대 이상 감시 카메라__를 활용해 순례객의 이동을 추적하고 일정 준수와 군중 흐름을 관리합니다. 이 시스템은 미나·아라파트·무즈달리파·자마라트 시설 등 제한된 공간에서 __180만 명 이상__의 순례객을 관리하고, 과밀과 역방향 이동으로 인한 생명 위협을 예방하는 것을 목표로 합니다. 또한 순례객 신원 확인과 하지 서비스 제공업체의 배차 일정 준수 여부를 지원합니다.",
+      "corrections": [
+        "AI 기반 공공 안전·군중관리 시스템의 직접 관련성을 반영해 in_scope를 true로 수정했습니다.",
+        "문서 성격을 전략·정책이 아닌 기구·제도로 분류했습니다.",
+        "원문에 공식 발표일이 없어 published를 비웠고, 규칙 초안의 날짜를 사용하지 않았습니다.",
+        "제공된 내용만으로 허용 토픽을 명확히 매칭하기 어려워 topics를 비웠습니다."
+      ],
+      "confidence": "medium",
+      "flags": []
+    }
+  },
+  "doc-626ad455d45d": {
+    "src_hash": "3196a8561527156d",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-12",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "일본 내각부 산하 자문기구의 AI 윤리 원칙 개발·유지 및 거버넌스 역할을 다루는 문서입니다.",
+      "reject_reason": "",
+      "doc_kind": "기구·제도",
+      "issuer_level": "ministry",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에는 기구 설립 시점과 원칙 개발 연도만 제시되어 있으며, 문서의 발표·채택일은 확인되지 않습니다.",
+      "short_name": "일본 인간 중심 AI 사회원칙 회의",
+      "summary": "**일본 내각부 산하의 인간 중심 AI 사회원칙 회의는 2018년 5월 설립된 자문기구**입니다. 이 회의는 산업계·학계·시민사회의 전문성을 바탕으로 AI 개발과 활용을 위한 윤리 원칙을 마련하고, 이를 일본의 혁신정책에 제안하는 역할을 합니다. __2019년__ 인간 중심 AI 사회원칙을 개발했으며, 해당 원칙은 인간의 존엄성, 다양성과 포용, 지속가능성을 핵심 가치로 제시합니다. 회의는 기술 발전에 대응해 관련 지침을 검토·갱신하는 활동을 계속합니다.",
+      "corrections": [
+        "규칙 초안의 published 값 2026-09-11은 원문 발표일로 확인되지 않아 빈 값으로 수정했습니다.",
+        "문서의 실질적 내용에 따라 doc_kind를 기구·제도로 유지하고, 발급 층위를 내각부 산하 기구에 맞춰 ministry로 분류했습니다."
+      ],
+      "confidence": "high",
+      "flags": []
+    }
+  },
+  "doc-34775d57e602": {
+    "src_hash": "6bd1c4fec9d0dd15",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-12",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "캐나다 교통청의 항공 여행 민원 처리에 AI를 도입하면서 의사결정 품질·일관성과 책임 있는 AI 활용을 다루는 공공 부문 AI 이니셔티브입니다.",
+      "reject_reason": "",
+      "doc_kind": "기타",
+      "issuer_level": "ministry",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표일·채택일이 명시되어 있지 않으며, 규칙 초안의 날짜는 원문 근거가 없어 사용하지 않았습니다.",
+      "short_name": "캐나다 항공 민원 AI 이니셔티브",
+      "summary": "캐나다 교통청(CTA)은 항공 여행 민원 처리에서 AI를 활용해 결정문 초안의 품질 검토와 문서·사건 파일 요약을 지원하고 있습니다. **AI 도구를 통해 의사결정의 품질과 일관성을 유지하면서 민원 처리를 가속하는 것이 핵심입니다.** 2024~25 회계연도에 CTA는 __33,000건__의 민원을 종결했지만, 연간 접수량이 __40,000건 이상__이고 약 __90,000건__의 적체가 남아 있습니다. 향후에는 AI 지원 결정문 작성, 민원 분류 모델 개선, 민원인의 사전 자가 선별을 지원할 수 있는 외부 도구 등이 검토됩니다.",
+      "corrections": [
+        "규칙 초안의 in_scope=false를 수정했습니다. 문서가 공공기관의 AI 활용과 책임 있는 도입을 직접 다루므로 범위에 포함했습니다.",
+        "규칙 초안의 전략·정책을 수정하고, 규범 문서나 전략 문서라기보다 공공 AI 이니셔티브를 설명하는 문서이므로 doc_kind를 기타로 분류했습니다.",
+        "원문에 발표일이 없어 규칙 초안의 2026-09-11을 사용하지 않고 published를 비웠습니다.",
+        "원문에 명확한 토픽 분류 근거가 없어 topics를 비웠습니다."
+      ],
+      "confidence": "high",
+      "flags": []
+    }
   }
 }

@@ -5,16 +5,16 @@
 - API: `https://api.oecdai.org/policy-initiatives`
 - 데이터: `items.json` · `items.csv`
 
-- 건수: **2512건**
-- 기간: 2000-10-31 ~ 2026-09-09
+- 건수: **2525건**
+- 기간: 2000-10-31 ~ 2026-09-11
 
 ## 분류
 
 | 분류 | 건수 |
 |---|---:|
-| AI policy initiatives, programmes and projects | 1723 |
-| Regulations, guidelines and standards | 430 |
-| National – AI governance bodies or mechanisms | 150 |
+| AI policy initiatives, programmes and projects | 1733 |
+| Regulations, guidelines and standards | 432 |
+| National – AI governance bodies or mechanisms | 151 |
 | AI Policy Frameworks and Initiatives (intergovernmental or supranational) | 107 |
 | National – Strategy | 94 |
 | AI Governance Bodies and Mechanisms (intergovernmental or supranational) | 8 |
@@ -23,7 +23,7 @@
 
 | 연도 | 건수 |
 |---|---:|
-| 2026 | 201 |
+| 2026 | 214 |
 | 2025 | 1255 |
 | 2024 | 197 |
 | 2023 | 168 |
@@ -49,6 +49,19 @@
 
 | 날짜 | 분류 | 제목 | 원문 |
 |---|---|---|---|
+| 2026-09-11 | AI policy initiatives, programmes and pr | [Unified Intelligent Assistant](https://oecd.ai/en/dashboards/policy-initiatives/unified-intelligent-assistant) | [원문](https://nio.gov.si/en/products/enotni%2Bpametni%2Bpomocnik) |
+| 2026-09-11 | AI policy initiatives, programmes and pr | [Technical Verification for Appropriate Use of Generative AI in Administration](https://oecd.ai/en/dashboards/policy-initiatives/technical-verification-for-appropriate-use-of-generative-ai-in-administration) | [원문](https://www.digital.go.jp/en/news/19c125e9-35c5-48ba-a63f-f817bce95715) |
+| 2026-09-11 | Regulations, guidelines and standards | [Responsible AI Guidance for the Public Service: GenAI](https://oecd.ai/en/dashboards/policy-initiatives/responsible-ai-guidance-for-the-public-service-genai) | [원문](https://www.digital.govt.nz/standards-and-guidance/technology-and-architecture/artificial-intelligence/responsible-ai-guidance-for-the-public-service-genai) |
+| 2026-09-11 | AI policy initiatives, programmes and pr | [RASID](https://oecd.ai/en/dashboards/policy-initiatives/rasid) | [원문](https://www.spa.gov.sa/N2432244) |
+| 2026-09-11 | AI policy initiatives, programmes and pr | [ProVerifier](https://oecd.ai/en/dashboards/policy-initiatives/proverifier) |  |
+| 2026-09-11 | Regulations, guidelines and standards | [Orientation, Methodologies and Guides for AI in the Public Service](https://oecd.ai/en/dashboards/policy-initiatives/orientation,-methodologies-and-guides-for-ai-in-the-public-service) | [원문](https://www.gov.br/governodigital/pt-br/infraestrutura-nacional-de-dados/inteligencia-artificial-1) |
+| 2026-09-11 | AI policy initiatives, programmes and pr | [Nusuk Card System](https://oecd.ai/en/dashboards/policy-initiatives/nusuk-card-system) | [원문](https://haj.gov.sa/ar/About-the-ministry/Ministry-initiatives/Nusuk-Card?NuskCard) |
+| 2026-09-11 | AI policy initiatives, programmes and pr | [Integrated Innovation Strategy](https://oecd.ai/en/dashboards/policy-initiatives/integrated-innovation-strategy) | [원문](https://www8.cao.go.jp/cstp/tougosenryaku/index.html) |
+| 2026-09-11 | National – AI governance bodies or mecha | [Council on Social Principles of Human Centric AI](https://oecd.ai/en/dashboards/policy-initiatives/council-on-social-principles-of-human-centric-ai) | [원문](https://www8.cao.go.jp/cstp/ai/ningen/ningen.html) |
+| 2026-09-11 | AI policy initiatives, programmes and pr | [Air Travel Complaints Artificial Intelligence Initiative](https://oecd.ai/en/dashboards/policy-initiatives/air-travel-complaints-artificial-intelligence-initiative) | [원문](https://nrc.canada.ca/en/stories/ai-used-reduce-time-resolving-air-traveller-complaints) |
+| 2026-09-11 | AI policy initiatives, programmes and pr | [AI-Powered Research Support Service (RSS)](https://oecd.ai/en/dashboards/policy-initiatives/ai-powered-research-support-service-rss) | [원문](https://www.nrc.re.kr/board.es?act=view&bid=0015&list_no=178516&mid=a12102000000&tag=) |
+| 2026-09-11 | AI policy initiatives, programmes and pr | [AI Scribe for Emergency Departments](https://oecd.ai/en/dashboards/policy-initiatives/ai-scribe-for-emergency-departments) | [원문](https://www.tewhatuora.govt.nz/health-services-and-programmes/digital-health/generative-ai-and-large-language-models) |
+| 2026-09-11 | AI policy initiatives, programmes and pr | [AI Assistants for Supporting Labor Justice Conciliation](https://oecd.ai/en/dashboards/policy-initiatives/ai-assistants-for-supporting-labor-justice-conciliation) | [원문](https://renovajud.cnj.jus.br/conteudo-publico?iniciativa=1758) |
 | 2026-09-09 | AI policy initiatives, programmes and pr | [Sindh Cloud First Policy (Subnational: Province of Sindh)](https://oecd.ai/en/dashboards/policy-initiatives/sindh-cloud-first-policy-subnational-province-of-sindh) | [원문](https://istd.sindh.gov.pk/) |
 | 2026-09-09 | AI policy initiatives, programmes and pr | [REGi - Regulatory Intelligence (Subnational: Ontario)](https://oecd.ai/en/dashboards/policy-initiatives/regi-regulatory-intelligence-subnational-ontario) | [원문](https://data.ontario.ca/dataset/artificial-intelligence-ai-use-cases-in-the-ontario-public-service) |
 | 2026-09-09 | National – AI governance bodies or mecha | [Pakistan Digital Authority (PDA)](https://oecd.ai/en/dashboards/policy-initiatives/pakistan-digital-authority-pda) | [원문](https://www.pda.gov.pk/) |
