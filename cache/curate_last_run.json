@@ -1,8 +1,8 @@
 {
-  "recorded_at": "2026-09-11T15:33:35",
-  "batch": 202,
-  "ok": 202,
+  "recorded_at": "2026-09-13T09:02:20",
+  "batch": 0,
+  "ok": 0,
   "fail": 0,
-  "elapsed_sec": 224.6,
+  "elapsed_sec": 0.1,
   "model": "openai/gpt-5.6-luna"
 }
