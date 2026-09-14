@@ -17,6 +17,7 @@ COLLECTIONS = [
     ("agora", "ETO AGORA"),
     ("oecd-navigator", "OECD.AI Policy Navigator"),
     ("dpa-ai", "DPA Regulating AI"),
+    ("aigl", "AI Governance Library"),
     ("lab-policies", "개발사 프론티어 안전 정책"),
     ("derived-splits", "묶음 분리"),
 ]
@@ -28,6 +29,7 @@ SOURCE_RIBBON: list[tuple[str, str, str]] = [
     ("agora", "AGORA", "#7c3aed"),
     ("oecd-navigator", "OECD", "#0369a1"),
     ("dpa-ai", "DPA", "#0f766e"),
+    ("aigl", "AIGL", "#9f1239"),
     ("lab-policies", "개발사", "#c2410c"),
 ]
 SOURCE_LABEL = {k: lab for k, lab, _ in SOURCE_RIBBON}
@@ -61,6 +63,8 @@ CURATOR_HOSTS = {
     "www.oecd.ai",
     "digitalpolicyalert.org",
     "www.digitalpolicyalert.org",
+    "aigl.blog",
+    "www.aigl.blog",
 }
 
 # Hosts that are never a useful original landing page.

@@ -93,6 +93,7 @@ def format_library_telegram(
     oecd_now = _collection_count("oecd-navigator")
     iaae_now = _collection_count("iaae-ethics")
     agora_now = _collection_count("agora")
+    aigl_now = _collection_count("aigl")
     mofa_g = _collection_count("mofa-governance")
     mofa_c = _collection_count("mofa-country-policy")
     iaae_new = _iaae_new_count()
@@ -114,6 +115,8 @@ def format_library_telegram(
         bits.append(bit)
     if agora_now:
         bits.append(f"AGORA {agora_now}건")
+    if aigl_now:
+        bits.append(f"AIGL {aigl_now}건")
     if bits:
         lines.append("수집  " + " · ".join(bits))
 
@@ -125,6 +128,7 @@ def format_library_telegram(
         ("mofa-country-policy", "국가정책", mofa_c),
         ("iaae-ethics", "IAAE", iaae_now),
         ("agora", "AGORA", agora_now),
+        ("aigl", "AIGL", aigl_now),
     ):
         prev = before.get(key)
         if isinstance(prev, int) and now_n != prev:

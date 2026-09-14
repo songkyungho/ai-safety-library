@@ -104,6 +104,9 @@ def score_document(doc: dict) -> SafetyScore:
     if "IAAE 게시" in labels:
         score += 3
         reasons.append("+iaae")
+    if "AIGL 게시" in labels:
+        score += 3
+        reasons.append("+aigl")
     if "외교부 게시" in labels:
         score += 1
         reasons.append("+mofa")

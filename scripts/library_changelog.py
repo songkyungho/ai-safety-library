@@ -17,6 +17,12 @@ class ChangelogEntry(TypedDict):
 
 LIBRARY_CHANGELOG: list[ChangelogEntry] = [
     {
+        "date": "2026-09-14",
+        "title": "AIGL을 큐레이터 소스로 넣는다",
+        "body": "AI Governance Library(aigl.blog) 카드를 Digest에서 옮겨 컬렉션으로 둔다. 랜딩은 AIGL URL이고, 원문 주소·다른 컬렉션과의 중복 정리는 나중에 한다.",
+        "tags": ("사이트",),
+    },
+    {
         "date": "2026-09-11",
         "title": "본문 강조는 주간 하이라이트처럼 굵게와 밑줄만 쓴다",
         "body": "핵심 사실은 **굵게**, 중요한 용어·수치는 __밑줄__이다. 종류·주체·주제 단어를 본문에 자동으로 치지는 않는다. 제목 링크 밑줄(링크색)과 본문 밑줄(본문색)은 구별한다.",

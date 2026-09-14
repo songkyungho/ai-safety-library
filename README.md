@@ -1,6 +1,6 @@
 # AI 안전 라이브러리
 
-AI 관련 법·윤리·선언·가이드라인을 **원본 랜딩 URL** 기준으로 모아 보여 주는 자료 저장소입니다. 외교부·IAAE·AGORA·OECD 등 여러 큐레이터에 같은 문서가 있어도 원본으로 묶고, 상세 페이지는 **발표 히스토리**입니다. 일일 뉴스 요약(AI Safety Digest)과는 별개입니다.
+AI 관련 법·윤리·선언·가이드라인을 **원본 랜딩 URL** 기준으로 모아 보여 주는 자료 저장소입니다. 외교부·IAAE·AIGL·AGORA·OECD 등 여러 큐레이터에 같은 문서가 있어도 원본으로 묶고, 상세 페이지는 **발표 히스토리**입니다. 일일 뉴스 요약(AI Safety Digest)과는 별개입니다.
 
 - **공개 사이트:** https://songkyungho.github.io/ai-safety-library/
 - **소개:** https://songkyungho.github.io/ai-safety-library/about.html
@@ -24,6 +24,9 @@ python3 scripts/ingest_agora_oecd.py --oecd-only
 # DPA Regulating AI 스레드 (파일럿)
 python3 scripts/ingest_dpa_ai_thread.py --limit 250
 python3 scripts/curate_llm.py --collection dpa-ai --limit 400
+
+# AIGL (Digest·CSV에서 이관, 원문 URL은 나중)
+python3 scripts/ingest_aigl.py
 
 # 중복·원본 없음·약한 항목·죽은 링크 리포트 (+ 죽은 원본 URL 제거)
 python3 scripts/audit_library.py --check-links --apply-dead
@@ -54,7 +57,7 @@ Cursor/Claude에서 라이브러리를 검색할 때 쓰는 stdio MCP 서버가 
 - **환경변수:** Digest의 `ai_safety_daily_env` (OpenRouter·텔레그램·`MOFA_COOKIE`) 재사용. 외교부 WAF 쿠키는 만료되면 브라우저에서 Cookie 헤더를 다시 넣는다. git에 커밋하지 말 것.
 - **완료 알림:** 파이프라인 끝나면 텔레그램 한 통 (`PIPELINE_TELEGRAM=0`이면 생략)
 
-IAAE는 이 라이브러리에서만 수집·보관한다. Digest로 신규분을 알리지 않는다.
+IAAE와 AIGL은 이 라이브러리에서만 보관한다. Digest로 신규분을 알리지 않는다.
 
 push를 끄려면 `LIBRARY_PUSH=0 ./run_daily_pipeline.sh`.
 텔레그램 알림을 끄려면 `PIPELINE_TELEGRAM=0 ./run_daily_pipeline.sh` (Digest와 같은 `TELEGRAM_BOT_TOKEN` / `TELEGRAM_CHAT_ID`).
@@ -68,6 +71,7 @@ push를 끄려면 `LIBRARY_PUSH=0 ./run_daily_pipeline.sh`.
 | ETO AGORA | 법·규정·표준 원문 메타 (CC BY-NC 4.0) |
 | OECD.AI Policy Navigator | 정책 이니셔티브 + `gaiinCountry`·첨부 PDF |
 | DPA Regulating AI | 규제 intervention 타임라인 (큐레이터 랜딩, 파일럿) |
+| AIGL | AI Governance Library 카드 (큐레이터 랜딩, 원문 URL은 추후) |
 
 공통 필드: `page_url`(큐레이터 또는 공식), `source_urls`(원본 후보), OECD는 `source_files`·`country` 추가.
 

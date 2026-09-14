@@ -1,10 +1,605 @@
 {
   "name": "AI 안전 라이브러리 문서",
   "updated": "2026-09-14",
-  "count": 3829,
-  "in_scope_count": 2080,
-  "out_of_scope_count": 1749,
+  "count": 3890,
+  "in_scope_count": 2139,
+  "out_of_scope_count": 1751,
   "documents": [
+    {
+      "id": "doc-3dcd9ac68383",
+      "title": "ROI AI 2025 How agents are unlocking next wave AI-driven business value",
+      "short_name": "ROI AI 2025 How agents are unlocking next wave AI-driven business value",
+      "full_name": "",
+      "original_name": "The ROI of AI 2025 How agents are unlocking the next wave of AI-driven business value",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/the-roi-of-ai-2025-how-agents-are-unlocking-the-next-wave-of-ai-driven-business-value",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-09-12",
+      "published_raw": "",
+      "summary": "Google Cloud 보고서는 2025년 4월 18일~6월 3일, 100인 이상·연매출 1,000만 달러 이상 기업의 경영진 __3,466명__을 대상으로 생성형 AI와 AI agents의 도입 및 사업 효과를 조사했다. **생성형 AI 사용 기업의 52%가 AI agents를 운영 환경에서 사용했고, 74%는 최소 한 가지 활용 사례에서 ROI를 보고했으며**, 생산성·고객 경험·사업 성장·마케팅·보안을 주요 가치 영역으로 제시했다. 보고서는 AI agents를 계획·추론·도구 호출이 가능한 특화 LLM으로 정의하고, 확산을 위해 경영진 후원, 데이터 거버넌스, 보안 접근통제, human-in-the-loop 및 인력 교육이 필요하다고 권고한다. 다만 설문 기반 결과로 인과관계, 응답 가중치와 오차범위가 제시되지 않았고 일부 재무 사례는 Google Cloud가 후원하거나 의뢰한 연구에 기반한다.",
+      "snippet": "Google Cloud 보고서는 2025년 4월 18일~6월 3일, 100인 이상·연매출 1,000만 달러 이상 기업의 경영진 __3,466명__을 대상으로 생성형 AI와 AI agents의 도입 및 사업 효과를 조사했다. **생성형 AI 사용 기업의 52%가 AI agents를 운영 환경에서 사용했고, 74%는 최소 한 가지 활용 사례에서 ROI를 보고했으며**, 생산성·고객 경험·사업 성장·마케팅·보안을 주요 가치 영역으로 제시했다. 보고서는 AI agents를 계획·추론·도구 호출이 가능한 특화 LLM으로 정의하고, 확산을 위해 경영진 후원, 데이터 거버넌스, 보안 접근통제, human-in-the-loop 및 인력 교육이 필요하다고 권고한다. 다만 설문 기반 결과로 인과관계, 응답 가중치와 오차범위가 제시되지 않았고 일부 재무 사례는 Google Cloud가 후원하거나 의뢰한 연구에 기반한다.",
+      "history": [
+        {
+          "date": "2026-09-12",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/the-roi-of-ai-2025-how-agents-are-unlocking-the-next-wave-of-ai-driven-business-value",
+          "title": "The ROI of AI 2025 How agents are unlocking the next wave of AI-driven business value",
+          "item_id": "aigl-the-roi-of-ai-2025-how-agents-are-unlocking-the-next-wave-of-ai-driven-business-"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-the-roi-of-ai-2025-how-agents-are-unlocking-the-next-wave-of-ai-driven-business-"
+      ],
+      "member_count": 1,
+      "safety_score": 9,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\bsecurit|보안|사이버보안|cybersecu",
+        "+governan|거버넌스",
+        "+principle|원칙|권고|recommendati",
+        "-gdp|생산성|productivity|growth\\",
+        "+core+ai"
+      ],
+      "issuer_level": "national",
+      "issuer_level_ko": "국가"
+    },
+    {
+      "id": "doc-b0364eadfad4",
+      "title": "AI 대비 Objectives Towards Sufficiency 국가 AI 안보 Strategies",
+      "short_name": "AI 대비 Objectives Towards Sufficiency 국가 AI 안보 Strategies",
+      "full_name": "",
+      "original_name": "The AI Readiness Objectives Towards Sufficiency in National AI Security Strategies",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/the-ai-readiness-objectives-towards-sufficiency-in-national-ai-security-strategies",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-09-12",
+      "published_raw": "",
+      "summary": "Convergence Analysis 보고서는 국가 안보·경제·공공에 대한 감당하기 어려운 위험을 예방·완화하기 위한 **7개 AI 준비도 목표(AROs)**를 제시하고, 이를 안전한 AI 개발, 배포된 AI의 보안 확보, 사회적 회복력이라는 __3개 축__으로 구성한다. 보고서는 해석 가능성, alignment, 평가와 red-teaming, 안전성 정책, 모니터링, 감사, 라이선싱, 컴퓨팅 통제 등 개입 수단을 정리하고, 보안과 혁신의 절충을 검토하기 위한 6개 혁신 우선순위도 제시한다. 다만 각 목표의 정량적 충족 기준이나 관할권별 권고안은 제시하지 않으며, 연구의 한계와 빠르게 변하는 역량을 고려해 **전략 수립을 위한 설명적·보완적 틀**로 제안한다.",
+      "snippet": "Convergence Analysis 보고서는 국가 안보·경제·공공에 대한 감당하기 어려운 위험을 예방·완화하기 위한 **7개 AI 준비도 목표(AROs)**를 제시하고, 이를 안전한 AI 개발, 배포된 AI의 보안 확보, 사회적 회복력이라는 __3개 축__으로 구성한다. 보고서는 해석 가능성, alignment, 평가와 red-teaming, 안전성 정책, 모니터링, 감사, 라이선싱, 컴퓨팅 통제 등 개입 수단을 정리하고, 보안과 혁신의 절충을 검토하기 위한 6개 혁신 우선순위도 제시한다. 다만 각 목표의 정량적 충족 기준이나 관할권별 권고안은 제시하지 않으며, 연구의 한계와 빠르게 변하는 역량을 고려해 **전략 수립을 위한 설명적·보완적 틀**로 제안한다.",
+      "history": [
+        {
+          "date": "2026-09-12",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/the-ai-readiness-objectives-towards-sufficiency-in-national-ai-security-strategies",
+          "title": "The AI Readiness Objectives Towards Sufficiency in National AI Security Strategies",
+          "item_id": "aigl-the-ai-readiness-objectives-towards-sufficiency-in-national-ai-security-strategi"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-the-ai-readiness-objectives-towards-sufficiency-in-national-ai-security-strategi"
+      ],
+      "member_count": 1,
+      "safety_score": 17,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\balignment\\b|정렬",
+        "+\\bsafety\\b|안전성|안전\\s*확보",
+        "+\\bsecurit|보안|사이버보안|cybersecu",
+        "+principle|원칙|권고|recommendati",
+        "+oversight|감독|감사|audit|evalua",
+        "+core+ai"
+      ],
+      "issuer_level": "national",
+      "issuer_level_ko": "국가"
+    },
+    {
+      "id": "doc-1d5ecfab382c",
+      "title": "STRENGTHENING AI 거버넌스 THROUGH TECHNO-LEGAL 프레임워크",
+      "short_name": "STRENGTHENING AI 거버넌스 THROUGH TECHNO-LEGAL 프레임워크",
+      "full_name": "",
+      "original_name": "STRENGTHENING AI GOVERNANCE THROUGH TECHNO-LEGAL FRAMEWORK",
+      "doc_kind": "가이드라인·원칙",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/strengthening-ai-governance-through-techno-legal-framework-2",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-09-12",
+      "published_raw": "",
+      "summary": "인도 정부 수석과학고문실이 제안한 백서는 법·규칙·규제 감독과 AI 시스템에 내장된 기술적 집행 수단을 결합하는 **기술·법률 기반 AI 거버넌스 모델**을 설명한다. 데이터 수집부터 trusted agents까지 __5단계 생애주기__에 걸쳐 개인정보 보호, 보안, 안전, 공정성을 관리하고, 영향평가·data lineage·privacy-enhancing technologies·red-teaming·runtime monitoring 등의 통제를 제시한다. AI Governance Group, 전문가위원회, AI Safety Institute, 국가 AI 사고 데이터베이스와 자발적 업계 공시 등 운영 체계도 제안한다. 다만 이 문서는 **구속력 있는 의무나 최종 위험분류·준수 일정·집행 절차를 확정하지 않은 설명 자료**이며, 구체적인 기준과 실제 적용을 위해 추가 검증이 필요하다.",
+      "snippet": "인도 정부 수석과학고문실이 제안한 백서는 법·규칙·규제 감독과 AI 시스템에 내장된 기술적 집행 수단을 결합하는 **기술·법률 기반 AI 거버넌스 모델**을 설명한다. 데이터 수집부터 trusted agents까지 __5단계 생애주기__에 걸쳐 개인정보 보호, 보안, 안전, 공정성을 관리하고, 영향평가·data lineage·privacy-enhancing technologies·red-teaming·runtime monitoring 등의 통제를 제시한다. AI Governance Group, 전문가위원회, AI Safety Institute, 국가 AI 사고 데이터베이스와 자발적 업계 공시 등 운영 체계도 제안한다. 다만 이 문서는 **구속력 있는 의무나 최종 위험분류·준수 일정·집행 절차를 확정하지 않은 설명 자료**이며, 구체적인 기준과 실제 적용을 위해 추가 검증이 필요하다.",
+      "history": [
+        {
+          "date": "2026-09-12",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/strengthening-ai-governance-through-techno-legal-framework-2",
+          "title": "STRENGTHENING AI GOVERNANCE THROUGH TECHNO-LEGAL FRAMEWORK",
+          "item_id": "aigl-strengthening-ai-governance-through-techno-legal-framework-2"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-strengthening-ai-governance-through-techno-legal-framework-2"
+      ],
+      "member_count": 1,
+      "safety_score": 26,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\bai\\s*safety\\b|인공지능\\s*안전|AI",
+        "+\\bsafety\\b|안전성|안전\\s*확보",
+        "+\\bsecurit|보안|사이버보안|cybersecu",
+        "+governan|거버넌스",
+        "+regulat|규제",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+principle|원칙|권고|recommendati",
+        "+oversight|감독|감사|audit|evalua",
+        "+core+ai"
+      ],
+      "issuer_level": "industry",
+      "issuer_level_ko": "산업계·협회"
+    },
+    {
+      "id": "doc-eb492f9af25f",
+      "title": "책임 있는 AI 지침 Businesses",
+      "short_name": "책임 있는 AI 지침 Businesses",
+      "full_name": "",
+      "original_name": "Responsible AI Guidance for Businesses",
+      "doc_kind": "행정규칙",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/responsible-ai-guidance-for-businesses",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-09-12",
+      "published_raw": "",
+      "summary": "뉴질랜드 기업을 대상으로 한 이 지침은 AI 시스템의 신뢰할 수 있는 활용·개발을 지원하는 **자발적 위험 기반 가이드**이며, 2025년 7월 Ministry of Business, Innovation and Employment가 발행했다. 조직의 AI 목적 설정, 거버넌스·법률·위험 관리, 조달·보안·개인정보 보호, 데이터·모델 관리, 인간 검토와 이해관계자 소통 등 AI 생애주기 전반의 실무 고려사항과 체크리스트를 제시한다. 특히 Māori·Pacific peoples 등 영향을 받는 집단을 고려하고, AI 사용 공개·기록 관리·red teaming·감사·사고 대응을 권고하지만, 법적 의무나 상세한 구현 절차 및 공식 평가 점수는 제공하지 않는다. PDF는 __43쪽__이며 관련 법률과 분야별 요구사항은 별도로 확인해야 한다.",
+      "snippet": "뉴질랜드 기업을 대상으로 한 이 지침은 AI 시스템의 신뢰할 수 있는 활용·개발을 지원하는 **자발적 위험 기반 가이드**이며, 2025년 7월 Ministry of Business, Innovation and Employment가 발행했다. 조직의 AI 목적 설정, 거버넌스·법률·위험 관리, 조달·보안·개인정보 보호, 데이터·모델 관리, 인간 검토와 이해관계자 소통 등 AI 생애주기 전반의 실무 고려사항과 체크리스트를 제시한다. 특히 Māori·Pacific peoples 등 영향을 받는 집단을 고려하고, AI 사용 공개·기록 관리·red teaming·감사·사고 대응을 권고하지만, 법적 의무나 상세한 구현 절차 및 공식 평가 점수는 제공하지 않는다. PDF는 __43쪽__이며 관련 법률과 분야별 요구사항은 별도로 확인해야 한다.",
+      "history": [
+        {
+          "date": "2026-09-12",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/responsible-ai-guidance-for-businesses",
+          "title": "Responsible AI Guidance for Businesses",
+          "item_id": "aigl-responsible-ai-guidance-for-businesses"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-responsible-ai-guidance-for-businesses"
+      ],
+      "member_count": 1,
+      "safety_score": 25,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\bred\\s*team|레드팀",
+        "+\\brisk\\b|위험\\s*관리|위험관리|고위험|hi",
+        "+\\bsecurit|보안|사이버보안|cybersecu",
+        "+responsible\\s*ai|책임\\s*있는\\s*A",
+        "+governan|거버넌스",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+principle|원칙|권고|recommendati",
+        "+oversight|감독|감사|audit|evalua",
+        "+core+ai"
+      ],
+      "issuer_level": "ministry",
+      "issuer_level_ko": "부처·규제기관"
+    },
+    {
+      "id": "doc-fe22a1825689",
+      "title": "ISO 42001 Starter Guide",
+      "short_name": "ISO 42001 Starter Guide",
+      "full_name": "",
+      "original_name": "",
+      "doc_kind": "표준",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/iso-42001-starter-guide",
+      "country": "ISO",
+      "country_ko": "ISO",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-09-12",
+      "published_raw": "",
+      "summary": "이 가이드는 ISO/IEC 42001:2023과 AI 관리시스템(AIMS)의 범위·역할·위험평가·문서화·감사·지속적 개선을 조직의 실행 과제로 설명한다. **ISO 42001은 자발적이고 인증 가능한 관리시스템 표준으로, EU AI Act의 법적 의무나 NIST AI RMF의 자발적 위험관리 지침과 구별된다.** 가상의 채용 도구 사례를 통해 인간의 최종 의사결정, 공정성·개인정보·성능 모니터링, 경보·롤백·시정조치를 제시하며, 정확도 목표는 __85% 이상__으로 설정됐다. __35쪽__ 영어 보고서인 이 자료는 예시적 안내서일 뿐 조직별 적합성 평가나 법률 분석을 제공하지 않으므로, 실제 적용에는 자체적인 법적 매핑과 통제·역할·기록 설계가 필요하다.",
+      "snippet": "이 가이드는 ISO/IEC 42001:2023과 AI 관리시스템(AIMS)의 범위·역할·위험평가·문서화·감사·지속적 개선을 조직의 실행 과제로 설명한다. **ISO 42001은 자발적이고 인증 가능한 관리시스템 표준으로, EU AI Act의 법적 의무나 NIST AI RMF의 자발적 위험관리 지침과 구별된다.** 가상의 채용 도구 사례를 통해 인간의 최종 의사결정, 공정성·개인정보·성능 모니터링, 경보·롤백·시정조치를 제시하며, 정확도 목표는 __85% 이상__으로 설정됐다. __35쪽__ 영어 보고서인 이 자료는 예시적 안내서일 뿐 조직별 적합성 평가나 법률 분석을 제공하지 않으므로, 실제 적용에는 자체적인 법적 매핑과 통제·역할·기록 설계가 필요하다.",
+      "history": [
+        {
+          "date": "2026-09-12",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/iso-42001-starter-guide",
+          "title": "ISO 42001 Starter Guide",
+          "item_id": "aigl-iso-42001-starter-guide"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-iso-42001-starter-guide"
+      ],
+      "member_count": 1,
+      "safety_score": 16,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\brisk\\b|위험\\s*관리|위험관리|고위험|hi",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+standard|표준|iso/?iec",
+        "+oversight|감독|감사|audit|evalua",
+        "+privacy|개인정보|data\\s*protecti",
+        "+bias|편향|discriminat|차별|fairn",
+        "+core+ai"
+      ],
+      "issuer_level": "international",
+      "issuer_level_ko": "국제기구·다자"
+    },
+    {
+      "id": "doc-37ad349d452b",
+      "title": "Harmonizing AI 지침: Distilling Voluntary 표준 · Best Practices into Unified 프레임워크",
+      "short_name": "Harmonizing AI 지침: Distilling Voluntary 표준 · Best Practices into Unified 프레임워크",
+      "full_name": "",
+      "original_name": "Harmonizing AI Guidance: Distilling Voluntary Standards and Best Practices into a Unified Framework",
+      "doc_kind": "행정규칙",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/harmonizing-ai-guidance-distilling-voluntary-standards-and-best-practices-into-a-unified-framework-2",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-09-12",
+      "published_raw": "",
+      "summary": "CSET 보고서는 AI·사이버보안·개인정보·위험관리 관련 __52개 지침 문서의 7,741개 권고사항__을 분석해 258개 권고사항으로 통합하고, 이를 거버넌스·안전·보안·개인정보·탐지 및 대응의 5개 범주와 34개 주제로 구성했다. 이 프레임워크는 리더십, 공급망, 인력, 감사, 모델 safeguards, 데이터 처리, 모니터링과 사고 대응을 하나의 구조로 연결하지만, **법률·규제 준수 자체를 보장하지 않는 자발적 지침**이다. 세부 실행 방법과 배포 상황별 조정은 후속 operationalize 및 tailor 단계에서 다뤄질 예정이다.",
+      "snippet": "CSET 보고서는 AI·사이버보안·개인정보·위험관리 관련 __52개 지침 문서의 7,741개 권고사항__을 분석해 258개 권고사항으로 통합하고, 이를 거버넌스·안전·보안·개인정보·탐지 및 대응의 5개 범주와 34개 주제로 구성했다. 이 프레임워크는 리더십, 공급망, 인력, 감사, 모델 safeguards, 데이터 처리, 모니터링과 사고 대응을 하나의 구조로 연결하지만, **법률·규제 준수 자체를 보장하지 않는 자발적 지침**이다. 세부 실행 방법과 배포 상황별 조정은 후속 operationalize 및 tailor 단계에서 다뤄질 예정이다.",
+      "history": [
+        {
+          "date": "2026-09-12",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/harmonizing-ai-guidance-distilling-voluntary-standards-and-best-practices-into-a-unified-framework-2",
+          "title": "Harmonizing AI Guidance: Distilling Voluntary Standards and Best Practices into a Unified Framework",
+          "item_id": "aigl-harmonizing-ai-guidance-distilling-voluntary-standards-and-best-practices-into-a"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-harmonizing-ai-guidance-distilling-voluntary-standards-and-best-practices-into-a"
+      ],
+      "member_count": 1,
+      "safety_score": 23,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\brisk\\b|위험\\s*관리|위험관리|고위험|hi",
+        "+\\bsecurit|보안|사이버보안|cybersecu",
+        "+governan|거버넌스",
+        "+regulat|규제",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+principle|원칙|권고|recommendati",
+        "+standard|표준|iso/?iec",
+        "+oversight|감독|감사|audit|evalua",
+        "+core+ai"
+      ],
+      "issuer_level": "ministry",
+      "issuer_level_ko": "부처·규제기관"
+    },
+    {
+      "id": "doc-e78761fc3d48",
+      "title": "가이드라인 보안 AI 시스템 development",
+      "short_name": "가이드라인 보안 AI 시스템 development",
+      "full_name": "",
+      "original_name": "Guidelines for secure AI system development",
+      "doc_kind": "가이드라인·원칙",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/guidelines-for-secure-ai-system-development-2",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-09-12",
+      "published_raw": "",
+      "summary": "영국 NCSC와 미국 CISA 및 국제 파트너들이 제시한 이 지침은 AI 시스템 제공자가 설계·개발·배포·운영 전 과정에서 보안을 관리하도록 권고한다. **공급자는 하위 사용자의 보안 결과에 책임을 지고**, secure defaults, 위협 모델링, 공급망 점검, 접근 통제, 모니터링과 incident response 등을 적용해야 한다. 지침은 __20페이지__ 분량으로, 안전성·공정성 testing이나 의무 기준·인증 요건은 포함하지 않으며 조직별 위협과 사용 사례에 맞춘 적용을 요구한다.",
+      "snippet": "영국 NCSC와 미국 CISA 및 국제 파트너들이 제시한 이 지침은 AI 시스템 제공자가 설계·개발·배포·운영 전 과정에서 보안을 관리하도록 권고한다. **공급자는 하위 사용자의 보안 결과에 책임을 지고**, secure defaults, 위협 모델링, 공급망 점검, 접근 통제, 모니터링과 incident response 등을 적용해야 한다. 지침은 __20페이지__ 분량으로, 안전성·공정성 testing이나 의무 기준·인증 요건은 포함하지 않으며 조직별 위협과 사용 사례에 맞춘 적용을 요구한다.",
+      "history": [
+        {
+          "date": "2026-09-12",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/guidelines-for-secure-ai-system-development-2",
+          "title": "Guidelines for secure AI system development",
+          "item_id": "aigl-guidelines-for-secure-ai-system-development-2"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-guidelines-for-secure-ai-system-development-2"
+      ],
+      "member_count": 1,
+      "safety_score": 17,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\bsafety\\b|안전성|안전\\s*확보",
+        "+\\bsecurit|보안|사이버보안|cybersecu",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+principle|원칙|권고|recommendati",
+        "+bias|편향|discriminat|차별|fairn",
+        "+incident|사고\\s*보고|reporting\\s"
+      ],
+      "issuer_level": "ministry",
+      "issuer_level_ko": "부처·규제기관"
+    },
+    {
+      "id": "doc-efd3da02477d",
+      "title": "AI 안보 Maturity ModelTM: Practical 프레임워크 Building Mature AI 안보 프로그램",
+      "short_name": "AI 안보 Maturity ModelTM: Practical 프레임워크 Building Mature AI 안보 프로그램",
+      "full_name": "",
+      "original_name": "AI Security Maturity ModelTM: A Practical Framework for Building a Mature AI Security Program",
+      "doc_kind": "가이드라인·원칙",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/sans-ai-security-maturity-model",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-09-12",
+      "published_raw": "",
+      "summary": "SANS Institute의 AI Security Maturity Model™은 AI 보안과 거버넌스 역량을 평가·계획·개선하기 위한 실무 프레임워크로, Protect·Utilize·Govern의 __3개 핵심 영역__과 Unaware/Ad Hoc부터 Optimizing/Adaptive까지 __5개 성숙도 단계__로 구성된다. 이 모델은 prompt injection, data poisoning, 모델 탈취, agentic supply chain 위험, AI 활용 보안 운영, 정책·위험관리·컴플라이언스를 다룬다. **15개 질문과 정책·로그·테스트 결과 등 검증된 증거를 기반으로 평가하며, 증거가 없는 자체 보고는 2단계 이상으로 인정하지 않는다.** 또한 Governance Floor Rule과 Minimum Pillar Rule을 적용해 전체 성숙도가 거버넌스 수준이나 가장 취약한 영역보다 한 단계 이상 높아지지 않도록 제한한다.",
+      "snippet": "SANS Institute의 AI Security Maturity Model™은 AI 보안과 거버넌스 역량을 평가·계획·개선하기 위한 실무 프레임워크로, Protect·Utilize·Govern의 __3개 핵심 영역__과 Unaware/Ad Hoc부터 Optimizing/Adaptive까지 __5개 성숙도 단계__로 구성된다. 이 모델은 prompt injection, data poisoning, 모델 탈취, agentic supply chain 위험, AI 활용 보안 운영, 정책·위험관리·컴플라이언스를 다룬다. **15개 질문과 정책·로그·테스트 결과 등 검증된 증거를 기반으로 평가하며, 증거가 없는 자체 보고는 2단계 이상으로 인정하지 않는다.** 또한 Governance Floor Rule과 Minimum Pillar Rule을 적용해 전체 성숙도가 거버넌스 수준이나 가장 취약한 영역보다 한 단계 이상 높아지지 않도록 제한한다.",
+      "history": [
+        {
+          "date": "2026-09-12",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/sans-ai-security-maturity-model",
+          "title": "AI Security Maturity Model™: A Practical Framework for Building a Mature AI Security Program",
+          "item_id": "aigl-sans-ai-security-maturity-model"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-sans-ai-security-maturity-model"
+      ],
+      "member_count": 1,
+      "safety_score": 16,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\brisk\\b|위험\\s*관리|위험관리|고위험|hi",
+        "+\\bsecurit|보안|사이버보안|cybersecu",
+        "+governan|거버넌스",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+principle|원칙|권고|recommendati",
+        "+core+ai"
+      ],
+      "issuer_level": "national",
+      "issuer_level_ko": "국가"
+    },
+    {
+      "id": "doc-f3c9f9ae7594",
+      "title": "AI 안보 Institute 프론티어 AI Trends 보고서",
+      "short_name": "AI 안보 Institute 프론티어 AI Trends 보고서",
+      "full_name": "",
+      "original_name": "AI Security Institute Frontier AI Trends Report",
+      "doc_kind": "기구·제도",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/ai-security-institute-frontier-ai-trends-report",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-09-12",
+      "published_raw": "",
+      "summary": "AI Security Institute가 __30개 이상__의 프런티어 AI 시스템 평가를 종합한 보고서로, 에이전트 자율성·화학·생물학·사이버·모델 safeguards·사회적 영향 등을 분석한다. **AI 역량은 빠르게 향상됐지만 safeguards 개선은 불균등했으며, 평가한 모든 시스템에서 universal jailbreak가 발견됐다.** 2025년 중반 전문가가 한 시간 이상 걸릴 것으로 추정되는 소프트웨어 작업의 평균 성공률은 42%였고, 2025년 3분기 상위 모델의 초급 사이버 과제 평균 점수는 50%였다. 보고서는 기본 모델만 평가하면 도구와 scaffolding을 활용한 에이전트의 실제 능력을 과소평가할 수 있으며, 역량과 안전성의 상관관계가 낮아 독립 평가와 고위험 배포 모니터링이 필요하다고 지적한다.",
+      "snippet": "AI Security Institute가 __30개 이상__의 프런티어 AI 시스템 평가를 종합한 보고서로, 에이전트 자율성·화학·생물학·사이버·모델 safeguards·사회적 영향 등을 분석한다. **AI 역량은 빠르게 향상됐지만 safeguards 개선은 불균등했으며, 평가한 모든 시스템에서 universal jailbreak가 발견됐다.** 2025년 중반 전문가가 한 시간 이상 걸릴 것으로 추정되는 소프트웨어 작업의 평균 성공률은 42%였고, 2025년 3분기 상위 모델의 초급 사이버 과제 평균 점수는 50%였다. 보고서는 기본 모델만 평가하면 도구와 scaffolding을 활용한 에이전트의 실제 능력을 과소평가할 수 있으며, 역량과 안전성의 상관관계가 낮아 독립 평가와 고위험 배포 모니터링이 필요하다고 지적한다.",
+      "history": [
+        {
+          "date": "2026-09-12",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/ai-security-institute-frontier-ai-trends-report",
+          "title": "AI Security Institute Frontier AI Trends Report",
+          "item_id": "aigl-ai-security-institute-frontier-ai-trends-report"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-ai-security-institute-frontier-ai-trends-report"
+      ],
+      "member_count": 1,
+      "safety_score": 17,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+frontier\\s*ai|프론티어|advanced\\",
+        "+\\brisk\\b|위험\\s*관리|위험관리|고위험|hi",
+        "+\\bsafety\\b|안전성|안전\\s*확보",
+        "+\\bsecurit|보안|사이버보안|cybersecu",
+        "+model\\s*eval|시스템\\s*평가|benchm",
+        "+core+ai"
+      ],
+      "issuer_level": "civil_society",
+      "issuer_level_ko": "시민사회·학계"
+    },
+    {
+      "id": "doc-b93471ea0d28",
+      "title": "AI 안전 Index",
+      "short_name": "AI 안전 Index",
+      "full_name": "",
+      "original_name": "AI Safety Index",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/ai-safety-index",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-09-12",
+      "published_raw": "",
+      "summary": "Future of Life Institute의 2025년 여름판 AI Safety Index는 Anthropic, OpenAI, Google DeepMind 등 __7개 프런티어 AI 개발사__의 즉각적 피해와 재앙적 위험 관리 수준을 6개 영역, 33개 지표로 평가한다. Anthropic이 C+(2.64)로 가장 높은 종합 점수를 받았고 OpenAI는 C(2.10), Google DeepMind는 C-(1.76)였으며, 실존적 안전 영역에서는 어떤 기업도 D보다 높은 점수를 얻지 못했다. **평가단은 기업의 역량 확대가 위험 관리 관행보다 빠르며, AGI 또는 더욱 강력한 시스템을 통제하기 위한 일관되고 실행 가능한 계획을 제시한 기업이 없다고 결론 내렸다.** 평가는 공개 자료와 기업 설문, 독립 전문가 6명의 검토에 의존하므로 기업 주장에 대한 독립적 검증과 사이버보안 투자 등 일부 항목은 평가하지 못했다.",
+      "snippet": "Future of Life Institute의 2025년 여름판 AI Safety Index는 Anthropic, OpenAI, Google DeepMind 등 __7개 프런티어 AI 개발사__의 즉각적 피해와 재앙적 위험 관리 수준을 6개 영역, 33개 지표로 평가한다. Anthropic이 C+(2.64)로 가장 높은 종합 점수를 받았고 OpenAI는 C(2.10), Google DeepMind는 C-(1.76)였으며, 실존적 안전 영역에서는 어떤 기업도 D보다 높은 점수를 얻지 못했다. **평가단은 기업의 역량 확대가 위험 관리 관행보다 빠르며, AGI 또는 더욱 강력한 시스템을 통제하기 위한 일관되고 실행 가능한 계획을 제시한 기업이 없다고 결론 내렸다.** 평가는 공개 자료와 기업 설문, 독립 전문가 6명의 검토에 의존하므로 기업 주장에 대한 독립적 검증과 사이버보안 투자 등 일부 항목은 평가하지 못했다.",
+      "history": [
+        {
+          "date": "2026-09-12",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/ai-safety-index",
+          "title": "AI Safety Index",
+          "item_id": "aigl-ai-safety-index"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-ai-safety-index"
+      ],
+      "member_count": 1,
+      "safety_score": 24,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\bai\\s*safety\\b|인공지능\\s*안전|AI",
+        "+catastroph|재앙|existential|존속",
+        "+\\brisk\\b|위험\\s*관리|위험관리|고위험|hi",
+        "+\\bsafety\\b|안전성|안전\\s*확보",
+        "+\\bsecurit|보안|사이버보안|cybersecu",
+        "+harm|피해|misuse|악용|dual[-\\s]?",
+        "+core+ai"
+      ],
+      "issuer_level": "lab",
+      "issuer_level_ko": "프론티어 랩"
+    },
+    {
+      "id": "doc-93be8c2f6d7e",
+      "title": "AI Literacy Whitepaper Understanding · Implementing AI Literacy",
+      "short_name": "AI Literacy Whitepaper Understanding · Implementing AI Literacy",
+      "full_name": "",
+      "original_name": "AI Literacy Whitepaper Understanding and Implementing AI Literacy",
+      "doc_kind": "전략·정책",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/ai-literacy-whitepaper-understanding-and-implementing-ai-literacy",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-09-12",
+      "published_raw": "",
+      "summary": "CFTE 백서는 AI 리터러시를 AI 도구 조작을 넘어 시스템의 능력과 한계를 이해하고, 결과를 비판적으로 평가하며, 위험과 윤리 문제를 인식하고 책임 있게 사용하는 역량으로 정의한다. 핵심 프레임워크는 AI 개념 지식, AI 도구와의 기본 상호작용, 결과의 비판적 평가, 위험·윤리 인식, AI 활용에 대한 자신감 등 __5개 요소__로 구성된다. 조직에는 기초 교육, 실무 활용, 비판적 평가, 책임 있는 사용, 지속적 학습을 권고하며, 전체 근로자의 약 __15%는 AI 개발·설계자, 85%는 일상 업무 사용자__라는 구분에 따라 교육 수준을 달리해야 한다고 제안한다.",
+      "snippet": "CFTE 백서는 AI 리터러시를 AI 도구 조작을 넘어 시스템의 능력과 한계를 이해하고, 결과를 비판적으로 평가하며, 위험과 윤리 문제를 인식하고 책임 있게 사용하는 역량으로 정의한다. 핵심 프레임워크는 AI 개념 지식, AI 도구와의 기본 상호작용, 결과의 비판적 평가, 위험·윤리 인식, AI 활용에 대한 자신감 등 __5개 요소__로 구성된다. 조직에는 기초 교육, 실무 활용, 비판적 평가, 책임 있는 사용, 지속적 학습을 권고하며, 전체 근로자의 약 __15%는 AI 개발·설계자, 85%는 일상 업무 사용자__라는 구분에 따라 교육 수준을 달리해야 한다고 제안한다.",
+      "history": [
+        {
+          "date": "2026-09-12",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/ai-literacy-whitepaper-understanding-and-implementing-ai-literacy",
+          "title": "AI Literacy Whitepaper Understanding and Implementing AI Literacy",
+          "item_id": "aigl-ai-literacy-whitepaper-understanding-and-implementing-ai-literacy"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-ai-literacy-whitepaper-understanding-and-implementing-ai-literacy"
+      ],
+      "member_count": 1,
+      "safety_score": 9,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\bethic|윤리",
+        "+principle|원칙|권고|recommendati",
+        "+(?:AI|인공지능).{0,12}(?:framewo",
+        "-curriculum|교육\\s*과정(?!.*윤리)|l",
+        "+core+ai"
+      ],
+      "issuer_level": "national",
+      "issuer_level_ko": "국가"
+    },
+    {
+      "id": "doc-92384103b833",
+      "title": "AI 거버넌스 국제 Evaluation Index (AGILE Index) 2025",
+      "short_name": "AI 거버넌스 국제 Evaluation Index (AGILE Index) 2025",
+      "full_name": "",
+      "original_name": "AI Governance InternationaL Evaluation Index (AGILE Index) 2025",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/ai-governance-international-evaluation-index-agile-index-2025",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-09-12",
+      "published_raw": "",
+      "summary": "중국의 CLAI·Beijing-AISI 등 4개 기관이 공동 발행한 이 사전 공개 보고서는 __40개국__의 AI 개발 수준과 거버넌스 여건을 비교 평가한다. 평가는 AI 개발 수준, 거버넌스 환경, 거버넌스 수단, 거버넌스 효과성의 **4개 축·17개 차원·43개 지표**로 구성되며, 국가를 종합 점수와 거버넌스 특성에 따라 분류한다. 다만 자료 기간과 방법이 서로 다르고 결측치 추정이 포함되며, 일부 국가별 수치와 표·그림 내용은 제공된 추출본에서 확인되지 않는다.",
+      "snippet": "중국의 CLAI·Beijing-AISI 등 4개 기관이 공동 발행한 이 사전 공개 보고서는 __40개국__의 AI 개발 수준과 거버넌스 여건을 비교 평가한다. 평가는 AI 개발 수준, 거버넌스 환경, 거버넌스 수단, 거버넌스 효과성의 **4개 축·17개 차원·43개 지표**로 구성되며, 국가를 종합 점수와 거버넌스 특성에 따라 분류한다. 다만 자료 기간과 방법이 서로 다르고 결측치 추정이 포함되며, 일부 국가별 수치와 표·그림 내용은 제공된 추출본에서 확인되지 않는다.",
+      "history": [
+        {
+          "date": "2026-09-12",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/ai-governance-international-evaluation-index-agile-index-2025",
+          "title": "AI Governance InternationaL Evaluation Index (AGILE Index) 2025",
+          "item_id": "aigl-ai-governance-international-evaluation-index-agile-index-2025"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-ai-governance-international-evaluation-index-agile-index-2025"
+      ],
+      "member_count": 1,
+      "safety_score": 12,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+governan|거버넌스",
+        "+oversight|감독|감사|audit|evalua",
+        "+\\baisi\\b|안전연구소|safety\\s*inst",
+        "+core+ai"
+      ],
+      "issuer_level": "national",
+      "issuer_level_ko": "국가"
+    },
     {
       "id": "doc-b6cad97fcd31",
       "title": "슬로베니아 통합 지능형 도우미",
@@ -1131,6 +1726,55 @@
       "published_source": "llm_curate"
     },
     {
+      "id": "doc-73b289c3e835",
+      "title": "Start Realizing ROI: Practical Guide Agentic AI Tech Leaders",
+      "short_name": "Start Realizing ROI: Practical Guide Agentic AI Tech Leaders",
+      "full_name": "",
+      "original_name": "Start Realizing ROI: A Practical Guide to Agentic AI for Tech Leaders",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/start-realizing-roi-a-practical-guide-to-agentic-ai-for-tech-leaders",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-09-09",
+      "published_raw": "",
+      "summary": "IBM의 가이드는 기업의 76%가 agentic AI 도입이나 실증을 검토하지만 기대한 수익을 얻는 기업은 25%, 전사 확장에 성공한 기업은 16%에 그친다고 설명하며, 비정형 데이터·부족한 거버넌스·단편적 자동화를 주요 장애물로 제시한다. 해결책으로 생산성·매출·만족도·비용을 기준으로 한 ROI 설정, 거버넌스와 보안 강화, AgentOps 및 오케스트레이션 계층 도입, 직원 역량 강화의 4단계 전략을 제안한다. UFC의 질의 생성 시간 40% 단축, Dun & Bradstreet의 연간 2만6,000시간 절감 등 사례를 소개하지만, AgentOps 기술 구조와 고영향 의사결정 기준, EU AI Act 연계 등은 구체적으로 다루지 않는다.",
+      "snippet": "IBM의 가이드는 기업의 76%가 agentic AI 도입이나 실증을 검토하지만 기대한 수익을 얻는 기업은 25%, 전사 확장에 성공한 기업은 16%에 그친다고 설명하며, 비정형 데이터·부족한 거버넌스·단편적 자동화를 주요 장애물로 제시한다. 해결책으로 생산성·매출·만족도·비용을 기준으로 한 ROI 설정, 거버넌스와 보안 강화, AgentOps 및 오케스트레이션 계층 도입, 직원 역량 강화의 4단계 전략을 제안한다. UFC의 질의 생성 시간 40% 단축, Dun & Bradstreet의 연간 2만6,000시간 절감 등 사례를 소개하지만, AgentOps 기술 구조와 고영향 의사결정 기준, EU AI Act 연계 등은 구체적으로 다루지 않는다.",
+      "history": [
+        {
+          "date": "2026-09-09",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/start-realizing-roi-a-practical-guide-to-agentic-ai-for-tech-leaders",
+          "title": "Start Realizing ROI: A Practical Guide to Agentic AI for Tech Leaders",
+          "item_id": "aigl-start-realizing-roi-a-practical-guide-to-agentic-ai-for-tech-leaders"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-start-realizing-roi-a-practical-guide-to-agentic-ai-for-tech-leaders"
+      ],
+      "member_count": 1,
+      "safety_score": 8,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\bsecurit|보안|사이버보안|cybersecu",
+        "+governan|거버넌스",
+        "+(?:artificial\\s*intelligence",
+        "-talent|인재\\s*양성|skills\\s*agen",
+        "-gdp|생산성|productivity|growth\\",
+        "+core+ai"
+      ],
+      "issuer_level": "international",
+      "issuer_level_ko": "국제기구·다자"
+    },
+    {
       "id": "doc-671d66020274",
       "title": "과나후아토 AI 윤리 로드맵",
       "short_name": "과나후아토 AI 윤리 로드맵",
@@ -1573,6 +2217,104 @@
       "topics": [],
       "topics_source": "llm",
       "published_source": "llm_curate"
+    },
+    {
+      "id": "doc-8837fac1a799",
+      "title": "Technical Safeguards Against Extreme Misuse AI: Current Landscape · Future Directions",
+      "short_name": "Technical Safeguards Against Extreme Misuse AI: Current Landscape · Future Directions",
+      "full_name": "",
+      "original_name": "Technical Safeguards Against Extreme Misuse of AI: Current Landscape and Future Directions",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/technical-safeguards-against-extreme-misuse-of-ai",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-09-08",
+      "published_raw": "",
+      "summary": "Safe AI Forum과 국제 연구진은 화학·생물·방사능·핵무기와 공격적 사이버공격 등 고위험 오용에 대응하는 기술적 안전장치를 분석했다. 보고서는 사전 학습 데이터 필터링, post-training 기법, 접근 통제, 모니터링·대응, 사전 배포 평가의 5개 방어 수단을 다루며, 여러 수단을 결합한 defense-in-depth가 필요하다고 설명한다. 단일 대책만으로는 충분하지 않고, 특히 open-weight 모델은 fine-tuning 공격과 가중치 변조에 취약하며, 평가 투명성·전체 공격 과정 검증·공개 모델 가중치 보호·국제 규제 조정에는 여전히 공백이 있다고 지적한다.",
+      "snippet": "Safe AI Forum과 국제 연구진은 화학·생물·방사능·핵무기와 공격적 사이버공격 등 고위험 오용에 대응하는 기술적 안전장치를 분석했다. 보고서는 사전 학습 데이터 필터링, post-training 기법, 접근 통제, 모니터링·대응, 사전 배포 평가의 5개 방어 수단을 다루며, 여러 수단을 결합한 defense-in-depth가 필요하다고 설명한다. 단일 대책만으로는 충분하지 않고, 특히 open-weight 모델은 fine-tuning 공격과 가중치 변조에 취약하며, 평가 투명성·전체 공격 과정 검증·공개 모델 가중치 보호·국제 규제 조정에는 여전히 공백이 있다고 지적한다.",
+      "history": [
+        {
+          "date": "2026-09-08",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/technical-safeguards-against-extreme-misuse-of-ai",
+          "title": "Technical Safeguards Against Extreme Misuse of AI: Current Landscape and Future Directions",
+          "item_id": "aigl-technical-safeguards-against-extreme-misuse-of-ai"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-technical-safeguards-against-extreme-misuse-of-ai"
+      ],
+      "member_count": 1,
+      "safety_score": 17,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\brisk\\b|위험\\s*관리|위험관리|고위험|hi",
+        "+regulat|규제",
+        "+transpar|투명|explainab|설명\\s*가",
+        "+harm|피해|misuse|악용|dual[-\\s]?",
+        "+guardrail|안전장치",
+        "+core+ai"
+      ],
+      "issuer_level": "national",
+      "issuer_level_ko": "국가"
+    },
+    {
+      "id": "doc-e19fc9c0184c",
+      "title": "Risks · Controls Multi-Agent 시스템: Analytical 프레임워크 Deployment Across Organisational Boundaries",
+      "short_name": "Risks · Controls Multi-Agent 시스템: Analytical 프레임워크 Deployment Across Organisational Boundaries",
+      "full_name": "",
+      "original_name": "Risks and Controls for Multi-Agent Systems: An Analytical Framework for Deployment Across Organisational Boundaries",
+      "doc_kind": "가이드라인·원칙",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/risks-and-controls-for-multi-agent-systems-disr-gradient-institute",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-09-08",
+      "published_raw": "",
+      "summary": "호주 산업·과학·자원부가 Gradient Institute에 의뢰한 이 보고서는 LLM 기반 다중 에이전트 시스템의 거버넌스 체계를 분석한다. 단일 에이전트가 안전하더라도 상호작용 과정에서 시스템 전체가 안전해지는 것은 아니며, 거버넌스 수준을 단일 조직 통제, 연합형 협력, 개방형 환경의 세 단계로 구분한다. 각 단계에서 오조정, 오류 전파, 정보 비대칭, prompt infections, algorithmic collusion, Sybil attacks 등의 위험과 구조화된 데이터 형식, 재승인, 감사 기록, circuit breakers 같은 통제를 제시한다. 다중 에이전트 평가 기준, 기업 위험평가 역량, 상호운용 가능한 신원·폐기 인프라와 플랫폼 간 circuit-breaker 규칙은 여전히 해결되지 않은 과제로 남아 있다.",
+      "snippet": "호주 산업·과학·자원부가 Gradient Institute에 의뢰한 이 보고서는 LLM 기반 다중 에이전트 시스템의 거버넌스 체계를 분석한다. 단일 에이전트가 안전하더라도 상호작용 과정에서 시스템 전체가 안전해지는 것은 아니며, 거버넌스 수준을 단일 조직 통제, 연합형 협력, 개방형 환경의 세 단계로 구분한다. 각 단계에서 오조정, 오류 전파, 정보 비대칭, prompt infections, algorithmic collusion, Sybil attacks 등의 위험과 구조화된 데이터 형식, 재승인, 감사 기록, circuit breakers 같은 통제를 제시한다. 다중 에이전트 평가 기준, 기업 위험평가 역량, 상호운용 가능한 신원·폐기 인프라와 플랫폼 간 circuit-breaker 규칙은 여전히 해결되지 않은 과제로 남아 있다.",
+      "history": [
+        {
+          "date": "2026-09-08",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/risks-and-controls-for-multi-agent-systems-disr-gradient-institute",
+          "title": "Risks and Controls for Multi-Agent Systems: An Analytical Framework for Deployment Across Organisational Boundaries",
+          "item_id": "aigl-risks-and-controls-for-multi-agent-systems-disr-gradient-institute"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-risks-and-controls-for-multi-agent-systems-disr-gradient-institute"
+      ],
+      "member_count": 1,
+      "safety_score": 10,
+      "in_scope": false,
+      "safety_reasons": [
+        "+aigl",
+        "+governan|거버넌스",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+principle|원칙|권고|recommendati",
+        "+oversight|감독|감사|audit|evalua",
+        "-(?:ai\\s+)?adoption\\b|도입\\s*가속",
+        "-no-ai"
+      ],
+      "issuer_level": "national",
+      "issuer_level_ko": "국가"
     },
     {
       "id": "doc-3f8f93551c36",
@@ -2050,6 +2792,55 @@
       "published_source": "llm_curate"
     },
     {
+      "id": "doc-68d32fb9336a",
+      "title": "ISO 42001:2023 Audit & Control Checklist",
+      "short_name": "ISO 42001:2023 Audit & Control Checklist",
+      "full_name": "",
+      "original_name": "",
+      "doc_kind": "표준",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/iso-42001-2023-audit-and-control-checklist",
+      "country": "ISO",
+      "country_ko": "ISO",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-09-03",
+      "published_raw": "",
+      "summary": "InfosecTrain과 Azpirant Technologies가 공동 작성한 체크리스트로, ISO/IEC 42001:2023 Annex A 통제 항목을 감사 질문과 적합성 증빙 자료에 연결한다. AI 정책·거버넌스, 자원, 영향평가, 생애주기 관리, 데이터 거버넌스, 투명성, 책임 있는 사용, 제3자 관계 등을 다룬다. 다만 ISO 42001의 주요 구조 조항 4~10, 정성적 점수 기준, 시정조치 절차, 고위험 AI 분류 기준 등은 포함하지 않는다.",
+      "snippet": "InfosecTrain과 Azpirant Technologies가 공동 작성한 체크리스트로, ISO/IEC 42001:2023 Annex A 통제 항목을 감사 질문과 적합성 증빙 자료에 연결한다. AI 정책·거버넌스, 자원, 영향평가, 생애주기 관리, 데이터 거버넌스, 투명성, 책임 있는 사용, 제3자 관계 등을 다룬다. 다만 ISO 42001의 주요 구조 조항 4~10, 정성적 점수 기준, 시정조치 절차, 고위험 AI 분류 기준 등은 포함하지 않는다.",
+      "history": [
+        {
+          "date": "2026-09-03",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/iso-42001-2023-audit-and-control-checklist",
+          "title": "ISO 42001:2023 Audit & Control Checklist",
+          "item_id": "aigl-iso-42001-2023-audit-and-control-checklist"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-iso-42001-2023-audit-and-control-checklist"
+      ],
+      "member_count": 1,
+      "safety_score": 15,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\brisk\\b|위험\\s*관리|위험관리|고위험|hi",
+        "+governan|거버넌스",
+        "+standard|표준|iso/?iec",
+        "+oversight|감독|감사|audit|evalua",
+        "+transpar|투명|explainab|설명\\s*가",
+        "+core+ai"
+      ],
+      "issuer_level": "international",
+      "issuer_level_ko": "국제기구·다자"
+    },
+    {
       "id": "doc-8e749e1ee782",
       "title": "영국 주권 AI 유닛",
       "short_name": "영국 주권 AI 유닛",
@@ -2170,6 +2961,394 @@
       "topics": [],
       "topics_source": "llm",
       "published_source": "llm_curate"
+    },
+    {
+      "id": "doc-cd4d89ec1cf2",
+      "title": "AI Risk Repository: Meta-Review, Database, · Taxonomy Risks from 인공지능",
+      "short_name": "AI Risk Repository: Meta-Review, Database, · Taxonomy Risks from 인공지능",
+      "full_name": "",
+      "original_name": "The AI Risk Repository: A Meta-Review, Database, and Taxonomy of Risks from Artificial Intelligence",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/ai-risk-repository-meta-review-database-taxonomy",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-09-02",
+      "published_raw": "",
+      "summary": "MIT FutureTech, 퀸즐랜드대학교 등 연구진은 74개 위험 프레임워크에서 추출한 1,725개의 인공지능 위험을 종합한 공개형 AI Risk Repository를 제시했다. 연구는 위험의 원인을 주체·의도·시점으로 분류하는 Causal Taxonomy와 결과를 7개 영역·24개 하위 영역으로 나누는 Domain Taxonomy를 도입했다. 기존 분류체계가 배포 후 위험과 시스템 안전·사회경제적 피해에 편중된 반면, 다중 에이전트 위험은 7%, AI 복지·권리는 3%의 프레임워크에서만 다뤄졌다고 분석했다. 저장소는 정기 검토와 공개 제출을 통해 갱신되며, AI 안전 감사·규제 준수·위험 평가에 활용할 수 있도록 설계됐다.",
+      "snippet": "MIT FutureTech, 퀸즐랜드대학교 등 연구진은 74개 위험 프레임워크에서 추출한 1,725개의 인공지능 위험을 종합한 공개형 AI Risk Repository를 제시했다. 연구는 위험의 원인을 주체·의도·시점으로 분류하는 Causal Taxonomy와 결과를 7개 영역·24개 하위 영역으로 나누는 Domain Taxonomy를 도입했다. 기존 분류체계가 배포 후 위험과 시스템 안전·사회경제적 피해에 편중된 반면, 다중 에이전트 위험은 7%, AI 복지·권리는 3%의 프레임워크에서만 다뤄졌다고 분석했다. 저장소는 정기 검토와 공개 제출을 통해 갱신되며, AI 안전 감사·규제 준수·위험 평가에 활용할 수 있도록 설계됐다.",
+      "history": [
+        {
+          "date": "2026-09-02",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/ai-risk-repository-meta-review-database-taxonomy",
+          "title": "The AI Risk Repository: A Meta-Review, Database, and Taxonomy of Risks from Artificial Intelligence",
+          "item_id": "aigl-ai-risk-repository-meta-review-database-taxonomy"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-ai-risk-repository-meta-review-database-taxonomy"
+      ],
+      "member_count": 1,
+      "safety_score": 21,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\bai\\s*safety\\b|인공지능\\s*안전|AI",
+        "+\\brisk\\b|위험\\s*관리|위험관리|고위험|hi",
+        "+regulat|규제",
+        "+(?:AI|인공지능).{0,12}(?:framewo",
+        "+oversight|감독|감사|audit|evalua",
+        "+harm|피해|misuse|악용|dual[-\\s]?"
+      ],
+      "issuer_level": "lab",
+      "issuer_level_ko": "프론티어 랩"
+    },
+    {
+      "id": "doc-b0fa4ee6315e",
+      "title": "Operationalizing AI 지침: Reference Guide Translating High-Level Goals into Practical Implementation",
+      "short_name": "Operationalizing AI 지침: Reference Guide Translating High-Level Goals into Practical Implementation",
+      "full_name": "",
+      "original_name": "Operationalizing AI Guidance: A Reference Guide for Translating High-Level Goals into Practical Implementation",
+      "doc_kind": "행정규칙",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/cset-operationalizing-ai-guidance",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-09-02",
+      "published_raw": "",
+      "summary": "조지타운대학교 CSET가 발간한 이 가이드는 추상적인 AI 거버넌스 원칙을 실제 엔지니어링 과업과 운영 통제로 전환하도록 설계되었으며, 238개 구현 단계와 817개 세부 권고사항, 1,225개 참고자료를 제시한다. AI 도입을 검토·계획·구현·배포·운영의 5단계로 나누고, 조직·운영·인력·인프라·데이터·모델·시스템의 7개 계층과 기업 내 기능별 담당 부서를 연결한다. 데이터 최소화, synthetic data 위험, model collapse, prompt injection, jailbreaking, 모델 추출, AI red teaming, 모니터링 및 사고 대응 등 기술적·사회기술적 통제를 다루지만, 문헌 수집이 2025년 말에 종료되어 최신 frontier 및 agentic 모델과 의료·국방·금융 등 분야별 규제에는 추가 보완이 필요하다.",
+      "snippet": "조지타운대학교 CSET가 발간한 이 가이드는 추상적인 AI 거버넌스 원칙을 실제 엔지니어링 과업과 운영 통제로 전환하도록 설계되었으며, 238개 구현 단계와 817개 세부 권고사항, 1,225개 참고자료를 제시한다. AI 도입을 검토·계획·구현·배포·운영의 5단계로 나누고, 조직·운영·인력·인프라·데이터·모델·시스템의 7개 계층과 기업 내 기능별 담당 부서를 연결한다. 데이터 최소화, synthetic data 위험, model collapse, prompt injection, jailbreaking, 모델 추출, AI red teaming, 모니터링 및 사고 대응 등 기술적·사회기술적 통제를 다루지만, 문헌 수집이 2025년 말에 종료되어 최신 frontier 및 agentic 모델과 의료·국방·금융 등 분야별 규제에는 추가 보완이 필요하다.",
+      "history": [
+        {
+          "date": "2026-09-02",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/cset-operationalizing-ai-guidance",
+          "title": "Operationalizing AI Guidance: A Reference Guide for Translating High-Level Goals into Practical Implementation",
+          "item_id": "aigl-cset-operationalizing-ai-guidance"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-cset-operationalizing-ai-guidance"
+      ],
+      "member_count": 1,
+      "safety_score": 17,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\bred\\s*team|레드팀",
+        "+governan|거버넌스",
+        "+regulat|규제",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+principle|원칙|권고|recommendati",
+        "+core+ai"
+      ],
+      "issuer_level": "ministry",
+      "issuer_level_ko": "부처·규제기관"
+    },
+    {
+      "id": "doc-0670cb0710a7",
+      "title": "NIST AI 800-4: Challenges Monitoring Deployed AI 시스템",
+      "short_name": "NIST AI 800-4: Challenges Monitoring Deployed AI 시스템",
+      "full_name": "",
+      "original_name": "NIST AI 800-4: Challenges to the Monitoring of Deployed AI Systems",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/nist-ai-800-4-challenges-monitoring-deployed-ai-systems-2",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-09-02",
+      "published_raw": "",
+      "summary": "Post-deployment measurement and monitoring is necessary (1) to validate that an AI system is operating reliably and as expected in real-world scenarios, (2) to track unforeseen outputs and drift, and (3) to identify unexpected consequences of integrating AI systems in new or changing contexts.",
+      "snippet": "Post-deployment measurement and monitoring is necessary (1) to validate that an AI system is operating reliably and as expected in real-world scenarios, (2) to track unforeseen outputs and drift, and (3) to identify unexpected consequences of integrating AI systems in new or changing contexts.",
+      "history": [
+        {
+          "date": "2026-09-02",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/nist-ai-800-4-challenges-monitoring-deployed-ai-systems-2",
+          "title": "NIST AI 800-4: Challenges to the Monitoring of Deployed AI Systems",
+          "item_id": "aigl-nist-ai-800-4-challenges-monitoring-deployed-ai-systems-2"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-nist-ai-800-4-challenges-monitoring-deployed-ai-systems-2"
+      ],
+      "member_count": 1,
+      "safety_score": 1,
+      "in_scope": false,
+      "safety_reasons": [
+        "+aigl",
+        "-(?:ai\\s+)?adoption\\b|도입\\s*가속"
+      ],
+      "issuer_level": "national",
+      "issuer_level_ko": "국가"
+    },
+    {
+      "id": "doc-7afd1fbe1ecc",
+      "title": "ISO/IEC AI 표준: Comprehensive Reference - Updated March 2026",
+      "short_name": "ISO/IEC AI 표준: Comprehensive Reference - Updated March 2026",
+      "full_name": "",
+      "original_name": "ISO/IEC AI Standards: Comprehensive Reference - Updated March 2026",
+      "doc_kind": "표준",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/iso-iec-ai-standards-comprehensive-reference-march-2026",
+      "country": "ISO",
+      "country_ko": "ISO",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-09-02",
+      "published_raw": "",
+      "summary": "Synergy Compliance Consulting이 ISO/IEC JTC 1/SC 42 및 관련 위원회의 공개 표준 35개 이상을 거버넌스, 위험관리, 신뢰성, 데이터 품질, 생애주기, 안전성, 지속가능성, 적합성 평가 등 분야별로 정리했다. 이 자료는 ISO/IEC 42001을 비롯한 주요 표준 간 관계와 활용 영역을 보여주는 색인·참고 지도이며, AI 거버넌스 체계의 표준 선정과 설계에 활용할 수 있다. 개발 중인 표준은 제외되며, 개별 표준의 세부 요구사항이나 조항별 해설은 제공하지 않는다.",
+      "snippet": "Synergy Compliance Consulting이 ISO/IEC JTC 1/SC 42 및 관련 위원회의 공개 표준 35개 이상을 거버넌스, 위험관리, 신뢰성, 데이터 품질, 생애주기, 안전성, 지속가능성, 적합성 평가 등 분야별로 정리했다. 이 자료는 ISO/IEC 42001을 비롯한 주요 표준 간 관계와 활용 영역을 보여주는 색인·참고 지도이며, AI 거버넌스 체계의 표준 선정과 설계에 활용할 수 있다. 개발 중인 표준은 제외되며, 개별 표준의 세부 요구사항이나 조항별 해설은 제공하지 않는다.",
+      "history": [
+        {
+          "date": "2026-09-02",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/iso-iec-ai-standards-comprehensive-reference-march-2026",
+          "title": "ISO/IEC AI Standards: Comprehensive Reference - Updated March 2026",
+          "item_id": "aigl-iso-iec-ai-standards-comprehensive-reference-march-2026"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-iso-iec-ai-standards-comprehensive-reference-march-2026"
+      ],
+      "member_count": 1,
+      "safety_score": 16,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\brisk\\b|위험\\s*관리|위험관리|고위험|hi",
+        "+\\bsafety\\b|안전성|안전\\s*확보",
+        "+governan|거버넌스",
+        "+standard|표준|iso/?iec",
+        "+oversight|감독|감사|audit|evalua",
+        "+core+ai"
+      ],
+      "issuer_level": "international",
+      "issuer_level_ko": "국제기구·다자"
+    },
+    {
+      "id": "doc-64541e62deb3",
+      "title": "ISO 42001 + NIST AI RMF: Practitioner Mapping Guide",
+      "short_name": "ISO 42001 + NIST AI RMF: Practitioner Mapping Guide",
+      "full_name": "",
+      "original_name": "ISO 42001 + NIST AI RMF: The Practitioner Mapping Guide",
+      "doc_kind": "표준",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/review-iso-42001-nist-ai-rmf-practitioner-mapping-guide",
+      "country": "ISO",
+      "country_ko": "ISO",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-09-02",
+      "published_raw": "",
+      "summary": "이 가이드는 ISO/IEC 42001:2023의 공식적인 AI 관리체계·감사 가능성을 NIST AI RMF 1.0의 세부 위험 진단 방법과 결합하는 방안을 제시한다. ISO 조항과 Annex A 통제를 NIST의 GOVERN, MAP, MEASURE, MANAGE 기능 및 하위 범주에 매핑하고, 3단계 24주 공동 실행 계획과 양방향 격차 등록부를 제공한다. 다만 정책 템플릿, 통제 평가 양식, 자동화된 모델 모니터링 구현을 위한 코드 수준의 지침은 포함하지 않는다.",
+      "snippet": "이 가이드는 ISO/IEC 42001:2023의 공식적인 AI 관리체계·감사 가능성을 NIST AI RMF 1.0의 세부 위험 진단 방법과 결합하는 방안을 제시한다. ISO 조항과 Annex A 통제를 NIST의 GOVERN, MAP, MEASURE, MANAGE 기능 및 하위 범주에 매핑하고, 3단계 24주 공동 실행 계획과 양방향 격차 등록부를 제공한다. 다만 정책 템플릿, 통제 평가 양식, 자동화된 모델 모니터링 구현을 위한 코드 수준의 지침은 포함하지 않는다.",
+      "history": [
+        {
+          "date": "2026-09-02",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/review-iso-42001-nist-ai-rmf-practitioner-mapping-guide",
+          "title": "ISO 42001 + NIST AI RMF: The Practitioner Mapping Guide",
+          "item_id": "aigl-review-iso-42001-nist-ai-rmf-practitioner-mapping-guide"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-review-iso-42001-nist-ai-rmf-practitioner-mapping-guide"
+      ],
+      "member_count": 1,
+      "safety_score": 9,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+standard|표준|iso/?iec",
+        "+oversight|감독|감사|audit|evalua"
+      ],
+      "issuer_level": "international",
+      "issuer_level_ko": "국제기구·다자"
+    },
+    {
+      "id": "doc-e2792412b5ff",
+      "title": "Governing 지능: 법, Privacy, 안보, · Compliance Age 인공지능",
+      "short_name": "Governing 지능: 법, Privacy, 안보, · Compliance Age 인공지능",
+      "full_name": "",
+      "original_name": "Governing Intelligence: Law, Privacy, Security, and Compliance in the Age of Artificial Intelligence",
+      "doc_kind": "법",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "제정",
+      "canonical_url": "https://www.aigl.blog/review-governing-intelligence-noah-kenney",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-09-02",
+      "published_raw": "",
+      "summary": "Noah M. Kenney의 저서는 데이터 거버넌스, 모델 거버넌스, 시스템 통합, 통제·모니터링, 감사·증거로 구성된 5계층 AI Governance Stack을 바탕으로 감사 가능한 AI 거버넌스 구축 방법을 제시한다. EU AI Act, 미국 연방·주 법률, GDPR 등 여러 규제 체계와 개인정보 보호, 사이버보안 위협, 지식재산권, 의료·교육·금융 분야의 규제 대응을 다룬다. 구체적인 의사결정 규칙과 지표, 아키텍처를 제시하지만, 완전한 코드 샘플과 규제 제출 문서, 자율 에이전트 및 다중 에이전트 거버넌스에 대한 상세 지침은 포함하지 않는다.",
+      "snippet": "Noah M. Kenney의 저서는 데이터 거버넌스, 모델 거버넌스, 시스템 통합, 통제·모니터링, 감사·증거로 구성된 5계층 AI Governance Stack을 바탕으로 감사 가능한 AI 거버넌스 구축 방법을 제시한다. EU AI Act, 미국 연방·주 법률, GDPR 등 여러 규제 체계와 개인정보 보호, 사이버보안 위협, 지식재산권, 의료·교육·금융 분야의 규제 대응을 다룬다. 구체적인 의사결정 규칙과 지표, 아키텍처를 제시하지만, 완전한 코드 샘플과 규제 제출 문서, 자율 에이전트 및 다중 에이전트 거버넌스에 대한 상세 지침은 포함하지 않는다.",
+      "history": [
+        {
+          "date": "2026-09-02",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/review-governing-intelligence-noah-kenney",
+          "title": "Governing Intelligence: Law, Privacy, Security, and Compliance in the Age of Artificial Intelligence",
+          "item_id": "aigl-review-governing-intelligence-noah-kenney"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-review-governing-intelligence-noah-kenney"
+      ],
+      "member_count": 1,
+      "safety_score": 19,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\bsecurit|보안|사이버보안|cybersecu",
+        "+governan|거버넌스",
+        "+regulat|규제",
+        "+(?:artificial\\s*intelligence",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+oversight|감독|감사|audit|evalua",
+        "+privacy|개인정보|data\\s*protecti",
+        "-gdp|생산성|productivity|growth\\",
+        "+core+ai"
+      ],
+      "issuer_level": "international",
+      "issuer_level_ko": "국제기구·다자"
+    },
+    {
+      "id": "doc-1bef71b6150c",
+      "title": "AIGL Newsletter #22: Managing Unexplainable",
+      "short_name": "AIGL Newsletter #22: Managing Unexplainable",
+      "full_name": "",
+      "original_name": "AIGL Newsletter #22: Managing the Unexplainable",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/aigl-newsletter-22-managing-the-unexplainable",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-09-02",
+      "published_raw": "",
+      "summary": "AI 시스템의 내부 작동이 불투명하고 확률적·변동적이어도 조직은 책임성과 통제를 확보해야 하며, 이를 위해 설명 가능성만이 아니라 허용 가능한 행동 범위의 입증, 지속적 모니터링, 계약상 보호, 감사 기록, 대체 수단과 명확한 자율성 한계가 필요하다고 설명한다. 뉴스레터는 AI 공급업체 계약 협상, AI 보안 감사 체크리스트, 금융기관의 Model Risk Management 변화 자료를 추천하며, 전통적인 정기 검증만으로는 부족하므로 행동 테스트와 동적 guardrails, human-in-the-loop 감독, 버전 관리, fallback 모델 및 escalation 체계를 도입해야 한다고 강조한다.",
+      "snippet": "AI 시스템의 내부 작동이 불투명하고 확률적·변동적이어도 조직은 책임성과 통제를 확보해야 하며, 이를 위해 설명 가능성만이 아니라 허용 가능한 행동 범위의 입증, 지속적 모니터링, 계약상 보호, 감사 기록, 대체 수단과 명확한 자율성 한계가 필요하다고 설명한다. 뉴스레터는 AI 공급업체 계약 협상, AI 보안 감사 체크리스트, 금융기관의 Model Risk Management 변화 자료를 추천하며, 전통적인 정기 검증만으로는 부족하므로 행동 테스트와 동적 guardrails, human-in-the-loop 감독, 버전 관리, fallback 모델 및 escalation 체계를 도입해야 한다고 강조한다.",
+      "history": [
+        {
+          "date": "2026-09-02",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/aigl-newsletter-22-managing-the-unexplainable",
+          "title": "AIGL Newsletter #22: Managing the Unexplainable",
+          "item_id": "aigl-aigl-newsletter-22-managing-the-unexplainable"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-aigl-newsletter-22-managing-the-unexplainable"
+      ],
+      "member_count": 1,
+      "safety_score": 19,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\brisk\\b|위험\\s*관리|위험관리|고위험|hi",
+        "+\\bsecurit|보안|사이버보안|cybersecu",
+        "+oversight|감독|감사|audit|evalua",
+        "+transpar|투명|explainab|설명\\s*가",
+        "+guardrail|안전장치",
+        "+risk\\s*management|위험관리\\s*프레임",
+        "+core+ai"
+      ],
+      "issuer_level": "national",
+      "issuer_level_ko": "국가"
+    },
+    {
+      "id": "doc-c6838c16434b",
+      "title": "AI 거버넌스 Business: Scoping AI Use Cases · Managing Risks",
+      "short_name": "AI 거버넌스 Business: Scoping AI Use Cases · Managing Risks",
+      "full_name": "",
+      "original_name": "AI Governance for Business: Scoping AI Use Cases and Managing Risks",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/ai-governance-for-business-scoping-ai-use-cases-and-managing-risks",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-09-02",
+      "published_raw": "",
+      "summary": "The Alan Turing Institute가 Innovate UK BridgeAI 프로그램을 통해 상업 조직의 AI 도입·확대를 지원하는 운영 프레임워크를 제시했다. 이 프레임워크는 사용 사례 정의, 실패 지점 진단, 비례적 완화책 선택, 지속적 모니터링의 4단계 생애주기로 구성되며, ISO/IEC 42001·23894와 NIST AI RMF 및 영국 기업 190곳의 실증 자료를 바탕으로 27개 AI 위험 원천과 65개 완화책을 정리했다. 위험 완화책은 제품 개발, 관리·감독, 정보·투명성, 교육·문화의 4개 통제 영역으로 분류되며, red teaming·인간 감독·사고 대응·위험 공개·역할별 교육 등이 포함된다.",
+      "snippet": "The Alan Turing Institute가 Innovate UK BridgeAI 프로그램을 통해 상업 조직의 AI 도입·확대를 지원하는 운영 프레임워크를 제시했다. 이 프레임워크는 사용 사례 정의, 실패 지점 진단, 비례적 완화책 선택, 지속적 모니터링의 4단계 생애주기로 구성되며, ISO/IEC 42001·23894와 NIST AI RMF 및 영국 기업 190곳의 실증 자료를 바탕으로 27개 AI 위험 원천과 65개 완화책을 정리했다. 위험 완화책은 제품 개발, 관리·감독, 정보·투명성, 교육·문화의 4개 통제 영역으로 분류되며, red teaming·인간 감독·사고 대응·위험 공개·역할별 교육 등이 포함된다.",
+      "history": [
+        {
+          "date": "2026-09-02",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/ai-governance-for-business-scoping-ai-use-cases-and-managing-risks",
+          "title": "AI Governance for Business: Scoping AI Use Cases and Managing Risks",
+          "item_id": "aigl-ai-governance-for-business-scoping-ai-use-cases-and-managing-risks"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-ai-governance-for-business-scoping-ai-use-cases-and-managing-risks"
+      ],
+      "member_count": 1,
+      "safety_score": 16,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\bred\\s*team|레드팀",
+        "+governan|거버넌스",
+        "+standard|표준|iso/?iec",
+        "+oversight|감독|감사|audit|evalua",
+        "+transpar|투명|explainab|설명\\s*가",
+        "+core+ai"
+      ],
+      "issuer_level": "international",
+      "issuer_level_ko": "국제기구·다자"
     },
     {
       "id": "doc-b44cf0c07d6b",
@@ -2629,6 +3808,727 @@
       "issuer_level_ko": "부처·규제기관",
       "topics": [],
       "topics_source": "llm"
+    },
+    {
+      "id": "doc-e10adc1224b2",
+      "title": "Zero Trust AI Agents: 안보 프레임워크 deploying 자율 AI agents enterprise",
+      "short_name": "Zero Trust AI Agents: 안보 프레임워크 deploying 자율 AI agents enterprise",
+      "full_name": "",
+      "original_name": "Zero Trust for AI Agents: A security framework for deploying autonomous AI agents in the enterprise",
+      "doc_kind": "가이드라인·원칙",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/zero-trust-for-ai-agents-anthropic",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-08-31",
+      "published_raw": "",
+      "summary": "Anthropic의 프레임워크는 자율형 AI 에이전트를 기업 환경에 배포하기 위한 제로 트러스트 아키텍처를 Foundation·Enterprise·Advanced의 3단계 성숙도와 8개 영역으로 제시한다. 핵심 원칙은 에이전트가 접근할 수 있는 대상뿐 아니라 실행 가능한 작업·도구·매개변수까지 제한하는 ‘최소 권한 행위(Least Agency)’이며, 암호학적 에이전트 식별, 단기 자격 증명, 격리된 실행 환경, 감사·관찰 체계를 포함한다. 직접·간접 prompt injection, MCP 도구 오염, 권한 상속, RAG·공유 컨텍스트 오염 등의 위협과 함께 AI-BOM, 도구 허용 목록, 세션 격리, 자동 방어 운영 등의 구현 절차를 설명하지만, 비Anthropic 환경의 적용 비용과 지연시간은 충분히 정량화하지 않는다.",
+      "snippet": "Anthropic의 프레임워크는 자율형 AI 에이전트를 기업 환경에 배포하기 위한 제로 트러스트 아키텍처를 Foundation·Enterprise·Advanced의 3단계 성숙도와 8개 영역으로 제시한다. 핵심 원칙은 에이전트가 접근할 수 있는 대상뿐 아니라 실행 가능한 작업·도구·매개변수까지 제한하는 ‘최소 권한 행위(Least Agency)’이며, 암호학적 에이전트 식별, 단기 자격 증명, 격리된 실행 환경, 감사·관찰 체계를 포함한다. 직접·간접 prompt injection, MCP 도구 오염, 권한 상속, RAG·공유 컨텍스트 오염 등의 위협과 함께 AI-BOM, 도구 허용 목록, 세션 격리, 자동 방어 운영 등의 구현 절차를 설명하지만, 비Anthropic 환경의 적용 비용과 지연시간은 충분히 정량화하지 않는다.",
+      "history": [
+        {
+          "date": "2026-08-31",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/zero-trust-for-ai-agents-anthropic",
+          "title": "Zero Trust for AI Agents: A security framework for deploying autonomous AI agents in the enterprise",
+          "item_id": "aigl-zero-trust-for-ai-agents-anthropic"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-zero-trust-for-ai-agents-anthropic"
+      ],
+      "member_count": 1,
+      "safety_score": 14,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\bsecurit|보안|사이버보안|cybersecu",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+principle|원칙|권고|recommendati",
+        "+(?:AI|인공지능).{0,12}(?:framewo",
+        "+oversight|감독|감사|audit|evalua"
+      ],
+      "issuer_level": "ministry",
+      "issuer_level_ko": "부처·규제기관"
+    },
+    {
+      "id": "doc-15755b003ffd",
+      "title": "Dual Challenge AI Audit: Automating Assurance · Governing 기술 That Does It (Part 1)",
+      "short_name": "Dual Challenge AI Audit: Automating Assurance · Governing 기술 That Does It (Part 1)",
+      "full_name": "",
+      "original_name": "The Dual Challenge of AI in Audit: Automating Assurance and Governing the Technology That Does It (Part 1)",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/the-dual-challenge-of-ai-in-audit-isaca-part-1",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-08-31",
+      "published_raw": "",
+      "summary": "ISACA Sydney Chapter 특별관심그룹의 연구보고서는 감사 업무에서 AI를 활용해 보증 절차를 자동화하는 동시에 조직 내 AI 시스템을 통제·검증해야 하는 이중 과제를 분석한다. 위험·감사 실무자 45명과 고위 임원 8명을 조사한 결과, 응답자의 84.1%는 AI 거버넌스가 AI 역량 발전을 따라가지 못한다고 답했으며, 22.2%만이 AI 생성 증거가 외부 규제기관의 검토를 견딜 수 있다고 봤다. 보고서는 AI 결과에 대한 법적·전문적 책임은 AI가 아닌 감사 담당자와 조직 경영진에게 있으며, prompt injection, 권한 상승, 개인정보 유출, 데이터 계보 훼손 등을 고려한 인간 검토와 전 생애주기 거버넌스가 필요하다고 강조한다.",
+      "snippet": "ISACA Sydney Chapter 특별관심그룹의 연구보고서는 감사 업무에서 AI를 활용해 보증 절차를 자동화하는 동시에 조직 내 AI 시스템을 통제·검증해야 하는 이중 과제를 분석한다. 위험·감사 실무자 45명과 고위 임원 8명을 조사한 결과, 응답자의 84.1%는 AI 거버넌스가 AI 역량 발전을 따라가지 못한다고 답했으며, 22.2%만이 AI 생성 증거가 외부 규제기관의 검토를 견딜 수 있다고 봤다. 보고서는 AI 결과에 대한 법적·전문적 책임은 AI가 아닌 감사 담당자와 조직 경영진에게 있으며, prompt injection, 권한 상승, 개인정보 유출, 데이터 계보 훼손 등을 고려한 인간 검토와 전 생애주기 거버넌스가 필요하다고 강조한다.",
+      "history": [
+        {
+          "date": "2026-08-31",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/the-dual-challenge-of-ai-in-audit-isaca-part-1",
+          "title": "The Dual Challenge of AI in Audit: Automating Assurance and Governing the Technology That Does It (Part 1)",
+          "item_id": "aigl-the-dual-challenge-of-ai-in-audit-isaca-part-1"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-the-dual-challenge-of-ai-in-audit-isaca-part-1"
+      ],
+      "member_count": 1,
+      "safety_score": 13,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+governan|거버넌스",
+        "+regulat|규제",
+        "+oversight|감독|감사|audit|evalua",
+        "+privacy|개인정보|data\\s*protecti",
+        "+core+ai"
+      ],
+      "issuer_level": "national",
+      "issuer_level_ko": "국가"
+    },
+    {
+      "id": "doc-d2c64b6a73e2",
+      "title": "AI 거버넌스 Practitioner's Manual: Operational Playbook Cross-Functional AI Risk, 법, · Compliance",
+      "short_name": "AI 거버넌스 Practitioner's Manual: Operational Playbook Cross-Functional AI Risk, 법, · Compliance",
+      "full_name": "",
+      "original_name": "The AI Governance Practitioner's Manual: An Operational Playbook for Cross-Functional AI Risk, Law, and Compliance",
+      "doc_kind": "법",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "제정",
+      "canonical_url": "https://www.aigl.blog/review-ai-governance-practitioners-manual-noah-kenney",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-08-31",
+      "published_raw": "",
+      "summary": "Noah M. Kenney의 매뉴얼은 기업에서 AI 거버넌스를 구현하기 위한 역할 중심의 운영 체계를 제시하며, 데이터 거버넌스·모델 거버넌스·시스템 통합·통제 및 모니터링·감사 및 증거의 5개 계층으로 구성된다. EU AI Act, GDPR, 미국 연방·주 규정과 한국·싱가포르 등 국제 규제를 기술적 통제, 책임자 지정, 감사 증거로 연결하고, 의료·금융·핵심 인프라 등 분야별 실행 방안과 12개월 도입 로드맵을 다룬다. 법률 해석과 기술 구현의 연결에 중점을 두며, 구체적인 코드 구현이나 통계적 공정성 도구의 실습은 제한적으로 다룬다.",
+      "snippet": "Noah M. Kenney의 매뉴얼은 기업에서 AI 거버넌스를 구현하기 위한 역할 중심의 운영 체계를 제시하며, 데이터 거버넌스·모델 거버넌스·시스템 통합·통제 및 모니터링·감사 및 증거의 5개 계층으로 구성된다. EU AI Act, GDPR, 미국 연방·주 규정과 한국·싱가포르 등 국제 규제를 기술적 통제, 책임자 지정, 감사 증거로 연결하고, 의료·금융·핵심 인프라 등 분야별 실행 방안과 12개월 도입 로드맵을 다룬다. 법률 해석과 기술 구현의 연결에 중점을 두며, 구체적인 코드 구현이나 통계적 공정성 도구의 실습은 제한적으로 다룬다.",
+      "history": [
+        {
+          "date": "2026-08-31",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/review-ai-governance-practitioners-manual-noah-kenney",
+          "title": "The AI Governance Practitioner's Manual: An Operational Playbook for Cross-Functional AI Risk, Law, and Compliance",
+          "item_id": "aigl-review-ai-governance-practitioners-manual-noah-kenney"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-review-ai-governance-practitioners-manual-noah-kenney"
+      ],
+      "member_count": 1,
+      "safety_score": 17,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\brisk\\b|위험\\s*관리|위험관리|고위험|hi",
+        "+governan|거버넌스",
+        "+regulat|규제",
+        "+(?:artificial\\s*intelligence",
+        "+oversight|감독|감사|audit|evalua",
+        "+bias|편향|discriminat|차별|fairn",
+        "-gdp|생산성|productivity|growth\\",
+        "+core+ai"
+      ],
+      "issuer_level": "international",
+      "issuer_level_ko": "국제기구·다자"
+    },
+    {
+      "id": "doc-c87cc7462c1e",
+      "title": "OWASP Agentic Skills Top 10: 안보 Risks · Mitigations Agentic Skill Ecosystems",
+      "short_name": "OWASP Agentic Skills Top 10: 안보 Risks · Mitigations Agentic Skill Ecosystems",
+      "full_name": "",
+      "original_name": "OWASP Agentic Skills Top 10: Security Risks and Mitigations for Agentic Skill Ecosystems",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/owasp-agentic-skills-top-10-security-risks",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-08-31",
+      "published_raw": "",
+      "summary": "OWASP 가이드는 자율 에이전트 런타임에 로드되는 에이전틱 스킬의 보안 기준을 제시하고, 악성 스킬·공급망 침해·과도한 권한·취약한 격리·부실한 거버넌스 등 10개 위험 범주를 네 영역으로 분류한다. 자연어 지침과 실행 코드가 결합된 스킬의 특성을 반영해 prompt injection, 메타데이터 변조, 업데이트 드리프트, 교차 플랫폼 재사용 문제 등에 대한 기술적 완화책과 참조 아키텍처를 제안하며 ISO/IEC 42001, CSA MAESTRO, EU AI Act와의 연계를 다룬다. 표준화된 위험 심각도 점수는 AIVSS v1.0 통합 시점인 2026년 말까지 보류되며, Universal Agentic Skill Format과 양자 실행 영수증 등 일부 제안은 아직 확정 표준이 아닌 커뮤니티 논의 단계다.",
+      "snippet": "OWASP 가이드는 자율 에이전트 런타임에 로드되는 에이전틱 스킬의 보안 기준을 제시하고, 악성 스킬·공급망 침해·과도한 권한·취약한 격리·부실한 거버넌스 등 10개 위험 범주를 네 영역으로 분류한다. 자연어 지침과 실행 코드가 결합된 스킬의 특성을 반영해 prompt injection, 메타데이터 변조, 업데이트 드리프트, 교차 플랫폼 재사용 문제 등에 대한 기술적 완화책과 참조 아키텍처를 제안하며 ISO/IEC 42001, CSA MAESTRO, EU AI Act와의 연계를 다룬다. 표준화된 위험 심각도 점수는 AIVSS v1.0 통합 시점인 2026년 말까지 보류되며, Universal Agentic Skill Format과 양자 실행 영수증 등 일부 제안은 아직 확정 표준이 아닌 커뮤니티 논의 단계다.",
+      "history": [
+        {
+          "date": "2026-08-31",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/owasp-agentic-skills-top-10-security-risks",
+          "title": "OWASP Agentic Skills Top 10: Security Risks and Mitigations for Agentic Skill Ecosystems",
+          "item_id": "aigl-owasp-agentic-skills-top-10-security-risks"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-owasp-agentic-skills-top-10-security-risks"
+      ],
+      "member_count": 1,
+      "safety_score": 13,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\bsecurit|보안|사이버보안|cybersecu",
+        "+governan|거버넌스",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+standard|표준|iso/?iec",
+        "+core+ai"
+      ],
+      "issuer_level": "international",
+      "issuer_level_ko": "국제기구·다자"
+    },
+    {
+      "id": "doc-02cc06da44db",
+      "title": "Governing AI Agents: Palantir’s Perspectives Agentic 거버넌스",
+      "short_name": "Governing AI Agents: Palantir’s Perspectives Agentic 거버넌스",
+      "full_name": "",
+      "original_name": "Governing AI Agents: Palantir’s Perspectives on Agentic Governance",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/palantir-governing-ai-agents-perspectives-on-agentic-governance",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-08-31",
+      "published_raw": "",
+      "summary": "Palantir Technologies는 기업용 AI 에이전트의 안전한 운영을 위해 기술적 거버넌스 통제와 조직적 거버넌스 워크플로를 결합하는 구조를 제안한다. 주요 통제로는 목적·분류 기반 접근 제어, 실행 범위 제한, 다중 단계 운영 평가, 불변 감사 기록, 비상 중단 기능이 포함되며, 워크플로에는 지속적인 인간 평가와 위험·가역성에 따른 단계적 자율성 부여가 포함된다. 문서는 사전 벤치마크와 모델 수준의 guardrails만으로는 실제 배포 환경의 안전성과 신뢰성을 보장하기 어렵다고 지적하며, 정량적 신뢰성 지표나 구체적인 API·코드 예시는 제공하지 않는 고수준 관점 백서다.",
+      "snippet": "Palantir Technologies는 기업용 AI 에이전트의 안전한 운영을 위해 기술적 거버넌스 통제와 조직적 거버넌스 워크플로를 결합하는 구조를 제안한다. 주요 통제로는 목적·분류 기반 접근 제어, 실행 범위 제한, 다중 단계 운영 평가, 불변 감사 기록, 비상 중단 기능이 포함되며, 워크플로에는 지속적인 인간 평가와 위험·가역성에 따른 단계적 자율성 부여가 포함된다. 문서는 사전 벤치마크와 모델 수준의 guardrails만으로는 실제 배포 환경의 안전성과 신뢰성을 보장하기 어렵다고 지적하며, 정량적 신뢰성 지표나 구체적인 API·코드 예시는 제공하지 않는 고수준 관점 백서다.",
+      "history": [
+        {
+          "date": "2026-08-31",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/palantir-governing-ai-agents-perspectives-on-agentic-governance",
+          "title": "Governing AI Agents: Palantir’s Perspectives on Agentic Governance",
+          "item_id": "aigl-palantir-governing-ai-agents-perspectives-on-agentic-governance"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-palantir-governing-ai-agents-perspectives-on-agentic-governance"
+      ],
+      "member_count": 1,
+      "safety_score": 14,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\bsafety\\b|안전성|안전\\s*확보",
+        "+governan|거버넌스",
+        "+oversight|감독|감사|audit|evalua",
+        "+guardrail|안전장치",
+        "+core+ai"
+      ],
+      "issuer_level": "national",
+      "issuer_level_ko": "국가"
+    },
+    {
+      "id": "doc-89fbdbf5e177",
+      "title": "Forecasting AI Cyber Risks · Capabilities: Results 2025 Pilot 연구",
+      "short_name": "Forecasting AI Cyber Risks · Capabilities: Results 2025 Pilot 연구",
+      "full_name": "",
+      "original_name": "Forecasting AI Cyber Risks and Capabilities: Results of a 2025 Pilot Study",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/forecasting-ai-cyber-risks-and-capabilities-pilot-study",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-08-31",
+      "published_raw": "",
+      "summary": "Forecasting Research Institute는 superforecasters 13명과 사이버보안 전문가 8명을 대상으로 2026년 대규모 데이터 파괴형 worm 공격과 미국 전력망 공격 위험을 예측했다. 100억 달러 이상 피해를 유발하는 worm 공격의 기준 위험도는 전문가 8%, superforecasters 5%였지만, 중간 수준 공격자 일부가 AI로 elite exploits를 개발할 수 있다는 조건에서는 각각 41%와 15%로 상승했다. 전력망 공격 위험은 물리적 인프라와 운영 복잡성 때문에 제한적으로 증가했으며, 연구는 소규모 표본과 Cybench의 실제 공격 위험 반영 한계를 지적했다.",
+      "snippet": "Forecasting Research Institute는 superforecasters 13명과 사이버보안 전문가 8명을 대상으로 2026년 대규모 데이터 파괴형 worm 공격과 미국 전력망 공격 위험을 예측했다. 100억 달러 이상 피해를 유발하는 worm 공격의 기준 위험도는 전문가 8%, superforecasters 5%였지만, 중간 수준 공격자 일부가 AI로 elite exploits를 개발할 수 있다는 조건에서는 각각 41%와 15%로 상승했다. 전력망 공격 위험은 물리적 인프라와 운영 복잡성 때문에 제한적으로 증가했으며, 연구는 소규모 표본과 Cybench의 실제 공격 위험 반영 한계를 지적했다.",
+      "history": [
+        {
+          "date": "2026-08-31",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/forecasting-ai-cyber-risks-and-capabilities-pilot-study",
+          "title": "Forecasting AI Cyber Risks and Capabilities: Results of a 2025 Pilot Study",
+          "item_id": "aigl-forecasting-ai-cyber-risks-and-capabilities-pilot-study"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-forecasting-ai-cyber-risks-and-capabilities-pilot-study"
+      ],
+      "member_count": 1,
+      "safety_score": 9,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\bsecurit|보안|사이버보안|cybersecu",
+        "+harm|피해|misuse|악용|dual[-\\s]?"
+      ],
+      "issuer_level": "national",
+      "issuer_level_ko": "국가"
+    },
+    {
+      "id": "doc-10ff61efcd5d",
+      "title": "Engineering Culture AI 안보",
+      "short_name": "Engineering Culture AI 안보",
+      "full_name": "",
+      "original_name": "Engineering a Culture of AI Security",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/engineering-a-culture-of-ai-security-aiuc-1",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-08-31",
+      "published_raw": "",
+      "summary": "AIUC-1 Consortium의 백서는 shadow AI, 검증되지 않은 hallucination, 지식재산 유출 등 직원 행동에서 비롯되는 AI 위험을 줄이기 위해 기술 통제와 조직문화의 결합을 제안한다. 리더십의 모범, AI 보안 홍보대사 네트워크, 성과평가·OKR 반영, 검증된 도구를 제공하는 AI Centers of Excellence 등의 실행 방안을 제시한다. 승인 도구 사용률과 자발적 신고 같은 선행지표 및 사고 감소·shadow AI 감소 같은 후행지표를 활용하되, 직무별 평가표와 DLP·기술 감사 파이프라인의 구체적 구현은 추가 보완이 필요하다고 설명한다.",
+      "snippet": "AIUC-1 Consortium의 백서는 shadow AI, 검증되지 않은 hallucination, 지식재산 유출 등 직원 행동에서 비롯되는 AI 위험을 줄이기 위해 기술 통제와 조직문화의 결합을 제안한다. 리더십의 모범, AI 보안 홍보대사 네트워크, 성과평가·OKR 반영, 검증된 도구를 제공하는 AI Centers of Excellence 등의 실행 방안을 제시한다. 승인 도구 사용률과 자발적 신고 같은 선행지표 및 사고 감소·shadow AI 감소 같은 후행지표를 활용하되, 직무별 평가표와 DLP·기술 감사 파이프라인의 구체적 구현은 추가 보완이 필요하다고 설명한다.",
+      "history": [
+        {
+          "date": "2026-08-31",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/engineering-a-culture-of-ai-security-aiuc-1",
+          "title": "Engineering a Culture of AI Security",
+          "item_id": "aigl-engineering-a-culture-of-ai-security-aiuc-1"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-engineering-a-culture-of-ai-security-aiuc-1"
+      ],
+      "member_count": 1,
+      "safety_score": 8,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\bsecurit|보안|사이버보안|cybersecu",
+        "+oversight|감독|감사|audit|evalua"
+      ],
+      "issuer_level": "national",
+      "issuer_level_ko": "국가"
+    },
+    {
+      "id": "doc-55194f2147f2",
+      "title": "데이터 거버넌스 · AI 거버넌스 Maturity 평가 Checklist (금융서비스)",
+      "short_name": "데이터 거버넌스 · AI 거버넌스 Maturity 평가 Checklist (금융서비스)",
+      "full_name": "",
+      "original_name": "Data Governance and AI Governance Maturity Assessment Checklist (Financial Services)",
+      "doc_kind": "정책보고서",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/data-governance-and-ai-governance-maturity-assessment-checklist-financial-services",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-08-31",
+      "published_raw": "",
+      "summary": "규제 금융기관을 대상으로 데이터 관리와 AI 거버넌스 역량을 0~5단계로 평가하고, 자체 선언이 아닌 위원회 회의록·검증 자료·데이터 품질 대시보드·계보도 등 운영 증거를 요구하는 진단 도구다. 데이터 전략, 데이터 계보, 개인정보 보호, BCBS 239 및 EU AI Act 대응, 모델 리스크 관리, 편향성 검증, 설명가능성, 인간 감독, 생성형 AI·RAG 통제, 제3자 및 사고 관리 등 데이터 거버넌스 19개 차원과 AI 거버넌스 21개 하위 영역을 다룬다. 도메인별 성숙도 요약, 위험 우선순위 히트맵, 0~3개월 봉쇄부터 12개월 이상 최적화까지의 개선 로드맵 양식을 제공하지만, 업계 비교 기준이나 정량적 벤치마크 점수는 포함하지 않는다.",
+      "snippet": "규제 금융기관을 대상으로 데이터 관리와 AI 거버넌스 역량을 0~5단계로 평가하고, 자체 선언이 아닌 위원회 회의록·검증 자료·데이터 품질 대시보드·계보도 등 운영 증거를 요구하는 진단 도구다. 데이터 전략, 데이터 계보, 개인정보 보호, BCBS 239 및 EU AI Act 대응, 모델 리스크 관리, 편향성 검증, 설명가능성, 인간 감독, 생성형 AI·RAG 통제, 제3자 및 사고 관리 등 데이터 거버넌스 19개 차원과 AI 거버넌스 21개 하위 영역을 다룬다. 도메인별 성숙도 요약, 위험 우선순위 히트맵, 0~3개월 봉쇄부터 12개월 이상 최적화까지의 개선 로드맵 양식을 제공하지만, 업계 비교 기준이나 정량적 벤치마크 점수는 포함하지 않는다.",
+      "history": [
+        {
+          "date": "2026-08-31",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/data-governance-and-ai-governance-maturity-assessment-checklist-financial-services",
+          "title": "Data Governance and AI Governance Maturity Assessment Checklist (Financial Services)",
+          "item_id": "aigl-data-governance-and-ai-governance-maturity-assessment-checklist-financial-servic"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-data-governance-and-ai-governance-maturity-assessment-checklist-financial-servic"
+      ],
+      "member_count": 1,
+      "safety_score": 22,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+governan|거버넌스",
+        "+regulat|규제",
+        "+(?:artificial\\s*intelligence",
+        "+declarat|선언|convention|협약|조약",
+        "+oversight|감독|감사|audit|evalua",
+        "+transpar|투명|explainab|설명\\s*가",
+        "+privacy|개인정보|data\\s*protecti",
+        "+bias|편향|discriminat|차별|fairn",
+        "+core+ai"
+      ],
+      "issuer_level": "international",
+      "issuer_level_ko": "국제기구·다자"
+    },
+    {
+      "id": "doc-848c0c6cd03f",
+      "title": "Authoritative Guide AI/ML-BOM",
+      "short_name": "Authoritative Guide AI/ML-BOM",
+      "full_name": "",
+      "original_name": "Authoritative Guide to AI/ML-BOM",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/owasp-authoritative-guide-to-ai-ml-bom",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-08-31",
+      "published_raw": "",
+      "summary": "OWASP CycloneDX AI/ML Working Group이 개발하고 Ecma International의 ECMA-424로 승인된 이 가이드는 CycloneDX v1.7을 기반으로 AI/ML 구성 요소와 공급망 정보를 기계 판독 가능한 방식으로 기록하는 표준을 제시한다. 모델·저장소의 계보, 학습 데이터와 출처, 아키텍처·하이퍼파라미터, 벤치마크, 공정성·윤리적 위험, 에너지 소비 및 EU AI Act 준수 정보를 다룬다. 다만 설정·하이퍼파라미터와 일부 데이터셋 취득 절차는 아직 확장 속성에 의존하며, 작업 유형과 fine-tuning 분류의 규범적 정의는 CycloneDX v2.0에서 보완될 예정이다.",
+      "snippet": "OWASP CycloneDX AI/ML Working Group이 개발하고 Ecma International의 ECMA-424로 승인된 이 가이드는 CycloneDX v1.7을 기반으로 AI/ML 구성 요소와 공급망 정보를 기계 판독 가능한 방식으로 기록하는 표준을 제시한다. 모델·저장소의 계보, 학습 데이터와 출처, 아키텍처·하이퍼파라미터, 벤치마크, 공정성·윤리적 위험, 에너지 소비 및 EU AI Act 준수 정보를 다룬다. 다만 설정·하이퍼파라미터와 일부 데이터셋 취득 절차는 아직 확장 속성에 의존하며, 작업 유형과 fine-tuning 분류의 규범적 정의는 CycloneDX v2.0에서 보완될 예정이다.",
+      "history": [
+        {
+          "date": "2026-08-31",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/owasp-authoritative-guide-to-ai-ml-bom",
+          "title": "Authoritative Guide to AI/ML-BOM",
+          "item_id": "aigl-owasp-authoritative-guide-to-ai-ml-bom"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-owasp-authoritative-guide-to-ai-ml-bom"
+      ],
+      "member_count": 1,
+      "safety_score": 13,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\bethic|윤리",
+        "+(?:artificial\\s*intelligence",
+        "+standard|표준|iso/?iec",
+        "+bias|편향|discriminat|차별|fairn",
+        "+core+ai"
+      ],
+      "issuer_level": "international",
+      "issuer_level_ko": "국제기구·다자"
+    },
+    {
+      "id": "doc-c7c8a1d8eed2",
+      "title": "AI Threat 대비 Playbook: 4-Pillar Operating 프레임워크 안보 Leaders",
+      "short_name": "AI Threat 대비 Playbook: 4-Pillar Operating 프레임워크 안보 Leaders",
+      "full_name": "",
+      "original_name": "AI Threat Readiness Playbook: The 4-Pillar Operating Framework for Security Leaders",
+      "doc_kind": "가이드라인·원칙",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/wiz-ai-threat-readiness-playbook",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-08-31",
+      "published_raw": "",
+      "summary": "Wiz의 플레이북은 AI로 가속화된 사이버 위협에 대응하기 위해 핵심 위험 제거, 패치 및 zero-day 대응 가속화, 심층 AI 코드 분석, 실시간 탐지·대응의 4대 운영 축을 제시한다. 각 축은 외부 공격 표면 관리, 위험 기반 패치 우선순위 지정, AI 기반 취약점 분석과 코드 수정, 클라우드 텔레메트리 및 자동화된 containment를 포함하며, 단계별 성숙도와 측정 지표를 제공한다. 20개 항목의 AI 위협 대비 체크리스트와 준비도 평가 모델도 포함하지만, EU AI Act·개인정보·윤리 등 광범위한 AI 거버넌스와 벤더 중립적 구현에 대한 내용은 제한적이다.",
+      "snippet": "Wiz의 플레이북은 AI로 가속화된 사이버 위협에 대응하기 위해 핵심 위험 제거, 패치 및 zero-day 대응 가속화, 심층 AI 코드 분석, 실시간 탐지·대응의 4대 운영 축을 제시한다. 각 축은 외부 공격 표면 관리, 위험 기반 패치 우선순위 지정, AI 기반 취약점 분석과 코드 수정, 클라우드 텔레메트리 및 자동화된 containment를 포함하며, 단계별 성숙도와 측정 지표를 제공한다. 20개 항목의 AI 위협 대비 체크리스트와 준비도 평가 모델도 포함하지만, EU AI Act·개인정보·윤리 등 광범위한 AI 거버넌스와 벤더 중립적 구현에 대한 내용은 제한적이다.",
+      "history": [
+        {
+          "date": "2026-08-31",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/wiz-ai-threat-readiness-playbook",
+          "title": "AI Threat Readiness Playbook: The 4-Pillar Operating Framework for Security Leaders",
+          "item_id": "aigl-wiz-ai-threat-readiness-playbook"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-wiz-ai-threat-readiness-playbook"
+      ],
+      "member_count": 1,
+      "safety_score": 21,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\bsecurit|보안|사이버보안|cybersecu",
+        "+\\bethic|윤리",
+        "+governan|거버넌스",
+        "+(?:artificial\\s*intelligence",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+principle|원칙|권고|recommendati",
+        "+privacy|개인정보|data\\s*protecti",
+        "+core+ai"
+      ],
+      "issuer_level": "international",
+      "issuer_level_ko": "국제기구·다자"
+    },
+    {
+      "id": "doc-35be62471393",
+      "title": "AI 안보 Checklist",
+      "short_name": "AI 안보 Checklist",
+      "full_name": "",
+      "original_name": "AI Security Checklist",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/cyber-defentech-ai-security-checklist",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-08-31",
+      "published_raw": "",
+      "summary": "Cyber Defentech의 체크리스트는 거버넌스·데이터, 모델·접근 권한, 애플리케이션·API·프롬프트, 모니터링·사고 대응 등 5개 영역에서 AI 배포 전 생애주기의 보안 관리 항목을 제시한다. 위험 책임자 지정, 데이터 분류·암호화, 모델과 환경의 분리, MFA·API 키 관리, prompt injection 테스트, 출력 검증, 이상 징후 탐지와 신속한 차단 절차 등을 다룬다. 고수준 운영 지침으로서 구체적인 구현 코드, 도구 추천, EU AI Act나 NIST AI RMF와의 연계는 포함하지 않는다.",
+      "snippet": "Cyber Defentech의 체크리스트는 거버넌스·데이터, 모델·접근 권한, 애플리케이션·API·프롬프트, 모니터링·사고 대응 등 5개 영역에서 AI 배포 전 생애주기의 보안 관리 항목을 제시한다. 위험 책임자 지정, 데이터 분류·암호화, 모델과 환경의 분리, MFA·API 키 관리, prompt injection 테스트, 출력 검증, 이상 징후 탐지와 신속한 차단 절차 등을 다룬다. 고수준 운영 지침으로서 구체적인 구현 코드, 도구 추천, EU AI Act나 NIST AI RMF와의 연계는 포함하지 않는다.",
+      "history": [
+        {
+          "date": "2026-08-31",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/cyber-defentech-ai-security-checklist",
+          "title": "AI Security Checklist",
+          "item_id": "aigl-cyber-defentech-ai-security-checklist"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-cyber-defentech-ai-security-checklist"
+      ],
+      "member_count": 1,
+      "safety_score": 11,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\bsecurit|보안|사이버보안|cybersecu",
+        "+governan|거버넌스",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+core+ai"
+      ],
+      "issuer_level": "international",
+      "issuer_level_ko": "국제기구·다자"
+    },
+    {
+      "id": "doc-bcc6fabbcb2b",
+      "title": "AI 거버넌스: From Director Expertise Board Effectiveness",
+      "short_name": "AI 거버넌스: From Director Expertise Board Effectiveness",
+      "full_name": "",
+      "original_name": "AI Governance: From Director Expertise to Board Effectiveness",
+      "doc_kind": "기구·제도",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/msci-institute-ai-governance-director-expertise-board-effectiveness",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-08-31",
+      "published_raw": "",
+      "summary": "MSCI Institute 보고서는 2021년 12월부터 2025년 6월까지 MSCI World Index 기업 1,120곳을 분석해, AI 전문가를 보유한 이사회 비율이 15%에서 25%로 증가했지만 전문성을 거버넌스에 효과적으로 통합한 이사회는 14%에 그쳤다고 밝혔다. 연구진은 전문성, 독립성, 동기, 업무 여력, 권한 부여의 5개 기준을 제시했으며, 핵심 위원회 참여나 공식 리더십 같은 권한 부여가 가장 취약한 통합 요소로 나타났다. 미국 기업의 통합 비율은 25%로 유럽·아시아태평양보다 높았고, 정보기술 부문은 27%로 가장 높았지만 커뮤니케이션 서비스 부문은 AI 전문가 보유 비율 41%에 비해 효과적 통합 비율이 11%에 그쳤다.",
+      "snippet": "MSCI Institute 보고서는 2021년 12월부터 2025년 6월까지 MSCI World Index 기업 1,120곳을 분석해, AI 전문가를 보유한 이사회 비율이 15%에서 25%로 증가했지만 전문성을 거버넌스에 효과적으로 통합한 이사회는 14%에 그쳤다고 밝혔다. 연구진은 전문성, 독립성, 동기, 업무 여력, 권한 부여의 5개 기준을 제시했으며, 핵심 위원회 참여나 공식 리더십 같은 권한 부여가 가장 취약한 통합 요소로 나타났다. 미국 기업의 통합 비율은 25%로 유럽·아시아태평양보다 높았고, 정보기술 부문은 27%로 가장 높았지만 커뮤니케이션 서비스 부문은 AI 전문가 보유 비율 41%에 비해 효과적 통합 비율이 11%에 그쳤다.",
+      "history": [
+        {
+          "date": "2026-08-31",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/msci-institute-ai-governance-director-expertise-board-effectiveness",
+          "title": "AI Governance: From Director Expertise to Board Effectiveness",
+          "item_id": "aigl-msci-institute-ai-governance-director-expertise-board-effectiveness"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-msci-institute-ai-governance-director-expertise-board-effectiveness"
+      ],
+      "member_count": 1,
+      "safety_score": 6,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+governan|거버넌스",
+        "+core+ai"
+      ],
+      "issuer_level": "ministry",
+      "issuer_level_ko": "부처·규제기관"
+    },
+    {
+      "id": "doc-2b05db17b7c4",
+      "title": "안보 Field Guide AI Tooling Visibility",
+      "short_name": "안보 Field Guide AI Tooling Visibility",
+      "full_name": "",
+      "original_name": "A Security Field Guide to AI Tooling Visibility",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/security-field-guide-to-ai-tooling-visibility",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-08-31",
+      "published_raw": "",
+      "summary": "Monad Press의 가이드는 Claude Code, OpenAI Codex, Cursor, GitHub Copilot 등 8개 AI 개발 도구·기업 플랫폼의 텔레메트리, 네이티브 감사 로그, 모니터링 공백을 분석한다. AI 로그를 런타임 OpenTelemetry 증거, 제어 평면 감사 이벤트, 기능 호출 기록으로 구분하고, 스키마·보존 기간·API 제한·탐지 쿼리와 함께 SIEM 연계를 위한 정규화·민감정보 보호 방안을 제시한다. 다만 EDR·eBPF 기반 엔드포인트 분석, 네트워크 NetFlow, prompt injection 방어 도구는 범위에서 제외했으며, 공급업체별 텔레메트리 스키마가 빠르게 변하므로 실제 테넌트 환경에서 지속적인 검증이 필요하다고 설명한다.",
+      "snippet": "Monad Press의 가이드는 Claude Code, OpenAI Codex, Cursor, GitHub Copilot 등 8개 AI 개발 도구·기업 플랫폼의 텔레메트리, 네이티브 감사 로그, 모니터링 공백을 분석한다. AI 로그를 런타임 OpenTelemetry 증거, 제어 평면 감사 이벤트, 기능 호출 기록으로 구분하고, 스키마·보존 기간·API 제한·탐지 쿼리와 함께 SIEM 연계를 위한 정규화·민감정보 보호 방안을 제시한다. 다만 EDR·eBPF 기반 엔드포인트 분석, 네트워크 NetFlow, prompt injection 방어 도구는 범위에서 제외했으며, 공급업체별 텔레메트리 스키마가 빠르게 변하므로 실제 테넌트 환경에서 지속적인 검증이 필요하다고 설명한다.",
+      "history": [
+        {
+          "date": "2026-08-31",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/security-field-guide-to-ai-tooling-visibility",
+          "title": "A Security Field Guide to AI Tooling Visibility",
+          "item_id": "aigl-security-field-guide-to-ai-tooling-visibility"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-security-field-guide-to-ai-tooling-visibility"
+      ],
+      "member_count": 1,
+      "safety_score": 8,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\bsecurit|보안|사이버보안|cybersecu",
+        "+oversight|감독|감사|audit|evalua"
+      ],
+      "issuer_level": "lab",
+      "issuer_level_ko": "프론티어 랩"
+    },
+    {
+      "id": "doc-85bbc92bda0b",
+      "title": "Founder's Guide: ISO 42001 Cheat Sheet",
+      "short_name": "Founder's Guide: ISO 42001 Cheat Sheet",
+      "full_name": "",
+      "original_name": "A Founder's Guide: ISO 42001 Cheat Sheet",
+      "doc_kind": "표준",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/a-founders-guide-iso-42001-cheat-sheet",
+      "country": "ISO",
+      "country_ko": "ISO",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-08-31",
+      "published_raw": "",
+      "summary": "이 안내서는 세계 최초의 인증 가능한 AI 관리시스템(AIMS) 표준인 ISO/IEC 42001:2023의 핵심 요구사항을 경영진 관점에서 정리하며, 인증이 법적 면책이나 EU AI Act 준수의 대체 수단이 아니라 운영상 거버넌스의 증거임을 설명한다. AIMS의 문서화된 범위, 위험·영향평가, 통제, 책임 인력, 지속적인 측정·개선과 Plan-Do-Check-Act(PDCA) 체계를 소개하고, 조항별 경영진 의사결정·역할 분리·감사 준비사항을 제시한다. 또한 ISO 27001·27701·9001, 미국 NIST AI RMF, EU AI Act 등과의 관계를 비교하지만, 세부 기술 사양·Annex A 전문·Annex B 절차·EU AI Act 조항과의 구체적 매핑은 포함하지 않는다.",
+      "snippet": "이 안내서는 세계 최초의 인증 가능한 AI 관리시스템(AIMS) 표준인 ISO/IEC 42001:2023의 핵심 요구사항을 경영진 관점에서 정리하며, 인증이 법적 면책이나 EU AI Act 준수의 대체 수단이 아니라 운영상 거버넌스의 증거임을 설명한다. AIMS의 문서화된 범위, 위험·영향평가, 통제, 책임 인력, 지속적인 측정·개선과 Plan-Do-Check-Act(PDCA) 체계를 소개하고, 조항별 경영진 의사결정·역할 분리·감사 준비사항을 제시한다. 또한 ISO 27001·27701·9001, 미국 NIST AI RMF, EU AI Act 등과의 관계를 비교하지만, 세부 기술 사양·Annex A 전문·Annex B 절차·EU AI Act 조항과의 구체적 매핑은 포함하지 않는다.",
+      "history": [
+        {
+          "date": "2026-08-31",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/a-founders-guide-iso-42001-cheat-sheet",
+          "title": "A Founder's Guide: ISO 42001 Cheat Sheet",
+          "item_id": "aigl-a-founders-guide-iso-42001-cheat-sheet"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-a-founders-guide-iso-42001-cheat-sheet"
+      ],
+      "member_count": 1,
+      "safety_score": 13,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+governan|거버넌스",
+        "+(?:artificial\\s*intelligence",
+        "+standard|표준|iso/?iec",
+        "+oversight|감독|감사|audit|evalua",
+        "+core+ai"
+      ],
+      "issuer_level": "international",
+      "issuer_level_ko": "국제기구·다자"
+    },
+    {
+      "id": "doc-a3ef2310c32d",
+      "title": "2026 NCSC AI Cyber 안보 Risk 평가: 공공부문 Deployment",
+      "short_name": "2026 NCSC AI Cyber 안보 Risk 평가: 공공부문 Deployment",
+      "full_name": "",
+      "original_name": "2026 NCSC AI Cyber Security Risk Assessment: Public Sector Deployment",
+      "doc_kind": "정책보고서",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/ncsc-ai-cyber-security-risk-assessment-public-sector-deployment-2026",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-08-31",
+      "published_raw": "",
+      "summary": "아일랜드 국가사이버보안센터(NCSC-IE)는 EU AI Act, NIS2 지침, GDPR 등을 바탕으로 공공기관의 AI 도입에 따른 사이버보안·개인정보보호·운영 위험을 평가했다. 보고서는 prompt injection, 데이터·모델 poisoning, 모델 inversion·extraction, system prompt 유출, 과도한 자율성 등 주요 위협을 설계·개발·배포·유지관리·폐기 단계별로 분석한다. 아일랜드 공공기관 12곳을 대상으로 한 조사에서는 낮은 보안 성숙도와 90%를 넘는 shadow AI 우려, 데이터 거버넌스 및 전문 인력 부족 문제가 확인됐으며, 구체적인 통제 방안과 점검표는 후속 지침에서 다룰 예정이라고 밝혔다.",
+      "snippet": "아일랜드 국가사이버보안센터(NCSC-IE)는 EU AI Act, NIS2 지침, GDPR 등을 바탕으로 공공기관의 AI 도입에 따른 사이버보안·개인정보보호·운영 위험을 평가했다. 보고서는 prompt injection, 데이터·모델 poisoning, 모델 inversion·extraction, system prompt 유출, 과도한 자율성 등 주요 위협을 설계·개발·배포·유지관리·폐기 단계별로 분석한다. 아일랜드 공공기관 12곳을 대상으로 한 조사에서는 낮은 보안 성숙도와 90%를 넘는 shadow AI 우려, 데이터 거버넌스 및 전문 인력 부족 문제가 확인됐으며, 구체적인 통제 방안과 점검표는 후속 지침에서 다룰 예정이라고 밝혔다.",
+      "history": [
+        {
+          "date": "2026-08-31",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/ncsc-ai-cyber-security-risk-assessment-public-sector-deployment-2026",
+          "title": "2026 NCSC AI Cyber Security Risk Assessment: Public Sector Deployment",
+          "item_id": "aigl-ncsc-ai-cyber-security-risk-assessment-public-sector-deployment-2026"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-ncsc-ai-cyber-security-risk-assessment-public-sector-deployment-2026"
+      ],
+      "member_count": 1,
+      "safety_score": 15,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\brisk\\b|위험\\s*관리|위험관리|고위험|hi",
+        "+\\bsecurit|보안|사이버보안|cybersecu",
+        "+governan|거버넌스",
+        "+(?:artificial\\s*intelligence",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+privacy|개인정보|data\\s*protecti",
+        "-(?:ai\\s+)?adoption\\b|도입\\s*가속",
+        "-gdp|생산성|productivity|growth\\",
+        "+core+ai"
+      ],
+      "issuer_level": "international",
+      "issuer_level_ko": "국제기구·다자"
     },
     {
       "id": "doc-f31487922584",
@@ -27207,6 +29107,108 @@
       "issuer_level_ko": "국가"
     },
     {
+      "id": "doc-5e9ae8c13bc7",
+      "title": "AIGL Newsletter #21: Control Overload",
+      "short_name": "AIGL Newsletter #21: Control Overload",
+      "full_name": "",
+      "original_name": "",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/aigl-newsletter-21-control-overload",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-04-30",
+      "published_raw": "",
+      "summary": "책임 있는 AI 구현의 주요 어려움은 복잡성 관리와 지속 가능한 운영 체계 구축에 있다. 조직들은 AI 원칙 정의와 위험 관리를 넘어, 지속적인 업데이트와 테스트가 필요한 복잡한 통제 시스템을 운영해야 하는 부담을 겪는다. 특히 여러 표준과 겹치는 요구 사항, 불분명한 소유권은 문제를 더욱 복잡하게 만든다. 이에 대한 해결책으로는 실제 운영에 적용 가능한 구체적인 도구와 프레임워크, 예를 들어 CSA AICM 가이드, 글로벌 AI 안전 프레임워크 제안, 그리고 Bluefox Consulting의 AI 위험 관리 프레임워크 구현 매뉴얼 등이 제시되었다. 이러한 리소스들은 AI 위험 관리의 실질적인 실행 방안을 제공하여 이론적인 체계가 아닌 실제 팀 운영이 가능하도록 돕는다.\n\n**요약불가**",
+      "snippet": "책임 있는 AI 구현의 주요 어려움은 복잡성 관리와 지속 가능한 운영 체계 구축에 있다. 조직들은 AI 원칙 정의와 위험 관리를 넘어, 지속적인 업데이트와 테스트가 필요한 복잡한 통제 시스템을 운영해야 하는 부담을 겪는다. 특히 여러 표준과 겹치는 요구 사항, 불분명한 소유권은 문제를 더욱 복잡하게 만든다. 이에 대한 해결책으로는 실제 운영에 적용 가능한 구체적인 도구와 프레임워크, 예를 들어 CSA AICM 가이드, 글로벌 AI 안전 프레임워크 제안, 그리고 Bluefox Consulting의 AI 위험 관리 프레임워크 구현 매뉴얼 등이 제시되었다. 이러한 리소스들은 AI 위험 관리의 실질적인 실행 방안을 제공하여 이론적인 체계가 아닌 실제 팀 운영이 가능하도록 돕는다.\n\n**요약불가**",
+      "history": [
+        {
+          "date": "2026-04-30",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/aigl-newsletter-21-control-overload",
+          "title": "AIGL Newsletter #21: Control Overload",
+          "item_id": "aigl-aigl-newsletter-21-control-overload"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-aigl-newsletter-21-control-overload"
+      ],
+      "member_count": 1,
+      "safety_score": 20,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\bai\\s*safety\\b|인공지능\\s*안전|AI",
+        "+\\brisk\\b|위험\\s*관리|위험관리|고위험|hi",
+        "+responsible\\s*ai|책임\\s*있는\\s*A",
+        "+principle|원칙|권고|recommendati",
+        "+(?:AI|인공지능).{0,12}(?:framewo",
+        "+standard|표준|iso/?iec",
+        "+core+ai"
+      ],
+      "issuer_level": "national",
+      "issuer_level_ko": "국가"
+    },
+    {
+      "id": "doc-f2f3e6583cbb",
+      "title": "AI RMF 2026 ‘GOVERN’ 기능 절차 매뉴얼·구현 가이드",
+      "short_name": "AI RMF 2026 ‘GOVERN’ 기능 절차 매뉴얼·구현 가이드",
+      "full_name": "",
+      "original_name": "",
+      "doc_kind": "가이드라인·원칙",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/ai-risk-management-framework-ai-rmf-2026-govern-function-procedural-manual-implementation-guide",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-04-30",
+      "published_raw": "",
+      "summary": "GOVERN 기능 중심으로 2026년 2월 발간된 AI RMF 2026 Procedural Manual v1.5를 기반으로 하며, NIST AI RMF·ISO 표준·EU AI Act 등을 통합해 거버넌스 실행 절차를 제공함\n\nAI Risk Management Framework의 GOVERN 기능을 “원칙”이 아닌 “절차·템플릿·역할(RACI)·의사결정 권한” 형태로 구현할 수 있게 정리한 매뉴얼이다. 조직 거버넌스 보드, 윤리위원회, 에이전틱 AI 위원회, 환경 지속가능성 위원회 등 구조를 제시하고, CRO·CISO·DPO·CAIO 및 Agent Owner·Sustainability Officer 같은 역할과 책임을 매핑한다. EU AI Act 및 ISO 42001·23894 등 규제·표준 준수를 위한 컴플라이언스 레지스터, 갭 분석, 지속 모니터링 절차를 포함하며, 에이전틱(자율) 시스템과 환경 지속가능성(탄소·에너지 지표) 거버넌스를 별도로 다룬다. 다만 250페이지 이상 분량으로 규모가 작은 조직에는 부담이 될 수 있고, 우선순위·트레이드오프·실제 사례 중심의 전략적 지침은 상대적으로 제한적이라고 설명한다.",
+      "snippet": "GOVERN 기능 중심으로 2026년 2월 발간된 AI RMF 2026 Procedural Manual v1.5를 기반으로 하며, NIST AI RMF·ISO 표준·EU AI Act 등을 통합해 거버넌스 실행 절차를 제공함\n\nAI Risk Management Framework의 GOVERN 기능을 “원칙”이 아닌 “절차·템플릿·역할(RACI)·의사결정 권한” 형태로 구현할 수 있게 정리한 매뉴얼이다. 조직 거버넌스 보드, 윤리위원회, 에이전틱 AI 위원회, 환경 지속가능성 위원회 등 구조를 제시하고, CRO·CISO·DPO·CAIO 및 Agent Owner·Sustainability Officer 같은 역할과 책임을 매핑한다. EU AI Act 및 ISO 42001·23894 등 규제·표준 준수를 위한 컴플라이언스 레지스터, 갭 분석, 지속 모니터링 절차를 포함하며, 에이전틱(자율) 시스템과 환경 지속가능성(탄소·에너지 지표) 거버넌스를 별도로 다룬다. 다만 250페이지 이상 분량으",
+      "history": [
+        {
+          "date": "2026-04-30",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/ai-risk-management-framework-ai-rmf-2026-govern-function-procedural-manual-implementation-guide",
+          "title": "AI RMF 2026 ‘GOVERN’ 기능 절차 매뉴얼·구현 가이드",
+          "item_id": "aigl-ai-risk-management-framework-ai-rmf-2026-govern-function-procedural-manual-imple"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-ai-risk-management-framework-ai-rmf-2026-govern-function-procedural-manual-imple"
+      ],
+      "member_count": 1,
+      "safety_score": 24,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\brisk\\b|위험\\s*관리|위험관리|고위험|hi",
+        "+\\bethic|윤리",
+        "+governan|거버넌스",
+        "+regulat|규제",
+        "+(?:artificial\\s*intelligence",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+principle|원칙|권고|recommendati",
+        "+standard|표준|iso/?iec",
+        "+core+ai"
+      ],
+      "issuer_level": "international",
+      "issuer_level_ko": "국제기구·다자"
+    },
+    {
       "id": "doc-e2048a078b08",
       "title": "스페인 AI 규제 샌드박스 가이드라인",
       "short_name": "스페인 AI 규제 샌드박스 가이드라인",
@@ -29166,6 +31168,104 @@
       "issuer_level_ko": "국제기구·다자"
     },
     {
+      "id": "doc-53e6d2a824e2",
+      "title": "AIGL Newsletter #20: Frameworks Everywhere",
+      "short_name": "AIGL Newsletter #20: Frameworks Everywhere",
+      "full_name": "",
+      "original_name": "",
+      "doc_kind": "가이드라인·원칙",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/aigl-newsletter-20-frameworks-everywhere",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-04-17",
+      "published_raw": "",
+      "summary": "이 AIGL 뉴스레터는 오늘날 AI 관리에서 널리 퍼져 있는 여러 프레임워크들의 현실을 다룹니다. 단일 프레임워크로 모든 문제를 해결할 수 있다는 가정은 현실과 맞지 않으며, 대신 위험 문서화, 관리 시스템, 규제 능력 등 다양한 프레임워크들이 각각의 영역에서 효과적이지만 단독으로는 충분하지 않다는 점을 강조합니다. 핵심은 이러한 프레임워크들을 조합하여 위험을 식별하고 관리하는 데 있으며, 이를 통해 복잡성 속에서 숨겨진 위험을 감지하는 능력을 키우는 것이 중요하다고 제시합니다. 특히, 규제 기관들이 AI를 효과적으로 관리할 수 있는 능력을 평가하는 방법에 대한 Turing 연구소의 프레임워크도 소개됩니다.\n\n**요약 불가**",
+      "snippet": "이 AIGL 뉴스레터는 오늘날 AI 관리에서 널리 퍼져 있는 여러 프레임워크들의 현실을 다룹니다. 단일 프레임워크로 모든 문제를 해결할 수 있다는 가정은 현실과 맞지 않으며, 대신 위험 문서화, 관리 시스템, 규제 능력 등 다양한 프레임워크들이 각각의 영역에서 효과적이지만 단독으로는 충분하지 않다는 점을 강조합니다. 핵심은 이러한 프레임워크들을 조합하여 위험을 식별하고 관리하는 데 있으며, 이를 통해 복잡성 속에서 숨겨진 위험을 감지하는 능력을 키우는 것이 중요하다고 제시합니다. 특히, 규제 기관들이 AI를 효과적으로 관리할 수 있는 능력을 평가하는 방법에 대한 Turing 연구소의 프레임워크도 소개됩니다.\n\n**요약 불가**",
+      "history": [
+        {
+          "date": "2026-04-17",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/aigl-newsletter-20-frameworks-everywhere",
+          "title": "AIGL Newsletter #20: Frameworks Everywhere",
+          "item_id": "aigl-aigl-newsletter-20-frameworks-everywhere"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-aigl-newsletter-20-frameworks-everywhere"
+      ],
+      "member_count": 1,
+      "safety_score": 10,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+regulat|규제",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+principle|원칙|권고|recommendati"
+      ],
+      "issuer_level": "ministry",
+      "issuer_level_ko": "부처·규제기관"
+    },
+    {
+      "id": "doc-7bd034066563",
+      "title": "AI 모델 리스크 관리(MRM) 프레임워크: 문서화·리스크 식별·시나리오 분석을 연결한 4개 축",
+      "short_name": "AI 모델 리스크 관리(MRM) 프레임워크: 문서화·리스크 식별·시나리오 분석을 연결한 4개 축",
+      "full_name": "",
+      "original_name": "",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/ai-model-risk-management-framework",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-04-17",
+      "published_raw": "",
+      "summary": "Cloud Security Alliance가 제시한 AI Model Risk Management(MRM) 프레임워크는 조직이 AI를 빠르게 확장하는 상황에서 거버넌스 역량을 보완하기 위한 실무형 접근을 담고 있다. 모델 리스크를 편향, 환각, 오남용, 보안 취약점, 데이터 유출, 규제 노출, 평판 피해 등으로 폭넓게 정의하고, 모델 인벤토리·소유·승인·모니터링·변경관리 같은 라이프사이클 통제를 기반으로 한다. 핵심은 4개 필러로, Model Cards와 Data Sheets가 Risk Cards를 만들고, Risk Cards의 결과를 Scenario Planning으로 연결해 다시 설계·문서·거버넌스에 피드백하는 연속 루프를 구성한다. 다만 정량적 위험 측정, 툴링/자동화 가이드, 소규모 조직 적용 방법은 제한적으로 다뤄진다.",
+      "snippet": "Cloud Security Alliance가 제시한 AI Model Risk Management(MRM) 프레임워크는 조직이 AI를 빠르게 확장하는 상황에서 거버넌스 역량을 보완하기 위한 실무형 접근을 담고 있다. 모델 리스크를 편향, 환각, 오남용, 보안 취약점, 데이터 유출, 규제 노출, 평판 피해 등으로 폭넓게 정의하고, 모델 인벤토리·소유·승인·모니터링·변경관리 같은 라이프사이클 통제를 기반으로 한다. 핵심은 4개 필러로, Model Cards와 Data Sheets가 Risk Cards를 만들고, Risk Cards의 결과를 Scenario Planning으로 연결해 다시 설계·문서·거버넌스에 피드백하는 연속 루프를 구성한다. 다만 정량적 위험 측정, 툴링/자동화 가이드, 소규모 조직 적용 방법은 제한적으로 다뤄진다.",
+      "history": [
+        {
+          "date": "2026-04-17",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/ai-model-risk-management-framework",
+          "title": "AI 모델 리스크 관리(MRM) 프레임워크: 문서화·리스크 식별·시나리오 분석을 연결한 4개 축",
+          "item_id": "aigl-ai-model-risk-management-framework"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-ai-model-risk-management-framework"
+      ],
+      "member_count": 1,
+      "safety_score": 25,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\brisk\\b|위험\\s*관리|위험관리|고위험|hi",
+        "+\\bsecurit|보안|사이버보안|cybersecu",
+        "+governan|거버넌스",
+        "+regulat|규제",
+        "+(?:AI|인공지능).{0,12}(?:framewo",
+        "+bias|편향|discriminat|차별|fairn",
+        "+harm|피해|misuse|악용|dual[-\\s]?",
+        "+risk\\s*management|위험관리\\s*프레임",
+        "+core+ai"
+      ],
+      "issuer_level": "national",
+      "issuer_level_ko": "국가"
+    },
+    {
       "id": "doc-07cc53683c9c",
       "title": "Google DeepMind 프론티어 안전 프레임워크 v3.1",
       "short_name": "Google DeepMind 프론티어 안전 프레임워크 v3.1",
@@ -29608,6 +31708,156 @@
       "topics_source": "llm",
       "issuer_level": "international",
       "issuer_level_ko": "국제기구·다자"
+    },
+    {
+      "id": "doc-95124b2e8ba8",
+      "title": "호주 정부 AI 기술표준, 법적 의무 신설 없이 ‘책임 있는 AI’를 기술·운영 요구사항으로 구체화",
+      "short_name": "호주 정부 AI 기술표준, 법적 의무 신설 없이 ‘책임 있는 AI’를 기술·운영 요구사항으로 구체화",
+      "full_name": "",
+      "original_name": "",
+      "doc_kind": "표준",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/australian-government-ai-technical-standard",
+      "country": "Australia",
+      "country_ko": "호주",
+      "flag": "🇦🇺",
+      "org": "AIGL",
+      "published": "2026-04-03",
+      "published_raw": "",
+      "summary": "호주 정부의 AI 기술표준은 공공부문 AI의 전 생애주기(문제정의·데이터 확보→개발·배포→모니터링·폐기)를 기준으로 위험기반 관리, 문서화, 테스트·검증, 책임성 체계를 제시한다. 데이터 거버넌스(품질·대표성·출처·적합성), 편향·공정성·설명가능성·견고성·보안·오남용 등 위험 식별·평가·완화와 함께, 영향과 맥락에 비례한 안전장치를 강조한다. 또한 인간의 유의미한 감독을 설계 요소로 다루고, 공급사·조달 단계에서도 책임을 외주화할 수 없으며 벤더의 기술적 투명성이 필요하다고 명시한다.",
+      "snippet": "호주 정부의 AI 기술표준은 공공부문 AI의 전 생애주기(문제정의·데이터 확보→개발·배포→모니터링·폐기)를 기준으로 위험기반 관리, 문서화, 테스트·검증, 책임성 체계를 제시한다. 데이터 거버넌스(품질·대표성·출처·적합성), 편향·공정성·설명가능성·견고성·보안·오남용 등 위험 식별·평가·완화와 함께, 영향과 맥락에 비례한 안전장치를 강조한다. 또한 인간의 유의미한 감독을 설계 요소로 다루고, 공급사·조달 단계에서도 책임을 외주화할 수 없으며 벤더의 기술적 투명성이 필요하다고 명시한다.",
+      "history": [
+        {
+          "date": "2026-04-03",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/australian-government-ai-technical-standard",
+          "title": "호주 정부 AI 기술표준, 법적 의무 신설 없이 ‘책임 있는 AI’를 기술·운영 요구사항으로 구체화",
+          "item_id": "aigl-australian-government-ai-technical-standard"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-australian-government-ai-technical-standard"
+      ],
+      "member_count": 1,
+      "safety_score": 23,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\bsecurit|보안|사이버보안|cybersecu",
+        "+responsible\\s*ai|책임\\s*있는\\s*A",
+        "+governan|거버넌스",
+        "+standard|표준|iso/?iec",
+        "+oversight|감독|감사|audit|evalua",
+        "+transpar|투명|explainab|설명\\s*가",
+        "+bias|편향|discriminat|차별|fairn",
+        "+guardrail|안전장치",
+        "+core+ai"
+      ],
+      "issuer_level": "national",
+      "issuer_level_ko": "국가"
+    },
+    {
+      "id": "doc-ec265f087b8b",
+      "title": "Model AI 거버넌스 프레임워크(에이전틱 AI) 요약",
+      "short_name": "Model AI 거버넌스 프레임워크(에이전틱 AI) 요약",
+      "full_name": "",
+      "original_name": "",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/model-ai-governance-framework-for-agentic-ai-version-1-0",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-04-03",
+      "published_raw": "",
+      "summary": "에이전틱 AI(자율적으로 계획·도구 사용·기억·프로토콜·다중 에이전트 구성을 수행하고 실제 조치를 유발할 수 있음)를 배포하는 조직을 위한 실무형 거버넌스 청사진으로, 4개 축(사전 위험평가, 인간 책임, 기술적 통제, 최종사용자 책임)을 제시한다. 기존의 윤리 원칙을 넘어 에이전트를 설계·배포·모니터링·관리하는 방법에 초점을 두며, 데이터 유출·편향·환각뿐 아니라 연쇄 실패, 다중 에이전트의 출현적 행동, 에이전트 간 상호작용의 예측 불가 같은 시스템 수준 위험을 구조적으로 평가하도록 안내한다. 또한 권한 최소화, SOP 기반 워크플로, 에이전트 테스트·이상탐지·점진적 롤아웃, 자동화 편향을 줄이기 위한 휴먼 인 더 루프 조정, 사용자 투명성·교육 등을 포함한다. 다만 특정 국가별 법규 매핑은 직접 제공하지 않고, 동적 에이전트 정체성·위임 체인·복잡한 다중 에이전트에서의 책임소재 등 구현 과제는 추가로 다루기 어렵다고 밝힌다.",
+      "snippet": "에이전틱 AI(자율적으로 계획·도구 사용·기억·프로토콜·다중 에이전트 구성을 수행하고 실제 조치를 유발할 수 있음)를 배포하는 조직을 위한 실무형 거버넌스 청사진으로, 4개 축(사전 위험평가, 인간 책임, 기술적 통제, 최종사용자 책임)을 제시한다. 기존의 윤리 원칙을 넘어 에이전트를 설계·배포·모니터링·관리하는 방법에 초점을 두며, 데이터 유출·편향·환각뿐 아니라 연쇄 실패, 다중 에이전트의 출현적 행동, 에이전트 간 상호작용의 예측 불가 같은 시스템 수준 위험을 구조적으로 평가하도록 안내한다. 또한 권한 최소화, SOP 기반 워크플로, 에이전트 테스트·이상탐지·점진적 롤아웃, 자동화 편향을 줄이기 위한 휴먼 인 더 루프 조정, 사용자 투명성·교육 등을 포함한다. 다만 특정 국가별 법규 매핑은 직접 제공하지 않고, 동적 에이전트 정체성·위임 체인·복잡한 다중 에이전트에서의 책임소재 등 구현 과제는 추가로 다루기 어렵다고 밝힌다.",
+      "history": [
+        {
+          "date": "2026-04-03",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/model-ai-governance-framework-for-agentic-ai-version-1-0",
+          "title": "Model AI 거버넌스 프레임워크(에이전틱 AI) 요약",
+          "item_id": "aigl-model-ai-governance-framework-for-agentic-ai-version-1-0"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-model-ai-governance-framework-for-agentic-ai-version-1-0"
+      ],
+      "member_count": 1,
+      "safety_score": 17,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\bethic|윤리",
+        "+governan|거버넌스",
+        "+principle|원칙|권고|recommendati",
+        "+(?:AI|인공지능).{0,12}(?:framewo",
+        "+transpar|투명|explainab|설명\\s*가",
+        "+bias|편향|discriminat|차별|fairn",
+        "+core+ai"
+      ],
+      "issuer_level": "national",
+      "issuer_level_ko": "국가"
+    },
+    {
+      "id": "doc-41c79a46c083",
+      "title": "AIGL Newsletter #19: Mind Gap",
+      "short_name": "AIGL Newsletter #19: Mind Gap",
+      "full_name": "",
+      "original_name": "AIGL Newsletter #19: Mind The Gap",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/aigl-newsletter-19-mind-the-gap",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-04-03",
+      "published_raw": "",
+      "summary": "이 뉴스레터는 조직들이 정의한 AI 원칙들을 실제 시스템 구축과 유지 관리에 어떻게 적용하는지에 초점을 맞춥니다. 핵심은 정적인 원칙을 넘어 시스템의 진화와 함께 변화하는 위험 관리 및 투명성 유지 방법을 찾는 것입니다. 특히 자율적인 AI 시스템의 경우, 책임 소재, 위험 재평가, 지속적인 변화에 따른 투명성 구현 등 구체적인 운영적 접근이 필요함을 강조합니다. 호주 정부의 AI 생애주기 기반 플레이북과 싱가포르의 자율형 에이전트 AI 관리 프레임워크 등 실제 적용 사례를 통해 실용적인 관리 방법을 제시하고 있습니다. 또한 CSA의 조사 결과는 성숙한 AI 관리 체계를 갖춘 조직들이 더 빠르게 AI를 채택하고 위험을 효과적으로 관리할 수 있음을 보여줍니다.\n\n**마감일/시행일:** 없음",
+      "snippet": "이 뉴스레터는 조직들이 정의한 AI 원칙들을 실제 시스템 구축과 유지 관리에 어떻게 적용하는지에 초점을 맞춥니다. 핵심은 정적인 원칙을 넘어 시스템의 진화와 함께 변화하는 위험 관리 및 투명성 유지 방법을 찾는 것입니다. 특히 자율적인 AI 시스템의 경우, 책임 소재, 위험 재평가, 지속적인 변화에 따른 투명성 구현 등 구체적인 운영적 접근이 필요함을 강조합니다. 호주 정부의 AI 생애주기 기반 플레이북과 싱가포르의 자율형 에이전트 AI 관리 프레임워크 등 실제 적용 사례를 통해 실용적인 관리 방법을 제시하고 있습니다. 또한 CSA의 조사 결과는 성숙한 AI 관리 체계를 갖춘 조직들이 더 빠르게 AI를 채택하고 위험을 효과적으로 관리할 수 있음을 보여줍니다.\n\n**마감일/시행일:** 없음",
+      "history": [
+        {
+          "date": "2026-04-03",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/aigl-newsletter-19-mind-the-gap",
+          "title": "AIGL Newsletter #19: Mind The Gap",
+          "item_id": "aigl-aigl-newsletter-19-mind-the-gap"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-aigl-newsletter-19-mind-the-gap"
+      ],
+      "member_count": 1,
+      "safety_score": 12,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\brisk\\b|위험\\s*관리|위험관리|고위험|hi",
+        "+principle|원칙|권고|recommendati",
+        "+(?:AI|인공지능).{0,12}(?:framewo",
+        "+transpar|투명|explainab|설명\\s*가",
+        "+core+ai"
+      ],
+      "issuer_level": "national",
+      "issuer_level_ko": "국가"
     },
     {
       "id": "doc-76ab22f26878",
@@ -30301,6 +32551,601 @@
       "topics_source": "llm",
       "issuer_level": "ministry",
       "issuer_level_ko": "부처·규제기관"
+    },
+    {
+      "id": "doc-9133d20bb5d0",
+      "title": "Vendor Evaluation Criteria AI Red Teaming Providers & Tooling",
+      "short_name": "Vendor Evaluation Criteria AI Red Teaming Providers & Tooling",
+      "full_name": "",
+      "original_name": "Vendor Evaluation Criteria for AI Red Teaming Providers & Tooling",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/vendor-evaluation-criteria-for-ai-red-teaming-providers-tooling",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-03-20",
+      "published_raw": "",
+      "summary": "이 보고서는 AI 레드 팀핑 제공업체를 평가하기 위한 실용적이고 실행 중심적인 프레임워크를 제공하며, 컨설팅 서비스와 자동화 도구를 모두 다룹니다. 주요 특징은 표면적인 테스트(예: 탈옥 프롬프트)를 넘어 현대 AI 아키텍처(예: RAG 시스템, 도구 호출 에이전트, MCP 통합, 다중 에이전트 워크플로우) 전반에 걸친 체계적인 위험 발견에 중점을 둔다는 것입니다. 보고서는 실제 적대적 평가와 \"보안 연극\"을 구분하며, 구체적인 녹색 및 적색 플래그를 제시하여 즉시 사용 가능합니다. 또한 기술적 깊이와 비즈니스 관련성을 연결하여 테스트 방법을 측정 가능한 위험 감소와 연관시킵니다. 이는 2026년 AI 보안 능력을 조달하거나 벤치마킹하려는 조직들에게 매우 유용한 자료입니다.\n\n주요 내용:\n- AI 레드 팀핑 정의 및 전통적 사이버 보안 레드 팀핑과의 구분\n- 시스템 위험 프로파일에 따른 시스템 분류 (예: 환각과 도구 오용, 권한 상승)\n- 기술적 능력, 방법론 및 범위, 적대적 창의성, 위협 모델링 현실성, 평가 엄격성 및 지표, 도구 및 인프라, 데이터 관리 및 보안, 투명성 및 설명 가능성, 맞춤화 및 통합, 법적 준수 자세 등 다양한 평가 차원\n- 컨설턴트와 도구 비교 매트릭스, 벤더 발견 질문지, 벤더 평가 체크리스트, 일반적 함정 섹션 포함\n\n**적용 대상:**\n- AI 거버넌스 및 위험 리더들이 레드 팀핑 제공업체를 평가할 때\n- GenAI 또는 에이전트 시스템을 배포하는 보안 팀\n- AI 보안 능력을 평가하는 조달 및 준수 팀\n- 고급 아키텍처(RAG, MCP, 다중 에이전트 시스템)를 배포하는 조직\n- 레드 팀핑 서비스를 벤치마킹하는 컨설턴트와 벤더",
+      "snippet": "이 보고서는 AI 레드 팀핑 제공업체를 평가하기 위한 실용적이고 실행 중심적인 프레임워크를 제공하며, 컨설팅 서비스와 자동화 도구를 모두 다룹니다. 주요 특징은 표면적인 테스트(예: 탈옥 프롬프트)를 넘어 현대 AI 아키텍처(예: RAG 시스템, 도구 호출 에이전트, MCP 통합, 다중 에이전트 워크플로우) 전반에 걸친 체계적인 위험 발견에 중점을 둔다는 것입니다. 보고서는 실제 적대적 평가와 \"보안 연극\"을 구분하며, 구체적인 녹색 및 적색 플래그를 제시하여 즉시 사용 가능합니다. 또한 기술적 깊이와 비즈니스 관련성을 연결하여 테스트 방법을 측정 가능한 위험 감소와 연관시킵니다. 이는 2026년 AI 보안 능력을 조달하거나 벤치마킹하려는 조직들에게 매우 유용한 자료입니다.\n\n주요 내용:\n- AI 레드 팀핑 정의 및 전통적 사이버 보안 레드 팀핑과의 구분\n- 시스템 위험 프로파일에 따른 시스템 분류 (예: 환각과 도구 오용, 권한 상승)\n- 기술적 능력, 방법론 및 범위, 적대적 창",
+      "history": [
+        {
+          "date": "2026-03-20",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/vendor-evaluation-criteria-for-ai-red-teaming-providers-tooling",
+          "title": "Vendor Evaluation Criteria for AI Red Teaming Providers & Tooling",
+          "item_id": "aigl-vendor-evaluation-criteria-for-ai-red-teaming-providers-tooling"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-vendor-evaluation-criteria-for-ai-red-teaming-providers-tooling"
+      ],
+      "member_count": 1,
+      "safety_score": 17,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\bred\\s*team|레드팀",
+        "+\\bsecurit|보안|사이버보안|cybersecu",
+        "+governan|거버넌스",
+        "+oversight|감독|감사|audit|evalua",
+        "+transpar|투명|explainab|설명\\s*가",
+        "+core+ai"
+      ],
+      "issuer_level": "national",
+      "issuer_level_ko": "국가"
+    },
+    {
+      "id": "doc-a8f1404b5804",
+      "title": "Toward Risk Thresholds AI-Enabled Cyber Threats",
+      "short_name": "Toward Risk Thresholds AI-Enabled Cyber Threats",
+      "full_name": "",
+      "original_name": "Toward Risk Thresholds for AI-Enabled Cyber Threats",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/toward-risk-thresholds-for-ai-enabled-cyber-threats-2",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-03-20",
+      "published_raw": "",
+      "summary": "본 논문은 AI 기반 사이버 위협의 위험 임계치 정의 문제를 다룬다. 현재의 접근법은 모호하고 측정하기 어려운 능력 기반 임계치에 의존하고 있어 실제 피해와의 연관성이 부족하다. 저자들은 AI 기술의 발전으로 인해 사이버 공격의 문턱이 낮아지고 자율적이고 확장 가능한 작전이 가능해짐에 따라 이러한 접근법이 부족하다고 주장한다. 대신 베이지안 네트워크를 활용한 확률적 증거 기반 프레임워크를 제안하여 위험을 상호작용하는 변수들의 동적 시스템으로 모델링한다. 이를 통해 위험 지표를 측정 가능하고 업데이트 가능하게 만든다. 논문은 피싱 사례 연구를 통해 개념을 구체화하고, 정책 입안자와 연구진에게 실질적인 위험 관리 방법론을 제공한다. 그러나 실제 적용을 위한 표준화된 데이터셋과 구체적인 운영 지침이 아직 부족하다.",
+      "snippet": "본 논문은 AI 기반 사이버 위협의 위험 임계치 정의 문제를 다룬다. 현재의 접근법은 모호하고 측정하기 어려운 능력 기반 임계치에 의존하고 있어 실제 피해와의 연관성이 부족하다. 저자들은 AI 기술의 발전으로 인해 사이버 공격의 문턱이 낮아지고 자율적이고 확장 가능한 작전이 가능해짐에 따라 이러한 접근법이 부족하다고 주장한다. 대신 베이지안 네트워크를 활용한 확률적 증거 기반 프레임워크를 제안하여 위험을 상호작용하는 변수들의 동적 시스템으로 모델링한다. 이를 통해 위험 지표를 측정 가능하고 업데이트 가능하게 만든다. 논문은 피싱 사례 연구를 통해 개념을 구체화하고, 정책 입안자와 연구진에게 실질적인 위험 관리 방법론을 제공한다. 그러나 실제 적용을 위한 표준화된 데이터셋과 구체적인 운영 지침이 아직 부족하다.",
+      "history": [
+        {
+          "date": "2026-03-20",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/toward-risk-thresholds-for-ai-enabled-cyber-threats-2",
+          "title": "Toward Risk Thresholds for AI-Enabled Cyber Threats",
+          "item_id": "aigl-toward-risk-thresholds-for-ai-enabled-cyber-threats-2"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-toward-risk-thresholds-for-ai-enabled-cyber-threats-2"
+      ],
+      "member_count": 1,
+      "safety_score": 13,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\brisk\\b|위험\\s*관리|위험관리|고위험|hi",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+standard|표준|iso/?iec",
+        "+harm|피해|misuse|악용|dual[-\\s]?",
+        "+core+ai"
+      ],
+      "issuer_level": "national",
+      "issuer_level_ko": "국가"
+    },
+    {
+      "id": "doc-d6175abc4bab",
+      "title": "OECD.AI Index – Technical Paper",
+      "short_name": "OECD.AI Index – Technical Paper",
+      "full_name": "",
+      "original_name": "The OECD.AI Index – Technical Paper",
+      "doc_kind": "정책보고서",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/the-oecd-ai-index-technical-paper",
+      "country": "OECD",
+      "country_ko": "OECD",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-03-20",
+      "published_raw": "",
+      "summary": "이 기술 논문은 OECD AI 인덱스를 소개하며, 이 인덱스는 OECD AI 권고안의 국가별 구현 상황을 측정하기 위한 구조화되고 데이터 기반 도구입니다. 28개의 지표를 다섯 가지 주요 정책 영역(연구개발, 인프라, 정책 환경, 기술, 국제 협력)에 걸쳐 통합하여, 국가별 AI 생태계에 대한 비교 가능하고 표준화된 평가를 제공합니다. 특히 이 인덱스는 AI의 신뢰성을 강조하며, 정책적 측면과 성과를 직접적으로 연결하여 기존의 단편적인 AI 지표를 넘어섭니다. 논문은 인덱스의 개념적 프레임워크, 방법론, 결과 분석을 상세히 설명하며, 2023-2024년 국가 순위를 포함하고 있습니다. 그러나 직접적인 거버넌스 결과 측정의 한계와 데이터 접근성에 따른 편향 등 개선의 여지가 있습니다. 주요 사용자는 AI 정책 수립자, 거버넌스 전문가, 연구자, 국제 기구 등입니다.",
+      "snippet": "이 기술 논문은 OECD AI 인덱스를 소개하며, 이 인덱스는 OECD AI 권고안의 국가별 구현 상황을 측정하기 위한 구조화되고 데이터 기반 도구입니다. 28개의 지표를 다섯 가지 주요 정책 영역(연구개발, 인프라, 정책 환경, 기술, 국제 협력)에 걸쳐 통합하여, 국가별 AI 생태계에 대한 비교 가능하고 표준화된 평가를 제공합니다. 특히 이 인덱스는 AI의 신뢰성을 강조하며, 정책적 측면과 성과를 직접적으로 연결하여 기존의 단편적인 AI 지표를 넘어섭니다. 논문은 인덱스의 개념적 프레임워크, 방법론, 결과 분석을 상세히 설명하며, 2023-2024년 국가 순위를 포함하고 있습니다. 그러나 직접적인 거버넌스 결과 측정의 한계와 데이터 접근성에 따른 편향 등 개선의 여지가 있습니다. 주요 사용자는 AI 정책 수립자, 거버넌스 전문가, 연구자, 국제 기구 등입니다.",
+      "history": [
+        {
+          "date": "2026-03-20",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/the-oecd-ai-index-technical-paper",
+          "title": "The OECD.AI Index – Technical Paper",
+          "item_id": "aigl-the-oecd-ai-index-technical-paper"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-the-oecd-ai-index-technical-paper"
+      ],
+      "member_count": 1,
+      "safety_score": 12,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+governan|거버넌스",
+        "+principle|원칙|권고|recommendati",
+        "+standard|표준|iso/?iec",
+        "+bias|편향|discriminat|차별|fairn",
+        "+core+ai"
+      ],
+      "issuer_level": "international",
+      "issuer_level_ko": "국제기구·다자"
+    },
+    {
+      "id": "doc-96093f6d2682",
+      "title": "AI Regulatory Capability 프레임워크 · Self-Assessment Tool",
+      "short_name": "AI Regulatory Capability 프레임워크 · Self-Assessment Tool",
+      "full_name": "",
+      "original_name": "The AI Regulatory Capability Framework and Self-Assessment Tool",
+      "doc_kind": "가이드라인·원칙",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/the-ai-regulatory-capability-framework-and-self-assessment-tool-2",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-03-20",
+      "published_raw": "",
+      "summary": "요약불가",
+      "snippet": "요약불가",
+      "history": [
+        {
+          "date": "2026-03-20",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/the-ai-regulatory-capability-framework-and-self-assessment-tool-2",
+          "title": "The AI Regulatory Capability Framework and Self-Assessment Tool",
+          "item_id": "aigl-the-ai-regulatory-capability-framework-and-self-assessment-tool-2"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-the-ai-regulatory-capability-framework-and-self-assessment-tool-2"
+      ],
+      "member_count": 1,
+      "safety_score": 10,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+regulat|규제",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+principle|원칙|권고|recommendati"
+      ],
+      "issuer_level": "ministry",
+      "issuer_level_ko": "부처·규제기관"
+    },
+    {
+      "id": "doc-4bd40a7f1e74",
+      "title": "Strengthening AI 거버넌스 Through Techno-Legal 프레임워크 (인도 AI 정책 백서 Series, January 2026)",
+      "short_name": "Strengthening AI 거버넌스 Through Techno-Legal 프레임워크 (인도 AI 정책 백서 Series, January 2026)",
+      "full_name": "",
+      "original_name": "Strengthening AI Governance Through Techno-Legal Framework (India AI Policy White Paper Series, January 2026)",
+      "doc_kind": "가이드라인·원칙",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/strengthening-ai-governance-through-techno-legal-framework-india-ai-policy-white-paper-series-january-2026",
+      "country": "India",
+      "country_ko": "인도",
+      "flag": "🇮🇳",
+      "org": "AIGL",
+      "published": "2026-03-20",
+      "published_raw": "",
+      "summary": "인도 정부는 기술법적 접근법을 기반으로 한 AI 관리 체계를 제시하는 백서를 발표했습니다. 이 프레임워크는 법적 요구 사항을 기술 시스템에 직접 통합하여, AI 설계, 개발, 운영 단계에서부터 준수를 내재화합니다. 백서는 데이터 수집부터 자율형 AI 시스템까지의 전 주기 관리 모델을 제안하며, AI 안전 연구소와 AI 관리 그룹 같은 기관을 통해 이를 지원합니다. 이 접근법은 혁신과 통제 사이의 균형을 추구하여 대규모 AI 채택을 가능하게 하면서 안전성, 책임성, 신뢰성을 보장합니다. 특히 프라이버시 강화 기술, 감사 로그, 실시간 모니터링 등의 도구를 통해 실질적인 관리를 구현합니다.\n\n백서는 전통적인 규제 방식의 한계를 지적하고, 현재의 법률 체계 내에서의 간극을 파악합니다. 핵심 기여는 법적 의무를 기술 아키텍처에 내재화하는 기술법적 프레임워크의 정의입니다. 이는 동의 메커니즘, 감사 가능성, 설명 가능성, 보안 제어 등을 AI 시스템에 통합하는 것을 포함합니다. 또한, 국가 디지털 인프라와의 통합을 통해 확장 가능하고 저렴한 준수를 가능하게 합니다. 그러나 구체적인 실행 방안과 강제 집행 메커니즘에 대한 세부 사항은 제한적입니다.",
+      "snippet": "인도 정부는 기술법적 접근법을 기반으로 한 AI 관리 체계를 제시하는 백서를 발표했습니다. 이 프레임워크는 법적 요구 사항을 기술 시스템에 직접 통합하여, AI 설계, 개발, 운영 단계에서부터 준수를 내재화합니다. 백서는 데이터 수집부터 자율형 AI 시스템까지의 전 주기 관리 모델을 제안하며, AI 안전 연구소와 AI 관리 그룹 같은 기관을 통해 이를 지원합니다. 이 접근법은 혁신과 통제 사이의 균형을 추구하여 대규모 AI 채택을 가능하게 하면서 안전성, 책임성, 신뢰성을 보장합니다. 특히 프라이버시 강화 기술, 감사 로그, 실시간 모니터링 등의 도구를 통해 실질적인 관리를 구현합니다.\n\n백서는 전통적인 규제 방식의 한계를 지적하고, 현재의 법률 체계 내에서의 간극을 파악합니다. 핵심 기여는 법적 의무를 기술 아키텍처에 내재화하는 기술법적 프레임워크의 정의입니다. 이는 동의 메커니즘, 감사 가능성, 설명 가능성, 보안 제어 등을 AI 시스템에 통합하는 것을 포함합니다. 또한, 국가 ",
+      "history": [
+        {
+          "date": "2026-03-20",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/strengthening-ai-governance-through-techno-legal-framework-india-ai-policy-white-paper-series-january-2026",
+          "title": "Strengthening AI Governance Through Techno-Legal Framework (India AI Policy White Paper Series, January 2026)",
+          "item_id": "aigl-strengthening-ai-governance-through-techno-legal-framework-india-ai-policy-white"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-strengthening-ai-governance-through-techno-legal-framework-india-ai-policy-white"
+      ],
+      "member_count": 1,
+      "safety_score": 26,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\bai\\s*safety\\b|인공지능\\s*안전|AI",
+        "+\\bsafety\\b|안전성|안전\\s*확보",
+        "+\\bsecurit|보안|사이버보안|cybersecu",
+        "+governan|거버넌스",
+        "+regulat|규제",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+principle|원칙|권고|recommendati",
+        "+(?:AI|인공지능).{0,12}(?:framewo",
+        "+core+ai"
+      ],
+      "issuer_level": "ministry",
+      "issuer_level_ko": "부처·규제기관"
+    },
+    {
+      "id": "doc-40a9ef3e5375",
+      "title": "Open Problems 프론티어 AI 위험관리",
+      "short_name": "Open Problems 프론티어 AI 위험관리",
+      "full_name": "",
+      "original_name": "Open Problems in Frontier AI Risk Management",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/open-problems-in-frontier-ai-risk-management",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-03-20",
+      "published_raw": "",
+      "summary": "이 연구 논문은 일반 목적 AI 시스템의 위험을 관리하는 데 있어 해결되지 않은 도전 과제들을 체계적으로 정리한다. 논문은 현재의 위험 관리 접근법이 어디서 실패하는지 구체적으로 식별하며, 위험 관리의 전 과정(계획부터 완화까지)을 세 가지 범주로 분류한다: 합의 부재, 기존 프레임워크와의 불일치, 구현 상의 격차. 특히 이 문서는 개발자, 규제자, 연구자 등 각 주체의 책임 영역을 명확히 함으로써 AI 안전성과 거버넌스 노력의 조율에 기여한다. 주요 내용은 위험 관리의 다섯 단계(위험 계획, 식별, 분석, 평가, 완화)에서의 구체적인 도전 과제들을 다룬다. 그러나 구체적인 해결책 제시는 피하고 있으며, 적용 범위가 좁고 구체적인 행동 지침이 부족하다는 한계가 있다.",
+      "snippet": "이 연구 논문은 일반 목적 AI 시스템의 위험을 관리하는 데 있어 해결되지 않은 도전 과제들을 체계적으로 정리한다. 논문은 현재의 위험 관리 접근법이 어디서 실패하는지 구체적으로 식별하며, 위험 관리의 전 과정(계획부터 완화까지)을 세 가지 범주로 분류한다: 합의 부재, 기존 프레임워크와의 불일치, 구현 상의 격차. 특히 이 문서는 개발자, 규제자, 연구자 등 각 주체의 책임 영역을 명확히 함으로써 AI 안전성과 거버넌스 노력의 조율에 기여한다. 주요 내용은 위험 관리의 다섯 단계(위험 계획, 식별, 분석, 평가, 완화)에서의 구체적인 도전 과제들을 다룬다. 그러나 구체적인 해결책 제시는 피하고 있으며, 적용 범위가 좁고 구체적인 행동 지침이 부족하다는 한계가 있다.",
+      "history": [
+        {
+          "date": "2026-03-20",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/open-problems-in-frontier-ai-risk-management",
+          "title": "Open Problems in Frontier AI Risk Management",
+          "item_id": "aigl-open-problems-in-frontier-ai-risk-management"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-open-problems-in-frontier-ai-risk-management"
+      ],
+      "member_count": 1,
+      "safety_score": 28,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\bai\\s*safety\\b|인공지능\\s*안전|AI",
+        "+frontier\\s*ai|프론티어|advanced\\",
+        "+\\brisk\\b|위험\\s*관리|위험관리|고위험|hi",
+        "+\\bsafety\\b|안전성|안전\\s*확보",
+        "+governan|거버넌스",
+        "+regulat|규제",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+risk\\s*management|위험관리\\s*프레임",
+        "+core+ai"
+      ],
+      "issuer_level": "national",
+      "issuer_level_ko": "국가"
+    },
+    {
+      "id": "doc-024c60a20c71",
+      "title": "OECD Due Diligence 지침 책임 있는 AI",
+      "short_name": "OECD Due Diligence 지침 책임 있는 AI",
+      "full_name": "",
+      "original_name": "OECD Due Diligence Guidance for Responsible AI",
+      "doc_kind": "행정규칙",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/oecd-due-diligence-guidance-for-responsible-ai",
+      "country": "OECD",
+      "country_ko": "OECD",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-03-20",
+      "published_raw": "",
+      "summary": "OECD의 책임 있는 AI 실사 지침은 OECD AI 원칙에 부합하는 신뢰할 수 있는 AI 구현을 위한 실용적이고 위험 기반의 프레임워크를 제공합니다. 이 지침은 내부 정책과 지배 구조에 책임 있는 AI를 통합하고, 위험 식별 및 평가, 라이프사이클 관리, 비례 원칙, 이해관계자 참여, 그리고 피해 구제 메커니즘 등을 강조합니다. 특히 기존의 준수 및 위험 관리 프로세스와 잘 통합되어 있어, 규제 준수를 위한 실질적인 기반을 마련합니다. 그러나 복잡한 AI 시스템에 대한 구체적인 실행 방법에 대한 설명은 제한적입니다. 이 지침은 준수 팀, AI 거버넌스 리더, 법률 및 정책 전문가, 그리고 AI Act 준수를 준비 중인 조직들에게 유용합니다.",
+      "snippet": "OECD의 책임 있는 AI 실사 지침은 OECD AI 원칙에 부합하는 신뢰할 수 있는 AI 구현을 위한 실용적이고 위험 기반의 프레임워크를 제공합니다. 이 지침은 내부 정책과 지배 구조에 책임 있는 AI를 통합하고, 위험 식별 및 평가, 라이프사이클 관리, 비례 원칙, 이해관계자 참여, 그리고 피해 구제 메커니즘 등을 강조합니다. 특히 기존의 준수 및 위험 관리 프로세스와 잘 통합되어 있어, 규제 준수를 위한 실질적인 기반을 마련합니다. 그러나 복잡한 AI 시스템에 대한 구체적인 실행 방법에 대한 설명은 제한적입니다. 이 지침은 준수 팀, AI 거버넌스 리더, 법률 및 정책 전문가, 그리고 AI Act 준수를 준비 중인 조직들에게 유용합니다.",
+      "history": [
+        {
+          "date": "2026-03-20",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/oecd-due-diligence-guidance-for-responsible-ai",
+          "title": "OECD Due Diligence Guidance for Responsible AI",
+          "item_id": "aigl-oecd-due-diligence-guidance-for-responsible-ai"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-oecd-due-diligence-guidance-for-responsible-ai"
+      ],
+      "member_count": 1,
+      "safety_score": 25,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\brisk\\b|위험\\s*관리|위험관리|고위험|hi",
+        "+responsible\\s*ai|책임\\s*있는\\s*A",
+        "+trustworth(?:y)?\\s*ai|신뢰\\s*가",
+        "+governan|거버넌스",
+        "+regulat|규제",
+        "+(?:artificial\\s*intelligence",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+principle|원칙|권고|recommendati",
+        "+core+ai"
+      ],
+      "issuer_level": "international",
+      "issuer_level_ko": "국제기구·다자"
+    },
+    {
+      "id": "doc-4ee2e486d08c",
+      "title": "모델 위험관리 Age AI",
+      "short_name": "모델 위험관리 Age AI",
+      "full_name": "",
+      "original_name": "Model Risk Management in the Age of AI",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/model-risk-management-in-the-age-of-ai",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-03-20",
+      "published_raw": "",
+      "summary": "이 백서는 모딜스 애널리틱스에서 발행한 것으로, 생성형 및 자율형 AI 시대에 맞는 모델 리스크 관리(MRM)의 재정의를 제시한다. 전통적인 결정론적이고 해석 가능한 모델 기반 접근법이 더 이상 충분하지 않다는 주장을 통해, 기관들은 실시간 모니터링, 동적 가드레일, 인간 감독을 AI 생애주기 전반에 통합하는 지속적인 거버넌스 체계로 전환해야 한다고 강조한다. 특히 금융 기관에 대한 구체적인 지침을 제공하며, AI 시스템을 진화하는 사회기술 시스템으로 관리해야 한다는 핵심 메시지를 전달한다. 백서는 기존 규제와 감사 접근법에 대한 도전을 제기하며, 리스크 관리의 초점을 단일 모델에서 구성 요소 간 상호작용과 외부 의존성으로 확장한다. 그러나 규제 일치성, 구현 지침, 데이터 거버넌스 및 훈련 데이터 위험에 대한 논의는 제한적이다.",
+      "snippet": "이 백서는 모딜스 애널리틱스에서 발행한 것으로, 생성형 및 자율형 AI 시대에 맞는 모델 리스크 관리(MRM)의 재정의를 제시한다. 전통적인 결정론적이고 해석 가능한 모델 기반 접근법이 더 이상 충분하지 않다는 주장을 통해, 기관들은 실시간 모니터링, 동적 가드레일, 인간 감독을 AI 생애주기 전반에 통합하는 지속적인 거버넌스 체계로 전환해야 한다고 강조한다. 특히 금융 기관에 대한 구체적인 지침을 제공하며, AI 시스템을 진화하는 사회기술 시스템으로 관리해야 한다는 핵심 메시지를 전달한다. 백서는 기존 규제와 감사 접근법에 대한 도전을 제기하며, 리스크 관리의 초점을 단일 모델에서 구성 요소 간 상호작용과 외부 의존성으로 확장한다. 그러나 규제 일치성, 구현 지침, 데이터 거버넌스 및 훈련 데이터 위험에 대한 논의는 제한적이다.",
+      "history": [
+        {
+          "date": "2026-03-20",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/model-risk-management-in-the-age-of-ai",
+          "title": "Model Risk Management in the Age of AI",
+          "item_id": "aigl-model-risk-management-in-the-age-of-ai"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-model-risk-management-in-the-age-of-ai"
+      ],
+      "member_count": 1,
+      "safety_score": 19,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\brisk\\b|위험\\s*관리|위험관리|고위험|hi",
+        "+governan|거버넌스",
+        "+regulat|규제",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+oversight|감독|감사|audit|evalua",
+        "+risk\\s*management|위험관리\\s*프레임",
+        "+core+ai"
+      ],
+      "issuer_level": "national",
+      "issuer_level_ko": "국가"
+    },
+    {
+      "id": "doc-cd7b63e117c2",
+      "title": "Introductory 지침 AI Controls Matrix (AICM)",
+      "short_name": "Introductory 지침 AI Controls Matrix (AICM)",
+      "full_name": "",
+      "original_name": "Introductory Guidance to AI Controls Matrix (AICM)",
+      "doc_kind": "행정규칙",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/introductory-guidance-to-ai-controls-matrix-aicm",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-03-20",
+      "published_raw": "",
+      "summary": "이 문서는 Cloud Security Alliance의 AI Controls Matrix (AICM)를 소개하며, 이는 AI 보안과 관리를 전 AI 수명주기 동안 구현하기 위한 포괄적인 통제 프레임워크입니다. AICM은 추상적인 AI 관리 원칙을 구체적인 243개 통제 조치로 전환하여, 모델 보안부터 공급망 위험까지 모든 영역을 다룹니다. 특히, 기존 표준들(ISO 42001, NIST AI RMF, EU AI Act)과의 강력한 연계성과 공유된 보안 책임 모델(SSRM)을 통해 각 AI 행위자(공급자, 조정자, 고객 등) 간의 책임 분배를 명확히 합니다. 이 지침은 AICM을 독립적인 프레임워크가 아닌 클라우드 보안 관행의 확장으로 제시합니다. AICM은 통제 행렬 외에도 AI-CAIQ 평가 도구, 구현 지침, 감사 지침, 주요 프레임워크와의 매핑 등을 포함하고 있습니다. 주요 가치는 책임 명확화, 기존 보안 프로그램 통합, 그리고 EU AI Act와 같은 신규 규제와의 직접적인 매핑에 있습니다. 그러나 구체적인 구현 패턴이나 사례 연구는 제한적입니다.",
+      "snippet": "이 문서는 Cloud Security Alliance의 AI Controls Matrix (AICM)를 소개하며, 이는 AI 보안과 관리를 전 AI 수명주기 동안 구현하기 위한 포괄적인 통제 프레임워크입니다. AICM은 추상적인 AI 관리 원칙을 구체적인 243개 통제 조치로 전환하여, 모델 보안부터 공급망 위험까지 모든 영역을 다룹니다. 특히, 기존 표준들(ISO 42001, NIST AI RMF, EU AI Act)과의 강력한 연계성과 공유된 보안 책임 모델(SSRM)을 통해 각 AI 행위자(공급자, 조정자, 고객 등) 간의 책임 분배를 명확히 합니다. 이 지침은 AICM을 독립적인 프레임워크가 아닌 클라우드 보안 관행의 확장으로 제시합니다. AICM은 통제 행렬 외에도 AI-CAIQ 평가 도구, 구현 지침, 감사 지침, 주요 프레임워크와의 매핑 등을 포함하고 있습니다. 주요 가치는 책임 명확화, 기존 보안 프로그램 통합, 그리고 EU AI Act와 같은 신규 규제와의 직접적인 ",
+      "history": [
+        {
+          "date": "2026-03-20",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/introductory-guidance-to-ai-controls-matrix-aicm",
+          "title": "Introductory Guidance to AI Controls Matrix (AICM)",
+          "item_id": "aigl-introductory-guidance-to-ai-controls-matrix-aicm"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-introductory-guidance-to-ai-controls-matrix-aicm"
+      ],
+      "member_count": 1,
+      "safety_score": 22,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\bsecurit|보안|사이버보안|cybersecu",
+        "+regulat|규제",
+        "+(?:artificial\\s*intelligence",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+principle|원칙|권고|recommendati",
+        "+(?:AI|인공지능).{0,12}(?:framewo",
+        "+standard|표준|iso/?iec",
+        "+oversight|감독|감사|audit|evalua"
+      ],
+      "issuer_level": "international",
+      "issuer_level_ko": "국제기구·다자"
+    },
+    {
+      "id": "doc-dd849bfee4fe",
+      "title": "국제 AI 안전 보고서 2026",
+      "short_name": "국제 AI 안전 보고서 2026",
+      "full_name": "",
+      "original_name": "International AI Safety Report 2026",
+      "doc_kind": "정책보고서",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/international-ai-safety-report-2026-2",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-03-20",
+      "published_raw": "",
+      "summary": "2026년 국제 AI 안전 보고서는 세계적인 과학적 평가로, 최첨단 AI 시스템의 진화하는 능력, 도입되는 위험, 그리고 현재의 완화 전략의 효과성을 분석합니다. 이 보고서는 전문가 수준의 성능을 보이는 일반 목적 AI의 복잡한 작업 수행 능력과 단순 작업 실패를 포함하여 그 진행 상황을 기록하며, 사이버 공격, 생물학적 악용 등 새로운 위험 요소에 초점을 맞춥니다. 또한, 현재의 거버넌스 체계가 파편화되고 자발적인 관행에서 표준화 초기 단계로 전환되고 있음을 강조하지만, 그 효과성에 대한 증거는 제한적임을 지적합니다. 이 보고서는 정책 입안자와 기업들에게 AI 위험을 동적 시스템 문제로 재정의하여 개입이 필요한 영역을 명확히 합니다. 그러나 구체적인 실행 지침은 제한적입니다.",
+      "snippet": "2026년 국제 AI 안전 보고서는 세계적인 과학적 평가로, 최첨단 AI 시스템의 진화하는 능력, 도입되는 위험, 그리고 현재의 완화 전략의 효과성을 분석합니다. 이 보고서는 전문가 수준의 성능을 보이는 일반 목적 AI의 복잡한 작업 수행 능력과 단순 작업 실패를 포함하여 그 진행 상황을 기록하며, 사이버 공격, 생물학적 악용 등 새로운 위험 요소에 초점을 맞춥니다. 또한, 현재의 거버넌스 체계가 파편화되고 자발적인 관행에서 표준화 초기 단계로 전환되고 있음을 강조하지만, 그 효과성에 대한 증거는 제한적임을 지적합니다. 이 보고서는 정책 입안자와 기업들에게 AI 위험을 동적 시스템 문제로 재정의하여 개입이 필요한 영역을 명확히 합니다. 그러나 구체적인 실행 지침은 제한적입니다.",
+      "history": [
+        {
+          "date": "2026-03-20",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/international-ai-safety-report-2026-2",
+          "title": "International AI Safety Report 2026",
+          "item_id": "aigl-international-ai-safety-report-2026-2"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-international-ai-safety-report-2026-2"
+      ],
+      "member_count": 1,
+      "safety_score": 21,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\bai\\s*safety\\b|인공지능\\s*안전|AI",
+        "+\\bsafety\\b|안전성|안전\\s*확보",
+        "+governan|거버넌스",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+standard|표준|iso/?iec",
+        "+harm|피해|misuse|악용|dual[-\\s]?",
+        "+core+ai"
+      ],
+      "issuer_level": "national",
+      "issuer_level_ko": "국가"
+    },
+    {
+      "id": "doc-0c57e24148d3",
+      "title": "Advancing Global 프레임워크 AI 안전 · 거버넌스 Well-being Humanity",
+      "short_name": "Advancing Global 프레임워크 AI 안전 · 거버넌스 Well-being Humanity",
+      "full_name": "",
+      "original_name": "Advancing a Global Framework for AI Safety and Governance for the Well-being of Humanity",
+      "doc_kind": "가이드라인·원칙",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/advancing-a-global-framework-for-ai-safety-and-governance-for-the-well-being-of-humanity",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-03-20",
+      "published_raw": "",
+      "summary": "이 보고서는 기술·사회·시스템 위험을 3층으로 나누고, UN 중심의 다자 협력 구조(안전·포용·책임·다자 조정)를 제안합니다.\n\n본문 요약: 보고서는 현행 AI 거버넌스가 국가 단위로 분절돼 있고 대응이 뒤늦어 실패한다고 진단하며, UN 중심의 글로벌 체계를 제안합니다. 위험은 기술적 위험(모델 진화·예측 곤란 등), 오남용 위험(사기·허위정보 등), 시스템적 위험(핵심 인프라·군사적 긴장·인간 통제 상실 가능성 등)으로 구분해 각각에 대한 모니터링·공유 평가·컴퓨트 자원 거버넌스 등 메커니즘을 제시합니다. 또한 개발도상국의 인프라·역량 격차를 줄이기 위한 재정·기술이전·참여 방안을 포함하고, 정부·기업·국제기구·연구자·시민사회 역할을 분담합니다. 다만 구현·재원·집행·민간(특히 프런티어 개발사) 책임의 구체적 장치는 상대적으로 덜 설명되어 있다는 한계도 언급됩니다.",
+      "snippet": "이 보고서는 기술·사회·시스템 위험을 3층으로 나누고, UN 중심의 다자 협력 구조(안전·포용·책임·다자 조정)를 제안합니다.\n\n본문 요약: 보고서는 현행 AI 거버넌스가 국가 단위로 분절돼 있고 대응이 뒤늦어 실패한다고 진단하며, UN 중심의 글로벌 체계를 제안합니다. 위험은 기술적 위험(모델 진화·예측 곤란 등), 오남용 위험(사기·허위정보 등), 시스템적 위험(핵심 인프라·군사적 긴장·인간 통제 상실 가능성 등)으로 구분해 각각에 대한 모니터링·공유 평가·컴퓨트 자원 거버넌스 등 메커니즘을 제시합니다. 또한 개발도상국의 인프라·역량 격차를 줄이기 위한 재정·기술이전·참여 방안을 포함하고, 정부·기업·국제기구·연구자·시민사회 역할을 분담합니다. 다만 구현·재원·집행·민간(특히 프런티어 개발사) 책임의 구체적 장치는 상대적으로 덜 설명되어 있다는 한계도 언급됩니다.",
+      "history": [
+        {
+          "date": "2026-03-20",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/advancing-a-global-framework-for-ai-safety-and-governance-for-the-well-being-of-humanity",
+          "title": "Advancing a Global Framework for AI Safety and Governance for the Well-being of Humanity",
+          "item_id": "aigl-advancing-a-global-framework-for-ai-safety-and-governance-for-the-well-being-of-"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-advancing-a-global-framework-for-ai-safety-and-governance-for-the-well-being-of-"
+      ],
+      "member_count": 1,
+      "safety_score": 20,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\bai\\s*safety\\b|인공지능\\s*안전|AI",
+        "+\\bsafety\\b|안전성|안전\\s*확보",
+        "+governan|거버넌스",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+principle|원칙|권고|recommendati",
+        "+(?:AI|인공지능).{0,12}(?:framewo",
+        "+core+ai"
+      ],
+      "issuer_level": "international",
+      "issuer_level_ko": "국제기구·다자"
+    },
+    {
+      "id": "doc-d7357533883a",
+      "title": "AIGL Newsletter #18: AI 거버넌스 Theater",
+      "short_name": "AIGL Newsletter #18: AI 거버넌스 Theater",
+      "full_name": "",
+      "original_name": "AIGL Newsletter #18: AI Governance Theater",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/aigl-newsletter-18-ai-governance-theater",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2026-03-20",
+      "published_raw": "",
+      "summary": "이 글은 조직들이 AI 준비 상태를 선언하는 것과 실제 AI 사용 능력 사이의 간극을 강조한다. 단순히 AI 도구 도입이나 교육 실시만으로는 충분하지 않으며, 진정한 준비 상태는 불확실성 속에서의 의사결정 능력, 시스템에 대한 신뢰와 의문의 균형, 그리고 일상 업무에 내재된 거버넌스 실천에 달려 있다고 주장한다. 주요 추천 자료로는 AI 리터러시 구현 방안을 다룬 CFTE의 백서, 윤리적 AI 구현을 위한 실질적 가이드인 Capgemini의 보고서, 그리고 AI 위험 완화를 위한 구체적인 개입 방안을 제시한 Peregrine 보고서가 소개된다. 핵심은 조직들이 AI 기술을 책임감 있게 활용하기 위한 실질적인 이해와 실천 능력을 키워야 한다는 점이다.",
+      "snippet": "이 글은 조직들이 AI 준비 상태를 선언하는 것과 실제 AI 사용 능력 사이의 간극을 강조한다. 단순히 AI 도구 도입이나 교육 실시만으로는 충분하지 않으며, 진정한 준비 상태는 불확실성 속에서의 의사결정 능력, 시스템에 대한 신뢰와 의문의 균형, 그리고 일상 업무에 내재된 거버넌스 실천에 달려 있다고 주장한다. 주요 추천 자료로는 AI 리터러시 구현 방안을 다룬 CFTE의 백서, 윤리적 AI 구현을 위한 실질적 가이드인 Capgemini의 보고서, 그리고 AI 위험 완화를 위한 구체적인 개입 방안을 제시한 Peregrine 보고서가 소개된다. 핵심은 조직들이 AI 기술을 책임감 있게 활용하기 위한 실질적인 이해와 실천 능력을 키워야 한다는 점이다.",
+      "history": [
+        {
+          "date": "2026-03-20",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/aigl-newsletter-18-ai-governance-theater",
+          "title": "AIGL Newsletter #18: AI Governance Theater",
+          "item_id": "aigl-aigl-newsletter-18-ai-governance-theater"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-aigl-newsletter-18-ai-governance-theater"
+      ],
+      "member_count": 1,
+      "safety_score": 11,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\bethic|윤리",
+        "+governan|거버넌스",
+        "+declarat|선언|convention|협약|조약",
+        "+core+ai"
+      ],
+      "issuer_level": "national",
+      "issuer_level_ko": "국가"
     },
     {
       "id": "doc-aa6f335a7d7c",
@@ -61467,6 +64312,54 @@
       "issuer_level_ko": "국가"
     },
     {
+      "id": "doc-98515530cebd",
+      "title": "AI 거버넌스에서 ‘요구사항(requirements)’과 ‘통제(controls)’를 혼동하지 말 것",
+      "short_name": "AI 거버넌스에서 ‘요구사항(requirements)’과 ‘통제(controls)’를 혼동하지 말 것",
+      "full_name": "",
+      "original_name": "",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/ai-governance-library-newsletter-10-requirements-controls-and-everything-else-they-forgot",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2025-09-22",
+      "published_raw": "",
+      "summary": "본문은 AI 거버넌스에서 requirements(무엇을 달성해야 하는지)와 controls(그 달성을 위한 실제 조치·절차·도구)를 구분해야 한다고 강조합니다. 정책에 ISO 조항을 옮겨 적는 것만으로는 통제가 되지 않으며, 통제는 특정 요구사항에 추적 가능하고 실행·증빙이 가능해야 한다고 설명합니다. 또한 원칙 기반·상황 의존적인 요구사항 특성 때문에 동일한 ‘공정성’ 요구도 사용처에 따라 서로 다른 통제가 필요하며, 이를 무시하면 자원 낭비·의무 누락·감사 실패 위험이 커진다고 정리합니다. 마지막으로 요구사항→통제 매핑→추적성 확보로 이어지는 논리 사슬이 깨지지 않도록 하라고 제안합니다.",
+      "snippet": "본문은 AI 거버넌스에서 requirements(무엇을 달성해야 하는지)와 controls(그 달성을 위한 실제 조치·절차·도구)를 구분해야 한다고 강조합니다. 정책에 ISO 조항을 옮겨 적는 것만으로는 통제가 되지 않으며, 통제는 특정 요구사항에 추적 가능하고 실행·증빙이 가능해야 한다고 설명합니다. 또한 원칙 기반·상황 의존적인 요구사항 특성 때문에 동일한 ‘공정성’ 요구도 사용처에 따라 서로 다른 통제가 필요하며, 이를 무시하면 자원 낭비·의무 누락·감사 실패 위험이 커진다고 정리합니다. 마지막으로 요구사항→통제 매핑→추적성 확보로 이어지는 논리 사슬이 깨지지 않도록 하라고 제안합니다.",
+      "history": [
+        {
+          "date": "2025-09-22",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/ai-governance-library-newsletter-10-requirements-controls-and-everything-else-they-forgot",
+          "title": "AI 거버넌스에서 ‘요구사항(requirements)’과 ‘통제(controls)’를 혼동하지 말 것",
+          "item_id": "aigl-ai-governance-library-newsletter-10-requirements-controls-and-everything-else-th"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-ai-governance-library-newsletter-10-requirements-controls-and-everything-else-th"
+      ],
+      "member_count": 1,
+      "safety_score": 12,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+governan|거버넌스",
+        "+principle|원칙|권고|recommendati",
+        "+oversight|감독|감사|audit|evalua",
+        "+bias|편향|discriminat|차별|fairn",
+        "+core+ai"
+      ],
+      "issuer_level": "international",
+      "issuer_level_ko": "국제기구·다자"
+    },
+    {
       "id": "doc-344773cf5a70",
       "title": "책임 있는 연구 수행을 위한 지침",
       "short_name": "책임 있는 연구 수행을 위한 지침",
@@ -68357,6 +71250,55 @@
       "published_source": "llm_curate",
       "issuer_level": "national",
       "issuer_level_ko": "국가"
+    },
+    {
+      "id": "doc-fe38bb577462",
+      "title": "AI 법·윤리·정책을 철학-법-거버넌스로 묶어 다룬 학술서",
+      "short_name": "AI 법·윤리·정책을 철학-법-거버넌스로 묶어 다룬 학술서",
+      "full_name": "",
+      "original_name": "",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/the-law-ethics-and-policy-of-artificial-intelligence",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "2025-07-26",
+      "published_raw": "",
+      "summary": "책은 AI의 철학·윤리, 법·인권 프레임, 거버넌스·규제의 세 부분으로 구성된 편집서로, LLM이나 최첨단 모델에만 한정되지 않고 알고리즘 시스템 전반을 다룬다고 소개된다. GDPR과 알고리즘 영향평가(AIA) 필요성, 위험기반 규제에 대한 과의존 우려 등 법적 쟁점을 다루며, EU AI Act와 같은 제도 및 소프트 로의 역할을 포함해 적응형 거버넌스를 강조한다. 다만 Global South 관점과 적용 사례·실행 도구킷이 부족하고, 실무자에게 바로 쓰기 어려운 이론 중심 성격이 한계로 언급된다.",
+      "snippet": "책은 AI의 철학·윤리, 법·인권 프레임, 거버넌스·규제의 세 부분으로 구성된 편집서로, LLM이나 최첨단 모델에만 한정되지 않고 알고리즘 시스템 전반을 다룬다고 소개된다. GDPR과 알고리즘 영향평가(AIA) 필요성, 위험기반 규제에 대한 과의존 우려 등 법적 쟁점을 다루며, EU AI Act와 같은 제도 및 소프트 로의 역할을 포함해 적응형 거버넌스를 강조한다. 다만 Global South 관점과 적용 사례·실행 도구킷이 부족하고, 실무자에게 바로 쓰기 어려운 이론 중심 성격이 한계로 언급된다.",
+      "history": [
+        {
+          "date": "2025-07-26",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/the-law-ethics-and-policy-of-artificial-intelligence",
+          "title": "AI 법·윤리·정책을 철학-법-거버넌스로 묶어 다룬 학술서",
+          "item_id": "aigl-the-law-ethics-and-policy-of-artificial-intelligence"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-the-law-ethics-and-policy-of-artificial-intelligence"
+      ],
+      "member_count": 1,
+      "safety_score": 12,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\bethic|윤리",
+        "+governan|거버넌스",
+        "+regulat|규제",
+        "+human\\s*rights|인권|문화적\\s*권리",
+        "-gdp|생산성|productivity|growth\\",
+        "+core+ai"
+      ],
+      "issuer_level": "international",
+      "issuer_level_ko": "국제기구·다자"
     },
     {
       "id": "doc-3874a73a5ed1",
@@ -182248,7 +185190,7 @@
       "id": "doc-2a915d97146e",
       "title": "IAAE 인공지능 윤리 헌장 (2021-01 개정)",
       "short_name": "IAAE 인공지능 윤리 헌장 (2021-01 개정)",
-      "full_name": "",
+      "full_name": "[IAAE] IAAE 인공지능 윤리 헌장_210111개정 (한글본)",
       "original_name": "IAAE 인공지능 윤리 헌장_210111개정 (영문본)",
       "doc_kind": "선언·성명",
       "doc_kind_raw": "IAAE",
@@ -190435,7 +193377,7 @@
       "id": "doc-c13711cf1bec",
       "title": "KAIEA 인공지능 윤리 헌장 (2019-12 개정)",
       "short_name": "KAIEA 인공지능 윤리 헌장 (2019-12 개정)",
-      "full_name": "",
+      "full_name": "[KAIEA] KAIEA 인공지능 윤리 헌장_191219개정 (한글본)",
       "original_name": "KAIEA 인공지능 윤리 헌장_191219개정 (영문본)",
       "doc_kind": "가이드라인·원칙",
       "doc_kind_raw": "KAIEA",
@@ -191969,7 +194911,7 @@
       "id": "doc-5a4e86001bc6",
       "title": "KAIEA 인공지능 윤리 헌장",
       "short_name": "KAIEA 인공지능 윤리 헌장",
-      "full_name": "",
+      "full_name": "[KAIEA] KAIEA 인공지능 윤리 헌장 (한글본)",
       "original_name": "KAIEA 인공지능 윤리 헌장 (영문본)",
       "doc_kind": "선언·성명",
       "doc_kind_raw": "KAIEA",
@@ -207969,6 +210911,55 @@
       "issuer_level_ko": "부처·규제기관",
       "topics": [],
       "topics_source": "llm"
+    },
+    {
+      "id": "doc-eb9c896fa807",
+      "title": "(2026.4.30 기준) AI 컨트롤 매트릭스(AICM) v1.0 소개: 공유책임모델 기반 243개 통제안",
+      "short_name": "(2026.4.30 기준) AI 컨트롤 매트릭스(AICM) v1.0 소개: 공유책임모델 기반 243개 통제안",
+      "full_name": "",
+      "original_name": "",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AIGL",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.aigl.blog/introductory-guidance-to-ai-controls-matrix-aicm-v1-0",
+      "country": "",
+      "country_ko": "",
+      "flag": "",
+      "org": "AIGL",
+      "published": "",
+      "published_raw": "",
+      "summary": "Cloud Security Alliance가 개발한 AI Controls Matrix(AICM) v1.0은 클라우드 컨트롤 매트릭스(CCM)를 확장해 생성형 AI/LLM 전 생애주기에서 보안·거버넌스를 실행 가능한 통제 체계로 정리한 문서다. 공급망 전반에 대한 명시적 Shared Security Responsibility Model(공유 보안책임)을 두고, 18개 도메인에 걸쳐 243개의 구체적 통제를 아키텍처·라이프사이클·위협 범주 및 주요 규제 프레임워크에 매핑한다. 또한 ISO/IEC 42001, NIST AI 600-1, BSI AIC4, EU AI Act와의 매핑을 통해 감사·조달·리스크 관리 및 규제 대응에 활용할 수 있게 했으며, 구현 방법을 단계별로 강제하지는 않아 기존 보안/GRC/AI 역량을 전제로 한다.",
+      "snippet": "Cloud Security Alliance가 개발한 AI Controls Matrix(AICM) v1.0은 클라우드 컨트롤 매트릭스(CCM)를 확장해 생성형 AI/LLM 전 생애주기에서 보안·거버넌스를 실행 가능한 통제 체계로 정리한 문서다. 공급망 전반에 대한 명시적 Shared Security Responsibility Model(공유 보안책임)을 두고, 18개 도메인에 걸쳐 243개의 구체적 통제를 아키텍처·라이프사이클·위협 범주 및 주요 규제 프레임워크에 매핑한다. 또한 ISO/IEC 42001, NIST AI 600-1, BSI AIC4, EU AI Act와의 매핑을 통해 감사·조달·리스크 관리 및 규제 대응에 활용할 수 있게 했으며, 구현 방법을 단계별로 강제하지는 않아 기존 보안/GRC/AI 역량을 전제로 한다.",
+      "history": [
+        {
+          "date": "",
+          "label": "AIGL 게시",
+          "url": "https://www.aigl.blog/introductory-guidance-to-ai-controls-matrix-aicm-v1-0",
+          "title": "(2026.4.30 기준) AI 컨트롤 매트릭스(AICM) v1.0 소개: 공유책임모델 기반 243개 통제안",
+          "item_id": "aigl-introductory-guidance-to-ai-controls-matrix-aicm-v1-0"
+        }
+      ],
+      "sources": [
+        "aigl"
+      ],
+      "member_ids": [
+        "aigl-introductory-guidance-to-ai-controls-matrix-aicm-v1-0"
+      ],
+      "member_count": 1,
+      "safety_score": 16,
+      "in_scope": true,
+      "safety_reasons": [
+        "+aigl",
+        "+\\bsecurit|보안|사이버보안|cybersecu",
+        "+governan|거버넌스",
+        "+regulat|규제",
+        "+standard|표준|iso/?iec",
+        "+oversight|감독|감사|audit|evalua",
+        "+core+ai"
+      ],
+      "issuer_level": "international",
+      "issuer_level_ko": "국제기구·다자"
     }
   ]
 }

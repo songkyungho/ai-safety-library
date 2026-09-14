@@ -1260,7 +1260,7 @@ aria-label="수집, 규칙 후보, LLM 큐레이션, 병합 분석, 통합 합�
 </defs>
 <rect x="40" y="28" width="200" height="56" rx="12" fill="var(--surface, #f5f3ef)" stroke="currentColor" stroke-opacity=".25"/>
 <text x="140" y="52" text-anchor="middle" font-size="13" font-weight="700">1 · 수집</text>
-<text x="140" y="70" text-anchor="middle" font-size="11" opacity=".7">AGORA · OECD · 외교부 · IAAE</text>
+<text x="140" y="70" text-anchor="middle" font-size="11" opacity=".7">AGORA · OECD · 외교부 · IAAE · AIGL</text>
 <line x1="140" y1="84" x2="140" y2="112" stroke="currentColor" stroke-opacity=".45" marker-end="url(#arr)"/>
 
 <rect x="40" y="116" width="200" height="56" rx="12" fill="var(--surface, #f5f3ef)" stroke="currentColor" stroke-opacity=".25"/>
@@ -1371,6 +1371,8 @@ def render_about(docs: list[dict], index: dict, *, total_raw: int = 0, out_count
     <li><b>DPA는 큐레이터 랜딩</b> — Regulating AI 스레드의 intervention을 받습니다.
       공식 원문 URL은 API에 없어서 DPA 페이지를 연결하고, 범위는 OECD·외교부와 같은
       안전·거버넌스·규제 큐레이션을 씁니다.</li>
+    <li><b>AIGL은 큐레이터 랜딩</b> — AI Governance Library 카드를 Digest에서 옮겨 둡니다.
+      지금은 aigl.blog URL을 연결하고, 원문 주소·다른 소스와의 중복은 나중에 정리합니다.</li>
     <li><b>저신뢰는 자동 반영 안 함</b> — <code>confidence=low</code>는 캐시에만 두고 UI 필드를 바꾸지 않습니다.</li>
     <li><b>원문 제목 보존</b> — 한글 약칭을 쓸 때 영문 원제는 <code>original_name</code>에 남깁니다.</li>
     <li><b>동일 법령은 한 카드</b> — 규칙으로 후보만 묶고, 큐레이션·병합 분석 후
