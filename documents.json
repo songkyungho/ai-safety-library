@@ -1,8 +1,8 @@
 {
   "name": "AI 안전 라이브러리 문서",
-  "updated": "2026-09-15",
-  "count": 3890,
-  "in_scope_count": 2139,
+  "updated": "2026-09-16",
+  "count": 3889,
+  "in_scope_count": 2138,
   "out_of_scope_count": 1751,
   "documents": [
     {
@@ -136324,14 +136324,14 @@
       "issuer_level_ko": "부처·규제기관"
     },
     {
-      "id": "doc-79e7f8ad6f6a",
-      "title": "지속가능발전을 위한 안전·보안·신뢰할 수 있는 AI 시스템 결의",
-      "short_name": "지속가능발전을 위한 안전·보안·신뢰할 수 있는 AI 시스템 결의",
+      "id": "doc-c9b9a9c4fef7",
+      "title": "지속가능발전을 위한 안전하고 보안성 있으며 신뢰할 수 있는 인공지능 시스템의 기회 활용",
+      "short_name": "지속가능발전을 위한 안전하고 보안성 있으며 신뢰할 수 있는 인공지능 시스템의 기회 활용",
       "full_name": "",
       "original_name": "Seizing the opportunities of safe, secure and trustworthy artificial intelligence systems for sustainable development",
-      "doc_kind": "선언·성명",
+      "doc_kind": "기타",
       "doc_kind_raw": "결의 / AI와 지속가능발전 관련 총회 결의",
-      "status": "",
+      "status": "Enacted",
       "status_ko": "",
       "canonical_url": "https://digitallibrary.un.org/record/4043244?v=pdf",
       "country": "United Nations",
@@ -136340,8 +136340,8 @@
       "org": "유엔 총회(UN General Assembly)",
       "published": "2024-03-21",
       "published_raw": "2024년 3월 21일",
-      "summary": "유엔 총회는 안전하고 보안성 있으며 신뢰할 수 있는 AI 시스템을 활용해 2030 지속가능발전의제와 17개 지속가능발전목표의 달성을 촉진할 필요성을 제시합니다. 결의는 AI의 전 생애주기에서 인권과 기본적 자유를 존중하고, 국제법과 양립할 수 없거나 인권에 과도한 위험을 초래하는 AI 시스템의 사용을 중단해야 한다고 강조합니다. 또한 위험 식별·평가·시험·완화를 포함한 책임 있는 AI 거버넌스, 데이터·보안·비차별·인간 감독·구제절차의 강화를 제시합니다. 국가 간 및 국내 AI 격차 해소를 위해 역량강화·기술이전·금융·디지털 인프라 지원과 개발도상국의 참여 확대도 다룹니다.",
-      "snippet": "유엔 총회는 안전하고 보안성 있으며 신뢰할 수 있는 AI 시스템을 활용해 2030 지속가능발전의제와 17개 지속가능발전목표의 달성을 촉진할 필요성을 제시합니다. 결의는 AI의 전 생애주기에서 인권과 기본적 자유를 존중하고, 국제법과 양립할 수 없거나 인권에 과도한 위험을 초래하는 AI 시스템의 사용을 중단해야 한다고 강조합니다. 또한 위험 식별·평가·시험·완화를 포함한 책임 있는 AI 거버넌스, 데이터·보안·비차별·인간 감독·구제절차의 강화를 제시합니다. 국가 간 및 국내 AI 격차 해소를 위해 역량강화·기술이전·금융·디지털 인프라 지원과 개발도상국의 참여 확대도 다룹니다.",
+      "summary": "동 결의는 유엔 총회가 안전하고 보안성 있으며 신뢰할 수 있는 AI 시스템을 통해 2030 지속가능발전의제와 17개 SDGs 달성을 가속화하고, 국가 간·국내 AI 및 디지털 격차를 해소할 필요성을 제시한 문서임. 결의는 AI의 설계·개발·배치·사용 전 생애주기에서 인권과 기본적 자유를 존중·보호·증진해야 하며, 국제법과 양립할 수 없거나 인권 향유에 과도한 위험을 초래하는 AI 시스템 사용을 중단해야 한다고 강조함.\n1 결의는 안전하고 신뢰 가능한 AI가 보건·교육·빈곤퇴치·기후대응 등 SDGs 달성에 기여할 수 있으나, 부적절한 활용은 불평등·차별·정보무결성 훼손·프라이버시 침해 등 위험을 확대할 수 있다고 지적함\n2 국가·국내 AI 격차 해소와 개발도상국의 참여 확대를 위해 역량강화·기술이전·금융·디지털 인프라를 지원하고, 각국에는 위험 식별·평가·시험·완화를 포함한 책임 있는 AI 거버넌스를 구축하도록 권고함\n3 AI 전 생애주기의 데이터·보안·인권·비차별·인간 감독과 구제절차를 강화하고, 공정한 데이터 거버넌스와 국경 간 데이터 협력 및 중소기업·인재의 참여 확대를 촉진하도록 제시함",
+      "snippet": "동 결의는 유엔 총회가 안전하고 보안성 있으며 신뢰할 수 있는 AI 시스템을 통해 2030 지속가능발전의제와 17개 SDGs 달성을 가속화하고, 국가 간·국내 AI 및 디지털 격차를 해소할 필요성을 제시한 문서임. 결의는 AI의 설계·개발·배치·사용 전 생애주기에서 인권과 기본적 자유를 존중·보호·증진해야 하며, 국제법과 양립할 수 없거나 인권 향유에 과도한 위험을 초래하는 AI 시스템 사용을 중단해야 한다고 강조함.\n1 결의는 안전하고 신뢰 가능한 AI가 보건·교육·빈곤퇴치·기후대응 등 SDGs 달성에 기여할 수 있으나, 부적절한 활용은 불평등·차별·정보무결성 훼손·프라이버시 침해 등 위험을 확대할 수 있다고 지적함\n2 국가·국내 AI 격차 해소와 개발도상국의 참여 확대를 위해 역량강화·기술이전·금융·디지털 인프라를 지원하고, 각국에는 위험 식별·평가·시험·완화를 포함한 책임 있는 AI 거버넌스를 구축하도록 권고함\n3 AI 전 생애주기의 데이터·보안·인권·비차별·인간 감독과 구제절",
       "history": [
         {
           "date": "2024-03-21",
@@ -136349,19 +136349,29 @@
           "url": "https://www.mofa.go.kr/www/brd/m_29691/view.do?seq=263",
           "title": "[UN] 지속가능발전을 위한 안전하고 보안성 있으며 신뢰할 수 있는 인공지능 시스템의 기회 활용(A/RES/78/265)",
           "item_id": "mofa-governance-263"
+        },
+        {
+          "date": "2024-03-21",
+          "label": "원문 기록",
+          "url": "https://documents.un.org/doc/undoc/ltd/n24/065/92/pdf/n2406592.pdf",
+          "title": "Seizing the opportunities of safe, secure and trustworthy artificial intelligence systems for sustainable development",
+          "item_id": "agora-1381"
         }
       ],
       "sources": [
-        "mofa"
+        "mofa",
+        "agora"
       ],
       "member_ids": [
-        "mofa-governance-263"
+        "mofa-governance-263",
+        "agora-1381"
       ],
-      "member_count": 1,
-      "safety_score": 16,
+      "member_count": 2,
+      "safety_score": 17,
       "in_scope": true,
       "safety_reasons": [
         "+mofa",
+        "+agora",
         "+\\bsecurit|보안|사이버보안|cybersecu",
         "+responsible\\s*ai|책임\\s*있는\\s*A",
         "+trustworth(?:y)?\\s*ai|신뢰\\s*가",
@@ -136371,13 +136381,8 @@
         "+bias|편향|discriminat|차별|fairn",
         "+human\\s*rights|인권|문화적\\s*권리",
         "-startup|스타트업|smes?\\b|중소기업",
-        "-talent|인재\\s*양성|skills\\s*agen",
-        "+core+ai"
+        "-talent|인재\\s*양성|skills\\s*agen"
       ],
-      "llm_curated": true,
-      "llm_confidence": "high",
-      "llm_flags": [],
-      "in_scope_reason": "안전하고 신뢰할 수 있는 AI의 전 생애주기 거버넌스와 인권·위험 완화 원칙을 다루는 유엔 총회 결의이므로 직접적인 AI 안전·거버넌스 문서에 해당합니다.",
       "issuer_level": "international",
       "issuer_level_ko": "국제기구·다자"
     },
@@ -136731,55 +136736,6 @@
       "topics_source": "llm",
       "issuer_level": "subnational",
       "issuer_level_ko": "지방·주"
-    },
-    {
-      "id": "doc-8bcda6d0a786",
-      "title": "지속가능발전을 위한 안전·신뢰 AI 기회 활용 문서",
-      "short_name": "지속가능발전을 위한 안전·신뢰 AI 기회 활용 문서",
-      "full_name": "",
-      "original_name": "Seizing the opportunities of safe, secure and trustworthy artificial intelligence systems for sustainable development",
-      "doc_kind": "선언·성명",
-      "doc_kind_raw": "Editors' Picks;Multinational|Enacted",
-      "status": "Enacted",
-      "status_ko": "",
-      "canonical_url": "https://documents.un.org/doc/undoc/ltd/n24/065/92/pdf/n2406592.pdf",
-      "country": "United Nations",
-      "country_ko": "UN",
-      "flag": "🇺🇳",
-      "org": "United Nations",
-      "published": "2024-03-21",
-      "published_raw": "",
-      "summary": "유엔 문서는 지속가능발전을 위해 안전하고 보안성이 있으며 신뢰할 수 있는 인공지능 시스템의 기회를 활용하는 내용을 다룹니다. 제공된 메타데이터에는 문서의 구체적인 조항이나 실행 내용이 포함되어 있지 않습니다. 따라서 세부 정책 수단이나 의무의 범위는 확인할 수 없습니다.",
-      "snippet": "유엔 문서는 지속가능발전을 위해 안전하고 보안성이 있으며 신뢰할 수 있는 인공지능 시스템의 기회를 활용하는 내용을 다룹니다. 제공된 메타데이터에는 문서의 구체적인 조항이나 실행 내용이 포함되어 있지 않습니다. 따라서 세부 정책 수단이나 의무의 범위는 확인할 수 없습니다.",
-      "history": [
-        {
-          "date": "2024-03-21",
-          "label": "원문 기록",
-          "url": "https://documents.un.org/doc/undoc/ltd/n24/065/92/pdf/n2406592.pdf",
-          "title": "Seizing the opportunities of safe, secure and trustworthy artificial intelligence systems for sustainable development",
-          "item_id": "agora-1381"
-        }
-      ],
-      "sources": [
-        "agora"
-      ],
-      "member_ids": [
-        "agora-1381"
-      ],
-      "member_count": 1,
-      "safety_score": 6,
-      "in_scope": true,
-      "safety_reasons": [
-        "+agora",
-        "+\\bsecurit|보안|사이버보안|cybersecu",
-        "+declarat|선언|convention|협약|조약"
-      ],
-      "llm_curated": true,
-      "llm_confidence": "medium",
-      "llm_flags": [],
-      "in_scope_reason": "안전하고 보안성이 있으며 신뢰할 수 있는 인공지능 시스템의 지속가능발전 활용을 다루는 유엔 문서이므로 AI 안전·거버넌스 범위에 해당합니다.",
-      "issuer_level": "international",
-      "issuer_level_ko": "국제기구·다자"
     },
     {
       "id": "doc-1ffcf0725578",
@@ -185761,7 +185717,7 @@
       "issuer_level_ko": "국가"
     },
     {
-      "id": "doc-65f45c0786c4",
+      "id": "doc-c316500ac448",
       "title": "한국 지능정보사회 윤리 가이드라인",
       "short_name": "한국 지능정보사회 윤리 가이드라인",
       "full_name": "",
@@ -193377,7 +193333,7 @@
       "id": "doc-c13711cf1bec",
       "title": "KAIEA 인공지능 윤리 헌장 (2019-12 개정)",
       "short_name": "KAIEA 인공지능 윤리 헌장 (2019-12 개정)",
-      "full_name": "",
+      "full_name": "[KAIEA] KAIEA 인공지능 윤리 헌장_191219개정 (한글본)",
       "original_name": "KAIEA 인공지능 윤리 헌장_191219개정 (영문본)",
       "doc_kind": "가이드라인·원칙",
       "doc_kind_raw": "KAIEA",
@@ -194911,7 +194867,7 @@
       "id": "doc-5a4e86001bc6",
       "title": "KAIEA 인공지능 윤리 헌장",
       "short_name": "KAIEA 인공지능 윤리 헌장",
-      "full_name": "[KAIEA] KAIEA 인공지능 윤리 헌장 (한글본)",
+      "full_name": "",
       "original_name": "KAIEA 인공지능 윤리 헌장 (영문본)",
       "doc_kind": "선언·성명",
       "doc_kind_raw": "KAIEA",
