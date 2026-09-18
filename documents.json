@@ -1,6 +1,6 @@
 {
   "name": "AI 안전 라이브러리 문서",
-  "updated": "2026-09-17",
+  "updated": "2026-09-18",
   "count": 3888,
   "in_scope_count": 2137,
   "out_of_scope_count": 1751,
@@ -34054,7 +34054,7 @@
       "topics_source": "llm"
     },
     {
-      "id": "doc-54e7d643e705",
+      "id": "doc-5fd48d5363a0",
       "title": "OECD.AI 지수",
       "short_name": "OECD.AI 지수",
       "full_name": "",
@@ -193270,7 +193270,7 @@
       "id": "doc-c13711cf1bec",
       "title": "KAIEA 인공지능 윤리 헌장 (2019-12 개정)",
       "short_name": "KAIEA 인공지능 윤리 헌장 (2019-12 개정)",
-      "full_name": "",
+      "full_name": "[KAIEA] KAIEA 인공지능 윤리 헌장_191219개정 (한글본)",
       "original_name": "KAIEA 인공지능 윤리 헌장_191219개정 (영문본)",
       "doc_kind": "가이드라인·원칙",
       "doc_kind_raw": "KAIEA",
@@ -194804,7 +194804,7 @@
       "id": "doc-5a4e86001bc6",
       "title": "KAIEA 인공지능 윤리 헌장",
       "short_name": "KAIEA 인공지능 윤리 헌장",
-      "full_name": "[KAIEA] KAIEA 인공지능 윤리 헌장 (한글본)",
+      "full_name": "",
       "original_name": "KAIEA 인공지능 윤리 헌장 (영문본)",
       "doc_kind": "선언·성명",
       "doc_kind_raw": "KAIEA",
