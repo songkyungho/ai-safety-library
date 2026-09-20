@@ -5,8 +5,8 @@
 - API: `https://api.oecdai.org/policy-initiatives`
 - 데이터: `items.json` · `items.csv`
 
-- 건수: **2525건**
-- 기간: 2000-10-31 ~ 2026-09-11
+- 건수: **2526건**
+- 기간: 2000-10-31 ~ 2026-09-18
 
 ## 분류
 
@@ -14,7 +14,7 @@
 |---|---:|
 | AI policy initiatives, programmes and projects | 1733 |
 | Regulations, guidelines and standards | 432 |
-| National – AI governance bodies or mechanisms | 151 |
+| National – AI governance bodies or mechanisms | 152 |
 | AI Policy Frameworks and Initiatives (intergovernmental or supranational) | 107 |
 | National – Strategy | 94 |
 | AI Governance Bodies and Mechanisms (intergovernmental or supranational) | 8 |
@@ -23,7 +23,7 @@
 
 | 연도 | 건수 |
 |---|---:|
-| 2026 | 214 |
+| 2026 | 215 |
 | 2025 | 1255 |
 | 2024 | 197 |
 | 2023 | 168 |
@@ -49,6 +49,8 @@
 
 | 날짜 | 분류 | 제목 | 원문 |
 |---|---|---|---|
+| 2026-09-18 | AI policy initiatives, programmes and pr | [Horizons: Empowering Educators with Artificial Intelligence (AI) Technologies](https://oecd.ai/en/dashboards/policy-initiatives/horizons-empowering-educators-with-artificial-intelligence-ai-technologies) | [원문](https://www.wam.ae/en/article/bm78ms0-ecae-launches-horizons-programme-empower-teachers) |
+| 2026-09-15 | National – AI governance bodies or mecha | [AI Safety and Security Institute Deutschland](https://oecd.ai/en/dashboards/policy-initiatives/ai-safety-and-security-institute-deutschland) | [원문](https://bmds.bund.de/aktuelles/pressemitteilungen/detail/aisi-deutschland-gegruendet) |
 | 2026-09-11 | AI policy initiatives, programmes and pr | [Unified Intelligent Assistant](https://oecd.ai/en/dashboards/policy-initiatives/unified-intelligent-assistant) | [원문](https://nio.gov.si/en/products/enotni%2Bpametni%2Bpomocnik) |
 | 2026-09-11 | AI policy initiatives, programmes and pr | [Technical Verification for Appropriate Use of Generative AI in Administration](https://oecd.ai/en/dashboards/policy-initiatives/technical-verification-for-appropriate-use-of-generative-ai-in-administration) | [원문](https://www.digital.go.jp/en/news/19c125e9-35c5-48ba-a63f-f817bce95715) |
 | 2026-09-11 | Regulations, guidelines and standards | [Responsible AI Guidance for the Public Service: GenAI](https://oecd.ai/en/dashboards/policy-initiatives/responsible-ai-guidance-for-the-public-service-genai) | [원문](https://www.digital.govt.nz/standards-and-guidance/technology-and-architecture/artificial-intelligence/responsible-ai-guidance-for-the-public-service-genai) |
@@ -316,7 +318,6 @@
 | 2026-05-05 | AI policy initiatives, programmes and pr | [Open Government Data Portal](https://oecd.ai/en/dashboards/policy-initiatives/open-government-data-portal) | [원문](https://www.data.go.kr/en/index.do) |
 | 2026-05-05 | AI policy initiatives, programmes and pr | [Open Data Portal](https://oecd.ai/en/dashboards/policy-initiatives/open-data-portal) | [원문](https://api.dane.gov.pl/doc) |
 | 2026-05-05 | AI policy initiatives, programmes and pr | [National Data Centers Plan (PDATA)](https://oecd.ai/en/dashboards/policy-initiatives/national-data-centers-plan-pdata) |  |
-| 2026-05-05 | AI policy initiatives, programmes and pr | [Latam‑GPT](https://oecd.ai/en/dashboards/policy-initiatives/latam‑gpt) | [원문](https://www.latamgpt.org/en/faq) |
 | 2025-02-11 | AI Policy Frameworks and Initiatives (in | [InvestAI](https://oecd.ai/en/dashboards/policy-initiatives/investai) | [원문](https://digital-strategy.ec.europa.eu/en/news/eu-launches-investai-initiative-mobilise-eu200-billion-investment-artificial-intelligence) |
 | 2013-02-19 | AI policy initiatives, programmes and pr | [GovData – The Data Portal for Germany](https://oecd.ai/en/dashboards/policy-initiatives/govdata-the-data-portal-for-germany) | [원문](https://www.govdata.de/) |
 | 2026-05-05 | AI Policy Frameworks and Initiatives (in | [European High Performance Computing Joint Undertaking (EuroHPC JU)](https://oecd.ai/en/dashboards/policy-initiatives/european-high-performance-computing-joint-undertaking-eurohpc-ju) | [원문](https://www.eurohpc-ju.europa.eu/index_en) |

@@ -1,10 +1,124 @@
 {
   "name": "AI 안전 라이브러리 문서",
-  "updated": "2026-09-19",
-  "count": 3888,
+  "updated": "2026-09-20",
+  "count": 3889,
   "in_scope_count": 2137,
-  "out_of_scope_count": 1751,
+  "out_of_scope_count": 1752,
   "documents": [
+    {
+      "id": "doc-8a6db7964fc2",
+      "title": "UAE 호라이즌스 교육자 역량강화 프로그램",
+      "short_name": "UAE 호라이즌스 교육자 역량강화 프로그램",
+      "full_name": "",
+      "original_name": "Horizons: Empowering Educators with Artificial Intelligence (AI) Technologies",
+      "doc_kind": "전략·정책",
+      "doc_kind_raw": "AI policy initiatives, programmes and projects|Active",
+      "status": "Active",
+      "status_ko": "",
+      "canonical_url": "https://www.wam.ae/en/article/bm78ms0-ecae-launches-horizons-programme-empower-teachers",
+      "country": "United Arab Emirates",
+      "country_ko": "UAE",
+      "flag": "🇦🇪",
+      "org": "United Arab Emirates",
+      "published": "2026-09-18",
+      "published_raw": "",
+      "summary": "UAE 교육부가 에미리츠 고등교육대학과 협력해 교사와 학교 지도자가 교육·평가·학교 운영에 인공지능을 활용하도록 지원하는 국가 전문성 개발 프로그램입니다. 교육과정과 연계된 __7개 AI 분야__를 다루며, AI 기초·데이터와 알고리즘·윤리적 사용·교실 적용·혁신 등이 포함됩니다. **이 프로그램은 AI의 안전하고 효과적인 학교 도입을 위한 국가 공통 체계와 책임 있는 혁신을 지향합니다.** 총 __5,000명__의 교육자 양성을 목표로 합니다.",
+      "snippet": "UAE 교육부가 에미리츠 고등교육대학과 협력해 교사와 학교 지도자가 교육·평가·학교 운영에 인공지능을 활용하도록 지원하는 국가 전문성 개발 프로그램입니다. 교육과정과 연계된 __7개 AI 분야__를 다루며, AI 기초·데이터와 알고리즘·윤리적 사용·교실 적용·혁신 등이 포함됩니다. **이 프로그램은 AI의 안전하고 효과적인 학교 도입을 위한 국가 공통 체계와 책임 있는 혁신을 지향합니다.** 총 __5,000명__의 교육자 양성을 목표로 합니다.",
+      "history": [
+        {
+          "date": "2026-09-18",
+          "label": "OECD 등록",
+          "url": "https://oecd.ai/en/dashboards/policy-initiatives/horizons-empowering-educators-with-artificial-intelligence-ai-technologies",
+          "title": "Horizons: Empowering Educators with Artificial Intelligence (AI) Technologies",
+          "item_id": "oecd-navigator-2620"
+        }
+      ],
+      "sources": [
+        "oecd-navigator"
+      ],
+      "member_ids": [
+        "oecd-navigator-2620"
+      ],
+      "member_count": 1,
+      "safety_score": 3,
+      "in_scope": false,
+      "safety_reasons": [
+        "-oecd-only",
+        "+\\bethic|윤리",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+standard|표준|iso/?iec",
+        "-(?:ai\\s+)?adoption\\b|도입\\s*가속",
+        "-curriculum|교육\\s*과정(?!.*윤리)|l",
+        "+core+ai"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "medium",
+      "llm_flags": [],
+      "in_scope_reason": "UAE 국영 통신사 WAM의 보도 기사로, 프로그램의 실질 내용은 확인되지만 정책·규범 문서 자체가 아닙니다.",
+      "reject_reason": "news_press",
+      "issuer_level": "ministry",
+      "issuer_level_ko": "부처·규제기관",
+      "topics": [],
+      "topics_source": "llm"
+    },
+    {
+      "id": "doc-526fdefbcfca",
+      "title": "독일 AISI",
+      "short_name": "독일 AISI",
+      "full_name": "",
+      "original_name": "AI Safety and Security Institute Deutschland",
+      "doc_kind": "기구·제도",
+      "doc_kind_raw": "National – AI governance bodies or mechanisms|Active",
+      "status": "Active",
+      "status_ko": "",
+      "canonical_url": "https://bmds.bund.de/aktuelles/pressemitteilungen/detail/aisi-deutschland-gegruendet",
+      "country": "Germany",
+      "country_ko": "독일",
+      "flag": "🇩🇪",
+      "org": "Germany",
+      "published": "2026-09-15",
+      "published_raw": "",
+      "summary": "AISI Deutschland is a national competence and evaluation center for Frontier AI models. It combines technical, strategic, and security policy expertise within a single central institution. \nAISI Deutschland is intended to enable the Federal Government to\n-\tidentify safety and security-related risks at an early stage,\n-\tdevelop evidence-based courses of action,\n-\tstrengthen Germany’s digital sovereignty with regard to AI safety and security, and\n-\tstrategically assess international developments.\n\nThe AI Safety Security Institute Deutschland is a national competence and evaluation center for Frontier AI models. It combines technical, strategic, and security policy expertise within a single central institution. The institute’s primary goal is to evaluate the opportunities and risks that advanced AI models present for Germany and to sustainably strengthen resilience in the field of artificial intelligence.\nThe AISI Deutschland is currently in the process of being established., where a phased and modular approach is being followed:\n-          In the first step, a “virtual nucleus” is set up by drawing on existing expertise, particularly from the Federal Office for Information Security (",
+      "snippet": "AISI Deutschland is a national competence and evaluation center for Frontier AI models. It combines technical, strategic, and security policy expertise within a single central institution. \nAISI Deutschland is intended to enable the Federal Government to\n-\tidentify safety and security-related risks at an early stage,\n-\tdevelop evidence-based courses of action,\n-\tstrengthen Germany’s digital sovereignty with regard to AI safety and security, and\n-\tstrategically assess international developments.\n",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "label": "OECD 등록",
+          "url": "https://oecd.ai/en/dashboards/policy-initiatives/ai-safety-and-security-institute-deutschland",
+          "title": "AI Safety and Security Institute Deutschland",
+          "item_id": "oecd-navigator-2619"
+        }
+      ],
+      "sources": [
+        "oecd-navigator"
+      ],
+      "member_ids": [
+        "oecd-navigator-2619"
+      ],
+      "member_count": 1,
+      "safety_score": 22,
+      "in_scope": false,
+      "safety_reasons": [
+        "-oecd-only",
+        "+\\bai\\s*safety\\b|인공지능\\s*안전|AI",
+        "+frontier\\s*ai|프론티어|advanced\\",
+        "+\\bsafety\\b|안전성|안전\\s*확보",
+        "+\\bsecurit|보안|사이버보안|cybersecu",
+        "+governan|거버넌스",
+        "+oversight|감독|감사|audit|evalua",
+        "+\\baisi\\b|안전연구소|safety\\s*inst",
+        "+core+ai"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "high",
+      "llm_flags": [],
+      "in_scope_reason": "기관 설립과 목적을 소개하는 독일 정부의 보도자료로, 독립적인 규범·책무·설립 조항을 담은 거버넌스 문서가 아닙니다.",
+      "reject_reason": "news_press",
+      "issuer_level": "ministry",
+      "issuer_level_ko": "부처·규제기관",
+      "topics": [],
+      "topics_source": "llm"
+    },
     {
       "id": "doc-3dcd9ac68383",
       "title": "ROI AI 2025 How agents are unlocking next wave AI-driven business value",
@@ -28560,56 +28674,6 @@
       "issuer_level_ko": "부처·규제기관"
     },
     {
-      "id": "doc-74a97eb6db22",
-      "title": "칠레·Latam-GPT",
-      "short_name": "칠레·Latam-GPT",
-      "full_name": "",
-      "original_name": "칠레 · Latam‐GPT",
-      "doc_kind": "기타",
-      "doc_kind_raw": "AI policy initiatives, programmes and projects|Active",
-      "status": "Active",
-      "status_ko": "",
-      "canonical_url": "https://www.latamgpt.org/en/faq",
-      "country": "Chile",
-      "country_ko": "칠레",
-      "flag": "🇨🇱",
-      "org": "Chile",
-      "published": "2026-05-05",
-      "published_raw": "",
-      "summary": "Latam-GPT는 칠레에 기반을 둔 비영리 조직인 칠레 국가인공지능센터(CENIA)가 주도하고 조정하는 이니셔티브입니다. 프로젝트의 리더십은 CENIA에 공개적으로 귀속되어 있으며, CENIA의 책임자인 Álvaro Soto가 대표 인물로 자주 언급됩니다. CENIA는 라틴아메리카와 카리브해 여러 기관의 협력을 조정합니다.",
-      "snippet": "Latam-GPT는 칠레에 기반을 둔 비영리 조직인 칠레 국가인공지능센터(CENIA)가 주도하고 조정하는 이니셔티브입니다. 프로젝트의 리더십은 CENIA에 공개적으로 귀속되어 있으며, CENIA의 책임자인 Álvaro Soto가 대표 인물로 자주 언급됩니다. CENIA는 라틴아메리카와 카리브해 여러 기관의 협력을 조정합니다.",
-      "history": [
-        {
-          "date": "2026-05-05",
-          "label": "OECD 등록",
-          "url": "https://oecd.ai/en/dashboards/policy-initiatives/latam‑gpt",
-          "title": "Latam‑GPT",
-          "item_id": "oecd-navigator-2330"
-        }
-      ],
-      "sources": [
-        "oecd-navigator"
-      ],
-      "member_ids": [
-        "oecd-navigator-2330"
-      ],
-      "member_count": 1,
-      "safety_score": -1,
-      "in_scope": false,
-      "safety_reasons": [
-        "-oecd-only"
-      ],
-      "llm_curated": true,
-      "llm_confidence": "medium",
-      "llm_flags": [],
-      "in_scope_reason": "원문 메타에는 라틴아메리카·카리브해 지역의 AI 프로젝트와 참여 기관에 대한 설명만 있으며 AI 안전·리스크·거버넌스 관련 내용이 확인되지 않습니다.",
-      "reject_reason": "weak_ai_link",
-      "topics": [],
-      "topics_source": "llm",
-      "issuer_level": "national",
-      "issuer_level_ko": "국가"
-    },
-    {
       "id": "doc-5c046ae1eb3c",
       "title": "EuroHPC 공동사업",
       "short_name": "EuroHPC 공동사업",
@@ -34054,7 +34118,7 @@
       "topics_source": "llm"
     },
     {
-      "id": "doc-5fd48d5363a0",
+      "id": "doc-54e7d643e705",
       "title": "OECD.AI 지수",
       "short_name": "OECD.AI 지수",
       "full_name": "",
@@ -185083,7 +185147,7 @@
       "id": "doc-2a915d97146e",
       "title": "IAAE 인공지능 윤리 헌장 (2021-01 개정)",
       "short_name": "IAAE 인공지능 윤리 헌장 (2021-01 개정)",
-      "full_name": "",
+      "full_name": "[IAAE] IAAE 인공지능 윤리 헌장_210111개정 (한글본)",
       "original_name": "IAAE 인공지능 윤리 헌장_210111개정 (영문본)",
       "doc_kind": "선언·성명",
       "doc_kind_raw": "IAAE",

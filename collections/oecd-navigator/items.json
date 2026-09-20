@@ -2,24 +2,24 @@
   "collection": "oecd-navigator",
   "name": "OECD.AI Policy Navigator",
   "source": {
-    "count": 2525,
+    "count": 2526,
     "board": "Policy Navigator",
     "list_url": "https://oecd.ai/en/dashboards/policy-initiatives",
     "api": "https://api.oecdai.org/policy-initiatives",
-    "fetched": "2026-09-16",
+    "fetched": "2026-09-20",
     "note": "국가·국제기구 AI 정책 이니셔티브. 인용: OECD.AI (2025), OECD.AI Policy Navigator, https://oecd.ai/dashboards. gaiinCountry·sourceFiles 포함."
   },
-  "count": 2525,
+  "count": 2526,
   "categories": {
     "AI policy initiatives, programmes and projects": 1733,
+    "National – AI governance bodies or mechanisms": 152,
     "Regulations, guidelines and standards": 432,
-    "National – AI governance bodies or mechanisms": 151,
     "National – Strategy": 94,
     "AI Policy Frameworks and Initiatives (intergovernmental or supranational)": 107,
     "AI Governance Bodies and Mechanisms (intergovernmental or supranational)": 8
   },
   "years": {
-    "2026": 214,
+    "2026": 215,
     "2023": 168,
     "2025": 1255,
     "2024": 197,
@@ -42,6 +42,62 @@
     "2004": 1
   },
   "items": [
+    {
+      "id": "oecd-navigator-2620",
+      "collection": "oecd-navigator",
+      "collection_name": "OECD.AI Policy Navigator",
+      "oecd_id": 2620,
+      "title": "Horizons: Empowering Educators with Artificial Intelligence (AI) Technologies",
+      "original_name": "",
+      "org": "United Arab Emirates",
+      "category": "AI policy initiatives, programmes and projects",
+      "status": "Active",
+      "date": "2026-09-18",
+      "start_year": 2025,
+      "added_on": "2026-09-18",
+      "updated_on": "2026-09-18",
+      "page_url": "https://oecd.ai/en/dashboards/policy-initiatives/horizons-empowering-educators-with-artificial-intelligence-ai-technologies",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm78ms0-ecae-launches-horizons-programme-empower-teachers",
+        "https://www.wam.ae/ar/article/bm78f2b-تكنولوجيا-التربويين-لتمكين-آفاق-برنامج-إطلاق",
+        "https://www.zawya.com/en/press-release/companies-news/emirates-college-for-advanced-education-launches-horizons-program-to-empower-teachers-with-ai-technology-oootp6r3"
+      ],
+      "source_files": [],
+      "country": "United Arab Emirates",
+      "country_code": "ARE",
+      "document_name": "",
+      "body": "National professional development programme led by the UAE Ministry of Education and delivered in partnership with the Emirates College for Advanced Education to equip teachers and school leaders to integrate AI into teaching, assessment and school practice. It builds practical capability across seven curriculum-aligned AI areas, including AI foundations, data and algorithms, ethical use, classroom applications and innovation. Launched at GITEX Global 2025, scaling to train 5,000 educators.\n\nThe Horizons Program addresses a system-level challenge arising from the rapid integration of artificial intelligence (AI) into education without a structured framework to guide safe and effective adoption. As AI tools become increasingly accessible, many educators currently lack clear national guidance on how to use AI safely and effectively in teaching, assessment, and school operations. Without a coordinated national approach, AI use in schools risks becoming fragmented, inconsistent, and uneven in quality. The programme therefore establishes a shared national framework that promotes equitable access, common standards, and responsible innovation, while strengthening digital readiness and positioning schools within a data-informed education system.\nThe programme’s primary objectives are to build practical AI competencies among teachers and school leaders, improve instructional quality and assessment design, and strengthen data-informed decision-making at school level. It prioritises applied classroom integration over theoretical awareness, enabling educators to design AI-supported lessons, enhance differentiation, streamline assessment processes, and embed ethical and responsible technology practices. It also strengthens leadership capacity to govern AI implementation in alignment with national professional standards and digital transformation priorities.\nImplementation follows a phased national model supported by certified trainers, structured pre–post evaluation mechanisms, and continuous quality assurance monitoring. This approach ensures consistency across regions while enabling evidence-based refinement. Over time, the programme is designed to be embedded within formal professional development systems and institutional training frameworks, supported by policy guidance and competency standards. As it scales, the initiative will expand to additional educator groups, introduce differentiated specialisation pathways, and establish communities of practice to sustain impact. Future development will deepen integration with curriculum implementation, school improvement planning, and advanced data use. Through structured institutionalisation and sustained capacity building, the programme moves beyond isolated training towards coherent, responsible, and system-wide AI integration that strengthens learning outcomes and long-term education resilience.",
+      "extent": "",
+      "date_source": "added_on"
+    },
+    {
+      "id": "oecd-navigator-2619",
+      "collection": "oecd-navigator",
+      "collection_name": "OECD.AI Policy Navigator",
+      "oecd_id": 2619,
+      "title": "AI Safety and Security Institute Deutschland",
+      "original_name": "",
+      "org": "Germany",
+      "category": "National – AI governance bodies or mechanisms",
+      "status": "Active",
+      "date": "2026-09-15",
+      "start_year": 2026,
+      "added_on": "2026-09-15",
+      "updated_on": "2026-09-16",
+      "page_url": "https://oecd.ai/en/dashboards/policy-initiatives/ai-safety-and-security-institute-deutschland",
+      "source_urls": [
+        "https://bmds.bund.de/aktuelles/pressemitteilungen/detail/aisi-deutschland-gegruendet"
+      ],
+      "source_files": [
+        "https://api.oecdai.org/storage/policy-initiatives/Sep2026/117ojp1hydrmu2dv93l-official%20press%20release%20AISI%20Deutschland%20gegr%C3%83%C2%BCndet.pdf"
+      ],
+      "country": "Germany",
+      "country_code": "DEU",
+      "document_name": "",
+      "body": "AISI Deutschland is a national competence and evaluation center for Frontier AI models. It combines technical, strategic, and security policy expertise within a single central institution. \nAISI Deutschland is intended to enable the Federal Government to\n-\tidentify safety and security-related risks at an early stage,\n-\tdevelop evidence-based courses of action,\n-\tstrengthen Germany’s digital sovereignty with regard to AI safety and security, and\n-\tstrategically assess international developments.\n\nThe AI Safety Security Institute Deutschland is a national competence and evaluation center for Frontier AI models. It combines technical, strategic, and security policy expertise within a single central institution. The institute’s primary goal is to evaluate the opportunities and risks that advanced AI models present for Germany and to sustainably strengthen resilience in the field of artificial intelligence.\nThe AISI Deutschland is currently in the process of being established., where a phased and modular approach is being followed:\n-          In the first step, a “virtual nucleus” is set up by drawing on existing expertise, particularly from the Federal Office for Information Security (BSI) and the Federal Network Agency (BNetzA).\n-          In a second step, the AI Safety and Security Institute will be further expanded in terms of both scope and capacity. It is intended to advise the Federal Government on fundamental issues of technical evaluation, development scenarios, and strategic action requirements in the field of AI policy, and to ensure a structured transfer of safety and security-relevant knowledge regarding artificial intelligence to the Federal Government, the public administration, the private sector, and civil society. \nIts core tasks include, in particular\n-          the technical evaluation of Frontier AI models (including cyber capabilities, levels of autonomy, robustness, and potential for misuse),\n-          analyzing the safety and security-related impacts of AI on state, economy, and society,\n-          providing strategic advice to the Federal Government on AI-related safety, security and sovereignty issues,\n-          monitoring international technology trends and analyzing the global situation,\n-          building national expertise and fostering international cooperation in the field of AI safety and security.\nFrom the outset, the AISI Deutschland institute will be internationally oriented and will work closely with corresponding institutions in other countries as well as with multilateral organizations. The institute will also actively participate in the international network of AI safety/security institutes, which serves to facilitate the exchange of knowledge and the development of common positions among the participating countries, and will work together with international partners to establish uniform standards for the effective and safe use of cutting-edge AI.",
+      "extent": "",
+      "date_source": "added_on"
+    },
     {
       "id": "oecd-navigator-2612",
       "collection": "oecd-navigator",
@@ -7243,32 +7299,6 @@
       "country_code": "CHL",
       "document_name": "",
       "body": "The National Data Centers Plan is a Chilean government initiative covering the period 2024–2030 that aims to position Chile as a regional hub for data centres by promoting investment, sustainability and decentralised digital infrastructure, while supporting technological development and research, including artificial intelligence.\n\nThe National Data Centers Plan sets out a nationwide strategy to foster the sustainable growth of the data centre industry in Chile, with the objective of strengthening the data‑driven economy and consolidating the country as a leading digital infrastructure hub in Latin America. Led by public institutions and coordinated across multiple ministries and agencies, the Plan seeks to create favourable conditions for investment while ensuring that technological development is aligned with environmental protection, territorial balance and social well‑being.\nThe initiative includes measures to clarify regulatory processes, guide environmental assessment, and promote efficient use of energy and water resources, with a strong emphasis on renewable energy and decentralisation beyond the main metropolitan areas. It also supports skills development, public‑private collaboration and the creation of shared digital services for the state. Specific actions address the installation of AI campuses and the provision of advanced computing capacity for AI research and development in Chile, ensuring that the expansion of data centres contributes to research, innovation and long‑term national development within a sustainable and responsible framework.",
-      "extent": "",
-      "date_source": "added_on"
-    },
-    {
-      "id": "oecd-navigator-2330",
-      "collection": "oecd-navigator",
-      "collection_name": "OECD.AI Policy Navigator",
-      "oecd_id": 2330,
-      "title": "Latam‑GPT",
-      "original_name": "Latam‑GPT",
-      "org": "Chile",
-      "category": "AI policy initiatives, programmes and projects",
-      "status": "Active",
-      "date": "2026-05-05",
-      "start_year": 2024,
-      "added_on": "2026-05-05",
-      "updated_on": "2026-05-05",
-      "page_url": "https://oecd.ai/en/dashboards/policy-initiatives/latam‑gpt",
-      "source_urls": [
-        "https://www.latamgpt.org/en/faq"
-      ],
-      "source_files": [],
-      "country": "Chile",
-      "country_code": "CHL",
-      "document_name": "Latam‑GPT",
-      "body": "The Latam‑GPT initiative is led and coordinated by the Chilean National Center for Artificial Intelligence (CENIA), a non‑profit organisation based in Chile. The project leadership has been publicly attributed to CENIA, with its director, Álvaro Soto, frequently cited as a leading figure representing the initiative. CENIA coordinates the collaboration of multiple institutions across Latin America and the Caribbean.",
       "extent": "",
       "date_source": "added_on"
     },
