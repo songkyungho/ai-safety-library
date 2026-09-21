@@ -8,6 +8,16 @@ AI 관련 법·윤리·선언·가이드라인을 **원본 랜딩 URL** 기준�
 **문서 필드**: 약칭 · 문서명(풀네임) · 기관 · 문서종류(법/법안/가이드라인·원칙/정책보고서 등) · 발표시점 · 핵심내용.
 외교부 본문의 `●기관`/`●문서종류`/`●문서명`/`●핵심내용`을 파싱해 채웁니다.
 
+## 설계 원칙
+
+상세는 [소개](https://songkyungho.github.io/ai-safety-library/about.html)에 있습니다.
+
+- **문서별 LLM 큐레이션 후에야 통합.** 규칙은 후보만, 확정은 분석. 고·중신뢰만 사이트에 반영
+- **형태 × 층위 × 주제.** `doc_kind`(법·가이드라인 등) · `issuer_level`(국제·국가·부처·랩 등) · `topics`. 뉴스·보도는 종류가 아니라 제외
+- **날짜는 발표일.** 카탈로그 등록일(Added-on)과 구분. OECD·외교부는 원문에서 월·일을 보강
+- **동일 법령은 한 카드.** 병합 분석에서 같은 제도로 합의된 경우만 통합 요약. 저신뢰는 UI를 바꾸지 않음
+- **한글 약칭을 써도 영문 원제는 보존** (`original_name`)
+
 ## 빠른 사용
 
 ```bash
@@ -43,7 +53,8 @@ python3 scripts/build_site.py
 
 - **시각:** 매일 09:00
 - **에이전트:** `launchd/com.user.ai-safety-library-daily.plist`
-- **하는 일:** OECD 수집 → 외교부 게시판(쿠키 있을 때) → IAAE 목록·보강 → 신규 LLM 큐레이션 → `build_site`(docs/) → MCP 검색 인덱스 → (기본) git push → GitHub Pages
+- **매일 하는 일:** OECD 수집 → (CSV 있으면) AGORA → 외교부 게시판(쿠키 있을 때) → IAAE 목록·보강 → 신규 LLM 큐레이션 → `build_site`(docs/) → MCP 검색 인덱스 → (기본) git push → GitHub Pages
+- **매일 안 하는 일:** 병합 분석·통합 합성, OECD/외교부 날짜 복원, AIGL·DPA 재수집. 소개 페이지의 수동 도구
 - **수동 실행:** `./run_daily_pipeline.sh`
 
 ## 로컬 MCP
