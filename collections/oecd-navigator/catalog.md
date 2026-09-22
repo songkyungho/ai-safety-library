@@ -5,14 +5,14 @@
 - API: `https://api.oecdai.org/policy-initiatives`
 - 데이터: `items.json` · `items.csv`
 
-- 건수: **2526건**
-- 기간: 2000-10-31 ~ 2026-09-18
+- 건수: **2530건**
+- 기간: 2000-10-31 ~ 2026-09-21
 
 ## 분류
 
 | 분류 | 건수 |
 |---|---:|
-| AI policy initiatives, programmes and projects | 1733 |
+| AI policy initiatives, programmes and projects | 1737 |
 | Regulations, guidelines and standards | 432 |
 | National – AI governance bodies or mechanisms | 152 |
 | AI Policy Frameworks and Initiatives (intergovernmental or supranational) | 107 |
@@ -23,7 +23,7 @@
 
 | 연도 | 건수 |
 |---|---:|
-| 2026 | 215 |
+| 2026 | 219 |
 | 2025 | 1255 |
 | 2024 | 197 |
 | 2023 | 168 |
@@ -49,6 +49,10 @@
 
 | 날짜 | 분류 | 제목 | 원문 |
 |---|---|---|---|
+| 2026-09-21 | AI policy initiatives, programmes and pr | [Water Sector Costing Forecast](https://oecd.ai/en/dashboards/policy-initiatives/water-sector-costing-forecast) |  |
+| 2026-09-21 | AI policy initiatives, programmes and pr | [Prototyping AI Apps for Addressing Labor Shortages through Cross-Ministerial Collaboration](https://oecd.ai/en/dashboards/policy-initiatives/prototyping-ai-apps-for-addressing-labor-shortages-through-cross-ministerial-collaboration) | [원문](https://www.digital.go.jp/en/policies/genai) |
+| 2026-09-21 | AI policy initiatives, programmes and pr | [Data Sharing AI (DSAI) - Proof of Value](https://oecd.ai/en/dashboards/policy-initiatives/data-sharing-ai-dsai-proof-of-value) | [원문](https://www.gov.ie/en/department-of-public-expenditure-infrastructure-public-service-reform-and-digitalisation/press-releases/minister-chambers-announces-publication-of-the-data-sharing-support-suite) |
+| 2026-09-21 | AI policy initiatives, programmes and pr | [AI for resilient digital  government services (Subnational: Province of Cordoba)](https://oecd.ai/en/dashboards/policy-initiatives/ai-for-resilient-digital-government-services-subnational-province-of-cordoba) | [원문](https://infografia-aws-gob-cba.vercel.app/) |
 | 2026-09-18 | AI policy initiatives, programmes and pr | [Horizons: Empowering Educators with Artificial Intelligence (AI) Technologies](https://oecd.ai/en/dashboards/policy-initiatives/horizons-empowering-educators-with-artificial-intelligence-ai-technologies) | [원문](https://www.wam.ae/en/article/bm78ms0-ecae-launches-horizons-programme-empower-teachers) |
 | 2026-09-15 | National – AI governance bodies or mecha | [AI Safety and Security Institute Deutschland](https://oecd.ai/en/dashboards/policy-initiatives/ai-safety-and-security-institute-deutschland) | [원문](https://bmds.bund.de/aktuelles/pressemitteilungen/detail/aisi-deutschland-gegruendet) |
 | 2026-09-11 | AI policy initiatives, programmes and pr | [Unified Intelligent Assistant](https://oecd.ai/en/dashboards/policy-initiatives/unified-intelligent-assistant) | [원문](https://nio.gov.si/en/products/enotni%2Bpametni%2Bpomocnik) |

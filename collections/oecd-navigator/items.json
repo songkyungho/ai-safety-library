@@ -2,16 +2,16 @@
   "collection": "oecd-navigator",
   "name": "OECD.AI Policy Navigator",
   "source": {
-    "count": 2526,
+    "count": 2530,
     "board": "Policy Navigator",
     "list_url": "https://oecd.ai/en/dashboards/policy-initiatives",
     "api": "https://api.oecdai.org/policy-initiatives",
-    "fetched": "2026-09-21",
+    "fetched": "2026-09-22",
     "note": "국가·국제기구 AI 정책 이니셔티브. 인용: OECD.AI (2025), OECD.AI Policy Navigator, https://oecd.ai/dashboards. gaiinCountry·sourceFiles 포함."
   },
-  "count": 2526,
+  "count": 2530,
   "categories": {
-    "AI policy initiatives, programmes and projects": 1733,
+    "AI policy initiatives, programmes and projects": 1737,
     "National – AI governance bodies or mechanisms": 152,
     "Regulations, guidelines and standards": 432,
     "National – Strategy": 94,
@@ -19,7 +19,7 @@
     "AI Governance Bodies and Mechanisms (intergovernmental or supranational)": 8
   },
   "years": {
-    "2026": 215,
+    "2026": 219,
     "2023": 168,
     "2025": 1255,
     "2024": 197,
@@ -42,6 +42,115 @@
     "2004": 1
   },
   "items": [
+    {
+      "id": "oecd-navigator-2622",
+      "collection": "oecd-navigator",
+      "collection_name": "OECD.AI Policy Navigator",
+      "oecd_id": 2622,
+      "title": "Water Sector Costing Forecast",
+      "original_name": "",
+      "org": "Saudi Arabia",
+      "category": "AI policy initiatives, programmes and projects",
+      "status": "Active",
+      "date": "2026-09-21",
+      "start_year": 2025,
+      "added_on": "2026-09-21",
+      "updated_on": "2026-09-21",
+      "page_url": "https://oecd.ai/en/dashboards/policy-initiatives/water-sector-costing-forecast",
+      "source_urls": [],
+      "source_files": [
+        "https://api.oecdai.org/storage/policy-initiatives/Sep2026/117ojp2hku0mub8h7h5-costing-consumption-forecast.pdf"
+      ],
+      "country": "Saudi Arabia",
+      "country_code": "SAU",
+      "document_name": "",
+      "body": "This initiative predicts future costs for each water plant and for each main spending category, such as electricity, chemicals, labor, and maintenance. It helps finance and operations teams plan budgets better, spot unusual cost increases early, and make better decisions on where to control spending. It was developed to improve cost visibility, reduce surprises in future expenses, and support more efficient management of water production assets.\n\nThe Water Sector Costing Forecast initiative for the Saudi Water Authority was created to provide a forward-looking view of plant costs by plant and by cost category. It was proposed by the Costing Department and delivered with support from the Data Management Office to address a practical challenge: historical cost data existed, but planning future costs remained largely reactive and difficult to scale consistently across plants. By using recent cost records to generate forecasts, the initiative helps finance, costing department, and operations teams make earlier and better-informed decisions.\n\nThe initiative seeks to improve budgeting quality, strengthen cost control, and make future spending patterns easier to understand. Instead of only reviewing past costs, the solution analyzes historical cost behavior and produces estimates for upcoming periods, allowing teams to anticipate increases in areas such as energy, maintenance, labor, chemicals, and other plant-level expense categories. This supports more proactive budget preparation, improves the accuracy of planning, and helps identify unusual cost deviations before they become larger operational or financial issues.\n\nFrom an implementation perspective, the initiative starts by extracting costing data from the costing system, organizing and cleaning the data, and structuring it into consistent groups suitable for forecasting. The solution inventoried more than 136 cost items across multiple plants, removed older data that did not reflect recent cost patterns, treated missing and out-of-range values, and built a forecasting model using recent years of data. The outputs are then published to a costing dashboard so decision-makers can review expected future costs in a simple and accessible way.\n\nThe initiative has established a working cost-forecasting capability that supports forward planning for Saudi Water Authority plants. So far, cost data was inventoried across 17 plants and 136 cost items, presenting the result through a dashboard for decision-makers. Results were measured through data quality checks, test-set model evaluation using MASE, and forecast-versus-actual variance tracking. The main impact observed is better visibility of future spending by plant and category. Going forward, the initiative is expected to improve budget accuracy, strengthen cost control, enable earlier detection of cost deviations, and scale to wider plant coverage and more regular forecasting cycles.",
+      "extent": "",
+      "date_source": "added_on"
+    },
+    {
+      "id": "oecd-navigator-2623",
+      "collection": "oecd-navigator",
+      "collection_name": "OECD.AI Policy Navigator",
+      "oecd_id": 2623,
+      "title": "Prototyping AI Apps for Addressing Labor Shortages through Cross-Ministerial Collaboration",
+      "original_name": "省庁横断的な協働を通じた、労働力不足対応のためのAIアプリのプロトタイプ作成",
+      "org": "Japan",
+      "category": "AI policy initiatives, programmes and projects",
+      "status": "Proposed or under development",
+      "date": "2026-09-21",
+      "start_year": 2025,
+      "added_on": "2026-09-21",
+      "updated_on": "2026-09-21",
+      "page_url": "https://oecd.ai/en/dashboards/policy-initiatives/prototyping-ai-apps-for-addressing-labor-shortages-through-cross-ministerial-collaboration",
+      "source_urls": [
+        "https://www.digital.go.jp/en/policies/genai"
+      ],
+      "source_files": [],
+      "country": "Japan",
+      "country_code": "JPN",
+      "document_name": "省庁横断的な協働を通じた、労働力不足対応のためのAIアプリのプロトタイプ作成",
+      "body": "Japan is developing a prototype AI agent that automates routine administrative work common across ministries/agencies, allowing policymakers to focus on strategic tasks. By combining the knowledge of government staff with Digital Agency’s engineering skills the aim is to create user‑centered tools that fit real operations and gather issues from frontline teams, prioritize feasible improvements, and accelerate practical solutions while also reducing burdens caused by outdated rules and procedures\n\nIn Japan, the shrinking workforce is being countered by growing demands for public services, placing the administrative sector in a structural crisis. The country's total population has entered a long-term decline, projected to fall below 90 million by 2070, with the elderly population reaching approximately 39%. While the number of working-age individuals is decreasing and aging populations are straining public services, the shortage of civil servants is compounded by increasingly complex and time-sensitive societal needs. The combination of limited resources, difficult decisions about resource allocation, diverse values and needs, and the uncertainty of the VUCA world (Volatility, Uncertainty, Complexity, and Ambiguity) means that administrative responsibilities continue to expand, forcing governments to effectively \"achieve more with fewer resources.\"\n\nUnder these circumstances, a practical digital strategy has become essential. By automating routine tasks such as scheduling meetings, reserving conference rooms, and drafting documents using AI agents, policymakers can free up both time and cognitive resources for higher-level strategic work. When combining the expertise of administrative staff—who are well-versed in laws, regulations, and operational procedures—with engineers from the Digital Agency, Japan can reliably implement AI tools that are both practical, user-centered, and easy to operate. Prioritizing solutions based on identified \"pain points\" in the field and revising outdated procedures like internal regulations will accelerate agile digital implementation. This approach reduces back-office burdens and creates the foundation for maximizing the expertise of scarce human resources. Ultimately, procedures should be designed so that staff only need to verify automated processes. In practice, implementation should begin by addressing high-volume, low-risk tasks such as meeting coordination, facility reservations, record note-taking, and template generation to build reliable automation systems that align with existing systems and record management. Furthermore, ensuring accessibility and smooth integration into daily operations requires collaborative design with end users.\n\nWhile the decreasing number of civil servants and growing demand for public services continue to strain the government, AI and digital transformation enable selective and strategic automation of tasks, the creation of cross-departmental \"team partnerships,\" and the design of systems based on practical field knowledge. Through these approaches, the public sector should be able to maintain essential services, uphold fairness, and preserve legitimacy in times of change—all while achieving more with fewer resources.‌",
+      "extent": "",
+      "date_source": "added_on"
+    },
+    {
+      "id": "oecd-navigator-2624",
+      "collection": "oecd-navigator",
+      "collection_name": "OECD.AI Policy Navigator",
+      "oecd_id": 2624,
+      "title": "Data Sharing AI (DSAI) - Proof of Value",
+      "original_name": "",
+      "org": "Ireland",
+      "category": "AI policy initiatives, programmes and projects",
+      "status": "Proposed or under development",
+      "date": "2026-09-21",
+      "start_year": 2026,
+      "added_on": "2026-09-21",
+      "updated_on": "2026-09-21",
+      "page_url": "https://oecd.ai/en/dashboards/policy-initiatives/data-sharing-ai-dsai-proof-of-value",
+      "source_urls": [
+        "https://www.gov.ie/en/department-of-public-expenditure-infrastructure-public-service-reform-and-digitalisation/press-releases/minister-chambers-announces-publication-of-the-data-sharing-support-suite",
+        "https://www.irishstatutebook.ie/eli/2019/act/5/enacted/en/html",
+        "https://www.gov.ie/en/department-of-public-expenditure-infrastructure-public-service-reform-and-digitalisation/policy-information/data-governance-board"
+      ],
+      "source_files": [],
+      "country": "Ireland",
+      "country_code": "IRL",
+      "document_name": "",
+      "body": "Data governance in Ireland is overseen by the Data Governance Board under the Data Sharing and Governance Act 2019, enabling transparent data sharing across Public Sector Bodies. The OGCIO Data Governance Unit provides a Playbook to ensure secure, transparent sharing under the Act. This PoV shows how governed AI agents can support drafting DSAs at Stage 3 of the Playbook, with no autonomous decisions, full Human in the Loop oversight, and strong adherence to governance principles.\n\nThe Data Sharing Artificial Intelligence (DSAI) Proof of Value explores how governed AI agents can responsibly support the drafting of Data Sharing Agreements (DSAs) under Ireland’s Data Sharing and Governance Act 2019 (DSGA). The Act sets out a transparent, legally defined process for sharing personal data between Public Service Bodies, requiring public consultation and publication of DSAs, with oversight by the Data Governance Board (DGB). While this framework strengthens trust and accountability, it also introduces significant administrative and coordination demands.\n\nIn 2022, the DSGA process was formalized through a nine‑stage DSA Playbook. Stage 3 of this playbook—drafting the DSA itself using a standardized legal template—is particularly challenging. Public bodies must ensure compliance with GDPR and DSGA requirements while coordinating multiple stakeholders and managing legal, technical and policy considerations. In practice, this stage often involves manual drafting, inconsistent ethical and compliance checks, version‑control issues, limited traceability between drafting bodies and OGCIO reviewers, and little structured guidance during document preparation.\n\nThe DSAI Proof of Value focuses specifically on simplifying Stage 3 by applying AI to support—and not replace—the drafting process. Governed AI agents assist with generating traceable draft sections, applying ethical prompts, and orchestrating workflows that guide users through complex requirements. Full human oversight is maintained throughout: Public Service Data Officers remain human‑in‑the‑loop, and the OGCIO remains human‑in‑command. The AI does not make autonomous decisions but instead produces legally grounded, auditable outputs that reviewers can validate and refine. This approach demonstrates how AI can safely replace a manual process while preserving transparency, accountability and institutional control.\n\nEarly results indicate reduced administrative burden and improved quality of draft DSAs, measured through staff time and resource‑use surveys. The AI‑assisted process supports the faster creation of plain‑English, legally accurate DSAs with consistent definitions, resulting in agreements suitable for public consultation and typically requiring fewer DGB recommendations. Beyond individual agreements, the initiative establishes a reusable AI governance pattern that can improve service delivery, enhance customer experience, strengthen compliance and risk management, ensure consistent application of OGCIO principles, and improve traceability for both drafting bodies and reviewers.",
+      "extent": "",
+      "date_source": "added_on"
+    },
+    {
+      "id": "oecd-navigator-2621",
+      "collection": "oecd-navigator",
+      "collection_name": "OECD.AI Policy Navigator",
+      "oecd_id": 2621,
+      "title": "AI for resilient digital  government services (Subnational: Province of Cordoba)",
+      "original_name": "IA para servicios gubernamentales digitales resilientes",
+      "org": "Argentina",
+      "category": "AI policy initiatives, programmes and projects",
+      "status": "Active",
+      "date": "2026-09-21",
+      "start_year": 2024,
+      "added_on": "2026-09-21",
+      "updated_on": "2026-09-21",
+      "page_url": "https://oecd.ai/en/dashboards/policy-initiatives/ai-for-resilient-digital-government-services-subnational-province-of-cordoba",
+      "source_urls": [
+        "https://infografia-aws-gob-cba.vercel.app/",
+        "https://www.cba.gov.ar"
+      ],
+      "source_files": [
+        "https://api.oecdai.org/storage/policy-initiatives/Sep2026/117ojp2hku0mub7uesp-soporte-agentico-infraestructura-aws.pdf"
+      ],
+      "country": "Argentina",
+      "country_code": "ARG",
+      "document_name": "IA para servicios gubernamentales digitales resilientes",
+      "body": "The Province of Córdoba (Argentina) developed an autonomous AI agent system that monitors, diagnoses, and resolves incidents in the digital infrastructure supporting public services. Operating across government cloud platforms serving 3.8 million citizens, it reduces service disruptions from hours to minutes while creating full audit trails for every automated action. https://infografia-aws-gob-cba.vercel.app/\n\nThe Province of Córdoba’s citizen‑facing digital infrastructure supports services such as digital identity (Ciudadano Digital – CiDi), online procedures, payments and public information portals for more than 3.8 million residents. Ensuring their continuous availability has become a major governance challenge. To strengthen resilience, the Sub‑secretariat of Technological Infrastructure developed an autonomous AI‑agent ecosystem that monitors, diagnoses and supports incident resolution across the province’s cloud environment. Operating across 66 AWS accounts, the system provides continuous monitoring, faster response times and full auditability of every automated action, directly improving the reliability of essential public services.\n\nThe solution is built as an ecosystem of AI agents running on AWS, using Anthropic’s Claude models through Amazon Bedrock so that all inference remains within the province’s cloud environment. Claude Sonnet performs minute‑by‑minute monitoring and first‑line analysis, while Claude Opus conducts deeper diagnostics and produces technical reports. Applications are evaluated across five dimensions—connectivity, HTML structure, content integrity, error detection and external resources—to generate a configurable health score. When the score drops below the alert threshold, a specialized agent initiates a structured seven‑stage workflow covering detection, diagnosis, planning, execution, validation, resolution and closure. All steps are documented in real time, and automated summaries are shared with technical and executive stakeholders.\n\nThe architecture was designed with transparency and accountability at its core. All inference takes place within Córdoba’s AWS boundary, with CloudTrail logging and IAM‑based access controls aligning the AI layer with existing infrastructure governance. This ensures that every AI‑driven action is auditable to the same standard as any other infrastructure change, a requirement that shaped the model and platform selection. The broader initiative forms part of Córdoba’s strategy to reinforce resilient digital‑government infrastructure in an increasingly digital society.\n\nThe project’s development independently arrived at a “read‑only first” deployment model, prioritizing diagnostic capability before allowing any automated changes. This approach was later validated externally when AWS announced its DevOps Agent in December 2025 with an identical philosophy—confirming Córdoba’s alignment with global best practice in responsible agentic AI. The province is committed to regional knowledge sharing. An interactive infographic documents the workflow, and the team is prepared to share its risk matrix, governance framework and 23‑item documentation standard with peer governments.",
+      "extent": "",
+      "date_source": "added_on"
+    },
     {
       "id": "oecd-navigator-2620",
       "collection": "oecd-navigator",

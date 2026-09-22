@@ -107179,5 +107179,151 @@
       "confidence": "medium",
       "flags": []
     }
+  },
+  "doc-d73b4d3912dd": {
+    "src_hash": "368d5f153582116a",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-22",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "국가연구개발에서의 AI 연구윤리를 다루는 과기부 발간 가이드 문서로 AI 거버넌스와 연구윤리에 직접 관련됩니다.",
+      "reject_reason": "",
+      "doc_kind": "가이드라인·원칙",
+      "issuer_level": "ministry",
+      "topics": [
+        {
+          "id": "safety_research",
+          "evidence": "국가연구개발 AI 연구윤리 가이드"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문에 발표·공표일이 명시되지 않았으며, 규칙 초안의 날짜는 참고용 메타로 확인되지 않아 사용하지 않았습니다.",
+      "short_name": "국가연구개발 AI 연구윤리 가이드",
+      "summary": "",
+      "corrections": [
+        "규칙 초안의 2026-09-21 날짜를 원문 발표일로 확인할 수 없어 published에서 제외했습니다.",
+        "문서 제목에 근거해 safety_research 토픽을 추가했습니다.",
+        "본문 내용이 제공되지 않아 summary를 비워 두었습니다."
+      ],
+      "confidence": "low",
+      "flags": [
+        "본문 미제공"
+      ]
+    }
+  },
+  "doc-f403399b1d73": {
+    "src_hash": "61fd0f7fcabc3dee",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-22",
+    "result": {
+      "in_scope": false,
+      "in_scope_reason": "제공된 URL이 아일랜드 정부의 보도자료 페이지이며, 독립된 규범·정책 문서가 아니라 프로젝트 발표를 전달하는 보도성 콘텐츠입니다.",
+      "reject_reason": "news_press",
+      "doc_kind": "",
+      "issuer_level": "ministry",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표일이 명시되어 있지 않으며, 규칙 초안의 날짜는 근거로 사용할 수 없습니다.",
+      "short_name": "아일랜드 DSAI 가치검증",
+      "summary": "",
+      "corrections": [
+        "보도자료 URL과 제목을 근거로 in_scope를 false로 수정하고 reject_reason을 news_press로 지정했습니다.",
+        "규범 문서의 실질 내용으로 분류할 수 없어 doc_kind와 topics를 비웠습니다.",
+        "확인되지 않은 규칙 초안의 published 날짜를 제거했습니다."
+      ],
+      "confidence": "high",
+      "flags": []
+    }
+  },
+  "doc-1811c3601678": {
+    "src_hash": "101ba18be91e3320",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-22",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "코르도바 주 정부의 공공 디지털 인프라에 적용된 자율형 AI 에이전트의 운영·감사·장애 대응 체계를 다루므로 AI 안전·거버넌스와 직접 관련됩니다.",
+      "reject_reason": "",
+      "doc_kind": "기구·제도",
+      "issuer_level": "subnational",
+      "topics": [
+        {
+          "id": "agentic_ai",
+          "evidence": "developed an autonomous AI agent system that monitors, diagnoses, and resolves incidents"
+        },
+        {
+          "id": "cybersecurity",
+          "evidence": "monitors, diagnoses and supports incident resolution across the province’s cloud environment"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표·채택·공개일이 명시되어 있지 않습니다. 규칙 초안의 날짜는 원문 발표일로 확인되지 않아 사용하지 않았습니다.",
+      "short_name": "코르도바주 회복탄력적 디지털정부 AI 서비스",
+      "summary": "아르헨티나 코르도바주는 시민 디지털 신원, 온라인 절차, 결제 및 공공정보 포털을 지원하는 디지털 인프라의 장애를 모니터링·진단·해결하는 **자율형 AI 에이전트 생태계**를 개발했습니다. 이 시스템은 __66개 AWS 계정__에 걸친 정부 클라우드 환경에서 운영되며, 380만 명이 넘는 주민을 대상으로 하는 공공 서비스의 연속성을 지원합니다. 자동화된 모든 조치에 대한 감사 추적을 생성하고, 서비스 장애 대응 시간을 수시간에서 수분으로 줄이는 것을 목표로 합니다.",
+      "corrections": [
+        "원문이 정책 문서보다 지방정부의 AI 운영체계·프로젝트를 설명하므로 문서 종류를 ‘전략·정책’이 아닌 ‘기구·제도’로 분류했습니다.",
+        "규칙 초안에 제시된 2026-09-21 날짜는 원문 발표일로 확인되지 않아 published에서 제외했습니다.",
+        "코르도바 주 정부 문서이므로 issuer_level을 ‘subnational’로 분류했습니다."
+      ],
+      "confidence": "medium",
+      "flags": []
+    }
+  },
+  "doc-b5c9af1d1aaa": {
+    "src_hash": "80cc1ccb950ea154",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-22",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "일본 정부가 행정 업무 자동화를 위한 AI 에이전트를 부처 간 협업으로 개발하는 공공부문 AI 정책·사업 문서이므로 AI 거버넌스와 직접 관련됩니다.",
+      "reject_reason": "",
+      "doc_kind": "전략·정책",
+      "issuer_level": "ministry",
+      "topics": [
+        {
+          "id": "agentic_ai",
+          "evidence": "Japan is developing a prototype AI agent that automates routine administrative work common across ministries/agencies"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 공식 발표·채택·공포일이 명시되어 있지 않습니다.",
+      "short_name": "일본 부처 간 협업 행정 AI 시범사업",
+      "summary": "일본은 노동력 부족과 공공서비스 수요 증가에 대응하기 위해 **부처·기관의 반복 행정 업무를 자동화하는 AI 에이전트 시제품**을 개발하고 있습니다. 이 사업은 정부 직원의 업무 지식과 디지털청의 엔지니어링 역량을 결합해 실제 행정 현장에 맞는 도구를 만드는 것을 목표로 합니다. 현장 팀의 문제를 수집하고 실행 가능한 개선 과제를 우선순위화해 실무 적용을 촉진하며, 오래된 규정과 절차로 인한 부담도 줄이려 합니다. 일본의 인구 감소와 고령화, 공무원 부족 및 복잡해지는 행정 수요가 사업 추진 배경으로 제시됩니다.",
+      "corrections": [
+        "규칙 초안의 in_scope=false를 수정해 공공부문 AI 행정 자동화 및 정부 간 거버넌스와 직접 관련된 문서로 분류했습니다.",
+        "원문에 공식 발표일이 없어 규칙 초안의 2026-09-21 날짜를 제거했습니다.",
+        "원문 근거가 확인되는 agentic_ai만 토픽으로 유지했습니다."
+      ],
+      "confidence": "medium",
+      "flags": []
+    }
+  },
+  "doc-8567cb5a663b": {
+    "src_hash": "30834b24eb9ad558",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-09-22",
+    "result": {
+      "in_scope": false,
+      "in_scope_reason": "수자원 생산 자산의 비용 예측과 예산·운영 관리를 다루지만 AI 안전·리스크·거버넌스와 직접 관련된 내용은 확인되지 않습니다.",
+      "reject_reason": "weak_ai_link",
+      "doc_kind": "기타",
+      "issuer_level": "national",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표·채택·공포일이 명시되어 있지 않으며, 규칙 초안의 날짜는 사용하지 않았습니다.",
+      "short_name": "사우디 수자원 부문 비용 예측 이니셔티브",
+      "summary": "이 이니셔티브는 수자원 플랜트별 및 전기·화학물질·인건비·유지보수 등 주요 지출 항목별 미래 비용을 예측합니다. **재무·원가·운영 팀의 예산 계획과 비용 통제를 지원하고 비정상적인 비용 증가를 조기에 파악하는 것**이 목적입니다. 최근 비용 기록을 활용해 플랜트별 미래 비용을 산출하며, 과거 비용 자료는 있었지만 미래 계획이 주로 사후 대응 방식이었다는 문제를 다룹니다.",
+      "corrections": [
+        "AI 안전·리스크·거버넌스와 직접 연결되는 근거가 없어 in_scope을 false로 판정했습니다.",
+        "원문에 발표일이 없어 published를 비웠고, 규칙 초안의 날짜는 반영하지 않았습니다.",
+        "명시적인 AI 관련 토픽 근거가 없어 topics를 비웠습니다."
+      ],
+      "confidence": "high",
+      "flags": []
+    }
   }
 }

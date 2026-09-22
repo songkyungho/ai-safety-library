@@ -6,8 +6,9 @@
     "list_url": "https://iaae.ai/research/",
     "note": "IAAE가 큐레이션한 국내외 AI 윤리 원칙·가이드라인. 본문은 원문 PDF를 봐야 한다."
   },
-  "count": 146,
+  "count": 147,
   "categories": {
+    "과기부": 2,
     "교육부": 3,
     "NC문화재단": 2,
     "과기부/NIA/TTA/ETRI": 1,
@@ -58,7 +59,6 @@
     "국민대학교": 1,
     "고려대학교": 1,
     "스탠포드대": 1,
-    "과기부": 1,
     "일 소프트뱅크": 1,
     "한국마사회": 1,
     "KB금융그룹": 1,
@@ -121,7 +121,7 @@
     "국민권익위원회 블로그": 1
   },
   "years": {
-    "2026": 22,
+    "2026": 23,
     "2025": 12,
     "2024": 9,
     "2023": 22,
@@ -131,6 +131,23 @@
     "2019": 8
   },
   "items": [
+    {
+      "id": "iaae-ethics-174569115",
+      "collection": "iaae-ethics",
+      "collection_name": "IAAE 연구자료실",
+      "idx": "174569115",
+      "title": "[과기부] 국가연구개발 AI 연구윤리 가이드",
+      "org": "과기부",
+      "category": "과기부",
+      "date": "2026-09-21",
+      "page_url": "https://iaae.ai/research/?bmode=view&idx=174569115",
+      "source_urls": [
+        "https://www.msit.go.kr/bbs/view.do;jsessionid=tjfyd09_VEGvWvJQRL8lgFCvpw6FM99DDSJZp08Y.AP_msit_1?sCode=user&mPid=112&mId=113&bbsSeqNo=94&nttSeqNo=3187796"
+      ],
+      "body": "",
+      "digest_file": null,
+      "list_page": null
+    },
     {
       "id": "iaae-ethics-173953852",
       "collection": "iaae-ethics",

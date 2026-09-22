@@ -1,10 +1,290 @@
 {
   "name": "AI 안전 라이브러리 문서",
-  "updated": "2026-09-21",
-  "count": 3889,
-  "in_scope_count": 2137,
-  "out_of_scope_count": 1752,
+  "updated": "2026-09-22",
+  "count": 3894,
+  "in_scope_count": 2140,
+  "out_of_scope_count": 1754,
   "documents": [
+    {
+      "id": "doc-d73b4d3912dd",
+      "title": "국가연구개발 AI 연구윤리 가이드",
+      "short_name": "국가연구개발 AI 연구윤리 가이드",
+      "full_name": "",
+      "original_name": "",
+      "doc_kind": "가이드라인·원칙",
+      "doc_kind_raw": "과기부",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.msit.go.kr/bbs/view.do;jsessionid=tjfyd09_VEGvWvJQRL8lgFCvpw6FM99DDSJZp08Y.AP_msit_1?sCode=user&mPid=112&mId=113&bbsSeqNo=94&nttSeqNo=3187796",
+      "country": "South Korea",
+      "country_ko": "한국",
+      "flag": "🇰🇷",
+      "org": "과기부",
+      "published": "2026-09-21",
+      "published_raw": "",
+      "summary": "",
+      "snippet": "",
+      "history": [
+        {
+          "date": "2026-09-21",
+          "label": "IAAE 게시",
+          "url": "https://iaae.ai/research/?bmode=view&idx=174569115",
+          "title": "[과기부] 국가연구개발 AI 연구윤리 가이드",
+          "item_id": "iaae-ethics-174569115"
+        }
+      ],
+      "sources": [
+        "iaae-ethics"
+      ],
+      "member_ids": [
+        "iaae-ethics-174569115"
+      ],
+      "member_count": 1,
+      "safety_score": 10,
+      "in_scope": true,
+      "safety_reasons": [
+        "+iaae",
+        "+\\bethic|윤리",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+principle|원칙|권고|recommendati",
+        "+core+ai"
+      ],
+      "issuer_level": "national",
+      "issuer_level_ko": "국가"
+    },
+    {
+      "id": "doc-8567cb5a663b",
+      "title": "사우디 수자원 부문 비용 예측 이니셔티브",
+      "short_name": "사우디 수자원 부문 비용 예측 이니셔티브",
+      "full_name": "",
+      "original_name": "사우디 · Water Sector Costing Forecast",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AI policy initiatives, programmes and projects|Active",
+      "status": "Active",
+      "status_ko": "",
+      "canonical_url": "https://api.oecdai.org/storage/policy-initiatives/Sep2026/117ojp2hku0mub8h7h5-costing-consumption-forecast.pdf",
+      "country": "Saudi Arabia",
+      "country_ko": "사우디",
+      "flag": "🇸🇦",
+      "org": "Saudi Arabia",
+      "published": "2026-09-21",
+      "published_raw": "",
+      "summary": "이 이니셔티브는 수자원 플랜트별 및 전기·화학물질·인건비·유지보수 등 주요 지출 항목별 미래 비용을 예측합니다. **재무·원가·운영 팀의 예산 계획과 비용 통제를 지원하고 비정상적인 비용 증가를 조기에 파악하는 것**이 목적입니다. 최근 비용 기록을 활용해 플랜트별 미래 비용을 산출하며, 과거 비용 자료는 있었지만 미래 계획이 주로 사후 대응 방식이었다는 문제를 다룹니다.",
+      "snippet": "이 이니셔티브는 수자원 플랜트별 및 전기·화학물질·인건비·유지보수 등 주요 지출 항목별 미래 비용을 예측합니다. **재무·원가·운영 팀의 예산 계획과 비용 통제를 지원하고 비정상적인 비용 증가를 조기에 파악하는 것**이 목적입니다. 최근 비용 기록을 활용해 플랜트별 미래 비용을 산출하며, 과거 비용 자료는 있었지만 미래 계획이 주로 사후 대응 방식이었다는 문제를 다룹니다.",
+      "history": [
+        {
+          "date": "2026-09-21",
+          "label": "OECD 등록",
+          "url": "https://oecd.ai/en/dashboards/policy-initiatives/water-sector-costing-forecast",
+          "title": "Water Sector Costing Forecast",
+          "item_id": "oecd-navigator-2622"
+        }
+      ],
+      "sources": [
+        "oecd-navigator"
+      ],
+      "member_ids": [
+        "oecd-navigator-2622"
+      ],
+      "member_count": 1,
+      "safety_score": -1,
+      "in_scope": false,
+      "safety_reasons": [
+        "-oecd-only"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "high",
+      "llm_flags": [],
+      "in_scope_reason": "수자원 생산 자산의 비용 예측과 예산·운영 관리를 다루지만 AI 안전·리스크·거버넌스와 직접 관련된 내용은 확인되지 않습니다.",
+      "reject_reason": "weak_ai_link",
+      "issuer_level": "national",
+      "issuer_level_ko": "국가",
+      "topics": [],
+      "topics_source": "llm"
+    },
+    {
+      "id": "doc-b5c9af1d1aaa",
+      "title": "일본 부처 간 협업 행정 AI 시범사업",
+      "short_name": "일본 부처 간 협업 행정 AI 시범사업",
+      "full_name": "",
+      "original_name": "Prototyping AI Apps for Addressing Labor Shortages through Cross-Ministerial Collaboration",
+      "doc_kind": "전략·정책",
+      "doc_kind_raw": "AI policy initiatives, programmes and projects|Proposed or under development",
+      "status": "Proposed or under development",
+      "status_ko": "",
+      "canonical_url": "https://www.digital.go.jp/en/policies/genai",
+      "country": "Japan",
+      "country_ko": "일본",
+      "flag": "🇯🇵",
+      "org": "Japan",
+      "published": "2026-09-21",
+      "published_raw": "",
+      "summary": "일본은 노동력 부족과 공공서비스 수요 증가에 대응하기 위해 **부처·기관의 반복 행정 업무를 자동화하는 AI 에이전트 시제품**을 개발하고 있습니다. 이 사업은 정부 직원의 업무 지식과 디지털청의 엔지니어링 역량을 결합해 실제 행정 현장에 맞는 도구를 만드는 것을 목표로 합니다. 현장 팀의 문제를 수집하고 실행 가능한 개선 과제를 우선순위화해 실무 적용을 촉진하며, 오래된 규정과 절차로 인한 부담도 줄이려 합니다. 일본의 인구 감소와 고령화, 공무원 부족 및 복잡해지는 행정 수요가 사업 추진 배경으로 제시됩니다.",
+      "snippet": "일본은 노동력 부족과 공공서비스 수요 증가에 대응하기 위해 **부처·기관의 반복 행정 업무를 자동화하는 AI 에이전트 시제품**을 개발하고 있습니다. 이 사업은 정부 직원의 업무 지식과 디지털청의 엔지니어링 역량을 결합해 실제 행정 현장에 맞는 도구를 만드는 것을 목표로 합니다. 현장 팀의 문제를 수집하고 실행 가능한 개선 과제를 우선순위화해 실무 적용을 촉진하며, 오래된 규정과 절차로 인한 부담도 줄이려 합니다. 일본의 인구 감소와 고령화, 공무원 부족 및 복잡해지는 행정 수요가 사업 추진 배경으로 제시됩니다.",
+      "history": [
+        {
+          "date": "2026-09-21",
+          "label": "OECD 등록",
+          "url": "https://oecd.ai/en/dashboards/policy-initiatives/prototyping-ai-apps-for-addressing-labor-shortages-through-cross-ministerial-collaboration",
+          "title": "Prototyping AI Apps for Addressing Labor Shortages through Cross-Ministerial Collaboration",
+          "item_id": "oecd-navigator-2623"
+        }
+      ],
+      "sources": [
+        "oecd-navigator"
+      ],
+      "member_ids": [
+        "oecd-navigator-2623"
+      ],
+      "member_count": 1,
+      "safety_score": -1,
+      "in_scope": true,
+      "safety_reasons": [
+        "-oecd-only"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "medium",
+      "llm_flags": [],
+      "in_scope_reason": "일본 정부가 행정 업무 자동화를 위한 AI 에이전트를 부처 간 협업으로 개발하는 공공부문 AI 정책·사업 문서이므로 AI 거버넌스와 직접 관련됩니다.",
+      "issuer_level": "ministry",
+      "issuer_level_ko": "부처·규제기관",
+      "topics": [
+        {
+          "id": "agentic_ai",
+          "label": "에이전틱AI",
+          "icon": "🤖",
+          "color": "#ea580c",
+          "evidence": "Japan is developing a prototype AI agent that automates routine administrative work common across ministries/agencies",
+          "source": "llm"
+        }
+      ],
+      "topics_source": "llm"
+    },
+    {
+      "id": "doc-f403399b1d73",
+      "title": "아일랜드 DSAI 가치검증",
+      "short_name": "아일랜드 DSAI 가치검증",
+      "full_name": "",
+      "original_name": "Data Sharing AI (DSAI) - Proof of Value",
+      "doc_kind": "전략·정책",
+      "doc_kind_raw": "AI policy initiatives, programmes and projects|Proposed or under development",
+      "status": "Proposed or under development",
+      "status_ko": "",
+      "canonical_url": "https://www.gov.ie/en/department-of-public-expenditure-infrastructure-public-service-reform-and-digitalisation/press-releases/minister-chambers-announces-publication-of-the-data-sharing-support-suite",
+      "country": "Ireland",
+      "country_ko": "아일랜드",
+      "flag": "🇮🇪",
+      "org": "Ireland",
+      "published": "2026-09-21",
+      "published_raw": "",
+      "summary": "Data governance in Ireland is overseen by the Data Governance Board under the Data Sharing and Governance Act 2019, enabling transparent data sharing across Public Sector Bodies. The OGCIO Data Governance Unit provides a Playbook to ensure secure, transparent sharing under the Act. This PoV shows how governed AI agents can support drafting DSAs at Stage 3 of the Playbook, with no autonomous decisions, full Human in the Loop oversight, and strong adherence to governance principles.\n\nThe Data Sharing Artificial Intelligence (DSAI) Proof of Value explores how governed AI agents can responsibly support the drafting of Data Sharing Agreements (DSAs) under Ireland’s Data Sharing and Governance Act 2019 (DSGA). The Act sets out a transparent, legally defined process for sharing personal data between Public Service Bodies, requiring public consultation and publication of DSAs, with oversight by the Data Governance Board (DGB). While this framework strengthens trust and accountability, it also introduces significant administrative and coordination demands.\n\nIn 2022, the DSGA process was formalized through a nine‑stage DSA Playbook. Stage 3 of this playbook—drafting the DSA itself using a st",
+      "snippet": "Data governance in Ireland is overseen by the Data Governance Board under the Data Sharing and Governance Act 2019, enabling transparent data sharing across Public Sector Bodies. The OGCIO Data Governance Unit provides a Playbook to ensure secure, transparent sharing under the Act. This PoV shows how governed AI agents can support drafting DSAs at Stage 3 of the Playbook, with no autonomous decisions, full Human in the Loop oversight, and strong adherence to governance principles.\n\nThe Data Shar",
+      "history": [
+        {
+          "date": "2026-09-21",
+          "label": "OECD 등록",
+          "url": "https://oecd.ai/en/dashboards/policy-initiatives/data-sharing-ai-dsai-proof-of-value",
+          "title": "Data Sharing AI (DSAI) - Proof of Value",
+          "item_id": "oecd-navigator-2624"
+        }
+      ],
+      "sources": [
+        "oecd-navigator"
+      ],
+      "member_ids": [
+        "oecd-navigator-2624"
+      ],
+      "member_count": 1,
+      "safety_score": 8,
+      "in_scope": false,
+      "safety_reasons": [
+        "-oecd-only",
+        "+governan|거버넌스",
+        "+principle|원칙|권고|recommendati",
+        "+oversight|감독|감사|audit|evalua",
+        "+transpar|투명|explainab|설명\\s*가",
+        "+core+ai"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "high",
+      "llm_flags": [],
+      "in_scope_reason": "제공된 URL이 아일랜드 정부의 보도자료 페이지이며, 독립된 규범·정책 문서가 아니라 프로젝트 발표를 전달하는 보도성 콘텐츠입니다.",
+      "reject_reason": "news_press",
+      "issuer_level": "ministry",
+      "issuer_level_ko": "부처·규제기관",
+      "topics": [],
+      "topics_source": "llm"
+    },
+    {
+      "id": "doc-1811c3601678",
+      "title": "코르도바주 회복탄력적 디지털정부 AI 서비스",
+      "short_name": "코르도바주 회복탄력적 디지털정부 AI 서비스",
+      "full_name": "",
+      "original_name": "AI for resilient digital  government services (Subnational: Province of Cordoba)",
+      "doc_kind": "기구·제도",
+      "doc_kind_raw": "AI policy initiatives, programmes and projects|Active",
+      "status": "Active",
+      "status_ko": "",
+      "canonical_url": "https://infografia-aws-gob-cba.vercel.app/",
+      "country": "Argentina",
+      "country_ko": "아르헨티나",
+      "flag": "🇦🇷",
+      "org": "Argentina",
+      "published": "2026-09-21",
+      "published_raw": "",
+      "summary": "아르헨티나 코르도바주는 시민 디지털 신원, 온라인 절차, 결제 및 공공정보 포털을 지원하는 디지털 인프라의 장애를 모니터링·진단·해결하는 **자율형 AI 에이전트 생태계**를 개발했습니다. 이 시스템은 __66개 AWS 계정__에 걸친 정부 클라우드 환경에서 운영되며, 380만 명이 넘는 주민을 대상으로 하는 공공 서비스의 연속성을 지원합니다. 자동화된 모든 조치에 대한 감사 추적을 생성하고, 서비스 장애 대응 시간을 수시간에서 수분으로 줄이는 것을 목표로 합니다.",
+      "snippet": "아르헨티나 코르도바주는 시민 디지털 신원, 온라인 절차, 결제 및 공공정보 포털을 지원하는 디지털 인프라의 장애를 모니터링·진단·해결하는 **자율형 AI 에이전트 생태계**를 개발했습니다. 이 시스템은 __66개 AWS 계정__에 걸친 정부 클라우드 환경에서 운영되며, 380만 명이 넘는 주민을 대상으로 하는 공공 서비스의 연속성을 지원합니다. 자동화된 모든 조치에 대한 감사 추적을 생성하고, 서비스 장애 대응 시간을 수시간에서 수분으로 줄이는 것을 목표로 합니다.",
+      "history": [
+        {
+          "date": "2026-09-21",
+          "label": "OECD 등록",
+          "url": "https://oecd.ai/en/dashboards/policy-initiatives/ai-for-resilient-digital-government-services-subnational-province-of-cordoba",
+          "title": "AI for resilient digital  government services (Subnational: Province of Cordoba)",
+          "item_id": "oecd-navigator-2621"
+        }
+      ],
+      "sources": [
+        "oecd-navigator"
+      ],
+      "member_ids": [
+        "oecd-navigator-2621"
+      ],
+      "member_count": 1,
+      "safety_score": 6,
+      "in_scope": true,
+      "safety_reasons": [
+        "-oecd-only",
+        "+governan|거버넌스",
+        "+oversight|감독|감사|audit|evalua",
+        "+incident|사고\\s*보고|reporting\\s",
+        "+core+ai"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "medium",
+      "llm_flags": [],
+      "in_scope_reason": "코르도바 주 정부의 공공 디지털 인프라에 적용된 자율형 AI 에이전트의 운영·감사·장애 대응 체계를 다루므로 AI 안전·거버넌스와 직접 관련됩니다.",
+      "issuer_level": "subnational",
+      "issuer_level_ko": "지방·주",
+      "topics": [
+        {
+          "id": "agentic_ai",
+          "label": "에이전틱AI",
+          "icon": "🤖",
+          "color": "#ea580c",
+          "evidence": "developed an autonomous AI agent system that monitors, diagnoses, and resolves incidents",
+          "source": "llm"
+        },
+        {
+          "id": "cybersecurity",
+          "label": "사이버안보",
+          "icon": "🔒",
+          "color": "#0369a1",
+          "evidence": "monitors, diagnoses and supports incident resolution across the province’s cloud environment",
+          "source": "llm"
+        }
+      ],
+      "topics_source": "llm"
+    },
     {
       "id": "doc-8a6db7964fc2",
       "title": "UAE 호라이즌스 교육자 역량강화 프로그램",
@@ -34118,7 +34398,7 @@
       "topics_source": "llm"
     },
     {
-      "id": "doc-54e7d643e705",
+      "id": "doc-5fd48d5363a0",
       "title": "OECD.AI 지수",
       "short_name": "OECD.AI 지수",
       "full_name": "",
@@ -185147,7 +185427,7 @@
       "id": "doc-2a915d97146e",
       "title": "IAAE 인공지능 윤리 헌장 (2021-01 개정)",
       "short_name": "IAAE 인공지능 윤리 헌장 (2021-01 개정)",
-      "full_name": "",
+      "full_name": "[IAAE] IAAE 인공지능 윤리 헌장_210111개정 (한글본)",
       "original_name": "IAAE 인공지능 윤리 헌장_210111개정 (영문본)",
       "doc_kind": "선언·성명",
       "doc_kind_raw": "IAAE",
@@ -193334,7 +193614,7 @@
       "id": "doc-c13711cf1bec",
       "title": "KAIEA 인공지능 윤리 헌장 (2019-12 개정)",
       "short_name": "KAIEA 인공지능 윤리 헌장 (2019-12 개정)",
-      "full_name": "",
+      "full_name": "[KAIEA] KAIEA 인공지능 윤리 헌장_191219개정 (한글본)",
       "original_name": "KAIEA 인공지능 윤리 헌장_191219개정 (영문본)",
       "doc_kind": "가이드라인·원칙",
       "doc_kind_raw": "KAIEA",

@@ -2,10 +2,11 @@
 
 - 큐레이터: 국제인공지능윤리협회(IAAE)
 - 원본 URL은 상세 페이지 `[자료출처]`에서 추출
-- 건수: **146건**
+- 건수: **147건**
 
 | 날짜 | 기관 | 제목 | 원문 |
 |---|---|---|---|
+| 2026-09-21 | 과기부 | [[과기부] 국가연구개발 AI 연구윤리 가이드](https://iaae.ai/research/?bmode=view&idx=174569115) | [원문](https://www.msit.go.kr/bbs/view.do;jsessionid=tjfyd09_VEGvWvJQRL8lgFCvpw6FM99DDSJZp08Y.AP_msit_1?sCode=user&mPid=112&mId=113&bbsSeqNo=94&nttSeqNo=3187796) |
 | 2026-09-10 | 교육부 | [[교육부] 디지털 교육 규범](https://iaae.ai/research/?bmode=view&idx=173953852) |  |
 | 2026-09-04 | NC문화재단 | [[NC문화재단] 가장 인간적인 미래를 위한 다학제적 AI 윤리 교육: Embedded EthiCS](https://iaae.ai/research/?bmode=view&idx=173721301) | [원문](https://aihub.or.kr/aihubnews/qlityguidance/view.do?nttSn=10404) |
 | 2026-08-28 | 과기부/NIA/TTA/ETRI | [[과기부/NIA/TTA/ETRI] 고영향 인공지능 판단 가이드라인, 고영향 인공지능 사업자 책무 가이드라인, 인공지능 투명성 확보 가이드라인, 인공지능 안전성 확보 가이드라인](https://iaae.ai/research/?bmode=view&idx=173516673) | [원문](https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99835&bcIdx=28987&deptCode=undefined&parentSeq=28987) |
