@@ -1,10 +1,694 @@
 {
   "name": "AI 안전 라이브러리 문서",
-  "updated": "2026-09-23",
-  "count": 3894,
-  "in_scope_count": 2140,
-  "out_of_scope_count": 1754,
+  "updated": "2026-09-24",
+  "count": 3908,
+  "in_scope_count": 2145,
+  "out_of_scope_count": 1763,
   "documents": [
+    {
+      "id": "doc-7973f97c162d",
+      "title": "칠레 환경 규제 부담 AI 분석 프로젝트",
+      "short_name": "칠레 환경 규제 부담 AI 분석 프로젝트",
+      "full_name": "Uso de Inteligencia 인공 para la caracterización de la carga regulatoria ambiental de proyectos en desarrollo",
+      "original_name": "Uso de Inteligencia Artificial para la caracterización de la carga regulatoria ambiental de proyectos en desarrollo",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AI policy initiatives, programmes and projects|Active",
+      "status": "Active",
+      "status_ko": "",
+      "canonical_url": "https://cnep.cl/uso-ia-caracterizacion-carga-regulatoria-ambiental-proyectos-desarrollo/",
+      "country": "Chile",
+      "country_ko": "칠레",
+      "flag": "🇨🇱",
+      "org": "Chile",
+      "published": "2026-09-23",
+      "published_raw": "",
+      "summary": "이 프로젝트는 칠레 환경 인허가 문서를 분석해 개발사업의 환경 규제 부담과 개별 의무를 정량화합니다. 환경적격성결정(RCA) __1,336건__을 분석해 약 __22만 건의 집행 가능한 의무__를 식별했습니다. 생성형 인공지능을 활용해 수천 쪽에 이르는 복잡하고 비표준화된 규제 요건을 비교 가능한 데이터로 변환하고, 환경 규제 평가의 투명성과 효율성 제고를 지원하는 것을 목표로 합니다.",
+      "snippet": "이 프로젝트는 칠레 환경 인허가 문서를 분석해 개발사업의 환경 규제 부담과 개별 의무를 정량화합니다. 환경적격성결정(RCA) __1,336건__을 분석해 약 __22만 건의 집행 가능한 의무__를 식별했습니다. 생성형 인공지능을 활용해 수천 쪽에 이르는 복잡하고 비표준화된 규제 요건을 비교 가능한 데이터로 변환하고, 환경 규제 평가의 투명성과 효율성 제고를 지원하는 것을 목표로 합니다.",
+      "history": [
+        {
+          "date": "2026-09-23",
+          "label": "OECD 등록",
+          "url": "https://oecd.ai/en/dashboards/policy-initiatives/use-of-artificial-intelligence-for-the-characterisation-of-the-environmental-regulatory-burden-of-projects",
+          "title": "Use of artificial intelligence for the characterisation of the environmental regulatory burden of projects",
+          "item_id": "oecd-navigator-2635"
+        }
+      ],
+      "sources": [
+        "oecd-navigator"
+      ],
+      "member_ids": [
+        "oecd-navigator-2635"
+      ],
+      "member_count": 1,
+      "safety_score": 9,
+      "in_scope": false,
+      "safety_reasons": [
+        "-oecd-only",
+        "+regulat|규제",
+        "+standard|표준|iso/?iec",
+        "+oversight|감독|감사|audit|evalua",
+        "+transpar|투명|explainab|설명\\s*가",
+        "+prohibit|금지|banned\\s*ai|금지\\s",
+        "-invest(ment)?\\b|투자\\s*유치|vent",
+        "+core+ai"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "medium",
+      "llm_flags": [],
+      "in_scope_reason": "AI를 활용한 환경 규제 부담 분석 프로젝트이지만 AI 안전·리스크·정렬·거버넌스 자체를 규율하거나 평가하는 문서는 아닙니다.",
+      "reject_reason": "weak_ai_link",
+      "issuer_level": "national",
+      "issuer_level_ko": "국가",
+      "topics": [],
+      "topics_source": "llm"
+    },
+    {
+      "id": "doc-f359b9726cbe",
+      "title": "캐나다 법원의 인공지능 활용 지침",
+      "short_name": "캐나다 법원의 인공지능 활용 지침",
+      "full_name": "Utilisation de l’지능 artificielle par les tribunaux",
+      "original_name": "Utilisation de l’intelligence artificielle par les tribunaux",
+      "doc_kind": "가이드라인·원칙",
+      "doc_kind_raw": "Regulations, guidelines and standards|Active",
+      "status": "Active",
+      "status_ko": "",
+      "canonical_url": "https://www.fja-cmf.gc.ca/COVID-19/index-eng.html",
+      "country": "Canada",
+      "country_ko": "캐나다",
+      "flag": "🇨🇦",
+      "org": "Canada",
+      "published": "2026-09-23",
+      "published_raw": "",
+      "summary": "**두 문서는 캐나다 법원이 AI 도구를 법원 운영에 활용하는 방법과 소송 당사자·변호사 등 법원 이용자의 AI 사용을 다룹니다.** 법원 운영 문서는 행정 및 법률 조사·분석 목적의 AI 도구에 대해 이점과 과제, 지도 원칙, 도입 절차를 제시하며 의사결정·증거·전자적 공개·실체법 관련 문제는 주요 대상에서 제외합니다. 법원 이용자 문서는 법원 절차 참여를 지원하는 AI 사용의 이점과 과제를 검토하고, 법원의 지침 개발·모니터링 및 이용자의 책임 있는 사용에 관한 고려사항을 제시합니다. 두 문서는 캐나다 법원이 자체적인 AI 정책·프레임워크·도구를 마련하도록 지원하는 __비구속적 지침__입니다.",
+      "snippet": "**두 문서는 캐나다 법원이 AI 도구를 법원 운영에 활용하는 방법과 소송 당사자·변호사 등 법원 이용자의 AI 사용을 다룹니다.** 법원 운영 문서는 행정 및 법률 조사·분석 목적의 AI 도구에 대해 이점과 과제, 지도 원칙, 도입 절차를 제시하며 의사결정·증거·전자적 공개·실체법 관련 문제는 주요 대상에서 제외합니다. 법원 이용자 문서는 법원 절차 참여를 지원하는 AI 사용의 이점과 과제를 검토하고, 법원의 지침 개발·모니터링 및 이용자의 책임 있는 사용에 관한 고려사항을 제시합니다. 두 문서는 캐나다 법원이 자체적인 AI 정책·프레임워크·도구를 마련하도록 지원하는 __비구속적 지침__입니다.",
+      "history": [
+        {
+          "date": "2026-09-23",
+          "label": "OECD 등록",
+          "url": "https://oecd.ai/en/dashboards/policy-initiatives/use-of-artificial-intelligence-by-courts",
+          "title": "Use of Artificial Intelligence by Courts",
+          "item_id": "oecd-navigator-2629"
+        }
+      ],
+      "sources": [
+        "oecd-navigator"
+      ],
+      "member_ids": [
+        "oecd-navigator-2629"
+      ],
+      "member_count": 1,
+      "safety_score": 6,
+      "in_scope": true,
+      "safety_reasons": [
+        "-oecd-only",
+        "+regulat|규제",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+principle|원칙|권고|recommendati",
+        "+standard|표준|iso/?iec",
+        "-(?:ai\\s+)?adoption\\b|도입\\s*가속"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "high",
+      "llm_flags": [],
+      "in_scope_reason": "캐나다 법원에서의 AI 도구 활용과 법원 이용자의 AI 사용에 관한 비구속적 지침으로서 AI 거버넌스와 책임 있는 사용을 직접 다룹니다.",
+      "issuer_level": "national",
+      "issuer_level_ko": "국가",
+      "topics": [],
+      "topics_source": "llm"
+    },
+    {
+      "id": "doc-44627899a5e4",
+      "title": "아이슬란드 세무 신고 예측 모델",
+      "short_name": "아이슬란드 세무 신고 예측 모델",
+      "full_name": "",
+      "original_name": "Ábendingar á framtali",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AI policy initiatives, programmes and projects|Active",
+      "status": "Active",
+      "status_ko": "",
+      "canonical_url": "https://oecd.ai/en/dashboards/policy-initiatives/tax-return-nudging",
+      "country": "Iceland",
+      "country_ko": "아이슬란드",
+      "flag": "🇮🇸",
+      "org": "Iceland",
+      "published": "2026-09-23",
+      "published_raw": "",
+      "summary": "아이슬란드 세관·국세 당국은 신고되지 않은 임대소득이 포함될 가능성을 신고서 제출 전에 예측하는 모델을 개발했습니다. **이 모델은 고위험으로 예측된 신고서를 우선 검토하도록 지원**하여 세무조사의 인력과 시간을 보다 효율적으로 배분하는 데 사용됩니다. 원문은 세금 징수 개선과 다른 고난도 세무조사에 투입할 수 있는 시간·인력 확보 효과를 설명합니다.",
+      "snippet": "아이슬란드 세관·국세 당국은 신고되지 않은 임대소득이 포함될 가능성을 신고서 제출 전에 예측하는 모델을 개발했습니다. **이 모델은 고위험으로 예측된 신고서를 우선 검토하도록 지원**하여 세무조사의 인력과 시간을 보다 효율적으로 배분하는 데 사용됩니다. 원문은 세금 징수 개선과 다른 고난도 세무조사에 투입할 수 있는 시간·인력 확보 효과를 설명합니다.",
+      "history": [
+        {
+          "date": "2026-09-23",
+          "label": "OECD 등록",
+          "url": "https://oecd.ai/en/dashboards/policy-initiatives/tax-return-nudging",
+          "title": "Tax return nudging",
+          "item_id": "oecd-navigator-2625"
+        }
+      ],
+      "sources": [
+        "oecd-navigator"
+      ],
+      "member_ids": [
+        "oecd-navigator-2625"
+      ],
+      "member_count": 1,
+      "safety_score": 2,
+      "in_scope": false,
+      "safety_reasons": [
+        "-oecd-only",
+        "+\\brisk\\b|위험\\s*관리|위험관리|고위험|hi"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "medium",
+      "llm_flags": [],
+      "in_scope_reason": "세무 신고서의 누락 임대소득 가능성을 예측하는 행정 활용 사례로, AI 안전·리스크·정렬·거버넌스·규범을 직접 다루는 문서로 보기 어렵습니다.",
+      "reject_reason": "weak_ai_link",
+      "issuer_level": "ministry",
+      "issuer_level_ko": "부처·규제기관",
+      "topics": [],
+      "topics_source": "llm"
+    },
+    {
+      "id": "doc-5207b0bd1b71",
+      "title": "캐나다 공공서비스위원회 여행 AI 에이전트",
+      "short_name": "캐나다 공공서비스위원회 여행 AI 에이전트",
+      "full_name": "",
+      "original_name": "Public Service Commission (PSC) AI Agent for Travel",
+      "doc_kind": "전략·정책",
+      "doc_kind_raw": "AI policy initiatives, programmes and projects|Active",
+      "status": "Active",
+      "status_ko": "",
+      "canonical_url": "https://www.globalgovernmentfinance.com/public-service-commission-canada-ai-agent-for-travel/",
+      "country": "Canada",
+      "country_ko": "캐나다",
+      "flag": "🇨🇦",
+      "org": "Canada",
+      "published": "2026-09-23",
+      "published_raw": "",
+      "summary": "캐나다 공공서비스위원회가 공무원의 여행 규정과 경비 청구 관련 질문에 답하는 AI 지원 도구를 도입했다는 내용입니다. 이 도구는 복잡한 연방 여행·경비 정책에 대한 반복적인 이메일 문의와 처리 지연을 줄이는 것을 목적으로 합니다. 원문은 답변 제공, 행정 부담 및 비용 절감 등 운영상 효과를 설명하지만, 구체적인 안전 통제나 거버넌스 요건은 제시하지 않습니다.",
+      "snippet": "캐나다 공공서비스위원회가 공무원의 여행 규정과 경비 청구 관련 질문에 답하는 AI 지원 도구를 도입했다는 내용입니다. 이 도구는 복잡한 연방 여행·경비 정책에 대한 반복적인 이메일 문의와 처리 지연을 줄이는 것을 목적으로 합니다. 원문은 답변 제공, 행정 부담 및 비용 절감 등 운영상 효과를 설명하지만, 구체적인 안전 통제나 거버넌스 요건은 제시하지 않습니다.",
+      "history": [
+        {
+          "date": "2026-09-23",
+          "label": "OECD 등록",
+          "url": "https://oecd.ai/en/dashboards/policy-initiatives/public-service-commission-psc-ai-agent-for-travel",
+          "title": "Public Service Commission (PSC) AI Agent for Travel",
+          "item_id": "oecd-navigator-2636"
+        }
+      ],
+      "sources": [
+        "oecd-navigator"
+      ],
+      "member_ids": [
+        "oecd-navigator-2636"
+      ],
+      "member_count": 1,
+      "safety_score": 1,
+      "in_scope": false,
+      "safety_reasons": [
+        "-oecd-only",
+        "+guideline|가이드라인|지침|(?<![a-z]"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "high",
+      "llm_flags": [],
+      "in_scope_reason": "공공부문 내부 업무에 도입된 AI 여행 지원 도구를 소개하는 보도성 페이지로, AI 안전·리스크·거버넌스에 관한 규범이나 책무를 제시하지 않습니다.",
+      "reject_reason": "news_press",
+      "issuer_level": "ministry",
+      "issuer_level_ko": "부처·규제기관",
+      "topics": [],
+      "topics_source": "llm"
+    },
+    {
+      "id": "doc-1f47324ad7db",
+      "title": "캐나다 PolluSense",
+      "short_name": "캐나다 PolluSense",
+      "full_name": "",
+      "original_name": "캐나다 · PolluSense",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AI policy initiatives, programmes and projects|Proposed or under development",
+      "status": "Proposed or under development",
+      "status_ko": "",
+      "canonical_url": "https://oecd.ai/en/dashboards/policy-initiatives/pollusense",
+      "country": "Canada",
+      "country_ko": "캐나다",
+      "flag": "🇨🇦",
+      "org": "Canada",
+      "published": "2026-09-23",
+      "published_raw": "",
+      "summary": "**PolluSense는 캐나다 담수 생태계의 산업 오염을 위성 데이터와 AI로 탐지하는 시범사업**입니다. 수질 변화를 거의 실시간으로 표시하고, 분석가의 검토를 거친 사건을 지역 담당자에게 전달하도록 설계되었습니다. 2025년 7월 캐나다 환경·기후변화부 집행부문은 인공지능·신기술 우수센터에 불법 배출 및 오염 사건 탐지에 우주 기반 원격탐사 기술을 활용할 가능성을 조사하도록 요청했습니다.",
+      "snippet": "**PolluSense는 캐나다 담수 생태계의 산업 오염을 위성 데이터와 AI로 탐지하는 시범사업**입니다. 수질 변화를 거의 실시간으로 표시하고, 분석가의 검토를 거친 사건을 지역 담당자에게 전달하도록 설계되었습니다. 2025년 7월 캐나다 환경·기후변화부 집행부문은 인공지능·신기술 우수센터에 불법 배출 및 오염 사건 탐지에 우주 기반 원격탐사 기술을 활용할 가능성을 조사하도록 요청했습니다.",
+      "history": [
+        {
+          "date": "2026-09-23",
+          "label": "OECD 등록",
+          "url": "https://oecd.ai/en/dashboards/policy-initiatives/pollusense",
+          "title": "PolluSense",
+          "item_id": "oecd-navigator-2627"
+        }
+      ],
+      "sources": [
+        "oecd-navigator"
+      ],
+      "member_ids": [
+        "oecd-navigator-2627"
+      ],
+      "member_count": 1,
+      "safety_score": 1,
+      "in_scope": false,
+      "safety_reasons": [
+        "-oecd-only",
+        "+incident|사고\\s*보고|reporting\\s"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "high",
+      "llm_flags": [],
+      "in_scope_reason": "환경 법 집행을 위한 AI 활용 시범사업으로, AI 안전·거버넌스 자체를 규율하는 정책이나 규범 문서는 아닙니다.",
+      "reject_reason": "out_of_domain",
+      "issuer_level": "ministry",
+      "issuer_level_ko": "부처·규제기관",
+      "topics": [],
+      "topics_source": "llm"
+    },
+    {
+      "id": "doc-a0153dcfe237",
+      "title": "하니아시 OpenCouncil",
+      "short_name": "하니아시 OpenCouncil",
+      "full_name": "",
+      "original_name": "OpenCouncil (Subnational: Municipality of Chania)",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AI policy initiatives, programmes and projects|Active",
+      "status": "Active",
+      "status_ko": "",
+      "canonical_url": "https://opencouncil.gr/chania",
+      "country": "Greece",
+      "country_ko": "그리스",
+      "flag": "🇬🇷",
+      "org": "Greece",
+      "published": "2026-09-23",
+      "published_raw": "",
+      "summary": "**OpenCouncil은 그리스 하니아시 지방의회 회의 기록을 AI로 구조화하는 프로젝트**입니다. 원시 회의 녹화물을 자동 전사, 발언자 식별, 검색 가능한 아카이브 및 위치 기반 콘텐츠로 변환해 시민의 회의 접근성을 높이는 것을 목표로 합니다. 프로젝트는 지방의회 절차의 **민주적 투명성을 기본 인프라로 강화**하고, 주민이 자신의 지역과 관련된 논의를 확인할 수 있도록 하는 네 가지 목표를 제시합니다. 원문은 그리스 지방의회 회의가 법적으로 공개되어도 장시간의 비구조화 영상과 검색 불가능성 때문에 실제 접근성이 낮다고 설명합니다.",
+      "snippet": "**OpenCouncil은 그리스 하니아시 지방의회 회의 기록을 AI로 구조화하는 프로젝트**입니다. 원시 회의 녹화물을 자동 전사, 발언자 식별, 검색 가능한 아카이브 및 위치 기반 콘텐츠로 변환해 시민의 회의 접근성을 높이는 것을 목표로 합니다. 프로젝트는 지방의회 절차의 **민주적 투명성을 기본 인프라로 강화**하고, 주민이 자신의 지역과 관련된 논의를 확인할 수 있도록 하는 네 가지 목표를 제시합니다. 원문은 그리스 지방의회 회의가 법적으로 공개되어도 장시간의 비구조화 영상과 검색 불가능성 때문에 실제 접근성이 낮다고 설명합니다.",
+      "history": [
+        {
+          "date": "2026-09-23",
+          "label": "OECD 등록",
+          "url": "https://oecd.ai/en/dashboards/policy-initiatives/opencouncil-subnational-municipality-of-chania",
+          "title": "OpenCouncil (Subnational: Municipality of Chania)",
+          "item_id": "oecd-navigator-2632"
+        }
+      ],
+      "sources": [
+        "oecd-navigator"
+      ],
+      "member_ids": [
+        "oecd-navigator-2632"
+      ],
+      "member_count": 1,
+      "safety_score": 1,
+      "in_scope": true,
+      "safety_reasons": [
+        "-oecd-only",
+        "+transpar|투명|explainab|설명\\s*가"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "medium",
+      "llm_flags": [],
+      "in_scope_reason": "AI를 활용해 지방의회 회의 기록의 접근성과 검색성을 높이고 민주적 투명성을 강화하는 지방자치 프로젝트이므로 범위에 해당합니다.",
+      "issuer_level": "subnational",
+      "issuer_level_ko": "지방·주",
+      "topics": [
+        {
+          "id": "politics",
+          "label": "정치",
+          "icon": "🗳️",
+          "color": "#be123c",
+          "evidence": "Municipal council meetings are the core of local democracy",
+          "source": "llm"
+        }
+      ],
+      "topics_source": "llm"
+    },
+    {
+      "id": "doc-3e90d43ab397",
+      "title": "캐나다 i3A 혁신·자동화·AI 가속화",
+      "short_name": "캐나다 i3A 혁신·자동화·AI 가속화",
+      "full_name": "",
+      "original_name": "Accélération de l'innovation, de l'automatisation et de l'IA (i3A)",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AI policy initiatives, programmes and projects|Active",
+      "status": "Active",
+      "status_ko": "",
+      "canonical_url": "https://oecd.ai/en/dashboards/policy-initiatives/innovation,-automation,-and-ai-acceleration-i3a",
+      "country": "Canada",
+      "country_ko": "캐나다",
+      "flag": "🇨🇦",
+      "org": "Canada",
+      "published": "2026-09-23",
+      "published_raw": "",
+      "summary": "캐나다 농업·농식품부(AAFC)의 i3A는 조직 전반에서 인공지능과 자동화의 **책임 있고 실용적이며 확장 가능한 도입**을 촉진하는 부처 차원의 프로그램이다. 프로그램은 전문성 센터, 기능 횡단형 팀, 직원 교육, 도구 배포와 혁신 사례 공유를 결합해 반복 업무를 줄이고 서비스 제공과 데이터 관리를 개선하도록 지원한다. 또한 거버넌스 가드레일과 함께 아키텍처, 사이버보안, 클라우드, 데이터 및 거버넌스 지원을 제공한다. 직원들이 구조화된 실험을 통해 아이디어를 실제 적용으로 발전시키도록 역량과 조직의 실행 능력을 강화한다.",
+      "snippet": "캐나다 농업·농식품부(AAFC)의 i3A는 조직 전반에서 인공지능과 자동화의 **책임 있고 실용적이며 확장 가능한 도입**을 촉진하는 부처 차원의 프로그램이다. 프로그램은 전문성 센터, 기능 횡단형 팀, 직원 교육, 도구 배포와 혁신 사례 공유를 결합해 반복 업무를 줄이고 서비스 제공과 데이터 관리를 개선하도록 지원한다. 또한 거버넌스 가드레일과 함께 아키텍처, 사이버보안, 클라우드, 데이터 및 거버넌스 지원을 제공한다. 직원들이 구조화된 실험을 통해 아이디어를 실제 적용으로 발전시키도록 역량과 조직의 실행 능력을 강화한다.",
+      "history": [
+        {
+          "date": "2026-09-23",
+          "label": "OECD 등록",
+          "url": "https://oecd.ai/en/dashboards/policy-initiatives/innovation,-automation,-and-ai-acceleration-i3a",
+          "title": "Innovation, Automation, and AI Acceleration (i3A)",
+          "item_id": "oecd-navigator-2630"
+        }
+      ],
+      "sources": [
+        "oecd-navigator"
+      ],
+      "member_ids": [
+        "oecd-navigator-2630"
+      ],
+      "member_count": 1,
+      "safety_score": 6,
+      "in_scope": true,
+      "safety_reasons": [
+        "-oecd-only",
+        "+\\bsecurit|보안|사이버보안|cybersecu",
+        "+responsible\\s*ai|책임\\s*있는\\s*A",
+        "+governan|거버넌스",
+        "+guardrail|안전장치",
+        "-invest(ment)?\\b|투자\\s*유치|vent",
+        "-(?:ai\\s+)?adoption\\b|도입\\s*가속",
+        "-agriculture|농업\\s*AI|관광|touri",
+        "+core+ai"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "medium",
+      "llm_flags": [],
+      "in_scope_reason": "농업·식품 담당 부처의 조직 전반 AI·자동화 도입을 대상으로 책임 있는 활용, 거버넌스 가드레일, 역량 강화와 보안 지원을 다루는 정책 프로그램이다.",
+      "issuer_level": "ministry",
+      "issuer_level_ko": "부처·규제기관",
+      "topics": [],
+      "topics_source": "llm"
+    },
+    {
+      "id": "doc-dc9ded4bfd7a",
+      "title": "캐나다 정부 AI 등록부 MVP",
+      "short_name": "캐나다 정부 AI 등록부 MVP",
+      "full_name": "Registre de l'IA du gouvernement du 캐나다 - Produit minimum viable",
+      "original_name": "Registre de l'IA du gouvernement du Canada - Produit minimum viable",
+      "doc_kind": "기구·제도",
+      "doc_kind_raw": "Regulations, guidelines and standards|Active",
+      "status": "Active",
+      "status_ko": "",
+      "canonical_url": "https://open.canada.ca/data/en/dataset/fcbc0200-79ba-4fa4-94a6-00e32facea6b",
+      "country": "Canada",
+      "country_ko": "캐나다",
+      "flag": "🇨🇦",
+      "org": "Canada",
+      "published": "2026-09-23",
+      "published_raw": "",
+      "summary": "**캐나다 정부 AI 등록부의 __최소기능제품(MVP)__ 버전**으로, 기본 기능과 콘텐츠를 제공하고 향후 개선을 위한 의견 수렴에 사용됩니다. 등록부는 알고리즘 영향평가, 정보공개청구, 의회 질의 답변, 개인정보은행, 정부 서비스 목록 등 기존 정보원에서 수집한 자료를 바탕으로 정부 내에서 사용 중이거나 사용된 AI 시스템 정보를 담습니다. 일부 기관은 파일럿 및 개념증명 프로젝트도 등록했으며, 서로 다른 시점과 수단으로 수집된 정보이므로 항목의 완전성과 형식이 일관되지 않을 수 있습니다. 수렴된 의견은 MVP를 대체할 개선된 등록부를 개발하고 정기적으로 갱신하는 데 활용됩니다.",
+      "snippet": "**캐나다 정부 AI 등록부의 __최소기능제품(MVP)__ 버전**으로, 기본 기능과 콘텐츠를 제공하고 향후 개선을 위한 의견 수렴에 사용됩니다. 등록부는 알고리즘 영향평가, 정보공개청구, 의회 질의 답변, 개인정보은행, 정부 서비스 목록 등 기존 정보원에서 수집한 자료를 바탕으로 정부 내에서 사용 중이거나 사용된 AI 시스템 정보를 담습니다. 일부 기관은 파일럿 및 개념증명 프로젝트도 등록했으며, 서로 다른 시점과 수단으로 수집된 정보이므로 항목의 완전성과 형식이 일관되지 않을 수 있습니다. 수렴된 의견은 MVP를 대체할 개선된 등록부를 개발하고 정기적으로 갱신하는 데 활용됩니다.",
+      "history": [
+        {
+          "date": "2026-09-23",
+          "label": "OECD 등록",
+          "url": "https://oecd.ai/en/dashboards/policy-initiatives/government-of-canada-ai-registry-minimum-viable-product",
+          "title": "Government of Canada AI Registry - Minimum Viable Product",
+          "item_id": "oecd-navigator-2637"
+        }
+      ],
+      "sources": [
+        "oecd-navigator"
+      ],
+      "member_ids": [
+        "oecd-navigator-2637"
+      ],
+      "member_count": 1,
+      "safety_score": 8,
+      "in_scope": true,
+      "safety_reasons": [
+        "-oecd-only",
+        "+regulat|규제",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+principle|원칙|권고|recommendati",
+        "+standard|표준|iso/?iec"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "high",
+      "llm_flags": [],
+      "in_scope_reason": "캐나다 정부 내에서 사용 중이거나 사용된 AI 시스템 정보를 수집·공개하는 AI 거버넌스 등록제도 문서입니다.",
+      "issuer_level": "national",
+      "issuer_level_ko": "국가",
+      "topics": [],
+      "topics_source": "llm"
+    },
+    {
+      "id": "doc-05b792df2ac0",
+      "title": "오스트리아 DaFNE 챗봇",
+      "short_name": "오스트리아 DaFNE 챗봇",
+      "full_name": "",
+      "original_name": "오스트리아 · DaFNE chatbot",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AI policy initiatives, programmes and projects|Active",
+      "status": "Active",
+      "status_ko": "",
+      "canonical_url": "https://dafne.at/",
+      "country": "Austria",
+      "country_ko": "오스트리아",
+      "flag": "🇦🇹",
+      "org": "Austria",
+      "published": "2026-09-23",
+      "published_raw": "",
+      "summary": "DaFNE (Database for Research on Sustainable Development) is an online platform, used to manage and publish nationally funded research projects. Research results are stored there in the form of report files (PDF). To facilitate broad and easy access to these results for multiple stakeholder groups, a chatbot was developed to support an efficient information retrieval. This chatbot is a text-based dialogue system, based on a vector database and LLM, which only accesses publicly available projects.\n\nAs part of the DaFNE research platform by the Austrian Federal Ministry of Agriculture, Forestry, Climate and Environmental Protection, Regions, and Water Management, there is an extensive collection of diverse information and complex data, particularly report files from various research projects that have been coordinated and published. To efficiently and systematically manage this data while ensuring it is easily retrievable, we utilise a chatbot powered by a vector database and a large language model (LLM).\nThe chatbot addresses the challenges associated with managing and accessing large collections of information from various research projects. It enhances information retrieval process",
+      "snippet": "DaFNE (Database for Research on Sustainable Development) is an online platform, used to manage and publish nationally funded research projects. Research results are stored there in the form of report files (PDF). To facilitate broad and easy access to these results for multiple stakeholder groups, a chatbot was developed to support an efficient information retrieval. This chatbot is a text-based dialogue system, based on a vector database and LLM, which only accesses publicly available projects.",
+      "history": [
+        {
+          "date": "2026-09-23",
+          "label": "OECD 등록",
+          "url": "https://oecd.ai/en/dashboards/policy-initiatives/dafne-chatbot",
+          "title": "DaFNE chatbot",
+          "item_id": "oecd-navigator-2628"
+        }
+      ],
+      "sources": [
+        "oecd-navigator"
+      ],
+      "member_ids": [
+        "oecd-navigator-2628"
+      ],
+      "member_count": 1,
+      "safety_score": -2,
+      "in_scope": false,
+      "safety_reasons": [
+        "-oecd-only",
+        "-agriculture|농업\\s*AI|관광|touri"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "high",
+      "llm_flags": [],
+      "in_scope_reason": "AI 챗봇을 활용한 연구자료 검색 플랫폼에 관한 설명이지만 AI 안전·리스크·정렬·거버넌스·규제와 직접 관련된 내용은 확인되지 않습니다.",
+      "reject_reason": "weak_ai_link",
+      "issuer_level": "ministry",
+      "issuer_level_ko": "부처·규제기관",
+      "topics": [],
+      "topics_source": "llm"
+    },
+    {
+      "id": "doc-5baf1e574c6e",
+      "title": "이탈리아 Camilla 공공부문 채용 디지털 비서",
+      "short_name": "이탈리아 Camilla 공공부문 채용 디지털 비서",
+      "full_name": "",
+      "original_name": "Camilla - Digital Assistant for Public Sector Competitions",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AI policy initiatives, programmes and projects|Active",
+      "status": "Active",
+      "status_ko": "",
+      "canonical_url": "https://camilla.gov.it/",
+      "country": "Italy",
+      "country_ko": "이탈리아",
+      "flag": "🇮🇹",
+      "org": "Italy",
+      "published": "2026-09-23",
+      "published_raw": "",
+      "summary": "**Camilla는 이탈리아 공공부문 채용 경쟁시험에 관한 정보를 제공하는 생성형 AI 가상 비서**입니다. 이 서비스는 이탈리아 공공행정 채용 단일 관문인 __inPA Portal__을 통해 공고와 참여 정보를 보다 쉽게 확인하도록 지원합니다. Formez PA가 정책 및 서비스 측면을 주도하고, CSI Piemonte가 AI 플랫폼과 대화형 기술을 제공·운영합니다. 또한 지원 요청을 처리하는 담당자의 업무 부담을 줄이는 것을 목표로 합니다.",
+      "snippet": "**Camilla는 이탈리아 공공부문 채용 경쟁시험에 관한 정보를 제공하는 생성형 AI 가상 비서**입니다. 이 서비스는 이탈리아 공공행정 채용 단일 관문인 __inPA Portal__을 통해 공고와 참여 정보를 보다 쉽게 확인하도록 지원합니다. Formez PA가 정책 및 서비스 측면을 주도하고, CSI Piemonte가 AI 플랫폼과 대화형 기술을 제공·운영합니다. 또한 지원 요청을 처리하는 담당자의 업무 부담을 줄이는 것을 목표로 합니다.",
+      "history": [
+        {
+          "date": "2026-09-23",
+          "label": "OECD 등록",
+          "url": "https://oecd.ai/en/dashboards/policy-initiatives/camilla-digital-assistant-for-public-sector-competitions",
+          "title": "Camilla - Digital Assistant for Public Sector Competitions",
+          "item_id": "oecd-navigator-2633"
+        }
+      ],
+      "sources": [
+        "oecd-navigator"
+      ],
+      "member_ids": [
+        "oecd-navigator-2633"
+      ],
+      "member_count": 1,
+      "safety_score": -1,
+      "in_scope": false,
+      "safety_reasons": [
+        "-oecd-only"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "medium",
+      "llm_flags": [],
+      "in_scope_reason": "공공 채용 정보 접근을 지원하는 생성형 AI 서비스 프로젝트이지만 AI 안전·리스크·정렬·거버넌스·규제에 관한 실질적 내용은 확인되지 않습니다.",
+      "reject_reason": "weak_ai_link",
+      "issuer_level": "ministry",
+      "issuer_level_ko": "부처·규제기관",
+      "topics": [],
+      "topics_source": "llm"
+    },
+    {
+      "id": "doc-a1c96a4ff236",
+      "title": "이탈리아 Formez PA 이력서 심사 AI 시범사업",
+      "short_name": "이탈리아 Formez PA 이력서 심사 AI 시범사업",
+      "full_name": "",
+      "original_name": "AI Pilot: CV screening in consultants’ recruitment",
+      "doc_kind": "기구·제도",
+      "doc_kind_raw": "AI policy initiatives, programmes and projects|Active",
+      "status": "Active",
+      "status_ko": "",
+      "canonical_url": "https://oecd.ai/en/dashboards/policy-initiatives/ai-pilot-cv-screening-in-consultants-recruitment",
+      "country": "Italy",
+      "country_ko": "이탈리아",
+      "flag": "🇮🇹",
+      "org": "Italy",
+      "published": "2026-09-23",
+      "published_raw": "",
+      "summary": "Formez PA는 프로젝트 활동에 참여할 컨설턴트 채용을 위해 이력서를 검토하는 내부 AI 도구를 운영합니다. 이 도구는 자연어 처리를 사용해 이력서에서 역량을 추출하고 직무 요건에 따른 예비 순위를 작성해 심사위원회의 수작업 부담을 줄입니다. **최종 결정에는 인간의 판단이 계속 관여**하며, 시범사업은 __2025년 5월__에 시작되었습니다. inPA 포털 도입 이후 지원서가 급증하면서 기존의 3인 심사위원회가 수행하던 수작업 심사의 부담과 판단 불일치 위험에 대응하기 위한 사업입니다.",
+      "snippet": "Formez PA는 프로젝트 활동에 참여할 컨설턴트 채용을 위해 이력서를 검토하는 내부 AI 도구를 운영합니다. 이 도구는 자연어 처리를 사용해 이력서에서 역량을 추출하고 직무 요건에 따른 예비 순위를 작성해 심사위원회의 수작업 부담을 줄입니다. **최종 결정에는 인간의 판단이 계속 관여**하며, 시범사업은 __2025년 5월__에 시작되었습니다. inPA 포털 도입 이후 지원서가 급증하면서 기존의 3인 심사위원회가 수행하던 수작업 심사의 부담과 판단 불일치 위험에 대응하기 위한 사업입니다.",
+      "history": [
+        {
+          "date": "2026-09-23",
+          "label": "OECD 등록",
+          "url": "https://oecd.ai/en/dashboards/policy-initiatives/ai-pilot-cv-screening-in-consultants-recruitment",
+          "title": "AI Pilot: CV screening in consultants’ recruitment",
+          "item_id": "oecd-navigator-2634"
+        }
+      ],
+      "sources": [
+        "oecd-navigator"
+      ],
+      "member_ids": [
+        "oecd-navigator-2634"
+      ],
+      "member_count": 1,
+      "safety_score": -3,
+      "in_scope": true,
+      "safety_reasons": [
+        "-oecd-only",
+        "-talent|인재\\s*양성|skills\\s*agen"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "medium",
+      "llm_flags": [],
+      "in_scope_reason": "공공기관의 채용 과정에서 AI를 활용해 이력서를 선별·순위화하는 공식 AI 시범사업으로, 인간의 판단과 AI 활용 절차가 직접 다뤄집니다.",
+      "issuer_level": "national",
+      "issuer_level_ko": "국가",
+      "topics": [],
+      "topics_source": "llm"
+    },
+    {
+      "id": "doc-d6ce12755fe1",
+      "title": "세르비아 국가우편 AI 코파일럿(Posta Kopilot)",
+      "short_name": "세르비아 국가우편 AI 코파일럿(Posta Kopilot)",
+      "full_name": "",
+      "original_name": "AI Copilot for the National Post Provider",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AI policy initiatives, programmes and projects|Inactive – initiative complete",
+      "status": "Inactive – initiative complete",
+      "status_ko": "",
+      "canonical_url": "https://www.lambdaworks.io/projects/posta-kopilot",
+      "country": "Serbia",
+      "country_ko": "세르비아",
+      "flag": "🇷🇸",
+      "org": "Serbia",
+      "published": "2026-09-23",
+      "published_raw": "",
+      "summary": "**Posta Kopilot은 세르비아 국가우편(Pošta Srbije)의 수작업 우편물 분류를 지원하는 AI 모바일 애플리케이션**입니다. 주소 정보를 인식·해석하고 작업자에게 실시간으로 분류 결정을 안내합니다. 세르비아 국가우편은 하루 __210만 건 이상__의 우편물을 처리하며, 원문에 따르면 이 애플리케이션은 분류 효율을 __20% 이상__ 높이고 신입 직원 교육 기간을 수개월에서 수주로 단축했습니다.",
+      "snippet": "**Posta Kopilot은 세르비아 국가우편(Pošta Srbije)의 수작업 우편물 분류를 지원하는 AI 모바일 애플리케이션**입니다. 주소 정보를 인식·해석하고 작업자에게 실시간으로 분류 결정을 안내합니다. 세르비아 국가우편은 하루 __210만 건 이상__의 우편물을 처리하며, 원문에 따르면 이 애플리케이션은 분류 효율을 __20% 이상__ 높이고 신입 직원 교육 기간을 수개월에서 수주로 단축했습니다.",
+      "history": [
+        {
+          "date": "2026-09-23",
+          "label": "OECD 등록",
+          "url": "https://oecd.ai/en/dashboards/policy-initiatives/ai-copilot-for-the-national-post-provider",
+          "title": "AI Copilot for the National Post Provider",
+          "item_id": "oecd-navigator-2626"
+        }
+      ],
+      "sources": [
+        "oecd-navigator"
+      ],
+      "member_ids": [
+        "oecd-navigator-2626"
+      ],
+      "member_count": 1,
+      "safety_score": -1,
+      "in_scope": false,
+      "safety_reasons": [
+        "-oecd-only"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "high",
+      "llm_flags": [],
+      "in_scope_reason": "AI를 활용한 우편물 분류 효율화 프로젝트이지만 AI 안전·리스크·정렬·거버넌스·규제·윤리·평가·권리와 직접 관련된 내용은 확인되지 않습니다.",
+      "reject_reason": "out_of_domain",
+      "issuer_level": "multi",
+      "issuer_level_ko": "민관·혼합",
+      "topics": [],
+      "topics_source": "llm"
+    },
+    {
+      "id": "doc-a7afbf22eab1",
+      "title": "오스트리아 AI 브라운필드 잠재부지 지도",
+      "short_name": "오스트리아 AI 브라운필드 잠재부지 지도",
+      "full_name": "",
+      "original_name": "KI Potenzialflächenkarte",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AI policy initiatives, programmes and projects|Active",
+      "status": "Active",
+      "status_ko": "",
+      "canonical_url": "https://www.brachflaechen-dialog.at/potenzialflaechenkarte",
+      "country": "Austria",
+      "country_ko": "오스트리아",
+      "flag": "🇦🇹",
+      "org": "Austria",
+      "published": "2026-09-23",
+      "published_raw": "",
+      "summary": "오스트리아의 산업·상업용 유휴 또는 저이용 부지를 식별하는 전국 단위 공공 AI 기반 지도화 사업입니다. **지리정보와 항공사진을 활용한 AI 이미지 분석으로 브라운필드를 파악**하고, 계획 수립자·지방자치단체·개발자·연구자에게 관련 정보를 제공하는 것을 목표로 합니다. 이 사업은 신규 토지 전환보다 기존 부지 재개발을 우선해 토지 소비를 줄이고 토지 재활용을 지원하려는 목적을 둡니다. 오스트리아의 토지 소비량은 하루 약 __6.5헥타르__로 제시되며, 전국적으로 최대 __1만 곳__의 관련 부지가 있을 수 있다는 기존 추정이 언급됩니다.",
+      "snippet": "오스트리아의 산업·상업용 유휴 또는 저이용 부지를 식별하는 전국 단위 공공 AI 기반 지도화 사업입니다. **지리정보와 항공사진을 활용한 AI 이미지 분석으로 브라운필드를 파악**하고, 계획 수립자·지방자치단체·개발자·연구자에게 관련 정보를 제공하는 것을 목표로 합니다. 이 사업은 신규 토지 전환보다 기존 부지 재개발을 우선해 토지 소비를 줄이고 토지 재활용을 지원하려는 목적을 둡니다. 오스트리아의 토지 소비량은 하루 약 __6.5헥타르__로 제시되며, 전국적으로 최대 __1만 곳__의 관련 부지가 있을 수 있다는 기존 추정이 언급됩니다.",
+      "history": [
+        {
+          "date": "2026-09-23",
+          "label": "OECD 등록",
+          "url": "https://oecd.ai/en/dashboards/policy-initiatives/ai-brownfield-site",
+          "title": "AI Brownfield Site",
+          "item_id": "oecd-navigator-2631"
+        }
+      ],
+      "sources": [
+        "oecd-navigator"
+      ],
+      "member_ids": [
+        "oecd-navigator-2631"
+      ],
+      "member_count": 1,
+      "safety_score": -1,
+      "in_scope": false,
+      "safety_reasons": [
+        "-oecd-only"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "medium",
+      "llm_flags": [],
+      "in_scope_reason": "AI를 활용한 오스트리아 산업·상업용 유휴 부지 지도화 사업이지만 AI 안전·리스크·거버넌스·규제와 직접 관련된 문서는 아닙니다.",
+      "reject_reason": "out_of_domain",
+      "issuer_level": "national",
+      "issuer_level_ko": "국가",
+      "topics": [],
+      "topics_source": "llm"
+    },
     {
       "id": "doc-d73b4d3912dd",
       "title": "국가연구개발 AI 연구윤리 가이드",
@@ -28952,6 +29636,57 @@
       "topics_source": "llm",
       "issuer_level": "ministry",
       "issuer_level_ko": "부처·규제기관"
+    },
+    {
+      "id": "doc-9464dfb9d9c8",
+      "title": "칠레·Latam-GPT",
+      "short_name": "칠레·Latam-GPT",
+      "full_name": "",
+      "original_name": "칠레 · Latam‐GPT",
+      "doc_kind": "기타",
+      "doc_kind_raw": "AI policy initiatives, programmes and projects|Active",
+      "status": "Active",
+      "status_ko": "",
+      "canonical_url": "https://www.latamgpt.org/en",
+      "country": "Chile",
+      "country_ko": "칠레",
+      "flag": "🇨🇱",
+      "org": "Chile",
+      "published": "2026-05-05",
+      "published_raw": "",
+      "summary": "Latam-GPT는 **칠레의 비영리 조직인 국가인공지능센터(CENIA)가 주도·조정하는 이니셔티브**입니다. 프로젝트의 리더십은 CENIA에 귀속되어 있으며, CENIA의 책임자 Álvaro Soto가 대표 인물로 언급됩니다. CENIA는 __라틴아메리카와 카리브해 여러 기관__의 협력을 조정합니다.",
+      "snippet": "Latam-GPT는 **칠레의 비영리 조직인 국가인공지능센터(CENIA)가 주도·조정하는 이니셔티브**입니다. 프로젝트의 리더십은 CENIA에 귀속되어 있으며, CENIA의 책임자 Álvaro Soto가 대표 인물로 언급됩니다. CENIA는 __라틴아메리카와 카리브해 여러 기관__의 협력을 조정합니다.",
+      "history": [
+        {
+          "date": "2026-05-05",
+          "label": "OECD 등록",
+          "url": "https://oecd.ai/en/dashboards/policy-initiatives/latam‑gpt",
+          "title": "Latam‑GPT",
+          "item_id": "oecd-navigator-2330"
+        }
+      ],
+      "sources": [
+        "oecd-navigator"
+      ],
+      "member_ids": [
+        "oecd-navigator-2330"
+      ],
+      "member_count": 1,
+      "safety_score": 1,
+      "in_scope": false,
+      "safety_reasons": [
+        "-oecd-only",
+        "+oversight|감독|감사|audit|evalua"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "medium",
+      "llm_flags": [],
+      "in_scope_reason": "AI 프로젝트라는 점은 확인되지만, 제공된 원문 메타에는 AI 안전·리스크·거버넌스·규제·윤리·평가 또는 권리와 직접 관련된 실질 내용이 없습니다.",
+      "reject_reason": "weak_ai_link",
+      "issuer_level": "civil_society",
+      "issuer_level_ko": "시민사회·학계",
+      "topics": [],
+      "topics_source": "llm"
     },
     {
       "id": "doc-5c046ae1eb3c",

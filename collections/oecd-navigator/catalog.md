@@ -5,15 +5,15 @@
 - API: `https://api.oecdai.org/policy-initiatives`
 - 데이터: `items.json` · `items.csv`
 
-- 건수: **2530건**
-- 기간: 2000-10-31 ~ 2026-09-21
+- 건수: **2544건**
+- 기간: 2000-10-31 ~ 2026-09-23
 
 ## 분류
 
 | 분류 | 건수 |
 |---|---:|
-| AI policy initiatives, programmes and projects | 1737 |
-| Regulations, guidelines and standards | 432 |
+| AI policy initiatives, programmes and projects | 1749 |
+| Regulations, guidelines and standards | 434 |
 | National – AI governance bodies or mechanisms | 152 |
 | AI Policy Frameworks and Initiatives (intergovernmental or supranational) | 107 |
 | National – Strategy | 94 |
@@ -23,7 +23,7 @@
 
 | 연도 | 건수 |
 |---|---:|
-| 2026 | 219 |
+| 2026 | 233 |
 | 2025 | 1255 |
 | 2024 | 197 |
 | 2023 | 168 |
@@ -49,6 +49,19 @@
 
 | 날짜 | 분류 | 제목 | 원문 |
 |---|---|---|---|
+| 2026-09-23 | AI policy initiatives, programmes and pr | [Use of artificial intelligence for the characterisation of the environmental regulatory burden of projects](https://oecd.ai/en/dashboards/policy-initiatives/use-of-artificial-intelligence-for-the-characterisation-of-the-environmental-regulatory-burden-of-projects) | [원문](https://cnep.cl/uso-ia-caracterizacion-carga-regulatoria-ambiental-proyectos-desarrollo/) |
+| 2026-09-23 | Regulations, guidelines and standards | [Use of Artificial Intelligence by Courts](https://oecd.ai/en/dashboards/policy-initiatives/use-of-artificial-intelligence-by-courts) | [원문](https://www.fja-cmf.gc.ca/COVID-19/index-eng.html) |
+| 2026-09-23 | AI policy initiatives, programmes and pr | [Tax return nudging](https://oecd.ai/en/dashboards/policy-initiatives/tax-return-nudging) |  |
+| 2026-09-23 | AI policy initiatives, programmes and pr | [Public Service Commission (PSC) AI Agent for Travel](https://oecd.ai/en/dashboards/policy-initiatives/public-service-commission-psc-ai-agent-for-travel) | [원문](https://www.globalgovernmentfinance.com/public-service-commission-canada-ai-agent-for-travel/) |
+| 2026-09-23 | AI policy initiatives, programmes and pr | [PolluSense](https://oecd.ai/en/dashboards/policy-initiatives/pollusense) |  |
+| 2026-09-23 | AI policy initiatives, programmes and pr | [OpenCouncil (Subnational: Municipality of Chania)](https://oecd.ai/en/dashboards/policy-initiatives/opencouncil-subnational-municipality-of-chania) | [원문](https://opencouncil.gr/chania) |
+| 2026-09-23 | AI policy initiatives, programmes and pr | [Innovation, Automation, and AI Acceleration (i3A)](https://oecd.ai/en/dashboards/policy-initiatives/innovation,-automation,-and-ai-acceleration-i3a) |  |
+| 2026-09-23 | Regulations, guidelines and standards | [Government of Canada AI Registry - Minimum Viable Product](https://oecd.ai/en/dashboards/policy-initiatives/government-of-canada-ai-registry-minimum-viable-product) | [원문](https://open.canada.ca/data/en/dataset/fcbc0200-79ba-4fa4-94a6-00e32facea6b) |
+| 2026-09-23 | AI policy initiatives, programmes and pr | [DaFNE chatbot](https://oecd.ai/en/dashboards/policy-initiatives/dafne-chatbot) | [원문](https://dafne.at/) |
+| 2026-09-23 | AI policy initiatives, programmes and pr | [Camilla - Digital Assistant for Public Sector Competitions](https://oecd.ai/en/dashboards/policy-initiatives/camilla-digital-assistant-for-public-sector-competitions) | [원문](https://camilla.gov.it/) |
+| 2026-09-23 | AI policy initiatives, programmes and pr | [AI Pilot: CV screening in consultants’ recruitment](https://oecd.ai/en/dashboards/policy-initiatives/ai-pilot-cv-screening-in-consultants-recruitment) |  |
+| 2026-09-23 | AI policy initiatives, programmes and pr | [AI Copilot for the National Post Provider](https://oecd.ai/en/dashboards/policy-initiatives/ai-copilot-for-the-national-post-provider) | [원문](https://www.lambdaworks.io/projects/posta-kopilot) |
+| 2026-09-23 | AI policy initiatives, programmes and pr | [AI Brownfield Site](https://oecd.ai/en/dashboards/policy-initiatives/ai-brownfield-site) | [원문](https://www.brachflaechen-dialog.at/potenzialflaechenkarte) |
 | 2026-09-21 | AI policy initiatives, programmes and pr | [Water Sector Costing Forecast](https://oecd.ai/en/dashboards/policy-initiatives/water-sector-costing-forecast) |  |
 | 2026-09-21 | AI policy initiatives, programmes and pr | [Prototyping AI Apps for Addressing Labor Shortages through Cross-Ministerial Collaboration](https://oecd.ai/en/dashboards/policy-initiatives/prototyping-ai-apps-for-addressing-labor-shortages-through-cross-ministerial-collaboration) | [원문](https://www.digital.go.jp/en/policies/genai) |
 | 2026-09-21 | AI policy initiatives, programmes and pr | [Data Sharing AI (DSAI) - Proof of Value](https://oecd.ai/en/dashboards/policy-initiatives/data-sharing-ai-dsai-proof-of-value) | [원문](https://www.gov.ie/en/department-of-public-expenditure-infrastructure-public-service-reform-and-digitalisation/press-releases/minister-chambers-announces-publication-of-the-data-sharing-support-suite) |
@@ -322,6 +335,7 @@
 | 2026-05-05 | AI policy initiatives, programmes and pr | [Open Government Data Portal](https://oecd.ai/en/dashboards/policy-initiatives/open-government-data-portal) | [원문](https://www.data.go.kr/en/index.do) |
 | 2026-05-05 | AI policy initiatives, programmes and pr | [Open Data Portal](https://oecd.ai/en/dashboards/policy-initiatives/open-data-portal) | [원문](https://api.dane.gov.pl/doc) |
 | 2026-05-05 | AI policy initiatives, programmes and pr | [National Data Centers Plan (PDATA)](https://oecd.ai/en/dashboards/policy-initiatives/national-data-centers-plan-pdata) |  |
+| 2026-05-05 | AI policy initiatives, programmes and pr | [Latam‑GPT](https://oecd.ai/en/dashboards/policy-initiatives/latam‑gpt) | [원문](https://www.latamgpt.org/en) |
 | 2025-02-11 | AI Policy Frameworks and Initiatives (in | [InvestAI](https://oecd.ai/en/dashboards/policy-initiatives/investai) | [원문](https://digital-strategy.ec.europa.eu/en/news/eu-launches-investai-initiative-mobilise-eu200-billion-investment-artificial-intelligence) |
 | 2013-02-19 | AI policy initiatives, programmes and pr | [GovData – The Data Portal for Germany](https://oecd.ai/en/dashboards/policy-initiatives/govdata-the-data-portal-for-germany) | [원문](https://www.govdata.de/) |
 | 2026-05-05 | AI Policy Frameworks and Initiatives (in | [European High Performance Computing Joint Undertaking (EuroHPC JU)](https://oecd.ai/en/dashboards/policy-initiatives/european-high-performance-computing-joint-undertaking-eurohpc-ju) | [원문](https://www.eurohpc-ju.europa.eu/index_en) |
