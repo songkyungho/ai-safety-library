@@ -11,7 +11,7 @@ from collections import Counter
 from html import unescape
 from pathlib import Path
 
-ROOT = Path("/Users/kyunghosong/Library/Mobile Documents/com~apple~CloudDocs/5_Code/AI Safety Library")
+ROOT = Path("/Users/kyunghosong/Code/ai-safety-library")
 AGORA_CSV = Path("/tmp/agora_dl/agora/documents.csv")
 UA = "AI-Safety-Library/0.1 (research archive; local snapshot)"
 

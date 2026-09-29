@@ -20,7 +20,7 @@ import urllib.request
 from collections import Counter, defaultdict
 from pathlib import Path
 
-ROOT = Path("/Users/kyunghosong/Library/Mobile Documents/com~apple~CloudDocs/5_Code/AI Safety Library")
+ROOT = Path("/Users/kyunghosong/Code/ai-safety-library")
 OUT = ROOT / "clusters"
 COLLECTIONS = [
     "mofa-governance",

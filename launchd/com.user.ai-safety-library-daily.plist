@@ -27,7 +27,7 @@
 	<key>EnvironmentVariables</key>
 	<dict>
 		<key>AI_SAFETY_ENV_FILE</key>
-		<string>/Users/kyunghosong/Library/Mobile Documents/com~apple~CloudDocs/5_Code/AI Safety/ai_safety_daily_env</string>
+		<string>/Users/kyunghosong/.config/ai-safety/env</string>
 	</dict>
 	<key>StandardOutPath</key>
 	<string>/tmp/ai-safety-library-daily.out.log</string>

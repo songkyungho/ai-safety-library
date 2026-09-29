@@ -26,7 +26,7 @@ if [[ -n "${AI_SAFETY_ENV_FILE:-}" ]]; then
   _load_env_file "$AI_SAFETY_ENV_FILE"
 else
   _load_env_file "$HOME/.ai_safety_daily_env"
-  _load_env_file "$DIR/../AI Safety/ai_safety_daily_env"
+  _load_env_file "$HOME/.config/ai-safety/env"
   _load_env_file "$DIR/ai_safety_library_env"
 fi
 
