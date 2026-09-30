@@ -33,7 +33,8 @@ OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 
 ENV_CANDIDATES = (
     Path.home() / ".ai_safety_daily_env",
-    REPO_ROOT.parent / "AI Safety" / "ai_safety_daily_env",
+    Path.home() / ".config" / "ai-safety" / "env",
+    REPO_ROOT.parent / "ai-safety-pipeline" / "ai_safety_daily_env",
     REPO_ROOT / "ai_safety_library_env",
 )
 

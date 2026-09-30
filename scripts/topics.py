@@ -6,7 +6,7 @@ import sys
 from pathlib import Path
 
 _DIGEST_TOPICS = (
-    Path(__file__).resolve().parents[2] / "AI Safety" / "topic_keywords.py"
+    Path(__file__).resolve().parents[2] / "ai-safety-pipeline" / "topic_keywords.py"
 )
 
 

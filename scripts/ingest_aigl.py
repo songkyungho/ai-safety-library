@@ -18,7 +18,7 @@ from library_common import ROOT, rebuild_collection_stats, write_json  # noqa: E
 
 COL_KEY = "aigl"
 COL_NAME = "AI Governance Library"
-DIGEST_ROOT = ROOT.parent / "AI Safety"
+DIGEST_ROOT = ROOT.parent / "ai-safety-pipeline"
 _TRAILING_DATE_RE = re.compile(r"\((\d{4})\.(\d{1,2})\.(\d{1,2})\)\s*$")
 _ISO_RE = re.compile(r"^(\d{4})-(\d{2})-(\d{2})")
 _DOT_RE = re.compile(r"^(\d{4})\.(\d{1,2})\.(\d{1,2})")

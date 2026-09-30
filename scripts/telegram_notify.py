@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""텔레그램 전송 — Digest(AI Safety) utils를 재사용. 없으면 최소 urllib 폴백."""
+"""텔레그램 전송 — Digest(ai-safety-pipeline) utils를 재사용. 없으면 최소 urllib 폴백."""
 from __future__ import annotations
 
 import json
@@ -10,7 +10,7 @@ import urllib.request
 from pathlib import Path
 
 _DIGEST_UTILS = (
-    Path(__file__).resolve().parent.parent.parent / "AI Safety" / "utils"
+    Path(__file__).resolve().parent.parent.parent / "ai-safety-pipeline" / "utils"
 )
 if _DIGEST_UTILS.is_dir() and str(_DIGEST_UTILS.parent) not in sys.path:
     sys.path.insert(0, str(_DIGEST_UTILS.parent))
