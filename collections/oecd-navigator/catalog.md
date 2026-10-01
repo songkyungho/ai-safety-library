@@ -5,15 +5,15 @@
 - API: `https://api.oecdai.org/policy-initiatives`
 - 데이터: `items.json` · `items.csv`
 
-- 건수: **2544건**
-- 기간: 2000-10-31 ~ 2026-09-23
+- 건수: **2558건**
+- 기간: 2000-10-31 ~ 2026-09-30
 
 ## 분류
 
 | 분류 | 건수 |
 |---|---:|
-| AI policy initiatives, programmes and projects | 1749 |
-| Regulations, guidelines and standards | 434 |
+| AI policy initiatives, programmes and projects | 1761 |
+| Regulations, guidelines and standards | 436 |
 | National – AI governance bodies or mechanisms | 152 |
 | AI Policy Frameworks and Initiatives (intergovernmental or supranational) | 107 |
 | National – Strategy | 94 |
@@ -23,7 +23,7 @@
 
 | 연도 | 건수 |
 |---|---:|
-| 2026 | 233 |
+| 2026 | 247 |
 | 2025 | 1255 |
 | 2024 | 197 |
 | 2023 | 168 |
@@ -49,6 +49,20 @@
 
 | 날짜 | 분류 | 제목 | 원문 |
 |---|---|---|---|
+| 2026-09-30 | AI policy initiatives, programmes and pr | [VODOSTAI - Software platform for flood prediction and prevention based on artificial intelligence methods and IoT devices](https://oecd.ai/en/dashboards/policy-initiatives/vodostai-software-platform-for-flood-prediction-and-prevention-based-on-artificial-intelligence-methods-and-iot-devices) |  |
+| 2026-09-30 | AI policy initiatives, programmes and pr | [Use of Artificial Intelligence Models in the Qualitative Evaluation of Responses - Avalia](https://oecd.ai/en/dashboards/policy-initiatives/use-of-artificial-intelligence-models-in-the-qualitative-evaluation-of-responses-avalia) | [원문](https://www.gov.br/anatel/pt-br/assuntos/noticias/anatel-vence-premio-internacional-de-boas-praticas-regulatorias-com-projetos-atendimento-via-whatsapp-e-avalia) |
+| 2026-09-30 | Regulations, guidelines and standards | [Technical and Ethical Guidelines on Artificial Intelligence for the Capital District of Bogotá (Subnational: Bogotá D.C.)](https://oecd.ai/en/dashboards/policy-initiatives/technical-and-ethical-guidelines-on-artificial-intelligence-for-the-capital-district-of-bogota-subnational-bogota-dc) | [원문](https://tic.bogota.gov.co/noticias/bogot%C3%A1-define-lineamientos-de-inteligencia-artific) |
+| 2026-09-30 | AI policy initiatives, programmes and pr | [Science and Technology Parks as AI Innovation Infrastructure](https://oecd.ai/en/dashboards/policy-initiatives/science-and-technology-parks-as-ai-innovation-infrastructure) | [원문](https://nitra.gov.rs/lat/tehnoloski-razvoj/naucno-tehnoloski-parkovi-u-srbiji) |
+| 2026-09-30 | AI policy initiatives, programmes and pr | [Satellite-based system for waterlogging detection using artificial intelligence](https://oecd.ai/en/dashboards/policy-initiatives/satellite-based-system-for-waterlogging-detection-using-artificial-intelligence) | [원문](https://www.inovacionifond.rs/en/programs/govtech/funded/govtech-program) |
+| 2026-09-30 | Regulations, guidelines and standards | [Responsible Use of Artificial Intelligence Policy (Subnational: Newfoundland and Labrador)](https://oecd.ai/en/dashboards/policy-initiatives/responsible-use-of-artificial-intelligence-policy-subnational-newfoundland-and-labrador) | [원문](https://www.gov.nl.ca/exec/ocio/ai-policy/) |
+| 2026-09-30 | AI policy initiatives, programmes and pr | [Prediction of daily inflows in the reservoirs at the Drina River basin based on Artificial Intelligence – DrinaAI](https://oecd.ai/en/dashboards/policy-initiatives/prediction-of-daily-inflows-in-the-reservoirs-at-the-drina-river-basin-based-on-artificial-intelligence-drinaai) | [원문](https://ivi.ac.rs/en/project/prediction-of-daily-inflows-in-the-reservoirs-at-the-drina-river-basin-based-on-artificial-intelligence-drinaai/) |
+| 2026-09-30 | AI policy initiatives, programmes and pr | [Law Overlap Detection System](https://oecd.ai/en/dashboards/policy-initiatives/law-overlap-detection-system) | [원문](https://scidevcenter.org/wp-content/uploads/2026/02/AIACT_Paper_Final.pdf) |
+| 2026-09-30 | AI policy initiatives, programmes and pr | [Incorporation of Artificial Intelligence into the Electronic Administrative Records System](https://oecd.ai/en/dashboards/policy-initiatives/incorporation-of-artificial-intelligence-into-the-electronic-administrative-records-system) | [원문](https://www.inclusion.gob.es/eu/organizacion/se-seguridad-social-pensiones/tesoreria-general-seguridad-social) |
+| 2026-09-30 | AI policy initiatives, programmes and pr | [Generative AI Literacy Programme](https://oecd.ai/en/dashboards/policy-initiatives/generative-ai-literacy-programme) |  |
+| 2026-09-30 | AI policy initiatives, programmes and pr | [DigiTeks - Application of AI for understanding the Serbian language and digitalization in the field of legislation](https://oecd.ai/en/dashboards/policy-initiatives/digiteks-application-of-ai-for-understanding-the-serbian-language-and-digitalization-in-the-field-of-legislation) | [원문](https://github.com/procesaur/digiteks) |
+| 2026-09-30 | AI policy initiatives, programmes and pr | [Detecting tax evasion using artificial intelligence](https://oecd.ai/en/dashboards/policy-initiatives/detecting-tax-evasion-using-artificial-intelligence) | [원문](https://www.ai.gov.rs/tekst/sr/191/primena-ai-u-javnom-sektoru.php) |
+| 2026-09-30 | AI policy initiatives, programmes and pr | [AI eGovernment Chatbots](https://oecd.ai/en/dashboards/policy-initiatives/ai-egovernment-chatbots) | [원문](https://euprava.gov.rs) |
+| 2026-09-30 | AI policy initiatives, programmes and pr | [AI Strategy for the Federal Public Service 2025-27](https://oecd.ai/en/dashboards/policy-initiatives/ai-strategy-for-the-federal-public-service-2025-27) | [원문](https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/gc-ai-strategy-overview.html) |
 | 2026-09-23 | AI policy initiatives, programmes and pr | [Use of artificial intelligence for the characterisation of the environmental regulatory burden of projects](https://oecd.ai/en/dashboards/policy-initiatives/use-of-artificial-intelligence-for-the-characterisation-of-the-environmental-regulatory-burden-of-projects) | [원문](https://cnep.cl/uso-ia-caracterizacion-carga-regulatoria-ambiental-proyectos-desarrollo/) |
 | 2026-09-23 | Regulations, guidelines and standards | [Use of Artificial Intelligence by Courts](https://oecd.ai/en/dashboards/policy-initiatives/use-of-artificial-intelligence-by-courts) | [원문](https://www.fja-cmf.gc.ca/COVID-19/index-eng.html) |
 | 2026-09-23 | AI policy initiatives, programmes and pr | [Tax return nudging](https://oecd.ai/en/dashboards/policy-initiatives/tax-return-nudging) |  |
