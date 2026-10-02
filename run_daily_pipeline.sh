@@ -12,6 +12,8 @@ set -euo pipefail
 
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$DIR"
+# shellcheck source=lib/python_env.sh
+source "$DIR/lib/python_env.sh"
 
 _load_env_file() {
   local f="$1"
