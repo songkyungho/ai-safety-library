@@ -167,36 +167,21 @@ if [[ "$PUSH" == "1" ]] && git rev-parse --is-inside-work-tree >/dev/null 2>&1; 
   echo ""
   echo "▶ 6 변경분 커밋·푸시"
   t0=$(date +%s)
-  git add -A collections/ cache/ docs/ dist/ documents.json 2>/dev/null || true
-  if git diff --cached --quiet; then
-    echo "  커밋할 변경 없음"
-    _record "6" "커밋·푸시" ok "$(( $(date +%s) - t0 ))s" "변경 없음"
-  else
-    set +e
-    git commit -m "$(cat <<'EOF'
-일일 라이브러리 갱신 (자동)
-
-OECD 수집·큐레이션·사이트 빌드.
-EOF
-)"
-    commit_rc=$?
-    if [[ $commit_rc -eq 0 ]]; then
-      git push origin HEAD
-      push_rc=$?
-    else
-      push_rc=1
-    fi
-    set -e
-    dur=$(( $(date +%s) - t0 ))s
-    if [[ $commit_rc -ne 0 ]]; then
-      _record "6" "커밋·푸시" warn "$dur" "커밋 없음/실패"
-    elif [[ $push_rc -ne 0 ]]; then
-      _record "6" "커밋·푸시" fail "$dur" "push 실패"
-      echo "  ⚠ push 실패 — 로컬 커밋만 유지" >&2
-    else
-      _record "6" "커밋·푸시" ok "$dur" ""
-    fi
-  fi
+  # 데이터 경로만 커밋하고, 원격이 앞서면 깨끗할 때만 rebase 후 push (commit_library_data.sh)
+  set +e
+  data_out=$(bash commit_library_data.sh 2>&1)
+  data_rc=$?
+  set -e
+  dur=$(( $(date +%s) - t0 ))s
+  data_detail=$(printf '%s\n' "$data_out" | tail -1)
+  echo "  $data_detail"
+  case "$data_rc" in
+    0) _record "6" "커밋·푸시" ok "$dur" "$data_detail" ;;
+    3) _record "6" "커밋·푸시" warn "$dur" "$data_detail"
+       echo "  ⚠ push 못 함 — 로컬 커밋만 유지" >&2 ;;
+    *) _record "6" "커밋·푸시" fail "$dur" "${data_detail:-exit $data_rc}"
+       printf '%s\n' "$data_out" | tail -15 >&2 ;;
+  esac
 else
   _record "6" "커밋·푸시" warn "0s" "PUSH=0 또는 git 아님"
 fi
