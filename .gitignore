@@ -14,5 +14,6 @@ knowledge/*.db-journal
 knowledge/*.db-wal
 knowledge/*.db-shm
 
-# build_site.py가 매일 만드는 범위 밖 문서 점검 결과 (재생성 가능, 날짜별로 쌓임)
-reports/audit-*/
+# build_site.py가 매일 만드는 범위 밖 문서 목록만 뺀다 (재생성 가능, 날짜별로 쌓임).
+# 같은 폴더의 수동 점검 결과(audit_library.py·audit_false_duplicates.py)는 사람이 판단한 기록이라 남긴다.
+reports/audit-*/out_of_scope.csv
