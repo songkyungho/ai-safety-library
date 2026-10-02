@@ -13,3 +13,6 @@ knowledge/library.db
 knowledge/*.db-journal
 knowledge/*.db-wal
 knowledge/*.db-shm
+
+# build_site.py가 매일 만드는 범위 밖 문서 점검 결과 (재생성 가능, 날짜별로 쌓임)
+reports/audit-*/
