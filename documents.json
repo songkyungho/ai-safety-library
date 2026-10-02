@@ -1,9 +1,9 @@
 {
   "name": "AI 안전 라이브러리 문서",
-  "updated": "2026-10-01",
-  "count": 3922,
-  "in_scope_count": 2152,
-  "out_of_scope_count": 1770,
+  "updated": "2026-10-02",
+  "count": 3917,
+  "in_scope_count": 2150,
+  "out_of_scope_count": 1767,
   "documents": [
     {
       "id": "doc-d105896db8eb",
@@ -7356,69 +7356,6 @@
       "in_scope_reason": "페루의 인공지능 개발·거버넌스·관리와 공공 부문 협력을 조직하고 조정하는 국가 전략 문서이므로 AI 거버넌스와 직접 관련됩니다.",
       "issuer_level": "national",
       "issuer_level_ko": "국가"
-    },
-    {
-      "id": "doc-e86d9d8592fa",
-      "title": "말레이시아 AI 기술 행동계획 2026–2030",
-      "short_name": "말레이시아 AI 기술 행동계획 2026–2030",
-      "full_name": "",
-      "original_name": "AI Technology Action Plan 2026–2030",
-      "doc_kind": "전략·정책",
-      "doc_kind_raw": "National – Strategy|Proposed or under development",
-      "status": "Proposed or under development",
-      "status_ko": "",
-      "canonical_url": "https://regulations.ai/regulations/malaysia-2026-01-ai-tech-action-plan",
-      "country": "Malaysia",
-      "country_ko": "말레이시아",
-      "flag": "🇲🇾",
-      "org": "National Artificial Intelligence Office (NAIO), incubated under MyDIGITAL Corporation",
-      "published": "2026-08-26",
-      "published_raw": "",
-      "summary": "이 문서는 2026–2030년 말레이시아의 AI 기술 관련 국가 행동계획으로 제안 또는 수립 단계에 있습니다. 2024–2025년 계획 수립 과정에는 다중 이해관계자 협의와 분야별 실무그룹 운영이 포함됩니다. NAIO는 지속적인 조정을 위해 실무그룹을 소집하고, AI 윤리·안전·기술 분야의 독립 자문위원회와 기관 간 AI 거버넌스 위원회를 설치하는 방안을 제안합니다.",
-      "snippet": "이 문서는 2026–2030년 말레이시아의 AI 기술 관련 국가 행동계획으로 제안 또는 수립 단계에 있습니다. 2024–2025년 계획 수립 과정에는 다중 이해관계자 협의와 분야별 실무그룹 운영이 포함됩니다. NAIO는 지속적인 조정을 위해 실무그룹을 소집하고, AI 윤리·안전·기술 분야의 독립 자문위원회와 기관 간 AI 거버넌스 위원회를 설치하는 방안을 제안합니다.",
-      "history": [
-        {
-          "date": "2026-04-24",
-          "label": "OECD 등록",
-          "url": "https://oecd.ai/en/dashboards/policy-initiatives/ai-technology-action-plan-2026-2030",
-          "title": "AI Technology Action Plan 2026–2030",
-          "item_id": "oecd-navigator-2281"
-        }
-      ],
-      "sources": [
-        "oecd-navigator"
-      ],
-      "member_ids": [
-        "oecd-navigator-2281"
-      ],
-      "member_count": 1,
-      "safety_score": 10,
-      "in_scope": true,
-      "safety_reasons": [
-        "-oecd-only",
-        "+\\bsafety\\b|안전성|안전\\s*확보",
-        "+\\bethic|윤리",
-        "+governan|거버넌스",
-        "+standard|표준|iso/?iec",
-        "+core+ai"
-      ],
-      "llm_curated": true,
-      "llm_confidence": "medium",
-      "llm_flags": [],
-      "in_scope_reason": "말레이시아의 AI 윤리·안전 자문과 기관 간 AI 거버넌스 체계를 제안하는 국가 정책 문서이므로 AI 안전·거버넌스와 직접 관련됩니다.",
-      "issuer_level": "national",
-      "issuer_level_ko": "국가",
-      "topics": [
-        {
-          "id": "safety_research",
-          "label": "안전기술",
-          "icon": "🧪",
-          "color": "#4f46e5",
-          "evidence": "AI 윤리·안전·기술 분야의 독립 자문위원회",
-          "source": "llm"
-        }
-      ],
-      "topics_source": "llm"
     },
     {
       "id": "doc-8b5028733dfe",
@@ -32048,62 +31985,6 @@
       "issuer_level_ko": "국가"
     },
     {
-      "id": "doc-c911bb2af21a",
-      "title": "말레이시아 국가 AI 로드맵(AI-Rmap)",
-      "short_name": "말레이시아 국가 AI 로드맵(AI-Rmap)",
-      "full_name": "",
-      "original_name": "National Artificial Intelligence Roadmap (AI‐Rmap)",
-      "doc_kind": "전략·정책",
-      "doc_kind_raw": "National – Strategy|Inactive – initiative complete",
-      "status": "Inactive – initiative complete",
-      "status_ko": "",
-      "canonical_url": "https://api.oecdai.org/storage/policy-initiatives/Apr2026/117ojpi25umocx4kog-Malaysia%20National%20AI%20Policy.pdf",
-      "country": "Malaysia",
-      "country_ko": "말레이시아",
-      "flag": "🇲🇾",
-      "org": "Ministry of Science, Technology and Innovation (MOSTI)",
-      "published": "2026-04-24",
-      "published_raw": "",
-      "summary": "말레이시아 과학기술혁신부(MOSTI)가 주도하는 국가 인공지능 로드맵(AI-Rmap)은 2021~2025년 인공지능의 개발과 활용을 위한 국가적 방향을 제시합니다. 로드맵은 생산성·경쟁력·삶의 질 향상과 지속 가능한 국가 AI 혁신 생태계 구축을 목표로 합니다. 정부·학계·산업계·사회의 4중 나선 협력을 통해 국가 AI 노력을 조정하고 협력적 생태계를 조성합니다. 주요 축으로 AI 거버넌스, 연구개발, 디지털 인프라, AI 인재, 사회 전반의 AI 확산, 국가 AI 혁신 생태계 구축을 제시합니다.",
-      "snippet": "말레이시아 과학기술혁신부(MOSTI)가 주도하는 국가 인공지능 로드맵(AI-Rmap)은 2021~2025년 인공지능의 개발과 활용을 위한 국가적 방향을 제시합니다. 로드맵은 생산성·경쟁력·삶의 질 향상과 지속 가능한 국가 AI 혁신 생태계 구축을 목표로 합니다. 정부·학계·산업계·사회의 4중 나선 협력을 통해 국가 AI 노력을 조정하고 협력적 생태계를 조성합니다. 주요 축으로 AI 거버넌스, 연구개발, 디지털 인프라, AI 인재, 사회 전반의 AI 확산, 국가 AI 혁신 생태계 구축을 제시합니다.",
-      "history": [
-        {
-          "date": "2026-04-24",
-          "label": "OECD 등록",
-          "url": "https://oecd.ai/en/dashboards/policy-initiatives/national-artificial-intelligence-roadmap-ai‑rmap",
-          "title": "National Artificial Intelligence Roadmap (AI‑Rmap)",
-          "item_id": "oecd-navigator-2280"
-        }
-      ],
-      "sources": [
-        "oecd-navigator"
-      ],
-      "member_ids": [
-        "oecd-navigator-2280"
-      ],
-      "member_count": 1,
-      "safety_score": 2,
-      "in_scope": true,
-      "safety_reasons": [
-        "-oecd-only",
-        "+responsible\\s*ai|책임\\s*있는\\s*A",
-        "+governan|거버넌스",
-        "+principle|원칙|권고|recommendati",
-        "-talent|인재\\s*양성|skills\\s*agen",
-        "-competitiv|경쟁력|market\\s*shar",
-        "-(?:ai\\s+)?adoption\\b|도입\\s*가속",
-        "-gdp|생산성|productivity|growth\\",
-        "+safety-core-floor",
-        "+core+ai"
-      ],
-      "llm_curated": true,
-      "llm_confidence": "high",
-      "llm_flags": [],
-      "in_scope_reason": "책임 있는 인공지능 원칙과 AI 거버넌스를 포함한 말레이시아의 국가 AI 전략 문서입니다.",
-      "issuer_level": "ministry",
-      "issuer_level_ko": "부처·규제기관"
-    },
-    {
       "id": "doc-4419bacf1ca3",
       "title": "짐바브웨 국가 AI 전략 2026–2030",
       "short_name": "짐바브웨 국가 AI 전략 2026–2030",
@@ -35878,7 +35759,7 @@
       "topics_source": "llm"
     },
     {
-      "id": "doc-54e7d643e705",
+      "id": "doc-5fd48d5363a0",
       "title": "OECD.AI 지수",
       "short_name": "OECD.AI 지수",
       "full_name": "",
@@ -85754,57 +85635,6 @@
       "issuer_level_ko": "부처·규제기관"
     },
     {
-      "id": "doc-7ab6fb65ea53",
-      "title": "말레이시아 MY-AI 포털",
-      "short_name": "말레이시아 MY-AI 포털",
-      "full_name": "",
-      "original_name": "말레이시아 · MY-AI Portal",
-      "doc_kind": "기구·제도",
-      "doc_kind_raw": "AI policy initiatives, programmes and projects|Active",
-      "status": "Active",
-      "status_ko": "",
-      "canonical_url": "https://api.oecdai.org/storage/policy-initiatives/Jul2025/fu_bumiufa5mq75ivm.pdf",
-      "country": "Malaysia",
-      "country_ko": "말레이시아",
-      "flag": "🇲🇾",
-      "org": "Ministry of Science, Technology, and Innovation (MOSTI)",
-      "published": "2025-07-09",
-      "published_raw": "",
-      "summary": "MY-AI 포털은 인공지능 관련 자원과 이슈를 위한 말레이시아의 국가 온라인 플랫폼입니다. 이 포털은 MOSTI 산하에서 MIMOS가 개발·호스팅·관리합니다. 포털에는 지식 자원, 교육 프로그램, 도구 및 의견 제출 채널에 대한 링크가 포함되어 있습니다. 또한 고성능 컴퓨팅(HPC) 자원 제공을 위한 전략적 단계로 설명됩니다.",
-      "snippet": "MY-AI 포털은 인공지능 관련 자원과 이슈를 위한 말레이시아의 국가 온라인 플랫폼입니다. 이 포털은 MOSTI 산하에서 MIMOS가 개발·호스팅·관리합니다. 포털에는 지식 자원, 교육 프로그램, 도구 및 의견 제출 채널에 대한 링크가 포함되어 있습니다. 또한 고성능 컴퓨팅(HPC) 자원 제공을 위한 전략적 단계로 설명됩니다.",
-      "history": [
-        {
-          "date": "2025-07-09",
-          "label": "OECD 등록",
-          "url": "https://oecd.ai/en/dashboards/policy-initiatives/my-ai-portal-2241",
-          "title": "MY-AI Portal",
-          "item_id": "oecd-navigator-85"
-        }
-      ],
-      "sources": [
-        "oecd-navigator"
-      ],
-      "member_ids": [
-        "oecd-navigator-85"
-      ],
-      "member_count": 1,
-      "safety_score": -1,
-      "in_scope": false,
-      "safety_reasons": [
-        "-oecd-only",
-        "-bare-institution"
-      ],
-      "llm_curated": true,
-      "llm_confidence": "high",
-      "llm_flags": [],
-      "in_scope_reason": "AI 관련 국가 온라인 포털이지만 제공된 설명에는 AI 안전·리스크·거버넌스·규제·윤리·평가에 관한 직접적인 내용이 없습니다.",
-      "reject_reason": "weak_ai_link",
-      "topics": [],
-      "topics_source": "llm",
-      "issuer_level": "ministry",
-      "issuer_level_ko": "부처·규제기관"
-    },
-    {
       "id": "doc-8fef1a595a2e",
       "title": "싱가포르 MSO OneService 챗봇",
       "short_name": "싱가포르 MSO OneService 챗봇",
@@ -113768,56 +113598,6 @@
       "ko_enriched": true,
       "issuer_level": "subnational",
       "issuer_level_ko": "지방·주"
-    },
-    {
-      "id": "doc-f6bfad18d6d3",
-      "title": "말레이시아 공무원 인공지능 연수",
-      "short_name": "말레이시아 공무원 인공지능 연수",
-      "full_name": "",
-      "original_name": "Training for Public Servants",
-      "doc_kind": "전략·정책",
-      "doc_kind_raw": "AI policy initiatives, programmes and projects|Active",
-      "status": "Active",
-      "status_ko": "",
-      "canonical_url": "https://thesun.my/malaysia-news/public-service-continues-to-be-improved-through-digitalisation-ksn-KE13609407",
-      "country": "Malaysia",
-      "country_ko": "말레이시아",
-      "flag": "🇲🇾",
-      "org": "Ministry of Digital",
-      "published": "2025-02-03",
-      "published_raw": "",
-      "summary": "말레이시아 정부가 공무원을 인도로 보내 6개월간 인공지능 과정을 이수하게 한다는 내용입니다. 원문 메타에는 말레이시아 디지털부가 기관으로 표시되어 있습니다. 문서는 정책·규범 문서가 아니라 관련 동향을 전하는 뉴스 기사입니다.",
-      "snippet": "말레이시아 정부가 공무원을 인도로 보내 6개월간 인공지능 과정을 이수하게 한다는 내용입니다. 원문 메타에는 말레이시아 디지털부가 기관으로 표시되어 있습니다. 문서는 정책·규범 문서가 아니라 관련 동향을 전하는 뉴스 기사입니다.",
-      "history": [
-        {
-          "date": "2025-07-09",
-          "label": "OECD 등록",
-          "url": "https://oecd.ai/en/dashboards/policy-initiatives/training-for-public-servants-5421",
-          "title": "Training for Public Servants",
-          "item_id": "oecd-navigator-58"
-        }
-      ],
-      "sources": [
-        "oecd-navigator"
-      ],
-      "member_ids": [
-        "oecd-navigator-58"
-      ],
-      "member_count": 1,
-      "safety_score": -1,
-      "in_scope": false,
-      "safety_reasons": [
-        "-oecd-only"
-      ],
-      "llm_curated": true,
-      "llm_confidence": "high",
-      "llm_flags": [],
-      "in_scope_reason": "AI 관련 공무원 연수 내용을 다룬 뉴스 기사이므로 정책·규범 문서 분류 범위에 포함하지 않습니다.",
-      "reject_reason": "news_press",
-      "issuer_level": "ministry",
-      "issuer_level_ko": "부처·규제기관",
-      "topics": [],
-      "topics_source": "llm"
     },
     {
       "id": "doc-98d205634a49",
@@ -144429,56 +144209,6 @@
       "topics_source": "llm",
       "issuer_level": "industry",
       "issuer_level_ko": "산업계·협회"
-    },
-    {
-      "id": "doc-a3ad3b046ab4",
-      "title": "AI를 국민에게",
-      "short_name": "AI를 국민에게",
-      "full_name": "",
-      "original_name": "AI for the People",
-      "doc_kind": "기타",
-      "doc_kind_raw": "AI policy initiatives, programmes and projects|Active",
-      "status": "Active",
-      "status_ko": "",
-      "canonical_url": "https://aiur.ai.gov.my/#/home",
-      "country": "Malaysia",
-      "country_ko": "말레이시아",
-      "flag": "🇲🇾",
-      "org": "National Artificial Intelligence Office (NAIO)",
-      "published": "2024-01-16",
-      "published_raw": "",
-      "summary": "‘AI untuk Rakyat’는 인공지능에 대한 대중의 이해와 인식을 높이기 위한 온라인 자기주도 학습 프로그램입니다. 말레이시아 전역의 다양한 연령대, 배경, 지역의 국민이 이용할 수 있도록 설계되었습니다. 원문 메타에는 AI 안전, 위험, 거버넌스 또는 규제에 관한 구체적 내용이 제시되지 않았습니다.",
-      "snippet": "‘AI untuk Rakyat’는 인공지능에 대한 대중의 이해와 인식을 높이기 위한 온라인 자기주도 학습 프로그램입니다. 말레이시아 전역의 다양한 연령대, 배경, 지역의 국민이 이용할 수 있도록 설계되었습니다. 원문 메타에는 AI 안전, 위험, 거버넌스 또는 규제에 관한 구체적 내용이 제시되지 않았습니다.",
-      "history": [
-        {
-          "date": "2025-07-09",
-          "label": "OECD 등록",
-          "url": "https://oecd.ai/en/dashboards/policy-initiatives/ai-for-the-people-6075",
-          "title": "AI for the People",
-          "item_id": "oecd-navigator-74"
-        }
-      ],
-      "sources": [
-        "oecd-navigator"
-      ],
-      "member_ids": [
-        "oecd-navigator-74"
-      ],
-      "member_count": 1,
-      "safety_score": -1,
-      "in_scope": false,
-      "safety_reasons": [
-        "-oecd-only"
-      ],
-      "llm_curated": true,
-      "llm_confidence": "high",
-      "llm_flags": [],
-      "in_scope_reason": "AI 대중 이해와 인식 제고를 위한 학습 프로그램이지만 AI 안전·위험·거버넌스·규제에 관한 구체적 내용은 제시되지 않았습니다.",
-      "reject_reason": "out_of_domain",
-      "issuer_level": "national",
-      "issuer_level_ko": "국가",
-      "topics": [],
-      "topics_source": "llm"
     },
     {
       "id": "doc-86c71aec7fbe",
@@ -186907,7 +186637,7 @@
       "id": "doc-2a915d97146e",
       "title": "IAAE 인공지능 윤리 헌장 (2021-01 개정)",
       "short_name": "IAAE 인공지능 윤리 헌장 (2021-01 개정)",
-      "full_name": "",
+      "full_name": "[IAAE] IAAE 인공지능 윤리 헌장_210111개정 (한글본)",
       "original_name": "IAAE 인공지능 윤리 헌장_210111개정 (영문본)",
       "doc_kind": "선언·성명",
       "doc_kind_raw": "IAAE",
@@ -195094,7 +194824,7 @@
       "id": "doc-c13711cf1bec",
       "title": "KAIEA 인공지능 윤리 헌장 (2019-12 개정)",
       "short_name": "KAIEA 인공지능 윤리 헌장 (2019-12 개정)",
-      "full_name": "[KAIEA] KAIEA 인공지능 윤리 헌장_191219개정 (한글본)",
+      "full_name": "",
       "original_name": "KAIEA 인공지능 윤리 헌장_191219개정 (영문본)",
       "doc_kind": "가이드라인·원칙",
       "doc_kind_raw": "KAIEA",

@@ -5,27 +5,27 @@
 - API: `https://api.oecdai.org/policy-initiatives`
 - 데이터: `items.json` · `items.csv`
 
-- 건수: **2558건**
+- 건수: **2553건**
 - 기간: 2000-10-31 ~ 2026-09-30
 
 ## 분류
 
 | 분류 | 건수 |
 |---|---:|
-| AI policy initiatives, programmes and projects | 1761 |
+| AI policy initiatives, programmes and projects | 1758 |
 | Regulations, guidelines and standards | 436 |
 | National – AI governance bodies or mechanisms | 152 |
 | AI Policy Frameworks and Initiatives (intergovernmental or supranational) | 107 |
-| National – Strategy | 94 |
+| National – Strategy | 92 |
 | AI Governance Bodies and Mechanisms (intergovernmental or supranational) | 8 |
 
 ## 연도
 
 | 연도 | 건수 |
 |---|---:|
-| 2026 | 247 |
-| 2025 | 1255 |
-| 2024 | 197 |
+| 2026 | 245 |
+| 2025 | 1253 |
+| 2024 | 196 |
 | 2023 | 168 |
 | 2022 | 111 |
 | 2021 | 151 |
@@ -400,10 +400,8 @@
 | 2023-05-03 | Regulations, guidelines and standards | [Bill No. 2338 of 2023](https://oecd.ai/en/dashboards/policy-initiatives/bill-no-2338-of-2023) | [원문](https://www25.senado.leg.br/web/atividade/materias/-/materia/157233) |
 | 2026-04-24 | National – Strategy | [National Artificial Intelligence Strategy 2025–2030](https://oecd.ai/en/dashboards/policy-initiatives/national-artificial-intelligence-strategy-2025-2030) |  |
 | 2026-04-24 | National – Strategy | [National Artificial Intelligence Strategy (ENIA)](https://oecd.ai/en/dashboards/policy-initiatives/national-artificial-intelligence-strategy-enia) |  |
-| 2026-04-24 | National – Strategy | [National Artificial Intelligence Roadmap (AI‑Rmap)](https://oecd.ai/en/dashboards/policy-initiatives/national-artificial-intelligence-roadmap-ai‑rmap) |  |
 | 2024-07-03 | National – Strategy | [National AI Strategy Roadmap 2.0 (NAISR 2.0)](https://oecd.ai/en/dashboards/policy-initiatives/national-ai-strategy-roadmap-20-naisr-20) | [원문](https://naisr.cair.ph/introduction/) |
 | 2025-07-08 | National – Strategy | [Cameroon’s National Artificial Intelligence Strategy (SNIA)](https://oecd.ai/en/dashboards/policy-initiatives/cameroons-national-artificial-intelligence-strategy-snia) | [원문](https://www.cameroononline.org/cameroon-unveils-seven-pillar-ai-strategy-to-become-africas-leading-hub-by-2040/) |
-| 2026-08-26 | National – Strategy | [AI Technology Action Plan 2026–2030](https://oecd.ai/en/dashboards/policy-initiatives/ai-technology-action-plan-2026-2030) | [원문](https://regulations.ai/regulations/malaysia-2026-01-ai-tech-action-plan) |
 | 2026-04-23 | National – Strategy | [Zimbabwe National Artificial Intelligence Strategy 2026–2030](https://oecd.ai/en/dashboards/policy-initiatives/zimbabwe-national-artificial-intelligence-strategy-2026-2030) |  |
 | 2026-04-23 | National – Strategy | [National Artificial Intelligence Strategy of Zambia 2024–2026](https://oecd.ai/en/dashboards/policy-initiatives/national-artificial-intelligence-strategy-of-zambia-2025-2027) |  |
 | 2026-04-23 | National – Strategy | [National Artificial Intelligence Strategy of Mauritania 2024–2029](https://oecd.ai/en/dashboards/policy-initiatives/national-artificial-intelligence-strategy-of-mauritania-2024-2029) |  |
@@ -1386,7 +1384,6 @@
 | 2020-04-03 | Regulations, guidelines and standards | [Trialling Automated Vehicle Technologies in Public](https://oecd.ai/en/dashboards/policy-initiatives/trialling-automated-vehicle-technologies-in-public-8114) | [원문](https://www.gov.uk/government/publications/trialling-automated-vehicle-technologies-in-public/code-of-practice-automated-vehicle-trialling) |
 | 2023-09-28 | AI policy initiatives, programmes and pr | [Transforming Education Through Technology Masterplan 2030](https://oecd.ai/en/dashboards/policy-initiatives/transforming-education-through-technology-masterplan-2030-3866) | [원문](https://www.moe.gov.sg/education-in-sg/educational-technology-journey/edtech-masterplan) |
 | 2025-07-09 | AI policy initiatives, programmes and pr | [Transformation of work because of AI](https://oecd.ai/en/dashboards/policy-initiatives/transformation-of-work-because-of-ai-8660) |  |
-| 2025-02-03 | AI policy initiatives, programmes and pr | [Training for Public Servants](https://oecd.ai/en/dashboards/policy-initiatives/training-for-public-servants-5421) | [원문](https://thesun.my/malaysia-news/public-service-continues-to-be-improved-through-digitalisation-ksn-KE13609407) |
 | 2025-07-09 | Regulations, guidelines and standards | [Towards an AI Strategy in Mexico: Harnessing the AI Revolution](https://oecd.ai/en/dashboards/policy-initiatives/towards-an-ai-strategy-in-mexico-harnessing-the-ai-revolution-5146) | [원문](https://www.cminds.co/copy-of-ai   https://oecd.ai/en/wonk/documents/mexico-towards-an-ai-strategy-in-mexico-2018) |
 | 2019-10-09 | Regulations, guidelines and standards | [Towards Trustworthy AI: Malta's Ethical AI Framework 2019](https://oecd.ai/en/dashboards/policy-initiatives/towards-trustworthy-ai-maltas-ethical-ai-framework-2019-7486) | [원문](https://malta.ai/wp-content/uploads/2019/10/Malta_Towards_Ethical_and_Trustworthy_AI_vFINAL.pdf) |
 | 2016-05-23 | AI policy initiatives, programmes and pr | [Three-Year Guidance for Internet Plus AI Plan](https://oecd.ai/en/dashboards/policy-initiatives/three-year-guidance-for-internet-plus-ai-plan-6769) | [원문](https://www.gov.cn/xinwen/2016-05/23/5075944/files/9cb49ac44cf341b29adf687b6857da34.pdf   https://cset.georgetown.edu/publication/internet-artificial-intelligence-three-year-action-and-implementation-plan/) |
@@ -1823,7 +1820,6 @@
 | 2025-07-09 | Regulations, guidelines and standards | [Malta Digital Innovation Authority`s Technology Assurance Sandbox](https://oecd.ai/en/dashboards/policy-initiatives/malta-digital-innovation-authoritys-technology-assurance-sandbox-8999) | [원문](https://www.mdia.gov.mt/technology-assurance-sandbox/) |
 | 2018-07-04 | National – AI governance bodies or mecha | [Malta Digital Innovation Authority](https://oecd.ai/en/dashboards/policy-initiatives/malta-digital-innovation-authority-7991) | [원문](https://www.mdia.gov.mt/) |
 | 2025-07-09 | AI policy initiatives, programmes and pr | [Maker Labs (Deneyap)](https://oecd.ai/en/dashboards/policy-initiatives/maker-labs-deneyap-6105) | [원문](https://www.deneyapturkiye.org/index.html) |
-| 2025-07-09 | AI policy initiatives, programmes and pr | [MY-AI Portal](https://oecd.ai/en/dashboards/policy-initiatives/my-ai-portal-2241) | [원문](my-ai.my) |
 | 2025-07-09 | AI policy initiatives, programmes and pr | [MSO OneService Chatbot](https://oecd.ai/en/dashboards/policy-initiatives/mso-oneservice-chatbot-4641) | [원문](https://www.tech.gov.sg/media/technews/developing-the-one-service-chatbot) |
 | 2018-05-10 | National – AI governance bodies or mecha | [ML and AI Subcommittee](https://oecd.ai/en/dashboards/policy-initiatives/ml-and-ai-subcommittee-5819) | [원문](https://ai.gov/) |
 | 2025-07-09 | AI policy initiatives, programmes and pr | [ML and AI Future Science Platform](https://oecd.ai/en/dashboards/policy-initiatives/ml-and-ai-future-science-platform-8718) | [원문](https://research.csiro.au/mlai-fsp/) |
@@ -2451,7 +2447,6 @@
 | 2025-07-09 | Regulations, guidelines and standards | [AI in Healthcare Guidelines](https://oecd.ai/en/dashboards/policy-initiatives/ai-in-healthcare-guidelines-6651) | [원문](https://www.moh.gov.sg/licensing-and-regulation/artificial-intelligence-in-healthcare) |
 | 2021-04-26 | AI Policy Frameworks and Initiatives (in | [AI in Education, Culture and the Audiovisual Sector](https://oecd.ai/en/dashboards/policy-initiatives/ai-in-education-culture-and-the-audiovisual-sector-1222) | [원문](https://www.europarl.europa.eu/doceo/document/A-9-2021-0127_EN.html) |
 | 2025-07-09 | AI policy initiatives, programmes and pr | [AI implementation plan for 2024 and the following years](https://oecd.ai/en/dashboards/policy-initiatives/ai-implementation-plan-for-2024-and-the-following-years-5281) | [원문](https://www.bmk.gv.at/themen/innovation/publikationen/ikt/ai/Umsetzungsplan-2024.html) |
-| 2024-01-16 | AI policy initiatives, programmes and pr | [AI for the People](https://oecd.ai/en/dashboards/policy-initiatives/ai-for-the-people-6075) | [원문](https://aiur.ai.gov.my/#/home) |
 | 2025-07-09 | Regulations, guidelines and standards | [AI for the Netherlands](https://oecd.ai/en/dashboards/policy-initiatives/ai-for-the-netherlands-7859) | [원문](https://ained.nl/) |
 | 2025-07-09 | AI policy initiatives, programmes and pr | [AI for Industry](https://oecd.ai/en/dashboards/policy-initiatives/ai-for-industry-3726) | [원문](https://learn.aisingapore.org/courses/ai-for-industry-part-1/) |
 | 2025-07-09 | AI policy initiatives, programmes and pr | [AI for Everyone](https://oecd.ai/en/dashboards/policy-initiatives/ai-for-everyone-9943) | [원문](https://learn.aisingapore.org/courses/ai-for-everyone-ai4e-v3/) |

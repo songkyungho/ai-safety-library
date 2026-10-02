@@ -2,27 +2,27 @@
   "collection": "oecd-navigator",
   "name": "OECD.AI Policy Navigator",
   "source": {
-    "count": 2558,
+    "count": 2553,
     "board": "Policy Navigator",
     "list_url": "https://oecd.ai/en/dashboards/policy-initiatives",
     "api": "https://api.oecdai.org/policy-initiatives",
-    "fetched": "2026-10-01",
+    "fetched": "2026-10-02",
     "note": "국가·국제기구 AI 정책 이니셔티브. 인용: OECD.AI (2025), OECD.AI Policy Navigator, https://oecd.ai/dashboards. gaiinCountry·sourceFiles 포함."
   },
-  "count": 2558,
+  "count": 2553,
   "categories": {
-    "AI policy initiatives, programmes and projects": 1761,
+    "AI policy initiatives, programmes and projects": 1758,
     "Regulations, guidelines and standards": 436,
     "National – AI governance bodies or mechanisms": 152,
-    "National – Strategy": 94,
+    "National – Strategy": 92,
     "AI Policy Frameworks and Initiatives (intergovernmental or supranational)": 107,
     "AI Governance Bodies and Mechanisms (intergovernmental or supranational)": 8
   },
   "years": {
-    "2026": 247,
+    "2026": 245,
     "2023": 168,
-    "2025": 1255,
-    "2024": 197,
+    "2025": 1253,
+    "2024": 196,
     "2020": 126,
     "2021": 151,
     "2019": 136,
@@ -9504,32 +9504,6 @@
       "date_source": "added_on"
     },
     {
-      "id": "oecd-navigator-2280",
-      "collection": "oecd-navigator",
-      "collection_name": "OECD.AI Policy Navigator",
-      "oecd_id": 2280,
-      "title": "National Artificial Intelligence Roadmap (AI‑Rmap)",
-      "original_name": "",
-      "org": "Ministry of Science, Technology and Innovation (MOSTI)",
-      "category": "National – Strategy",
-      "status": "Inactive – initiative complete",
-      "date": "2026-04-24",
-      "start_year": 2021,
-      "added_on": "2026-04-24",
-      "updated_on": "2026-04-28",
-      "page_url": "https://oecd.ai/en/dashboards/policy-initiatives/national-artificial-intelligence-roadmap-ai‑rmap",
-      "source_urls": [],
-      "source_files": [
-        "https://api.oecdai.org/storage/policy-initiatives/Apr2026/117ojpi25umocx4kog-Malaysia%20National%20AI%20Policy.pdf"
-      ],
-      "country": "Malaysia",
-      "country_code": "MYS",
-      "document_name": "",
-      "body": "Malaysia’s National Artificial Intelligence Roadmap (AI‑Rmap), led by the Ministry of Science, Technology and Innovation, covers 2021–2025. It aims to build a sustainable national AI innovation ecosystem to improve productivity, competitiveness and quality of life, focusing on governance, research and development, digital infrastructure, talent and AI adoption, guided by Responsible AI principles.\n\nMalaysia’s National Artificial Intelligence Roadmap (AI‑Rmap) sets out a national approach for the development and application of artificial intelligence over the period 2021 to 2025. The strategy is intended to guide and coordinate national AI efforts by providing a shared direction for government, academia, industry and society. It explicitly adopts a quadruple helix partnership of these stakeholders, which is described as essential to achieving a coherent and collaborative AI ecosystem.\nThe strategy is structured around six core axes: establishing AI governance, advancing AI research and development, escalating digital infrastructure, fostering AI talent, acculturating AI across society, and kick‑starting a national AI innovation ecosystem. These priorities are supported by initiatives such as the proposed AI Coordination and Implementation Unit, the AI Innovation Hub, and a range of programmes designed to align policies, projects and investments across sectors.\nThe roadmap identifies gaps including limited AI readiness, fragmented coordination, shortages of skilled talent, and early‑stage data and infrastructure capability. It seeks to address these through targeted R&D funding, talent development and reskilling initiatives, infrastructure‑related actions, and mechanisms to promote wider AI adoption. The strategy builds on existing national capabilities and focuses on AI use cases in sectors including agriculture and forestry, education, medical and healthcare, smart cities and transportation, and the public sector.\nGovernance and oversight are guided by explicitly stated Responsible AI principles, including fairness, inclusiveness, transparency, privacy and security, safety, and accountability. Implementation and refinement are supported through stakeholder surveys, virtual engagements and continuous feedback via an online platform. The AI‑Rmap is presented as a living strategy, intended to be updated through ongoing monitoring, horizon scanning and stakeholder input over the strategy period.",
-      "extent": "",
-      "date_source": "added_on"
-    },
-    {
       "id": "oecd-navigator-2282",
       "collection": "oecd-navigator",
       "collection_name": "OECD.AI Policy Navigator",
@@ -9584,33 +9558,6 @@
       "extent": "",
       "date_source": "html-meta",
       "date_resolved": "2025-07-08"
-    },
-    {
-      "id": "oecd-navigator-2281",
-      "collection": "oecd-navigator",
-      "collection_name": "OECD.AI Policy Navigator",
-      "oecd_id": 2281,
-      "title": "AI Technology Action Plan 2026–2030",
-      "original_name": "",
-      "org": "National Artificial Intelligence Office (NAIO), incubated under MyDIGITAL Corporation",
-      "category": "National – Strategy",
-      "status": "Proposed or under development",
-      "date": "2026-08-26",
-      "start_year": 2026,
-      "added_on": "2026-04-24",
-      "updated_on": "2026-04-28",
-      "page_url": "https://oecd.ai/en/dashboards/policy-initiatives/ai-technology-action-plan-2026-2030",
-      "source_urls": [
-        "https://regulations.ai/regulations/malaysia-2026-01-ai-tech-action-plan"
-      ],
-      "source_files": [],
-      "country": "Malaysia",
-      "country_code": "MYS",
-      "document_name": "",
-      "body": "The Plan's preparation phase (2024–2025) includes multi-stakeholder consultation and sectoral working groups. NAIO is responsible for convening these working groups as part of its ongoing coordination role. At the expert level, independent advisory committees covering ethics, safety and technical matters are proposed to review standards and complex cases, alongside an inter-agency AI Governance Council to provide strategic direction.",
-      "extent": "",
-      "date_source": "html-published-line",
-      "date_resolved": "2026-08-26"
     },
     {
       "id": "oecd-navigator-2274",
@@ -35956,33 +35903,6 @@
       "date_source": "added_on"
     },
     {
-      "id": "oecd-navigator-58",
-      "collection": "oecd-navigator",
-      "collection_name": "OECD.AI Policy Navigator",
-      "oecd_id": 58,
-      "title": "Training for Public Servants",
-      "original_name": "Training for Public Servants",
-      "org": "Ministry of Digital",
-      "category": "AI policy initiatives, programmes and projects",
-      "status": "Active",
-      "date": "2025-02-03",
-      "start_year": 2025,
-      "added_on": "2025-07-09",
-      "updated_on": "2025-12-25",
-      "page_url": "https://oecd.ai/en/dashboards/policy-initiatives/training-for-public-servants-5421",
-      "source_urls": [
-        "https://thesun.my/malaysia-news/public-service-continues-to-be-improved-through-digitalisation-ksn-KE13609407"
-      ],
-      "source_files": [],
-      "country": "Malaysia",
-      "country_code": "MYS",
-      "document_name": "Training for Public Servants",
-      "body": "The government is sending civil servants to India for a six-month course in artificial intelligence\n\nTo be determined",
-      "extent": "Non-binding",
-      "date_source": "html-meta",
-      "date_resolved": "2025-02-03"
-    },
-    {
       "id": "oecd-navigator-649",
       "collection": "oecd-navigator",
       "collection_name": "OECD.AI Policy Navigator",
@@ -48055,34 +47975,6 @@
       "country_code": "TUR",
       "document_name": "Deneyap Türkiye",
       "body": "The main purpose of Maker Labs is to equip young individuals with high technology skills. Secondary and high school students are trained for 36 months (free of charge) on several topics such as Design and Production, Robotics and Coding, Electronic Programming and the Internet of Things, Nanotechnology and Materials Science, and Aviation and Space Technologies at Maker Labs. We established 66 Maker Labs in 55 provinces of Turkiye by now.\n\nThe Ministry of Industry and Technology, the Ministry of Youth and Sports, the Scientific and Technological Research Council of Turkiye (TUBITAK), and the Turkish Technology Team Foundation are working in close cooperation for the establishment of 100 Maker Labs (DENEYAP) in Turkiye.The initiative has the following objectives:To provide training to more than 50.000 students with high technology skills, including AI by Maker Labs in 5 years.",
-      "extent": "Non-binding",
-      "date_source": "added_on"
-    },
-    {
-      "id": "oecd-navigator-85",
-      "collection": "oecd-navigator",
-      "collection_name": "OECD.AI Policy Navigator",
-      "oecd_id": 85,
-      "title": "MY-AI Portal",
-      "original_name": "MY-AI Portal",
-      "org": "Ministry of Science, Technology, and Innovation (MOSTI)",
-      "category": "AI policy initiatives, programmes and projects",
-      "status": "Active",
-      "date": "2025-07-09",
-      "start_year": 2024,
-      "added_on": "2025-07-09",
-      "updated_on": "2025-12-25",
-      "page_url": "https://oecd.ai/en/dashboards/policy-initiatives/my-ai-portal-2241",
-      "source_urls": [
-        "my-ai.my"
-      ],
-      "source_files": [
-        "https://api.oecdai.org/storage/policy-initiatives/Jul2025/fu_bumiufa5mq75ivm.pdf"
-      ],
-      "country": "Malaysia",
-      "country_code": "MYS",
-      "document_name": "MY-AI Portal",
-      "body": "This portal is the first national online platform dedicated to resources and issues related to Artificial Intelligence (AI).\n\nIt is developed, hosted, and maintained by MIMOS under MOSTI and serves as a strategic step in providing High Performance Computing (HPC) resources. The portal includes links to knowledge resources, training programmes, tools, and feedback channels for AI.",
       "extent": "Non-binding",
       "date_source": "added_on"
     },
@@ -65336,34 +65228,6 @@
       "body": "The AI implementation plan 2024 is a supplement to the national AIM AT 2030 strategy and at the same time a first interim report on it. The AI Implementation Plan 2024 further operationalises these goals, outlining concrete actions for all 12 ministries, ensuring that AI development aligns with sectoral priorities across various domains such as education, healthcare, and public administration.\n\nThe federal government's national strategy for artificial intelligence (AI) was published in 2021 under the title Artificial Intelligence Mission Austria 2030 (AIM AT 2030). In principle, the AI strategy is an agile strategy that can be further developed against the backdrop of rapidly changing technological, legal and social developments.In this sense, the AI Implementation Plan 2024 is not only a first interim report, but also a supplement to and specification of the AIM AT 2030. The implementation plan contains 47 measures and AI projects from all twelve federal ministries that are being implemented or planned in the short to medium term. The measures presented are based on four horizontal and four vertical priorities:Horizontal priorities (guiding principles of all measures): Trustworthiness of AI; Resilience and security of and through AI; Climate neutrality and sustainability of and through AI; Technology sovereignty and business locationVertical priorities (specific application domains): Research, innovation and business; Education and skills; Administration and citizen services; Governance and strategies.Examples of some of the 47 measures in the 2024 Implementation Plan include: AI focus in the 2025–27 performance agreement for public universities; Establishment of an “Austrian Competence Center for Digital Farming”; Preparation of an AI Hub Austria in the area of research and innovation; AI literacy focus of the digital competence offensive; Improvement of digital administrative services through AI-supported tools, such as testing an LLM chatbot for questions about ID Austria; Creating a suitable legal framework for AI in the healthcare sector.",
       "extent": "",
       "date_source": "added_on"
-    },
-    {
-      "id": "oecd-navigator-74",
-      "collection": "oecd-navigator",
-      "collection_name": "OECD.AI Policy Navigator",
-      "oecd_id": 74,
-      "title": "AI for the People",
-      "original_name": "AI untuk Rakyat",
-      "org": "National Artificial Intelligence Office (NAIO)",
-      "category": "AI policy initiatives, programmes and projects",
-      "status": "Active",
-      "date": "2024-01-16",
-      "start_year": 2024,
-      "added_on": "2025-07-09",
-      "updated_on": "2025-12-25",
-      "page_url": "https://oecd.ai/en/dashboards/policy-initiatives/ai-for-the-people-6075",
-      "source_urls": [
-        "https://aiur.ai.gov.my/#/home",
-        "https://www.mydigital.gov.my/ai-untuk-rakyat/"
-      ],
-      "source_files": [],
-      "country": "Malaysia",
-      "country_code": "MYS",
-      "document_name": "AI untuk Rakyat",
-      "body": "AI untuk Rakyat' is a self-learning online programme, crafted to enhance public understanding and awareness of Artificial Intelligence (AI).\n\nIt's designed to be accessible and engaging for the Rakyat of diverse age groups, backgrounds and geographical locations throughout Malaysia.",
-      "extent": "Non-binding",
-      "date_source": "llm",
-      "date_resolved": "2024-01-16"
     },
     {
       "id": "oecd-navigator-440",
