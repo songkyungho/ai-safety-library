@@ -1,6 +1,6 @@
 {
   "name": "AI 안전 라이브러리",
-  "updated": "2026-09-10",
+  "updated": "2026-10-02",
   "collections": {
     "mofa-governance": {
       "name": "외교부 글로벌 AI거버넌스 논의",
@@ -41,9 +41,9 @@
     },
     "iaae-ethics": {
       "name": "IAAE 연구자료실",
-      "count": 145,
+      "count": 147,
       "years": {
-        "2026": 21,
+        "2026": 23,
         "2025": 12,
         "2024": 9,
         "2023": 22,
@@ -53,6 +53,8 @@
         "2019": 8
       },
       "categories": {
+        "과기부": 2,
+        "교육부": 3,
         "NC문화재단": 2,
         "과기부/NIA/TTA/ETRI": 1,
         "교육부,한국대학교육협의회": 1,
@@ -70,9 +72,7 @@
         "ITU,CRC 등": 1,
         "교육부+교육청": 1,
         "한국교육과정평가원": 1,
-        "시청자미디어재단": 1,
-        "NIA": 1,
-        "한국연구재단": 1
+        "시청자미디어재단": 1
       }
     },
     "agora": {
@@ -116,12 +116,12 @@
     },
     "oecd-navigator": {
       "name": "OECD.AI Policy Navigator",
-      "count": 2512,
+      "count": 2553,
       "years": {
-        "2026": 201,
+        "2026": 245,
         "2023": 168,
-        "2025": 1255,
-        "2024": 197,
+        "2025": 1253,
+        "2024": 196,
         "2020": 126,
         "2021": 151,
         "2019": 136,
@@ -141,14 +141,14 @@
         "2004": 1
       },
       "categories": {
-        "AI policy initiatives, programmes and projects": 1723,
-        "National – AI governance bodies or mechanisms": 150,
-        "Regulations, guidelines and standards": 430,
-        "National – Strategy": 94,
+        "AI policy initiatives, programmes and projects": 1758,
+        "Regulations, guidelines and standards": 436,
+        "National – AI governance bodies or mechanisms": 152,
+        "National – Strategy": 92,
         "AI Policy Frameworks and Initiatives (intergovernmental or supranational)": 107,
         "AI Governance Bodies and Mechanisms (intergovernmental or supranational)": 8
       }
     }
   },
-  "total": 4005
+  "total": 4048
 }
