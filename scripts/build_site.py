@@ -285,12 +285,6 @@ def render_kind_trend(docs: list[dict], *, from_year: int = 2017) -> str:
             f'<tr style="--heat:{_esc(color)}">{"".join(cells)}</tr>'
         )
 
-    if pre_key in keys and year_hi:
-        span = f"{pre_label} + {from_year}–{year_hi}"
-    elif year_hi:
-        span = f"{from_year}–{year_hi}"
-    else:
-        span = pre_label
     legend = (
         '<div class="heatmap-legend">'
         "<span>0</span>"
@@ -303,8 +297,6 @@ def render_kind_trend(docs: list[dict], *, from_year: int = 2017) -> str:
         "</div>"
     )
     return f"""<section class="trend-section">
-  <h2 class="trend-title">문서종류별 연간 구성</h2>
-  <div class="trend-sub">{html_lib.escape(span)} · 셀은 그 종류·연도의 건수 · 줄 색은 리본</div>
   <div class="heatmap-scroll" id="kindHeatmap">
     <table class="heatmap" aria-label="문서종류별 연간 구성">
       <thead><tr>{"".join(head_cells)}</tr></thead>
@@ -517,8 +509,6 @@ button.filter-more:hover { color: var(--ink); border-color: var(--text-muted); }
 .meta-table td { white-space: pre-wrap; }
 
 .trend-section { margin: 0 0 24px; padding-bottom: 16px; border-bottom: 1px solid var(--hairline); }
-.trend-title { font-size: 1.05rem; letter-spacing: -0.3px; margin: 0 0 2px; color: var(--ink); }
-.trend-sub { color: var(--text-muted); font-size: 0.82rem; margin-bottom: 10px; }
 .heatmap-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 6px; max-width: 100%; }
 .heatmap { border-collapse: collapse; width: 100%; min-width: 760px; }
 .heatmap th, .heatmap td { text-align: center; padding: 0; }
