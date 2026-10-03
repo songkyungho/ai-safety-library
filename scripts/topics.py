@@ -1,32 +1,105 @@
-"""AI Safety Digest 주제 키워드를 라이브러리 문서에 재사용."""
+"""AI Safety Digest 주제 분류표를 라이브러리 문서에 재사용.
+
+다이제스트 코드를 import하지 않고, 다이제스트가 내보낸 knowledge/topics.json만 읽는다
+(경로: AI_SAFETY_DIGEST_TOPICS, 기본 ~/Code/ai-safety-pipeline/knowledge/topics.json).
+읽을 때마다 cache/digest_topics.json에 사본을 남겨, 다이제스트 폴더가 없거나 옮겨져도
+마지막 분류표로 빌드한다.
+"""
 from __future__ import annotations
 
-import importlib.util
+import json
+import os
+import re
 import sys
 from pathlib import Path
 
-_DIGEST_TOPICS = (
-    Path(__file__).resolve().parents[2] / "ai-safety-pipeline" / "topic_keywords.py"
+_ROOT = Path(__file__).resolve().parent.parent
+DIGEST_TOPICS_PATH = Path(
+    os.environ.get("AI_SAFETY_DIGEST_TOPICS")
+    or Path.home() / "Code" / "ai-safety-pipeline" / "knowledge" / "topics.json"
 )
+_SNAPSHOT = _ROOT / "cache" / "digest_topics.json"
+_SUPPORTED_SCHEMA = 1
 
 
-def _load_digest_topics():
-    if not _DIGEST_TOPICS.exists():
-        raise FileNotFoundError(f"동향 주제 모듈을 찾을 수 없습니다: {_DIGEST_TOPICS}")
-    spec = importlib.util.spec_from_file_location("digest_topic_keywords", _DIGEST_TOPICS)
-    if spec is None or spec.loader is None:
-        raise ImportError(str(_DIGEST_TOPICS))
-    mod = importlib.util.module_from_spec(spec)
-    # match_topics 등 상대 import 없이 단독 모듈
-    sys.modules[spec.name] = mod
-    spec.loader.exec_module(mod)
-    return mod
+def _load_topics() -> dict:
+    for path in (DIGEST_TOPICS_PATH, _SNAPSHOT):
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            continue
+        if data.get("schema_version") != _SUPPORTED_SCHEMA or not data.get("topics"):
+            print(f"topics: {path} 스키마 {data.get('schema_version')} — 건너뜀", file=sys.stderr)
+            continue
+        if path == DIGEST_TOPICS_PATH:
+            text = json.dumps(data, ensure_ascii=False, indent=1) + "\n"
+            try:
+                if not _SNAPSHOT.is_file() or _SNAPSHOT.read_text(encoding="utf-8") != text:
+                    _SNAPSHOT.parent.mkdir(parents=True, exist_ok=True)
+                    _SNAPSHOT.write_text(text, encoding="utf-8")
+            except OSError:
+                pass
+        else:
+            print(f"topics: 다이제스트 분류표 없음({DIGEST_TOPICS_PATH}) — 사본 사용", file=sys.stderr)
+        return data["topics"]
+    raise FileNotFoundError(f"주제 분류표를 찾을 수 없습니다: {DIGEST_TOPICS_PATH}, {_SNAPSHOT}")
 
 
-_MOD = _load_digest_topics()
-TOPIC_KEYWORDS = _MOD.TOPIC_KEYWORDS
-TOPIC_LABELS = _MOD.TOPIC_LABELS
-match_topics = _MOD.match_topics
+_TOPICS = _load_topics()
+TOPIC_KEYWORDS: dict[str, list[str]] = {
+    tid: list(t.get("keywords") or []) for tid, t in _TOPICS.items() if t.get("keywords")
+}
+TOPIC_LABELS: dict[str, tuple[str, str]] = {
+    tid: (t.get("label") or tid, t.get("icon") or "") for tid, t in _TOPICS.items()
+}
+
+# 매칭 규칙은 다이제스트 topic_keywords.match_topics와 같게 둔다(바꾸면 양쪽 함께).
+_HANGUL_RE = re.compile(r"[가-힣]")
+_REGEX_META_RE = re.compile(r"[(){}\[\]|?*+\\^$.]")
+_COMPILE_CACHE: dict[str, re.Pattern[str]] = {}
+
+
+def _is_korean(pattern: str) -> bool:
+    return bool(_HANGUL_RE.search(pattern))
+
+
+def _compiled(pattern: str) -> re.Pattern[str]:
+    """한글은 단어경계 없이, 영어는 단어경계로 감싼다. 메타문자가 없으면 이스케이프."""
+    cached = _COMPILE_CACHE.get(pattern)
+    if cached is not None:
+        return cached
+    has_meta = bool(_REGEX_META_RE.search(pattern))
+    body = pattern if has_meta else re.escape(pattern)
+    if _is_korean(pattern):
+        compiled = re.compile(body, re.IGNORECASE)
+    else:
+        compiled = re.compile(rf"\b(?:{body})\b", re.IGNORECASE)
+    _COMPILE_CACHE[pattern] = compiled
+    return compiled
+
+
+def match_topics(text: str, topic_keywords: dict[str, list[str]]) -> list[str]:
+    """text 안에서 매칭되는 모든 주제 슬러그(다중 태그). 공백 뺀 문자열에도 한 번 더 본다."""
+    if not text:
+        return []
+    compact = re.sub(r"\s+", "", text)
+    matched: list[str] = []
+    for topic, patterns in topic_keywords.items():
+        for pat in patterns:
+            try:
+                compiled = _compiled(pat)
+                if compiled.search(text) or compiled.search(compact):
+                    matched.append(topic)
+                    break
+                if _is_korean(pat) and not _REGEX_META_RE.search(pat):
+                    if re.sub(r"\s+", "", pat) in compact:
+                        matched.append(topic)
+                        break
+            except re.error:
+                if pat.lower() in text.lower() or re.sub(r"\s+", "", pat).lower() in compact.lower():
+                    matched.append(topic)
+                    break
+    return matched
 
 # 필터·표시 순서. 종류(doc_kind)와 겹치는 윤리·규범/법/가이드라인/표준은 쓰지 않는다.
 KIND_OVERLAP_TOPICS = frozenset({"norms", "law", "guideline", "standards"})

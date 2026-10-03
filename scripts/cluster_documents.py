@@ -142,8 +142,6 @@ def ensure_openrouter_key() -> str:
         Path.home() / ".ai_safety_daily_env",
         Path.home() / ".config" / "ai-safety" / "env",
         Path.home() / "ai_safety_daily_env",
-        ROOT.parent / "ai-safety-pipeline" / "ai_safety_daily_env",
-        ROOT.parent / "ai-safety-pipeline" / ".env.local",
     ):
         load_env_file(p)
         key = (os.environ.get("OPENROUTER_API_KEY") or "").strip()

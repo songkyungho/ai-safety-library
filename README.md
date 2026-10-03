@@ -65,7 +65,8 @@ Cursor/Claude에서 라이브러리를 검색할 때 쓰는 stdio MCP 서버가 
 - 설정·색인: [`mcp_server/README.md`](mcp_server/README.md)
 - 최초 1회: venv 설치 후 `python3 mcp_server/build_index.py`
 - **로그:** `/tmp/ai-safety-library-daily.out.log` · `.err.log`
-- **환경변수:** Digest의 `ai_safety_daily_env` (OpenRouter·텔레그램·`MOFA_COOKIE`) 재사용. 외교부 WAF 쿠키는 만료되면 브라우저에서 Cookie 헤더를 다시 넣는다. git에 커밋하지 말 것.
+- **환경변수:** `~/.config/ai-safety/env` (OpenRouter·텔레그램·`MOFA_COOKIE`, Digest와 같은 파일). 외교부 WAF 쿠키는 만료되면 브라우저에서 Cookie 헤더를 다시 넣는다. git에 커밋하지 말 것.
+- **Digest와의 연결:** Digest 코드는 import하지 않고 Digest가 내보낸 파일만 읽는다. 지금은 주제 분류표 `knowledge/topics.json` 하나(`AI_SAFETY_DIGEST_TOPICS`, 없으면 `cache/digest_topics.json` 사본). Digest는 이 저장소의 `documents.json`을 읽는다. 전체 표는 ai-safety-pipeline README "형제 저장소와 주고받는 파일".
 - **완료 알림:** 파이프라인 끝나면 텔레그램 한 통 (`PIPELINE_TELEGRAM=0`이면 생략)
 
 IAAE와 AIGL은 이 라이브러리에서만 보관한다. Digest로 신규분을 알리지 않는다.
