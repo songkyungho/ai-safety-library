@@ -15,6 +15,7 @@ from build_documents import build_documents  # noqa: E402
 from curate_llm import is_hollow_summary  # noqa: E402
 from issuer_levels import ISSUER_COLORS, ISSUER_LEVELS  # noqa: E402
 from library_common import write_json  # noqa: E402
+from norm_terrain import TERRAIN_CSS, terrain_html, terrain_js  # noqa: E402
 from ui_common import footer_html, page_chrome, safe_json  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -188,123 +189,6 @@ def enrich_keywords(docs: list[dict]) -> list[dict]:
     for d in docs:
         d["keywords"] = select_tag_keywords(d)
     return docs
-
-
-def _heat_level(n: int) -> int:
-    """HOME 업적 히트맵과 같은 5단. 라이브러리 건수에 맞춰 구간만 넓힌다."""
-    if n <= 0:
-        return 0
-    if n <= 9:
-        return 1
-    if n <= 24:
-        return 2
-    if n <= 49:
-        return 3
-    return 4
-
-
-def render_kind_trend(docs: list[dict], *, from_year: int = 2017) -> str:
-    """문서종류×연도 히트맵. 줄마다 리본색, 셀은 HOME 업적 표와 같은 밀도."""
-    from parse_meta import DOC_KINDS
-
-    by_key: dict[str, Counter] = {}
-    kind_totals: Counter = Counter()
-    pre_key = "pre"
-    pre_label = f"{from_year} 이전"
-    year_hi = 0
-    for d in docs:
-        pub = (d.get("published") or "").strip()
-        y = pub[:4]
-        if len(y) != 4 or not y.isdigit():
-            continue
-        yi = int(y)
-        kind = d.get("doc_kind") or "기타"
-        if yi < from_year:
-            key = pre_key
-        else:
-            key = y
-            if yi > year_hi:
-                year_hi = yi
-        by_key.setdefault(key, Counter())[kind] += 1
-        kind_totals[kind] += 1
-    if not by_key:
-        return ""
-
-    keys: list[str] = []
-    if pre_key in by_key:
-        keys.append(pre_key)
-    if year_hi:
-        keys.extend(f"{y:04d}" for y in range(from_year, year_hi + 1))
-    elif not keys:
-        return ""
-
-    series = [k for k in DOC_KINDS if kind_totals.get(k)]
-    if not series:
-        return ""
-
-    def col_label(key: str) -> str:
-        return "이전" if key == pre_key else key
-
-    def col_title(key: str) -> str:
-        return pre_label if key == pre_key else key
-
-    head_cells = ['<th scope="col"></th>']
-    for key in keys:
-        lab = col_label(key)
-        year_attr = f' data-year="{_esc(key)}"' if key != pre_key else ""
-        head_cells.append(
-            f'<th scope="col"{year_attr} title="{_esc(col_title(key))}">{_esc(lab)}</th>'
-        )
-    head_cells.append('<th scope="col" class="total-head">합계</th>')
-
-    body_rows: list[str] = []
-    for kind in series:
-        color = KIND_COLORS.get(kind, KIND_COLORS["기타"])[0]
-        cells: list[str] = [
-            f'<th scope="row"><button type="button" class="heat-row" data-kind="{_esc(kind)}">'
-            f"{_esc(kind)}</button></th>"
-        ]
-        for key in keys:
-            v = int(by_key.get(key, Counter()).get(kind) or 0)
-            lv = _heat_level(v)
-            tip = f"{col_label(key)} · {kind}: {v}건"
-            if v:
-                year_attr = f' data-year="{_esc(key)}"' if key != pre_key else ""
-                cells.append(
-                    f"<td><button type=\"button\" class=\"heat-cell c{lv}\" "
-                    f'data-kind="{_esc(kind)}"{year_attr} title="{_esc(tip)}">{v}</button></td>'
-                )
-            else:
-                cells.append(
-                    f'<td><div class="heat-cell c0" title="{_esc(tip)}"></div></td>'
-                )
-        cells.append(
-            f'<td class="total-cell"><div class="heat-cell total">{kind_totals[kind]}</div></td>'
-        )
-        body_rows.append(
-            f'<tr style="--heat:{_esc(color)}">{"".join(cells)}</tr>'
-        )
-
-    legend = (
-        '<div class="heatmap-legend">'
-        "<span>0</span>"
-        '<span class="heat-cell c0"></span>'
-        '<span class="heat-cell c1"></span>'
-        '<span class="heat-cell c2"></span>'
-        '<span class="heat-cell c3"></span>'
-        '<span class="heat-cell c4"></span>'
-        "<span>50건 이상</span>"
-        "</div>"
-    )
-    return f"""<section class="trend-section">
-  <div class="heatmap-scroll" id="kindHeatmap">
-    <table class="heatmap" aria-label="문서종류별 연간 구성">
-      <thead><tr>{"".join(head_cells)}</tr></thead>
-      <tbody>{"".join(body_rows)}</tbody>
-    </table>
-  </div>
-  {legend}
-</section>"""
 
 
 EXTRA_CSS = """
@@ -508,47 +392,6 @@ button.filter-more:hover { color: var(--ink); border-color: var(--text-muted); }
 .meta-table th { width: 7em; vertical-align: top; color: var(--text-secondary); font-weight: 500; }
 .meta-table td { white-space: pre-wrap; }
 
-.trend-section { margin: 0 0 24px; padding-bottom: 16px; border-bottom: 1px solid var(--hairline); }
-.heatmap-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 6px; max-width: 100%; }
-.heatmap { border-collapse: collapse; width: 100%; min-width: 760px; }
-.heatmap th, .heatmap td { text-align: center; padding: 0; }
-.heatmap thead th {
-  color: var(--text-muted); padding: 0 0 8px;
-  font-size: 0.68rem; font-weight: 400; font-variant-numeric: tabular-nums;
-}
-.heatmap thead th:first-child { text-align: left; }
-.heatmap tbody th {
-  text-align: left; white-space: nowrap; border-top: 1px solid var(--hairline);
-  padding-right: 14px; font-size: 0.76rem; font-weight: 600;
-}
-.heatmap tbody tr:first-child th, .heatmap tbody tr:first-child td { border-top: 0; }
-.heatmap tbody td { border-top: 1px solid var(--hairline); padding: 3px; }
-.heat-cell {
-  font-variant-numeric: tabular-nums; border-radius: 4px;
-  justify-content: center; align-items: center; height: 28px;
-  font-size: 0.7rem; font-weight: 600; display: flex; width: 100%; min-width: 28px;
-}
-button.heat-cell, button.heat-row {
-  border: 0; background: transparent; font: inherit; cursor: pointer; color: inherit;
-}
-button.heat-row {
-  font-size: 0.76rem; font-weight: 600; color: var(--heat); padding: 0; text-align: left;
-}
-button.heat-cell { font-size: 0.7rem; font-weight: 600; }
-.heat-cell.c0 { background: var(--surface-2); color: var(--hairline); }
-.heat-cell.c1 { background: color-mix(in srgb, var(--heat) 18%, var(--surface-1)); color: var(--heat); }
-.heat-cell.c2 { background: color-mix(in srgb, var(--heat) 38%, var(--surface-1)); color: var(--heat); }
-.heat-cell.c3 { color: #fff; background: color-mix(in srgb, var(--heat) 62%, var(--surface-1)); }
-.heat-cell.c4 { color: #fff; background: color-mix(in srgb, var(--heat) 88%, var(--surface-1)); }
-.heat-cell.total { color: var(--ink); background: transparent; font-size: 0.78rem; font-weight: 700; }
-.heatmap thead th.total-head, .heatmap tbody td.total-cell { border-left: 2px solid var(--ink); }
-button.heat-cell:hover, button.heat-row:hover { outline: 1px solid color-mix(in srgb, var(--heat) 45%, var(--hairline)); outline-offset: 1px; }
-.heatmap-legend {
-  --heat: var(--navy, #3a5270);
-  color: var(--text-muted); display: flex; align-items: center; gap: 8px;
-  margin-top: 14px; font-size: 0.68rem;
-}
-.heatmap-legend .heat-cell { width: 22px; height: 16px; min-width: 22px; }
 .sort-toggle.filter-toolbar button.filter-chip.active {
   border-color: var(--navy, var(--accent-focus));
   color: var(--navy, var(--accent-focus));
@@ -850,7 +693,7 @@ def render_index(docs: list[dict], index: dict, *, total_raw: int = 0, out_count
             f'style="--topic:{_esc(color)}">{prefix}{_esc(lab)}'
             f'<span class="n">{n}</span></button>'
         )
-    trend_html = render_kind_trend(docs)
+    trend_html = terrain_html()
     from ui_common import omnibox_html
 
     body = f"""
@@ -881,6 +724,7 @@ def render_index(docs: list[dict], index: dict, *, total_raw: int = 0, out_count
   });
 })();
 """
+    terrain_script = terrain_js(KIND_COLORS)
     js = f"""
 <script id="docs-data" type="application/json">{safe_json(docs)}</script>
 <script>
@@ -889,7 +733,7 @@ const KIND_COLORS = {kind_color_json};
 const ISSUER_COLORS = {issuer_color_json};
 const SOURCE_META = {source_meta_json};
 const CURRENT_YM = {TODAY[:7]!r};
-const state = {{ q: '', source: '', country: '', kind: '', issuer: '', topic: '', monthOpen: {{}}, monthKeys: [], yearKeys: [] }};
+const state = {{ q: '', source: '', country: '', kind: '', issuer: '', topic: '', terrain: null, monthOpen: {{}}, monthKeys: [], yearKeys: [] }};
 const byId = Object.fromEntries(DOCS.map(d => [d.id, d]));
 
 function escapeHtml(s) {{
@@ -949,6 +793,7 @@ function visible() {{
     if (state.kind && (d.doc_kind || '기타') !== state.kind) return false;
     if (state.issuer && (d.issuer_level || '') !== state.issuer) return false;
     if (state.topic && !hasTopic(d, state.topic)) return false;
+    if (state.terrain && window.ntMatches && !window.ntMatches(d)) return false;
     if (!q) return true;
     return hay(d).includes(q);
   }});
@@ -1124,24 +969,7 @@ bindFilter('issuerToggle', 'issuer');
 bindFilter('countryToggle', 'country');
 bindFilter('kindToggle', 'kind');
 bindFilter('topicToggle', 'topic');
-(function bindKindHeatmap() {{
-  const wrap = document.getElementById('kindHeatmap');
-  if (!wrap) return;
-  wrap.addEventListener('click', ev => {{
-    const cell = ev.target.closest('[data-kind], th[data-year]');
-    if (!cell) return;
-    const kind = cell.dataset.kind || '';
-    const year = cell.dataset.year || '';
-    if (kind) {{
-      state.kind = kind;
-      document.getElementById('kindToggle').querySelectorAll('button[data-kind]').forEach(b => {{
-        b.classList.toggle('active', (b.dataset.kind || '') === state.kind);
-      }});
-      renderList();
-    }}
-    if (/^\\d{{4}}$/.test(year)) jumpYear(year);
-  }});
-}})();
+{terrain_script}
 document.getElementById('listView').addEventListener('click', ev => {{
   if (ev.target.closest('a')) return;
   const stag = ev.target.closest('.source-tag[data-source]');
@@ -1233,7 +1061,7 @@ document.getElementById('yearNav').addEventListener('click', ev => {{
     return page(
         "index.html",
         "AI 안전 라이브러리",
-        "",
+        TERRAIN_CSS,
         body,
         js,
         index,
