@@ -11,6 +11,8 @@ NAV_RIGHT = [
 ]
 DIGEST_URL = "https://songkyungho.github.io/ai-safety-digest/"
 DIGEST_LABEL = "AI 안전 다이제스트"
+RESEARCH_URL = "https://songkyungho.github.io/ai-safety-research/"
+RESEARCH_LABEL = "AI 안전 연구"
 GLOSSARY_URL = "https://songkyungho.github.io/ai-safety-glossary/"
 GLOSSARY_LABEL = "AI 안전 용어집"
 NAV_ITEMS = NAV_RIGHT
@@ -211,6 +213,7 @@ def nav_html(current: str = "", *, rel_prefix: str = "") -> str:
     left = (
         _nav_item(DIGEST_URL, DIGEST_LABEL, active=False, rel_prefix="")
         + _nav_item("index.html", "AI 안전 라이브러리", active=True, rel_prefix=rel_prefix)
+        + _nav_item(RESEARCH_URL, RESEARCH_LABEL, active=False, rel_prefix="")
         + _nav_item(GLOSSARY_URL, GLOSSARY_LABEL, active=False, rel_prefix="")
     )
     return (
