@@ -1,0 +1,6 @@
+{
+  "list_url": "https://www.techieray.com/GlobalAIRegulationTracker",
+  "via": "AI Safety Digest가 내보낸 knowledge/ai_safety_corpus.jsonl (source=GlobalAIRegTracker)",
+  "fetched": "2026-10-03",
+  "note": "트래커 항목 중 제도 원문(1차 출처)을 가리키는 것만. 판정·매칭은 cache/regtracker_judge.json."
+}

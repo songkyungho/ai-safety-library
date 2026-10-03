@@ -197,6 +197,8 @@ def history_label(item: dict) -> str:
         return "DPA 기록"
     if col == "aigl":
         return "AIGL 게시"
+    if col == "regtracker":
+        return f"규제 트래커 · {item.get('category') or '기록'}"
     if col == "lab-policies":
         return "개발사 게시"
     if col == "derived-splits":
@@ -286,6 +288,19 @@ def build_documents(*, skip_instrument_merge: bool = False) -> list[dict]:
                 groups[f"item:{item_id}"].append(it)
             continue
         groups[f"url:{nu}"].append(it)
+
+    # same_as: 수집 단계에서 같은 제도로 판정해 기존 항목을 가리킨 항목(규제 트래커)은
+    # 그 항목의 그룹으로 옮긴다. 대상이 없어졌으면 제자리에 둔다.
+    group_of = {m.get("id"): g for g, ms in groups.items() for m in ms}
+    for g, ms in list(groups.items()):
+        for m in list(ms):
+            target = group_of.get(m.get("same_as") or "")
+            if target and target != g:
+                ms.remove(m)
+                groups[target].append(m)
+                group_of[m.get("id")] = target
+        if not ms:
+            del groups[g]
 
     # Attach parent curator records to derived-split groups (history only)
     parent_items: dict[str, dict] = {}

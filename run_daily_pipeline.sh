@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# 일일 라이브러리 갱신: OECD 수집 → 외교부 → IAAE 보강 → 큐레이션 → 사이트 빌드 → 텔레그램 요약
+# 일일 라이브러리 갱신: OECD 수집 → 외교부 → IAAE 보강 → 규제 트래커 → 큐레이션 → 사이트 빌드 → 텔레그램 요약
 # 스케줄: launchd com.user.ai-safety-library-daily (매일 09:00)
 #
 # 실행: ./run_daily_pipeline.sh
@@ -152,6 +152,12 @@ _run_step "2" "IAAE 목록 수집" \
 
 _run_step "3" "IAAE 원문 보강" \
   python3 scripts/enrich_iaae.py
+
+# 다이제스트가 내보낸 코퍼스(knowledge/ai_safety_corpus.jsonl)의 Global AI Regulation Tracker 항목 중
+# 제도 원문만 받는다. 판정·매칭은 LIBRARY_TRACKER_MODEL(기본 Sonnet 5.5). 다이제스트는 10:00·22:00에
+# 돌아서, 09:00 실행은 전날 22:00 내보내기를 읽는다.
+_run_step "1d" "규제 트래커 (다이제스트 내보내기)" \
+  python3 scripts/ingest_regtracker.py --limit "${LIBRARY_TRACKER_LIMIT:-60}"
 
 # 수집 전 스냅샷에 없던 member만 큐레이션 (이미 medium/high 캐시는 스킵)
 _run_step "4" "LLM 큐레이션 (신규만)" \

@@ -19,6 +19,7 @@ COLLECTIONS = [
     ("dpa-ai", "DPA Regulating AI"),
     ("aigl", "AI Governance Library"),
     ("lab-policies", "개발사 프론티어 안전 정책"),
+    ("regtracker", "Global AI Regulation Tracker"),
     ("derived-splits", "묶음 분리"),
 ]
 
@@ -31,6 +32,7 @@ SOURCE_RIBBON: list[tuple[str, str, str]] = [
     ("dpa-ai", "DPA", "#0f766e"),
     ("aigl", "AIGL", "#9f1239"),
     ("lab-policies", "개발사", "#c2410c"),
+    ("regtracker", "규제 트래커", "#a16207"),
 ]
 SOURCE_LABEL = {k: lab for k, lab, _ in SOURCE_RIBBON}
 SOURCE_COLOR = {k: color for k, _, color in SOURCE_RIBBON}
@@ -940,6 +942,8 @@ def pick_group_canonical(
     scored: dict[str, tuple[int, str]] = {}
     curator_fallback = ""
     for m in members:
+        if m.get("link_type") == "announcement" and len(members) > 1:
+            continue  # 규제 트래커의 보도자료 링크는 이력에만 쓴다
         urls = list(candidate_originals(m))
         page = (m.get("page_url") or "").strip()
         if page and is_http_url(page) and not is_bad_original(page):

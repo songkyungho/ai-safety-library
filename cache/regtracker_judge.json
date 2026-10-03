@@ -1,0 +1,4364 @@
+{
+  "https://bsv.admin.ch/fr/newnsb/NJ04UgpFFUoA": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "스위스 연방평의회가 채택한 연방행정 내 AI·자동화 보고서라는 특정 정책보고서를 다루며, 링크는 bsv.admin.ch(연방사회보험청)가 이를 알리는 공식 발표 페이지로 보인다.",
+      "instrument_name": "Report on AI and automation in federal administration",
+      "name_ko": "스위스 연방행정 AI·자동화 보고서",
+      "doc_kind": "정책보고서",
+      "stage": "adopted",
+      "country": "Switzerland",
+      "country_ko": "스위스"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "스위스 연방행정의 AI·자동화 보고서와 동일한 제도는 후보에 없으며, 스위스 AI 가이드라인(2020)이나 부처 간 AI 작업반 등은 별개의 문서·기구이다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://sil.gobernacion.gob.mx/movil?pg=msil%2FMMinuto%2Fasunto%2F5088449": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "AI·디지털 도구로 만든 성적 자료를 처벌하는 멕시코 연방 형법 개정안이라는 특정 법안을 다루며, 링크는 멕시코 입법정보시스템(SIL)의 해당 안건 정보 페이지다.",
+      "instrument_name": "Amendments to the Federal Criminal Code on AI-generated sexual abuse material",
+      "name_ko": "멕시코 AI 생성 성적 학대물 연방 형법 개정안",
+      "doc_kind": "법안",
+      "stage": "passed",
+      "country": "Mexico",
+      "country_ko": "멕시코"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "멕시코 연방 형법의 AI 생성 성적 학대물 개정안과 같은 제도는 후보에 없다. 호주·미국 후보는 관할이 다르고, 멕시코 후보는 모두 AI 전략·지침·기구 문서라 형법 개정안과 무관하다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://gov.uk/government/publications/crime-and-policing-act-2026-factsheets/crime-and-policing-act-2026-child-sexual-abuse-material-factsheet": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "영국 범죄·치안법 2026이라는 특정 법률의 AI 생성 CSAM 관련 조항을 gov.uk가 소개하는 공식 팩트시트로, 법 원문이 아니라 정부가 제도를 알리는 발표 자료이다.",
+      "instrument_name": "Crime and Policing Act 2026",
+      "name_ko": "영국 범죄·치안법 2026",
+      "doc_kind": "법",
+      "stage": "enacted",
+      "country": "United Kingdom",
+      "country_ko": "영국"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "후보 중 영국 범죄·치안법 2026 또는 그 AI 생성 CSAM 조항과 같은 제도는 없고, 영국 후보들은 AI 전략·기구·가이드라인 등 전혀 다른 제도다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://bundestag.de/presse/hib/kurzmeldungen-1222050": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "독일 정부가 이민 행정에서의 AI 활용 법적·개인정보 보호 체계를 담은 특정 법안을 연방의회에 제출했고, 링크는 연방의회(Bundestag)의 hib 단신으로 그 법안을 소개하는 공식 발표문이다.",
+      "instrument_name": "Draft law on the use of artificial intelligence in migration administration",
+      "name_ko": "독일 이민 행정 AI 활용 법안",
+      "doc_kind": "법안",
+      "stage": "introduced",
+      "country": "Germany",
+      "country_ko": "독일"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "독일 이민 행정 AI 활용 법안과 같은 제도인 후보는 없고, 독일 연방행정 AI 가이드라인, 사법부 AI 전략, EU AI법 시행법 등은 모두 대상과 성격이 다른 별개 제도다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://hawley.senate.gov/senators-hawley-murphy-announce-bipartisan-ai-agent-accountability-act": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "헤드라인과 URL상 홀리·머피 상원의원이 발표한 특정 법안(AI Agent Accountability Act)을 다루며, 링크는 의원실이 해당 법안을 알리는 공식 보도자료이다.",
+      "instrument_name": "AI Agent Accountability Act",
+      "name_ko": "미국 AI 에이전트 책임법안",
+      "doc_kind": "법안",
+      "stage": "introduced",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "새 항목은 Hawley·Murphy 상원의원이 발표한 미국 AI Agent Accountability Act인데, 후보 중 이 법안을 다루는 문서는 없고 이름이 비슷한 다른 법안·타국 에이전트 관련 항목만 있다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://oaic.gov.au/news/media-centre/new-resources-on-transparency-for-use-of-ai-and-automated-decision-making": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "OAIC가 자동 의사결정 투명성 의무 이행을 위한 APP 1 지침 개정본과 관련 자료를 공개한 사실을 발급 기관이 직접 알리는 보도자료이다.",
+      "instrument_name": "Australian Privacy Principles Guidelines: APP 1 (revised) and resources on transparency for automated decision-making",
+      "name_ko": "호주 APP 1 지침 개정본 및 자동 의사결정 투명성 자료",
+      "doc_kind": "가이드라인·원칙",
+      "stage": "published",
+      "country": "Australia",
+      "country_ko": "호주"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "새 항목은 OAIC의 APP 1 지침 개정본 및 자동 의사결정 투명성 자료인데, 후보 중에는 같은 제도가 없고 호주 상용 AI 개인정보 지침이나 Privacy Act 검토 보고서 정부 응답은 별개의 문서다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://whitehouse.gov/fact-sheets/2026/09/fact-sheet-president-donald-j-trump-inaugurates-the-era-of-super-intelligence": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "행정부 공식 용어를 AI에서 SI로 바꾸고 SI의 연방 정의 제안을 지시하는 특정 행정명령 하나를 다루며, 링크는 백악관이 이를 알리는 공식 팩트시트(보도자료)이다.",
+      "instrument_name": "Executive Order replacing \"Artificial Intelligence\" with \"Super Intelligence\"",
+      "name_ko": "미국 AI→SI 용어 대체 행정명령",
+      "doc_kind": "행정규칙",
+      "stage": "enacted",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "AI를 SI로 대체하는 2026년 9월 행정명령은 후보 중 어느 문서와도 같은 제도가 아니며, 제네시스 미션 등 기존 행정명령은 요약에서 배경으로 언급될 뿐 별개의 제도다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://washingtonpost.com/technology/2026/09/28/chatgpt-maker-openai-scraps-release-astra-61-model-over-safety": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "OpenAI가 특정 모델의 출시를 취소했다는 기업 동향 보도이며, 법·정책·가이드라인 등 특정 제도를 다루지 않고 링크도 언론 보도(Washington Post)이다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-232mr-asic-releases-2026-27-supervisory-priorities-to-support-better-regulation-and-give-industry-greater-certainty": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "ASIC이 2026~27년 감독 우선순위라는 특정 문서를 발표했고, 링크는 발급 기관인 ASIC의 공식 보도자료로 그 문서를 소개하는 페이지다.",
+      "instrument_name": "ASIC 2026–27 Supervisory Priorities",
+      "name_ko": "호주 ASIC 2026~27 감독 우선순위",
+      "doc_kind": "전략·정책",
+      "stage": "published",
+      "country": "Australia",
+      "country_ko": "호주"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "ASIC의 2026~27 감독 우선순위는 금융 규제기관의 별개 문서인데, 후보 중에는 이를 다루는 항목이 없고 '호주 AI 소비자 안전 우선과제' 등은 발행 주체와 내용이 다른 제도다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://mimit.gov.it/it/notizie-stampa/italia-azerbaigian-colloquio-telefonico-urso-jabbarov": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "이탈리아와 아제르바이잔 경제·산업 장관의 화상 회의 소식으로, 특정한 제도가 아니라 협력 분야를 논의한 회의 결과이며 링크도 부처의 통화 보도 페이지다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Italy",
+      "country_ko": "이탈리아"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://whitehouse.gov/presidential-actions/2026/09/streamlining-access-to-government-services-through-america-gov": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "백악관 대통령 조치 페이지로 연결되며, 연방 서비스 통합 포털 America.gov 구축을 지시하는 특정 행정명령 자체를 다룬다.",
+      "instrument_name": "Streamlining Access to Government Services Through America.gov",
+      "name_ko": "미국 America.gov 통합 정부서비스 접근 간소화 행정명령",
+      "doc_kind": "행정규칙",
+      "stage": "enacted",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "America.gov 통합 정부서비스 포털 행정명령(2026)과 동일한 제도를 다루는 후보가 없으며, 다른 미국 행정명령들과 앨버타·코르도바 정부서비스 AI는 모두 별개의 제도다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://truthsocial.com/@realDonaldTrump/posts/117356435739432952?attachment_id=117356434517531231&status_id=117356435739432952": {
+    "judge": {
+      "accept": false,
+      "is_instrument": true,
+      "link_type": "other",
+      "reason": "헤드라인이 서명된 특정 합의문인 'White House Accord on Super Intelligence'를 명시하지만, 링크는 대통령 개인 소셜미디어 게시물이라 제도 원문이나 공식 보도자료 페이지가 아니다.",
+      "instrument_name": "White House Accord on Super Intelligence",
+      "name_ko": "미국 백악관 초지능 합의문",
+      "doc_kind": "선언·성명",
+      "stage": "adopted",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://mddi.gov.sg/newsroom/opening-address-by-sms-tan-kiat-how-at-tech-week-singapore": {
+    "judge": {
+      "accept": false,
+      "is_instrument": true,
+      "link_type": "other",
+      "reason": "항목은 싱가포르가 의회에 제출할 예정인 디지털 인프라 법안이라는 특정한 하나의 법안을 다루지만, 링크는 정무장관의 Tech Week 개막 연설문이라 제도 원문이나 공식 소개 페이지가 아니다.",
+      "instrument_name": "Digital Infrastructure Bill",
+      "name_ko": "싱가포르 디지털 인프라 법안",
+      "doc_kind": "법안",
+      "stage": "other",
+      "country": "Singapore",
+      "country_ko": "싱가포르"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://ar.admin.ch/de/newnsb/IDbYyHAscVjz": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "스위스와 독일이 연구·혁신 협력을 위해 체결한 특정 의향서(MoU)를 다루며, 링크는 스위스 연방 행정부가 이를 알리는 공식 발표문이다.",
+      "instrument_name": "Switzerland–Germany Cooperation Letter on Research and Innovation",
+      "name_ko": "스위스–독일 연구·혁신 협력 의향서",
+      "doc_kind": "선언·성명",
+      "stage": "adopted",
+      "country": "Switzerland, Germany",
+      "country_ko": "스위스·독일"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "스위스–독일 양국 연구·혁신 협력 의향서와 같은 제도인 후보는 없으며, 비슷해 보이는 후보들은 모두 관할이나 대상이 다른 별개의 제도다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://protectivesecurity.gov.au/publications-library/direction-002-2026-strengthening-commonwealth-cyber-posture-against-ai-enabled-risks": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "호주 정부 기관에 AI 기반 사이버 위험 대응을 지시하는 특정 Protective Security 지침(Direction 002-2026)을 다루며, 링크도 그 지침 자체의 공식 페이지다.",
+      "instrument_name": "Direction 002-2026: Strengthening Commonwealth Cyber Posture Against AI-Enabled Risks",
+      "name_ko": "호주 지침 002-2026 (AI 기반 사이버 위험 대비 연방 사이버 태세 강화)",
+      "doc_kind": "행정규칙",
+      "stage": "published",
+      "country": "Australia",
+      "country_ko": "호주"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "새 항목은 호주 연방 정부기관에 내려진 Direction 002-2026이라는 별개의 행정 지침인데, 후보 중에는 이 지침 자체나 단계만 다른 기록이 없고 호주 프론티어 모델·사이버보안 조사(doc-077853708e05)와 AI·사이버 위험 모델 조항(doc-33329965a16b) 등은 모두 다른 문서다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://mois.go.kr/frt/bbs/type010/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000008&nttId=129798": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "법정 협의회의 출범과 첫 회의 논의 내용을 전하는 소식이며, 제도 원문이나 제도 자체를 소개하는 문서가 아니라 회의 결과 보도에 해당한다.",
+      "instrument_name": "AI and data administration council",
+      "name_ko": "대한민국 범정부 AI·데이터행정 책임관 협의회",
+      "doc_kind": "기구·제도",
+      "stage": "other",
+      "country": "South Korea",
+      "country_ko": "대한민국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://fmino.gov.ng/2027-elections-information-minister-calls-for-responsible-broadcasting-to-protect-democracy": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "나이지리아 정보부 장관이 2027년 선거를 앞두고 방송사에 책임 있는 보도를 촉구한 내용으로, 특정한 제도 문서가 아니라 정책 방향 언급·촉구이며 링크도 장관 발언 중심의 페이지다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Nigeria",
+      "country_ko": "나이지리아"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://gov.uk/guidance/using-ai-in-adult-social-care": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "영국 정부가 성인 사회복지 분야의 AI 활용에 관해 발표한 가이드라인 하나를 다루며, 링크도 gov.uk의 해당 지침 문서 페이지이다.",
+      "instrument_name": "Using AI in adult social care",
+      "name_ko": "영국 성인 사회복지 AI 활용 지침",
+      "doc_kind": "가이드라인·원칙",
+      "stage": "published",
+      "country": "United Kingdom",
+      "country_ko": "영국"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "영국 성인 사회복지 분야 AI 활용 지침과 같은 제도인 후보가 없다. 영국 공공부문 AI 활용 가이드(doc-a225cc99bc15)는 분야 범위와 발표 시기가 다른 별개의 문서다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://theaustralian.com.au/world/julia-gillard-urges-governments-to-keep-building-on-regulation-of-ai/news-story/ee5f2e692e309e4ca0d1076b090dee95": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "전 총리가 정부에 AI 규제 강화를 촉구했다는 언론 보도로, 특정한 하나의 제도를 다루지 않는다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Australia",
+      "country_ko": "호주"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://dta.gov.au/articles/australia-joins-new-oecd-working-group-agentic-ai-government-0": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "announcement",
+      "reason": "호주가 OECD의 정부 내 에이전틱 AI 워킹그룹에 참여한다는 소식으로, 특정한 하나의 제도가 아니라 국제 협력 참여 및 기구 활동에 관한 소식이다.",
+      "instrument_name": "OECD working group on agentic AI in government",
+      "name_ko": "호주 OECD 정부 에이전틱 AI 워킹그룹 참여",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Australia",
+      "country_ko": "호주"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://presse.economie.gouv.fr/barometre-france-num-2026-quatre-tpe-pme-sur-dix-utilisent-desormais-lintelligence-artificielle": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "announcement",
+      "reason": "프랑스 누므(France Num)의 중소기업 AI 도입 실태 조사 결과를 알리는 경제부 보도자료로, 특정한 법·정책 제도가 아니라 조사 결과 소식이다.",
+      "instrument_name": "France Num 2026 barometer",
+      "name_ko": "프랑스 France Num 2026 바로미터 조사",
+      "doc_kind": "기타",
+      "stage": "published",
+      "country": "France",
+      "country_ko": "프랑스"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://justice.gov.za/m_speeches/2026/20260928-Congress-Crime-Prevention-and-Criminal-Justice-WomenAndTechnology-Min.html": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "남아공 법무부 장관이 범죄예방·형사사법 회의에서 밝힌 연설(m_speeches)로, 우선 분야와 정책 방향을 언급할 뿐 특정한 하나의 제도를 다루지 않는다.",
+      "instrument_name": "South Africa priorities to address technology-facilitated violence against women",
+      "name_ko": "남아공 여성 대상 기술 매개 폭력 대응 우선 분야",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "South Africa",
+      "country_ko": "남아프리카공화국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://mfa.gov.sg/newsroom/press-statements-transcripts-and-photos/minister-for-foreign-affairs-of-the-republic-of-singapore-dr-vivian-balakrishnan-s-national-statement-to-the-81st-session-of-the-united-nations-general-assembly--new-york--26-september-2026": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "유엔총회 국가연설에서 AI 안전장치 기본협약 마련을 제안한 것으로, 아직 존재하지 않는 제도에 대한 정책 방향 언급이며 링크도 연설문 페이지이다.",
+      "instrument_name": "UN Framework Convention on AI Safeguards",
+      "name_ko": "싱가포르 유엔 AI 안전장치 기본협약 제안",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Singapore",
+      "country_ko": "싱가포르"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://abc.net.au/news/2026-09-27/openai-medicare-breach-need-investment-data-centres-ai/107200652": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "ABC 뉴스 보도로, 정당들의 입장 표명과 정부 태스크포스의 향후 검토 계획을 전할 뿐 특정한 하나의 제도를 다루지 않는다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Australia",
+      "country_ko": "호주"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://theguardian.com/australia-news/2026/sep/27/sam-altman-openai-dario-amodei-anthropic-senate-inquiry-medicare-hack-rogue-ai-agent-leak": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "상원 조사 청문회에 AI 기업 CEO들을 소환했다는 가디언의 보도로, 특정한 법·정책 제도를 다루지 않고 청문회 소식과 규제 촉구만 담고 있다.",
+      "instrument_name": "Senate AI inquiry",
+      "name_ko": "호주 상원 AI 조사",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Australia",
+      "country_ko": "호주"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://news.un.org/en/story/2026/09/1168457": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "유엔총회 연설에서 AI 규제 방향을 언급한 소식을 UN News가 보도한 기사로, 특정한 하나의 제도를 다루지 않는다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Russia",
+      "country_ko": "러시아"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://mofa.gov.np/content/1892/welcome-remarks-by-hon--minister-for-foreign": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "네팔 외교장관의 유엔 연설(환영사)에 관한 항목이며 특정한 제도가 아니라 정책 방향을 촉구하는 연설이고, 링크 본문도 AI 규제가 아닌 기후 회복력 연설문이다.",
+      "instrument_name": "Nepal Foreign Minister's address at UNGA",
+      "name_ko": "네팔 외교장관 유엔총회 연설",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Nepal",
+      "country_ko": "네팔"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://news.un.org/en/story/2026/09/1168435": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "UN 총회 연설에서 AI 국제 협력을 촉구한 소식으로, 특정한 하나의 제도를 다루지 않으며 링크도 UN News 보도이다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Australia",
+      "country_ko": "호주"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://komdigi.go.id/berita/siaran-pers/detail/perluas-akses-digital-indonesia-rusia-jajaki-teknologi-satelit-dan-ai": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "announcement",
+      "reason": "인도네시아 통신·디지털부와 러시아 측이 위성·AI 협력 가능성을 논의했다는 회담 소식으로, 특정한 하나의 제도(협정·법안·지침 등)를 다루지 않는다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Indonesia",
+      "country_ko": "인도네시아"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://cac.gov.cn/2026-09/25/c_1792085798611367.htm": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "미중 정상회담에서 AI 대화 지속을 촉구한 소식으로, 특정한 하나의 제도가 아니라 정책 방향 언급과 회담 결과에 해당한다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "China",
+      "country_ko": "중국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://ofcom.org.uk/phones-and-broadband/telecoms-infrastructure/consumers-using-ai-to-help-manage-their-telecoms-services-but-human-contact-still-valued": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "Ofcom이 통신 분야에 새 AI 규칙이 지금은 필요 없다는 입장을 밝힌 소식이며, 링크도 소비자의 AI 이용 현황을 다룬 페이지라 특정한 제도가 아니다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United Kingdom",
+      "country_ko": "영국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://politico.com/news/2026/09/24/white-house-asks-openai-and-anthropic-to-hold-new-models-from-uk-testers-until-u-s-review-01091769": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "백악관이 OpenAI·Anthropic에 신규 모델의 영국 테스터 제공을 미뤄 달라고 요청했다는 Politico 보도로, 특정한 제도 문서가 아니라 정책적 요청에 관한 뉴스이다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://whitehouse.gov/fact-sheets/2026/09/fact-sheet-president-donald-j-trump-advances-a-fair-and-reciprocal-relationship-with-china-while-hosting-historic-state-visit": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "미·중 양국이 슈퍼 인텔리전스 대화와 양자 AI 사고 소통 채널이라는 협의 체계를 새로 설립했다는 내용이고, 링크는 이를 알린 백악관 공식 팩트시트(국빈 방문 전반을 다루는 문서)이다.",
+      "instrument_name": "US-China Super Intelligence Dialogue and bilateral AI incident channel",
+      "name_ko": "미·중 슈퍼 인텔리전스 대화 및 AI 사고 소통 채널",
+      "doc_kind": "기구·제도",
+      "stage": "adopted",
+      "country": "United States / China",
+      "country_ko": "미국·중국"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "2026년 미·중 정상 간 합의로 신설된 슈퍼 인텔리전스 대화 및 양자 AI 사고 소통 채널과 같은 제도는 후보에 없으며, UN 글로벌 대화, 미국 AI 사고 보고 법안, 중국 입장문 등은 관할이나 성격이 달라 모두 다른 제도다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://sil.gobernacion.gob.mx/movil?pg=msil%2FMMinuto%2Fasunto%2F4896486": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "멕시코 하원의원이 발의한 생성형 AI 오용 처벌 및 저작권 관련 연방형법·연방저작권법 개정안이라는 특정 법안을 다루며, 링크는 입법정보시스템(SIL)의 해당 의안 정보 페이지이다.",
+      "instrument_name": "Initiative to amend the Federal Criminal Code and the Federal Copyright Law on misuse of generative artificial intelligence",
+      "name_ko": "멕시코 생성형 AI 오용 처벌·저작권 개정안",
+      "doc_kind": "법안",
+      "stage": "introduced",
+      "country": "Mexico",
+      "country_ko": "멕시코"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "새 항목은 멕시코 연방형법·연방저작권법을 개정하는 생성형 AI 오용 처벌 법안인데, 후보 중에는 이 법안이나 같은 멕시코 입법안이 없고 멕시코 후보들은 모두 지침·전략·기구 문서이며 다른 생성형 AI 후보는 관할이나 종류가 다르다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://mofcom.gov.cn/xwfbzt/2026/swbzklxxwfbh2026n9y24r/index.html": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "미중 무역 협의에서 AI 대화를 처음 진행했다는 회의 결과 소식이며, 특정한 제도를 다루지 않고 링크도 상무부 기자회견 페이지다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "China",
+      "country_ko": "중국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://ncsc.govt.nz/news/cyber-threat-report-2026-leaders-need-to-prepare-now-for-the-impact-of-ai": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "announcement",
+      "reason": "뉴질랜드 NCSC가 연례 사이버 위협 보고서의 평가 결과를 알리며 경고하는 소식으로, 규제나 정책을 정하는 제도가 아니라 위협 동향 평가이다.",
+      "instrument_name": "Cyber Threat Report 2026",
+      "name_ko": "뉴질랜드 NCSC 사이버 위협 보고서 2026",
+      "doc_kind": "기타",
+      "stage": "published",
+      "country": "New Zealand",
+      "country_ko": "뉴질랜드"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://warner.senate.gov/newsroom/press-releases/warner-schatz-to-take-to-senate-floor-to-demand-passage-of-new-ai-security-legislation": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "헤드라인이 특정 법안(Artificial Intelligence Risk Management and Security Act)의 발의를 다루며, 링크는 워너·샤츠 상원의원실이 해당 AI 보안 법안을 알리는 공식 보도자료이다.",
+      "instrument_name": "Artificial Intelligence Risk Management and Security Act",
+      "name_ko": "미국 인공지능 위험관리·보안법안",
+      "doc_kind": "법안",
+      "stage": "introduced",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "medium",
+      "reason": "새 항목은 Warner·Schatz가 발의한 'Artificial Intelligence Risk Management and Security Act'로, 118대 국회의 Federal AI Risk Management Act of 2023(S.3205)이나 Secure AI Act of 2024와는 이름·연도·발의 맥락이 달라 같은 법안이라고 확신할 후보가 없다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://fmprc.gov.cn/eng/xw/zyxw/202609/t20260926_12031663.html": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "헤드라인은 중국·미국 AI 대화와 AI 사고 소통 채널이라는 양자 협의 체제의 설립 합의를 다루며, 링크는 중국 외교부 뉴스란에 실린 국빈 방문 합의 결과 발표문이다.",
+      "instrument_name": "China-US AI Dialogue and AI Incident Communication Channel",
+      "name_ko": "중·미 AI 대화 및 AI 사고 소통 채널",
+      "doc_kind": "기구·제도",
+      "stage": "adopted",
+      "country": "China-United States",
+      "country_ko": "중국·미국"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "중·미 양자 AI 대화 및 AI 사고 소통 채널은 이번 정상 방문에서 새로 설립된 별개의 양자 제도이며, 후보 중 UN 글로벌 대화, 미국 사고 보고법, 중국 입장문 등은 관할·성격이 달라 같은 제도가 없다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://gov.uk/government/publications/evidence-informed-policymaking-and-fast-changing-technology": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "영국 교육부가 빠르게 변하는 기술 분야의 근거 기반 정책 수립을 위한 8개 원칙 프레임워크 보고서를 gov.uk 공식 간행물 페이지로 발간한 것으로, 특정한 하나의 정책 문서를 다룬다.",
+      "instrument_name": "Evidence-informed policymaking and fast-changing technology",
+      "name_ko": "영국 빠르게 변하는 기술 분야 근거 기반 정책 수립 원칙",
+      "doc_kind": "정책보고서",
+      "stage": "published",
+      "country": "United Kingdom",
+      "country_ko": "영국"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "영국 교육부의 '빠르게 변하는 기술 분야 근거 기반 정책 수립 원칙' 보고서와 같은 제도인 후보가 없다. WHO 토론문서는 관할과 발행 기관이 다르고, 나머지 영국 후보들도 서로 다른 제도다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://mom.gov.sg/newsroom/press-releases/2026/2409-recommendations-by-twg-hc": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "싱가포르 인력부(MOM)가 노사정 인적자본 작업반의 5개 권고안 수용을 알린 공식 보도자료로, 특정한 하나의 정책 권고안을 다룬다.",
+      "instrument_name": "Recommendations of the Tripartite Workgroup on Human Capital",
+      "name_ko": "싱가포르 인적자본 노사정 작업반 권고안",
+      "doc_kind": "정책보고서",
+      "stage": "adopted",
+      "country": "Singapore",
+      "country_ko": "싱가포르"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "새 항목은 싱가포르 인적자본 노사정 작업반 권고안(MOM 2026)인데, 후보 중 같은 권고안을 다루는 문서는 없고 네덜란드 NL AIC 인적자본 작업반은 관할이 다르며 나머지 싱가포르 후보들은 서로 다른 AI 제도다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://gov.uk/government/publications/ai-action-plan-for-justice-one-year-on": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "영국 법무부의 AI Action Plan for Justice(전략 문서)에 신흥 위험 대응 우선순위를 추가한 1주년 갱신판을 다루며, 링크도 gov.uk의 해당 문서 공식 게재 페이지이다.",
+      "instrument_name": "AI Action Plan for Justice",
+      "name_ko": "영국 AI 사법 실행계획",
+      "doc_kind": "전략·정책",
+      "stage": "amended",
+      "country": "United Kingdom",
+      "country_ko": "영국"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "후보 중 영국 법무부의 AI Action Plan for Justice(AI 사법 실행계획)에 해당하는 문서가 없고, 이름이 비슷한 다른 행동계획들은 관할이나 주제가 다른 별개의 제도다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://gov.cn/yaowen/liebiao/202609/content_7082010.htm": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "시진핑 주석의 백악관 환영식 연설 소식으로, 미중 AI 협력 책임을 촉구한 정책 방향 언급일 뿐 특정한 하나의 제도를 다루지 않는다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "China",
+      "country_ko": "중국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://esma.europa.eu/press-news/esma-news/esma-sets-new-supervisory-priority-digital-innovation-2027": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "ESMA가 2027년부터 시행할 디지털 혁신 관련 EU 전략적 감독 우선순위(USSP)라는 특정 제도를 자체 뉴스 페이지에서 알리는 공식 발표문이다.",
+      "instrument_name": "Union Strategic Supervisory Priority on digital innovation",
+      "name_ko": "EU 디지털 혁신 전략적 감독 우선순위(USSP)",
+      "doc_kind": "전략·정책",
+      "stage": "published",
+      "country": "EU",
+      "country_ko": "유럽연합"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "ESMA의 2027년 디지털 혁신 전략적 감독 우선순위(USSP)는 금융 감독 분야의 별개 제도이며, 후보 중 EDIH·디지털 옴니버스·Apply AI 등은 모두 다른 제도라 동일한 문서가 없다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://ag.ny.gov/press-release/2026/attorney-general-james-calls-congress-protect-americans-unchecked-ai-development": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "announcement",
+      "reason": "주 법무장관들이 의회에 AI 종합 규제체계 마련을 촉구하는 서한에 관한 소식으로, 특정한 하나의 제도가 아니라 정책 방향을 촉구하는 내용이다.",
+      "instrument_name": "Letter from State Attorneys General urging Congress to regulate AI development",
+      "name_ko": "미국 주 법무장관 AI 규제 촉구 서한",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-226mr-asic-strengthens-ai-trading-safeguards-and-streamlines-market-integrity-rules": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "ASIC가 확정한 시장 건전성 규정 개정안이라는 특정 제도를 ASIC 공식 보도자료로 알리는 항목이며, 링크는 규정 원문이 아닌 보도자료 페이지이다.",
+      "instrument_name": "ASIC Market Integrity Rules (amendments on AI-enabled and algorithmic trading)",
+      "name_ko": "호주 ASIC 시장 건전성 규정 개정(AI·알고리즘 거래)",
+      "doc_kind": "행정규칙",
+      "stage": "published",
+      "country": "Australia",
+      "country_ko": "호주"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "새 항목은 호주 ASIC의 AI·알고리즘 거래 관련 시장 건전성 규정 개정인데, 후보 중에는 ASIC 시장 건전성 규정이나 금융 거래 규제를 다루는 문서가 없고 호주 AI 관련 후보들은 모두 다른 제도다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://pm.gov.au/media/press-conference-new-york": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "호주 정부가 OpenAI 에이전트의 무단 접근 사건에 대해 조사 태스크포스를 꾸렸다는 사건·조사 소식이며, 특정한 제도 문서를 다루지 않고 링크도 총리 뉴욕 기자회견 페이지다.",
+      "instrument_name": "Review of OpenAI agent's unauthorised access to government portal",
+      "name_ko": "호주 OpenAI 에이전트 포털 무단접근 조사",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Australia",
+      "country_ko": "호주"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://gov.uk/government/news/dr-jade-leung-appointed-vice-chair-of-the-ai-security-institute-and-security-advisor-to-the-ai-taskforce": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "특정 제도가 아니라 제이드 렁 박사의 AI 안보연구소 부의장 및 AI 태스크포스 안보보좌관 임명이라는 인사 소식을 다룬 항목이다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United Kingdom",
+      "country_ko": "영국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://sil.gobernacion.gob.mx/movil?pg=msil%2FMMinuto%2Fasunto%2F4825444": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "멕시코 상원의원이 발의한 국가 인공지능 이용 규제법안 하나를 다루며, 링크는 상원 의안 정보 시스템(SIL)의 해당 의안 페이지이다.",
+      "instrument_name": "Ley Nacional que Regula el Uso de la Inteligencia Artificial",
+      "name_ko": "멕시코 국가 인공지능 이용 규제법안",
+      "doc_kind": "법안",
+      "stage": "introduced",
+      "country": "Mexico",
+      "country_ko": "멕시코"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "새 항목은 멕시코 상원의원이 발의한 국가 AI 이용 규제법안인데, 후보 중 같은 법안은 없고 멕시코 후보들은 전략·지침·기구 등 다른 제도이며 같은 유형의 법안(칠레, 코스타리카)은 관할이 다르다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://sic.gov.cn/sic/200/91/0923/20260923162642200218863_pc.html": {
+    "judge": {
+      "accept": false,
+      "is_instrument": true,
+      "link_type": "other",
+      "reason": "정부 AI 애플리케이션 보안 국가표준이라는 특정 표준의 제정 착수를 다루므로 제도 항목이지만, 링크는 표준 제정 착수 회의 소식 페이지라 제도 원문이나 제도 소개 발표문이 아니다.",
+      "instrument_name": "Government AI Application Security National Standard",
+      "name_ko": "중국 정부 AI 애플리케이션 보안 국가표준",
+      "doc_kind": "표준",
+      "stage": "draft",
+      "country": "China",
+      "country_ko": "중국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://gov.br/mj/pt-br/assuntos/noticias-1/mjsp-discute-infraestrutura-de-ia-na-seguranca-publica-em-encontro-do-forum-economico-mundial-em-nova-york": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "브라질 법무공안부 관계자가 세계경제포럼 행사에서 공공안보 분야 AI 인프라와 거버넌스 과제를 논의한 회의 참석 소식으로, 특정한 하나의 제도를 다루지 않는다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Brazil",
+      "country_ko": "브라질"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://cdn.er.ru/activity/news/dmitrij-medvedev-predlozhil-kandidatury-na-dolzhnosti-predsedatelej-komitetov-gosdumy": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "통합러시아당 의장이 국가두마 위원회 위원장 후보를 제안했다는 인사 소식이며, 특정한 법·제도 문서를 다루지 않는다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Russia",
+      "country_ko": "러시아"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://kmu.admin.ch/de/bis-anfang-2027-soll-ein-vorentwurf-zur-ki-regulierung-ausgearbeitet-werden": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "스위스 부처들이 2027년 봄까지 AI 규제 협의 초안을 마련하겠다는 계획 소식이며, 아직 존재하는 특정 제도 문서가 없고 링크도 제도 원문이나 제도 소개 발표문이 아니라 중소기업 포털의 안내 기사다.",
+      "instrument_name": "AI regulation consultation draft",
+      "name_ko": "스위스 AI 규제 협의 초안 준비",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Switzerland",
+      "country_ko": "스위스"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://gov.br/mj/pt-br/assuntos/noticias-1/novas-regras-para-publicidade-digital-visam-conter-fraudes-e-golpes": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "브라질 법무·공공안전부 등이 마련한 디지털 광고 투명성·검증 공동 규정이라는 특정 제도를 다루며, 링크는 해당 부처(gov.br/mj)가 규정을 알리는 공식 보도자료다.",
+      "instrument_name": "Joint rules on transparency and verification of digital advertising",
+      "name_ko": "브라질 디지털 광고 투명성·검증 공동 규정",
+      "doc_kind": "행정규칙",
+      "stage": "published",
+      "country": "Brazil",
+      "country_ko": "브라질"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "브라질 디지털 광고 투명성·검증 공동 규정(행정규칙)에 해당하는 후보가 없고, 브라질 관련 후보들은 AI 법안·전략·플랫폼 의무 등 다른 제도다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://gov.br/cade/pt-br/assuntos/noticias/cade-arquiva-apac-sobre-investimentos-e-acordos-entre-amazon-e-anthropic": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "announcement",
+      "reason": "브라질 경쟁당국 Cade가 Amazon–Anthropic 투자·협력 계약에 대한 검토 절차를 종결했다는 개별 사건 소식이며, 법·규정·지침 같은 제도를 새로 내놓은 항목이 아니다.",
+      "instrument_name": "Cade administrative procedure for assessment of competitive acts (APAC) on Amazon–Anthropic investments and agreements",
+      "name_ko": "브라질 Cade 아마존–앤트로픽 투자·협력 검토 종결",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Brazil",
+      "country_ko": "브라질"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://argentina.gob.ar/noticias/el-presidente-milei-diserto-en-nueva-york-con-eje-en-la-defensa-de-los-valores-occidentales": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "밀레이 대통령의 뉴욕 연설에서 AI 규제 반대 입장을 밝힌 소식으로, 특정한 제도가 아니라 정책 방향 언급이며 링크도 연설 관련 페이지이다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Argentina",
+      "country_ko": "아르헨티나"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://whitehouse.gov/releases/2026/09/president-trump-at-the-united-nations-while-others-have-talked-i-have-acted": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "유엔 총회 연설에서 AI 통제 구상을 거부한다는 정책 방향을 밝힌 소식이며, 특정한 하나의 제도를 다루지 않고 링크도 연설 관련 백악관 페이지이다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://casar.house.gov/media/press-releases/news-casar-sanders-introduce-legislation-create-new-federal-agency-ban": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "인공 초지능 금지와 연방 인공지능부 신설을 담은 특정 법안(HB 10538) 발의를 다루며, 링크는 카사르 의원실이 그 법안을 소개하는 공식 보도자료이다.",
+      "instrument_name": "Ban Artificial Superintelligence Act of 2026",
+      "name_ko": "미국 인공 초지능 금지법(HB 10538)",
+      "doc_kind": "법안",
+      "stage": "introduced",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "미국 연방 '인공 초지능 금지법(HB 10538)'과 같은 제도인 후보가 없다. 영국 인공 초지능 법안(No. 142) 두 건은 관할이 다르고, 나머지 미국 법안들도 이름만 비슷한 다른 법안이다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://theinformation.com/articles/china-probes-deepseek-moonshot-potential-data-leaks-anthropic": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "중국 당국이 DeepSeek·Moonshot의 데이터 이전을 조사한다는 언론 보도(The Information)로, 특정한 제도 자체를 다루지 않는다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "China",
+      "country_ko": "중국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://gjbmj.gov.cn/n1/2026/0923/c409099-40804427.html": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "announcement",
+      "reason": "국가기밀과학기술평가센터가 AI 대형 모델 기밀성 보호 제품의 검사 접수 개시일을 알리는 운영 공지이고, 근거가 되는 국가기준의 명칭이나 번호는 나와 있지 않아 특정한 하나의 제도로 보기 어렵다.",
+      "instrument_name": "AI-model confidentiality safeguard product testing",
+      "name_ko": "중국 AI 모델 기밀성 보호 제품 검사 개시 공지",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "China",
+      "country_ko": "중국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://gov.uk/government/speeches/pm-speech-at-unga-22-september-2026": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "유엔총회 연설에서 AI 글로벌 원칙 마련과 국가정보방위센터 설립 추진 의지를 밝힌 정책 방향 언급이며, 링크도 연설문 페이지로 특정한 하나의 제도 원문이 아니다.",
+      "instrument_name": "PM speech at UNGA",
+      "name_ko": "영국 총리 유엔총회 연설",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United Kingdom",
+      "country_ko": "영국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://gov.uk/government/news/prime-minister-drives-global-work-on-artificial-intelligence-at-unga-as-uk-and-us-make-history-with-firing-from-undersea-drone": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "announcement",
+      "reason": "영국·미국의 AI·자율성 방위 협력 출범과 무인 수중 드론 어뢰 발사를 알리는 소식으로, 특정한 하나의 제도 문서를 다루지 않으며 링크는 영국 정부가 총리의 UNGA 활동을 알리는 공식 발표문이다.",
+      "instrument_name": "UK-US AI and autonomy defence partnership",
+      "name_ko": "영국-미국 AI·자율성 방위 협력",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United Kingdom",
+      "country_ko": "영국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://bennet.senate.gov/2026/09/23/bennet-welch-release-proposal-to-establish-new-federal-agency-to-prevent-catastrophic-ai-risk-regulate-big-tech": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "연방 디지털위원회(Federal Digital Commission)라는 특정 기구 설립안 하나를 다루고, 링크는 벤넷 상원의원실이 그 안을 알리는 공식 발표문이다. 다만 요약이 없고 법안 번호나 정식 명칭이 확인되지 않아 법안 여부는 불확실하다.",
+      "instrument_name": "Federal Digital Commission proposal",
+      "name_ko": "미국 연방디지털위원회 설립안",
+      "doc_kind": "기타",
+      "stage": "draft",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "medium",
+      "reason": "2026년 Bennet·Welch의 연방디지털위원회 설립안은 2023년 Digital Platform Commission Act(S.1671)와 유사한 구상이지만, 연도와 내용(프런티어 AI 포함)이 다른 별개의 제안일 가능성이 높아 동일 제도로 확신할 수 없다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://aepd.es/prensa-y-comunicacion/notas-de-prensa/agencia-recuerda-garantias-para-utilizar-ia-en-analisis-curriculums": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "announcement",
+      "reason": "AEPD가 특정 기업의 AI 이력서 분석 도구 도입 계획에 보낸 개별 예방적 경고를 알리는 보도자료로, 법·지침 같은 독립된 제도 문서가 아니라 개별 감독 조치 소식이다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Spain",
+      "country_ko": "스페인"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://standardmedia.co.ke/sci-tech/article/2001558501/kenya-signs-ai-deal-with-claude": {
+    "judge": {
+      "accept": false,
+      "is_instrument": true,
+      "link_type": "media",
+      "reason": "케냐 정부와 앤트로픽이 서명한 공동 선언(협력 framework)이라는 특정한 문서를 다루지만, 링크는 언론사(Standard) 보도 기사이다.",
+      "instrument_name": "Kenya–Anthropic Framework for Responsible AI Cooperation",
+      "name_ko": "케냐–앤트로픽 책임 있는 AI 협력 프레임워크(공동 선언)",
+      "doc_kind": "선언·성명",
+      "stage": "adopted",
+      "country": "Kenya",
+      "country_ko": "케냐"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://gadebate.un.org/sites/default/files/gastatements/81/kr_en.pdf": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "유엔총회 연설에서 'Global AI Universal Basic Society'라는 정책 구상을 제안한 소식으로, 특정한 하나의 제도가 아니라 연설문이다.",
+      "instrument_name": "Global AI Universal Basic Society",
+      "name_ko": "글로벌 AI 기본사회 제안(대한민국)",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "South Korea",
+      "country_ko": "대한민국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://gov.br/mj/pt-br/assuntos/noticias-1/sedigi-identifica-riscos-de-201ccompanheiros-de-ia-para-criancas-e-adolescentes": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "브라질 법무·공공안전부 디지털권리국이 발표한 AI 동반자 앱의 아동·청소년 위험 분석 기술 보고서 하나를 다루며, 링크는 해당 보고서를 알리는 부처의 공식 보도자료이다.",
+      "instrument_name": "Technical report on risks of AI companion apps for children and adolescents",
+      "name_ko": "브라질 AI 동반자 앱 아동·청소년 위험 기술 보고서",
+      "doc_kind": "정책보고서",
+      "stage": "published",
+      "country": "Brazil",
+      "country_ko": "브라질"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "브라질 디지털권리국의 AI 동반자 앱 아동·청소년 위험 기술 보고서는 후보 중 어느 것과도 같은 제도가 아니며, 가장 가까운 브라질 디지털권리국 비동의 합성 나체 이미지 조사 보고서(doc-62b09f86625e)는 주제와 문서가 다르다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://ict.go.ke/index.php/government-moves-digital-and-ai-agenda-policy-action": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "announcement",
+      "reason": "케냐 정부가 기존 디지털·AI 정책을 실행 중심으로 추진하겠다는 방향을 밝힌 소식이며, 새로 발표된 특정 제도를 다루지 않는다. 링크도 ICT부가 정책 방향을 알리는 발표문이다.",
+      "instrument_name": "Kenya digital and AI policy implementation agenda",
+      "name_ko": "케냐 디지털·AI 정책 실행 기조",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Kenya",
+      "country_ko": "케냐"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://treasury.gov.au/publication/2026-intergenerational-report": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "호주 재무부가 발표한 제7차 세대 간 보고서라는 특정 정책보고서를 다루며, 링크도 해당 보고서의 공식 출판 페이지이다.",
+      "instrument_name": "2026 Intergenerational Report",
+      "name_ko": "호주 2026 세대 간 보고서",
+      "doc_kind": "정책보고서",
+      "stage": "published",
+      "country": "Australia",
+      "country_ko": "호주"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "호주 재무부의 2026 세대 간 보고서는 경제·재정 전망 보고서로, 후보 중 같은 문서가 없고 호주 관련 후보들도 모두 다른 제도다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://elysee.fr/emmanuel-macron/2026/09/22/lancement-de-la-feuille-de-route-de-la-coalition-pour-les-droits-et-la-protection-de-lenfance-a-lere-de-lintelligence-artificielle": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "프랑스·스페인·호주·케냐가 공동 의장을 맡은 연합의 2026~2027년 행동계획(로드맵)이라는 특정 문서를 다루며, 링크는 엘리제궁(프랑스 대통령실)이 이를 알리는 공식 발표 페이지이다.",
+      "instrument_name": "Roadmap of the Coalition for Children's Rights and Protection in the Age of Artificial Intelligence",
+      "name_ko": "AI 시대 아동 권리·보호 연합 로드맵(2026~2027 행동계획)",
+      "doc_kind": "전략·정책",
+      "stage": "published",
+      "country": "France",
+      "country_ko": "프랑스"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "후보 중 프랑스·스페인·호주·케냐 주도 아동 권리·AI 보호 연합 로드맵(2026~2027 행동계획) 자체는 없으며, 다자 공동성명(doc-e6ec1aa1e8e2)은 별개 문서이고 나머지는 주제나 관할이 다르다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://gov.za/news/speeches/minister-solly-malatsi-national-digital-sovereignty-agenda-21-sep-2026": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "헤드라인은 AI 정책 초안 일정 변경을 알리지만, 링크는 장관 연설문이고 요약도 디지털 주권·디지털 전환에 대한 방향 제시일 뿐 특정한 하나의 제도를 다루지 않는다.",
+      "instrument_name": "South Africa revised AI policy draft timetable",
+      "name_ko": "남아공 AI 정책 초안 일정",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "South Africa",
+      "country_ko": "남아프리카공화국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://bbc.com/news/articles/c8vgyzn2d31yo": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "미중 고위 당국자가 AI 사고 통지 메커니즘 구축을 논의했다는 BBC 보도로, 확정된 특정 제도가 아니라 논의 단계의 정책 방향 소식이다.",
+      "instrument_name": "US-China AI incident notification mechanism",
+      "name_ko": "미중 AI 사고 통지 메커니즘",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://lamoncloa.gob.es/lang/en/presidente/news/paginas/2026/20260921-ia360-plan-presentation.aspx": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "스페인 정부가 IA360 계획이라는 특정 AI 전략을 발표한 항목이고, 링크는 총리실(라몬클로아)의 공식 발표 페이지로 계획 내용을 소개하고 있다.",
+      "instrument_name": "IA360 Plan",
+      "name_ko": "스페인 IA360 계획",
+      "doc_kind": "전략·정책",
+      "stage": "published",
+      "country": "Spain",
+      "country_ko": "스페인"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "medium",
+      "reason": "IA360 계획은 2026년 새로 발표된 별도의 스페인 AI 계획이며, 후보 중 동일한 제도는 없고 2024 국가 AI 전략 등은 서로 다른 문서이다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://pm.gov.au/media/press-conference-apple-park-california": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "총리가 기자회견에서 연말까지 AI 기준 관련 법안을 마련하겠다는 정책 방향을 밝힌 소식이며, 특정한 제도가 확정되거나 공개된 것이 아니고 링크도 기자회견 페이지이다.",
+      "instrument_name": "Australian AI standards legislation",
+      "name_ko": "호주 AI 기준 법안 구상",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Australia",
+      "country_ko": "호주"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://english.scio.gov.cn/m/pressroom/2026-09/20/content_118704468.html": {
+    "judge": {
+      "accept": false,
+      "is_instrument": true,
+      "link_type": "other",
+      "reason": "중국 국가인터넷정보판공실이 의견 수렴용으로 공개한 미성년자 온라인 보호 지침 초안이라는 특정 제도를 다루지만, 링크는 SCIO 영문 프레스룸 페이지로 제도 원문이나 발급 기관의 공식 발표문이 아니라 보도 성격의 페이지다.",
+      "instrument_name": "Guidelines on strengthening online protection for minors (draft)",
+      "name_ko": "중국 미성년자 온라인 보호 강화 지침(초안)",
+      "doc_kind": "가이드라인·원칙",
+      "stage": "consultation",
+      "country": "China",
+      "country_ko": "중국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://truthsocial.com/@realDonaldTrump/117298821562014906": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "트럼프가 SNS에서 'AI 포스' 창설과 AI 차르 임명 의사를 밝힌 발언으로, 공식 문서로 발급된 특정 제도가 아니라 정책 방향 언급이다.",
+      "instrument_name": "AI Force",
+      "name_ko": "미국 AI 포스 구상",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://valtioneuvosto.fi/en/-/a-call-for-control-of-frontier-ai-models": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "여러 국가가 서명한 특정 공동성명을 다루고, 링크는 핀란드 정부 사이트의 공식 발표 페이지로 보이나 성명 원문인지는 확인되지 않는다.",
+      "instrument_name": "Statement calling for control of frontier AI models",
+      "name_ko": "최첨단 AI 모델 통제 촉구 공동성명",
+      "doc_kind": "선언·성명",
+      "stage": "adopted",
+      "country": "International",
+      "country_ko": "국제"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "medium",
+      "reason": "UN 정상회의를 앞두고 여러 국가가 서명한 최첨단 AI 모델 통제 촉구 성명은 후보 중 어느 성명과도 주제·발표 주체가 일치하지 않아(IDAIS 레드라인 합의문 등은 전문가 성명이라 별개) 동일 제도로 볼 근거가 없다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://argentina.gob.ar/normativa/nacional/norma-430396/texto": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "아르헨티나 법무부가 사법 분야 AI 전략 협의체(MEIAJ)를 설립한 특정 규범으로, 링크도 관보 규범 원문 페이지(normativa/nacional/norma-430396/texto)이다.",
+      "instrument_name": "Mesa Estratégica de Inteligencia Artificial en la Justicia (MEIAJ)",
+      "name_ko": "아르헨티나 사법 인공지능 전략 협의체(MEIAJ)",
+      "doc_kind": "기구·제도",
+      "stage": "enacted",
+      "country": "Argentina",
+      "country_ko": "아르헨티나"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "medium",
+      "reason": "새 항목은 법무부 산하 사법 AI 전략 협의체(MEIAJ) 설립 규범이며, 가장 가까운 후보인 '사법 분야 국가 종합 AI 프로그램'(2024-10)은 별개의 프로그램이라 동일 제도로 볼 근거가 부족하다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://bloomberg.com/news/articles/2026-09-18/south-africa-holds-off-on-ai-rules-pending-global-watchdog-view?srnd=homepage-americas": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "남아공이 국제 감시기구의 검토를 기다리며 AI 규칙 도입을 미룬다는 Bloomberg 보도로, 특정한 하나의 제도를 다루지 않고 정책 지연 소식만 전한다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "South Africa",
+      "country_ko": "남아프리카공화국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://royal.uk/news-and-activity/2026-09-17/the-king-convenes-tech-leaders-for-ai-summit-in-scotland?_gl=1%2Axm1w2h%2A_up%2AMQ..%2A_ga%2AMTc1NjQyNTU0NC4xNzg5NzM2MTk4%2A_ga_2G92HJLJTE%2AczE3ODk3MzYxOTckbzEkZzEkdDE3ODk3MzYyMDgkajQ5JGwwJGgw": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "영국 국왕이 주최한 AI 정상회의(행사·회의 소식)로, 공동 원칙 마련을 검토했을 뿐 특정한 제도가 채택되거나 발표된 것이 아니다.",
+      "instrument_name": "AI Summit in Scotland",
+      "name_ko": "영국 스코틀랜드 AI 정상회의",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United Kingdom",
+      "country_ko": "영국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://jayapal.house.gov/2026/09/17/jayapal-hosts-hearing-on-big-tech-and-surveillance-ai": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "의원이 개최한 청문회 소식으로, 연방 헌장 발의 계획은 예고일 뿐 특정한 제도 자체를 다루는 항목이 아니며 링크도 청문회 관련 의원실 페이지이다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://wsj.com/tech/ai/inside-the-white-house-tussle-to-sway-trump-on-ai-0043d567?mod=hp_lead_pos2": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "백악관 내부의 AI 규제 방향을 둘러싼 의견 대립을 다룬 WSJ 보도이며, 특정한 하나의 제도를 다루는 항목이 아니다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://thetimes.com/uk/technology-uk/article/ai-minister-tougher-rules-kanishka-narayan-tb2tkw7dp?eafs_enabled=false": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "AI 담당 장관이 더 강력한 규제를 촉구했다는 The Times 보도로, 특정한 제도 하나를 다루지 않고 정책 방향 언급에 그친다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United Kingdom",
+      "country_ko": "영국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://nytimes.com/2026/09/15/us/steve-bannon-bernie-sanders-ai.html?eafs_enabled=false": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "바넌과 샌더스가 '친인간' 서밋에서 AI 규제를 촉구했다는 뉴욕타임스 보도로, 특정한 제도가 아니라 정책 방향을 촉구하는 행사 소식이다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://korea.kr/news/policyNewsView.do?newsId=148972061&pWise=sub&pWiseSub=I1": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "한국과 중앙아시아 5개국이 공동 채택한 '미래 AI·과학기술 파트너십 이니셔티브'라는 특정 협력 문서를 다루며, 링크는 한국 정부 정책브리핑(korea.kr)의 공식 발표 기사라서 문서 원문이 아니라 제도를 알리는 발표문이다.",
+      "instrument_name": "Future AI and Science & Technology Partnership Initiative",
+      "name_ko": "한국–중앙아시아 미래 AI·과학기술 파트너십 이니셔티브",
+      "doc_kind": "선언·성명",
+      "stage": "adopted",
+      "country": "South Korea and Central Asia",
+      "country_ko": "대한민국·중앙아시아"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "한국–중앙아시아 5개국이 공동 채택한 다자 AI·과학기술 파트너십 이니셔티브는 후보 중 어느 것과도 관할·내용이 일치하지 않으며, 한국 국내 정책이나 APEC·EU 등의 다른 이니셔티브와는 별개의 제도다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://digital-strategy.ec.europa.eu/en/library/proposal-eu-kids-act-eu-keeping-internet-digital-spaces-accountable-and-trustworthy": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "집행위원회가 제안한 EU KIDS Act라는 특정 법안을 다루며, 링크는 유럽연합 디지털 전략 사이트의 해당 법안 제안 자료 페이지이다.",
+      "instrument_name": "EU KIDS Act",
+      "name_ko": "EU 아동 온라인 안전법(EU KIDS Act) 제안",
+      "doc_kind": "법안",
+      "stage": "introduced",
+      "country": "EU",
+      "country_ko": "유럽연합"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "EU KIDS Act 제안은 15세 미만 계정 생성 제한을 다루는 독립된 EU 법안인데, 후보 중에는 이를 다루는 문서가 없고 뉴질랜드 아동 온라인 안전 법안은 관할이 다르며 EU 청년 소셜미디어 보고서는 별개의 정책보고서이다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://gadebate.un.org/en/81/france": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "유엔총회 연설에서 AI 규범 마련을 촉구한 소식으로, 특정한 하나의 제도를 다루지 않고 링크도 연설 페이지이다.",
+      "instrument_name": "President Macron addresses UNGA, calling for new rules in AI in outer space, defense, and cybersecurity",
+      "name_ko": "마크롱 프랑스 대통령 유엔총회 연설",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "France",
+      "country_ko": "프랑스"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://pmc.gov.au/domestic-policy/office-ai/getting-it-right-building-ai-infrastructure-works-australia": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "호주 정부가 AI 데이터센터와 첨단 모델 학습에 대한 의무 국가 표준을 마련하기 위해 공개 의견수렴을 연 건으로, 특정한 하나의 제도(협의 문서)를 다루며 링크는 총리내각부 AI 사무국의 공식 협의 안내 페이지다.",
+      "instrument_name": "Getting it right: building AI infrastructure that works for Australia (consultation on mandatory national standards for AI data centres and frontier model training)",
+      "name_ko": "호주 AI 인프라 국가 표준 의견수렴",
+      "doc_kind": "전략·정책",
+      "stage": "consultation",
+      "country": "Australia",
+      "country_ko": "호주"
+    },
+    "match": {
+      "match_id": "doc-105e43a90f08",
+      "match_member": "mofa-country-policy-90",
+      "confidence": "medium",
+      "reason": "총리실이 7월 15일 발표한 'AI 모델 개발·인프라 국가 표준' 정책(호주 AI 표준)의 후속 의견수렴 단계로 보이는 같은 제도이나, 법으로 분류된 doc-d2558a562a0a와 중복 기록일 가능성이 있어 확신은 중간이다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://gadebate.un.org/en/81/china": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "유엔 총회 일반토론 연설에서 사람 중심 AI 방향을 촉구한 내용으로, 특정한 하나의 제도가 아니며 링크도 연설 페이지이다.",
+      "instrument_name": "China Vice President address to the UNGA (81st session general debate)",
+      "name_ko": "중국 부주석 유엔총회 연설",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "China",
+      "country_ko": "중국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://info.gov.hk/gia/general/202609/16/P2026091600338.htm": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "홍콩 정부가 2026~2030년 첫 5개년 계획이라는 특정 정책 문서를 알리는 공식 보도자료(info.gov.hk)로, 계획 본문이 아니라 소개 발표문이다.",
+      "instrument_name": "Hong Kong Five-Year Plan for Economic and Social Development (2026-2030)",
+      "name_ko": "홍콩 2026~2030 경제·사회 발전 5개년 계획",
+      "doc_kind": "전략·정책",
+      "stage": "published",
+      "country": "Hong Kong",
+      "country_ko": "홍콩"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "홍콩 2026~2030 경제·사회 발전 5개년 계획에 해당하는 후보가 없고, 비슷해 보이는 태국 12차 계획·중국 AI 계획 등은 관할과 제도가 모두 다르다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://gov.ca.gov/2026/09/16/governor-newsom-signs-new-law-to-protect-workers-require-disclosures-on-ai-generated-advertising": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "캘리포니아 SB 1050이라는 특정 법률의 서명을 알리는 주지사실 공식 보도자료이며, 링크는 법 원문이 아니라 법을 소개하는 발표문이다.",
+      "instrument_name": "SB 1050 (AI-generated advertising performer disclosure law)",
+      "name_ko": "캘리포니아 SB 1050 (AI 생성 광고 출연자 공개법)",
+      "doc_kind": "법",
+      "stage": "enacted",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "새 항목은 AI 생성 광고 출연자 공개를 규정한 캘리포니아 SB 1050인데, 후보 중 SB 1050 자체는 없고 AB 1836, SB 942, AB 2355 등은 모두 다른 법이며 연방 HR 10146은 관할이 달라 일치하는 후보가 없다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://chinadaily.com.cn/a/202609/16/WS6aa9ef63e4b06d4aa055e42c.html": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "국가안전부장이 AI 위험 통제 체계 구축과 관련 법규 마련을 촉구한 발언을 전하는 China Daily 보도이며, 특정한 하나의 제도를 다루지 않는다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "China",
+      "country_ko": "중국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://abc.net.au/news/2026-09-16/bill-shorten-christopher-pyne-ai-immigration-warnings/107161760": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "전직 정치인 두 명이 AI 위험을 경고하고 국제협약 도입을 촉구한 발언을 전하는 ABC 뉴스 보도이며, 특정한 제도를 다루지 않는다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Australia",
+      "country_ko": "호주"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://kennedy.senate.gov/public/press-releases?id=B8B88D54-4C5E-46C6-B6F4-CEB4BC9ACFBC": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "헤드라인이 'AI Emergency Button Act'라는 특정 법안 하나를 다루고, 링크는 케네디 상원의원실의 공식 보도자료 페이지다.",
+      "instrument_name": "AI Emergency Button Act",
+      "name_ko": "미국 AI 비상버튼법안",
+      "doc_kind": "법안",
+      "stage": "other",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "후보 중 AI Emergency Button Act(미국 AI 비상버튼법안) 자체를 다루는 문서가 없고, 나머지는 모두 다른 법안·전략·기구라 일치하지 않는다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://reuters.com/world/ftc-chair-suspicious-calls-ai-antitrust-exemptions-2026-09-15": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "FTC 위원장의 우려 표명과 반독점 예외 요구를 다룬 로이터 보도로, 특정한 하나의 제도를 다루지 않는 정책 방향 언급이다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://politico.eu/article/eu-capitals-to-discuss-ai-incidents-global-cooperation": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "EU 회원국 대표들이 AI 규칙과 incidents를 논의한다는 회의 소식으로, 특정한 하나의 제도를 다루지 않으며 링크도 Politico 보도다.",
+      "instrument_name": "EU countries to discuss AI rules",
+      "name_ko": "EU 회원국 AI 규칙 논의",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "EU",
+      "country_ko": "유럽연합"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://oaic.gov.au/news/speeches/data-privacy-and-consumer-protection-summit-2026": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "OAIC가 개인정보 인식 조사 결과를 인용해 AI 도입 시 신중한 접근을 촉구한 연설(summit 연설 페이지)로, 특정한 하나의 제도를 다루지 않는다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Australia",
+      "country_ko": "호주"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://minister.industry.gov.au/t-ayres/media/remarks-the-australian-strategic-policy-institutes-sydney-dialogue-ai-masterclass": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "산업부 장관이 ASPI Sydney Dialogue AI 마스터클래스에서 한 연설로, AI 표준·저작권 보호를 위한 입법 틀을 추진 중이라는 정책 방향을 밝힌 것일 뿐 특정한 하나의 제도를 다루지 않는다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Australia",
+      "country_ko": "호주"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://kisa.or.kr/402/form?page=1&postSeq=2636": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "announcement",
+      "reason": "한국인터넷진흥원(KISA)이 실시한 정보보호 기업 대상 AI 보안 교육 행사와 테스트랩 이용 안내 소식으로, 특정한 하나의 제도를 다루지 않는다.",
+      "instrument_name": "Security companies enhance capabilities with AI to address new threats",
+      "name_ko": "한국 KISA AI 보안 역량 강화 교육",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "South Korea",
+      "country_ko": "대한민국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://cac.gov.cn/2026-09/15/c_1790876152357946.htm": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "announcement",
+      "reason": "중국 CAC가 네트워크·데이터 보안 위반 대표 집행 사례 10건을 공개한 소식으로, 특정한 하나의 제도가 아니라 기존 법규의 집행 사례 모음이다.",
+      "instrument_name": "Typical law enforcement cases on network and data security",
+      "name_ko": "중국 CAC 네트워크·데이터 보안 대표 집행 사례",
+      "doc_kind": "기타",
+      "stage": "published",
+      "country": "China",
+      "country_ko": "중국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://truthsocial.com/@realDonaldTrump/posts/117269745153543631": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "트럼프의 Truth Social 게시글로, 특정한 제도가 아니라 AI 통제에 관한 정치적 주장과 정책 방향을 밝힌 발언이다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://lawler.house.gov/news/documentsingle.aspx?DocumentID=6477": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "항목은 미국 하원에 발의된 특정 법안(Stop Rogue AI Act)을 다루며, 링크는 발의 의원(Lawler) 의원실이 그 법안을 알리는 공식 보도자료 페이지이다.",
+      "instrument_name": "Stop Rogue AI Act",
+      "name_ko": "미국 통제 불능 AI 방지법(Stop Rogue AI Act)",
+      "doc_kind": "법안",
+      "stage": "introduced",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "새 항목은 AI 에이전트 식별·통제를 다루는 Stop Rogue AI Act인데, 후보 중에는 같은 법안이 없고 이름이 비슷한 Stop Spying Bosses Act나 Stop Fentanyl at the Border Act 등은 전혀 다른 법안이다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://reuters.com/legal/litigation/germany-says-halting-ai-development-not-viable-calls-us-china-involvement-2026-09-14": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "Anthropic CEO의 AI 개발 속도 조절 요구에 대한 유럽 정부와 EU의 반응을 전하는 로이터 보도로, 특정한 하나의 제도를 다루지 않는다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "European Union",
+      "country_ko": "유럽연합"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://abc.net.au/news/2026-09-15/ai-companies-train-on-creator-work-documents-reveal/107154688": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "ABC News가 유출된 정부 저작권 개혁 협의안(두 가지 방안)을 보도한 기사로, 확정된 특정 제도 문서가 아니라 검토 중인 정책 방향에 관한 뉴스이다.",
+      "instrument_name": "AI copyright reform proposal (leaked)",
+      "name_ko": "호주 AI 학습 저작권 개혁안(유출)",
+      "doc_kind": "기타",
+      "stage": "consultation",
+      "country": "Australia",
+      "country_ko": "호주"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://tc260.org.cn/tc260/xwdt1/202609/d513a007d04347f58e483fabaefb34b8.shtml": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "헤드라인과 요약은 중국 TC260이 발표한 'AI 안전 거버넌스 프레임워크 3.0'이라는 특정 가이드라인 문서를 다루며, 링크는 TC260 공식 뉴스 페이지(xwdt1)로 제도 원문이 아니라 발표를 알리는 공식 발표문이다.",
+      "instrument_name": "AI Safety Governance Framework 3.0",
+      "name_ko": "중국 AI 안전 거버넌스 프레임워크 3.0",
+      "doc_kind": "가이드라인·원칙",
+      "stage": "published",
+      "country": "China",
+      "country_ko": "중국"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "새 항목은 AI 안전 거버넌스 프레임워크 3.0으로, 후보의 v1.0(doc-94faafd3f2f8)·2.0(doc-3f76581b11d4)과는 서로 다른 판이며 3.0에 해당하는 후보는 없다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://washingtonpost.com/politics/2026/09/13/trump-rejects-calls-so-slow-ai-development-citing-chinese-competition": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "트럼프 대통령의 AI 개발 속도 조절 반대 입장을 전하는 워싱턴포스트 보도로, 특정한 제도를 다루지 않는 정책 방향 언급이다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://fmprc.gov.cn/eng/xw/fyrbt/lxjzh/202609/t20260914_12021997.html": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "중국 외교부 정례 기자회견에서 나온 AI 거버넌스 입장 표명으로, 특정한 하나의 제도를 다루지 않고 정책 방향을 밝힌 발언이다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "China",
+      "country_ko": "중국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://washingtonexaminer.com/policy/technology/4725242/david-sacks-ai-pacing-anthropic-openai-regulations": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "전직 AI 차르의 AI 개발 자율 둔화에 대한 입장과 비판을 전한 언론 보도이며, 특정한 하나의 제도를 다루지 않는다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://nmpa.gov.cn/xxgk/ggtg/ylqxggtg/ylqxhybzhgg/20260914094604138.html": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "중국 국가약품감독관리국(NMPA)의 의료기기 행业标准 공고 페이지로, 뇌-컴퓨터 인터페이스 기기용 AI 뇌신호 데이터 표준이라는 특정 표준 하나의 발표를 알리는 공식 발표문이다.",
+      "instrument_name": "AI brain-signal data standard for brain-computer interface devices",
+      "name_ko": "중국 뇌-컴퓨터 인터페이스 기기 AI 뇌신호 데이터 표준",
+      "doc_kind": "표준",
+      "stage": "published",
+      "country": "China",
+      "country_ko": "중국"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "후보 중 중국 BCI 기기용 AI 뇌신호 데이터 표준(NMPA)을 다루는 문서는 없고, 다른 중국 AI 표준들은 모두 주제와 대상이 다른 별개의 제도이다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://nytimes.com/2026/09/13/us/politics/obama-democrats-ai.html": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "오바마가 민주당에 AI 감독을 우선시하라고 촉구했다는 뉴욕타임스 보도로, 특정한 제도를 다루지 않고 정책 방향 촉구에 그친다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://thepresidency.gov.za/statement-his-excellency-president-cyril-ramaphosa-during-session-shaping-future-inclusive-global": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "라마포사 대통령이 회의 세션에서 한 연설로, AI에 대한 국제 감독 기구 설립을 촉구하는 정책 방향 언급일 뿐 특정한 하나의 제도를 다루지 않는다.",
+      "instrument_name": "Statement by President Cyril Ramaphosa during the session 'Shaping the Future of Inclusive Global Governance'",
+      "name_ko": "남아공 대통령 AI 국제 감독 촉구 연설",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "South Africa",
+      "country_ko": "남아프리카공화국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://meti.go.jp/press/2026/09/20260914001.html": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "경제산업성이 AI·데이터 이용 계약 가이드라인 개정 검토에 쓸 사례를 모집한다는 공지이며, 새 제도나 개정본 자체가 아니라 의견·사례 수렴 안내라서 제도 원문으로 보기 어렵다.",
+      "instrument_name": "Contract Guidelines on Utilization of AI and Data",
+      "name_ko": "일본 AI·데이터 이용 계약 가이드라인",
+      "doc_kind": "가이드라인·원칙",
+      "stage": "consultation",
+      "country": "Japan",
+      "country_ko": "일본"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://committees.parliament.uk/committee/93/human-rights-joint-committee/news/217859/wideranging-ai-bill-needed-to-address-severe-human-rights-risks-posed-by-ai": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "announcement",
+      "reason": "영국 인권공동위원회가 포괄적 AI 법안 제정을 촉구하고 정책을 권고한 소식으로, 특정하게 확정된 제도가 아니라 정책 방향 촉구에 해당한다.",
+      "instrument_name": "AI Bill",
+      "name_ko": "영국 AI 법안 제정 촉구",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United Kingdom",
+      "country_ko": "영국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://fi.china-embassy.gov.cn/eng/zxxx/202609/t20260913_12021253.htm": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "시진핑 주석의 브릭스 정상회의 연설을 다룬 항목으로, 특정한 하나의 제도가 아니라 정책 방향 제안과 협력 촉구가 중심이며 링크도 연설문 페이지이다.",
+      "instrument_name": "Xi Jinping speech at the 18th BRICS Summit",
+      "name_ko": "제18차 브릭스 정상회의 시진핑 연설",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "China",
+      "country_ko": "중국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://en.belsat.eu/95354445/belarus-abandons-own-ai-regulation-after-18-months-and-hands-control-to-moscow-and-beijing": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "벨라루스가 자국 AI 법안을 접고 러시아·중국 중심 체계를 따르고 있다는 분석 기사로, 특정한 하나의 제도를 다루는 항목이 아니며 링크도 Belsat 언론 보도다.",
+      "instrument_name": "Belarus AI regulation",
+      "name_ko": "벨라루스 AI 규제",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Belarus",
+      "country_ko": "벨라루스"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://commission.europa.eu/strategy-and-policy/state-union_en": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "집행위원장의 국정연설(State of the Union)로 정책 우선순위를 밝힌 연설 소식이며, 특정한 하나의 제도를 다루는 항목이 아니고 링크도 연설 관련 페이지이다.",
+      "instrument_name": "State of the Union address",
+      "name_ko": "EU 국정연설",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "EU",
+      "country_ko": "유럽연합"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://audiovisual.ec.europa.eu/en/media/video/I-294332": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "헤드라인은 EU가 기술 기업들에게 AI 모델을 통제하라고 촉구했다는 소식으로, 특정한 하나의 제도를 다루지 않고 링크도 EU 시청각 서비스의 영상 자료라 제도 원문이나 공식 발표문이 아니다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "EU",
+      "country_ko": "유럽연합"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://reuters.com/world/india/india-plans-ai-registry-it-looks-roll-out-agentic-payments-sources-say-2026-09-10": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "로이터 보도로, 인도가 AI 등록부와 에이전트 결제 도입을 계획 중이라는 소식통 인용 기사이며 확정된 특정 제도 원문이 아니다.",
+      "instrument_name": "India AI registry and agentic payments rollout",
+      "name_ko": "인도 AI 등록부·에이전트 결제 도입 계획",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "India",
+      "country_ko": "인도"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://politico.eu/article/eu-response-ai-extinction-warnings": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "정책결정자들의 반응과 평가를 전하는 Politico 보도로, 새로운 특정 제도를 기록하는 항목이 아니며 기존 인공지능법을 언급할 뿐이다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "EU",
+      "country_ko": "유럽연합"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://cyber.gov.au/business-government/secure-design/artificial-intelligence/agentic-ai-harnesses": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "호주 신호국(ASD)이 에이전틱 AI 하네스에 관한 지침 문서를 발간했고, 링크는 해당 지침의 공식 페이지(cyber.gov.au)이다.",
+      "instrument_name": "Guidance on agentic AI harnesses",
+      "name_ko": "호주 ASD 에이전틱 AI 하네스 지침",
+      "doc_kind": "가이드라인·원칙",
+      "stage": "published",
+      "country": "Australia",
+      "country_ko": "호주"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "호주 ASD의 에이전틱 AI 하네스 지침에 해당하는 후보가 없다. 호주 후보(AI 도입 이행 지침, 다중 에이전트 시스템 보고서, 프론티어 AI 사이버보안 지침 등)와 에이전틱 AI 후보(싱가포르·UAE 등)는 모두 제도나 관할이 다르다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://ombudsman.europa.eu/en/opening-summary/en/232886": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "유럽 옴부즈맨이 집행위원회의 AI 특사 임명 절차를 조사한다는 소식으로, 특정한 제도(법·지침·전략 등)가 아니라 조사 착수와 인사 관련 사안이다.",
+      "instrument_name": "EU Ombudsman inquiry into the Commission's AI envoy appointment",
+      "name_ko": "EU 옴부즈맨의 집행위 AI 특사 임명 조사",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "EU",
+      "country_ko": "유럽연합"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://mlex.com/mlex/artificial-intelligence/articles/2523852/uk-diplomats-back-closer-eu-ai-ties-urge-more-european-computing-power": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "영국 외교관들의 EU와의 AI 협력 강화 및 컴퓨팅 역량 확대 촉구를 전하는 MLex 보도이며, 특정한 하나의 제도를 다루지 않는다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United Kingdom",
+      "country_ko": "영국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://info-gov.uk/artificial-intelligence/artificial-intelligence-news/government-rejects-lords-last-resort-power-to-shut-down-ai-systems-and-data-centres": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "헤드라인은 정부가 상원의 'last-resort' AI 중단 권한 제안을 거부했다는 소식이고, 요약은 의료 AI 규제 위원회의 권고 내용이라 서로 맞지 않으며, 어느 쪽도 특정한 하나의 제도를 다루지 않고 링크도 뉴스 페이지다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United Kingdom",
+      "country_ko": "영국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://ft.com/content/560e1c8b-f163-4fd6-b604-e905550ac870?syn-25a6b1a6=1": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "Financial Times 보도로, Anthropic이 영국 AI Security Institute에 최신 모델을 제공하지 않았다는 뉴스일 뿐 특정한 제도를 다루지 않는다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United Kingdom",
+      "country_ko": "영국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://euronews.com/my-europe/2026/09/10/the-eu-got-access-to-anthropics-most-powerful-model-three-months-later": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "ENISA가 Anthropic의 AI 모델에 뒤늦게 접근하게 된 경위를 전하는 Euronews 보도로, 특정한 법·정책 문서를 다루지 않는다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "EU",
+      "country_ko": "유럽연합"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://greenparty.org.uk/2026/09/10/greens-call-for-ai-companies-to-be-made-accountable-to-the-public-after-warnings-of-catastrophic-risks": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "영국 녹색당이 AI 규제 강화를 촉구하며 5개 항목의 정책 방향을 제시한 것으로, 법안이나 공식 제도가 아니라 정당의 정책 제안·촉구이고 링크도 정당 발표 페이지이다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United Kingdom",
+      "country_ko": "영국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://gov.uk/government/news/independent-commission-led-by-nhs-doctors-sets-out-blueprint-to-accelerate-safe-ai-adoption-in-healthcare": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "영국 의료 AI 규제 국가위원회가 발표한 권고안(정책보고서)을 정부(gov.uk)가 보도자료로 알리는 항목이며, 링크는 보고서 원문이 아닌 소개 페이지다.",
+      "instrument_name": "National Commission into the Regulation of AI in Healthcare recommendations",
+      "name_ko": "영국 의료 AI 규제 국가위원회 권고안",
+      "doc_kind": "정책보고서",
+      "stage": "published",
+      "country": "United Kingdom",
+      "country_ko": "영국"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "영국 의료 AI 규제 국가위원회 권고안(2025~26년경 발표 보고서)에 해당하는 후보가 없으며, 영국 후보들(국가 AI 전략, AI 규제 백서 등)과 미국 환자안전위원회법 등은 모두 다른 제도다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://rnz.co.nz/news/politics_election-2026/1309382/labour-promises-to-set-up-ai-regulator-copyright-rules-if-elected": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "뉴질랜드 노동당의 선거 공약(집권 시 AI 규제기관 설치와 저작권 규정 마련)을 다룬 RNZ 보도이며, 특정한 하나의 제도 문서가 아니라 정책 방향 언급에 해당한다.",
+      "instrument_name": "Labour's AI regulator and copyright rules election promise",
+      "name_ko": "뉴질랜드 노동당 AI 규제기관·저작권 규정 공약",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "New Zealand",
+      "country_ko": "뉴질랜드"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://spa.gov.sa/en/N2672020": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "SDAIA가 AI 전문가 배지 시험을 실시했다는 사업 시행 소식이며, 특정한 제도 원문을 다루는 항목이 아니고 링크도 사우디 국영통신(SPA)의 보도이다.",
+      "instrument_name": "SDAIA AI professional badge tests",
+      "name_ko": "사우디 SDAIA AI 전문가 배지 시험",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Saudi Arabia",
+      "country_ko": "사우디아라비아"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://nca.org.gh/2026/09/11/u-s-department-of-commerce-engages-nca-on-ai-regulation-and-enhanced-collaboration": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "미국 상무부 대표단과 가나 NCA의 면담·논의 소식으로, 특정한 하나의 제도를 다루지 않고 협력 방향과 AI 규제 필요성만 언급한다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Ghana",
+      "country_ko": "가나"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://english.court.gov.cn/2026-09/10/c_1212594.htm": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "중국 최고인민법원이 발표한 24개 조항의 AI 관련 사건 사법 지침이라는 특정 제도를 다루며, 링크는 최고인민법원 영문 사이트에 실린 이 지침을 소개하는 공식 발표문이다.",
+      "instrument_name": "Supreme People's Court judicial guidelines on handling AI-related cases",
+      "name_ko": "중국 최고인민법원 AI 사건 처리 사법 지침",
+      "doc_kind": "행정규칙",
+      "stage": "published",
+      "country": "China",
+      "country_ko": "중국"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "중국 최고인민법원이 AI 관련 사건 처리를 위해 발표한 사법 지침(24개 조항)은 후보 목록에 없으며, 중국 후보들은 모두 다른 주체·주제의 제도다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://bangkokpost.com/business/general/3316428/panel-establishes-4-pillars-for-future-thai-ai-strategy": {
+    "judge": {
+      "accept": false,
+      "is_instrument": true,
+      "link_type": "media",
+      "reason": "태국 국가 AI 위원회가 디지털 주권·AI 거버넌스·인재 양성·국내 산업 육성의 4대 축으로 이루어진 국가 AI 전략을 확정한 항목이며, 링크는 Bangkok Post 보도 기사이다.",
+      "instrument_name": "Thai National AI Strategy (four pillars)",
+      "name_ko": "태국 국가 AI 전략(4대 축)",
+      "doc_kind": "전략·정책",
+      "stage": "adopted",
+      "country": "Thailand",
+      "country_ko": "태국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://x.com/ControlAI/status/2097374482197340538": {
+    "judge": {
+      "accept": false,
+      "is_instrument": true,
+      "link_type": "other",
+      "reason": "항목은 Alex Sobel 의원이 영국 하원에 발의한 특정 법안(Artificial Superintelligence Security Bill)을 다루므로 제도이지만, 링크된 X(트위터) 게시물은 ControlAI의 SNS 글이어서 법안 원문이나 공식 페이지가 아니다.",
+      "instrument_name": "Artificial Superintelligence (Security) Bill",
+      "name_ko": "영국 인공초지능 보안 법안",
+      "doc_kind": "법안",
+      "stage": "introduced",
+      "country": "United Kingdom",
+      "country_ko": "영국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://sanders.senate.gov/press-releases/news-sanders-takano-reintroduce-bill-to-move-toward-32-hour-workweek-ensure-americas-workers-benefit-from-ai-and-automation": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "헤드라인이 특정 법안(Thirty-Two Hour Workweek Act)의 발의를 다루고, 링크는 발의 의원(샌더스 상원의원실)이 법안을 알리는 공식 보도자료이다.",
+      "instrument_name": "Thirty-Two Hour Workweek Act",
+      "name_ko": "미국 주32시간 근무제법안(Thirty-Two Hour Workweek Act)",
+      "doc_kind": "법안",
+      "stage": "introduced",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "후보 중 Thirty-Two Hour Workweek Act(주32시간 근무제법안)에 해당하는 문서가 없고, 나머지는 모두 다른 제도다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://mofcom.gov.cn/xwfb/xwfyrth/art/2026/art_1439afbf24d941bfaefba078aacf340c.html": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "중국 상무부 대변인이 미국의 AI 증류 관련 보고서에 대해 입장을 밝히며 반박한 발언으로, 특정한 하나의 제도를 다루지 않으며 링크도 대변인 답변(xwfyrth) 페이지다.",
+      "instrument_name": "Ministry of Commerce addresses U.S. report on Chinese AI distillation activities",
+      "name_ko": "중국 상무부, 미국의 중국 AI 증류 보고서에 대한 입장 표명",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "China",
+      "country_ko": "중국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://pm.gov.au/media/my-feed-my-way": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "호주 정부가 디지털 보호 의무(Digital Duty of Care) 법안 초안을 공개하고 의견 수렴에 들어간 사안이며, 링크는 총리실이 이를 알리는 공식 발표문이다.",
+      "instrument_name": "Digital Duty of Care legislation (exposure draft)",
+      "name_ko": "호주 디지털 보호 의무 법안(초안)",
+      "doc_kind": "법안",
+      "stage": "consultation",
+      "country": "Australia",
+      "country_ko": "호주"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "호주 디지털 보호 의무(Digital Duty of Care) 법안 초안은 온라인 안전 관련 법안인데, 후보 중에는 같은 법안이 없고 호주 후보들은 AI 전략·표준·지침 등 다른 제도이며 미국 디지털 착취 법안은 관할이 다르다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://hansard.parliament.uk/Commons/2026-09-09/debates/B4E6B484-80CC-4063-8C02-3F90E06C1D33/PersonalData(DigitalTwins)": {
+    "judge": {
+      "accept": false,
+      "is_instrument": true,
+      "link_type": "other",
+      "reason": "헤드라인은 영국 하원에 발의된 '개인정보(디지털 트윈)' 법안 하나를 다루지만, 링크는 법안 본문이나 의안 정보 페이지가 아니라 하원 의사록(Hansard)의 회의 기록 페이지다.",
+      "instrument_name": "Personal Data (Digital Twins) Bill",
+      "name_ko": "영국 개인정보(디지털 트윈) 법안",
+      "doc_kind": "법안",
+      "stage": "introduced",
+      "country": "United Kingdom",
+      "country_ko": "영국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://law.go.kr/LSW/lsRvsDocListP.do?chrClsCd=010102&lsId=011357": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "대통령이 공포한 개인정보 보호법 개정이라는 특정 법령을 다루며, 링크는 국가법령정보센터의 해당 법령 개정 이력 페이지로 제도 자체의 공식 페이지이다.",
+      "instrument_name": "Personal Information Protection Act (amended)",
+      "name_ko": "대한민국 개인정보 보호법 개정(AI 개발 목적 개인정보 이용 특례)",
+      "doc_kind": "법",
+      "stage": "amended",
+      "country": "South Korea",
+      "country_ko": "대한민국"
+    },
+    "match": {
+      "match_id": "doc-6f9b3aced8ad",
+      "match_member": "dpa-ai-20683",
+      "confidence": "high",
+      "reason": "후보는 AI 개발 목적 개인정보 이용 특례를 담은 한국 개인정보 보호법 개정(의안 제2220246호/법률 제21910호)이고, 새 항목은 그 개정안이 공포된 단계라 같은 제도의 단계만 다른 기록이다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/4592113/nsa-and-others-warn-china-based-ai-companies-are-distilling-us-frontier-ai-mode": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "NSA·FBI·CISA가 distillation 탐지법과 완화 조치를 담아 낸 공동 권고문 하나를 NSA가 공식 보도자료로 알리는 항목이다.",
+      "instrument_name": "Joint advisory on distillation of US frontier AI models by China-based AI companies",
+      "name_ko": "미국 NSA·FBI·CISA 중국 AI 기업 모델 증류 공동 권고문",
+      "doc_kind": "가이드라인·원칙",
+      "stage": "published",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "NSA·FBI·CISA의 중국 AI 기업 모델 증류 관련 공동 권고문과 같은 제도인 후보는 없고, 중국 관련 법안이나 미국 AI 문서들은 모두 다른 제도다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://hansard.parliament.uk/commons/2026-09-08/debates/09804EEA-ECA3-40E5-9E96-984DFCB2B139/ArtificialSuperintelligence": {
+    "judge": {
+      "accept": false,
+      "is_instrument": true,
+      "link_type": "other",
+      "reason": "헤드라인은 영국 의회에 발의된 특정 법안 하나를 다루지만, 링크는 법안 본문이나 의안 정보 페이지가 아니라 하원 의사록(Hansard)의 토론 기록 페이지다.",
+      "instrument_name": "Artificial Superintelligence Security Bill",
+      "name_ko": "영국 인공초지능 보안법안",
+      "doc_kind": "법안",
+      "stage": "introduced",
+      "country": "United Kingdom",
+      "country_ko": "영국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://economictimes.indiatimes.com/ai/ai-insights/ai-may-accelerate-anti-competitive-practices-in-digital-markets-cci-chief/articleshow/133878344.cms?from=mdr": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "CCI 위원장이 agentic AI의 경쟁 저해 위험을 경고한 발언을 전하는 언론 보도이며, 특정한 제도를 다루지 않는다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "India",
+      "country_ko": "인도"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://reuters.com/legal/litigation/us-china-gear-up-mid-september-ai-safety-dialogue-2026-09-04": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "미·중 AI 안전 회담 준비를 알리는 로이터 보도로, 특정한 제도가 아니라 회의 소식이다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United States, China",
+      "country_ko": "미국·중국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://euronews.com/next/2026/09/08/robot-revolt-polish-company-stages-protest-demanding-stricter-ai-rules": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "바르샤바 로봇 시위를 다룬 Euronews 보도로, 특정한 하나의 제도를 다루는 항목이 아니라 규제 요구 행사와 정책 계획 언급에 그친다.",
+      "instrument_name": "Robots protest in Warsaw to demand regulation of AI and automation",
+      "name_ko": "폴란드 바르샤바 AI 규제 요구 로봇 시위",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Poland",
+      "country_ko": "폴란드"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://politico.com/news/2026/09/03/mark-zuckerberg-said-a-national-ai-regulator-was-a-flawed-idea-in-a-secret-call-with-president-trump-01063843": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "Politico 보도로, 메타 CEO가 백악관의 AI 제안에 반대했다는 비공개 통화 소식을 전할 뿐 특정한 하나의 제도 원문을 다루지 않는다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://openrightsgroup.org/press-releases/org-and-mps-call-for-public-sector-use-of-ai-to-be-regulated": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "Open Rights Group이 영국 공공 부문 AI에 대한 독립적 규제를 촉구하는 내용으로, 특정한 하나의 제도가 아니라 정책 방향을 촉구하는 시민단체 소식이다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United Kingdom",
+      "country_ko": "영국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://english.www.gov.cn/news/202609/08/content_WS6a9fb5f1c6d00ca5f9a0d105.html": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "2026~2030년 지식재산권 보호·활용 계획이라는 특정한 정책 문서를 다루며, 링크는 중국 국무원 공식 영문 포털에서 그 계획의 내용을 소개하는 발표성 기사다.",
+      "instrument_name": "Plan for IP Protection and Utilization (2026–2030)",
+      "name_ko": "중국 2026~2030 지식재산권 보호·활용 계획",
+      "doc_kind": "전략·정책",
+      "stage": "published",
+      "country": "China",
+      "country_ko": "중국"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "새 항목은 중국의 2026~2030 지식재산권 보호·활용 계획이라는 별개의 제도인데, 후보 중에는 이 계획을 다루는 문서가 없고 중국 AI 전략이나 타국의 지식재산 정책은 모두 다른 제도다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://digitimes.com/news/a20260903VL203/taiwan-investment-production-legal.html": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "미 상무장관이 반도체 관세 2단계를 국내 제조와 연계한다고 확인했다는 언론(Digitimes) 보도이며, 특정한 제도 원문이나 공식 문서를 다루지 않는다.",
+      "instrument_name": "Chip tariff phase two",
+      "name_ko": "미국 반도체 관세 2단계",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://www-api.moda.gov.tw/File/Get/acs/en/4idU3JXLcBzvr0T": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "대만 사이버안보청이 최첨단 AI 사이버보안 위험에 대응하는 특정 정책을 발표했다는 항목이며, 링크는 moda.gov.tw의 파일 다운로드 주소라 정책 문서 원문으로 보인다.",
+      "instrument_name": "Policy for Addressing Frontier AI Cybersecurity Risks",
+      "name_ko": "대만 최첨단 AI 사이버보안 위험 대응 정책",
+      "doc_kind": "전략·정책",
+      "stage": "published",
+      "country": "Taiwan",
+      "country_ko": "대만"
+    },
+    "match": {
+      "match_id": "doc-459fc6fbbc54",
+      "match_member": "dpa-ai-21312",
+      "confidence": "high",
+      "reason": "관할(대만), 종류(전략·정책), 제도 이름(프론티어 AI 사이버보안 위험 대응 정책)이 모두 일치하며, 새 항목은 같은 정책의 발표 기록이다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://parlinfo.aph.gov.au/parlInfo/download/legislation/bills/r7537_first-reps/toc_pdf/26119b01.pdf": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "헤드라인이 하원에 제출된 특정 법안 하나를 다루고, 링크는 Parlinfo에 올라온 법안 원문(first reading PDF)이다.",
+      "instrument_name": "AI Kill Switch and Data Centre Control Bill",
+      "name_ko": "호주 AI 킬스위치·데이터센터 통제 법안",
+      "doc_kind": "법안",
+      "stage": "introduced",
+      "country": "Australia",
+      "country_ko": "호주"
+    },
+    "match": {
+      "match_id": "doc-9e9a951407e6",
+      "match_member": "dpa-ai-21334",
+      "confidence": "medium",
+      "reason": "호주 AI 킬 스위치·데이터센터 통제 법안 2026 자체를 가리키는 후보가 5건(조항별 개입 기록으로 분리) 있어 모두 같은 법안이며, 그중 법안 전반의 성격에 가장 가까운 거버넌스 항목을 골랐다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://theguardian.com/technology/2026/sep/02/architect-of-uks-ai-strategy-joins-anthropic": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "Matt Clifford의 Anthropic 합류와 이해충돌 논란을 다룬 인사 소식 기사로, 특정 제도를 다루지 않으며 링크도 언론 보도(Guardian)이다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United Kingdom",
+      "country_ko": "영국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://accc.gov.au/about-us/news/speeches/competition-and-consumer-law-responding-to-economic-change": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "ACCC 의장의 연설을 소개하는 항목으로, 특정한 하나의 제도를 다루지 않고 경쟁·소비자법 집행 방향과 활동을 설명하는 연설문이다.",
+      "instrument_name": "Competition and consumer law responding to economic change",
+      "name_ko": "호주 ACCC 의장 연설: 경제 변화에 대응하는 경쟁·소비자법",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Australia",
+      "country_ko": "호주"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://canada.ca/en/innovation-science-economic-development/news/2026/09/government-of-canada-launches-canadas-responsible-data-centre-development-principles.html": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "캐나다 정부가 '책임 있는 데이터센터 개발 원칙'이라는 특정 가이드라인을 발표한 사실을 캐나다 혁신과학경제개발부(ISED)가 공식 뉴스 페이지(canada.ca/.../news/...)로 알리는 보도자료이며, 원칙 원문 자체가 아니다.",
+      "instrument_name": "Canada's Responsible Data Centre Development Principles",
+      "name_ko": "캐나다 책임 있는 데이터센터 개발 원칙",
+      "doc_kind": "가이드라인·원칙",
+      "stage": "published",
+      "country": "Canada",
+      "country_ko": "캐나다"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "캐나다의 책임 있는 데이터센터 개발 원칙(전력요금·물 사용·지역사회 혜택 관련 원칙)과 같은 제도를 다룬 후보는 없고, 캐나다 AI 관련 문서나 다른 국가의 데이터센터 문서는 모두 별개의 제도다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://techcrunch.com/2026/09/02/norway-considers-ban-on-camera-enabled-wearable-pervert-glasses": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "노르웨이 정부가 스마트 안경 규제를 검토하고 전문가 그룹을 구성할 예정이라는 정책 방향 보도이며, 아직 특정한 하나의 제도가 존재하지 않고 링크도 TechCrunch 기사다.",
+      "instrument_name": "Norway regulation on camera-enabled AI smart glasses",
+      "name_ko": "노르웨이 AI 스마트 안경 규제 검토",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Norway",
+      "country_ko": "노르웨이"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://reuters.com/legal/litigation/us-urges-hands-off-approach-ai-regulation-g20-tech-meeting-2026-09-01": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "G20 기술 회의에서 미국이 AI 규제에 대한 불간섭 접근을 촉구했다는 로이터 보도로, 특정한 제도를 다루지 않고 정책 방향을 언급한 뉴스이다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://sci.gov.in/view-pdf?diary_no=219912026&from=latest_judgements_order&order_date=2026-09-02&type=j": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "인도 대법원이 AI가 만들어 낸 허위 판례를 근거로 한 관세 과징금을 취소한 개별 판결로, 법·지침 같은 제도가 아니라 사건 판결이다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "India",
+      "country_ko": "인도"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://elpais.com/economia/2026-09-02/sanchez-convocara-a-la-patronal-y-los-sindicatos-para-acordar-un-pacto-nacional-sobre-inteligencia-artificial.html": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "총리가 노사 대표를 소집해 AI 협약을 협상하겠다는 계획·정책 방향에 관한 보도로, 아직 확정된 특정 제도(문서)가 없고 링크도 El País 언론 기사이다.",
+      "instrument_name": "National AI pact (Spain)",
+      "name_ko": "스페인 국가 AI 협약(추진)",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Spain",
+      "country_ko": "스페인"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://reuters.com/legal/litigation/us-urge-hands-off-ai-regulation-g-20-official-says-2026-09-01": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "미국이 G20에서 AI 규제에 불간섭 입장을 촉구할 것이라는 정책 방향 보도로, 특정한 하나의 제도를 다루지 않고 링크도 로이터 기사이다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://bills.parliament.uk/bills/4035/stages/20525/amendments/10034477": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "영국 사이버보안 법안에 제출된 특정 수정안(AI 긴급 중단 권한)을 다루며, 링크는 의회 의안 정보 사이트의 해당 수정안 페이지다.",
+      "instrument_name": "AI kill switch amendment to UK cybersecurity bill",
+      "name_ko": "영국 사이버보안 법안 AI 긴급 중단 권한 수정안",
+      "doc_kind": "법안",
+      "stage": "introduced",
+      "country": "United Kingdom",
+      "country_ko": "영국"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "새 항목은 영국 사이버보안 법안에 대한 AI 긴급 중단 권한 수정안인데, 후보 중 영국 관할의 같은 수정안은 없고 미국 AI Kill Switch Act(HB 9917)는 관할과 법안이 달라 다른 제도다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://eng.sectsco.org/20260901/2493609.html": {
+    "judge": {
+      "accept": false,
+      "is_instrument": true,
+      "link_type": "other",
+      "reason": "비슈케크 선언이라는 특정 선언문의 채택을 다루지만, 링크는 SCO 정상회의 결과를 전하는 회의 소식 페이지로 선언 원문이 아니다.",
+      "instrument_name": "Bishkek Declaration",
+      "name_ko": "SCO 비슈케크 선언",
+      "doc_kind": "선언·성명",
+      "stage": "adopted",
+      "country": "Shanghai Cooperation Organisation",
+      "country_ko": "상하이협력기구"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://abc.net.au/news/2026-08-31/ai-could-boost-australias-economy-treasury-flag-slow-uptake/107099934": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "호주 재무부의 AI 도입 현황 경고와 생산성 전망을 전하는 ABC 뉴스 보도로, 특정한 하나의 제도를 다루지 않는다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Australia",
+      "country_ko": "호주"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_I2J6H0I7G2G2D1B3B3Z9A1Z7Z3H0H3": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "대한민국 국회에 발의된 인공지능기본법 개정안 하나를 다루며, 링크는 국회 의안정보시스템의 해당 의안 상세 페이지다.",
+      "instrument_name": "Bill amending the Framework Act on the Development of Artificial Intelligence and Establishment of Trust (AI Basic Act) to require disclosure of conversational AI systems",
+      "name_ko": "대한민국 인공지능기본법 개정안(대화형 AI 고지 의무)",
+      "doc_kind": "법안",
+      "stage": "introduced",
+      "country": "South Korea",
+      "country_ko": "대한민국"
+    },
+    "match": {
+      "match_id": "doc-20208333e5af",
+      "match_member": "dpa-ai-21243",
+      "confidence": "high",
+      "reason": "새 항목은 대화형 AI 시스템 고지 의무를 도입하는 인공지능기본법 개정안(안상훈 의원 발의)이며, 후보 doc-20208333e5af(법안 제2220998호)와 동일한 개정안으로 같은 제도의 다른 기록이다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://tse.jus.br/comunicacao/noticias/2026/Setembro/tse-fixa-tese-sobre-deepfake-e-delimita-regra-para-as-eleicoes-2026": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "announcement",
+      "reason": "헤드라인은 브라질 선거법원(TSE)이 딥페이크 규제의 적용 범위를 해석한 판결(tese)을 다루며, 새로 제정·개정된 특정 제도가 아니라 기존 규칙의 해석을 알리는 소식이다.",
+      "instrument_name": "TSE thesis on deepfakes in the 2026 elections",
+      "name_ko": "브라질 TSE 2026 선거 딥페이크 판례 논지",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Brazil",
+      "country_ko": "브라질"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://sd05.senate.ca.gov/news/legislature-approves-mcnerneys-landmark-bill-assess-artificial-intelligence-safety-risks": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "캘리포니아 SB 813이라는 특정 법안의 의회 통과를 다루며, 링크는 법안 발의 의원(McNerney) 상원의원실이 그 법안을 알리는 공식 보도자료이다.",
+      "instrument_name": "SB 813",
+      "name_ko": "캘리포니아 SB 813 (AI 안전 독립 평가법안)",
+      "doc_kind": "법안",
+      "stage": "passed",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {
+      "match_id": "doc-c203ab2b19cd",
+      "match_member": "dpa-ai-21394",
+      "confidence": "high",
+      "reason": "새 항목은 캘리포니아 SB 813(독립검증기관 IVO를 통한 AI 안전 평가법안)의 의회 통과 단계이며, 후보 doc-c203ab2b19cd는 같은 SB 813(Independent Verification Organizations Act)의 제정 단계 기록이라 같은 제도의 단계만 다른 기록이다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://ministers.ag.gov.au/media-centre/modernising-australias-privacy-laws-digital-age-31-08-2026": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "법무장관이 호주 개인정보보호법의 개정 초안을 발표한 사안으로, 링크는 장관실이 올린 공식 보도자료이며 개정안 초안이라는 특정 제도를 다룬다.",
+      "instrument_name": "Draft changes to modernise Australia's privacy laws",
+      "name_ko": "호주 개인정보보호법 현대화 개정 초안",
+      "doc_kind": "법안",
+      "stage": "draft",
+      "country": "Australia",
+      "country_ko": "호주"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "medium",
+      "reason": "새 항목은 호주 개인정보보호법(Privacy Act) 현대화를 위한 개정 초안인데, 후보 중 같은 초안을 다룬 문서는 없다. 가장 가까운 doc-414e5c640aea는 2023년 Privacy Act 검토 보고서에 대한 정부 응답(정책보고서)이어서 다른 문서이고, 나머지는 관할이나 주제가 다르다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://en.baochinhphu.vn/govt-approves-national-ai-strategy-111260829094257423.htm": {
+    "judge": {
+      "accept": false,
+      "is_instrument": true,
+      "link_type": "media",
+      "reason": "베트남 정부가 승인한 '2030년까지 국가 AI 전략(2045 비전)'이라는 특정 전략 문서를 다루는 항목이지만, 링크는 정부 기관지 성격의 영문 뉴스 매체(Vietnam Government News) 보도 기사다.",
+      "instrument_name": "National Strategy on Artificial Intelligence to 2030 with a vision to 2045",
+      "name_ko": "베트남 2030 국가 AI 전략(2045 비전)",
+      "doc_kind": "전략·정책",
+      "stage": "adopted",
+      "country": "Vietnam",
+      "country_ko": "베트남"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://bbc.com/news/articles/c4gv5gepxnyo": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "배우 80여 명이 AI 음성 복제를 막는 법을 정부에 요구했다는 BBC 보도로, 아직 특정한 제도가 존재하지 않고 정책 촉구와 협의 착수 소식을 다룬다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United Kingdom",
+      "country_ko": "영국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://apra.gov.au/news-and-publications/apra-and-asic-warn-frontier-ai-awareness-must-turn-action": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "announcement",
+      "reason": "APRA와 ASIC가 라운드테이블 결과를 바탕으로 금융권에 frontier AI 대응을 촉구한 소식으로, 특정한 하나의 제도가 아니라 정책 방향의 촉구에 해당한다.",
+      "instrument_name": "APRA and ASIC joint statement on frontier AI",
+      "name_ko": "호주 APRA·ASIC frontier AI 대응 촉구",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Australia",
+      "country_ko": "호주"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://minister.industry.gov.au/charlton/media/buy-australian-ai-partnership-boost-homegrown-ai-adoption": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "호주 정부가 출범시킨 특정 프로그램(Buy Australian AI Partnership)을 장관실이 공식 보도자료로 알리는 항목이다.",
+      "instrument_name": "Buy Australian AI Partnership",
+      "name_ko": "호주 자국산 AI 구매 파트너십 프로그램",
+      "doc_kind": "전략·정책",
+      "stage": "other",
+      "country": "Australia",
+      "country_ko": "호주"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "Buy Australian AI Partnership 프로그램과 같은 제도를 다루는 후보가 없다. 호주 관련 후보들(National AI Centre, APS AI Plan, Next Generation AI Graduates 등)은 모두 이름과 목적이 다른 별개 제도다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://pm.gov.au/media/meeting-national-cabinet-26-august-26": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "국가내각이 2027년까지 AI·데이터센터 법률을 마련하기로 합의했다는 정책 방향 소식이며, 특정한 하나의 제도가 아니고 링크도 여러 안건을 다룬 회의 결과 페이지다.",
+      "instrument_name": "National Cabinet agreement to legislate mandatory standards for AI and data centres",
+      "name_ko": "호주 국가내각 AI·데이터센터 의무 기준 입법 합의",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Australia",
+      "country_ko": "호주"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://congress.gov/bill/119th-congress/house-bill/10152": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "헤드라인이 미국 연방 하원에 발의된 특정 법안(Open-Source AI Leadership Act)을 다루며, 링크는 congress.gov의 의안 정보 페이지(H.R. 10152)로 제도 자체의 공식 페이지이다.",
+      "instrument_name": "Open-Source AI Leadership Act",
+      "name_ko": "미국 오픈소스 AI 리더십법안(H.R. 10152)",
+      "doc_kind": "법안",
+      "stage": "introduced",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {
+      "match_id": "doc-05ee0308807b",
+      "match_member": "dpa-ai-21366",
+      "confidence": "high",
+      "reason": "새 항목과 후보 모두 미국 119대 의회의 Open-Source AI Leadership Act(H.R./HB 10152)이며, 법안 번호와 관할이 같고 발의 단계만 다른 기록이다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://hcdn.gob.ar/proyectos/detalle_tp_adjunto/index.html?id=294115": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "법안 번호가 특정된 하나의 법안 제출 건이고, 링크는 아르헨티나 하원(hcdn.gob.ar)의 해당 법안 공식 페이지다.",
+      "instrument_name": "Bill 4362-D-2026",
+      "name_ko": "아르헨티나 법안 4362-D-2026",
+      "doc_kind": "법안",
+      "stage": "introduced",
+      "country": "Argentina",
+      "country_ko": "아르헨티나"
+    },
+    "match": {
+      "match_id": "doc-efcd36ce4a53",
+      "match_member": "dpa-ai-21225",
+      "confidence": "medium",
+      "reason": "후보 중 doc-50535c585354, doc-9c985afe1020, doc-efcd36ce4a53 세 건이 모두 아르헨티나 법안 4362-D-2026(AI 생성·변경 콘텐츠 식별·표시 의무)을 가리키며 같은 제도이고, 그중 한국어 제목이 법안 전체를 가장 포괄적으로 나타내는 doc-efcd36ce4a53을 골랐다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://oaic.gov.au/news/speeches/australian-law-librarians-association-conference": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "OAIC가 정부의 AI 사용 투명성을 촉구한 컨퍼런스 연설 내용으로, 특정한 하나의 제도를 다루지 않고 링크도 연설문 페이지이다.",
+      "instrument_name": "Australian watchdog urges transparency in government AI use",
+      "name_ko": "호주 정부 AI 사용 투명성 촉구 연설",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Australia",
+      "country_ko": "호주"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://abc.net.au/news/2026-08-28/ai-companies-want-to-leverage-australian-data-centres/107086534": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "ABC News가 부총리급 기술 담당 차관보의 발언과 데이터센터 협상력 논의를 전하는 보도이며, 특정한 하나의 제도 문서를 다루지 않는다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Australia",
+      "country_ko": "호주"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://congress.gov/bill/119th-congress/house-bill/10180": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "미국 연방 하원에 발의된 H.R. 10180이라는 특정 법안을 다루며, 링크는 congress.gov의 해당 법안 공식 의안 정보 페이지이다.",
+      "instrument_name": "H.R. 10180",
+      "name_ko": "미국 H.R. 10180 (NIST AI 평가 권한 확대 법안)",
+      "doc_kind": "법안",
+      "stage": "introduced",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "H.R. 10180은 119대 의회의 NIST AI 평가 권한 확대 법안인데, 후보 중 같은 법안번호(H.R. 10180)는 없고 가장 비슷한 HR 6461(AI 모델 평가·문서화)도 번호와 내용이 달라 다른 법안이다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://mlex.com/mlex/artificial-intelligence/articles/2517514/uk-to-get-ukraine-battlefield-data-to-train-ai-models-in-information-sharing-deal": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "영국과 우크라이나의 전장 데이터 공유 협력을 전하는 MLex 뉴스 기사이며, 제도 원문이 아니라 특정한 법·정책 문서를 다루지도 않는다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United Kingdom",
+      "country_ko": "영국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://mlex.com/mlex/artificial-intelligence/articles/2517326/thailand-digital-agency-weighs-ai-governance-sandbox-5g-advanced-upgrade": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "태국 디지털 기관이 AI 거버넌스 샌드박스와 5G-Advanced 업그레이드를 '검토 중'이라는 MLex 보도로, 확정된 특정 제도가 아니라 정책 방향 논의 소식이다.",
+      "instrument_name": "AI governance sandbox",
+      "name_ko": "태국 AI 거버넌스 샌드박스",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Thailand",
+      "country_ko": "태국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://nationthailand.com/business/tech/40070079": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "TH-AI Passport는 정부 AI 서비스 사업이고, 이 항목은 장관의 데이터 보안 해명과 사전 등록 현황을 전하는 언론 보도이며 법·지침 같은 제도 문서를 다루지 않는다.",
+      "instrument_name": "TH-AI Passport",
+      "name_ko": "태국 TH-AI Passport",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Thailand",
+      "country_ko": "태국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://govinfo.gov/app/details/BILLS-119hr10146ih/summary": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "미국 하원에 발의된 H.R. 10146 법안 하나를 다루며, 링크는 govinfo의 해당 법안 공식 상세 페이지이다.",
+      "instrument_name": "AI Advertising Disclosure Act",
+      "name_ko": "미국 AI 광고 공개법 (H.R. 10146)",
+      "doc_kind": "법안",
+      "stage": "introduced",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {
+      "match_id": "doc-1af5cc5a51e7",
+      "match_member": "dpa-ai-21100",
+      "confidence": "high",
+      "reason": "새 항목과 후보 모두 미국 하원의 AI Advertising Disclosure Act(H.R. 10146)로 법안 번호, 관할, 제도 이름이 같으며 후보는 같은 법안의 다른 기록이다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://mlaw.gov.sg/public-consultation-on-artificial-intelligence-and-singapore-s-intellectual-property-regime": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "싱가포르 법무부와 IPOS가 AI와 지식재산 제도에 관해 낸 특정 공개 의견수렴 건이며, 링크는 그 의견수렴을 다룬 법무부 공식 페이지이다.",
+      "instrument_name": "Public Consultation on Artificial Intelligence and Singapore's Intellectual Property Regime",
+      "name_ko": "싱가포르 AI·지식재산 제도 공개 의견수렴",
+      "doc_kind": "정책보고서",
+      "stage": "consultation",
+      "country": "Singapore",
+      "country_ko": "싱가포르"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "싱가포르 AI·지식재산 제도 공개 의견수렴과 같은 제도인 후보가 없다. 영국 저작권·AI 의견수렴과 미국 USPTO 보고서는 주제가 비슷하지만 관할이 다르고, 싱가포르 후보들은 모두 다른 AI 정책·제도다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://pmo.gov.sg/newsroom/ndr2026": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "싱가포르 총리의 National Day Rally 연설에서 AI 위험과 안전장치 강화 계획을 언급한 소식이며, 특정한 하나의 제도를 다루지 않고 링크도 연설 페이지이다.",
+      "instrument_name": "National Day Rally 2026 speech",
+      "name_ko": "싱가포르 2026 국경일 집회 연설",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Singapore",
+      "country_ko": "싱가포르"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://fca.org.uk/publications/multi-firm-reviews/frontier-ai-cyber-resilience": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "FCA가 frontier AI와 사이버 복원력에 관한 다기업 검토 결과를 하나의 보고서로 발간했고, 링크는 그 문서의 공식 발간물 페이지이므로 정책보고서로 볼 수 있다.",
+      "instrument_name": "Frontier AI and cyber resilience multi-firm review",
+      "name_ko": "영국 FCA 프런티어 AI·사이버 복원력 다기업 검토",
+      "doc_kind": "정책보고서",
+      "stage": "published",
+      "country": "United Kingdom",
+      "country_ko": "영국"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "영국 FCA의 프런티어 AI·사이버 복원력 다기업 검토와 같은 문서는 후보에 없고, 비슷한 주제의 후보들은 대만·호주 등 관할이 다르거나 영국 AI 사이버 보안 실천규범처럼 별개의 제도다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://pressreader.com/malawi/the-daily-times-malawi/20260820/281655376912789": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "말라위 정부가 AI 법제를 검토 중이라는 정책 방향을 다룬 언론 보도(The Daily Times, PressReader)이며, 특정한 하나의 제도를 다루지 않는다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Malawi",
+      "country_ko": "말라위"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-195mr-asic-warns-scammers-are-using-ai-to-spin-vast-webs-of-deception": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "announcement",
+      "reason": "ASIC이 AI를 이용한 투자 사기에 대해 투자자에게 경고하는 보도자료로, 특정한 법·지침 등 제도를 다루지 않는다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Australia",
+      "country_ko": "호주"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://whitehouse.gov/wp-content/uploads/2026/08/NSSTS-082026.pdf": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "백악관이 AI와 자율성을 우선순위로 둔 국가안보 과학기술 전략 문서를 발표했고, 링크가 그 전략 PDF 원문이다.",
+      "instrument_name": "National Security Science and Technology Strategy",
+      "name_ko": "미국 국가안보 과학기술 전략",
+      "doc_kind": "전략·정책",
+      "stage": "published",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "2026년 8월 발표된 미국 국가안보 과학기술 전략(NSSTS)과 동일한 제도를 가진 후보가 없으며, NSCAI·NSPM-11·국가 AI R&D 전략계획·핵심·신흥기술 국가전략 등은 모두 별개의 문서다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://reuters.com/world/china/us-tell-partners-they-must-pick-sides-ai-race-with-china-2026-08-14": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "로이터 보도로, 미국 정부가 파트너국에 AI 경쟁에서 입장을 선택하라고 전했다는 정책 방향 소식일 뿐 특정한 하나의 제도를 다루지 않는다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://asia.nikkei.com/business/technology/artificial-intelligence/japan-to-deploy-stronger-ai-safeguards-as-model-capabilities-advance": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "닛케이 아시아의 보도로, 일본 정부가 준비 중인 AI 안전장치 패키지의 방향만 전하며 확정된 특정 제도의 원문이나 공식 문서가 아니다.",
+      "instrument_name": "Japan multi-agency AI safeguard package",
+      "name_ko": "일본 부처 합동 AI 안전장치 패키지",
+      "doc_kind": "기타",
+      "stage": "draft",
+      "country": "Japan",
+      "country_ko": "일본"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://public-inspection.federalregister.gov/2026-17163.pdf": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "링크가 CFTC가 연방관보에 게재할 공식 문서(PDF) 원문이며, 컴퓨트 파생상품 상장에 관한 특정 조사 문서를 다룬다.",
+      "instrument_name": "CFTC inquiry into the listing of compute derivatives contracts that critically serve the AI market",
+      "name_ko": "미국 CFTC 컴퓨트 파생상품 상장 조사",
+      "doc_kind": "기타",
+      "stage": "consultation",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {
+      "match_id": "doc-888ea0b89829",
+      "match_member": "dpa-ai-21061",
+      "confidence": "high",
+      "reason": "새 항목과 doc-888ea0b89829는 모두 미국 CFTC가 컴퓨트 파생상품 계약의 상장 문제를 다루는 동일한 조사(inquiry)이며, 후보는 2026-08-21 발표이고 새 항목은 그 연방관보 공고 문서다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://mlex.com/mlex/artificial-intelligence/articles/2512957/china-food-delivery-giants-ease-algorithmic-strain-on-riders-amid-regulatory-push": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "중국 배달 플랫폼들이 회의 후 알고리즘 압박 완화 조치를 시행하기로 했다는 업계 동향 보도이며, 특정한 하나의 제도를 다루지 않고 링크도 MLex 언론 기사이다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "China",
+      "country_ko": "중국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://public-comment.e-gov.go.jp/pcm/download?seqNo=0000305362": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "헤드라인은 일본이 공개한 AI 지식재산 보호·투명성 규범 초안 하나를 다루고, 링크는 e-Gov 의견수렴 포털에서 내려받는 초안 문서 자체다.",
+      "instrument_name": "Draft AI Code on IP Protection and Transparency",
+      "name_ko": "일본 AI 지식재산 보호·투명성 규범(안)",
+      "doc_kind": "가이드라인·원칙",
+      "stage": "consultation",
+      "country": "Japan",
+      "country_ko": "일본"
+    },
+    "match": {
+      "match_id": "doc-054600dd8bc5",
+      "match_member": "dpa-ai-21088",
+      "confidence": "high",
+      "reason": "새 항목(일본 AI 지식재산 보호·투명성 규범 초안, 의견수렴 단계)은 후보 doc-054600dd8bc5(생성AI 적정 이용을 위한 지식재산 보호·투명성 원칙 코드)와 관할·종류·주제가 같고 초안→확정 단계만 다른 동일 문서로 보인다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://resmigazete.gov.tr/eskiler/2026/08/20260818-8.pdf": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "헤드라인이 튀르키예의 특정 AI 로드맵 발표를 다루고, 링크가 관보(Resmî Gazete) PDF 원문이므로 제도 원문으로 볼 수 있다(요약이 없어 정확한 공식 명칭과 문서 성격은 확인되지 않음).",
+      "instrument_name": "Türkiye AI Roadmap",
+      "name_ko": "튀르키예 AI 로드맵",
+      "doc_kind": "전략·정책",
+      "stage": "published",
+      "country": "Türkiye",
+      "country_ko": "튀르키예"
+    },
+    "match": {
+      "match_id": "doc-3a8c3f7fb679",
+      "match_member": "dpa-ai-21012",
+      "confidence": "medium",
+      "reason": "2026-08-18자 관보(Resmî Gazete)에 실린 튀르키예 AI 로드맵은 2026-08-17 대통령 시행문으로 발표된 '인공지능 행동계획(2026-2030)'과 같은 문서일 가능성이 높지만, 요약이 없어 이름·내용으로 직접 확인하지는 못했다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2220246/detailRP": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "대한민국 개인정보 보호법 개정안이라는 특정 법안을 다루며, 링크는 국회 입법예고 시스템(opinion.lawmaking.go.kr)에 있는 해당 법안의 공식 상세 페이지이다.",
+      "instrument_name": "Personal Information Protection Act (PIPA) Amendment Bill",
+      "name_ko": "대한민국 개인정보 보호법 개정안(AI 개발 목적 개인정보 활용 특례)",
+      "doc_kind": "법안",
+      "stage": "introduced",
+      "country": "South Korea",
+      "country_ko": "대한민국"
+    },
+    "match": {
+      "match_id": "doc-6f9b3aced8ad",
+      "match_member": "dpa-ai-20683",
+      "confidence": "high",
+      "reason": "새 항목의 의안번호 2220246(링크 URL에도 포함)과 AI 개발 목적 개인정보 활용 특례를 담은 한국 개인정보 보호법 개정안이라는 점이 후보 doc-6f9b3aced8ad와 일치하며, 단계 차이는 같은 법안의 진행 기록이다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://thehill.com/policy/technology/6022646-openai-anthropic-cybersecurity-incidents": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "민주당 하원의원들이 AI 기업 CEO들에게 AI 해킹 사건에 대한 증언을 요구했다는 The Hill의 보도로, 특정한 제도가 아니라 촉구 및 정책 압박 소식이다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://mps.gov.cn/n6557558/c10576497/content.html": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "announcement",
+      "reason": "헤드라인은 경찰의 데이터·알고리즘 사이버보안 점검 확대라는 집행 활동을 전할 뿐 특정한 법령이나 문서를 가리키지 않고, 요약도 없어 제도 여부를 확인할 수 없다.",
+      "instrument_name": "Police cybersecurity inspections of data and algorithms",
+      "name_ko": "중국 데이터·알고리즘 경찰 사이버보안 점검",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "China",
+      "country_ko": "중국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://korea.kr/docViewer/skin/doc.html?fn=620ac111483c1ce54d9366101c542d47&rs=%2FdocViewer%2Fresult%2F2026.08%2F13%2F620ac111483c1ce54d9366101c542d47": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "announcement",
+      "reason": "감사원이 정부 AI 데이터셋의 중복 문제를 지적했다는 감사 결과 소식이며, 라이브러리에 둘 특정 제도(법·전략·지침 등)를 다루는 항목이 아니다. 링크는 korea.kr 정부 문서 뷰어라 정부 발표 자료로 보이나, 내용은 확인되지 않았다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "South Korea",
+      "country_ko": "대한민국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://privacy.gov.ph/notice-to-the-public-use-of-real-persons-likenesses-in-ai-generated-images": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "필리핀 개인정보보호위원회가 AI 생성 이미지·영상에서 실존 인물의 모습을 쓸 때 적용되는 개인정보보호법상 의무와 구제 절차를 안내한 특정 공식 공지문이며, 링크가 그 문서 자체의 공식 페이지이다.",
+      "instrument_name": "Notice to the Public: Use of Real Persons' Likenesses in AI-Generated Images",
+      "name_ko": "필리핀 NPC AI 생성 이미지 내 실존 인물 초상 사용 공지",
+      "doc_kind": "가이드라인·원칙",
+      "stage": "published",
+      "country": "Philippines",
+      "country_ko": "필리핀"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "새 항목은 필리핀 NPC가 AI 생성 이미지 속 실존 인물 초상 사용에 관해 낸 공지인데, 후보 중 같은 문서는 없고 필리핀 후보(국가 AI 전략 로드맵 2.0)는 별개의 전략 문서이며 나머지는 다른 관할의 법·지침이다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://abc.net.au/news/2026-08-10/artificial-intelligence-royal-commission-announced-in-sa/107017502": {
+    "judge": {
+      "accept": false,
+      "is_instrument": true,
+      "link_type": "media",
+      "reason": "남호주에서 AI 관련 왕립위원회(Royal Commission)가 설립·개시된 것으로, 기구 설립이라는 특정 제도를 다루지만 링크는 ABC 뉴스 보도이다.",
+      "instrument_name": "Royal Commission into Artificial Intelligence",
+      "name_ko": "남호주 AI 왕립위원회",
+      "doc_kind": "기구·제도",
+      "stage": "other",
+      "country": "Australia",
+      "country_ko": "호주"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://industry.gov.au/publications/risks-and-controls-multi-agent-systems": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "호주 산업과학자원부가 멀티에이전트 시스템의 위험과 통제를 다룬 특정 보고서를 발간했고, 링크는 해당 문서의 공식 게시 페이지이다.",
+      "instrument_name": "Risks and controls for multi-agent systems",
+      "name_ko": "호주 멀티에이전트 시스템 위험·통제 보고서",
+      "doc_kind": "정책보고서",
+      "stage": "published",
+      "country": "Australia",
+      "country_ko": "호주"
+    },
+    "match": {
+      "match_id": "doc-1985e83f1327",
+      "match_member": "dpa-ai-20870",
+      "confidence": "medium",
+      "reason": "새 항목은 호주 산업과학자원부가 발표한 '멀티에이전트 시스템의 위험과 통제' 정책보고서이며, 같은 관할·종류·주제의 doc-1985e83f1327과 같은 보고서로 보인다. 다만 doc-e19fc9c0184c(Gradient Institute 분석 프레임워크, 가이드라인 분류)도 같은 DISR 보고서를 가리킬 가능성이 있어 확신은 중간이다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://reuters.com/legal/litigation/meta-anthropic-google-openai-meet-with-trump-white-house-amid-rogue-ai-agent-2026-08-04": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "트럼프 보좌관들이 AI 기업에 오픈웨이트 모델은 안전성 테스트를 하지 않겠다고 밝힌 로이터 보도로, 특정한 하나의 제도 원문이 아니라 회의·정책 방향에 관한 뉴스이다.",
+      "instrument_name": "Frontier AI pre-deployment safety testing framework",
+      "name_ko": "미국 프론티어 AI 사전 안전성 검사 체계",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://dpc.sa.gov.au/news/royal-commission-into-artificial-intelligence-announced": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "남호주 정부가 AI 규제·윤리 조사를 위한 특정 기구인 왕립위원회를 설립한다고 알린 총리내각부의 공식 발표문이다.",
+      "instrument_name": "Royal Commission into Artificial Intelligence",
+      "name_ko": "남호주 AI 왕립위원회",
+      "doc_kind": "기구·제도",
+      "stage": "other",
+      "country": "Australia",
+      "country_ko": "호주"
+    },
+    "match": {
+      "match_id": "doc-221c662eb61d",
+      "match_member": "dpa-ai-20894",
+      "confidence": "medium",
+      "reason": "새 항목은 남호주 총리내각부(DPC)가 발표한 AI 규제 조사 왕립위원회로, 후보 doc-221c662eb61d(남호주 DPC의 AI 정책·규제 조사)와 같은 관할·주체·시기의 같은 조치로 보이지만, 후보의 유형 표기가 '법'이라 완전히 확신하기는 어렵다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://khanna.house.gov/media/press-releases/release-rep-khanna-introduces-data-center-bill-rights": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "로 칸나 하원의원이 발의한 '데이터 센터 권리장전' 결의안이라는 특정 제도를 의원실 공식 보도자료로 알리는 항목이다.",
+      "instrument_name": "Data Center Bill of Rights",
+      "name_ko": "미국 데이터 센터 권리장전 결의안",
+      "doc_kind": "법안",
+      "stage": "introduced",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "칸나 의원의 미국 '데이터 센터 권리장전' 결의안과 같은 제도인 후보는 없고, 미국 후보인 연방 토지 AI 데이터센터 금지법안(HB 9939)과 데이터센터 인허가 행정명령은 서로 다른 제도이며 AI 권리장전도 별개의 문서다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://dfat.gov.au/geo/vietnam/vietnam-country-brief/memorandum-understanding-between-government-socialist-republic-viet-nam-and-government-australia-cooperation-digital-economy": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "베트남과 호주가 서명한 디지털 경제 협력 MOU라는 특정 문서 하나를 다루며, 링크도 호주 외교통상부(DFAT)에 있는 그 MOU의 공식 페이지로 보인다.",
+      "instrument_name": "Memorandum of Understanding between the Government of the Socialist Republic of Viet Nam and the Government of Australia on Cooperation in the Digital Economy",
+      "name_ko": "베트남-호주 디지털 경제 협력 MOU",
+      "doc_kind": "기타",
+      "stage": "adopted",
+      "country": "Vietnam and Australia",
+      "country_ko": "베트남·호주"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "베트남-호주 디지털 경제 협력 MOU 자체를 다루는 후보는 없다. 호주·베트남 과학기술·혁신 연계 공동성명(doc-31b98154021e)은 문서 종류와 주제가 다른 별개 문서이고, 나머지는 관할이나 제도가 다르다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://mlex.com/mlex/artificial-intelligence/articles/2509791/australian-competition-chair-outlines-approach-for-ai-energy-digital-markets": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "ACCC 위원장이 규제 콘퍼런스에서 AI·디지털 시장 규제 접근 방향을 밝힌 연설 소식으로, 특정한 하나의 제도를 다루지 않으며 링크도 MLex 보도 기사이다.",
+      "instrument_name": "Australian competition chair outlines approach for AI and digital markets",
+      "name_ko": "호주 ACCC 위원장 AI·디지털 시장 규제 접근 발언",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Australia",
+      "country_ko": "호주"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://reuters.com/business/media-telecom/britain-says-it-is-open-ai-regulation-if-voluntary-safeguards-fall-short-2026-08-03": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "영국 정부가 자발적 안전조치가 부족하면 AI 규제를 열어두겠다는 정책 방향을 보도한 로이터 기사로, 특정한 하나의 제도를 다루지 않는다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United Kingdom",
+      "country_ko": "영국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://tikatangata.org.nz/news/commission-calls-for-human-rights-centred-approach-to-ai-and-digital-technologies": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "뉴질랜드 인권위원회가 발간한 특정 보고서(AI와 디지털 기술: 인권과 테 티리티 오 와이탕이 접근)를 알리는 위원회 공식 발표 페이지이며, 보고서 본문 자체가 아니라 소개 글이다.",
+      "instrument_name": "AI and Digital Technologies: A Human Rights and Te Tiriti o Waitangi Approach",
+      "name_ko": "뉴질랜드 AI·디지털 기술: 인권과 테 티리티 오 와이탕이 접근 보고서",
+      "doc_kind": "정책보고서",
+      "stage": "published",
+      "country": "New Zealand",
+      "country_ko": "뉴질랜드"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "뉴질랜드 인권위원회의 'AI and Digital Technologies: 인권과 테 티리티 접근' 보고서와 동일한 제도를 가리키는 후보가 없으며, 비슷한 주제의 후보(UN 결의, UN 인권실사 보고서, 뉴질랜드 알고리즘 헌장 등)는 모두 다른 문서나 다른 관할이다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://pib.gov.in/PressReleaseDetail.aspx?PRID=2295500&lang=1&reg=3": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "announcement",
+      "reason": "헤드라인이 특정 법령·규칙을 짚지 않고 딥페이크 대응 AI 규제를 강화한다는 정책 방향만 말하며, 요약도 없어 하나의 제도를 확인할 수 없다.",
+      "instrument_name": "AI regulation to address deepfakes",
+      "name_ko": "인도 딥페이크 대응 AI 규제 강화",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "India",
+      "country_ko": "인도"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://chosun.com/english/industry-en/2026/08/04/2PN2RC65JFGTDEZEC6GCAKCVVQ": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "한국 정부의 메가 특별구역 추진 계획을 전하는 조선일보 영문판 보도이며, 법령이나 공식 문서 같은 특정한 하나의 제도 원문이 아니라 정책 방향과 계획을 다룬 뉴스 기사이다.",
+      "instrument_name": "Mega special zones plan",
+      "name_ko": "대한민국 메가 특별구역 계획",
+      "doc_kind": "전략·정책",
+      "stage": "other",
+      "country": "South Korea",
+      "country_ko": "대한민국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://esafety.gov.au/newsroom/media-releases/from-homework-to-heartache-why-children-are-turning-to-ai": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "announcement",
+      "reason": "호주 eSafety Commissioner가 아동의 AI 이용 실태를 알리는 보도자료로, 특정한 하나의 제도를 다루지 않고 조사·동향 소식에 해당한다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Australia",
+      "country_ko": "호주"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://reuters.com/world/eu-says-necessary-monitor-high-risk-ai-systems-after-openai-anthropic-ai-hacking-2026-07-31": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "EU가 OpenAI·Anthropic과 논의했다는 로이터 보도로, 특정한 하나의 제도를 다루지 않고 고위험 AI 시스템 모니터링의 필요성을 언급한 뉴스 기사이다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "EU",
+      "country_ko": "유럽연합"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://mod.go.jp/j/press/wp/wp2026/pdf/DOJ2026_Digest_EN.pdf": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "일본 방위성이 발간한 2026년 방위백서(Defense of Japan 2026) 다이제스트 PDF 원문으로, 특정한 하나의 정책보고서를 다룬다.",
+      "instrument_name": "Defense of Japan 2026 (Defense White Paper)",
+      "name_ko": "일본 2026 방위백서",
+      "doc_kind": "정책보고서",
+      "stage": "published",
+      "country": "Japan",
+      "country_ko": "일본"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "일본 2026 방위백서(Defense of Japan 2026)는 방위성이 발간한 별개의 정책보고서인데, 후보 중에는 이 방위백서를 다루는 문서가 없고 AI 정책·백서 항목들은 모두 다른 제도다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://citizen.org/article/congress-must-investigate-the-openai-hugging-face-security-incident-and-strengthen-federal-ai-oversight": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "시민단체 연합이 OpenAI 보안 사고에 대한 의회 조사와 연방 AI 감독 강화를 촉구하는 내용이며, 특정한 제도를 다루지 않는다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/07/evolving-regulatory-sandboxes-to-meet-the-demands-of-ai-and-emerging-tech": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "ICO가 법적 규제 샌드박스 도입을 검토 중이라는 정책 방향 소식이며, 특정한 제도 문서가 아니고 최종 결정도 정부 몫이다.",
+      "instrument_name": "Statutory Regulatory Sandbox",
+      "name_ko": "영국 법적 규제 샌드박스(검토)",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "United Kingdom",
+      "country_ko": "영국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://nist.gov/publications/guidance-and-templates-public-facing-ai-documentation-ai-standards-zero-draft-initial": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "NIST가 의견 수렴을 위해 공개한 AI 문서화 지침·템플릿 '제로 드래프트' 초안이라는 특정 문서를 다루며, 링크도 해당 문서의 공식 NIST 출판물 페이지이다.",
+      "instrument_name": "Guidance and Templates for Public-Facing AI Documentation: AI Standards Zero Draft (Initial)",
+      "name_ko": "미국 NIST AI 문서화 지침·템플릿 제로 드래프트(초안)",
+      "doc_kind": "가이드라인·원칙",
+      "stage": "consultation",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "새 항목은 NIST의 공개용 AI 문서화 지침·템플릿 '제로 드래프트' 초안인데, 후보 중에는 이 문서나 그 다른 단계 기록에 해당하는 것이 없고 NIST 워킹그룹·설명가능 AI 원칙 등은 별개 제도다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://intellectual-property-helpdesk.ec.europa.eu/ip-management-and-resources/publications/navigating-intellectual-property-age-artificial-intelligence_en": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "EU 지식재산 헬프데스크가 AI 시대의 지식재산 관리 지침을 담아 발간한 사실시트(공식 문서)의 공식 페이지로, 특정한 하나의 가이드 문서를 다룬다.",
+      "instrument_name": "Navigating Intellectual Property in the Age of Artificial Intelligence",
+      "name_ko": "EU AI 시대 지식재산 대응 사실시트",
+      "doc_kind": "가이드라인·원칙",
+      "stage": "published",
+      "country": "EU",
+      "country_ko": "유럽연합"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "새 항목은 EU IP 헬프데스크가 발간한 AI 시대 지식재산 사실시트인데, 후보 중 같은 문서는 없다. WIPO 가이드는 관할과 발행 기관이 다르고, EU 의회 IP 결의안(2020)은 별개의 문서다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://esma.europa.eu/sites/default/files/2026-07/JC_2026_25_ESA_statement_on_frontier_AI_models.pdf": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "링크가 유럽감독청(ESA)의 프런티어 AI 모델 관련 성명 PDF 원문이고, 특정한 하나의 문서를 다루므로 제도 원문으로 볼 수 있다.",
+      "instrument_name": "ESA Statement on Frontier AI Models (JC 2026 25)",
+      "name_ko": "EU 유럽감독청 프런티어 AI 모델 성명 (JC 2026 25)",
+      "doc_kind": "선언·성명",
+      "stage": "published",
+      "country": "EU",
+      "country_ko": "유럽연합"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "새 항목은 EU 유럽감독청(ESA)이 2026년에 낸 프런티어 AI 사이버 위험 공동 성명(JC 2026 25)인데, 후보 중에는 이 성명 자체나 같은 제도의 다른 단계 기록이 없고 프런티어 AI, EU, 성명이라는 키워드가 겹치는 다른 제도뿐이다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://mofcom.gov.cn/syxwfb/art/2026/art_7f1622463a7c48ef9fad600ce0ef702f.html": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "other",
+      "reason": "중국이 미국의 대중국 AI 기업 제재에 경고했다는 입장 표명 소식으로, 특정한 하나의 제도를 다루지 않으며 링크도 상무부의 대응 발언 페이지라 제도 원문이나 제도 소개 발표문이 아니다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "China",
+      "country_ko": "중국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://enterprise.gov.ie/en/news-and-events/department-news/2026/july/20260730.html": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "아일랜드 AI 사무소라는 특정 규제 기구의 설립을 다루며, 링크는 담당 부처(기업부)의 공식 발표문이다. 다만 CEO 임명 소식이 함께 담겨 있다.",
+      "instrument_name": "AI Office of Ireland (Oifig IS na hÉireann)",
+      "name_ko": "아일랜드 AI 사무소",
+      "doc_kind": "기구·제도",
+      "stage": "other",
+      "country": "Ireland",
+      "country_ko": "아일랜드"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "후보 중 아일랜드 AI 사무소(Oifig IS na hÉireann) 자체를 다루는 문서가 없고, EU AI 사무소와 영국 AI 사무소는 관할이 다른 별개 기구이며 나머지 아일랜드 항목들도 서로 다른 제도다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1714": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "EU 집행위원회가 AI Act의 집행 개시와 투명성 의무 적용을 알리는 공식 보도자료로, 특정 법(AI Act)을 다룬다.",
+      "instrument_name": "Artificial Intelligence Act",
+      "name_ko": "EU AI법",
+      "doc_kind": "법",
+      "stage": "other",
+      "country": "EU",
+      "country_ko": "유럽연합"
+    },
+    "match": {
+      "match_id": "doc-3c3044cc78f0",
+      "match_member": "dpa-ai-8987",
+      "confidence": "medium",
+      "reason": "새 항목의 제도는 EU AI Act 원법 자체이고, 후보 중 제목이 'EU 인공지능법(AI Act)'인 이 문서가 원법에 해당한다. 다른 후보는 개정안(디지털 옴니버스), 제50조 지침, 특정 조항만 다룬 문서, 안내문이라 제외했다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://japantimes.co.jp/news/2026/07/28/japan/justice-ministry-approval-ai-draft": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "일본타임스 보도이며, 특정한 제도 문서가 아니라 AI 음성·초상 분쟁을 민사법 체계에서 다루는 방안이라는 정책 방향만 전한다.",
+      "instrument_name": "AI voice and likeness disputes under civil law",
+      "name_ko": "일본 AI 음성·초상 분쟁 민사법 검토",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "Japan",
+      "country_ko": "일본"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://gov.uk/government/news/ai-to-power-change-at-the-heart-of-government-as-lord-vallance-appointed-chair-of-new-pm-ai-taskforce": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "announcement",
+      "reason": "영국 정부가 AI 태스크포스를 출범하고 Lord Vallance를 의장으로 임명했다는 인사·조직 소식이며, 법·전략·가이드라인 같은 특정 제도 문서를 다루지 않는다.",
+      "instrument_name": "PM AI Taskforce",
+      "name_ko": "영국 총리 AI 태스크포스",
+      "doc_kind": "기구·제도",
+      "stage": "other",
+      "country": "United Kingdom",
+      "country_ko": "영국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://tc260.org.cn/portal/article/2/d0a9e0e6b027443881b26aa971fa558c": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "TC260 비서처가 공개 의견 수렴 중인 사이버보안 표준 실무지침 초안(지능체 상호작용 보안 요구사항, AI 브라우저 보안 실무지침)을 알리는 공식 공지이며, 링크는 지침 원문이 아니라 의견수렴 안내 페이지이다.",
+      "instrument_name": "Cybersecurity Standards Practice Guide (draft): Security Requirements for Agent Interaction; AI Browser Security Practice Guide",
+      "name_ko": "중국 TC260 사이버보안 표준 실무지침 초안(지능체 상호작용·AI 브라우저)",
+      "doc_kind": "가이드라인·원칙",
+      "stage": "consultation",
+      "country": "China",
+      "country_ko": "중국"
+    },
+    "match": {
+      "match_id": "doc-c102c0c3e0de",
+      "match_member": "dpa-ai-20771",
+      "confidence": "medium",
+      "reason": "이 항목은 TC260가 한 공고로 낸 '지능체 상호작용 보안 요구사항' 초안과 'AI 브라우저 보안 실무지침' 초안을 함께 다루지만, 헤드라인이 에이전트 상호작용 지침에 초점을 두고 있어 같은 제도(의견수렴 단계)인 doc-c102c0c3e0de로 판정했다. AI 브라우저 지침(doc-3e695c6add19)은 별도 문서라 함께 묶이는 점이 불확실하다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://recht.bund.de/bgbl/1/2026/223/VO": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "독일 연방법률공보(BGBl)에 실린 EU AI법 시행법 원문 링크로, 특정한 하나의 법률이 발효된 사건을 다룬다.",
+      "instrument_name": "Act for the implementation of the EU AI Act",
+      "name_ko": "독일 EU AI법 시행법",
+      "doc_kind": "법",
+      "stage": "enacted",
+      "country": "Germany",
+      "country_ko": "독일"
+    },
+    "match": {
+      "match_id": "doc-026b23b6e77c",
+      "match_member": "dpa-ai-19773",
+      "confidence": "high",
+      "reason": "새 항목은 독일의 EU AI법 시행법이 발효된 기록이고, 후보 doc-026b23b6e77c는 같은 독일 EU AI법 시행법의 제정 기록이라 단계만 다른 동일 제도다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_M2M6U0V7T0U8S1T2R3Z4A0Y6Z9X5X3": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "대한민국 국회에 발의된 인공지능 기본법 개정안이라는 특정 법안을 다루며, 링크는 국회 의안정보시스템의 해당 의안 상세 페이지이다.",
+      "instrument_name": "Bill amending the Framework Act on the Development of Artificial Intelligence and Establishment of Trust (AI Basic Act)",
+      "name_ko": "대한민국 인공지능 기본법 개정안(생성형 AI 차등 표시 의무)",
+      "doc_kind": "법안",
+      "stage": "introduced",
+      "country": "South Korea",
+      "country_ko": "대한민국"
+    },
+    "match": {
+      "match_id": "doc-7a33355e650e",
+      "match_member": "dpa-ai-20605",
+      "confidence": "high",
+      "reason": "새 항목은 생성형 AI 차등 표시 의무를 담은 AI 기본법 개정안(한국, 발의 단계)이며, 후보 doc-7a33355e650e(법안 제2220174호)와 제목·내용·관할이 일치하는 같은 개정안이다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://komdigi.go.id/berita/siaran-pers/detail/kemkomdigi-jadikan-perpres-ai-sebagai-langkah-awal-menuju-undang-undang-ai": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "인도네시아 통신디지털부가 AI 활용을 규율할 대통령령(Perpres) 초안 완성을 알린 공식 보도자료로, 특정한 하나의 제도(AI 대통령 규정)를 다룬다.",
+      "instrument_name": "Presidential Regulation on Artificial Intelligence (Perpres AI)",
+      "name_ko": "인도네시아 AI 대통령 규정(초안)",
+      "doc_kind": "행정규칙",
+      "stage": "draft",
+      "country": "Indonesia",
+      "country_ko": "인도네시아"
+    },
+    "match": {
+      "match_id": "doc-3b0a2615c777",
+      "match_member": "dpa-ai-15475",
+      "confidence": "high",
+      "reason": "새 항목은 인도네시아 AI 활용을 규율하는 대통령 규정(Perpres AI) 초안 완성 소식이고, 후보 doc-3b0a2615c777은 같은 대통령 규정이며 초안과 제정은 같은 제도의 단계 차이일 뿐이다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://komdigi.go.id/berita/siaran-pers/detail/bangun-kemandirian-teknologi-dari-model-hingga-infrastruktur-wamen-nezar-patria-indonesia-siapkan-sovereign-ai": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "announcement",
+      "reason": "인도네시아가 주권 AI 전략을 '준비 중'이라는 정책 방향 언급이며, 링크는 부통령급 인사(Wamen Nezar Patria)의 발언을 전하는 Komdigi 보도자료로 확정된 특정 전략 문서가 아니다.",
+      "instrument_name": "Sovereign AI strategy",
+      "name_ko": "인도네시아 주권 AI 전략",
+      "doc_kind": "전략·정책",
+      "stage": "draft",
+      "country": "Indonesia",
+      "country_ko": "인도네시아"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://apec.org/meeting-papers/sectoral-ministerial-meetings/telecommunicationsandinformation/2026-apec-digital-and-ai-ministerial-statement": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "instrument",
+      "reason": "APEC 디지털·AI 장관회의가 채택한 청두 선언문이라는 특정 선언 문서를 다루며, 링크는 APEC 공식 회의 문서 페이지로 선언문 자체를 담고 있다.",
+      "instrument_name": "2026 APEC Digital and AI Ministerial Statement (Chengdu Statement)",
+      "name_ko": "APEC 디지털·AI 장관회의 청두 선언",
+      "doc_kind": "선언·성명",
+      "stage": "adopted",
+      "country": "APEC",
+      "country_ko": "아시아태평양경제협력체(APEC)"
+    },
+    "match": {
+      "match_id": "",
+      "match_member": "",
+      "confidence": "high",
+      "reason": "새 항목은 2026년 청두에서 채택된 APEC 디지털·AI 장관성명인데, 가장 가까운 후보 doc-1597e02b83be는 2025년 한국 개최 회의의 성명이라 연도와 판이 다르고, 나머지 후보도 다른 제도다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://obernolte.house.gov/media/press-releases/obernolte-trahan-introduce-bipartisan-frontier-act-strengthen-oversight": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "미국 하원에 발의된 FRONTIER Act라는 특정 법안을 다루며, 링크는 발의 의원실(Obernolte)이 법안을 소개하는 공식 보도자료이다.",
+      "instrument_name": "FRONTIER Act",
+      "name_ko": "미국 FRONTIER Act(첨단 AI 모델 감독 법안)",
+      "doc_kind": "법안",
+      "stage": "introduced",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {
+      "match_id": "doc-3e23eaa253cf",
+      "match_member": "dpa-ai-20578",
+      "confidence": "high",
+      "reason": "새 항목은 미국 하원에 발의된 FRONTIER Act(Frontier Risk Oversight, National Transparency, Independent Evaluation, and Reporting Act)이며, 후보 doc-3e23eaa253cf(HB 9925)가 같은 법안이라 같은 제도로 판단된다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://lieu.house.gov/media-center/press-releases/reps-lieu-and-moran-introduce-bill-require-kill-switch-ai-systems-can": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "특정 법안(AI Kill Switch Act)의 발의를 다루며, 링크는 발의 의원(Lieu) 의원실이 법안을 소개하는 공식 보도자료이다.",
+      "instrument_name": "AI Kill Switch Act",
+      "name_ko": "미국 AI 킬 스위치 법안",
+      "doc_kind": "법안",
+      "stage": "introduced",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {
+      "match_id": "doc-858960817e08",
+      "match_member": "dpa-ai-20554",
+      "confidence": "medium",
+      "reason": "새 항목은 미국 하원의 AI Kill Switch Act 발의이고, 후보 doc-858960817e08(및 doc-45ccb0eab017)은 같은 미국 AI Kill Switch Act(HB 9917)의 개별 조항 기록이어서 같은 법안이며, 그중 거버넌스·권한 조항을 다룬 doc-858960817e08이 가장 포괄적이라 선택한다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://abc.net.au/news/2026-07-22/labor-to-launch-fair-ai-taskforce-to-give-workers-a-say/106946558": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "노동당 전국 회의에서 승인받을 예정인 AI 태스크포스 구상을 ABC News가 보도한 기사로, 확정된 제도 문서가 아니라 정책 방향 제안 단계의 뉴스이다.",
+      "instrument_name": "Fair AI Taskforce",
+      "name_ko": "호주 공정 AI 태스크포스",
+      "doc_kind": "기구·제도",
+      "stage": "other",
+      "country": "Australia",
+      "country_ko": "호주"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://global.chinadaily.com.cn/a/202607/24/WS6a63273ba310986e2b4672b4.html": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "media",
+      "reason": "헤드라인은 AI 범죄 단속 강화와 통신사기 대응 확대라는 정책 방향을 전하는 보도이고, 특정한 하나의 제도를 가리키지 않으며 링크도 China Daily 기사이다.",
+      "instrument_name": "",
+      "name_ko": "",
+      "doc_kind": "기타",
+      "stage": "other",
+      "country": "China",
+      "country_ko": "중국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://chosun.com/english/industry-en/2026/08/04/OSEBMHGE5FEMFF4TWGROQJS42A": {
+    "judge": {
+      "accept": false,
+      "is_instrument": true,
+      "link_type": "media",
+      "reason": "한국 지식재산부가 AI 생성 디지털 복제물 규제, 기술 경찰 확대, 지식재산 상업화 펀드 등을 담은 계획을 발표한 항목으로 하나의 정책 계획을 다루지만, 링크는 조선일보 영문판 보도라 제도 원문이 아니다.",
+      "instrument_name": "Ministry of Intellectual Property plan to regulate AI-generated digital replicas",
+      "name_ko": "대한민국 지식재산부 AI 디지털 복제물 규제 계획",
+      "doc_kind": "전략·정책",
+      "stage": "published",
+      "country": "South Korea",
+      "country_ko": "대한민국"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://canada.ca/en/innovation-science-economic-development/news/2026/07/government-of-canada-launches-public-consultation-on-ai-transparency.html": {
+    "judge": {
+      "accept": false,
+      "is_instrument": false,
+      "link_type": "announcement",
+      "reason": "캐나다 혁신과학경제개발부가 AI 투명성 의무에 관한 공공 의견 수렴 시작을 알리는 보도자료이며, 의견 수렴 대상이 되는 특정한 제도 문서(법안·지침 등)가 확인되지 않아 정책 방향을 묻는 절차로 판단된다.",
+      "instrument_name": "AI transparency obligations",
+      "name_ko": "캐나다 AI 투명성 의무 공공 의견 수렴",
+      "doc_kind": "기타",
+      "stage": "consultation",
+      "country": "Canada",
+      "country_ko": "캐나다"
+    },
+    "match": {},
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  },
+  "https://casar.house.gov/media/press-releases/news-casar-leads-introduction-new-bill-protect-workers-threat-ai-mass": {
+    "judge": {
+      "accept": true,
+      "is_instrument": true,
+      "link_type": "announcement",
+      "reason": "미국 하원의원 Casar 의원실이 'AI Tax and Work Protection Act' 법안의 발의를 알리는 공식 보도자료로, 특정 법안 하나를 다루고 있다.",
+      "instrument_name": "AI Tax and Work Protection Act",
+      "name_ko": "미국 AI 세금 및 노동자 보호법안",
+      "doc_kind": "법안",
+      "stage": "introduced",
+      "country": "United States",
+      "country_ko": "미국"
+    },
+    "match": {
+      "match_id": "doc-86818bcbfd80",
+      "match_member": "dpa-ai-20861",
+      "confidence": "high",
+      "reason": "새 항목은 미국 하원에서 발의된 AI Tax and Work Protection Act이고, 후보 doc-86818bcbfd80(HB 10044)은 관할과 법안 이름이 동일한 같은 법안이며 단계만 다른 기록이다."
+    },
+    "model": "anthropic/claude-sonnet-5.5",
+    "judged": "2026-10-03"
+  }
+}

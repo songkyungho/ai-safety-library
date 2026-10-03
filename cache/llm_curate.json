@@ -47628,7 +47628,7 @@
     }
   },
   "doc-105e43a90f08": {
-    "src_hash": "2f2cf96b64396ee7",
+    "src_hash": "c01afb29c66766de",
     "model": "openai/gpt-5.6-luna",
     "updated": "2026-09-10",
     "result": {
@@ -54873,7 +54873,7 @@
     }
   },
   "doc-6bddcf5e251b": {
-    "src_hash": "21bf71f657fbbec0",
+    "src_hash": "659d6d030151a65e",
     "model": "openai/gpt-5.6-luna",
     "updated": "2026-09-10",
     "result": {
@@ -101430,7 +101430,7 @@
     }
   },
   "doc-6f9b3aced8ad": {
-    "src_hash": "5abe163fd8c0c7bc",
+    "src_hash": "b02555dc0f3bbbce",
     "model": "openai/gpt-5.6-luna",
     "updated": "2026-09-11",
     "result": {
@@ -101515,7 +101515,7 @@
     }
   },
   "doc-c203ab2b19cd": {
-    "src_hash": "c4e839cc351f6783",
+    "src_hash": "dde40589a6b98097",
     "model": "openai/gpt-5.6-luna",
     "updated": "2026-09-11",
     "result": {
@@ -101686,7 +101686,7 @@
     }
   },
   "doc-9e9a951407e6": {
-    "src_hash": "7262284331a8c4d7",
+    "src_hash": "f67047e864b4838b",
     "model": "openai/gpt-5.6-luna",
     "updated": "2026-09-11",
     "result": {
@@ -101764,7 +101764,7 @@
     }
   },
   "doc-20208333e5af": {
-    "src_hash": "4320a5ae90f30938",
+    "src_hash": "8c4483b0f11077a9",
     "model": "openai/gpt-5.6-luna",
     "updated": "2026-09-11",
     "result": {
@@ -101905,7 +101905,7 @@
     }
   },
   "doc-f31487922584": {
-    "src_hash": "fb6aa9600441a260",
+    "src_hash": "9200093a37ba25ce",
     "model": "openai/gpt-5.6-luna",
     "updated": "2026-09-11",
     "result": {
@@ -102016,7 +102016,7 @@
     }
   },
   "doc-efcd36ce4a53": {
-    "src_hash": "0ae0577aa980fb34",
+    "src_hash": "356caa8f7d8de7a6",
     "model": "openai/gpt-5.6-luna",
     "updated": "2026-09-11",
     "result": {
@@ -102046,7 +102046,7 @@
     }
   },
   "doc-9c985afe1020": {
-    "src_hash": "2290cf9dc1bb8329",
+    "src_hash": "b6a01e689a06f52e",
     "model": "openai/gpt-5.6-luna",
     "updated": "2026-09-11",
     "result": {
@@ -102278,7 +102278,7 @@
     }
   },
   "doc-888ea0b89829": {
-    "src_hash": "476ddb49e10b842d",
+    "src_hash": "85d89c0f04d48bea",
     "model": "openai/gpt-5.6-luna",
     "updated": "2026-09-11",
     "result": {
@@ -102584,7 +102584,7 @@
     }
   },
   "doc-054600dd8bc5": {
-    "src_hash": "cd874668338c2821",
+    "src_hash": "7f442f4ed33df570",
     "model": "openai/gpt-5.6-luna",
     "updated": "2026-09-11",
     "result": {
@@ -102640,7 +102640,7 @@
     }
   },
   "doc-3a8c3f7fb679": {
-    "src_hash": "810cd8ac3fb7a8f8",
+    "src_hash": "e2fadb21162bccc2",
     "model": "openai/gpt-5.6-luna",
     "updated": "2026-09-11",
     "result": {
@@ -102848,7 +102848,7 @@
     }
   },
   "doc-c102c0c3e0de": {
-    "src_hash": "c14e4938605215bb",
+    "src_hash": "23d8304d44b64c8e",
     "model": "openai/gpt-5.6-luna",
     "updated": "2026-09-11",
     "result": {
@@ -102995,7 +102995,7 @@
     }
   },
   "doc-221c662eb61d": {
-    "src_hash": "58e4679d5179c4a1",
+    "src_hash": "8e07ccce5317b43b",
     "model": "openai/gpt-5.6-luna",
     "updated": "2026-09-11",
     "result": {
@@ -103165,7 +103165,7 @@
     }
   },
   "doc-1985e83f1327": {
-    "src_hash": "ea45a37b3b7cd763",
+    "src_hash": "9bd25c640f5eabf9",
     "model": "openai/gpt-5.6-luna",
     "updated": "2026-09-11",
     "result": {
@@ -103633,7 +103633,7 @@
     }
   },
   "doc-3c3044cc78f0": {
-    "src_hash": "4df0447f99112fb6",
+    "src_hash": "d1730fdf870cda6d",
     "model": "openai/gpt-5.6-luna",
     "updated": "2026-09-11",
     "result": {
@@ -104319,7 +104319,7 @@
     }
   },
   "doc-026b23b6e77c": {
-    "src_hash": "bdd44c312fc35a22",
+    "src_hash": "f444796c7a52cf49",
     "model": "openai/gpt-5.6-luna",
     "updated": "2026-09-11",
     "result": {
@@ -104392,7 +104392,7 @@
     }
   },
   "doc-3b0a2615c777": {
-    "src_hash": "ec5bd3a5058cbe91",
+    "src_hash": "17b2805df6c473e7",
     "model": "openai/gpt-5.6-luna",
     "updated": "2026-09-11",
     "result": {
@@ -104500,7 +104500,7 @@
     }
   },
   "doc-7a33355e650e": {
-    "src_hash": "c794200ccc3ef00d",
+    "src_hash": "8e21d4824ebf201e",
     "model": "openai/gpt-5.6-luna",
     "updated": "2026-09-11",
     "result": {
@@ -104990,7 +104990,7 @@
     }
   },
   "doc-858960817e08": {
-    "src_hash": "ee01f6cc74ff42bf",
+    "src_hash": "738600a0d8970ab8",
     "model": "openai/gpt-5.6-luna",
     "updated": "2026-09-11",
     "result": {
@@ -105019,7 +105019,7 @@
     }
   },
   "doc-3e23eaa253cf": {
-    "src_hash": "077bf8691b0e413f",
+    "src_hash": "c71646e8a7a7152f",
     "model": "openai/gpt-5.6-luna",
     "updated": "2026-09-11",
     "result": {
@@ -108027,6 +108027,1710 @@
         "규칙 초안의 in_scope=false를 공공서비스용 국가 운영 AI 배치라는 직접적인 AI 정책·거버넌스 관련성에 따라 true로 수정했습니다.",
         "형식적인 전략·정책 문서의 실질 조항이 확인되지 않아 doc_kind를 전략·정책이 아닌 기타로 분류했습니다.",
         "2025년은 발행일이 아니라 출시 시작 시점이므로 published를 비웠습니다."
+      ],
+      "confidence": "medium",
+      "flags": []
+    }
+  },
+  "doc-6cb5722d2cb0": {
+    "src_hash": "ca4112ea742564f6",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "연방행정에서의 AI·자동화 활용 원칙과 우선 분야를 다루는 정책 문서이므로 AI 거버넌스와 직접 관련된다.",
+      "reject_reason": "",
+      "doc_kind": "정책보고서",
+      "issuer_level": "national",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 채택 사실은 있으나 발표·채택일이 명시되지 않았고, 규칙 초안의 날짜는 근거가 확인되지 않는다.",
+      "short_name": "스위스 연방행정 AI·자동화 보고서",
+      "summary": "스위스 연방평의회는 연방행정의 효율성 향상을 위해 자동화와 인공지능 활용 방안을 담은 보고서를 채택했다. 보고서는 절차 간소화, 처리기간 단축, 자원 효율화와 함께 **인간 중심·신뢰성·지속가능성**을 원칙으로 제시한다. 또한 업무관리, 컴퓨터 지원 번역, 신청 및 사건 심사, 데이터 처리, 관리 지원 프로세스 등 __5개 우선 분야__를 선정하고, AI·자동화 시스템 현황의 통합 관리와 효과적인 솔루션의 대규모 배포를 추진한다.",
+      "corrections": [
+        "규칙 초안의 published 날짜는 원문에 명시된 날짜가 아니므로 비웠다.",
+        "제시된 근거만으로 허용 토픽을 특정하기 어려워 topics를 비웠다."
+      ],
+      "confidence": "high",
+      "flags": []
+    }
+  },
+  "doc-b44fdf27d40b": {
+    "src_hash": "28b27f3b30cf0ece",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "AI로 생성·변조한 성적 자료와 이를 통한 디지털 폭력 행위를 연방 형법으로 처벌하려는 멕시코 법안이다.",
+      "reject_reason": "",
+      "doc_kind": "법안",
+      "issuer_level": "national",
+      "topics": [
+        {
+          "id": "youth",
+          "evidence": "아동·청소년 또는 판단·저항 능력이 없는 사람을 사실적으로 묘사한 AI 생성 성적 자료"
+        },
+        {
+          "id": "deepfake_disinfo",
+          "evidence": "인공지능과 디지털 편집 도구로 제작·변조한 성적 이미지·영상·음성물"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표·제출·승인 일자가 명시되지 않았으며, 규칙 초안의 날짜는 발행일 근거로 사용할 수 없다.",
+      "short_name": "멕시코 연방 형법 AI 생성 성적 자료 처벌 개정안",
+      "summary": "멕시코 하원 법사위원회가 인공지능과 디지털 편집 도구로 제작·변조한 성적 이미지·영상·음성물을 포함하는 디지털 폭력 행위를 처벌하는 **연방 형법 개정안을 승인했다**. 동의 없이 현실적으로 식별 가능한 성인의 성적 자료를 생성·편집·유포하는 행위를 성적 사생활 침해죄로 규정하고, 행위에 따라 __징역 3~6년 또는 15~30년__과 벌금을 부과하도록 제안했다. **실제 피해자를 특정할 수 없는 경우에도** 아동·청소년 또는 판단·저항 능력이 없는 사람을 사실적으로 묘사한 AI 생성 성적 자료를 처벌 대상에 포함한다.",
+      "corrections": [
+        "규칙 초안의 발행일 2026-10-01을 삭제하고 발행일을 미확정으로 처리했다.",
+        "법사위원회 승인에 그친 개정안이므로 문서 종류를 법안으로 유지했다.",
+        "AI로 제작·변조한 성적 자료가 핵심 대상이므로 deepfake_disinfo 토픽을 추가했다."
+      ],
+      "confidence": "medium",
+      "flags": []
+    }
+  },
+  "doc-18b23e928f0e": {
+    "src_hash": "df84a2a2a8d86131",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": false,
+      "in_scope_reason": "OAIC 미디어센터의 발표 페이지로, 실질 규범 문서 자체가 아니라 자료 공개를 알리는 보도성 콘텐츠다.",
+      "reject_reason": "news_press",
+      "doc_kind": "",
+      "issuer_level": "ministry",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "제공된 메타데이터에 원문 발표일이 명시되지 않았다.",
+      "short_name": "호주 APP 1 지침 개정 및 자동 의사결정 투명성 자료",
+      "summary": "",
+      "corrections": [
+        "OAIC 미디어센터 발표 페이지이므로 규칙 초안의 in_scope=false 판단은 유지하되 reject_reason을 news_press로 보정했다.",
+        "발표 페이지의 문서 성격을 직접적인 가이드라인·원칙으로 확정하지 않고 doc_kind를 공란으로 처리했다."
+      ],
+      "confidence": "medium",
+      "flags": []
+    }
+  },
+  "doc-44307423d1ab": {
+    "src_hash": "03fa0b4744021553",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": false,
+      "in_scope_reason": "제공된 URL은 법안 원문이 아니라 상원의원들의 법안 발표 보도자료로, 큐레이션 대상 문서에서 제외한다.",
+      "reject_reason": "news_press",
+      "doc_kind": "",
+      "issuer_level": "",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표일이 없으며, 규칙 초안의 2026-10-01은 원문 근거가 없어 사용하지 않았다.",
+      "short_name": "AI 에이전트 책임법안",
+      "summary": "",
+      "corrections": [
+        "규칙 초안의 법안 분류를 보도자료 분류로 수정했다.",
+        "규칙 초안의 발행일은 원문 근거가 없어 제외했다."
+      ],
+      "confidence": "high",
+      "flags": []
+    }
+  },
+  "doc-432199a682e3": {
+    "src_hash": "557fa4fb5b470df9",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": false,
+      "in_scope_reason": "ASIC의 감독 우선순위를 다루지만 원문이 규범 문서가 아닌 보도자료이므로 범위에서 제외한다.",
+      "reject_reason": "news_press",
+      "doc_kind": "",
+      "issuer_level": "ministry",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표일이 명시되어 있지 않으며 URL의 연도와 규칙 초안 날짜는 사용하지 않았다.",
+      "short_name": "호주 ASIC 2026~27 감독 우선순위",
+      "summary": "**ASIC은 은행·연금·일반보험·생명보험·금융시장 부문의 __2026~27년 감독 우선순위__를 공개했다.** 은행 부문에서는 고객 대상 활동에서의 AI 활용과 대출기관의 영업 관행을 검토하고, 연금·보험 부문에서는 회원 서비스와 보험 관련 업무를 점검한다. 금융시장에서는 시장 감시와 민관 협력을 통해 시장 건전성, 책임 있는 혁신, 시장 인프라의 회복력을 강화할 계획이다.",
+      "corrections": [
+        "원문 URL과 category_raw가 보도자료임을 반영해 문서 종류를 공란으로 두고 in_scope=false, reject_reason=news_press로 수정했다.",
+        "AI 활용은 여러 금융 감독 항목 중 하나로만 제시되어 핵심 AI 안전·거버넌스 토픽으로 분류하지 않았다.",
+        "원문 메타에 발표일이 없어 published를 공란으로 두고 published_confidence를 none으로 설정했다."
+      ],
+      "confidence": "medium",
+      "flags": []
+    }
+  },
+  "doc-34d44acf60d6": {
+    "src_hash": "c0b5e4578718f67e",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "AI 생성 아동 성착취물의 제작·소지·공급과 관련된 행위를 형사 규율하는 영국의 법률 문서다.",
+      "reject_reason": "",
+      "doc_kind": "법",
+      "issuer_level": "national",
+      "topics": [
+        {
+          "id": "youth",
+          "evidence": "AI 생성 아동 성착취물(CSAM) 제작에 최적화된 모델"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 공포·발표일이 명시되지 않아 비웠다. 규칙 초안의 2026-09-30은 날짜 출처가 확인되지 않는다.",
+      "short_name": "영국 범죄·치안법 2026",
+      "summary": "**AI 생성 아동 성착취물(CSAM) 제작에 최적화된 모델의 적응·소지·공급을 범죄화**하고, 위반 시 __최대 5년의 징역형__을 부과한다. 합리적 의심이 있는 경우 국경수비대가 입출국자의 디지털 기기 잠금 해제를 요구할 수 있도록 한다. 기존 ‘소아성애자 매뉴얼’ 관련 범죄의 대상에 AI 생성 이미지와 금지 이미지를 포함한다. 아동 성착취를 촉진할 의도로 관련 웹사이트를 운영·관리하거나 코드를 작성하고 접근 권한을 제공하는 행위도 새 범죄로 규정한다.",
+      "corrections": [
+        "규칙 초안의 published 날짜를 삭제하고, 원문 메타에 명시된 날짜가 없어 published를 비웠다.",
+        "영국 법률 문서의 발급 층위를 national로 지정했다."
+      ],
+      "confidence": "medium",
+      "flags": []
+    }
+  },
+  "doc-52afa3f1e2b3": {
+    "src_hash": "68c9ef86e4de812b",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "문서 제목이 AI 기반 사이버 위험에 대응하는 연방 사이버 태세 강화를 직접 다루므로 AI 안전·사이버 거버넌스 범위에 해당한다.",
+      "reject_reason": "",
+      "doc_kind": "행정규칙",
+      "issuer_level": "national",
+      "topics": [
+        {
+          "id": "cybersecurity",
+          "evidence": "Strengthening Commonwealth Cyber Posture Against AI-Enabled Risks"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표일이 명시되지 않았으며, URL의 연도는 발표일의 근거로 사용하지 않았다.",
+      "short_name": "호주 지침 002-2026",
+      "summary": "",
+      "corrections": [
+        "원문 메타에 발표일이 없어 규칙 초안의 2026-09-29를 published에서 제외했다.",
+        "제목에 근거해 cybersecurity 토픽을 추가했다.",
+        "본문의 실질 내용이 제공되지 않아 summary를 빈 문자열로 두었다."
+      ],
+      "confidence": "medium",
+      "flags": []
+    }
+  },
+  "doc-7111caa3b2ab": {
+    "src_hash": "ecbc358058f8a69a",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "행정부의 AI 관련 공식 용어와 연방 차원의 정의·소통 방식을 규율하는 행정명령 문서다.",
+      "reject_reason": "",
+      "doc_kind": "행정규칙",
+      "issuer_level": "national",
+      "topics": [
+        {
+          "id": "sovereign_ai",
+          "evidence": "미국의 SI 경쟁력 강화를 위해 Genesis Mission에 50억 달러 이상을 투입"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표일이 명시되지 않았으며 URL 경로와 규칙 초안의 날짜는 사용하지 않았다.",
+      "short_name": "미국 AI→SI 용어 대체 행정명령",
+      "summary": "**행정명령은 행정부의 공식 용어를 ‘Artificial Intelligence(AI)’에서 ‘Super Intelligence(SI)’로 변경하도록 지시한다.** 모든 부처와 기관은 공식 문서와 대외 소통에서 SI 용어를 사용해야 한다. 과학기술 담당 대통령 보좌관은 SI의 연방 차원 정의를 제안하도록 지시받는다. 백악관은 SI 경쟁력 강화를 위해 __Genesis Mission에 50억 달러 이상__을 투입한다고 밝혔다.",
+      "corrections": [
+        "규칙 초안의 in_scope=false를 AI 거버넌스 관련 문서로 보아 true로 수정했다.",
+        "규칙 초안에 기재된 2026-09-29를 published에 사용하지 않고 발표일을 공란으로 두었다.",
+        "원문 메타의 내용에 따라 topic을 sovereign_ai로 보완했다."
+      ],
+      "confidence": "medium",
+      "flags": []
+    }
+  },
+  "doc-106b4aee640f": {
+    "src_hash": "1f4385b6b77d1e58",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "성인 사회복지에서의 AI 활용과 제공기관의 데이터 보호·투명성·형평성·인간 검토 의무를 다루는 실무 지침이다.",
+      "reject_reason": "",
+      "doc_kind": "가이드라인·원칙",
+      "issuer_level": "ministry",
+      "topics": [
+        {
+          "id": "healthcare",
+          "evidence": "성인 사회복지에서 AI를 활용하는 사례와 제공기관의 모범 관행"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "제공된 원문 메타에 발표·공표일이 없으며, 규칙 초안의 날짜는 원문 발표일로 확인되지 않아 사용하지 않았다.",
+      "short_name": "영국 성인 사회복지 AI 활용 가이드",
+      "summary": "영국 보건사회복지부는 성인 사회복지에서 센서 기반 기술, 챗봇, 얼굴 인식, 돌봄 계획·평가 도구와 데이터 분석을 활용하는 사례와 제공기관의 모범 관행을 안내한다. **AI가 생성한 결과는 반드시 사람이 검토해야 한다**는 원칙을 제시한다. 제공기관은 __UK GDPR과 데이터 보호 의무__를 준수하고, 고품질 데이터 사용과 윤리·투명성·형평성 확보, 편향 완화 및 직원 교육을 고려해야 한다.",
+      "corrections": [
+        "원문 발표일이 확인되지 않아 규칙 초안의 2026-09-29를 published에서 제외했다.",
+        "문서의 직접적인 적용 분야를 반영해 healthcare 토픽을 추가했다.",
+        "영국 보건사회복지부가 발급 주체로 제시되어 issuer_level을 ministry로 확정했다."
+      ],
+      "confidence": "high",
+      "flags": []
+    }
+  },
+  "doc-d94d54b93f02": {
+    "src_hash": "89e5839f1f278a27",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": false,
+      "in_scope_reason": "연방 디지털 서비스 통합과 이용 절차를 다루지만 AI 안전·리스크·거버넌스와 직접 관련된 내용은 확인되지 않는다.",
+      "reject_reason": "weak_ai_link",
+      "doc_kind": "행정규칙",
+      "issuer_level": "national",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 명시적인 발표·공포일이 없고 URL 경로의 날짜만 확인된다.",
+      "short_name": "미국 America.gov 통합 창구 행정명령",
+      "summary": "미국 행정부는 **연방 정보와 서비스를 통합 제공하는 디지털 창구 America.gov 구축을 지시했다**. 이용자는 단일 포털에서 평문으로 질문하고, Login.gov 인증 후 승인된 연방 업무를 처리할 수 있다. 대상은 최근 __12개월간 이용자가 10만 명을 초과하고 온라인 접근이 가능한 연방 서비스__다. 각 기관의 기록 관리와 기존 대면·전화·우편 서비스는 유지되며, OMB는 행정명령 발효 후 90일 이내에 시행 지침을 마련할 예정이다.",
+      "corrections": [
+        "AI 관련 핵심 근거가 없어 rule_in_scope의 범위를 벗어난 것으로 유지하고 weak_ai_link로 분류했다.",
+        "원문 메타에 발표일이 명시되지 않아 초안의 2026-09-29를 published에서 제외했다."
+      ],
+      "confidence": "medium",
+      "flags": []
+    }
+  },
+  "doc-1c171df2c6eb": {
+    "src_hash": "3682fe687fbf6447",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "생성형 인공지능의 오용에 대한 형사처벌과 개인정보·저작권·정보 공개 의무를 규정하려는 멕시코 연방법 개정 법안이다.",
+      "reject_reason": "",
+      "doc_kind": "법안",
+      "issuer_level": "national",
+      "topics": [
+        {
+          "id": "deepfake_disinfo",
+          "evidence": "생성형 인공지능의 기만적 조작"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "제공된 원문 메타에 발의·채택·발표일이 명시되지 않았으며, 규칙 초안의 날짜는 원문 발표일로 확인되지 않는다.",
+      "short_name": "멕시코 생성형 AI 오용·저작권 개정안",
+      "summary": "멕시코 하원의원 빅토르 마누엘 페레스 디아스가 생성형 인공지능의 기만적 조작, 개인정보·생체정보의 불법 활용, 비동의 정보 유포, 저작권 침해 등을 처벌하기 위해 연방법 개정안을 제안했다. **제안된 처벌은 __6개월~4년의 징역과 100~600일분의 벌금__이다.** 법안은 AI를 활용한 저작물에 창작 과정과 출처, 사용 기술 및 관여한 저자를 공개하도록 제안한다. 기존 저작권을 침해하거나 필요한 허가·창작 기여·출처 공개가 없는 AI 생성물은 저작권 보호 대상에서 제외하도록 제안한다.",
+      "corrections": [
+        "원문에 발의·발표일이 없어 published를 비우고 published_confidence를 none으로 조정했다.",
+        "원문이 Proposed인 개정안이므로 doc_kind를 법안으로 유지했다.",
+        "기만적 조작이 핵심 내용이므로 deepfake_disinfo 토픽과 원문 근거를 추가했다."
+      ],
+      "confidence": "medium",
+      "flags": []
+    }
+  },
+  "doc-ec2092264c54": {
+    "src_hash": "1e288c8d438c43a0",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "미국과 중국 간 슈퍼 인텔리전스 위험 논의와 사고 대응 소통 채널의 설립을 다루는 AI 안전·거버넌스 관련 문서다.",
+      "reject_reason": "",
+      "doc_kind": "기구·제도",
+      "issuer_level": "national",
+      "topics": [
+        {
+          "id": "frontier",
+          "evidence": "“슈퍼 인텔리전스”라는 용어를 사용하기로 하고, 관련 위험과 혜택을 논의하는 미·중 슈퍼 인텔리전스 대화를 설립했다"
+        },
+        {
+          "id": "incidents",
+          "evidence": "슈퍼 인텔리전스 사고에 대응하기 위한 양자 소통 채널도 구축했다"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표일이 명시되지 않았고 URL 경로에는 2026년 9월이라는 월·연도만 확인된다.",
+      "short_name": "미·중 슈퍼 인텔리전스 대화",
+      "summary": "미국과 중국은 인공지능 대신 __“슈퍼 인텔리전스”__라는 용어를 사용하고 관련 위험과 혜택을 논의하기로 했다. **양국은 미·중 슈퍼 인텔리전스 대화를 설립했다.** 양국은 슈퍼 인텔리전스 사고에 대응하기 위한 __양자 소통 채널__도 구축했으며, 다음 대화는 __2026년 11월까지__ 열릴 예정이다.",
+      "corrections": [
+        "원문 요약에 AI 안전·거버넌스 관련 실질 내용이 있어 범위 내 문서로 판정했다.",
+        "슈퍼 인텔리전스와 사고 대응 채널을 근거로 frontier와 incidents 토픽을 추가했다.",
+        "원문에 정확한 발표일이 없어 published를 비웠다."
+      ],
+      "confidence": "medium",
+      "flags": [
+        "URL의 페이지 제목과 원문 메타 제목이 일치하지 않음"
+      ]
+    }
+  },
+  "doc-0f9af3a03d31": {
+    "src_hash": "b5d5edde7458fba2",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "AI 교육 등 빠르게 변하는 기술 분야의 정책 수립 원칙과 근거 활용을 다루는 영국 교육부의 정책 문서다.",
+      "reject_reason": "",
+      "doc_kind": "정책보고서",
+      "issuer_level": "ministry",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표일이 명시되지 않았으며, 규칙 초안의 날짜는 원문 발표일로 확인되지 않아 사용하지 않았다.",
+      "short_name": "영국 빠르게 변하는 기술 분야 근거 기반 정책 수립 원칙",
+      "summary": "**영국 교육부가 빠르게 변하는 기술 분야에서 근거 기반 정책 수립을 지원하기 위한 정책 프레임워크를 제시했다.** 프레임워크는 __8개 원칙__으로 구성되며, 전통적인 연구 주기보다 기술 발전이 빠른 분야를 대상으로 한다. 보고서는 교육부 과학자문위원회 산하 AI·디지털교육 실무그룹이 개발했으며, 분량은 __18쪽__이다.",
+      "corrections": [
+        "규칙 초안에 기재된 2026-09-24는 원문 발표일로 확인되지 않아 published에서 제외했다.",
+        "원문 메타만으로 특정 토픽의 핵심 규율 대상임을 확인할 수 없어 topics를 비워 두었다.",
+        "발행 주체가 영국 교육부이므로 issuer_level을 ministry로 지정했다."
+      ],
+      "confidence": "high",
+      "flags": []
+    }
+  },
+  "doc-f106a169bcb5": {
+    "src_hash": "5ea9d9e86b76ad20",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "영국 법무부의 사법 시스템 내 AI 활용과 신흥 위험 대응을 다루는 정책 실행계획 문서다.",
+      "reject_reason": "",
+      "doc_kind": "전략·정책",
+      "issuer_level": "ministry",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "제공된 원문 메타에 이 문서 자체의 발표일이 명시되지 않았으며, 2025년 7월은 기존 실행계획의 발표일이다.",
+      "short_name": "영국 AI 사법 실행계획 1년 후",
+      "summary": "영국 법무부는 2025년 7월 발표한 AI 사법 실행계획의 __첫 1년__ 추진 현황을 공개했다. **사법 시스템의 AI 활용 기반 강화와 도입 점검을 추진하고, AI가 초래하는 신흥 위험의 식별·대응을 네 번째 전략 우선순위로 추가했다.** 실행 과제별 세부 내용을 확인할 수 있는 ‘Action Plan Explorer’도 제공한다.",
+      "corrections": [
+        "규칙 초안의 2026-09-24 날짜는 제공된 원문 메타에서 확인되지 않아 published를 비웠다."
+      ],
+      "confidence": "medium",
+      "flags": []
+    }
+  },
+  "doc-8408ee6598f7": {
+    "src_hash": "637cf78cdf568174",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": false,
+      "in_scope_reason": "실질적인 정책 권고 내용을 담고 있으나 출처가 싱가포르 정부의 보도자료이므로 큐레이션 범위에서 제외한다.",
+      "reject_reason": "news_press",
+      "doc_kind": "",
+      "issuer_level": "ministry",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표일이 명시되어 있지 않으며 URL 경로의 숫자만으로 날짜를 확정할 수 없다.",
+      "short_name": "싱가포르 인적자본 노사정 작업반 권고안",
+      "summary": "싱가포르 정부는 인적자본 역량 강화를 위한 노사정 작업반의 __5개 권고안__을 모두 수용한다. 권고안은 기회지수 도입, 중소기업 인사 역량 강화, 인사 분야 AI 활용 지원, HR 전문성 제고, 차세대 리더 양성을 포함한다. PATH initiative를 통해 AI 활용 교육·도구·자금을 지원하고, 채용 등 고용 의사결정에서 공정성과 능력주의를 보장하는 책임 있는 AI 지침을 마련할 예정이다. **직원 200명 초과 조직은 2028년 7월 1일부터 IHRP 공인 전문가 이상 자격을 보유한 HR 전문가를 최소 1명 둬야 한다.**",
+      "corrections": [
+        "출처가 정부 보도자료이므로 rule_doc_kind의 정책보고서 분류를 취소하고 in_scope를 false로 변경했다.",
+        "원문 메타에 명시된 발표일이 없어 rule_published의 2026-09-24를 published에 반영하지 않았다.",
+        "보도자료 제외 기준에 따라 topics를 비웠다."
+      ],
+      "confidence": "high",
+      "flags": []
+    }
+  },
+  "doc-32f025582e82": {
+    "src_hash": "5cda24f7f1d4e01a",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": false,
+      "in_scope_reason": "ESMA의 보도 페이지에 게시된 감독 우선순위 발표 기사로, 규범 문서 자체가 아니라 정책 발표 보도에 해당한다.",
+      "reject_reason": "news_press",
+      "doc_kind": "",
+      "issuer_level": "ministry",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표일이 명시되어 있지 않고 URL의 연도만으로 날짜를 추정할 수 없다.",
+      "short_name": "EU 디지털 혁신 전략적 감독 우선순위",
+      "summary": "유럽증권시장청(ESMA)은 투자자 보호와 금융시장 안전장치를 유지하며 디지털 혁신을 감독하기 위해 __2027년부터__ 새로운 EU 전략적 감독 우선순위를 시행한다고 밝혔다. 초기 감독 대상은 금융기관의 인공지능과 토큰화 활용이며, 국가 감독당국과 협력해 신기술 감독 역량을 강화할 계획이다. 이 우선순위는 __2025년부터 시행된 사이버·운영 복원력 감독__과 병행되며, ESG 공시 감독 우선순위는 2026년에 종료된다.",
+      "corrections": [
+        "URL이 ESMA의 press-news 페이지이므로 규칙 초안의 in_scope=true 및 전략·정책 분류를 보도 기사 분류로 수정했다.",
+        "원문 메타에 발표일이 없어 2026-09-24를 published 값으로 사용하지 않았다.",
+        "원문에서 핵심 주제임을 입증할 수 있는 허용 토픽이 없어 safety_research를 제외했다."
+      ],
+      "confidence": "high",
+      "flags": []
+    }
+  },
+  "doc-1607963f065e": {
+    "src_hash": "144e75b7df4b2f29",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "인공지능의 정의와 이용 원칙, 국가 차원의 조정 기구 및 거버넌스 체계를 규정하는 법안이므로 AI 거버넌스와 직접 관련된다.",
+      "reject_reason": "",
+      "doc_kind": "법안",
+      "issuer_level": "national",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발의일·공포일 등 공식 날짜가 명시되지 않았으며, 제공된 2026-09-23은 규칙 초안의 날짜이므로 사용하지 않았다.",
+      "short_name": "멕시코 국가 인공지능 이용 규제법안",
+      "summary": "멕시코 상원의원 후아니타 게라 메나가 **인공지능의 정의와 이용·적용 절차를 규정하는 법안**을 발의했다. 법안은 평등한 책임, 설계 단계의 개인정보 보호, 비례성, 투명성·기밀성, 사용성을 인공지능 이용 원칙으로 제시한다. 또한 국가 인공지능 정책의 이행을 조정할 __국가인공지능센터__와 국가인공지능위원회·정부기관·사회·민간·학계가 참여하는 국가 인공지능 시스템을 설치하도록 한다.",
+      "corrections": [
+        "규칙 초안에 제시된 2026-09-23을 공식 발행일로 사용하지 않고 published를 비웠다.",
+        "제공된 메타에서 구체적 토픽의 핵심 근거를 확인할 수 없어 topics를 비웠다."
+      ],
+      "confidence": "medium",
+      "flags": []
+    }
+  },
+  "doc-41164f63ffed": {
+    "src_hash": "ab7f5521266c3fad",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "프론티어 AI가 사이버 공격에 미치는 영향과 조직의 사이버보안 대비를 다루는 국가 사이버 위협 정책보고서다.",
+      "reject_reason": "",
+      "doc_kind": "정책보고서",
+      "issuer_level": "ministry",
+      "topics": [
+        {
+          "id": "cybersecurity",
+          "evidence": "프론티어 AI가 사이버 공격의 속도·규모·정교함을 높이고"
+        },
+        {
+          "id": "frontier",
+          "evidence": "2027년 초 현재 주요 프론티어 AI 모델에서만 가능한 고급 기능"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 보고서 발표일이 명시되지 않았으며, 규칙 초안의 2026-09-24는 사용하지 않았다.",
+      "short_name": "뉴질랜드 NCSC 사이버 위협 보고서 2026",
+      "summary": "뉴질랜드 NCSC는 **프론티어 AI가 사이버 공격의 속도·규모·정교함을 높일 수 있다**고 평가했다. 악의적 행위자가 __2027년 초__ 현재 주요 프론티어 AI 모델에서만 가능한 고급 기능에 접근해 공격 자동화, 취약점 식별, 개인·조직별 표적화를 수행할 수 있다고 경고했다. NCSC가 2025/26년에 처리한 국가적 중요 잠재 사건 __369건__ 중 162건은 범죄·금전 목적 행위자와 연관됐으며, 보고서는 강력한 기본 사이버보안 체계가 인간과 AI 기반 위협에 대한 최선의 방어라고 밝혔다.",
+      "corrections": [
+        "원문에 발표일이 없어 규칙 초안의 2026-09-24를 published에서 제외했다.",
+        "원문 제목과 실질 내용에 따라 문서 종류를 정책보고서로 유지했다."
+      ],
+      "confidence": "medium",
+      "flags": []
+    }
+  },
+  "doc-d05f1b94d63b": {
+    "src_hash": "2ec5fb47f6919889",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": false,
+      "in_scope_reason": "정부 기관 웹사이트에 게시된 발표·뉴스 기사로, 규범 문서 원문이 아니라 보도성 콘텐츠다.",
+      "reject_reason": "news_press",
+      "doc_kind": "",
+      "issuer_level": "ministry",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표일이 명시되지 않았고, 제시된 날짜는 규칙 초안의 참고값이므로 사용하지 않았다.",
+      "short_name": "브라질 디지털 광고 투명성·검증 공동 규정",
+      "summary": "브라질 법무·공공안전부 등은 소비자를 기만·남용·사기성 광고로부터 보호하기 위한 공동 규정을 마련했다. 월간 활성 이용자가 __100만 명__을 넘는 플랫폼은 유료 광고와 콘텐츠 홍보 내역을 검색 가능한 저장소에 광고 종료 후 __최소 1년__ 동안 보관해야 한다. 금융 상품·서비스 광고는 광고주 신원과 관련 인허가 및 대표 권한을 사전에 확인하고 12개월마다 재검증해야 한다. 투명성 도구 관련 조항은 90일 후, 나머지 조항은 30일 후 시행된다.",
+      "corrections": [
+        "원문 URL이 정부 기관의 발표·뉴스 페이지이므로 문서 종류를 행정규칙이 아닌 빈 값으로 수정했다.",
+        "원문에 발표일이 없어 규칙 초안의 2026-09-23을 published에서 제외했다.",
+        "원문에 AI 안전·거버넌스와 직접 관련된 내용이 없어 topics를 비워 두었다."
+      ],
+      "confidence": "high",
+      "flags": []
+    }
+  },
+  "doc-ce32d25348fa": {
+    "src_hash": "671edc21b9d2c99b",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": false,
+      "in_scope_reason": "AI 초지능 금지 법안의 내용을 다루지만, 제공된 자료가 법안 원문이 아닌 의회 보도자료이므로 범위 밖으로 분류한다.",
+      "reject_reason": "news_press",
+      "doc_kind": "",
+      "issuer_level": "national",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "제공된 메타데이터에 원문 발표일이 명시되어 있지 않다.",
+      "short_name": "미국 2026 인공 초지능 금지법안(HB 10538)",
+      "summary": "",
+      "corrections": [
+        "법안의 실질 내용이 포함되어 있으나 출처 URL이 의회 보도자료이므로 in_scope를 false로, reject_reason을 news_press로 분류했다.",
+        "보도자료는 허용된 문서 종류로 분류하지 않으므로 doc_kind를 비웠다.",
+        "제공된 2026-09-23은 규칙 초안의 날짜일 뿐 원문 발표일로 확인되지 않아 published를 비웠다."
+      ],
+      "confidence": "high",
+      "flags": []
+    }
+  },
+  "doc-8b6f1116c7af": {
+    "src_hash": "d6c5591a178cf3e5",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": false,
+      "in_scope_reason": "제공된 URL이 상원의원실 보도자료 형식이며 규범·책무·조항의 실질 내용이 확인되지 않는다.",
+      "reject_reason": "news_press",
+      "doc_kind": "",
+      "issuer_level": "national",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "제공된 메타데이터에 명시적인 발표일이 없고 URL 경로의 날짜만으로는 확정할 수 없다.",
+      "short_name": "미국 연방디지털위원회 신설 제안",
+      "summary": "",
+      "corrections": [
+        "규칙 초안의 in_scope=false 판단을 유지하되, 사유를 보도자료로 구체화했다.",
+        "제공된 메타데이터만으로는 문서 종류와 주제의 실질 내용을 확정하지 않아 doc_kind와 topics를 비웠다."
+      ],
+      "confidence": "low",
+      "flags": []
+    }
+  },
+  "doc-477a2ea404f0": {
+    "src_hash": "23dff51975f41853",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "아동 대상 인공지능 시스템의 사전 시험·평가·승인, 안전·개인정보 보호, 책임성 및 생성형 성착취물 대응을 다루는 국제 협력 로드맵이다.",
+      "reject_reason": "",
+      "doc_kind": "전략·정책",
+      "issuer_level": "international",
+      "topics": [
+        {
+          "id": "youth",
+          "evidence": "아동 대상 인공지능 시스템을 시장 출시 전에 시험·평가하고 승인하는 체계"
+        },
+        {
+          "id": "deepfake_disinfo",
+          "evidence": "인공지능으로 생성된 아동 성착취물·deepfakes 대응"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "제공된 원문 메타에 발표일이 명시되어 있지 않아 URL 경로의 날짜는 사용하지 않았다.",
+      "short_name": "아동 권리·보호 AI 연합 로드맵",
+      "summary": "**아동 권리·보호 AI 연합은 __2026~2027년__ 행동계획을 발표했다.** 프랑스·스페인·호주·케냐가 공동 의장으로 참여하며, __26개국과 8개 유엔 기구__의 지지를 받았다. 연합은 아동 대상 인공지능 시스템의 출시 전 시험·평가·승인을 위해 공통 데이터베이스와 평가 방법을 개발하고, 설계 단계의 안전·개인정보 보호와 책임성, 인공지능으로 생성된 아동 성착취물·딥페이크 대응 및 인공지능 교육을 주요 의제로 삼았다. 첫 자발적 약속은 __2026년 11월 10~11일__ 파리평화포럼에서 발표될 예정이다.",
+      "corrections": [
+        "원문 메타에 발표일이 명시되지 않아 규칙 초안의 2026-09-22를 published에서 제외했다.",
+        "여러 국가와 유엔 기구가 참여하는 다자 연합 문서이므로 issuer_level을 international로 분류했다."
+      ],
+      "confidence": "medium",
+      "flags": []
+    }
+  },
+  "doc-1d0b10834e8a": {
+    "src_hash": "4990546b7d65901f",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": false,
+      "in_scope_reason": "AI 동반자 앱의 아동·청소년 위험을 다루지만 제공된 출처가 정부 기관의 뉴스·보도 기사이므로 범위에서 제외한다.",
+      "reject_reason": "news_press",
+      "doc_kind": "",
+      "issuer_level": "ministry",
+      "topics": [
+        {
+          "id": "youth",
+          "evidence": "아동·청소년과 정서적 관계를 모방하는 AI 동반자 앱의 위험"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "메타데이터에 발표일이 명시되지 않았으며, 규칙 초안의 날짜는 사용하지 않았다.",
+      "short_name": "브라질 AI 동반자 앱 아동·청소년 위험 보고",
+      "summary": "브라질 법무·공공안전부 산하 디지털권리국이 아동·청소년과 정서적 관계를 모방하는 AI 동반자 앱의 위험을 분석한 기술 보고서를 발표했다. **__13개__ 플랫폼에서 과도한 애착·강박적 사용, 인간관계 대체, 성적·부적절 콘텐츠 노출, 민감정보 과잉 수집과 정서 프로파일링 위험을 확인했다.** 다수 서비스가 자기신고에 의존해 연령을 확인하고 유료 기능과 맞춤형 광고를 위해 청소년의 취약성을 악용할 수 있다고 지적했다.",
+      "corrections": [
+        "제공된 URL이 뉴스·보도 기사이므로 in_scope를 false로 변경하고 reject_reason을 news_press로 지정했다.",
+        "뉴스 기사에는 허용된 문서 유형을 부여하지 않으므로 doc_kind를 빈 문자열로 두었다.",
+        "원문 메타데이터에 발표일이 없어 규칙 초안의 2026-09-22를 published에 반영하지 않았다."
+      ],
+      "confidence": "high",
+      "flags": []
+    }
+  },
+  "doc-cde5a79dd2ac": {
+    "src_hash": "d4f97cb2283ce56f",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": false,
+      "in_scope_reason": "해당 URL과 문서 형식이 ASIC의 미디어 릴리스인 보도자료이므로 실질 규정의 원문이 아닌 뉴스·보도 문서다.",
+      "reject_reason": "news_press",
+      "doc_kind": "",
+      "issuer_level": "ministry",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "제공된 메타데이터에 명시적인 발표일이 없으며 URL 경로와 규칙 초안의 날짜만으로 발표일을 확정할 수 없다.",
+      "short_name": "ASIC AI·알고리즘 거래 규정 개정 보도자료",
+      "summary": "ASIC 보도자료는 **AI·머신러닝을 포함한 거래 알고리즘에 관한 시장 건전성 규정 개정안을 확정했다고 알린다**. 개정 규정은 __2028년__부터 시행되고 전환기간은 __18개월__이다. ASIC는 수동·자동 주문에 동일한 요건을 적용하고 관련 지침을 통합·간소화하는 방안도 의견 수렴 중이라고 밝혔다.",
+      "corrections": [
+        "문서가 규정 원문이 아니라 ASIC 미디어 릴리스이므로 doc_kind를 행정규칙에서 공란으로 수정했다.",
+        "보도자료는 큐레이션 범위 밖이므로 in_scope를 false로, reject_reason을 news_press로 수정했다.",
+        "제공된 메타데이터에 확정적인 발표일이 없어 published를 공란으로 수정했다.",
+        "허용 토픽 중 문서의 핵심을 직접 나타내는 항목이 확인되지 않아 topics를 비웠다."
+      ],
+      "confidence": "high",
+      "flags": []
+    }
+  },
+  "doc-3625515286b9": {
+    "src_hash": "5da8ab25cb9450c1",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "프런티어 AI 모델의 통제를 직접 촉구하는 공동성명으로 AI 안전·거버넌스와 직접 관련된다.",
+      "reject_reason": "",
+      "doc_kind": "선언·성명",
+      "issuer_level": "national",
+      "topics": [
+        {
+          "id": "frontier",
+          "evidence": "A call for control of frontier AI models"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표일이 명시되어 있지 않다.",
+      "short_name": "프런티어 AI 모델 통제 촉구 공동성명",
+      "summary": "",
+      "corrections": [
+        "규칙 초안의 2026-09-21 날짜는 원문 발표일로 확인되지 않아 제외했다.",
+        "본문의 실질 내용이 제공되지 않아 요약을 작성하지 않았다."
+      ],
+      "confidence": "low",
+      "flags": [
+        "원문 본문 및 발행 주체 정보 부족"
+      ]
+    }
+  },
+  "doc-1f48487468ab": {
+    "src_hash": "0f6b56f859bdf1e1",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": false,
+      "in_scope_reason": "인공지능을 주요 장기 전환 요인 중 하나로 언급하지만 AI 안전·리스크·거버넌스에 관한 실질적 규범이나 정책 내용이 핵심이 아니다.",
+      "reject_reason": "weak_ai_link",
+      "doc_kind": "정책보고서",
+      "issuer_level": "ministry",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "제공된 원문 메타에는 발표일이 명시되지 않았으며, 규칙 초안의 날짜는 원문 확인일이 아니므로 사용하지 않았다.",
+      "short_name": "호주 2026 세대 간 보고서",
+      "summary": "**호주 재무부는 2065~66년까지의 경제와 정부 재정 전망을 담은 제7차 세대 간 보고서를 발표했다.** 보고서는 향후 __40년__의 정책 방향에 영향을 줄 요인으로 인공지능 혁명, 지정학적 분절, 에너지 전환, 고령화와 돌봄 경제, 산업 전환을 다룬다. 세대 간 형평성에 관한 별도 장도 포함한다.",
+      "corrections": [
+        "인공지능이 여러 장기 전환 요인 중 하나로만 제시되어 AI 안전·거버넌스와의 직접 관련성이 약하므로 in_scope를 false로 수정했다.",
+        "원문에 발표일이 명시되지 않아 규칙 초안의 2026-09-21을 사용하지 않고 published를 비웠다.",
+        "AI 안전·거버넌스의 핵심 주제를 입증하는 근거가 없어 topics를 비웠다."
+      ],
+      "confidence": "medium",
+      "flags": []
+    }
+  },
+  "doc-e82adf0de79b": {
+    "src_hash": "fa10133b2855b71b",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "위험한 디지털 서비스와 AI 시스템으로부터 미성년자를 보호하고 온라인 아동 안전 규정을 조화하려는 EU 법안이다.",
+      "reject_reason": "",
+      "doc_kind": "법안",
+      "issuer_level": "international",
+      "topics": [
+        {
+          "id": "youth",
+          "evidence": "위험한 디지털 서비스와 AI 시스템으로부터 미성년자를 보호하기 위한 EU KIDS Act"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타와 본문에 발표·제안일이 명시되지 않았으며, 초안의 날짜는 원문 날짜로 확인되지 않는다.",
+      "short_name": "EU 키즈법",
+      "summary": "유럽연합 집행위원회가 **위험한 디지털 서비스와 AI 시스템으로부터 미성년자를 보호하기 위한 EU KIDS Act를 제안했다**. 이 법안은 특정 소셜 네트워킹 서비스와 동영상 공유 플랫폼에서 __15세 미만 아동의 자율적인 계정 생성__을 제한하는 내용을 담는다. 또한 회원국 간 규정을 조화하고 아동 보호 수준을 높이는 것을 목표로 하며, 온라인 아동 안전 관련 커뮤니케이션과 영향 분석 문서도 함께 공개됐다.",
+      "corrections": [
+        "원문에 발표·제안일이 없어 초안의 published 날짜를 비우고 published_confidence를 none으로 조정했다."
+      ],
+      "confidence": "high",
+      "flags": []
+    }
+  },
+  "doc-121f3d1aeda7": {
+    "src_hash": "343cf9dcb0112962",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "사법 분야에서 인공지능의 책임 있고 안전한 도입을 조율하는 정부 협의체의 설치와 역할을 다루는 문서다.",
+      "reject_reason": "",
+      "doc_kind": "기구·제도",
+      "issuer_level": "ministry",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "제공된 원문 메타데이터에 공포·시행일 또는 발표일이 명시되어 있지 않으며, 규칙 초안의 날짜는 사용하지 않았다.",
+      "short_name": "아르헨티나 사법 인공지능 전략 협의체(MEIAJ)",
+      "summary": "아르헨티나 법무부가 **사법 인공지능 전략 협의체(MEIAJ)를 설립**했다. 협의체는 기존 인공지능 프로젝트를 조사하고 우선순위, 시범사업, 교육 및 성과지표를 제안한다. 사법기관의 인공지능 도구 도입을 조율하며, 사법 분야 전략은 __일반적인 인공지능 규제 체계가 아닌 계획·조정 및 제도적 촉진 수단__으로 운영된다.",
+      "corrections": [
+        "발급 주체를 아르헨티나 법무부로 보고 issuer_level을 ministry로 분류했다.",
+        "제공된 메타데이터에 공식 발표일이 없어 published를 비웠다.",
+        "허용 토픽 중 원문 내용의 핵심을 직접 입증하는 항목이 없어 topics를 비웠다."
+      ],
+      "confidence": "high",
+      "flags": []
+    }
+  },
+  "doc-46252285a76d": {
+    "src_hash": "507088fad7e3db83",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "스페인 정부의 인공지능 인프라·모델 감시·사이버보안·거버넌스 추진 방향을 담은 국가 전략·정책 문서다.",
+      "reject_reason": "",
+      "doc_kind": "전략·정책",
+      "issuer_level": "national",
+      "topics": [
+        {
+          "id": "cybersecurity",
+          "evidence": "사이버보안 강화와 첨단 모델 감시"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "제공된 원문 메타에 발표·채택일이 명시되지 않았으며, URL의 날짜만으로 발행일을 확정하지 않았다.",
+      "short_name": "스페인 IA360 계획",
+      "summary": "스페인 정부는 경제적 기회 활용과 공공 안전·신뢰·취약계층 보호를 함께 추진하는 **IA360 계획**을 발표했다. 계획은 향후 __12개월__ 동안 인공지능 인프라·데이터센터·전략 모델 개발, 중소기업·자영업자 대상 인공지능 바우처, 교육과정 내 인공지능 활용 교육을 추진하고 2030년까지 과반수 기업의 인공지능 도입을 목표로 한다. **사이버보안 강화와 첨단 모델 감시를 포함한 거버넌스 체계** 및 노동·사회 변화에 대응하는 국가적 인공지능 협약도 추진한다.",
+      "corrections": [
+        "원문 메타에 명시된 날짜가 없어 규칙 초안의 2026-09-21을 published에서 제외했다.",
+        "원문에서 핵심 주제로 확인되는 사이버보안만 토픽으로 유지했다."
+      ],
+      "confidence": "medium",
+      "flags": []
+    }
+  },
+  "doc-e7f04afdd191": {
+    "src_hash": "4866fe2c02aada62",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "홍콩의 중장기 정책계획으로서 공공 거버넌스와 국가안보 관련 법·집행 체계, AI·로봇 등 기술 육성 방향을 포함한다.",
+      "reject_reason": "",
+      "doc_kind": "전략·정책",
+      "issuer_level": "subnational",
+      "topics": [
+        {
+          "id": "national_security",
+          "evidence": "공공 거버넌스와 국가안보 관련 법·집행 체계도 강화할 예정이다"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표일이 명시되지 않았으며, 규칙 초안의 날짜와 URL 경로의 날짜는 사용하지 않았다.",
+      "short_name": "홍콩 5개년 계획(2026~2030)",
+      "summary": "**홍콩 정부는 2026~2030년 경제·사회 발전을 위한 첫 5개년 계획을 발표했다.** 계획은 금융·무역·항공·혁신기술 등 4대 중심지와 인재 허브 육성, 북부 대도시 개발, 광둥·홍콩·마카오 대만구 협력 및 사회복지 강화를 포함하며 __105개 지표__를 제시한다. AI·로봇·생명과학은 북부 대도시의 대학·산업 개발 분야로 육성되며, 공공 거버넌스와 국가안보 관련 법·집행 체계도 강화할 예정이다.",
+      "corrections": [
+        "발표일은 원문 메타에 명시되지 않아 published를 비웠다.",
+        "홍콩 정부 문서의 발급 층위를 subnational로 분류했다."
+      ],
+      "confidence": "medium",
+      "flags": []
+    }
+  },
+  "doc-6a9d05e6f467": {
+    "src_hash": "f5cc09bbbecef5eb",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "뇌-컴퓨터 인터페이스 기기의 AI 뇌신호 데이터 표준으로서 AI 관련 기기와 데이터의 규범·표준을 다루는 문서다.",
+      "reject_reason": "",
+      "doc_kind": "표준",
+      "issuer_level": "ministry",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표일이 명시되지 않았으며 URL의 날짜는 발표일로 사용하지 않았다.",
+      "short_name": "중국 BCI 기기 AI 뇌신호 데이터 표준",
+      "summary": "",
+      "corrections": [
+        "원문 메타에 실질적인 본문 요약이나 조항 내용이 없어 요약을 작성하지 않았다.",
+        "발표일은 원문에 명시되지 않아 규칙 초안의 날짜를 적용하지 않았다.",
+        "토픽별 충분한 근거가 없어 topics를 비웠다."
+      ],
+      "confidence": "low",
+      "flags": []
+    }
+  },
+  "doc-fed46de60651": {
+    "src_hash": "d68a560c7857597b",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": false,
+      "in_scope_reason": "제공된 원문은 법안 본문이 아니라 미국 하원의원실이 법안 발의를 소개하는 보도자료다.",
+      "reject_reason": "news_press",
+      "doc_kind": "",
+      "issuer_level": "national",
+      "topics": [
+        {
+          "id": "agentic_ai",
+          "evidence": "네트워크 내 위험한 AI 에이전트를 식별·검증·통제"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "제공된 메타데이터에 원문 발표일이 명시되어 있지 않다.",
+      "short_name": "미국 통제 불능 AI 방지법",
+      "summary": "미국 하원의원 Mike Lawler와 Josh Gottheimer가 위험한 AI 에이전트의 식별·검증·통제를 내용으로 하는 법안 발의를 소개한 보도자료다. 보도자료에 따르면 법안은 NIST가 AI 에이전트의 발견·검증·통제를 위한 국가 표준과 지침을 마련하도록 한다. 또한 조직의 에이전트 목록화와 운영자·출처 확인, prompt injection 및 데이터 탈취 감시, 접근 권한의 허용·거부·철회 조치를 언급한다.",
+      "corrections": [
+        "법안 본문이 아닌 의원실 보도자료이므로 법안 분류와 범위 내 판정을 보도자료로 수정했다.",
+        "제공된 원문에 발표일이 없어 2026-09-15를 published로 사용하지 않았다."
+      ],
+      "confidence": "high",
+      "flags": [
+        "source_is_press_release"
+      ]
+    }
+  },
+  "doc-08bc59a5dfe3": {
+    "src_hash": "5d4820c58762f877",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": false,
+      "in_scope_reason": "AI 생성 광고 출연자 공개 의무를 다루지만, 제공된 자료는 제정 법률 원문이 아니라 주지사 보도자료다.",
+      "reject_reason": "news_press",
+      "doc_kind": "",
+      "issuer_level": "subnational",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "URL에 날짜 형식이 있으나 원문 메타에 발표일이 명시되지 않아 기재하지 않았다.",
+      "short_name": "캘리포니아 SB 1050 AI 생성 광고 출연자 공개법",
+      "summary": "개빈 뉴섬 캘리포니아 주지사가 상품·서비스 광고에 AI로 생성된 출연자를 사용한 경우 이를 명확히 공개하도록 하는 **SB 1050에 서명했다**. 보도 내용에 따르면 이 법은 위반 광고의 계속 사용을 금지한다. 또한 합성 출연자와 실제 인간 출연자를 구분하도록 해 소비자 투명성과 창작 노동자 보호를 강화한다.",
+      "corrections": [
+        "제공된 자료가 법률 원문이 아닌 주지사 보도자료이므로 문서 범위를 news_press로 수정했다.",
+        "원문에 명시된 발표일이 없어 published를 비웠다.",
+        "규율 대상의 세부 조항이 확인되지 않아 topics를 비웠다."
+      ],
+      "confidence": "high",
+      "flags": []
+    }
+  },
+  "doc-8d96fcfb9979": {
+    "src_hash": "ea845cf128dc3cb4",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "인공지능의 위험 분류와 기술적 대응 및 종합 거버넌스를 다루는 안전 거버넌스 프레임워크다.",
+      "reject_reason": "",
+      "doc_kind": "가이드라인·원칙",
+      "issuer_level": "national",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에는 2026년 발표 사실만 있고 정확한 월·일은 확인되지 않는다.",
+      "short_name": "중국 AI 안전 거버넌스 프레임워크 3.0",
+      "summary": "**중국 전국 네트워크 보안 표준화 기술위원회가 2026년 국가 네트워크 보안 홍보 주간 개막식에서 ‘인공지능 안전 거버넌스 프레임워크 3.0’을 발표했다.** 이번 개정은 AI 발전의 새로운 추세와 안전 거버넌스 과제에 대응하기 위해 위험 분류를 정비하고 기술적 대응과 종합 거버넌스 조치를 조정한 것이다. 프레임워크는 __위험 분류·기술 대응·종합 거버넌스__의 논리를 유지하며 AI 안전 거버넌스 역량과 위험 예방·대응 역량 강화를 강조한다.",
+      "corrections": [
+        "규칙 초안의 2026-09-14를 정확한 발표일로 확정하지 않고 published를 비웠다.",
+        "원문에 허용 토픽의 핵심 주제를 입증하는 구체적 근거가 없어 topics를 비웠다."
+      ],
+      "confidence": "medium",
+      "flags": []
+    }
+  },
+  "doc-5b8e713ad422": {
+    "src_hash": "d081c1f9b32ebfe2",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "에이전틱 AI 하네스의 안전한 설계와 관련된 호주 정부 기관의 지침 문서다.",
+      "reject_reason": "",
+      "doc_kind": "가이드라인·원칙",
+      "issuer_level": "ministry",
+      "topics": [
+        {
+          "id": "agentic_ai",
+          "evidence": "Guidance on agentic AI harnesses"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 발표일이 확인되지 않았으며 규칙 초안의 날짜는 사용하지 않았다.",
+      "short_name": "호주 에이전틱 AI 하네스 지침",
+      "summary": "",
+      "corrections": [
+        "규칙 초안의 published 날짜를 사용하지 않고 발행일을 비웠다.",
+        "본문 내용이 제공되지 않아 요약을 작성하지 않았다."
+      ],
+      "confidence": "low",
+      "flags": []
+    }
+  },
+  "doc-0a57764350ba": {
+    "src_hash": "eab2899fd66bbfa7",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": false,
+      "in_scope_reason": "정부 뉴스 페이지의 발표·보도 형식으로 제공된 내용이므로 정책·규범 문서가 아니라 뉴스·보도에 해당한다.",
+      "reject_reason": "news_press",
+      "doc_kind": "",
+      "issuer_level": "",
+      "topics": [
+        {
+          "id": "healthcare",
+          "evidence": "환자 안전과 신뢰를 유지하면서 AI 도입을 가속화하기 위한 권고안"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표일이 없으며, 규칙 초안의 날짜는 사용하지 않았다.",
+      "short_name": "영국 의료 AI 규제 국가위원회 권고안",
+      "summary": "영국 의료 AI 규제에 관한 국가위원회가 환자 안전과 신뢰를 유지하면서 AI 도입을 가속화하기 위한 권고안을 발표했다. 권고안에는 신규 AI 모델의 단계적 허가, 의료기기의 전 생애주기 실사용 모니터링, 안전성·사고 정보의 대중 공개, MHRA의 집행 권한 강화가 포함된다. 위원회는 환자·시민·의료진 등 __1만2천 명 이상__의 의견을 수렴했다. 정부와 MHRA는 권고안을 검토한 뒤 공식 답변을 내놓을 예정이다.",
+      "corrections": [
+        "정부 뉴스 페이지의 발표·보도 자료이므로 정책보고서가 아니라 news_press로 분류하고 in_scope를 false로 변경했다.",
+        "원문 메타에 발표일이 없어 규칙 초안의 2026-09-10을 published에서 제외했다.",
+        "원문에 직접 근거가 있는 healthcare만 토픽으로 유지했다."
+      ],
+      "confidence": "high",
+      "flags": []
+    }
+  },
+  "doc-29a6247e11f1": {
+    "src_hash": "47230988cb713ae9",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": false,
+      "in_scope_reason": "제공된 URL이 상원의원실 보도자료이며, 메타데이터만으로는 법안의 AI 안전·리스크·거버넌스 관련 실질 조항을 확인할 수 없다.",
+      "reject_reason": "news_press",
+      "doc_kind": "",
+      "issuer_level": "national",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 발표일이 제공되지 않았으며, 규칙 초안의 날짜는 사용하지 않았다.",
+      "short_name": "미국 32시간 근무주 법안",
+      "summary": "",
+      "corrections": [
+        "URL 경로가 보도자료임을 반영해 문서 종류를 법안에서 공란으로 수정했다.",
+        "보도자료는 뉴스·보도 범주이므로 in_scope를 false로 유지하고 reject_reason을 news_press로 설정했다.",
+        "규칙 초안의 published 날짜는 원문 발표일이 아니므로 제외했다."
+      ],
+      "confidence": "high",
+      "flags": []
+    }
+  },
+  "doc-adc97336a235": {
+    "src_hash": "9260d12a840f5331",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": false,
+      "in_scope_reason": "제공된 URL이 호주 총리실의 보도자료 경로로, 법안 원문이 아닌 정책 발표·보도 문서로 보인다.",
+      "reject_reason": "news_press",
+      "doc_kind": "",
+      "issuer_level": "national",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표일이 명시되지 않았고, 규칙 초안의 날짜는 사용할 수 없다.",
+      "short_name": "호주 디지털 보호 의무 법안(초안)",
+      "summary": "",
+      "corrections": [
+        "보도자료 URL에 근거해 문서 종류를 법안에서 공란으로 수정했다.",
+        "보도·발표 문서로 판단해 in_scope를 false, reject_reason을 news_press로 수정했다.",
+        "규칙 초안에만 있는 published 날짜를 제거했다.",
+        "보도자료이므로 주제 태그를 부여하지 않았다."
+      ],
+      "confidence": "high",
+      "flags": [
+        "media_release_url"
+      ]
+    }
+  },
+  "doc-4a8238e7bdcf": {
+    "src_hash": "9c94ad8b6cc28913",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "AI로 인한 인격권·개인정보·소비자 권리·지식재산권 및 자율주행 관련 사건의 판단 기준과 책임을 다루는 사법 지침이다.",
+      "reject_reason": "",
+      "doc_kind": "가이드라인·원칙",
+      "issuer_level": "national",
+      "topics": [
+        {
+          "id": "deepfake_disinfo",
+          "evidence": "얼굴 합성·음성 복제·신상정보 공개(doxing) 등으로 개인의 인격권을 침해하는 행위"
+        },
+        {
+          "id": "physical_ai",
+          "evidence": "자율주행 관련 규정도 포함"
+        }
+      ],
+      "published": "2026-09-10",
+      "published_confidence": "medium",
+      "published_note": "출처 URL 경로에 2026-09-10이 표시되지만, 제공된 본문 메타에는 별도의 발표일 문구가 없다.",
+      "short_name": "중국 최고인민법원 AI 사건 사법 지침",
+      "summary": "중국 최고인민법원이 AI 관련 사건 처리를 위한 첫 사법 지침을 발표했다. 지침은 __24개 조항__을 통해 얼굴 합성·음성 복제·신상정보 공개 등으로 개인의 인격권을 침해하는 행위의 판단 기준과 책임을 제시한다. **동의 없이 타인의 음성을 복제하거나 이름·초상을 활용해 식별 가능한 디지털 아바타를 제작·유통하면 각각 음성권 또는 성명·초상권 침해로 본다.** 개인정보·소비자 권리·지식재산권·자율주행 관련 규정도 포함하며, AI 발전에 따라 일부 조항을 추가할 수 있도록 했다.",
+      "corrections": [
+        "문서 성격에 따라 법안이 아닌 가이드라인·원칙으로 분류했다.",
+        "최고인민법원은 중앙 국가기관이므로 issuer_level을 national로 분류했다.",
+        "본문의 핵심 내용에 근거해 deepfake_disinfo와 physical_ai 토픽을 유지했다.",
+        "규칙 초안의 날짜를 그대로 사용하지 않고 출처 URL 경로를 근거로 published를 medium confidence로 기재했다."
+      ],
+      "confidence": "high",
+      "flags": []
+    }
+  },
+  "doc-2a7c5509a2b1": {
+    "src_hash": "aa934bdc8931d950",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "미국 연방 안보·수사·사이버보안 기관이 최첨단 AI 모델 증류의 탐지와 완화 조치를 제시하는 공동 권고문이다.",
+      "reject_reason": "",
+      "doc_kind": "가이드라인·원칙",
+      "issuer_level": "ministry",
+      "topics": [
+        {
+          "id": "national_security",
+          "evidence": "미국과 동맹국의 군사·사이버공격 역량에 영향을 줄 수 있다고 평가됐다"
+        },
+        {
+          "id": "cybersecurity",
+          "evidence": "클라우드·API·인프라 제공업체 등이 적용할 완화 조치"
+        },
+        {
+          "id": "frontier",
+          "evidence": "미국 최첨단 AI 모델의 제한된 독점 기능"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표·채택·공표일이 명시되지 않았으며, 규칙 초안의 날짜는 출처가 확인되지 않아 사용하지 않았다.",
+      "short_name": "미국 연방기관의 중국 AI 모델 증류 공동 권고문",
+      "summary": "**NSA·FBI·CISA는 중국 기반 AI 기업들이 미국 최첨단 AI 모델의 제한된 독점 기능을 산업 규모로 추출해 자체 모델 학습에 활용한다고 경고했다.** 이러한 증류 활동은 연구개발 비용과 컴퓨팅 자원 부담을 줄여 중국 AI 모델의 발전을 촉진하고, 미국과 동맹국의 군사·사이버공격 역량에 영향을 줄 수 있다고 평가됐다. 권고문은 증류 활동의 탐지 방법과 관련 __전술·기법·절차(TTPs)__를 제시하고, 클라우드·API·인프라 제공업체가 적용할 완화 조치를 안내한다.",
+      "corrections": [
+        "원문 메타에 발표일이 없어 규칙 초안의 2026-09-08을 published에 반영하지 않았다.",
+        "문서가 NSA·FBI·CISA의 공동 권고문이므로 doc_kind를 가이드라인·원칙으로 유지하고 issuer_level을 ministry로 분류했다."
+      ],
+      "confidence": "high",
+      "flags": []
+    }
+  },
+  "doc-aa26d9d1af74": {
+    "src_hash": "8376107f720fef8b",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "프런티어 AI가 초래하는 사이버보안 위험에 대응하기 위한 대만 정부 정책 문서다.",
+      "reject_reason": "",
+      "doc_kind": "전략·정책",
+      "issuer_level": "ministry",
+      "topics": [
+        {
+          "id": "cybersecurity",
+          "evidence": "frontier AI cybersecurity risks"
+        },
+        {
+          "id": "frontier",
+          "evidence": "frontier Artificial Intelligence (AI)"
+        }
+      ],
+      "published": "2026-09-04",
+      "published_confidence": "high",
+      "published_note": "원문 메타에 2026년 9월 4일 Administration for Cyber Security가 정책을 발행했다고 명시돼 있다.",
+      "short_name": "대만 프런티어 AI 사이버보안 위험 대응 정책",
+      "summary": "**대만 디지털부 산하 사이버보안청은 2026년 9월 4일 프런티어 AI 사이버보안 위험 대응 정책을 발행했다.** 이 정책은 __프런티어 AI__로 인해 발생하는 신흥 위협에 대응하는 것을 목적으로 한다. 정책의 핵심 대상은 __AI 사이버보안 위험__이다.",
+      "corrections": [
+        "문서의 실질 내용과 발행 주체를 반영해 문서 종류를 기타에서 전략·정책으로 수정했다.",
+        "원문에 명시된 발행일을 published에 반영했다."
+      ],
+      "confidence": "medium",
+      "flags": []
+    }
+  },
+  "doc-661a94c823e1": {
+    "src_hash": "40faa7ac4ed9d275",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": false,
+      "in_scope_reason": "정부의 원칙 발표를 다룬 뉴스·보도 자료로, 원칙 전문이나 규범 조항이 제공되지 않았다.",
+      "reject_reason": "news_press",
+      "doc_kind": "",
+      "issuer_level": "national",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "URL 경로의 날짜는 원문에 명시된 발표일이 아니므로 사용하지 않았다.",
+      "short_name": "캐나다 책임 있는 데이터센터 개발 원칙",
+      "summary": "",
+      "corrections": [
+        "뉴스·보도 자료이므로 문서 종류를 가이드라인·원칙으로 확정하지 않았다.",
+        "원문에 명시된 발표일이 없어 규칙 초안의 날짜를 사용하지 않았다.",
+        "제공된 메타만으로 frontier 토픽을 확정할 수 없어 토픽을 비웠다."
+      ],
+      "confidence": "high",
+      "flags": []
+    }
+  },
+  "doc-eaefb113c062": {
+    "src_hash": "b8a3e6d29478011b",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "AI 시스템과 데이터센터의 긴급 중단 권한, 중요 인프라 보호, 국가안보 및 사고 대응 의무를 직접 규정하는 법안 수정안이다.",
+      "reject_reason": "",
+      "doc_kind": "법안",
+      "issuer_level": "national",
+      "topics": [
+        {
+          "id": "national_security",
+          "evidence": "국가안보 또는 인명에 대규모 피해가 발생할 수 있는 긴급 상황"
+        },
+        {
+          "id": "cybersecurity",
+          "evidence": "데이터센터 운영자에게 긴급 지시 수신 인프라와 통신망, 정기 훈련, 사고 보고 및 재발 방지 절차를 요구"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 수정안의 채택·발표일이 명시되어 있지 않다.",
+      "short_name": "영국 사이버보안 법안 AI 긴급 가동중단 권한 수정안",
+      "summary": "이 수정안은 AI로 인해 중요 인프라·필수 서비스, 국가안보 또는 인명에 대규모 피해가 발생할 수 있는 긴급 상황에서 장관이 데이터센터나 해당 AI 시스템의 가동 중단을 지시할 수 있도록 하는 **최후수단 권한**을 제안한다. 데이터센터 운영자에게 긴급 지시 수신 인프라와 통신망, 정기 훈련, 사고 보고 및 재발 방지 절차를 요구한다. 불이행 시 처벌과 현장 폐쇄·시스템 중단 권한을 규정하고, 권한 행사 후 __7일 이내__ 의회 보고와 토론을 요구한다. 운영자는 고등법원에 구제를 신청할 수 있으며, 이 수정안은 표결에 부쳐지지 않았다.",
+      "corrections": [
+        "원문 메타에 발표일이 없어 규칙 초안의 2026-09-03을 published에서 제외했다.",
+        "수정안이 표결에 부쳐지지 않았다는 원문 내용에 따라 doc_kind를 법안으로 유지했다."
+      ],
+      "confidence": "medium",
+      "flags": []
+    }
+  },
+  "doc-432e9630bbd1": {
+    "src_hash": "3f8f239350e2bd46",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": false,
+      "in_scope_reason": "제공된 URL과 메타는 호주 정부의 AI 구매 파트너십 관련 보도·미디어 페이지로, 규범이나 책무의 실질 내용이 확인되지 않는다.",
+      "reject_reason": "news_press",
+      "doc_kind": "",
+      "issuer_level": "ministry",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 발표일을 확인할 수 없고, 초안의 날짜는 신뢰할 수 없는 참고 정보이므로 사용하지 않았다.",
+      "short_name": "호주 자국산 AI 구매 파트너십",
+      "summary": "",
+      "corrections": [
+        "규칙 초안의 전략·정책 분류를 보도·미디어 페이지로 정정했다.",
+        "원문 발표일을 확인할 수 없어 초안의 날짜를 제외했다."
+      ],
+      "confidence": "low",
+      "flags": []
+    }
+  },
+  "doc-b4d921b71e2c": {
+    "src_hash": "adc84805278b3796",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": false,
+      "in_scope_reason": "정부 부처의 미디어센터에 게시된 보도·발표 형식의 페이지로 확인되어 문서 본문 자체를 규범 문서로 분류할 수 없다.",
+      "reject_reason": "news_press",
+      "doc_kind": "",
+      "issuer_level": "ministry",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 명시된 발표일이 없고 URL 경로의 날짜는 발행일로 확정하지 않았다.",
+      "short_name": "호주 프라이버시법 현대화 개정안",
+      "summary": "",
+      "corrections": [
+        "규칙 초안의 법안 분류를 보도·발표 페이지로 판단해 문서종류를 비웠다.",
+        "규칙 초안의 발행일은 URL 경로에만 나타나므로 published에서 제외했다."
+      ],
+      "confidence": "medium",
+      "flags": []
+    }
+  },
+  "doc-60a28740310f": {
+    "src_hash": "59962ffc998f7964",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "오픈소스 AI의 정책·거버넌스와 관련된 미국 의회 발의 법안으로 AI 규율과 직접 관련된다.",
+      "reject_reason": "",
+      "doc_kind": "법안",
+      "issuer_level": "national",
+      "topics": [
+        {
+          "id": "open_weight",
+          "evidence": "Open-Source AI Leadership Act"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표일·제출일이 명시되지 않아 비워 둔다.",
+      "short_name": "미국 오픈소스 AI 리더십 법안",
+      "summary": "",
+      "corrections": [
+        "규칙 초안의 법 분류를 계류 중인 법안으로 수정했다.",
+        "원문에 발표일이 없어 규칙 초안의 2026-08-27 날짜를 사용하지 않았다.",
+        "원문 메타에 실질적인 조항·책무·규범 내용이 없어 요약을 비워 두었다."
+      ],
+      "confidence": "low",
+      "flags": []
+    }
+  },
+  "doc-2a6fd4e38125": {
+    "src_hash": "d1693696ff78faa7",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "NIST의 AI 평가 권한 확대를 다루는 미국 연방 법안으로 AI 거버넌스와 직접 관련된다.",
+      "reject_reason": "",
+      "doc_kind": "법안",
+      "issuer_level": "national",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표·제출일이 명시되지 않았고 제시된 날짜는 신뢰할 수 있는 원문 날짜로 확인되지 않는다.",
+      "short_name": "미국 H.R. 10180 NIST AI 평가 권한 확대 법안",
+      "summary": "",
+      "corrections": [
+        "원문에 실질적인 조항이나 규범 내용이 없어 요약을 빈 문자열로 두었다.",
+        "발표일 근거가 없어 규칙 초안의 날짜를 사용하지 않았다.",
+        "주제의 세부 범위를 확인할 수 없어 topics를 비워 두었다."
+      ],
+      "confidence": "low",
+      "flags": []
+    }
+  },
+  "doc-220eb9d9963f": {
+    "src_hash": "93c488430662337f",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "금융회사에서의 프런티어 AI 활용에 따른 사이버 취약점 관리, 책임·거버넌스와 인간 검토를 다루는 FCA의 감독 검토 문서다.",
+      "reject_reason": "",
+      "doc_kind": "정책보고서",
+      "issuer_level": "ministry",
+      "topics": [
+        {
+          "id": "cybersecurity",
+          "evidence": "frontier AI가 취약점 발견·분석을 가속"
+        },
+        {
+          "id": "frontier",
+          "evidence": "frontier AI"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "제공된 원문 메타에 발표·공개일이 명시되어 있지 않으며, 규칙 초안의 날짜는 사용하지 않았다.",
+      "short_name": "FCA 프런티어 AI·사이버 복원력 검토",
+      "summary": "**FCA는 프런티어 AI가 금융회사의 사이버 취약점 발견·분석을 가속할 수 있지만, 검증·우선순위 설정·개선 역량을 초과해 병목을 일으킬 수 있다고 설명한다.** 효과적인 활용을 위해 명확한 책임과 거버넌스, 전문 도구, 접근 통제, 인간의 검토와 판단이 필요하다. 취약점 평가는 심각도뿐 아니라 __악용 가능성·업무 영향·의존관계__를 함께 고려해야 한다. 이번 검토는 새로운 규정이나 감독 기대사항을 도입하지 않고 금융회사들의 경험과 주요 시사점을 정리한다.",
+      "corrections": [
+        "규칙 초안의 발표일을 사용하지 않고, 제공된 메타에 명시된 발표일이 없어 published를 비웠다."
+      ],
+      "confidence": "high",
+      "flags": []
+    }
+  },
+  "doc-a1a49226e66a": {
+    "src_hash": "496e4027f086d7da",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "AI 학습·배포·창작과 발명자성에 관한 지식재산 제도의 규율 방향을 다루는 싱가포르 정부기관의 공개 의견수렴 문서다.",
+      "reject_reason": "",
+      "doc_kind": "정책보고서",
+      "issuer_level": "ministry",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 공개 의견수렴의 발표·게시일이 명시되지 않았고, 2026년 10월 22일은 의견 제출 마감일이므로 발행일로 사용하지 않았다.",
+      "short_name": "싱가포르 AI·지식재산 공개 의견수렴",
+      "summary": "싱가포르 법무부와 지식재산청이 **AI가 싱가포르 지식재산 제도에 미치는 영향**에 관한 공개 의견수렴을 시작했다. __저작권__ 분야에서는 AI 학습의 확실성과 책임, AI 배포·사용에 따른 저작권 위험 관리, AI 보조 창작물에서 인간의 창의성을 검토한다. 특허 분야에서는 인간과 AI의 발명자성 및 AI 생성 기술 공개가 선행기술에 미치는 영향을 다룬다. 의견은 __2026년 10월 22일 오후 5시__까지 FormSG 또는 이메일로 제출할 수 있다.",
+      "corrections": [
+        "원문 메타에 발행일이 명시되지 않아 규칙 초안의 2026-08-26을 published에서 제외했다.",
+        "의견수렴의 실질적 내용에 따라 정책보고서로 분류하고, 별도 토픽 근거가 없어 topics를 비워 두었다."
+      ],
+      "confidence": "high",
+      "flags": []
+    }
+  },
+  "doc-dd479603ae3f": {
+    "src_hash": "7604fc869a69615f",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "AI 도구가 제공하는 sponsored content의 공개 의무를 규정하는 AI 관련 법안이다.",
+      "reject_reason": "",
+      "doc_kind": "법안",
+      "issuer_level": "national",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발의·회부 사실은 있으나 법안의 발표·제출 일자가 명시되지 않았다.",
+      "short_name": "미국 AI 광고 공개법안 H.R. 10146",
+      "summary": "**H.R. 10146은 AI 도구가 sponsored content를 제공할 때 이를 공개하도록 요구하는 법안이다.** 법안은 AI가 생성하거나 제공하는 __유료 콘텐츠__의 광고성 공개를 대상으로 한다. 법안은 에너지·상무위원회에 회부된 상태다.",
+      "corrections": [
+        "rule_doc_kind의 법을 법안으로 수정했다.",
+        "rule_status_ko의 계류 상태에 맞춰 법안으로 분류했다.",
+        "원문에 발의·회부 일자는 없으므로 published를 비웠다.",
+        "제공된 메타만으로 특정 허용 토픽의 핵심 주제를 확인하기 어려워 topics를 비웠다."
+      ],
+      "confidence": "medium",
+      "flags": []
+    }
+  },
+  "doc-9d019561f367": {
+    "src_hash": "1e6fded4e5cb9a96",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": false,
+      "in_scope_reason": "제공된 메타데이터만으로는 이 전략이 AI 안전·리스크·거버넌스와 직접 관련된다고 확인할 수 없다.",
+      "reject_reason": "weak_ai_link",
+      "doc_kind": "전략·정책",
+      "issuer_level": "national",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문에 명시된 발표일을 확인할 수 없으며, 규칙 초안의 날짜는 근거가 불명확해 사용하지 않았다.",
+      "short_name": "미국 국가안보 과학기술 전략",
+      "summary": "",
+      "corrections": [
+        "AI 안전·거버넌스와의 직접적인 연관성을 확인할 수 없어 in_scope를 false로 판정했다.",
+        "원문 근거가 없어 national_security 토픽을 제외했다.",
+        "발표일의 원문 근거가 없어 published를 비웠다."
+      ],
+      "confidence": "low",
+      "flags": []
+    }
+  },
+  "doc-042be87af57f": {
+    "src_hash": "94b77893a9a4d88f",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": false,
+      "in_scope_reason": "제공된 메타데이터만으로는 디지털 경제 전반의 협력 양해각서일 뿐 AI 안전·리스크·거버넌스와 직접 관련된 실질 내용이 확인되지 않는다.",
+      "reject_reason": "weak_ai_link",
+      "doc_kind": "조약·협약",
+      "issuer_level": "international",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타데이터에 채택 사실만 있고 발표·서명·발효일이 명시되지 않았다.",
+      "short_name": "베트남-호주 디지털 경제 협력 MOU",
+      "summary": "",
+      "corrections": [
+        "문서 제목상 양국 정부 간 양해각서이므로 문서 종류를 기타에서 조약·협약으로 수정했다.",
+        "제공된 메타데이터에 AI 안전·거버넌스와 직접 관련된 내용이 없어 in_scope를 false로 유지하고 reject_reason을 weak_ai_link로 지정했다.",
+        "원문 발표일이 없어 규칙 초안의 날짜를 사용하지 않고 published를 비웠다."
+      ],
+      "confidence": "medium",
+      "flags": []
+    }
+  },
+  "doc-a04857c4ead3": {
+    "src_hash": "0fbc7ef5d3fe9de0",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "AI 생성 이미지·비디오에서 실존 인물의 초상을 사용하는 행위와 합성 미디어의 개인정보·허위정보 위험에 관한 규제기관의 공개 안내다.",
+      "reject_reason": "",
+      "doc_kind": "가이드라인·원칙",
+      "issuer_level": "ministry",
+      "topics": [
+        {
+          "id": "deepfake_disinfo",
+          "evidence": "실제 인물의 모습을 이용해 사실과 다른 내용을 담은 합성 미디어는 허위 정보를 제공"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 공식 발표일이 없으며, 규칙 초안의 2026-08-11은 등록·추정 날짜로 확인되지 않는다.",
+      "short_name": "필리핀 NPC 실존 인물 초상 AI 생성물 공개 고지",
+      "summary": "**실존 인물의 모습을 AI 생성 이미지·비디오에 사용하는 것은 필리핀 개인정보보호법(DPA)에 따른 개인정보 처리로 간주된다.** 해당 처리는 합법적 목적과 법적 처리 기준을 충족해야 한다. 실존 인물을 이용해 사실과 다른 내용을 담은 합성 미디어는 허위정보를 제공할 수 있으며 법적 처벌의 대상이 될 수 있다. 공공인물에게도 같은 규정이 적용되며, 피해 당사자는 콘텐츠 삭제를 요구하거나 NPC에 불만을 제기할 수 있고 온라인 플랫폼은 이러한 요구에 따라 신속히 콘텐츠를 제거해야 한다.",
+      "corrections": [
+        "공식 발표일이 확인되지 않아 규칙 초안의 2026-08-11을 published에서 제외했다.",
+        "독립 개인정보 감독기관인 필리핀 개인정보보호위원회(NPC)의 층위를 ministry로 분류했다.",
+        "문서의 실질 내용에 따라 doc_kind를 가이드라인·원칙으로 유지했다."
+      ],
+      "confidence": "high",
+      "flags": []
+    }
+  },
+  "doc-e92305089f99": {
+    "src_hash": "360625b6a177aef4",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": false,
+      "in_scope_reason": "제공된 메타데이터만으로는 AI 안전·리스크·거버넌스와 직접 관련된 실질 내용을 확인할 수 없다.",
+      "reject_reason": "weak_ai_link",
+      "doc_kind": "정책보고서",
+      "issuer_level": "ministry",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타데이터에 발표일이 없고, 제공된 날짜는 규칙 초안의 값이므로 사용하지 않았다.",
+      "short_name": "일본 2026 방위백서",
+      "summary": "",
+      "corrections": [
+        "규칙 초안의 national_security 토픽은 AI 안전·거버넌스와의 직접적인 근거가 없어 제외했다.",
+        "규칙 초안의 published 날짜는 원문 발표일로 확인되지 않아 비웠다."
+      ],
+      "confidence": "low",
+      "flags": []
+    }
+  },
+  "doc-2cf524923ee4": {
+    "src_hash": "49e240f92d4ab86b",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": false,
+      "in_scope_reason": "제공된 자료가 법안 원문이 아니라 미국 하원의원실의 보도자료이므로 문서 범위에서 제외한다.",
+      "reject_reason": "news_press",
+      "doc_kind": "",
+      "issuer_level": "national",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표일이 없으며, 규칙 초안의 날짜는 사용하지 않았다.",
+      "short_name": "미국 AI 세금 및 노동자 보호 법안(HB 10044)",
+      "summary": "",
+      "corrections": [
+        "규칙 초안의 법 분류를 보도자료에 해당하므로 문서 종류 없음으로 수정했다.",
+        "규칙 초안의 계류 상태는 법안 원문이 제공되지 않아 확인하지 않았다.",
+        "원문 발표일이 없어 published를 비웠다."
+      ],
+      "confidence": "high",
+      "flags": [
+        "press_release_only",
+        "bill_text_not_provided"
+      ]
+    }
+  },
+  "doc-f47614ace6a0": {
+    "src_hash": "6e84d8c5f7021349",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "문서 제목이 프런티어 AI 모델에 관한 유럽감독청의 성명임을 보여 AI 안전·거버넌스와 직접 관련된다.",
+      "reject_reason": "",
+      "doc_kind": "선언·성명",
+      "issuer_level": "international",
+      "topics": [
+        {
+          "id": "frontier",
+          "evidence": "ESA Statement on Frontier AI Models"
+        }
+      ],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 발표일을 확인할 수 없으며 URL의 2026-07 경로와 규칙 초안의 날짜는 발표일 근거로 사용하지 않았다.",
+      "short_name": "EU 유럽감독청 프런티어 AI 모델 성명(JC 2026 25)",
+      "summary": "",
+      "corrections": [
+        "규칙 초안의 2026-07-31을 원문 발표일로 확인할 수 없어 published를 비웠다.",
+        "원문 실질 내용이 제공되지 않아 summary를 비웠다."
+      ],
+      "confidence": "low",
+      "flags": []
+    }
+  },
+  "doc-06fb800bbe9b": {
+    "src_hash": "8f4c3002db4a1490",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "인공지능 데이터 센터의 입지·운영·지역사회 통제와 환경·공공보건 영향을 규율하려는 미국 연방 차원의 제안 문서다.",
+      "reject_reason": "",
+      "doc_kind": "법안",
+      "issuer_level": "national",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표·발의일이 명시되어 있지 않으며, 규칙 초안의 날짜는 사용하지 않았다.",
+      "short_name": "미국 데이터 센터 권리장전",
+      "summary": "**로 칸나 의원이 인공지능 데이터 센터의 건설과 운영에 대한 지역사회 통제력을 강화하는 ‘데이터 센터 권리장전’을 제안했다.** 제안 내용에는 주거지역과 학교·어린이집·병원 등에서 __2,500피트__ 이내의 데이터 센터 설치 제한, 지역사회 절차를 통한 거부권, 주·지방정부의 규제 권한 보장이 포함된다. 또한 신규 건설 중단, 전기요금 인상 제한, 청정에너지 사용, 소음·대기오염 제한, 영향평가 보고서, 지역사회 혜택 협약, 수자원 사용 공개·보고, 세금 및 보조금 조건 강화를 요구한다. 문서는 데이터 센터 확장에 따른 수자원·대기질·공중보건 영향을 제안의 근거로 제시한다.",
+      "corrections": [
+        "규칙 초안의 발표일 2026-08-06은 원문 메타에 명시되지 않아 published를 비웠다.",
+        "정치과정이나 청소년이 규율 대상의 핵심이라는 근거가 부족해 politics와 youth 토픽을 제외했다."
+      ],
+      "confidence": "medium",
+      "flags": []
+    }
+  },
+  "doc-e0f0ce7c11ed": {
+    "src_hash": "867a566dec75ff24",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": false,
+      "in_scope_reason": "AI와 디지털 기술의 인권·거버넌스 내용을 다루지만, 제공된 URL과 문서 형식이 위원회 발표·뉴스 페이지로 확인되어 범위에서 제외한다.",
+      "reject_reason": "news_press",
+      "doc_kind": "",
+      "issuer_level": "ministry",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "제공된 메타데이터에 원문 발표일이 없으며, 규칙 초안의 날짜는 근거가 확인되지 않아 사용하지 않았다.",
+      "short_name": "뉴질랜드 AI·디지털 기술 인권 접근법 발표",
+      "summary": "뉴질랜드 인권위원회는 인공지능과 디지털 기술이 모든 사람의 존엄성, 평등, 참여를 지원하도록 인간 권리 중심의 접근법을 촉구한다. 발표 내용은 기존 인권 보호 체계와 __티리토이 오 와카니어__가 AI의 책임 있는 사용을 위한 기반을 제공한다고 설명한다. 또한 **마오리족의 권리와 참여를 고려하면서 기술 혁신과 인권 보호의 균형을 추구해야 한다고 강조한다**.",
+      "corrections": [
+        "URL의 경로와 category_raw가 발표·뉴스 형식임을 반영해 in_scope을 false로 변경했다.",
+        "뉴스·보도 문서에는 허용된 doc_kind를 부여하지 않았다.",
+        "원문 발표일이 없어 published를 공란으로 변경했다.",
+        "제공된 요약만으로 특정 토픽을 확정하기 어려워 topics를 비웠다."
+      ],
+      "confidence": "medium",
+      "flags": []
+    }
+  },
+  "doc-35cd73eeedcd": {
+    "src_hash": "b58aa26b0384ed85",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "AI 문서화와 투명성·책임성 강화를 다루는 NIST의 AI 거버넌스 관련 초안 문서다.",
+      "reject_reason": "",
+      "doc_kind": "가이드라인·원칙",
+      "issuer_level": "ministry",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표·공개일이 명시되지 않았으며, 규칙 초안의 날짜는 근거가 확인되지 않아 사용하지 않았다.",
+      "short_name": "NIST 공개용 AI 문서화 지침·템플릿 초안",
+      "summary": "NIST는 **공개용 AI 문서화 지침과 템플릿**을 제시하는 __제로 드래프트__ 시범 프로젝트를 진행 중이다. 이 프로젝트는 AI 기술의 __투명성과 책임성__을 높이는 데 중점을 둔다. NIST는 표준화 과정을 가속화하고 다양한 이해관계자의 의견을 수렴하고자 한다.",
+      "corrections": [
+        "원문에 발표일이 없어 규칙 초안의 2026-07-30을 published로 사용하지 않았다.",
+        "문서의 실질 내용이 지침과 템플릿에 해당하므로 doc_kind를 표준에서 가이드라인·원칙으로 조정했다.",
+        "원문 메타에서 열거형 토픽에 해당하는 핵심 근거가 확인되지 않아 topics를 비웠다."
+      ],
+      "confidence": "medium",
+      "flags": []
+    }
+  },
+  "doc-dc437a159127": {
+    "src_hash": "5a552f7d4cd9524e",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "AI 기술과 관련된 지적재산권 법적·정책적 프레임워크와 개발자·사용자의 관리 기준을 다루는 문서다.",
+      "reject_reason": "",
+      "doc_kind": "정책보고서",
+      "issuer_level": "international",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 발표일이 없으며, 규칙 초안의 날짜는 원문 발표일로 확인되지 않아 사용하지 않았다.",
+      "short_name": "EU 인공지능 시대 지적재산권 사실시트",
+      "summary": "이 사실시트는 **인공지능 기술 발전에 따른 지적재산권 관련 법적·정책적 프레임워크**를 소개한다. AI 기술 보호와 __훈련 데이터 관리__를 주요 고려사항으로 다룬다. AI 생성 콘텐츠의 소유권과 활용 문제를 설명하고, AI 개발자와 사용자가 지적 자산을 보호·관리·상업화할 수 있도록 지침을 제공한다.",
+      "corrections": [
+        "원문 발표일이 확인되지 않아 규칙 초안의 2026-07-30을 published에서 제외했다.",
+        "메타에 제시된 주제 내용만으로 허용 토픽의 핵심 근거를 확인하기 어려워 topics를 비웠다."
+      ],
+      "confidence": "medium",
+      "flags": []
+    }
+  },
+  "doc-7a96f64d86bf": {
+    "src_hash": "ab2add7c385bc5cb",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": true,
+      "in_scope_reason": "APEC 회원국 장관들이 디지털 기술과 AI의 활용, 신뢰할 수 있는 디지털 환경, 사이버 보안 협력을 다룬 국제 장관 선언이다.",
+      "reject_reason": "",
+      "doc_kind": "선언·성명",
+      "issuer_level": "international",
+      "topics": [
+        {
+          "id": "cybersecurity",
+          "evidence": "사이버 보안 강화를 위해 협력할 것을 촉구했다"
+        }
+      ],
+      "published": "2026-07-23",
+      "published_confidence": "high",
+      "published_note": "원문 메타에 중국 청두에서 2026년 7월 23일 선언문을 채택했다고 명시되어 있다.",
+      "short_name": "APEC 디지털·AI 장관 선언(청두 선언)",
+      "summary": "**APEC 회원국 장관들은 __2026년 7월 23일__ 중국 청두에서 디지털 기술과 AI를 통한 아시아태평양 지역의 번영 증진을 위한 선언을 채택했다.** 선언은 보편적이고 의미 있는 디지털 연결성, 디지털 기술과 AI의 경제적 활용, 디지털 리터러시와 기술 향상을 강조한다. 회원국들은 디지털 인프라 투자와 개방형 소스의 중요성을 확인하고, 신뢰할 수 있는 디지털 환경과 사이버 보안 강화를 위해 협력하기로 했다.",
+      "corrections": [
+        "규칙 초안의 발표일 2026-07-24를 원문 메타에 명시된 채택일 2026-07-23으로 수정했다.",
+        "APEC 장관 선언의 국제적 성격에 따라 issuer_level을 international로 보완했다."
+      ],
+      "confidence": "high",
+      "flags": []
+    }
+  },
+  "doc-c712e22c113a": {
+    "src_hash": "8c64ca095a730662",
+    "model": "openai/gpt-5.6-luna",
+    "updated": "2026-10-03",
+    "result": {
+      "in_scope": false,
+      "in_scope_reason": "AI 규제 기관의 설립과 EU 인공지능 규제법의 국내 시행을 다루지만 제공된 자료가 정부 뉴스·보도 형식이다.",
+      "reject_reason": "news_press",
+      "doc_kind": "",
+      "issuer_level": "national",
+      "topics": [],
+      "published": "",
+      "published_confidence": "none",
+      "published_note": "원문 메타에 명시된 발표일이 없어 비움",
+      "short_name": "아일랜드 AI 사무소",
+      "summary": "**아일랜드 정부가 AI 규제를 담당하는 아일랜드 AI 사무소를 설립하고 폴 바이런을 최고경영자로 임명했다.** 사무소는 EU 인공지능 규제법의 국내 시행과 책임 있는 AI 개발 지원을 맡는다. __2026년 8월 2일__까지 운영 준비를 마칠 예정이다.",
+      "corrections": [
+        "뉴스·보도 형식이므로 in_scope를 false로 하고 doc_kind를 비웠다.",
+        "원문 메타에 발표일이 명시되지 않아 published를 비웠다.",
+        "제공된 내용만으로 허용 토픽을 특정하기 어려워 topics를 비웠다."
       ],
       "confidence": "medium",
       "flags": []
