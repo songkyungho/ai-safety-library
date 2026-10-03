@@ -1,10 +1,77 @@
 {
   "name": "AI 안전 라이브러리 문서",
   "updated": "2026-10-03",
-  "count": 3919,
-  "in_scope_count": 2152,
-  "out_of_scope_count": 1767,
+  "count": 3943,
+  "in_scope_count": 2171,
+  "out_of_scope_count": 1772,
   "documents": [
+    {
+      "id": "doc-b44fdf27d40b",
+      "title": "멕시코 연방 형법 AI 생성 성적 자료 처벌 개정안",
+      "short_name": "멕시코 연방 형법 AI 생성 성적 자료 처벌 개정안",
+      "full_name": "",
+      "original_name": "Amendments to the Federal Criminal Code on AI-generated sexual abuse material",
+      "doc_kind": "법안",
+      "doc_kind_raw": "통과|Proposed",
+      "status": "Proposed",
+      "status_ko": "개정안",
+      "canonical_url": "https://sil.gobernacion.gob.mx/movil?pg=msil%2FMMinuto%2Fasunto%2F5088449",
+      "country": "Mexico",
+      "country_ko": "멕시코",
+      "flag": "🇲🇽",
+      "org": "",
+      "published": "2026-10-01",
+      "published_raw": "",
+      "summary": "멕시코 하원 법사위원회가 인공지능과 디지털 편집 도구로 제작·변조한 성적 이미지·영상·음성물을 포함하는 디지털 폭력 행위를 처벌하는 **연방 형법 개정안을 승인했다**. 동의 없이 현실적으로 식별 가능한 성인의 성적 자료를 생성·편집·유포하는 행위를 성적 사생활 침해죄로 규정하고, 행위에 따라 __징역 3~6년 또는 15~30년__과 벌금을 부과하도록 제안했다. **실제 피해자를 특정할 수 없는 경우에도** 아동·청소년 또는 판단·저항 능력이 없는 사람을 사실적으로 묘사한 AI 생성 성적 자료를 처벌 대상에 포함한다.",
+      "snippet": "멕시코 하원 법사위원회가 인공지능과 디지털 편집 도구로 제작·변조한 성적 이미지·영상·음성물을 포함하는 디지털 폭력 행위를 처벌하는 **연방 형법 개정안을 승인했다**. 동의 없이 현실적으로 식별 가능한 성인의 성적 자료를 생성·편집·유포하는 행위를 성적 사생활 침해죄로 규정하고, 행위에 따라 __징역 3~6년 또는 15~30년__과 벌금을 부과하도록 제안했다. **실제 피해자를 특정할 수 없는 경우에도** 아동·청소년 또는 판단·저항 능력이 없는 사람을 사실적으로 묘사한 AI 생성 성적 자료를 처벌 대상에 포함한다.",
+      "history": [
+        {
+          "date": "2026-10-01",
+          "label": "규제 트래커 · 통과",
+          "url": "https://sil.gobernacion.gob.mx/movil?pg=msil%2FMMinuto%2Fasunto%2F5088449",
+          "title": "멕시코 AI 생성 성적 학대물 연방 형법 개정안",
+          "item_id": "regtracker-5d56b8db8302"
+        }
+      ],
+      "sources": [
+        "regtracker"
+      ],
+      "member_ids": [
+        "regtracker-5d56b8db8302"
+      ],
+      "member_count": 1,
+      "safety_score": 6,
+      "in_scope": true,
+      "safety_reasons": [
+        "+regulat|규제",
+        "+harm|피해|misuse|악용|dual[-\\s]?"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "medium",
+      "llm_flags": [],
+      "in_scope_reason": "AI로 생성·변조한 성적 자료와 이를 통한 디지털 폭력 행위를 연방 형법으로 처벌하려는 멕시코 법안이다.",
+      "issuer_level": "national",
+      "issuer_level_ko": "국가",
+      "topics": [
+        {
+          "id": "youth",
+          "label": "청소년",
+          "icon": "🧒",
+          "color": "#db2777",
+          "evidence": "아동·청소년 또는 판단·저항 능력이 없는 사람을 사실적으로 묘사한 AI 생성 성적 자료",
+          "source": "llm"
+        },
+        {
+          "id": "deepfake_disinfo",
+          "label": "딥페이크·허위정보",
+          "icon": "🎭",
+          "color": "#9f1239",
+          "evidence": "인공지능과 디지털 편집 도구로 제작·변조한 성적 이미지·영상·음성물",
+          "source": "llm"
+        }
+      ],
+      "topics_source": "llm"
+    },
     {
       "id": "doc-d105896db8eb",
       "title": "세르비아 VodostAI 홍수 예측 플랫폼",
@@ -751,6 +818,341 @@
       "topics_source": "llm"
     },
     {
+      "id": "doc-d94d54b93f02",
+      "title": "미국 America.gov 통합 창구 행정명령",
+      "short_name": "미국 America.gov 통합 창구 행정명령",
+      "full_name": "",
+      "original_name": "Streamlining Access to Government Services Through America.gov",
+      "doc_kind": "행정규칙",
+      "doc_kind_raw": "공포·시행",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://whitehouse.gov/presidential-actions/2026/09/streamlining-access-to-government-services-through-america-gov",
+      "country": "United States",
+      "country_ko": "미국",
+      "flag": "🇺🇸",
+      "org": "",
+      "published": "2026-09-29",
+      "published_raw": "",
+      "summary": "미국 행정부는 **연방 정보와 서비스를 통합 제공하는 디지털 창구 America.gov 구축을 지시했다**. 이용자는 단일 포털에서 평문으로 질문하고, Login.gov 인증 후 승인된 연방 업무를 처리할 수 있다. 대상은 최근 __12개월간 이용자가 10만 명을 초과하고 온라인 접근이 가능한 연방 서비스__다. 각 기관의 기록 관리와 기존 대면·전화·우편 서비스는 유지되며, OMB는 행정명령 발효 후 90일 이내에 시행 지침을 마련할 예정이다.",
+      "snippet": "미국 행정부는 **연방 정보와 서비스를 통합 제공하는 디지털 창구 America.gov 구축을 지시했다**. 이용자는 단일 포털에서 평문으로 질문하고, Login.gov 인증 후 승인된 연방 업무를 처리할 수 있다. 대상은 최근 __12개월간 이용자가 10만 명을 초과하고 온라인 접근이 가능한 연방 서비스__다. 각 기관의 기록 관리와 기존 대면·전화·우편 서비스는 유지되며, OMB는 행정명령 발효 후 90일 이내에 시행 지침을 마련할 예정이다.",
+      "history": [
+        {
+          "date": "2026-09-29",
+          "label": "규제 트래커 · 공포·시행",
+          "url": "https://whitehouse.gov/presidential-actions/2026/09/streamlining-access-to-government-services-through-america-gov",
+          "title": "미국 America.gov 통합 정부서비스 접근 간소화 행정명령",
+          "item_id": "regtracker-c720cf5ef1ed"
+        }
+      ],
+      "sources": [
+        "regtracker"
+      ],
+      "member_ids": [
+        "regtracker-c720cf5ef1ed"
+      ],
+      "member_count": 1,
+      "safety_score": 5,
+      "in_scope": false,
+      "safety_reasons": [
+        "+regulat|규제",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "-no-ai"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "medium",
+      "llm_flags": [],
+      "in_scope_reason": "연방 디지털 서비스 통합과 이용 절차를 다루지만 AI 안전·리스크·거버넌스와 직접 관련된 내용은 확인되지 않는다.",
+      "reject_reason": "weak_ai_link",
+      "issuer_level": "national",
+      "issuer_level_ko": "국가",
+      "topics": [],
+      "topics_source": "llm"
+    },
+    {
+      "id": "doc-52afa3f1e2b3",
+      "title": "호주 지침 002-2026",
+      "short_name": "호주 지침 002-2026",
+      "full_name": "",
+      "original_name": "Direction 002-2026: Strengthening Commonwealth Cyber Posture Against AI-Enabled Risks",
+      "doc_kind": "행정규칙",
+      "doc_kind_raw": "발표",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://protectivesecurity.gov.au/publications-library/direction-002-2026-strengthening-commonwealth-cyber-posture-against-ai-enabled-risks",
+      "country": "Australia",
+      "country_ko": "호주",
+      "flag": "🇦🇺",
+      "org": "",
+      "published": "2026-09-29",
+      "published_raw": "",
+      "summary": "요약불가",
+      "snippet": "요약불가",
+      "history": [
+        {
+          "date": "2026-09-29",
+          "label": "규제 트래커 · 발표",
+          "url": "https://protectivesecurity.gov.au/publications-library/direction-002-2026-strengthening-commonwealth-cyber-posture-against-ai-enabled-risks",
+          "title": "호주 지침 002-2026 (AI 기반 사이버 위험 대비 연방 사이버 태세 강화)",
+          "item_id": "regtracker-cb7099af934f"
+        }
+      ],
+      "sources": [
+        "regtracker"
+      ],
+      "member_ids": [
+        "regtracker-cb7099af934f"
+      ],
+      "member_count": 1,
+      "safety_score": 5,
+      "in_scope": true,
+      "safety_reasons": [
+        "+regulat|규제",
+        "+guideline|가이드라인|지침|(?<![a-z]"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "medium",
+      "llm_flags": [],
+      "in_scope_reason": "문서 제목이 AI 기반 사이버 위험에 대응하는 연방 사이버 태세 강화를 직접 다루므로 AI 안전·사이버 거버넌스 범위에 해당한다.",
+      "issuer_level": "national",
+      "issuer_level_ko": "국가",
+      "topics": [
+        {
+          "id": "cybersecurity",
+          "label": "사이버안보",
+          "icon": "🔒",
+          "color": "#0369a1",
+          "evidence": "Strengthening Commonwealth Cyber Posture Against AI-Enabled Risks",
+          "source": "llm"
+        }
+      ],
+      "topics_source": "llm"
+    },
+    {
+      "id": "doc-106b4aee640f",
+      "title": "영국 성인 사회복지 AI 활용 가이드",
+      "short_name": "영국 성인 사회복지 AI 활용 가이드",
+      "full_name": "",
+      "original_name": "Using AI in adult social care",
+      "doc_kind": "가이드라인·원칙",
+      "doc_kind_raw": "발표",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://gov.uk/guidance/using-ai-in-adult-social-care",
+      "country": "United Kingdom",
+      "country_ko": "영국",
+      "flag": "🇬🇧",
+      "org": "",
+      "published": "2026-09-29",
+      "published_raw": "",
+      "summary": "영국 보건사회복지부는 성인 사회복지에서 센서 기반 기술, 챗봇, 얼굴 인식, 돌봄 계획·평가 도구와 데이터 분석을 활용하는 사례와 제공기관의 모범 관행을 안내한다. **AI가 생성한 결과는 반드시 사람이 검토해야 한다**는 원칙을 제시한다. 제공기관은 __UK GDPR과 데이터 보호 의무__를 준수하고, 고품질 데이터 사용과 윤리·투명성·형평성 확보, 편향 완화 및 직원 교육을 고려해야 한다.",
+      "snippet": "영국 보건사회복지부는 성인 사회복지에서 센서 기반 기술, 챗봇, 얼굴 인식, 돌봄 계획·평가 도구와 데이터 분석을 활용하는 사례와 제공기관의 모범 관행을 안내한다. **AI가 생성한 결과는 반드시 사람이 검토해야 한다**는 원칙을 제시한다. 제공기관은 __UK GDPR과 데이터 보호 의무__를 준수하고, 고품질 데이터 사용과 윤리·투명성·형평성 확보, 편향 완화 및 직원 교육을 고려해야 한다.",
+      "history": [
+        {
+          "date": "2026-09-29",
+          "label": "규제 트래커 · 발표",
+          "url": "https://gov.uk/guidance/using-ai-in-adult-social-care",
+          "title": "영국 성인 사회복지 AI 활용 지침",
+          "item_id": "regtracker-c1f9e82a97c3"
+        }
+      ],
+      "sources": [
+        "regtracker"
+      ],
+      "member_ids": [
+        "regtracker-c1f9e82a97c3"
+      ],
+      "member_count": 1,
+      "safety_score": 12,
+      "in_scope": true,
+      "safety_reasons": [
+        "+\\bethic|윤리",
+        "+regulat|규제",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+principle|원칙|권고|recommendati",
+        "+transpar|투명|explainab|설명\\s*가",
+        "+bias|편향|discriminat|차별|fairn",
+        "-gdp|생산성|productivity|growth\\",
+        "+core+ai"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "high",
+      "llm_flags": [],
+      "in_scope_reason": "성인 사회복지에서의 AI 활용과 제공기관의 데이터 보호·투명성·형평성·인간 검토 의무를 다루는 실무 지침이다.",
+      "issuer_level": "ministry",
+      "issuer_level_ko": "부처·규제기관",
+      "topics": [
+        {
+          "id": "healthcare",
+          "label": "의료",
+          "icon": "🏥",
+          "color": "#059669",
+          "evidence": "성인 사회복지에서 AI를 활용하는 사례와 제공기관의 모범 관행",
+          "source": "llm"
+        }
+      ],
+      "topics_source": "llm"
+    },
+    {
+      "id": "doc-1c171df2c6eb",
+      "title": "멕시코 생성형 AI 오용·저작권 개정안",
+      "short_name": "멕시코 생성형 AI 오용·저작권 개정안",
+      "full_name": "",
+      "original_name": "Initiative to amend the Federal Criminal Code and the Federal Copyright Law on misuse of generative artificial intelligence",
+      "doc_kind": "법안",
+      "doc_kind_raw": "발의|Proposed",
+      "status": "Proposed",
+      "status_ko": "개정안",
+      "canonical_url": "https://sil.gobernacion.gob.mx/movil?pg=msil%2FMMinuto%2Fasunto%2F4896486",
+      "country": "Mexico",
+      "country_ko": "멕시코",
+      "flag": "🇲🇽",
+      "org": "",
+      "published": "2026-09-24",
+      "published_raw": "",
+      "summary": "멕시코 하원의원 빅토르 마누엘 페레스 디아스가 생성형 인공지능의 기만적 조작, 개인정보·생체정보의 불법 활용, 비동의 정보 유포, 저작권 침해 등을 처벌하기 위해 연방법 개정안을 제안했다. **제안된 처벌은 __6개월~4년의 징역과 100~600일분의 벌금__이다.** 법안은 AI를 활용한 저작물에 창작 과정과 출처, 사용 기술 및 관여한 저자를 공개하도록 제안한다. 기존 저작권을 침해하거나 필요한 허가·창작 기여·출처 공개가 없는 AI 생성물은 저작권 보호 대상에서 제외하도록 제안한다.",
+      "snippet": "멕시코 하원의원 빅토르 마누엘 페레스 디아스가 생성형 인공지능의 기만적 조작, 개인정보·생체정보의 불법 활용, 비동의 정보 유포, 저작권 침해 등을 처벌하기 위해 연방법 개정안을 제안했다. **제안된 처벌은 __6개월~4년의 징역과 100~600일분의 벌금__이다.** 법안은 AI를 활용한 저작물에 창작 과정과 출처, 사용 기술 및 관여한 저자를 공개하도록 제안한다. 기존 저작권을 침해하거나 필요한 허가·창작 기여·출처 공개가 없는 AI 생성물은 저작권 보호 대상에서 제외하도록 제안한다.",
+      "history": [
+        {
+          "date": "2026-09-24",
+          "label": "규제 트래커 · 발의",
+          "url": "https://sil.gobernacion.gob.mx/movil?pg=msil%2FMMinuto%2Fasunto%2F4896486",
+          "title": "멕시코 생성형 AI 오용 처벌·저작권 개정안",
+          "item_id": "regtracker-dc2041a50f24"
+        }
+      ],
+      "sources": [
+        "regtracker"
+      ],
+      "member_ids": [
+        "regtracker-dc2041a50f24"
+      ],
+      "member_count": 1,
+      "safety_score": 7,
+      "in_scope": true,
+      "safety_reasons": [
+        "+regulat|규제",
+        "+transpar|투명|explainab|설명\\s*가",
+        "+privacy|개인정보|data\\s*protecti"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "medium",
+      "llm_flags": [],
+      "in_scope_reason": "생성형 인공지능의 오용에 대한 형사처벌과 개인정보·저작권·정보 공개 의무를 규정하려는 멕시코 연방법 개정 법안이다.",
+      "issuer_level": "national",
+      "issuer_level_ko": "국가",
+      "topics": [
+        {
+          "id": "deepfake_disinfo",
+          "label": "딥페이크·허위정보",
+          "icon": "🎭",
+          "color": "#9f1239",
+          "evidence": "생성형 인공지능의 기만적 조작",
+          "source": "llm"
+        }
+      ],
+      "topics_source": "llm"
+    },
+    {
+      "id": "doc-0f9af3a03d31",
+      "title": "영국 빠르게 변하는 기술 분야 근거 기반 정책 수립 원칙",
+      "short_name": "영국 빠르게 변하는 기술 분야 근거 기반 정책 수립 원칙",
+      "full_name": "",
+      "original_name": "Evidence-informed policymaking and fast-changing technology",
+      "doc_kind": "정책보고서",
+      "doc_kind_raw": "발표",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://gov.uk/government/publications/evidence-informed-policymaking-and-fast-changing-technology",
+      "country": "United Kingdom",
+      "country_ko": "영국",
+      "flag": "🇬🇧",
+      "org": "",
+      "published": "2026-09-24",
+      "published_raw": "",
+      "summary": "**영국 교육부가 빠르게 변하는 기술 분야에서 근거 기반 정책 수립을 지원하기 위한 정책 프레임워크를 제시했다.** 프레임워크는 __8개 원칙__으로 구성되며, 전통적인 연구 주기보다 기술 발전이 빠른 분야를 대상으로 한다. 보고서는 교육부 과학자문위원회 산하 AI·디지털교육 실무그룹이 개발했으며, 분량은 __18쪽__이다.",
+      "snippet": "**영국 교육부가 빠르게 변하는 기술 분야에서 근거 기반 정책 수립을 지원하기 위한 정책 프레임워크를 제시했다.** 프레임워크는 __8개 원칙__으로 구성되며, 전통적인 연구 주기보다 기술 발전이 빠른 분야를 대상으로 한다. 보고서는 교육부 과학자문위원회 산하 AI·디지털교육 실무그룹이 개발했으며, 분량은 __18쪽__이다.",
+      "history": [
+        {
+          "date": "2026-09-24",
+          "label": "규제 트래커 · 발표",
+          "url": "https://gov.uk/government/publications/evidence-informed-policymaking-and-fast-changing-technology",
+          "title": "영국 빠르게 변하는 기술 분야 근거 기반 정책 수립 원칙",
+          "item_id": "regtracker-a3e482fca0a8"
+        }
+      ],
+      "sources": [
+        "regtracker"
+      ],
+      "member_ids": [
+        "regtracker-a3e482fca0a8"
+      ],
+      "member_count": 1,
+      "safety_score": 5,
+      "in_scope": true,
+      "safety_reasons": [
+        "+regulat|규제",
+        "+principle|원칙|권고|recommendati"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "high",
+      "llm_flags": [],
+      "in_scope_reason": "AI 교육 등 빠르게 변하는 기술 분야의 정책 수립 원칙과 근거 활용을 다루는 영국 교육부의 정책 문서다.",
+      "issuer_level": "ministry",
+      "issuer_level_ko": "부처·규제기관",
+      "topics": [],
+      "topics_source": "llm"
+    },
+    {
+      "id": "doc-f106a169bcb5",
+      "title": "영국 AI 사법 실행계획 1년 후",
+      "short_name": "영국 AI 사법 실행계획 1년 후",
+      "full_name": "",
+      "original_name": "AI Action Plan for Justice",
+      "doc_kind": "전략·정책",
+      "doc_kind_raw": "개정",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://gov.uk/government/publications/ai-action-plan-for-justice-one-year-on",
+      "country": "United Kingdom",
+      "country_ko": "영국",
+      "flag": "🇬🇧",
+      "org": "",
+      "published": "2026-09-24",
+      "published_raw": "",
+      "summary": "영국 법무부는 2025년 7월 발표한 AI 사법 실행계획의 __첫 1년__ 추진 현황을 공개했다. **사법 시스템의 AI 활용 기반 강화와 도입 점검을 추진하고, AI가 초래하는 신흥 위험의 식별·대응을 네 번째 전략 우선순위로 추가했다.** 실행 과제별 세부 내용을 확인할 수 있는 ‘Action Plan Explorer’도 제공한다.",
+      "snippet": "영국 법무부는 2025년 7월 발표한 AI 사법 실행계획의 __첫 1년__ 추진 현황을 공개했다. **사법 시스템의 AI 활용 기반 강화와 도입 점검을 추진하고, AI가 초래하는 신흥 위험의 식별·대응을 네 번째 전략 우선순위로 추가했다.** 실행 과제별 세부 내용을 확인할 수 있는 ‘Action Plan Explorer’도 제공한다.",
+      "history": [
+        {
+          "date": "2026-09-24",
+          "label": "규제 트래커 · 개정",
+          "url": "https://gov.uk/government/publications/ai-action-plan-for-justice-one-year-on",
+          "title": "영국 AI 사법 실행계획",
+          "item_id": "regtracker-dd0bcb0c36c3"
+        }
+      ],
+      "sources": [
+        "regtracker"
+      ],
+      "member_ids": [
+        "regtracker-dd0bcb0c36c3"
+      ],
+      "member_count": 1,
+      "safety_score": 3,
+      "in_scope": true,
+      "safety_reasons": [
+        "+regulat|규제"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "medium",
+      "llm_flags": [],
+      "in_scope_reason": "영국 법무부의 사법 시스템 내 AI 활용과 신흥 위험 대응을 다루는 정책 실행계획 문서다.",
+      "issuer_level": "ministry",
+      "issuer_level_ko": "부처·규제기관",
+      "topics": [],
+      "topics_source": "llm"
+    },
+    {
       "id": "doc-7973f97c162d",
       "title": "칠레 환경 규제 부담 AI 분석 프로젝트",
       "short_name": "칠레 환경 규제 부담 AI 분석 프로젝트",
@@ -1435,6 +1837,58 @@
       "topics_source": "llm"
     },
     {
+      "id": "doc-1607963f065e",
+      "title": "멕시코 국가 인공지능 이용 규제법안",
+      "short_name": "멕시코 국가 인공지능 이용 규제법안",
+      "full_name": "",
+      "original_name": "Ley Nacional que Regula el Uso de la Inteligencia Artificial",
+      "doc_kind": "법안",
+      "doc_kind_raw": "발의|Proposed",
+      "status": "Proposed",
+      "status_ko": "계류",
+      "canonical_url": "https://sil.gobernacion.gob.mx/movil?pg=msil%2FMMinuto%2Fasunto%2F4825444",
+      "country": "Mexico",
+      "country_ko": "멕시코",
+      "flag": "🇲🇽",
+      "org": "",
+      "published": "2026-09-23",
+      "published_raw": "",
+      "summary": "멕시코 상원의원 후아니타 게라 메나가 **인공지능의 정의와 이용·적용 절차를 규정하는 법안**을 발의했다. 법안은 평등한 책임, 설계 단계의 개인정보 보호, 비례성, 투명성·기밀성, 사용성을 인공지능 이용 원칙으로 제시한다. 또한 국가 인공지능 정책의 이행을 조정할 __국가인공지능센터__와 국가인공지능위원회·정부기관·사회·민간·학계가 참여하는 국가 인공지능 시스템을 설치하도록 한다.",
+      "snippet": "멕시코 상원의원 후아니타 게라 메나가 **인공지능의 정의와 이용·적용 절차를 규정하는 법안**을 발의했다. 법안은 평등한 책임, 설계 단계의 개인정보 보호, 비례성, 투명성·기밀성, 사용성을 인공지능 이용 원칙으로 제시한다. 또한 국가 인공지능 정책의 이행을 조정할 __국가인공지능센터__와 국가인공지능위원회·정부기관·사회·민간·학계가 참여하는 국가 인공지능 시스템을 설치하도록 한다.",
+      "history": [
+        {
+          "date": "2026-09-23",
+          "label": "규제 트래커 · 발의",
+          "url": "https://sil.gobernacion.gob.mx/movil?pg=msil%2FMMinuto%2Fasunto%2F4825444",
+          "title": "멕시코 국가 인공지능 이용 규제법안",
+          "item_id": "regtracker-2675e13ae9d4"
+        }
+      ],
+      "sources": [
+        "regtracker"
+      ],
+      "member_ids": [
+        "regtracker-2675e13ae9d4"
+      ],
+      "member_count": 1,
+      "safety_score": 9,
+      "in_scope": true,
+      "safety_reasons": [
+        "+regulat|규제",
+        "+principle|원칙|권고|recommendati",
+        "+transpar|투명|explainab|설명\\s*가",
+        "+privacy|개인정보|data\\s*protecti"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "medium",
+      "llm_flags": [],
+      "in_scope_reason": "인공지능의 정의와 이용 원칙, 국가 차원의 조정 기구 및 거버넌스 체계를 규정하는 법안이므로 AI 거버넌스와 직접 관련된다.",
+      "issuer_level": "national",
+      "issuer_level_ko": "국가",
+      "topics": [],
+      "topics_source": "llm"
+    },
+    {
       "id": "doc-d73b4d3912dd",
       "title": "국가연구개발 AI 연구윤리 가이드",
       "short_name": "국가연구개발 AI 연구윤리 가이드",
@@ -1715,6 +2169,165 @@
       "topics_source": "llm"
     },
     {
+      "id": "doc-1f48487468ab",
+      "title": "호주 2026 세대 간 보고서",
+      "short_name": "호주 2026 세대 간 보고서",
+      "full_name": "",
+      "original_name": "2026 Intergenerational Report",
+      "doc_kind": "정책보고서",
+      "doc_kind_raw": "발표",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://treasury.gov.au/publication/2026-intergenerational-report",
+      "country": "Australia",
+      "country_ko": "호주",
+      "flag": "🇦🇺",
+      "org": "",
+      "published": "2026-09-21",
+      "published_raw": "",
+      "summary": "**호주 재무부는 2065~66년까지의 경제와 정부 재정 전망을 담은 제7차 세대 간 보고서를 발표했다.** 보고서는 향후 __40년__의 정책 방향에 영향을 줄 요인으로 인공지능 혁명, 지정학적 분절, 에너지 전환, 고령화와 돌봄 경제, 산업 전환을 다룬다. 세대 간 형평성에 관한 별도 장도 포함한다.",
+      "snippet": "**호주 재무부는 2065~66년까지의 경제와 정부 재정 전망을 담은 제7차 세대 간 보고서를 발표했다.** 보고서는 향후 __40년__의 정책 방향에 영향을 줄 요인으로 인공지능 혁명, 지정학적 분절, 에너지 전환, 고령화와 돌봄 경제, 산업 전환을 다룬다. 세대 간 형평성에 관한 별도 장도 포함한다.",
+      "history": [
+        {
+          "date": "2026-09-21",
+          "label": "규제 트래커 · 발표",
+          "url": "https://treasury.gov.au/publication/2026-intergenerational-report",
+          "title": "호주 2026 세대 간 보고서",
+          "item_id": "regtracker-622d1ceacc82"
+        }
+      ],
+      "sources": [
+        "regtracker"
+      ],
+      "member_ids": [
+        "regtracker-622d1ceacc82"
+      ],
+      "member_count": 1,
+      "safety_score": 3,
+      "in_scope": false,
+      "safety_reasons": [
+        "+regulat|규제"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "medium",
+      "llm_flags": [],
+      "in_scope_reason": "인공지능을 주요 장기 전환 요인 중 하나로 언급하지만 AI 안전·리스크·거버넌스에 관한 실질적 규범이나 정책 내용이 핵심이 아니다.",
+      "reject_reason": "weak_ai_link",
+      "issuer_level": "ministry",
+      "issuer_level_ko": "부처·규제기관",
+      "topics": [],
+      "topics_source": "llm"
+    },
+    {
+      "id": "doc-121f3d1aeda7",
+      "title": "아르헨티나 사법 인공지능 전략 협의체(MEIAJ)",
+      "short_name": "아르헨티나 사법 인공지능 전략 협의체(MEIAJ)",
+      "full_name": "",
+      "original_name": "Mesa Estratégica de Inteligencia Artificial en la Justicia (MEIAJ)",
+      "doc_kind": "기구·제도",
+      "doc_kind_raw": "공포·시행",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://argentina.gob.ar/normativa/nacional/norma-430396/texto",
+      "country": "Argentina",
+      "country_ko": "아르헨티나",
+      "flag": "🇦🇷",
+      "org": "",
+      "published": "2026-09-21",
+      "published_raw": "",
+      "summary": "아르헨티나 법무부가 **사법 인공지능 전략 협의체(MEIAJ)를 설립**했다. 협의체는 기존 인공지능 프로젝트를 조사하고 우선순위, 시범사업, 교육 및 성과지표를 제안한다. 사법기관의 인공지능 도구 도입을 조율하며, 사법 분야 전략은 __일반적인 인공지능 규제 체계가 아닌 계획·조정 및 제도적 촉진 수단__으로 운영된다.",
+      "snippet": "아르헨티나 법무부가 **사법 인공지능 전략 협의체(MEIAJ)를 설립**했다. 협의체는 기존 인공지능 프로젝트를 조사하고 우선순위, 시범사업, 교육 및 성과지표를 제안한다. 사법기관의 인공지능 도구 도입을 조율하며, 사법 분야 전략은 __일반적인 인공지능 규제 체계가 아닌 계획·조정 및 제도적 촉진 수단__으로 운영된다.",
+      "history": [
+        {
+          "date": "2026-09-21",
+          "label": "규제 트래커 · 공포·시행",
+          "url": "https://argentina.gob.ar/normativa/nacional/norma-430396/texto",
+          "title": "아르헨티나 사법 인공지능 전략 협의체(MEIAJ)",
+          "item_id": "regtracker-b8078632f337"
+        }
+      ],
+      "sources": [
+        "regtracker"
+      ],
+      "member_ids": [
+        "regtracker-b8078632f337"
+      ],
+      "member_count": 1,
+      "safety_score": 3,
+      "in_scope": true,
+      "safety_reasons": [
+        "+regulat|규제"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "high",
+      "llm_flags": [],
+      "in_scope_reason": "사법 분야에서 인공지능의 책임 있고 안전한 도입을 조율하는 정부 협의체의 설치와 역할을 다루는 문서다.",
+      "issuer_level": "ministry",
+      "issuer_level_ko": "부처·규제기관",
+      "topics": [],
+      "topics_source": "llm"
+    },
+    {
+      "id": "doc-105e43a90f08",
+      "title": "호주 AI 표준",
+      "short_name": "호주 AI 표준",
+      "full_name": "",
+      "original_name": "Getting it right: building AI infrastructure that works for Australia (consultation on mandatory national standards for AI data centres and frontier model training)",
+      "doc_kind": "전략·정책",
+      "doc_kind_raw": "AI 규제체계·입법 추진계획 / 정부 정책발표",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://www.pm.gov.au/media/ai-australias-interests",
+      "country": "Australia",
+      "country_ko": "호주",
+      "flag": "🇦🇺",
+      "org": "호주 연방정부(Australian Government) / 총리내각부(Department of the Prime Minister and Cabinet)",
+      "published": "2026-09-18",
+      "published_raw": "2026년 7월 15일",
+      "summary": "호주 정부는 대규모 AI 데이터센터와 학습 인프라의 전력·수자원 사용 및 지역사회 영향을 관리하는 방안을 제시했습니다. 데이터센터의 전력 확보와 전력망 비용 부담을 관리하고, 전력 사용 감축 및 물 사용 효율화 의무를 도입할 계획입니다. 연방정부와 주정부의 공동 검토를 바탕으로 에너지·수자원·안전 인허가를 통합한 국가 규제체계를 구축하는 방안도 언급했습니다. 또한 총리내각부 내 Office of AI를 설치하고, AI 학습에 사용되는 창작자·언론인 저작물에 대한 권리와 통제권을 보호하는 체계를 마련할 계획입니다.",
+      "snippet": "호주 정부는 대규모 AI 데이터센터와 학습 인프라의 전력·수자원 사용 및 지역사회 영향을 관리하는 방안을 제시했습니다. 데이터센터의 전력 확보와 전력망 비용 부담을 관리하고, 전력 사용 감축 및 물 사용 효율화 의무를 도입할 계획입니다. 연방정부와 주정부의 공동 검토를 바탕으로 에너지·수자원·안전 인허가를 통합한 국가 규제체계를 구축하는 방안도 언급했습니다. 또한 총리내각부 내 Office of AI를 설치하고, AI 학습에 사용되는 창작자·언론인 저작물에 대한 권리와 통제권을 보호하는 체계를 마련할 계획입니다.",
+      "history": [
+        {
+          "date": "2026-09-18",
+          "label": "규제 트래커 · 의견수렴",
+          "url": "https://pmc.gov.au/domestic-policy/office-ai/getting-it-right-building-ai-infrastructure-works-australia",
+          "title": "호주 AI 인프라 국가 표준 의견수렴",
+          "item_id": "regtracker-988f330cff48"
+        },
+        {
+          "date": "2026-07-15",
+          "label": "외교부 게시",
+          "url": "https://www.mofa.go.kr/www/brd/m_29692/view.do?seq=90",
+          "title": "[호주] 호주 AI 표준(Australian Standards for AI) 추진계획",
+          "item_id": "mofa-country-policy-90"
+        }
+      ],
+      "sources": [
+        "mofa",
+        "regtracker"
+      ],
+      "member_ids": [
+        "mofa-country-policy-90",
+        "regtracker-988f330cff48"
+      ],
+      "member_count": 2,
+      "safety_score": 6,
+      "in_scope": true,
+      "safety_reasons": [
+        "+mofa",
+        "+regulat|규제",
+        "+standard|표준|iso/?iec"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "medium",
+      "llm_flags": [],
+      "in_scope_reason": "호주 정부의 AI 데이터센터·학습 인프라 규제, 자원 사용 관리, 인허가 체계 및 저작권 보호 방안을 다루는 정책 문서입니다.",
+      "issuer_level": "ministry",
+      "issuer_level_ko": "부처·규제기관",
+      "topics": [],
+      "topics_source": "llm"
+    },
+    {
       "id": "doc-8a6db7964fc2",
       "title": "UAE 호라이즌스 교육자 역량강화 프로그램",
       "short_name": "UAE 호라이즌스 교육자 역량강화 프로그램",
@@ -1768,6 +2381,64 @@
       "issuer_level": "ministry",
       "issuer_level_ko": "부처·규제기관",
       "topics": [],
+      "topics_source": "llm"
+    },
+    {
+      "id": "doc-e82adf0de79b",
+      "title": "EU 키즈법",
+      "short_name": "EU 키즈법",
+      "full_name": "",
+      "original_name": "EU 아동 온라인 안전법(EU KIDS Act) 제안",
+      "doc_kind": "법안",
+      "doc_kind_raw": "발의|Proposed",
+      "status": "Proposed",
+      "status_ko": "계류",
+      "canonical_url": "https://digital-strategy.ec.europa.eu/en/library/proposal-eu-kids-act-eu-keeping-internet-digital-spaces-accountable-and-trustworthy",
+      "country": "European Union",
+      "country_ko": "EU",
+      "flag": "🇪🇺",
+      "org": "",
+      "published": "2026-09-17",
+      "published_raw": "",
+      "summary": "유럽연합 집행위원회가 **위험한 디지털 서비스와 AI 시스템으로부터 미성년자를 보호하기 위한 EU KIDS Act를 제안했다**. 이 법안은 특정 소셜 네트워킹 서비스와 동영상 공유 플랫폼에서 __15세 미만 아동의 자율적인 계정 생성__을 제한하는 내용을 담는다. 또한 회원국 간 규정을 조화하고 아동 보호 수준을 높이는 것을 목표로 하며, 온라인 아동 안전 관련 커뮤니케이션과 영향 분석 문서도 함께 공개됐다.",
+      "snippet": "유럽연합 집행위원회가 **위험한 디지털 서비스와 AI 시스템으로부터 미성년자를 보호하기 위한 EU KIDS Act를 제안했다**. 이 법안은 특정 소셜 네트워킹 서비스와 동영상 공유 플랫폼에서 __15세 미만 아동의 자율적인 계정 생성__을 제한하는 내용을 담는다. 또한 회원국 간 규정을 조화하고 아동 보호 수준을 높이는 것을 목표로 하며, 온라인 아동 안전 관련 커뮤니케이션과 영향 분석 문서도 함께 공개됐다.",
+      "history": [
+        {
+          "date": "2026-09-17",
+          "label": "규제 트래커 · 발의",
+          "url": "https://digital-strategy.ec.europa.eu/en/library/proposal-eu-kids-act-eu-keeping-internet-digital-spaces-accountable-and-trustworthy",
+          "title": "EU 아동 온라인 안전법(EU KIDS Act) 제안",
+          "item_id": "regtracker-842e4959e02e"
+        }
+      ],
+      "sources": [
+        "regtracker"
+      ],
+      "member_ids": [
+        "regtracker-842e4959e02e"
+      ],
+      "member_count": 1,
+      "safety_score": 3,
+      "in_scope": true,
+      "safety_reasons": [
+        "+regulat|규제"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "high",
+      "llm_flags": [],
+      "in_scope_reason": "위험한 디지털 서비스와 AI 시스템으로부터 미성년자를 보호하고 온라인 아동 안전 규정을 조화하려는 EU 법안이다.",
+      "issuer_level": "international",
+      "issuer_level_ko": "국제기구·다자",
+      "topics": [
+        {
+          "id": "youth",
+          "label": "청소년",
+          "icon": "🧒",
+          "color": "#db2777",
+          "evidence": "위험한 디지털 서비스와 AI 시스템으로부터 미성년자를 보호하기 위한 EU KIDS Act",
+          "source": "llm"
+        }
+      ],
       "topics_source": "llm"
     },
     {
@@ -3106,6 +3777,51 @@
       "issuer_level_ko": "국가"
     },
     {
+      "id": "doc-5b8e713ad422",
+      "title": "호주 ASD 에이전틱 AI 하네스 지침",
+      "short_name": "호주 ASD 에이전틱 AI 하네스 지침",
+      "full_name": "",
+      "original_name": "Guidance on agentic AI harnesses",
+      "doc_kind": "가이드라인·원칙",
+      "doc_kind_raw": "발표",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://cyber.gov.au/business-government/secure-design/artificial-intelligence/agentic-ai-harnesses",
+      "country": "Australia",
+      "country_ko": "호주",
+      "flag": "🇦🇺",
+      "org": "",
+      "published": "2026-09-11",
+      "published_raw": "",
+      "summary": "요약불가",
+      "snippet": "요약불가",
+      "history": [
+        {
+          "date": "2026-09-11",
+          "label": "규제 트래커 · 발표",
+          "url": "https://cyber.gov.au/business-government/secure-design/artificial-intelligence/agentic-ai-harnesses",
+          "title": "호주 ASD 에이전틱 AI 하네스 지침",
+          "item_id": "regtracker-f5ecbfdc5e4a"
+        }
+      ],
+      "sources": [
+        "regtracker"
+      ],
+      "member_ids": [
+        "regtracker-f5ecbfdc5e4a"
+      ],
+      "member_count": 1,
+      "safety_score": 7,
+      "in_scope": true,
+      "safety_reasons": [
+        "+regulat|규제",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+principle|원칙|권고|recommendati"
+      ],
+      "issuer_level": "national",
+      "issuer_level_ko": "국가"
+    },
+    {
       "id": "doc-28f54abdb94c",
       "title": "디지털 교육 규범",
       "short_name": "디지털 교육 규범",
@@ -3443,9 +4159,9 @@
       "full_name": "",
       "original_name": "Independent Verification Organizations Act (SB 813)",
       "doc_kind": "법",
-      "doc_kind_raw": "adopted",
-      "status": "adopted",
-      "status_ko": "제정",
+      "doc_kind_raw": "통과|Proposed",
+      "status": "Proposed",
+      "status_ko": "계류",
       "canonical_url": "https://digitalpolicyalert.org/intervention/21394-independent-verification-organizations-act-sb-813",
       "country": "United States",
       "country_ko": "미국",
@@ -3453,8 +4169,8 @@
       "org": "United States of America",
       "published": "2026-09-09",
       "published_raw": "",
-      "summary": "2026-09-09 · Governor signed the Independent Verification Organizations Act (SB 813) into law as Chapter 179\n\nOn 9 September 2026, the Governor of California signed the Independent Verification Organizations Act (SB 813) into law as Chapter 179, filed with the Secretary of State the same day. The Act adds a new chapter to the Government Code establishing a …\n\n2026-08-30 · California Legislature adopted the Independent Verification Organizations Act (SB 813)\n\nOn 30 August 2026, the California Senate concurred in the Assembly's amendments to the Independent Verification Organizations Act (SB 813), completing the Act's passage through the Legislature. The Act adds a new chapter to the Government Code estab…",
-      "snippet": "2026-09-09 · Governor signed the Independent Verification Organizations Act (SB 813) into law as Chapter 179\n\nOn 9 September 2026, the Governor of California signed the Independent Verification Organizations Act (SB 813) into law as Chapter 179, filed with the Secretary of State the same day. The Act adds a new chapter to the Government Code establishing a …\n\n2026-08-30 · California Legislature adopted the Independent Verification Organizations Act (SB 813)\n\nOn 30 August 2026, the California Sen",
+      "summary": "캘리포니아주 의회가 인공지능 시스템의 잠재적 안전 위험을 독립적인 제3자 기관이 평가하도록 하는 SB 813을 승인했다. 법안은 상원에서 37대 0, 하원에서 53대 4로 통과됐으며 주지사에게 제출될 예정이다. 정부운영청 산하에 독립검증기관(IVO)을 지정하고, 전문성·신뢰할 수 있는 평가 방법론·평가 대상과의 독립성을 갖추도록 하는 자율적이고 유연한 평가 체계를 마련한다. 평가 대상 위험에는 아동의 심리적 피해, 편향, 사이버보안과 사기, 선거 개입, misinformation, deep fakes, 일자리 대체 등이 포함된다.",
+      "snippet": "캘리포니아주 의회가 인공지능 시스템의 잠재적 안전 위험을 독립적인 제3자 기관이 평가하도록 하는 SB 813을 승인했다. 법안은 상원에서 37대 0, 하원에서 53대 4로 통과됐으며 주지사에게 제출될 예정이다. 정부운영청 산하에 독립검증기관(IVO)을 지정하고, 전문성·신뢰할 수 있는 평가 방법론·평가 대상과의 독립성을 갖추도록 하는 자율적이고 유연한 평가 체계를 마련한다. 평가 대상 위험에는 아동의 심리적 피해, 편향, 사이버보안과 사기, 선거 개입, misinformation, deep fakes, 일자리 대체 등이 포함된다.",
       "history": [
         {
           "date": "2026-09-09",
@@ -3462,20 +4178,34 @@
           "url": "https://digitalpolicyalert.org/intervention/21394-independent-verification-organizations-act-sb-813",
           "title": "Independent Verification Organizations Act (SB 813)",
           "item_id": "dpa-ai-21394"
+        },
+        {
+          "date": "2026-08-31",
+          "label": "규제 트래커 · 통과",
+          "url": "https://sd05.senate.ca.gov/news/legislature-approves-mcnerneys-landmark-bill-assess-artificial-intelligence-safety-risks",
+          "title": "캘리포니아 SB 813 (AI 안전 독립 평가법안)",
+          "item_id": "regtracker-3ff2f0764301"
         }
       ],
       "sources": [
-        "dpa-ai"
+        "dpa-ai",
+        "regtracker"
       ],
       "member_ids": [
-        "dpa-ai-21394"
+        "dpa-ai-21394",
+        "regtracker-3ff2f0764301"
       ],
-      "member_count": 1,
-      "safety_score": 1,
+      "member_count": 2,
+      "safety_score": 19,
       "in_scope": false,
       "safety_reasons": [
         "+dpa",
-        "-no-ai"
+        "+\\bai\\s*safety\\b|인공지능\\s*안전|AI",
+        "+\\bsecurit|보안|사이버보안|cybersecu",
+        "+regulat|규제",
+        "+oversight|감독|감사|audit|evalua",
+        "+bias|편향|discriminat|차별|fairn",
+        "+harm|피해|misuse|악용|dual[-\\s]?"
       ],
       "llm_curated": true,
       "llm_confidence": "medium",
@@ -3998,10 +4728,10 @@
       "full_name": "",
       "original_name": "Amendment to Personal Information Protection Act including provisions on personal information use exception for AI development (Bill No. 2220246/Act No. 21910)",
       "doc_kind": "법",
-      "doc_kind_raw": "adopted",
-      "status": "adopted",
+      "doc_kind_raw": "발의|Proposed",
+      "status": "Proposed",
       "status_ko": "개정안",
-      "canonical_url": "https://digitalpolicyalert.org/intervention/20683-bill-amending-personal-information-protection-act-including-provisions-on-personal-information-use-exception-for-ai-development-bill-no-2220246",
+      "canonical_url": "https://law.go.kr/LSW/lsRvsDocListP.do?chrClsCd=010102&lsId=011357",
       "country": "South Korea",
       "country_ko": "한국",
       "flag": "🇰🇷",
@@ -4017,19 +4747,40 @@
           "url": "https://digitalpolicyalert.org/intervention/20683-bill-amending-personal-information-protection-act-including-provisions-on-personal-information-use-exception-for-ai-development-bill-no-2220246",
           "title": "Amendment to Personal Information Protection Act including provisions on personal information use exception for AI development (Bill No. 2220246/Act No. 21910)",
           "item_id": "dpa-ai-20683"
+        },
+        {
+          "date": "2026-09-08",
+          "label": "규제 트래커 · 개정",
+          "url": "https://law.go.kr/LSW/lsRvsDocListP.do?chrClsCd=010102&lsId=011357",
+          "title": "대한민국 개인정보 보호법 개정(AI 개발 목적 개인정보 이용 특례)",
+          "item_id": "regtracker-5102c1f3ccc5"
+        },
+        {
+          "date": "2026-08-13",
+          "label": "규제 트래커 · 발의",
+          "url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2220246/detailRP",
+          "title": "대한민국 개인정보 보호법 개정안(AI 개발 목적 개인정보 활용 특례)",
+          "item_id": "regtracker-a40a5744ade0"
         }
       ],
       "sources": [
-        "dpa-ai"
+        "dpa-ai",
+        "regtracker"
       ],
       "member_ids": [
-        "dpa-ai-20683"
+        "dpa-ai-20683",
+        "regtracker-5102c1f3ccc5",
+        "regtracker-a40a5744ade0"
       ],
-      "member_count": 1,
-      "safety_score": 1,
+      "member_count": 3,
+      "safety_score": 6,
       "in_scope": true,
       "safety_reasons": [
-        "+dpa"
+        "+dpa",
+        "+regulat|규제",
+        "+oversight|감독|감사|audit|evalua",
+        "+privacy|개인정보|data\\s*protecti",
+        "-competitiv|경쟁력|market\\s*shar"
       ],
       "llm_curated": true,
       "llm_confidence": "high",
@@ -4387,10 +5138,10 @@
       "full_name": "",
       "original_name": "AI authority governance in AI Kill Switch and Data Centre Control Bill 2026",
       "doc_kind": "법안",
-      "doc_kind_raw": "under deliberation",
-      "status": "under deliberation",
+      "doc_kind_raw": "발의|Proposed",
+      "status": "Proposed",
       "status_ko": "계류",
-      "canonical_url": "https://digitalpolicyalert.org/intervention/21334-artificial-intelligence-authority-governance-in-ai-kill-switch-and-data-centre-control-bill-2026",
+      "canonical_url": "https://parlinfo.aph.gov.au/parlInfo/download/legislation/bills/r7537_first-reps/toc_pdf/26119b01.pdf",
       "country": "Australia",
       "country_ko": "호주",
       "flag": "🇦🇺",
@@ -4406,22 +5157,30 @@
           "url": "https://digitalpolicyalert.org/intervention/21334-artificial-intelligence-authority-governance-in-ai-kill-switch-and-data-centre-control-bill-2026",
           "title": "AI authority governance in AI Kill Switch and Data Centre Control Bill 2026",
           "item_id": "dpa-ai-21334"
+        },
+        {
+          "date": "2026-09-07",
+          "label": "규제 트래커 · 발의",
+          "url": "https://parlinfo.aph.gov.au/parlInfo/download/legislation/bills/r7537_first-reps/toc_pdf/26119b01.pdf",
+          "title": "호주 AI 킬스위치·데이터센터 통제 법안",
+          "item_id": "regtracker-a87071dfb8f0"
         }
       ],
       "sources": [
-        "dpa-ai"
+        "dpa-ai",
+        "regtracker"
       ],
       "member_ids": [
-        "dpa-ai-21334"
+        "dpa-ai-21334",
+        "regtracker-a87071dfb8f0"
       ],
-      "member_count": 1,
-      "safety_score": 9,
+      "member_count": 2,
+      "safety_score": 7,
       "in_scope": true,
       "safety_reasons": [
         "+dpa",
-        "+frontier\\s*ai|프론티어|advanced\\",
         "+governan|거버넌스",
-        "+oversight|감독|감사|audit|evalua",
+        "+regulat|규제",
         "+core+ai"
       ],
       "llm_curated": true,
@@ -4495,12 +5254,12 @@
       "title": "프론티어 AI 사이버보안 위험 대응 정책",
       "short_name": "프론티어 AI 사이버보안 위험 대응 정책",
       "full_name": "",
-      "original_name": "Policy for addressing frontier AI cybersecurity risks",
+      "original_name": "Policy for Addressing Frontier AI Cybersecurity Risks",
       "doc_kind": "전략·정책",
       "doc_kind_raw": "adopted",
       "status": "adopted",
       "status_ko": "",
-      "canonical_url": "https://digitalpolicyalert.org/intervention/21312-policy-for-addressing-frontier-ai-cybersecurity-risks",
+      "canonical_url": "https://www-api.moda.gov.tw/File/Get/acs/en/4idU3JXLcBzvr0T",
       "country": "Taiwan",
       "country_ko": "대만",
       "flag": "🇹🇼",
@@ -4516,21 +5275,31 @@
           "url": "https://digitalpolicyalert.org/intervention/21312-policy-for-addressing-frontier-ai-cybersecurity-risks",
           "title": "Policy for addressing frontier AI cybersecurity risks",
           "item_id": "dpa-ai-21312"
+        },
+        {
+          "date": "2026-09-04",
+          "label": "규제 트래커 · 발표",
+          "url": "https://www-api.moda.gov.tw/File/Get/acs/en/4idU3JXLcBzvr0T",
+          "title": "대만 최첨단 AI 사이버보안 위험 대응 정책",
+          "item_id": "regtracker-261abac9bf90"
         }
       ],
       "sources": [
-        "dpa-ai"
+        "dpa-ai",
+        "regtracker"
       ],
       "member_ids": [
-        "dpa-ai-21312"
+        "dpa-ai-21312",
+        "regtracker-261abac9bf90"
       ],
-      "member_count": 1,
-      "safety_score": 7,
+      "member_count": 2,
+      "safety_score": 10,
       "in_scope": true,
       "safety_reasons": [
         "+dpa",
         "+frontier\\s*ai|프론티어|advanced\\",
-        "+\\bsecurit|보안|사이버보안|cybersecu"
+        "+\\bsecurit|보안|사이버보안|cybersecu",
+        "+regulat|규제"
       ],
       "llm_curated": true,
       "llm_confidence": "medium",
@@ -4662,6 +5431,75 @@
       ],
       "issuer_level": "international",
       "issuer_level_ko": "국제기구·다자"
+    },
+    {
+      "id": "doc-eaefb113c062",
+      "title": "영국 사이버보안 법안 AI 긴급 가동중단 권한 수정안",
+      "short_name": "영국 사이버보안 법안 AI 긴급 가동중단 권한 수정안",
+      "full_name": "",
+      "original_name": "AI kill switch amendment to UK cybersecurity bill",
+      "doc_kind": "법안",
+      "doc_kind_raw": "발의|Proposed",
+      "status": "Proposed",
+      "status_ko": "개정안",
+      "canonical_url": "https://bills.parliament.uk/bills/4035/stages/20525/amendments/10034477",
+      "country": "United Kingdom",
+      "country_ko": "영국",
+      "flag": "🇬🇧",
+      "org": "",
+      "published": "2026-09-03",
+      "published_raw": "",
+      "summary": "이 수정안은 AI로 인해 중요 인프라·필수 서비스, 국가안보 또는 인명에 대규모 피해가 발생할 수 있는 긴급 상황에서 장관이 데이터센터나 해당 AI 시스템의 가동 중단을 지시할 수 있도록 하는 **최후수단 권한**을 제안한다. 데이터센터 운영자에게 긴급 지시 수신 인프라와 통신망, 정기 훈련, 사고 보고 및 재발 방지 절차를 요구한다. 불이행 시 처벌과 현장 폐쇄·시스템 중단 권한을 규정하고, 권한 행사 후 __7일 이내__ 의회 보고와 토론을 요구한다. 운영자는 고등법원에 구제를 신청할 수 있으며, 이 수정안은 표결에 부쳐지지 않았다.",
+      "snippet": "이 수정안은 AI로 인해 중요 인프라·필수 서비스, 국가안보 또는 인명에 대규모 피해가 발생할 수 있는 긴급 상황에서 장관이 데이터센터나 해당 AI 시스템의 가동 중단을 지시할 수 있도록 하는 **최후수단 권한**을 제안한다. 데이터센터 운영자에게 긴급 지시 수신 인프라와 통신망, 정기 훈련, 사고 보고 및 재발 방지 절차를 요구한다. 불이행 시 처벌과 현장 폐쇄·시스템 중단 권한을 규정하고, 권한 행사 후 __7일 이내__ 의회 보고와 토론을 요구한다. 운영자는 고등법원에 구제를 신청할 수 있으며, 이 수정안은 표결에 부쳐지지 않았다.",
+      "history": [
+        {
+          "date": "2026-09-03",
+          "label": "규제 트래커 · 발의",
+          "url": "https://bills.parliament.uk/bills/4035/stages/20525/amendments/10034477",
+          "title": "영국 사이버보안 법안 AI 긴급 중단 권한 수정안",
+          "item_id": "regtracker-19585bce9ce2"
+        }
+      ],
+      "sources": [
+        "regtracker"
+      ],
+      "member_ids": [
+        "regtracker-19585bce9ce2"
+      ],
+      "member_count": 1,
+      "safety_score": 11,
+      "in_scope": true,
+      "safety_reasons": [
+        "+\\bsecurit|보안|사이버보안|cybersecu",
+        "+regulat|규제",
+        "+harm|피해|misuse|악용|dual[-\\s]?",
+        "+incident|사고\\s*보고|reporting\\s"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "medium",
+      "llm_flags": [],
+      "in_scope_reason": "AI 시스템과 데이터센터의 긴급 중단 권한, 중요 인프라 보호, 국가안보 및 사고 대응 의무를 직접 규정하는 법안 수정안이다.",
+      "issuer_level": "national",
+      "issuer_level_ko": "국가",
+      "topics": [
+        {
+          "id": "national_security",
+          "label": "국가안보",
+          "icon": "🛡️",
+          "color": "#b45309",
+          "evidence": "국가안보 또는 인명에 대규모 피해가 발생할 수 있는 긴급 상황",
+          "source": "llm"
+        },
+        {
+          "id": "cybersecurity",
+          "label": "사이버안보",
+          "icon": "🔒",
+          "color": "#0369a1",
+          "evidence": "데이터센터 운영자에게 긴급 지시 수신 인프라와 통신망, 정기 훈련, 사고 보고 및 재발 방지 절차를 요구",
+          "source": "llm"
+        }
+      ],
+      "topics_source": "llm"
     },
     {
       "id": "doc-8e749e1ee782",
@@ -5299,12 +6137,12 @@
       "title": "대화형 AI 시스템 공개 의무화 인공지능 기본법 개정안(법안 제2220998호)",
       "short_name": "대화형 AI 시스템 공개 의무화 인공지능 기본법 개정안(법안 제2220998호)",
       "full_name": "",
-      "original_name": "Bill amending AI Basic Act to require disclosure of conversational AI systems (Bill No. 2220998)",
+      "original_name": "Bill amending the Framework Act on the Development of Artificial Intelligence and Establishment of Trust (AI Basic Act) to require disclosure of conversational AI systems",
       "doc_kind": "법안",
-      "doc_kind_raw": "under deliberation",
-      "status": "under deliberation",
+      "doc_kind_raw": "발의|Proposed",
+      "status": "Proposed",
       "status_ko": "개정안",
-      "canonical_url": "https://digitalpolicyalert.org/intervention/21243-bill-amending-ai-basic-act-to-require-disclosure-of-conversational-ai-systems-bill-no-2220998",
+      "canonical_url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_I2J6H0I7G2G2D1B3B3Z9A1Z7Z3H0H3",
       "country": "South Korea",
       "country_ko": "한국",
       "flag": "🇰🇷",
@@ -5320,19 +6158,30 @@
           "url": "https://digitalpolicyalert.org/intervention/21243-bill-amending-ai-basic-act-to-require-disclosure-of-conversational-ai-systems-bill-no-2220998",
           "title": "Bill amending AI Basic Act to require disclosure of conversational AI systems (Bill No. 2220998)",
           "item_id": "dpa-ai-21243"
+        },
+        {
+          "date": "2026-09-01",
+          "label": "규제 트래커 · 발의",
+          "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_I2J6H0I7G2G2D1B3B3Z9A1Z7Z3H0H3",
+          "title": "대한민국 인공지능기본법 개정안(대화형 AI 고지 의무)",
+          "item_id": "regtracker-71ece148cf4f"
         }
       ],
       "sources": [
-        "dpa-ai"
+        "dpa-ai",
+        "regtracker"
       ],
       "member_ids": [
-        "dpa-ai-21243"
+        "dpa-ai-21243",
+        "regtracker-71ece148cf4f"
       ],
-      "member_count": 1,
-      "safety_score": 1,
+      "member_count": 2,
+      "safety_score": 7,
       "in_scope": true,
       "safety_reasons": [
-        "+dpa"
+        "+dpa",
+        "+regulat|규제",
+        "+(?:artificial\\s*intelligence"
       ],
       "llm_curated": true,
       "llm_confidence": "high",
@@ -6688,10 +7537,10 @@
       "full_name": "",
       "original_name": "Worker protection regulation in Bill on mandatory identification and labelling of AI-generated and AI-modified digital content (Bill No. 4362-D-2026)",
       "doc_kind": "법안",
-      "doc_kind_raw": "under deliberation",
-      "status": "under deliberation",
+      "doc_kind_raw": "발의|Proposed",
+      "status": "Proposed",
       "status_ko": "계류",
-      "canonical_url": "https://digitalpolicyalert.org/intervention/21225-worker-protection-regulation-in-bill-on-mandatory-identification-and-labelling-of-ai-generated-and-ai-modified-digital-content",
+      "canonical_url": "https://hcdn.gob.ar/proyectos/detalle_tp_adjunto/index.html?id=294115",
       "country": "Argentina",
       "country_ko": "아르헨티나",
       "flag": "🇦🇷",
@@ -6707,15 +7556,24 @@
           "url": "https://digitalpolicyalert.org/intervention/21225-worker-protection-regulation-in-bill-on-mandatory-identification-and-labelling-of-ai-generated-and-ai-modified-digital-content",
           "title": "Worker protection regulation in Bill on mandatory identification and labelling of AI-generated and AI-modified digital content (Bill No. 4362-D-2026)",
           "item_id": "dpa-ai-21225"
+        },
+        {
+          "date": "2026-08-28",
+          "label": "규제 트래커 · 발의",
+          "url": "https://hcdn.gob.ar/proyectos/detalle_tp_adjunto/index.html?id=294115",
+          "title": "아르헨티나 법안 4362-D-2026",
+          "item_id": "regtracker-5821cc2317f6"
         }
       ],
       "sources": [
-        "dpa-ai"
+        "dpa-ai",
+        "regtracker"
       ],
       "member_ids": [
-        "dpa-ai-21225"
+        "dpa-ai-21225",
+        "regtracker-5821cc2317f6"
       ],
-      "member_count": 1,
+      "member_count": 2,
       "safety_score": 4,
       "in_scope": true,
       "safety_reasons": [
@@ -7118,10 +7976,10 @@
       "full_name": "",
       "original_name": "Open-Source AI Leadership Act (HB 10152)",
       "doc_kind": "법안",
-      "doc_kind_raw": "under deliberation",
-      "status": "under deliberation",
-      "status_ko": "제정",
-      "canonical_url": "https://digitalpolicyalert.org/intervention/21366-open-source-ai-leadership-act-hb-10152",
+      "doc_kind_raw": "발의|Proposed",
+      "status": "Proposed",
+      "status_ko": "계류",
+      "canonical_url": "https://congress.gov/bill/119th-congress/house-bill/10152",
       "country": "United States",
       "country_ko": "미국",
       "flag": "🇺🇸",
@@ -7137,20 +7995,29 @@
           "url": "https://digitalpolicyalert.org/intervention/21366-open-source-ai-leadership-act-hb-10152",
           "title": "Open-Source AI Leadership Act (HB 10152)",
           "item_id": "dpa-ai-21366"
+        },
+        {
+          "date": "2026-08-27",
+          "label": "규제 트래커 · 발의",
+          "url": "https://congress.gov/bill/119th-congress/house-bill/10152",
+          "title": "미국 오픈소스 AI 리더십법안(H.R. 10152)",
+          "item_id": "regtracker-38849b7a619a"
         }
       ],
       "sources": [
-        "dpa-ai"
+        "dpa-ai",
+        "regtracker"
       ],
       "member_ids": [
-        "dpa-ai-21366"
+        "dpa-ai-21366",
+        "regtracker-38849b7a619a"
       ],
-      "member_count": 1,
-      "safety_score": -1,
+      "member_count": 2,
+      "safety_score": 4,
       "in_scope": true,
       "safety_reasons": [
         "+dpa",
-        "-(?:ai\\s+)?adoption\\b|도입\\s*가속"
+        "+regulat|규제"
       ],
       "llm_curated": true,
       "llm_confidence": "medium",
@@ -7307,6 +8174,49 @@
       "published_source": "llm_curate"
     },
     {
+      "id": "doc-2a6fd4e38125",
+      "title": "미국 H.R. 10180 (NIST AI 평가 권한 확대 법안)",
+      "short_name": "미국 H.R. 10180 (NIST AI 평가 권한 확대 법안)",
+      "full_name": "",
+      "original_name": "",
+      "doc_kind": "법안",
+      "doc_kind_raw": "발의|Proposed",
+      "status": "Proposed",
+      "status_ko": "계류",
+      "canonical_url": "https://congress.gov/bill/119th-congress/house-bill/10180",
+      "country": "United States",
+      "country_ko": "미국",
+      "flag": "🇺🇸",
+      "org": "",
+      "published": "2026-08-27",
+      "published_raw": "",
+      "summary": "요약불가",
+      "snippet": "요약불가",
+      "history": [
+        {
+          "date": "2026-08-27",
+          "label": "규제 트래커 · 발의",
+          "url": "https://congress.gov/bill/119th-congress/house-bill/10180",
+          "title": "미국 H.R. 10180 (NIST AI 평가 권한 확대 법안)",
+          "item_id": "regtracker-d55c8e236d61"
+        }
+      ],
+      "sources": [
+        "regtracker"
+      ],
+      "member_ids": [
+        "regtracker-d55c8e236d61"
+      ],
+      "member_count": 1,
+      "safety_score": 3,
+      "in_scope": true,
+      "safety_reasons": [
+        "+regulat|규제"
+      ],
+      "issuer_level": "national",
+      "issuer_level_ko": "국가"
+    },
+    {
       "id": "doc-f1fcba060a5f",
       "title": "페루 국가 AI 전략 2026-2030",
       "short_name": "페루 국가 AI 전략 2026-2030",
@@ -7419,6 +8329,128 @@
       "published_source": "llm_curate"
     },
     {
+      "id": "doc-a1a49226e66a",
+      "title": "싱가포르 AI·지식재산 공개 의견수렴",
+      "short_name": "싱가포르 AI·지식재산 공개 의견수렴",
+      "full_name": "",
+      "original_name": "Public Consultation on Artificial Intelligence and Singapore's Intellectual Property Regime",
+      "doc_kind": "정책보고서",
+      "doc_kind_raw": "의견수렴",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://mlaw.gov.sg/public-consultation-on-artificial-intelligence-and-singapore-s-intellectual-property-regime",
+      "country": "Singapore",
+      "country_ko": "싱가포르",
+      "flag": "🇸🇬",
+      "org": "",
+      "published": "2026-08-26",
+      "published_raw": "",
+      "summary": "싱가포르 법무부와 지식재산청이 **AI가 싱가포르 지식재산 제도에 미치는 영향**에 관한 공개 의견수렴을 시작했다. __저작권__ 분야에서는 AI 학습의 확실성과 책임, AI 배포·사용에 따른 저작권 위험 관리, AI 보조 창작물에서 인간의 창의성을 검토한다. 특허 분야에서는 인간과 AI의 발명자성 및 AI 생성 기술 공개가 선행기술에 미치는 영향을 다룬다. 의견은 __2026년 10월 22일 오후 5시__까지 FormSG 또는 이메일로 제출할 수 있다.",
+      "snippet": "싱가포르 법무부와 지식재산청이 **AI가 싱가포르 지식재산 제도에 미치는 영향**에 관한 공개 의견수렴을 시작했다. __저작권__ 분야에서는 AI 학습의 확실성과 책임, AI 배포·사용에 따른 저작권 위험 관리, AI 보조 창작물에서 인간의 창의성을 검토한다. 특허 분야에서는 인간과 AI의 발명자성 및 AI 생성 기술 공개가 선행기술에 미치는 영향을 다룬다. 의견은 __2026년 10월 22일 오후 5시__까지 FormSG 또는 이메일로 제출할 수 있다.",
+      "history": [
+        {
+          "date": "2026-08-26",
+          "label": "규제 트래커 · 의견수렴",
+          "url": "https://mlaw.gov.sg/public-consultation-on-artificial-intelligence-and-singapore-s-intellectual-property-regime",
+          "title": "싱가포르 AI·지식재산 제도 공개 의견수렴",
+          "item_id": "regtracker-6e77c2faced2"
+        }
+      ],
+      "sources": [
+        "regtracker"
+      ],
+      "member_ids": [
+        "regtracker-6e77c2faced2"
+      ],
+      "member_count": 1,
+      "safety_score": 6,
+      "in_scope": true,
+      "safety_reasons": [
+        "+\\brisk\\b|위험\\s*관리|위험관리|고위험|hi",
+        "+regulat|규제",
+        "+core+ai"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "high",
+      "llm_flags": [],
+      "in_scope_reason": "AI 학습·배포·창작과 발명자성에 관한 지식재산 제도의 규율 방향을 다루는 싱가포르 정부기관의 공개 의견수렴 문서다.",
+      "issuer_level": "ministry",
+      "issuer_level_ko": "부처·규제기관",
+      "topics": [],
+      "topics_source": "llm"
+    },
+    {
+      "id": "doc-220eb9d9963f",
+      "title": "FCA 프런티어 AI·사이버 복원력 검토",
+      "short_name": "FCA 프런티어 AI·사이버 복원력 검토",
+      "full_name": "",
+      "original_name": "Frontier AI and cyber resilience multi-firm review",
+      "doc_kind": "정책보고서",
+      "doc_kind_raw": "발표",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://fca.org.uk/publications/multi-firm-reviews/frontier-ai-cyber-resilience",
+      "country": "United Kingdom",
+      "country_ko": "영국",
+      "flag": "🇬🇧",
+      "org": "",
+      "published": "2026-08-26",
+      "published_raw": "",
+      "summary": "**FCA는 프런티어 AI가 금융회사의 사이버 취약점 발견·분석을 가속할 수 있지만, 검증·우선순위 설정·개선 역량을 초과해 병목을 일으킬 수 있다고 설명한다.** 효과적인 활용을 위해 명확한 책임과 거버넌스, 전문 도구, 접근 통제, 인간의 검토와 판단이 필요하다. 취약점 평가는 심각도뿐 아니라 __악용 가능성·업무 영향·의존관계__를 함께 고려해야 한다. 이번 검토는 새로운 규정이나 감독 기대사항을 도입하지 않고 금융회사들의 경험과 주요 시사점을 정리한다.",
+      "snippet": "**FCA는 프런티어 AI가 금융회사의 사이버 취약점 발견·분석을 가속할 수 있지만, 검증·우선순위 설정·개선 역량을 초과해 병목을 일으킬 수 있다고 설명한다.** 효과적인 활용을 위해 명확한 책임과 거버넌스, 전문 도구, 접근 통제, 인간의 검토와 판단이 필요하다. 취약점 평가는 심각도뿐 아니라 __악용 가능성·업무 영향·의존관계__를 함께 고려해야 한다. 이번 검토는 새로운 규정이나 감독 기대사항을 도입하지 않고 금융회사들의 경험과 주요 시사점을 정리한다.",
+      "history": [
+        {
+          "date": "2026-08-26",
+          "label": "규제 트래커 · 발표",
+          "url": "https://fca.org.uk/publications/multi-firm-reviews/frontier-ai-cyber-resilience",
+          "title": "영국 FCA 프런티어 AI·사이버 복원력 다기업 검토",
+          "item_id": "regtracker-88c3c1047ea3"
+        }
+      ],
+      "sources": [
+        "regtracker"
+      ],
+      "member_ids": [
+        "regtracker-88c3c1047ea3"
+      ],
+      "member_count": 1,
+      "safety_score": 14,
+      "in_scope": true,
+      "safety_reasons": [
+        "+frontier\\s*ai|프론티어|advanced\\",
+        "+governan|거버넌스",
+        "+regulat|규제",
+        "+oversight|감독|감사|audit|evalua",
+        "+harm|피해|misuse|악용|dual[-\\s]?",
+        "+core+ai"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "high",
+      "llm_flags": [],
+      "in_scope_reason": "금융회사에서의 프런티어 AI 활용에 따른 사이버 취약점 관리, 책임·거버넌스와 인간 검토를 다루는 FCA의 감독 검토 문서다.",
+      "issuer_level": "ministry",
+      "issuer_level_ko": "부처·규제기관",
+      "topics": [
+        {
+          "id": "cybersecurity",
+          "label": "사이버안보",
+          "icon": "🔒",
+          "color": "#0369a1",
+          "evidence": "frontier AI가 취약점 발견·분석을 가속",
+          "source": "llm"
+        },
+        {
+          "id": "frontier",
+          "label": "프론티어",
+          "icon": "🚀",
+          "color": "#c2410c",
+          "evidence": "frontier AI",
+          "source": "llm"
+        }
+      ],
+      "topics_source": "llm"
+    },
+    {
       "id": "doc-10a596632089",
       "title": "대한민국 인공지능 윤리원칙",
       "short_name": "대한민국 인공지능 윤리원칙",
@@ -7472,10 +8504,10 @@
       "full_name": "",
       "original_name": "AI Advertising Disclosure Act (HR 10146)",
       "doc_kind": "법안",
-      "doc_kind_raw": "under deliberation",
-      "status": "under deliberation",
-      "status_ko": "제정",
-      "canonical_url": "https://digitalpolicyalert.org/intervention/21100-ai-advertising-disclosure-act-hr-10146",
+      "doc_kind_raw": "발의|Proposed",
+      "status": "Proposed",
+      "status_ko": "계류",
+      "canonical_url": "https://govinfo.gov/app/details/BILLS-119hr10146ih/summary",
       "country": "United States",
       "country_ko": "미국",
       "flag": "🇺🇸",
@@ -7491,19 +8523,29 @@
           "url": "https://digitalpolicyalert.org/intervention/21100-ai-advertising-disclosure-act-hr-10146",
           "title": "AI Advertising Disclosure Act (HR 10146)",
           "item_id": "dpa-ai-21100"
+        },
+        {
+          "date": "2026-08-24",
+          "label": "규제 트래커 · 발의",
+          "url": "https://govinfo.gov/app/details/BILLS-119hr10146ih/summary",
+          "title": "미국 AI 광고 공개법 (H.R. 10146)",
+          "item_id": "regtracker-7e19680f48f2"
         }
       ],
       "sources": [
-        "dpa-ai"
+        "dpa-ai",
+        "regtracker"
       ],
       "member_ids": [
-        "dpa-ai-21100"
+        "dpa-ai-21100",
+        "regtracker-7e19680f48f2"
       ],
-      "member_count": 1,
-      "safety_score": 1,
+      "member_count": 2,
+      "safety_score": 4,
       "in_scope": true,
       "safety_reasons": [
-        "+dpa"
+        "+dpa",
+        "+regulat|규제"
       ],
       "llm_curated": true,
       "llm_confidence": "medium",
@@ -8039,12 +9081,12 @@
       "title": "CFTC 컴퓨트 파생상품 상장 조사",
       "short_name": "CFTC 컴퓨트 파생상품 상장 조사",
       "full_name": "",
-      "original_name": "Commodity Futures Trading Commission inquiry into the listing of compute derivatives contracts",
+      "original_name": "CFTC inquiry into the listing of compute derivatives contracts that critically serve the AI market",
       "doc_kind": "기타",
       "doc_kind_raw": "in consultation",
       "status": "in consultation",
       "status_ko": "",
-      "canonical_url": "https://digitalpolicyalert.org/intervention/21061-commodity-futures-trading-commission-inquiry-into-the-listing-of-compute-derivatives-contracts",
+      "canonical_url": "https://public-inspection.federalregister.gov/2026-17163.pdf",
       "country": "United States",
       "country_ko": "미국",
       "flag": "🇺🇸",
@@ -8060,19 +9102,29 @@
           "url": "https://digitalpolicyalert.org/intervention/21061-commodity-futures-trading-commission-inquiry-into-the-listing-of-compute-derivatives-contracts",
           "title": "Commodity Futures Trading Commission inquiry into the listing of compute derivatives contracts",
           "item_id": "dpa-ai-21061"
+        },
+        {
+          "date": "2026-08-20",
+          "label": "규제 트래커 · 의견수렴",
+          "url": "https://public-inspection.federalregister.gov/2026-17163.pdf",
+          "title": "미국 CFTC 컴퓨트 파생상품 상장 조사",
+          "item_id": "regtracker-3dc516106caa"
         }
       ],
       "sources": [
-        "dpa-ai"
+        "dpa-ai",
+        "regtracker"
       ],
       "member_ids": [
-        "dpa-ai-21061"
+        "dpa-ai-21061",
+        "regtracker-3dc516106caa"
       ],
-      "member_count": 1,
-      "safety_score": 1,
+      "member_count": 2,
+      "safety_score": 4,
       "in_scope": false,
       "safety_reasons": [
         "+dpa",
+        "+regulat|규제",
         "-no-ai"
       ],
       "llm_curated": true,
@@ -8399,7 +9451,7 @@
       "doc_kind_raw": "under deliberation",
       "status": "under deliberation",
       "status_ko": "",
-      "canonical_url": "https://digitalpolicyalert.org/intervention/21088-guidelines-for-intellectual-property-protection-and-transparency-in-appropriate-use-of-generative-ai",
+      "canonical_url": "https://public-comment.e-gov.go.jp/pcm/download?seqNo=0000305362",
       "country": "Japan",
       "country_ko": "일본",
       "flag": "🇯🇵",
@@ -8415,19 +9467,29 @@
           "url": "https://digitalpolicyalert.org/intervention/21088-guidelines-for-intellectual-property-protection-and-transparency-in-appropriate-use-of-generative-ai",
           "title": "Principle Code for intellectual property protection and transparency in appropriate use of generative AI",
           "item_id": "dpa-ai-21088"
+        },
+        {
+          "date": "2026-08-18",
+          "label": "규제 트래커 · 의견수렴",
+          "url": "https://public-comment.e-gov.go.jp/pcm/download?seqNo=0000305362",
+          "title": "일본 AI 지식재산 보호·투명성 규범(안)",
+          "item_id": "regtracker-56458a5addde"
         }
       ],
       "sources": [
-        "dpa-ai"
+        "dpa-ai",
+        "regtracker"
       ],
       "member_ids": [
-        "dpa-ai-21088"
+        "dpa-ai-21088",
+        "regtracker-56458a5addde"
       ],
-      "member_count": 1,
-      "safety_score": 7,
+      "member_count": 2,
+      "safety_score": 10,
       "in_scope": true,
       "safety_reasons": [
         "+dpa",
+        "+regulat|규제",
         "+guideline|가이드라인|지침|(?<![a-z]",
         "+principle|원칙|권고|recommendati",
         "+transpar|투명|explainab|설명\\s*가"
@@ -8443,6 +9505,111 @@
       "topics": [],
       "topics_source": "llm",
       "published_source": "llm_curate"
+    },
+    {
+      "id": "doc-3a8c3f7fb679",
+      "title": "튀르키예 인공지능 행동계획(2026-2030)",
+      "short_name": "튀르키예 인공지능 행동계획(2026-2030)",
+      "full_name": "",
+      "original_name": "Artificial Intelligence Action Plan (2026-2030)",
+      "doc_kind": "전략·정책",
+      "doc_kind_raw": "adopted",
+      "status": "adopted",
+      "status_ko": "",
+      "canonical_url": "https://resmigazete.gov.tr/eskiler/2026/08/20260818-8.pdf",
+      "country": "Turkey",
+      "country_ko": "튀르키예",
+      "flag": "🇹🇷",
+      "org": "Turkiye",
+      "published": "2026-08-17",
+      "published_raw": "",
+      "summary": "튀르키예 대통령은 2026년 8월 17일 인공지능 행동계획(2026-2030)을 발효시키는 대통령 회람에 서명했습니다. 이 계획은 ‘인지(notice)’, ‘활용(utilise)’, ‘생산(produce)’, ‘거버넌스(govern)’의 4개 축으로 구성됩니다. 계획에는 16개 우선순위가 포함되어 있습니다.",
+      "snippet": "튀르키예 대통령은 2026년 8월 17일 인공지능 행동계획(2026-2030)을 발효시키는 대통령 회람에 서명했습니다. 이 계획은 ‘인지(notice)’, ‘활용(utilise)’, ‘생산(produce)’, ‘거버넌스(govern)’의 4개 축으로 구성됩니다. 계획에는 16개 우선순위가 포함되어 있습니다.",
+      "history": [
+        {
+          "date": "2026-08-18",
+          "label": "규제 트래커 · 발표",
+          "url": "https://resmigazete.gov.tr/eskiler/2026/08/20260818-8.pdf",
+          "title": "튀르키예 AI 로드맵",
+          "item_id": "regtracker-2328d5f50a27"
+        },
+        {
+          "date": "2026-08-17",
+          "label": "DPA 기록",
+          "url": "https://digitalpolicyalert.org/intervention/21012-presidential-circular-publishing-turkiye-artificial-intelligence-action-plan-2026-2030",
+          "title": "Artificial Intelligence Action Plan (2026-2030)",
+          "item_id": "dpa-ai-21012"
+        }
+      ],
+      "sources": [
+        "dpa-ai",
+        "regtracker"
+      ],
+      "member_ids": [
+        "dpa-ai-21012",
+        "regtracker-2328d5f50a27"
+      ],
+      "member_count": 2,
+      "safety_score": 7,
+      "in_scope": true,
+      "safety_reasons": [
+        "+dpa",
+        "+regulat|규제",
+        "+(?:artificial\\s*intelligence"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "high",
+      "llm_flags": [],
+      "in_scope_reason": "인공지능의 국가적 추진·활용·생산·거버넌스를 다루는 국가 정책 문서이므로 AI 거버넌스와 직접 관련됩니다.",
+      "issuer_level": "national",
+      "issuer_level_ko": "국가",
+      "topics": [],
+      "topics_source": "llm",
+      "published_source": "llm_curate"
+    },
+    {
+      "id": "doc-9d019561f367",
+      "title": "미국 국가안보 과학기술 전략",
+      "short_name": "미국 국가안보 과학기술 전략",
+      "full_name": "",
+      "original_name": "National Security Science and Technology Strategy",
+      "doc_kind": "전략·정책",
+      "doc_kind_raw": "발표",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://whitehouse.gov/wp-content/uploads/2026/08/NSSTS-082026.pdf",
+      "country": "United States",
+      "country_ko": "미국",
+      "flag": "🇺🇸",
+      "org": "",
+      "published": "2026-08-18",
+      "published_raw": "",
+      "summary": "요약불가",
+      "snippet": "요약불가",
+      "history": [
+        {
+          "date": "2026-08-18",
+          "label": "규제 트래커 · 발표",
+          "url": "https://whitehouse.gov/wp-content/uploads/2026/08/NSSTS-082026.pdf",
+          "title": "미국 국가안보 과학기술 전략",
+          "item_id": "regtracker-4c3c91c6dbfa"
+        }
+      ],
+      "sources": [
+        "regtracker"
+      ],
+      "member_ids": [
+        "regtracker-4c3c91c6dbfa"
+      ],
+      "member_count": 1,
+      "safety_score": 3,
+      "in_scope": false,
+      "safety_reasons": [
+        "+regulat|규제",
+        "-no-ai"
+      ],
+      "issuer_level": "national",
+      "issuer_level_ko": "국가"
     },
     {
       "id": "doc-f95c352620d7",
@@ -8709,57 +9876,6 @@
           "source": "llm"
         }
       ],
-      "topics_source": "llm",
-      "published_source": "llm_curate"
-    },
-    {
-      "id": "doc-3a8c3f7fb679",
-      "title": "튀르키예 인공지능 행동계획(2026-2030)",
-      "short_name": "튀르키예 인공지능 행동계획(2026-2030)",
-      "full_name": "",
-      "original_name": "Artificial Intelligence Action Plan (2026-2030)",
-      "doc_kind": "전략·정책",
-      "doc_kind_raw": "adopted",
-      "status": "adopted",
-      "status_ko": "",
-      "canonical_url": "https://digitalpolicyalert.org/intervention/21012-presidential-circular-publishing-turkiye-artificial-intelligence-action-plan-2026-2030",
-      "country": "Turkey",
-      "country_ko": "튀르키예",
-      "flag": "🇹🇷",
-      "org": "Turkiye",
-      "published": "2026-08-17",
-      "published_raw": "",
-      "summary": "튀르키예 대통령은 2026년 8월 17일 인공지능 행동계획(2026-2030)을 발효시키는 대통령 회람에 서명했습니다. 이 계획은 ‘인지(notice)’, ‘활용(utilise)’, ‘생산(produce)’, ‘거버넌스(govern)’의 4개 축으로 구성됩니다. 계획에는 16개 우선순위가 포함되어 있습니다.",
-      "snippet": "튀르키예 대통령은 2026년 8월 17일 인공지능 행동계획(2026-2030)을 발효시키는 대통령 회람에 서명했습니다. 이 계획은 ‘인지(notice)’, ‘활용(utilise)’, ‘생산(produce)’, ‘거버넌스(govern)’의 4개 축으로 구성됩니다. 계획에는 16개 우선순위가 포함되어 있습니다.",
-      "history": [
-        {
-          "date": "2026-08-17",
-          "label": "DPA 기록",
-          "url": "https://digitalpolicyalert.org/intervention/21012-presidential-circular-publishing-turkiye-artificial-intelligence-action-plan-2026-2030",
-          "title": "Artificial Intelligence Action Plan (2026-2030)",
-          "item_id": "dpa-ai-21012"
-        }
-      ],
-      "sources": [
-        "dpa-ai"
-      ],
-      "member_ids": [
-        "dpa-ai-21012"
-      ],
-      "member_count": 1,
-      "safety_score": 4,
-      "in_scope": true,
-      "safety_reasons": [
-        "+dpa",
-        "+(?:artificial\\s*intelligence"
-      ],
-      "llm_curated": true,
-      "llm_confidence": "high",
-      "llm_flags": [],
-      "in_scope_reason": "인공지능의 국가적 추진·활용·생산·거버넌스를 다루는 국가 정책 문서이므로 AI 거버넌스와 직접 관련됩니다.",
-      "issuer_level": "national",
-      "issuer_level_ko": "국가",
-      "topics": [],
       "topics_source": "llm",
       "published_source": "llm_curate"
     },
@@ -9489,7 +10605,7 @@
       "title": "중국 AI 에이전트 상호작용 보안 요구사항 실천지침",
       "short_name": "중국 AI 에이전트 상호작용 보안 요구사항 실천지침",
       "full_name": "",
-      "original_name": "Network Security Standard Practice Guide on AI Agent Interaction Security Requirements",
+      "original_name": "Cybersecurity Standards Practice Guide (draft): Security Requirements for Agent Interaction; AI Browser Security Practice Guide",
       "doc_kind": "표준",
       "doc_kind_raw": "processing consultation",
       "status": "processing consultation",
@@ -9510,20 +10626,31 @@
           "url": "https://digitalpolicyalert.org/intervention/20771-network-security-standard-practice-guide-on-ai-agent-interaction-security-requirements",
           "title": "Network Security Standard Practice Guide on AI Agent Interaction Security Requirements",
           "item_id": "dpa-ai-20771"
+        },
+        {
+          "date": "2026-07-29",
+          "label": "규제 트래커 · 의견수렴",
+          "url": "https://tc260.org.cn/portal/article/2/d0a9e0e6b027443881b26aa971fa558c",
+          "title": "중국 TC260 사이버보안 표준 실무지침 초안(지능체 상호작용·AI 브라우저)",
+          "item_id": "regtracker-b524863e3822"
         }
       ],
       "sources": [
-        "dpa-ai"
+        "dpa-ai",
+        "regtracker"
       ],
       "member_ids": [
-        "dpa-ai-20771"
+        "dpa-ai-20771",
+        "regtracker-b524863e3822"
       ],
-      "member_count": 1,
-      "safety_score": 6,
+      "member_count": 2,
+      "safety_score": 11,
       "in_scope": true,
       "safety_reasons": [
         "+dpa",
         "+\\bsecurit|보안|사이버보안|cybersecu",
+        "+regulat|규제",
+        "+guideline|가이드라인|지침|(?<![a-z]",
         "+standard|표준|iso/?iec"
       ],
       "llm_curated": true,
@@ -10043,15 +11170,24 @@
           "url": "https://digitalpolicyalert.org/intervention/20894-south-australian-department-of-premier-and-cabinet-inquiry-into-artificial-intelligence-policy-and-regulation",
           "title": "South Australian Department of Premier and Cabinet inquiry into artificial intelligence policy and regulation",
           "item_id": "dpa-ai-20894"
+        },
+        {
+          "date": "2026-08-11",
+          "label": "규제 트래커 · 기록",
+          "url": "https://dpc.sa.gov.au/news/royal-commission-into-artificial-intelligence-announced",
+          "title": "남호주 AI 왕립위원회",
+          "item_id": "regtracker-0b68c854b157"
         }
       ],
       "sources": [
-        "dpa-ai"
+        "dpa-ai",
+        "regtracker"
       ],
       "member_ids": [
-        "dpa-ai-20894"
+        "dpa-ai-20894",
+        "regtracker-0b68c854b157"
       ],
-      "member_count": 1,
+      "member_count": 2,
       "safety_score": 4,
       "in_scope": false,
       "safety_reasons": [
@@ -10392,6 +11528,119 @@
       "topics_source": "llm"
     },
     {
+      "id": "doc-a04857c4ead3",
+      "title": "필리핀 NPC 실존 인물 초상 AI 생성물 공개 고지",
+      "short_name": "필리핀 NPC 실존 인물 초상 AI 생성물 공개 고지",
+      "full_name": "",
+      "original_name": "Notice to the Public: Use of Real Persons' Likenesses in AI-Generated Images",
+      "doc_kind": "가이드라인·원칙",
+      "doc_kind_raw": "발표",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://privacy.gov.ph/notice-to-the-public-use-of-real-persons-likenesses-in-ai-generated-images",
+      "country": "Philippines",
+      "country_ko": "필리핀",
+      "flag": "🇵🇭",
+      "org": "",
+      "published": "2026-08-11",
+      "published_raw": "",
+      "summary": "**실존 인물의 모습을 AI 생성 이미지·비디오에 사용하는 것은 필리핀 개인정보보호법(DPA)에 따른 개인정보 처리로 간주된다.** 해당 처리는 합법적 목적과 법적 처리 기준을 충족해야 한다. 실존 인물을 이용해 사실과 다른 내용을 담은 합성 미디어는 허위정보를 제공할 수 있으며 법적 처벌의 대상이 될 수 있다. 공공인물에게도 같은 규정이 적용되며, 피해 당사자는 콘텐츠 삭제를 요구하거나 NPC에 불만을 제기할 수 있고 온라인 플랫폼은 이러한 요구에 따라 신속히 콘텐츠를 제거해야 한다.",
+      "snippet": "**실존 인물의 모습을 AI 생성 이미지·비디오에 사용하는 것은 필리핀 개인정보보호법(DPA)에 따른 개인정보 처리로 간주된다.** 해당 처리는 합법적 목적과 법적 처리 기준을 충족해야 한다. 실존 인물을 이용해 사실과 다른 내용을 담은 합성 미디어는 허위정보를 제공할 수 있으며 법적 처벌의 대상이 될 수 있다. 공공인물에게도 같은 규정이 적용되며, 피해 당사자는 콘텐츠 삭제를 요구하거나 NPC에 불만을 제기할 수 있고 온라인 플랫폼은 이러한 요구에 따라 신속히 콘텐츠를 제거해야 한다.",
+      "history": [
+        {
+          "date": "2026-08-11",
+          "label": "규제 트래커 · 발표",
+          "url": "https://privacy.gov.ph/notice-to-the-public-use-of-real-persons-likenesses-in-ai-generated-images",
+          "title": "필리핀 NPC AI 생성 이미지 내 실존 인물 초상 사용 공지",
+          "item_id": "regtracker-0555b80885a9"
+        }
+      ],
+      "sources": [
+        "regtracker"
+      ],
+      "member_ids": [
+        "regtracker-0555b80885a9"
+      ],
+      "member_count": 1,
+      "safety_score": 12,
+      "in_scope": true,
+      "safety_reasons": [
+        "+regulat|규제",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+principle|원칙|권고|recommendati",
+        "+privacy|개인정보|data\\s*protecti",
+        "+harm|피해|misuse|악용|dual[-\\s]?"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "high",
+      "llm_flags": [],
+      "in_scope_reason": "AI 생성 이미지·비디오에서 실존 인물의 초상을 사용하는 행위와 합성 미디어의 개인정보·허위정보 위험에 관한 규제기관의 공개 안내다.",
+      "issuer_level": "ministry",
+      "issuer_level_ko": "부처·규제기관",
+      "topics": [
+        {
+          "id": "deepfake_disinfo",
+          "label": "딥페이크·허위정보",
+          "icon": "🎭",
+          "color": "#9f1239",
+          "evidence": "실제 인물의 모습을 이용해 사실과 다른 내용을 담은 합성 미디어는 허위 정보를 제공",
+          "source": "llm"
+        }
+      ],
+      "topics_source": "llm"
+    },
+    {
+      "id": "doc-042be87af57f",
+      "title": "베트남-호주 디지털 경제 협력 MOU",
+      "short_name": "베트남-호주 디지털 경제 협력 MOU",
+      "full_name": "",
+      "original_name": "Memorandum of Understanding between the Government of the Socialist Republic of Viet Nam and the Government of Australia on Cooperation in the Digital Economy",
+      "doc_kind": "조약·협약",
+      "doc_kind_raw": "채택",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://dfat.gov.au/geo/vietnam/vietnam-country-brief/memorandum-understanding-between-government-socialist-republic-viet-nam-and-government-australia-cooperation-digital-economy",
+      "country": "Vietnam",
+      "country_ko": "베트남",
+      "flag": "🇻🇳",
+      "org": "",
+      "published": "2026-08-11",
+      "published_raw": "",
+      "summary": "요약불가",
+      "snippet": "요약불가",
+      "history": [
+        {
+          "date": "2026-08-11",
+          "label": "규제 트래커 · 채택",
+          "url": "https://dfat.gov.au/geo/vietnam/vietnam-country-brief/memorandum-understanding-between-government-socialist-republic-viet-nam-and-government-australia-cooperation-digital-economy",
+          "title": "베트남-호주 디지털 경제 협력 MOU",
+          "item_id": "regtracker-d5cb8742062a"
+        }
+      ],
+      "sources": [
+        "regtracker"
+      ],
+      "member_ids": [
+        "regtracker-d5cb8742062a"
+      ],
+      "member_count": 1,
+      "safety_score": 3,
+      "in_scope": false,
+      "safety_reasons": [
+        "+regulat|규제",
+        "-no-ai"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "medium",
+      "llm_flags": [],
+      "in_scope_reason": "제공된 메타데이터만으로는 디지털 경제 전반의 협력 양해각서일 뿐 AI 안전·리스크·거버넌스와 직접 관련된 실질 내용이 확인되지 않는다.",
+      "reject_reason": "weak_ai_link",
+      "issuer_level": "international",
+      "issuer_level_ko": "국제기구·다자",
+      "topics": [],
+      "topics_source": "llm"
+    },
+    {
       "id": "doc-298803fcf176",
       "title": "앨버타 AI 기반 정부 서비스 현대화",
       "short_name": "앨버타 AI 기반 정부 서비스 현대화",
@@ -10515,7 +11764,7 @@
       "doc_kind_raw": "concluded",
       "status": "concluded",
       "status_ko": "",
-      "canonical_url": "https://digitalpolicyalert.org/intervention/20870-risks-and-controls-for-multi-agent-systems",
+      "canonical_url": "https://industry.gov.au/publications/risks-and-controls-multi-agent-systems",
       "country": "Australia",
       "country_ko": "호주",
       "flag": "🇦🇺",
@@ -10531,20 +11780,29 @@
           "url": "https://digitalpolicyalert.org/intervention/20870-risks-and-controls-for-multi-agent-systems",
           "title": "Assessment of risks and controls for multi-agent systems",
           "item_id": "dpa-ai-20870"
+        },
+        {
+          "date": "2026-08-10",
+          "label": "규제 트래커 · 발표",
+          "url": "https://industry.gov.au/publications/risks-and-controls-multi-agent-systems",
+          "title": "호주 멀티에이전트 시스템 위험·통제 보고서",
+          "item_id": "regtracker-f2751fcb938a"
         }
       ],
       "sources": [
-        "dpa-ai"
+        "dpa-ai",
+        "regtracker"
       ],
       "member_ids": [
-        "dpa-ai-20870"
+        "dpa-ai-20870",
+        "regtracker-f2751fcb938a"
       ],
-      "member_count": 1,
-      "safety_score": 3,
+      "member_count": 2,
+      "safety_score": 4,
       "in_scope": true,
       "safety_reasons": [
         "+dpa",
-        "+model\\s*eval|시스템\\s*평가|benchm"
+        "+regulat|규제"
       ],
       "llm_curated": true,
       "llm_confidence": "medium",
@@ -10959,9 +12217,9 @@
       "full_name": "",
       "original_name": "AI Tax and Work Protection Act (HB 10044)",
       "doc_kind": "법안",
-      "doc_kind_raw": "under deliberation",
-      "status": "under deliberation",
-      "status_ko": "제정",
+      "doc_kind_raw": "발의|Proposed",
+      "status": "Proposed",
+      "status_ko": "계류",
       "canonical_url": "https://digitalpolicyalert.org/intervention/20861-ai-tax-and-work-protection-act-hb-10044",
       "country": "United States",
       "country_ko": "미국",
@@ -10978,19 +12236,29 @@
           "url": "https://digitalpolicyalert.org/intervention/20861-ai-tax-and-work-protection-act-hb-10044",
           "title": "AI Tax and Work Protection Act (HB 10044)",
           "item_id": "dpa-ai-20861"
+        },
+        {
+          "date": "",
+          "label": "규제 트래커 · 발의",
+          "url": "https://casar.house.gov/media/press-releases/news-casar-leads-introduction-new-bill-protect-workers-threat-ai-mass",
+          "title": "미국 AI 세금 및 노동자 보호법안",
+          "item_id": "regtracker-08ae66577918"
         }
       ],
       "sources": [
-        "dpa-ai"
+        "dpa-ai",
+        "regtracker"
       ],
       "member_ids": [
-        "dpa-ai-20861"
+        "dpa-ai-20861",
+        "regtracker-08ae66577918"
       ],
-      "member_count": 1,
-      "safety_score": 1,
+      "member_count": 2,
+      "safety_score": 4,
       "in_scope": true,
       "safety_reasons": [
-        "+dpa"
+        "+dpa",
+        "+regulat|규제"
       ],
       "llm_curated": true,
       "llm_confidence": "high",
@@ -12013,6 +13281,50 @@
       "published_source": "llm_curate"
     },
     {
+      "id": "doc-e92305089f99",
+      "title": "일본 2026 방위백서",
+      "short_name": "일본 2026 방위백서",
+      "full_name": "",
+      "original_name": "Defense of Japan 2026 (Defense White Paper)",
+      "doc_kind": "정책보고서",
+      "doc_kind_raw": "발표",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://mod.go.jp/j/press/wp/wp2026/pdf/DOJ2026_Digest_EN.pdf",
+      "country": "Japan",
+      "country_ko": "일본",
+      "flag": "🇯🇵",
+      "org": "",
+      "published": "2026-08-04",
+      "published_raw": "",
+      "summary": "요약불가",
+      "snippet": "요약불가",
+      "history": [
+        {
+          "date": "2026-08-04",
+          "label": "규제 트래커 · 발표",
+          "url": "https://mod.go.jp/j/press/wp/wp2026/pdf/DOJ2026_Digest_EN.pdf",
+          "title": "일본 2026 방위백서",
+          "item_id": "regtracker-fae52cce4179"
+        }
+      ],
+      "sources": [
+        "regtracker"
+      ],
+      "member_ids": [
+        "regtracker-fae52cce4179"
+      ],
+      "member_count": 1,
+      "safety_score": 3,
+      "in_scope": false,
+      "safety_reasons": [
+        "+regulat|규제",
+        "-no-ai"
+      ],
+      "issuer_level": "national",
+      "issuer_level_ko": "국가"
+    },
+    {
       "id": "doc-b24c552d5e3b",
       "title": "AI 데이터 품질관리 가이드",
       "short_name": "AI 데이터 품질관리 가이드",
@@ -12600,15 +13912,24 @@
           "url": "https://digitalpolicyalert.org/intervention/8987-testing-requirements-for-high-risk-ai-systems-in-regulation-laying-down-harmonised-rules-on-artificial-intelligence-ai-act",
           "title": "Testing requirements for \"high-risk AI systems\" in Regulation laying down harmonised rules on artificial intelligence (AI Act)",
           "item_id": "dpa-ai-8987"
+        },
+        {
+          "date": "2026-07-31",
+          "label": "규제 트래커 · 기록",
+          "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1714",
+          "title": "EU AI법",
+          "item_id": "regtracker-ade691d3b9dc"
         }
       ],
       "sources": [
-        "dpa-ai"
+        "dpa-ai",
+        "regtracker"
       ],
       "member_ids": [
-        "dpa-ai-8987"
+        "dpa-ai-8987",
+        "regtracker-ade691d3b9dc"
       ],
-      "member_count": 1,
+      "member_count": 2,
       "safety_score": 13,
       "in_scope": true,
       "safety_reasons": [
@@ -14050,6 +15371,51 @@
       "published_source": "llm_curate"
     },
     {
+      "id": "doc-f47614ace6a0",
+      "title": "EU 유럽감독청 프런티어 AI 모델 성명 (JC 2026 25)",
+      "short_name": "EU 유럽감독청 프런티어 AI 모델 성명 (JC 2026 25)",
+      "full_name": "",
+      "original_name": "ESA Statement on Frontier AI Models (JC 2026 25)",
+      "doc_kind": "선언·성명",
+      "doc_kind_raw": "발표",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://esma.europa.eu/sites/default/files/2026-07/JC_2026_25_ESA_statement_on_frontier_AI_models.pdf",
+      "country": "European Union",
+      "country_ko": "EU",
+      "flag": "🇪🇺",
+      "org": "",
+      "published": "2026-07-31",
+      "published_raw": "",
+      "summary": "요약불가",
+      "snippet": "요약불가",
+      "history": [
+        {
+          "date": "2026-07-31",
+          "label": "규제 트래커 · 발표",
+          "url": "https://esma.europa.eu/sites/default/files/2026-07/JC_2026_25_ESA_statement_on_frontier_AI_models.pdf",
+          "title": "EU 유럽감독청 프런티어 AI 모델 성명 (JC 2026 25)",
+          "item_id": "regtracker-8812e59ece4b"
+        }
+      ],
+      "sources": [
+        "regtracker"
+      ],
+      "member_ids": [
+        "regtracker-8812e59ece4b"
+      ],
+      "member_count": 1,
+      "safety_score": 7,
+      "in_scope": true,
+      "safety_reasons": [
+        "+regulat|규제",
+        "+declarat|선언|convention|협약|조약",
+        "+oversight|감독|감사|audit|evalua"
+      ],
+      "issuer_level": "international",
+      "issuer_level_ko": "국제기구·다자"
+    },
+    {
       "id": "doc-e3167b414087",
       "title": "독일 AI 시장감독·혁신촉진법(KI-MIG)",
       "short_name": "독일 AI 시장감독·혁신촉진법(KI-MIG)",
@@ -14154,6 +15520,111 @@
       "topics_source": "llm",
       "issuer_level": "national",
       "issuer_level_ko": "국가"
+    },
+    {
+      "id": "doc-35cd73eeedcd",
+      "title": "NIST 공개용 AI 문서화 지침·템플릿 초안",
+      "short_name": "NIST 공개용 AI 문서화 지침·템플릿 초안",
+      "full_name": "",
+      "original_name": "Guidance and Templates for Public-Facing AI Documentation: AI Standards Zero Draft (Initial)",
+      "doc_kind": "가이드라인·원칙",
+      "doc_kind_raw": "의견수렴",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://nist.gov/publications/guidance-and-templates-public-facing-ai-documentation-ai-standards-zero-draft-initial",
+      "country": "United States",
+      "country_ko": "미국",
+      "flag": "🇺🇸",
+      "org": "",
+      "published": "2026-07-30",
+      "published_raw": "",
+      "summary": "NIST는 **공개용 AI 문서화 지침과 템플릿**을 제시하는 __제로 드래프트__ 시범 프로젝트를 진행 중이다. 이 프로젝트는 AI 기술의 __투명성과 책임성__을 높이는 데 중점을 둔다. NIST는 표준화 과정을 가속화하고 다양한 이해관계자의 의견을 수렴하고자 한다.",
+      "snippet": "NIST는 **공개용 AI 문서화 지침과 템플릿**을 제시하는 __제로 드래프트__ 시범 프로젝트를 진행 중이다. 이 프로젝트는 AI 기술의 __투명성과 책임성__을 높이는 데 중점을 둔다. NIST는 표준화 과정을 가속화하고 다양한 이해관계자의 의견을 수렴하고자 한다.",
+      "history": [
+        {
+          "date": "2026-07-30",
+          "label": "규제 트래커 · 의견수렴",
+          "url": "https://nist.gov/publications/guidance-and-templates-public-facing-ai-documentation-ai-standards-zero-draft-initial",
+          "title": "미국 NIST AI 문서화 지침·템플릿 제로 드래프트(초안)",
+          "item_id": "regtracker-d8e5b40104af"
+        }
+      ],
+      "sources": [
+        "regtracker"
+      ],
+      "member_ids": [
+        "regtracker-d8e5b40104af"
+      ],
+      "member_count": 1,
+      "safety_score": 11,
+      "in_scope": true,
+      "safety_reasons": [
+        "+regulat|규제",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+principle|원칙|권고|recommendati",
+        "+standard|표준|iso/?iec",
+        "+transpar|투명|explainab|설명\\s*가"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "medium",
+      "llm_flags": [],
+      "in_scope_reason": "AI 문서화와 투명성·책임성 강화를 다루는 NIST의 AI 거버넌스 관련 초안 문서다.",
+      "issuer_level": "ministry",
+      "issuer_level_ko": "부처·규제기관",
+      "topics": [],
+      "topics_source": "llm"
+    },
+    {
+      "id": "doc-dc437a159127",
+      "title": "EU 인공지능 시대 지적재산권 사실시트",
+      "short_name": "EU 인공지능 시대 지적재산권 사실시트",
+      "full_name": "",
+      "original_name": "Navigating Intellectual Property in the Age of Artificial Intelligence",
+      "doc_kind": "정책보고서",
+      "doc_kind_raw": "발표",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://intellectual-property-helpdesk.ec.europa.eu/ip-management-and-resources/publications/navigating-intellectual-property-age-artificial-intelligence_en",
+      "country": "European Union",
+      "country_ko": "EU",
+      "flag": "🇪🇺",
+      "org": "",
+      "published": "2026-07-30",
+      "published_raw": "",
+      "summary": "이 사실시트는 **인공지능 기술 발전에 따른 지적재산권 관련 법적·정책적 프레임워크**를 소개한다. AI 기술 보호와 __훈련 데이터 관리__를 주요 고려사항으로 다룬다. AI 생성 콘텐츠의 소유권과 활용 문제를 설명하고, AI 개발자와 사용자가 지적 자산을 보호·관리·상업화할 수 있도록 지침을 제공한다.",
+      "snippet": "이 사실시트는 **인공지능 기술 발전에 따른 지적재산권 관련 법적·정책적 프레임워크**를 소개한다. AI 기술 보호와 __훈련 데이터 관리__를 주요 고려사항으로 다룬다. AI 생성 콘텐츠의 소유권과 활용 문제를 설명하고, AI 개발자와 사용자가 지적 자산을 보호·관리·상업화할 수 있도록 지침을 제공한다.",
+      "history": [
+        {
+          "date": "2026-07-30",
+          "label": "규제 트래커 · 발표",
+          "url": "https://intellectual-property-helpdesk.ec.europa.eu/ip-management-and-resources/publications/navigating-intellectual-property-age-artificial-intelligence_en",
+          "title": "EU AI 시대 지식재산 대응 사실시트",
+          "item_id": "regtracker-14ca48de1936"
+        }
+      ],
+      "sources": [
+        "regtracker"
+      ],
+      "member_ids": [
+        "regtracker-14ca48de1936"
+      ],
+      "member_count": 1,
+      "safety_score": 9,
+      "in_scope": true,
+      "safety_reasons": [
+        "+regulat|규제",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+principle|원칙|권고|recommendati",
+        "+(?:AI|인공지능).{0,12}(?:framewo"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "medium",
+      "llm_flags": [],
+      "in_scope_reason": "AI 기술과 관련된 지적재산권 법적·정책적 프레임워크와 개발자·사용자의 관리 기준을 다루는 문서다.",
+      "issuer_level": "international",
+      "issuer_level_ko": "국제기구·다자",
+      "topics": [],
+      "topics_source": "llm"
     },
     {
       "id": "doc-e6a1aae6d48d",
@@ -14333,10 +15804,10 @@
       "full_name": "",
       "original_name": "Act on the implementation of the EU AI Act in Germany",
       "doc_kind": "법",
-      "doc_kind_raw": "in force",
-      "status": "in force",
+      "doc_kind_raw": "공포·시행|Enacted",
+      "status": "Enacted",
       "status_ko": "제정",
-      "canonical_url": "https://digitalpolicyalert.org/intervention/19773-act-on-the-implementation-of-the-eu-ai-act-in-germany",
+      "canonical_url": "https://recht.bund.de/bgbl/1/2026/223/VO",
       "country": "Germany",
       "country_ko": "독일",
       "flag": "🇩🇪",
@@ -14352,21 +15823,33 @@
           "url": "https://digitalpolicyalert.org/intervention/19773-act-on-the-implementation-of-the-eu-ai-act-in-germany",
           "title": "Act on the implementation of the EU AI Act in Germany",
           "item_id": "dpa-ai-19773"
+        },
+        {
+          "date": "2026-07-29",
+          "label": "규제 트래커 · 공포·시행",
+          "url": "https://recht.bund.de/bgbl/1/2026/223/VO",
+          "title": "독일 EU AI법 시행법",
+          "item_id": "regtracker-b586672823c5"
         }
       ],
       "sources": [
-        "dpa-ai"
+        "dpa-ai",
+        "regtracker"
       ],
       "member_ids": [
-        "dpa-ai-19773"
+        "dpa-ai-19773",
+        "regtracker-b586672823c5"
       ],
-      "member_count": 1,
-      "safety_score": 7,
+      "member_count": 2,
+      "safety_score": 12,
       "in_scope": true,
       "safety_reasons": [
         "+dpa",
+        "+\\bethic|윤리",
         "+regulat|규제",
-        "+(?:artificial\\s*intelligence"
+        "+(?:artificial\\s*intelligence",
+        "+guideline|가이드라인|지침|(?<![a-z]",
+        "+core+ai"
       ],
       "llm_curated": true,
       "llm_confidence": "medium",
@@ -14785,15 +16268,24 @@
           "url": "https://digitalpolicyalert.org/intervention/15475-presidential-regulation-to-govern-artificial-intelligence-utilisation",
           "title": "Presidential Regulation to govern Artificial Intelligence utilisation",
           "item_id": "dpa-ai-15475"
+        },
+        {
+          "date": "2026-07-27",
+          "label": "규제 트래커 · 초안",
+          "url": "https://komdigi.go.id/berita/siaran-pers/detail/kemkomdigi-jadikan-perpres-ai-sebagai-langkah-awal-menuju-undang-undang-ai",
+          "title": "인도네시아 AI 대통령 규정(초안)",
+          "item_id": "regtracker-3581094e1c26"
         }
       ],
       "sources": [
-        "dpa-ai"
+        "dpa-ai",
+        "regtracker"
       ],
       "member_ids": [
-        "dpa-ai-15475"
+        "dpa-ai-15475",
+        "regtracker-3581094e1c26"
       ],
-      "member_count": 1,
+      "member_count": 2,
       "safety_score": 7,
       "in_scope": false,
       "safety_reasons": [
@@ -15102,10 +16594,10 @@
       "full_name": "",
       "original_name": "Bill amending AI Basic Act including provisions on differentiated generative artificial intelligence disclosure requirements (Bill No. 2220174)",
       "doc_kind": "법안",
-      "doc_kind_raw": "under deliberation",
-      "status": "under deliberation",
+      "doc_kind_raw": "발의|Proposed",
+      "status": "Proposed",
       "status_ko": "개정안",
-      "canonical_url": "https://digitalpolicyalert.org/intervention/20605-bill-amending-ai-basic-act-including-provisions-on-differentiated-generative-artificial-intelligence-disclosure-requirements-bill-no-2220174",
+      "canonical_url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_M2M6U0V7T0U8S1T2R3Z4A0Y6Z9X5X3",
       "country": "South Korea",
       "country_ko": "한국",
       "flag": "🇰🇷",
@@ -15121,19 +16613,32 @@
           "url": "https://digitalpolicyalert.org/intervention/20605-bill-amending-ai-basic-act-including-provisions-on-differentiated-generative-artificial-intelligence-disclosure-requirements-bill-no-2220174",
           "title": "Bill amending AI Basic Act including provisions on differentiated generative artificial intelligence disclosure requirements (Bill No. 2220174)",
           "item_id": "dpa-ai-20605"
+        },
+        {
+          "date": "2026-07-27",
+          "label": "규제 트래커 · 발의",
+          "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_M2M6U0V7T0U8S1T2R3Z4A0Y6Z9X5X3",
+          "title": "대한민국 인공지능 기본법 개정안(생성형 AI 차등 표시 의무)",
+          "item_id": "regtracker-9fed8f38b1a0"
         }
       ],
       "sources": [
-        "dpa-ai"
+        "dpa-ai",
+        "regtracker"
       ],
       "member_ids": [
-        "dpa-ai-20605"
+        "dpa-ai-20605",
+        "regtracker-9fed8f38b1a0"
       ],
-      "member_count": 1,
-      "safety_score": 1,
+      "member_count": 2,
+      "safety_score": 11,
       "in_scope": true,
       "safety_reasons": [
-        "+dpa"
+        "+dpa",
+        "+regulat|규제",
+        "+(?:artificial\\s*intelligence",
+        "+standard|표준|iso/?iec",
+        "+transpar|투명|explainab|설명\\s*가"
       ],
       "llm_curated": true,
       "llm_confidence": "medium",
@@ -15456,6 +16961,67 @@
       "issuer_level": "national",
       "issuer_level_ko": "국가",
       "topics": [],
+      "topics_source": "llm",
+      "published_source": "llm_curate"
+    },
+    {
+      "id": "doc-7a96f64d86bf",
+      "title": "APEC 디지털·AI 장관 선언(청두 선언)",
+      "short_name": "APEC 디지털·AI 장관 선언(청두 선언)",
+      "full_name": "",
+      "original_name": "2026 APEC Digital and AI Ministerial Statement (Chengdu Statement)",
+      "doc_kind": "선언·성명",
+      "doc_kind_raw": "채택",
+      "status": "",
+      "status_ko": "",
+      "canonical_url": "https://apec.org/meeting-papers/sectoral-ministerial-meetings/telecommunicationsandinformation/2026-apec-digital-and-ai-ministerial-statement",
+      "country": "APEC",
+      "country_ko": "APEC",
+      "flag": "🌏",
+      "org": "",
+      "published": "2026-07-23",
+      "published_raw": "",
+      "summary": "**APEC 회원국 장관들은 __2026년 7월 23일__ 중국 청두에서 디지털 기술과 AI를 통한 아시아태평양 지역의 번영 증진을 위한 선언을 채택했다.** 선언은 보편적이고 의미 있는 디지털 연결성, 디지털 기술과 AI의 경제적 활용, 디지털 리터러시와 기술 향상을 강조한다. 회원국들은 디지털 인프라 투자와 개방형 소스의 중요성을 확인하고, 신뢰할 수 있는 디지털 환경과 사이버 보안 강화를 위해 협력하기로 했다.",
+      "snippet": "**APEC 회원국 장관들은 __2026년 7월 23일__ 중국 청두에서 디지털 기술과 AI를 통한 아시아태평양 지역의 번영 증진을 위한 선언을 채택했다.** 선언은 보편적이고 의미 있는 디지털 연결성, 디지털 기술과 AI의 경제적 활용, 디지털 리터러시와 기술 향상을 강조한다. 회원국들은 디지털 인프라 투자와 개방형 소스의 중요성을 확인하고, 신뢰할 수 있는 디지털 환경과 사이버 보안 강화를 위해 협력하기로 했다.",
+      "history": [
+        {
+          "date": "2026-07-24",
+          "label": "규제 트래커 · 채택",
+          "url": "https://apec.org/meeting-papers/sectoral-ministerial-meetings/telecommunicationsandinformation/2026-apec-digital-and-ai-ministerial-statement",
+          "title": "APEC 디지털·AI 장관회의 청두 선언",
+          "item_id": "regtracker-88622d85e582"
+        }
+      ],
+      "sources": [
+        "regtracker"
+      ],
+      "member_ids": [
+        "regtracker-88622d85e582"
+      ],
+      "member_count": 1,
+      "safety_score": 8,
+      "in_scope": true,
+      "safety_reasons": [
+        "+\\bsecurit|보안|사이버보안|cybersecu",
+        "+regulat|규제",
+        "+declarat|선언|convention|협약|조약"
+      ],
+      "llm_curated": true,
+      "llm_confidence": "high",
+      "llm_flags": [],
+      "in_scope_reason": "APEC 회원국 장관들이 디지털 기술과 AI의 활용, 신뢰할 수 있는 디지털 환경, 사이버 보안 협력을 다룬 국제 장관 선언이다.",
+      "issuer_level": "international",
+      "issuer_level_ko": "국제기구·다자",
+      "topics": [
+        {
+          "id": "cybersecurity",
+          "label": "사이버안보",
+          "icon": "🔒",
+          "color": "#0369a1",
+          "evidence": "사이버 보안 강화를 위해 협력할 것을 촉구했다",
+          "source": "llm"
+        }
+      ],
       "topics_source": "llm",
       "published_source": "llm_curate"
     },
@@ -15985,9 +17551,9 @@
       "full_name": "",
       "original_name": "Artificial Intelligence authority governance in Frontier Risk Oversight, National Transparency, Independent Evaluation, and Reporting Act (HB 9925)",
       "doc_kind": "법안",
-      "doc_kind_raw": "under deliberation",
-      "status": "under deliberation",
-      "status_ko": "",
+      "doc_kind_raw": "발의|Proposed",
+      "status": "Proposed",
+      "status_ko": "계류",
       "canonical_url": "https://digitalpolicyalert.org/intervention/20578-artificial-intelligence-authority-governance-in-frontier-risk-oversight-national-transparency-independent-evaluation-and-reporting-act-hr-9925",
       "country": "United States",
       "country_ko": "미국",
@@ -16004,23 +17570,34 @@
           "url": "https://digitalpolicyalert.org/intervention/20578-artificial-intelligence-authority-governance-in-frontier-risk-oversight-national-transparency-independent-evaluation-and-reporting-act-hr-9925",
           "title": "Artificial Intelligence authority governance in Frontier Risk Oversight, National Transparency, Independent Evaluation, and Reporting Act (HB 9925)",
           "item_id": "dpa-ai-20578"
+        },
+        {
+          "date": "2026-07-23",
+          "label": "규제 트래커 · 발의",
+          "url": "https://obernolte.house.gov/media/press-releases/obernolte-trahan-introduce-bipartisan-frontier-act-strengthen-oversight",
+          "title": "미국 FRONTIER Act(첨단 AI 모델 감독 법안)",
+          "item_id": "regtracker-40c2f49d5f25"
         }
       ],
       "sources": [
-        "dpa-ai"
+        "dpa-ai",
+        "regtracker"
       ],
       "member_ids": [
-        "dpa-ai-20578"
+        "dpa-ai-20578",
+        "regtracker-40c2f49d5f25"
       ],
-      "member_count": 1,
-      "safety_score": 11,
+      "member_count": 2,
+      "safety_score": 16,
       "in_scope": true,
       "safety_reasons": [
         "+dpa",
         "+\\brisk\\b|위험\\s*관리|위험관리|고위험|hi",
         "+governan|거버넌스",
+        "+regulat|규제",
         "+oversight|감독|감사|audit|evalua",
         "+transpar|투명|explainab|설명\\s*가",
+        "+incident|사고\\s*보고|reporting\\s",
         "+core+ai"
       ],
       "llm_curated": true,
@@ -16060,9 +17637,9 @@
       "full_name": "",
       "original_name": "Artificial Intelligence authority governance in AI Kill Switch Act (HB 9917)",
       "doc_kind": "법안",
-      "doc_kind_raw": "under deliberation",
-      "status": "under deliberation",
-      "status_ko": "",
+      "doc_kind_raw": "발의|Proposed",
+      "status": "Proposed",
+      "status_ko": "계류",
       "canonical_url": "https://digitalpolicyalert.org/intervention/20554-artificial-intelligence-authority-governance-in-ai-kill-switch-act",
       "country": "United States",
       "country_ko": "미국",
@@ -16079,21 +17656,32 @@
           "url": "https://digitalpolicyalert.org/intervention/20554-artificial-intelligence-authority-governance-in-ai-kill-switch-act",
           "title": "Artificial Intelligence authority governance in AI Kill Switch Act (HB 9917)",
           "item_id": "dpa-ai-20554"
+        },
+        {
+          "date": "2026-07-23",
+          "label": "규제 트래커 · 발의",
+          "url": "https://lieu.house.gov/media-center/press-releases/reps-lieu-and-moran-introduce-bill-require-kill-switch-ai-systems-can",
+          "title": "미국 AI 킬 스위치 법안",
+          "item_id": "regtracker-531f4cb69574"
         }
       ],
       "sources": [
-        "dpa-ai"
+        "dpa-ai",
+        "regtracker"
       ],
       "member_ids": [
-        "dpa-ai-20554"
+        "dpa-ai-20554",
+        "regtracker-531f4cb69574"
       ],
-      "member_count": 1,
-      "safety_score": 7,
+      "member_count": 2,
+      "safety_score": 13,
       "in_scope": true,
       "safety_reasons": [
         "+dpa",
-        "+\\bsecurit|보안|사이버보안|cybersecu",
+        "+\\bsafety\\b|안전성|안전\\s*확보",
         "+governan|거버넌스",
+        "+regulat|규제",
+        "+harm|피해|misuse|악용|dual[-\\s]?",
         "+core+ai"
       ],
       "llm_curated": true,
@@ -19965,57 +21553,6 @@
       "topics": [],
       "topics_source": "llm",
       "published_source": "llm_curate"
-    },
-    {
-      "id": "doc-105e43a90f08",
-      "title": "호주 AI 표준",
-      "short_name": "호주 AI 표준",
-      "full_name": "",
-      "original_name": "Australian Standards for AI",
-      "doc_kind": "전략·정책",
-      "doc_kind_raw": "AI 규제체계·입법 추진계획 / 정부 정책발표",
-      "status": "",
-      "status_ko": "",
-      "canonical_url": "https://www.pm.gov.au/media/ai-australias-interests",
-      "country": "Australia",
-      "country_ko": "호주",
-      "flag": "🇦🇺",
-      "org": "호주 연방정부(Australian Government) / 총리내각부(Department of the Prime Minister and Cabinet)",
-      "published": "2026-07-15",
-      "published_raw": "2026년 7월 15일",
-      "summary": "호주 정부는 대규모 AI 데이터센터와 학습 인프라의 전력·수자원 사용 및 지역사회 영향을 관리하는 방안을 제시했습니다. 데이터센터의 전력 확보와 전력망 비용 부담을 관리하고, 전력 사용 감축 및 물 사용 효율화 의무를 도입할 계획입니다. 연방정부와 주정부의 공동 검토를 바탕으로 에너지·수자원·안전 인허가를 통합한 국가 규제체계를 구축하는 방안도 언급했습니다. 또한 총리내각부 내 Office of AI를 설치하고, AI 학습에 사용되는 창작자·언론인 저작물에 대한 권리와 통제권을 보호하는 체계를 마련할 계획입니다.",
-      "snippet": "호주 정부는 대규모 AI 데이터센터와 학습 인프라의 전력·수자원 사용 및 지역사회 영향을 관리하는 방안을 제시했습니다. 데이터센터의 전력 확보와 전력망 비용 부담을 관리하고, 전력 사용 감축 및 물 사용 효율화 의무를 도입할 계획입니다. 연방정부와 주정부의 공동 검토를 바탕으로 에너지·수자원·안전 인허가를 통합한 국가 규제체계를 구축하는 방안도 언급했습니다. 또한 총리내각부 내 Office of AI를 설치하고, AI 학습에 사용되는 창작자·언론인 저작물에 대한 권리와 통제권을 보호하는 체계를 마련할 계획입니다.",
-      "history": [
-        {
-          "date": "2026-07-15",
-          "label": "외교부 게시",
-          "url": "https://www.mofa.go.kr/www/brd/m_29692/view.do?seq=90",
-          "title": "[호주] 호주 AI 표준(Australian Standards for AI) 추진계획",
-          "item_id": "mofa-country-policy-90"
-        }
-      ],
-      "sources": [
-        "mofa"
-      ],
-      "member_ids": [
-        "mofa-country-policy-90"
-      ],
-      "member_count": 1,
-      "safety_score": 6,
-      "in_scope": true,
-      "safety_reasons": [
-        "+mofa",
-        "+regulat|규제",
-        "+standard|표준|iso/?iec"
-      ],
-      "llm_curated": true,
-      "llm_confidence": "medium",
-      "llm_flags": [],
-      "in_scope_reason": "호주 정부의 AI 데이터센터·학습 인프라 규제, 자원 사용 관리, 인허가 체계 및 저작권 보호 방안을 다루는 정책 문서입니다.",
-      "issuer_level": "ministry",
-      "issuer_level_ko": "부처·규제기관",
-      "topics": [],
-      "topics_source": "llm"
     },
     {
       "id": "doc-28af8915e7e9",
@@ -194931,7 +196468,7 @@
       "id": "doc-c13711cf1bec",
       "title": "KAIEA 인공지능 윤리 헌장 (2019-12 개정)",
       "short_name": "KAIEA 인공지능 윤리 헌장 (2019-12 개정)",
-      "full_name": "[KAIEA] KAIEA 인공지능 윤리 헌장_191219개정 (한글본)",
+      "full_name": "",
       "original_name": "KAIEA 인공지능 윤리 헌장_191219개정 (영문본)",
       "doc_kind": "가이드라인·원칙",
       "doc_kind_raw": "KAIEA",
